@@ -159,6 +159,10 @@ def main():
     mo = batch_download(tickers, "max", "1mo")  # trimmed to 25y below
 
     px = pd.read_csv(HERE / "data" / "prices.csv", parse_dates=["date"])
+    try:
+        fu = pd.read_csv(HERE / "data" / "fundamentals.csv").set_index("ticker")
+    except Exception:
+        fu = pd.DataFrame()
     signals = {}
     sig_path = HERE / "docs" / "signals.json"
     if sig_path.exists():
@@ -181,11 +185,28 @@ def main():
             "w1": frame_to_tab(weekly.tail(522), with_pivots=True),
             "mo1": frame_to_tab(mo[t].tail(300), with_pivots=True) if t in mo else None,  # 25y of months
         }
+        d20 = daily.tail(20)
+        facts = {"advol": round(float((d20["close"] * d20["volume"]).mean()), 0),
+                 "vol_last": int(daily["volume"].iloc[-1])}
+        if t in fu.index:
+            f = fu.loc[t]
+            def _g(k):
+                v = f.get(k)
+                return None if v is None or (isinstance(v, float) and pd.isna(v)) else float(v)
+            facts.update({
+                "mcap": _g("marketCap"), "pe": _g("trailingPE"), "fpe": _g("forwardPE"),
+                "ps": _g("priceToSalesTrailing12Months"), "pm": _g("profitMargins"),
+                "revg": _g("revenueGrowth"), "fcf": _g("freeCashflow"),
+                "debt": _g("totalDebt"), "cash": _g("totalCash"), "beta": _g("beta"),
+                "short": _g("shortPercentOfFloat"),
+                "hi52": _g("fiftyTwoWeekHigh"), "lo52": _g("fiftyTwoWeekLow"),
+            })
         payload = {
             "ticker": t,
             "group": UNIVERSE[t][0],
             "quality": UNIVERSE[t][1],
             "signal": signals.get(t, {}),
+            "facts": facts,
             "tabs": {k: v for k, v in tabs.items() if v},
         }
         (out_dir / f"{t}.json").write_text(json.dumps(payload))

@@ -1,15 +1,14 @@
-Traceback (most recent call last):
-  File "/home/runner/work/vbt-data/vbt-data/private/narrative_study.py", line 13, in <module>
-    QUERY = json.loads('''{"ALAB": "\"Astera Labs\"", "AMAT": "\"Applied Materials\"", "AMD": "\"Advanced Micro Devices\" OR \"AMD chip\"", "ANET": "\"Arista Networks\"", "APLD": "\"Applied Digital\"", "ARM": "\"Arm Holdings\"", "CIEN": "\"Ciena\"", "CIFR": "\"Cipher Mining\"", "COHR": "\"Coherent Corp\" OR \"Coherent Inc\"", "CRDO": "\"Credo Technology\"", "DELL": "\"Dell Technologies\"", "GLXY": "\"Galaxy Digital\"", "HPE": "\"Hewlett Packard Enterprise\"", "HUT": "\"Hut 8\"", "INTC": "\"Intel\"", "IREN": "\"IREN Limited\" OR \"Iris Energy\"", "LITE": "\"Lumentum\"", "MOD": "\"Modine Manufacturing\"", "MPWR": "\"Monolithic Power\"", "MRVL": "\"Marvell\"", "MU": "\"Micron Technology\"", "NRG": "\"NRG Energy\"", "ON": "\"ON Semiconductor\" OR \"onsemi\"", "POWL": "\"Powell Industries\"", "QCOM": "\"Qualcomm\"", "SMCI": "\"Super Micro Computer\" OR \"Supermicro\"", "SNPS": "\"Synopsys\"", "STX": "\"Seagate\"", "VRT": "\"Vertiv\"", "WDC": "\"Western Digital\"", "WULF": "\"TeraWulf\""}''')
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/json/decoder.py", line 354, in raw_decode
-    obj, end = self.scan_once(s, idx)
-               ^^^^^^^^^^^^^^^^^^^^^^
-json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 12 (char 11)
-script exited nonzero
+5/66 events fetched
+10/66 events fetched
+15/66 events fetched
+20/66 events fetched
+25/66 events fetched
+30/66 events fetched
+35/66 events fetched
+40/66 events fetched
+45/66 events fetched
+50/66 events fetched
+55/66 events fetched
+60/66 events fetched
+65/66 events fetched
+done: 16/66 events with tone data -> private/gdelt_raw.json

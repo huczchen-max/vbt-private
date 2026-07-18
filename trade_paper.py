@@ -36,6 +36,11 @@ BASE = "https://paper-api.alpaca.markets"
 KEY = os.environ.get("ALPACA_KEY", "").strip()
 SECRET = os.environ.get("ALPACA_SECRET", "").strip()
 
+# Phase-2 LLM screen: SHADOW MODE. Verdicts from llm_screen.py are logged
+# against every trade; set ENFORCE_LLM=True (and update RULEBOOK) only after
+# the shadow record proves the layer adds value.
+ENFORCE_LLM = False
+
 QUALITY_PCT, SPEC_PCT = 0.08, 0.04
 MAX_POSITIONS = 15
 MAX_PER_GROUP = 4        # rulebook v2: one narrative can hit a whole group
@@ -94,6 +99,17 @@ def main():
     state = load_state()
     entries = state.get("entries", {})   # symbol -> entry date iso
     ledger = state.get("ledger", [])
+
+    llm = {}
+    llm_path = PAPER_PATH.parent / "llm_today.json"
+    if llm_path.exists():
+        try:
+            cand = json.loads(llm_path.read_text())
+            if cand.get("date") == today:
+                llm = cand
+        except Exception:
+            pass
+    llm_regime = (llm.get("regime") or {}).get("regime")
 
     def log(action, sym, note):
         ledger.append({"date": today, "action": action, "symbol": sym, "note": note})
@@ -159,6 +175,21 @@ def main():
         if qty < 1:
             log("SKIP", sym, f"target ${target:,.0f} < 1 share @ {price}")
             continue
+        # ---- Phase-2 LLM screen (shadow unless ENFORCE_LLM) ----
+        v = (llm.get("verdicts") or {}).get(sym)
+        shadow_note = ""
+        if v:
+            mult = float(v.get("size_mult", 1.0))
+            if llm_regime == "RISK-OFF" and not r["quality"]:
+                mult = 0.0  # regime gate on speculative entries
+            shadow_note = (f" | llm:{v['verdict']} mult:{mult:g}"
+                           f" regime:{llm_regime or '?'}")
+            if ENFORCE_LLM:
+                qty = int(qty * mult)
+                if qty < 1:
+                    log("SKIP", sym, f"LLM-enforced skip{shadow_note} — "
+                        + "; ".join(v.get("reasons", [])[:2]))
+                    continue
         api("/v2/orders", "POST", {
             "symbol": sym, "qty": str(qty), "side": "buy",
             "type": "market", "time_in_force": "day"})
@@ -167,7 +198,7 @@ def main():
             f"{qty} sh ~${qty * price:,.0f} ({'quality' if r['quality'] else 'spec'} "
             f"{pct:.0%}) on stage-3 "
             f"{'seed (transition ' + entries[sym] + ')' if seeding and sym in SEED else 'entry'}"
-            f" @ {price}")
+            f" @ {price}{shadow_note}")
 
     # ---- snapshot for the dashboard --------------------------------------
     positions_now = api("/v2/positions")

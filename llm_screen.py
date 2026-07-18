@@ -22,7 +22,7 @@ from pathlib import Path
 
 STATE = Path(os.environ.get("PAPER_STATE_DIR") or ".")
 DOCS = Path.cwd() / "docs"
-MODEL = os.environ.get("LLM_MODEL", "claude-sonnet-4-5")
+MODEL = os.environ.get("LLM_MODEL", "claude-sonnet-5")
 KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 
 

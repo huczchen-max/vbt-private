@@ -15,12 +15,17 @@ QUERY = {"ALAB": "\"Astera Labs\"", "AMAT": "\"Applied Materials\"", "AMD": "\"A
 BASE = "https://api.gdeltproject.org/api/v2/doc/doc"
 
 def fetch(query, mode, start, end):
+    if " OR " in query and not query.startswith("("):
+        query = "(" + query + ")"
     q = {"query": query + " sourcelang:english", "mode": mode,
          "startdatetime": start, "enddatetime": end,
          "format": "json", "timelinesmooth": 7}
     url = BASE + "?" + urllib.parse.urlencode(q)
-    with urllib.request.urlopen(url, timeout=60) as r:
-        return json.loads(r.read().decode())
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (research script; contact: none)"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        raw = r.read().decode()
+    return json.loads(raw)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -41,11 +46,11 @@ def main():
             except Exception as ex:
                 rec[key] = []
                 rec[key + "_err"] = str(ex)[:120]
-            time.sleep(1.3)
+            time.sleep(1.6)
         out.append(rec)
-        if (i + 1) % 10 == 0:
-            print(f"{i+1}/{len(EVENTS)} events fetched")
-    json.dump(out, open(args.out, "w"))
+        json.dump(out, open(args.out, "w"))  # checkpoint every event
+        if (i + 1) % 5 == 0:
+            print(f"{i+1}/{len(EVENTS)} events fetched", flush=True)
     n_ok = sum(1 for r in out if r.get("tone"))
     print(f"done: {n_ok}/{len(out)} events with tone data -> {args.out}")
 

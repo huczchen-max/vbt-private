@@ -27,26 +27,50 @@ def fetch(query, mode, start, end):
         raw = r.read().decode()
     return json.loads(raw)
 
+def fetch_retry(query, mode, start, end, tries=5):
+    delay = 8
+    for k in range(tries):
+        try:
+            return fetch(query, mode, start, end)
+        except Exception as ex:
+            if "429" in str(ex) and k < tries - 1:
+                time.sleep(delay)
+                delay = min(delay * 2, 90)
+                continue
+            raise
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="gdelt_raw.json")
     args = ap.parse_args()
-    out = []
+    # resume: keep events that already have tone data
+    done = {}
+    try:
+        for r in json.load(open(args.out)):
+            if r.get("tone"):
+                done[(r["ticker"], r["date"])] = r
+        print(f"resuming: {len(done)} events already complete", flush=True)
+    except Exception:
+        pass
+    out = list(done.values())
     for i, e in enumerate(EVENTS):
         t = e["ticker"]
+        if (t, e["date"]) in done:
+            continue
         d = datetime.fromisoformat(e["date"])
         start = (d - timedelta(days=180)).strftime("%Y%m%d") + "000000"
         end = (d + timedelta(days=30)).strftime("%Y%m%d") + "000000"
         rec = dict(e)
         for mode, key in [("timelinetone", "tone"), ("timelinevolraw", "vol")]:
             try:
-                data = fetch(QUERY[t], mode, start, end)
+                data = fetch_retry(QUERY[t], mode, start, end)
                 tl = data.get("timeline", [{}])[0].get("data", [])
                 rec[key] = [[p.get("date", "")[:8], p.get("value")] for p in tl]
             except Exception as ex:
                 rec[key] = []
                 rec[key + "_err"] = str(ex)[:120]
-            time.sleep(1.6)
+            time.sleep(6)
         out.append(rec)
         json.dump(out, open(args.out, "w"))  # checkpoint every event
         if (i + 1) % 5 == 0:

@@ -12,3 +12,7 @@
 60/66 events fetched
 65/66 events fetched
 done: 16/66 events with tone data -> private/gdelt_raw.json
+resuming: 16 events already complete
+5/66 events fetched
+10/66 events fetched
+done: 20/22 events with tone data -> private/gdelt_raw.json

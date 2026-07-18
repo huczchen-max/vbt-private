@@ -43,6 +43,8 @@ def fetch_retry(query, mode, start, end, tries=5):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="gdelt_raw.json")
+    ap.add_argument("--max-events", type=int, default=0,
+                    help="fetch at most N missing events then exit (trickle mode)")
     args = ap.parse_args()
     # resume: keep events that already have tone data
     done = {}
@@ -54,10 +56,14 @@ def main():
     except Exception:
         pass
     out = list(done.values())
+    fetched_now = 0
     for i, e in enumerate(EVENTS):
         t = e["ticker"]
         if (t, e["date"]) in done:
             continue
+        if args.max_events and fetched_now >= args.max_events:
+            break
+        fetched_now += 1
         d = datetime.fromisoformat(e["date"])
         start = (d - timedelta(days=180)).strftime("%Y%m%d") + "000000"
         end = (d + timedelta(days=30)).strftime("%Y%m%d") + "000000"
@@ -70,7 +76,7 @@ def main():
             except Exception as ex:
                 rec[key] = []
                 rec[key + "_err"] = str(ex)[:120]
-            time.sleep(6)
+            time.sleep(10)
         out.append(rec)
         json.dump(out, open(args.out, "w"))  # checkpoint every event
         if (i + 1) % 5 == 0:

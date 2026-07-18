@@ -26,22 +26,31 @@ MODEL = os.environ.get("LLM_MODEL", "claude-sonnet-5")
 KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 
 
-def call_claude(prompt, max_tokens=1500):
-    body = {
-        "model": MODEL,
-        "max_tokens": max_tokens,
-        "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": 6}],
-        "messages": [{"role": "user", "content": prompt}],
-    }
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
-        data=json.dumps(body).encode(),
-        headers={"x-api-key": KEY, "anthropic-version": "2023-06-01",
-                 "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        resp = json.loads(r.read().decode())
-    text = "".join(b.get("text", "") for b in resp.get("content", [])
-                   if b.get("type") == "text")
+def call_claude(prompt, max_tokens=4000):
+    """Single-question call with web search. Handles pause_turn continuations
+    (long tool loops) and concatenates text across all turns."""
+    messages = [{"role": "user", "content": prompt}]
+    text = ""
+    for _ in range(5):
+        body = {
+            "model": MODEL,
+            "max_tokens": max_tokens,
+            "tools": [{"type": "web_search_20250305", "name": "web_search",
+                       "max_uses": 6}],
+            "messages": messages,
+        }
+        req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=json.dumps(body).encode(),
+            headers={"x-api-key": KEY, "anthropic-version": "2023-06-01",
+                     "content-type": "application/json"})
+        with urllib.request.urlopen(req, timeout=300) as r:
+            resp = json.loads(r.read().decode())
+        text += "".join(b.get("text", "") for b in resp.get("content", [])
+                        if b.get("type") == "text")
+        if resp.get("stop_reason") != "pause_turn":
+            break
+        messages.append({"role": "assistant", "content": resp["content"]})
     return text
 
 

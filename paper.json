@@ -1,0 +1,43 @@
+{
+ "as_of": "2026-07-18",
+ "updated_utc": "2026-07-18T10:05:01+00:00",
+ "account": {
+  "equity": 100000.0,
+  "cash": 100000.0,
+  "pl_total": 0.0
+ },
+ "positions": [],
+ "entries": {
+  "CIEN": "2026-07-10",
+  "CORZ": "2026-07-10",
+  "SNPS": "2026-07-03",
+  "TLN": "2026-06-26"
+ },
+ "seeded": true,
+ "ledger": [
+  {
+   "date": "2026-07-18",
+   "action": "BUY",
+   "symbol": "CIEN",
+   "note": "21 sh ~$7,863 (quality 8%) on stage-3 seed (transition 2026-07-10) @ 374.41"
+  },
+  {
+   "date": "2026-07-18",
+   "action": "BUY",
+   "symbol": "CORZ",
+   "note": "191 sh ~$4,000 (spec 4%) on stage-3 seed (transition 2026-07-10) @ 20.94"
+  },
+  {
+   "date": "2026-07-18",
+   "action": "BUY",
+   "symbol": "SNPS",
+   "note": "20 sh ~$7,686 (quality 8%) on stage-3 seed (transition 2026-07-03) @ 384.28"
+  },
+  {
+   "date": "2026-07-18",
+   "action": "BUY",
+   "symbol": "TLN",
+   "note": "10 sh ~$3,724 (spec 4%) on stage-3 seed (transition 2026-06-26) @ 372.37"
+  }
+ ]
+}

@@ -54,7 +54,7 @@ def ladder(wk):
     state = str(states.iloc[-1])
     if r.get("bottom"):
         door = "ENTRY-BOTTOM"
-    elif cross_recent:
+    elif cross_recent and intact:
         door = "ENTRY-MACROSS"
     elif intact:
         door = "IN-TREND"

@@ -1,0 +1,214 @@
+{
+ "generated": "2026-07-19T08:06:55+00:00",
+ "names_with_data": 172,
+ "BOTTOM": {
+  "events": 266,
+  "names_with_signal": 118,
+  "signals_per_name_yr": {
+   "n": 118,
+   "median": 0.2,
+   "mean": 0.3,
+   "win_rate": 100.0
+  },
+  "fwd26w": {
+   "n": 255,
+   "median": 9.7,
+   "mean": 20.1,
+   "win_rate": 61.2
+  },
+  "fwd52w": {
+   "n": 222,
+   "median": 24.6,
+   "mean": 58.7,
+   "win_rate": 64.4
+  },
+  "fwd104w": {
+   "n": 175,
+   "median": 53.3,
+   "mean": 131.4,
+   "win_rate": 73.7
+  },
+  "excB26w": {
+   "n": 255,
+   "median": -2.5,
+   "mean": 5.4,
+   "win_rate": 46.3
+  },
+  "excB52w": {
+   "n": 222,
+   "median": -0.6,
+   "mean": 28.9,
+   "win_rate": 48.2
+  },
+  "excB104w": {
+   "n": 175,
+   "median": 6.5,
+   "mean": 78.3,
+   "win_rate": 53.1
+  },
+  "excS52w": {
+   "n": 222,
+   "median": 5.9,
+   "mean": 39.3,
+   "win_rate": 52.3
+  },
+  "mae52w": {
+   "n": 266,
+   "median": -22.5,
+   "mean": -25.1,
+   "win_rate": 0.0
+  },
+  "capture_pct": {
+   "n": 98,
+   "median": 48.0,
+   "mean": 61.1,
+   "win_rate": 88.8
+  },
+  "first_sig_vs_etf_pct": {
+   "n": 98,
+   "median": 90.9,
+   "mean": 368.5,
+   "win_rate": 61.2
+  }
+ },
+ "BRKOUT": {
+  "events": 340,
+  "names_with_signal": 153,
+  "signals_per_name_yr": {
+   "n": 153,
+   "median": 0.2,
+   "mean": 0.3,
+   "win_rate": 100.0
+  },
+  "fwd26w": {
+   "n": 321,
+   "median": 8.2,
+   "mean": 17.0,
+   "win_rate": 62.3
+  },
+  "fwd52w": {
+   "n": 281,
+   "median": 21.8,
+   "mean": 45.0,
+   "win_rate": 73.7
+  },
+  "fwd104w": {
+   "n": 229,
+   "median": 41.0,
+   "mean": 94.1,
+   "win_rate": 78.6
+  },
+  "excB26w": {
+   "n": 321,
+   "median": -0.3,
+   "mean": 6.0,
+   "win_rate": 49.5
+  },
+  "excB52w": {
+   "n": 281,
+   "median": 0.3,
+   "mean": 19.7,
+   "win_rate": 50.5
+  },
+  "excB104w": {
+   "n": 229,
+   "median": 3.9,
+   "mean": 46.8,
+   "win_rate": 51.5
+  },
+  "excS52w": {
+   "n": 281,
+   "median": 7.7,
+   "mean": 29.6,
+   "win_rate": 56.9
+  },
+  "mae52w": {
+   "n": 340,
+   "median": -15.2,
+   "mean": -19.6,
+   "win_rate": 0.0
+  },
+  "capture_pct": {
+   "n": 134,
+   "median": 39.8,
+   "mean": 41.6,
+   "win_rate": 88.1
+  },
+  "first_sig_vs_etf_pct": {
+   "n": 134,
+   "median": -10.6,
+   "mean": 220.6,
+   "win_rate": 46.3
+  }
+ },
+ "MACROSS": {
+  "events": 721,
+  "names_with_signal": 169,
+  "signals_per_name_yr": {
+   "n": 169,
+   "median": 0.5,
+   "mean": 0.5,
+   "win_rate": 100.0
+  },
+  "fwd26w": {
+   "n": 686,
+   "median": 11.7,
+   "mean": 21.4,
+   "win_rate": 66.0
+  },
+  "fwd52w": {
+   "n": 636,
+   "median": 23.1,
+   "mean": 49.9,
+   "win_rate": 71.1
+  },
+  "fwd104w": {
+   "n": 528,
+   "median": 43.9,
+   "mean": 98.1,
+   "win_rate": 80.1
+  },
+  "excB26w": {
+   "n": 686,
+   "median": 0.7,
+   "mean": 9.6,
+   "win_rate": 51.0
+  },
+  "excB52w": {
+   "n": 636,
+   "median": 0.2,
+   "mean": 23.0,
+   "win_rate": 50.0
+  },
+  "excB104w": {
+   "n": 528,
+   "median": 2.6,
+   "mean": 50.6,
+   "win_rate": 51.3
+  },
+  "excS52w": {
+   "n": 636,
+   "median": 5.9,
+   "mean": 32.3,
+   "win_rate": 55.5
+  },
+  "mae52w": {
+   "n": 721,
+   "median": -11.4,
+   "mean": -17.1,
+   "win_rate": 0.0
+  },
+  "capture_pct": {
+   "n": 146,
+   "median": 56.6,
+   "mean": 65.1,
+   "win_rate": 95.2
+  },
+  "first_sig_vs_etf_pct": {
+   "n": 146,
+   "median": 8.9,
+   "mean": 310.0,
+   "win_rate": 52.7
+  }
+ }
+}

@@ -28,6 +28,7 @@ import csv
 import io
 import json
 import sys
+import time
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -181,23 +182,39 @@ def scan(symbols):
 
 
 def enrich(ticker):
-    """Fundamentals for one hit; returns None if cap < $1B."""
-    try:
-        info = yf.Ticker(ticker).info
-    except Exception as e:
-        print(f"WARN info {ticker}: {e}", file=sys.stderr)
-        info = {}
-    cap = info.get("marketCap") or 0
-    if cap < MIN_CAP:
+    """Fundamentals for one hit; returns None only when cap is KNOWN < $1B.
+    Rate-limit resilient: retries with backoff, falls back to fast_info for
+    the cap, and never silently drops a hit just because Yahoo throttled."""
+    info = {}
+    for attempt in range(4):
+        try:
+            info = yf.Ticker(ticker).info
+            if info.get("marketCap") is not None:
+                break
+        except Exception as e:
+            if attempt == 3:
+                print(f"WARN info {ticker}: {e}", file=sys.stderr)
+        time.sleep(2 * (attempt + 1))
+    cap = info.get("marketCap")
+    if cap is None:
+        try:
+            cap = yf.Ticker(ticker).fast_info["marketCap"]
+        except Exception:
+            cap = None
+    if cap is not None and cap < MIN_CAP:
         return None
+    if cap is None:
+        print(f"WARN cap unknown for {ticker} — keeping unverified",
+              file=sys.stderr)
     pm, fcf, rg = (info.get("profitMargins"), info.get("freeCashflow"),
                    info.get("revenueGrowth"))
     quality = (((pm or 0) > 0 or (fcf or 0) > 0) and (rg is None or rg >= 0))
     return {
+        "cap_verified": cap is not None,
         "name": (info.get("shortName") or "").strip(),
         "sector": info.get("sector", ""),
         "industry": info.get("industry", ""),
-        "mkt_cap_B": round(cap / 1e9, 1),
+        "mkt_cap_B": round(cap / 1e9, 1) if cap else None,
         "pe": info.get("trailingPE"), "fwd_pe": info.get("forwardPE"),
         "rev_growth_pct": round(rg * 100, 1) if rg is not None else None,
         "profit_margin_pct": round(pm * 100, 1) if pm is not None else None,
@@ -238,6 +255,7 @@ def main():
     # --- new signals ---
     for t, r in results.items():
         if r["bottom"] and t not in watch:
+            time.sleep(0.6)
             f = enrich(t)
             if f is None:
                 continue
@@ -249,6 +267,7 @@ def main():
                         "state": r["state"], "dd_pct": r["dd_pct"],
                         "to_high_pct": r["to_high_pct"], "last_seen": today}
         elif r["breakout"]:
+            time.sleep(0.6)
             f = enrich(t)
             if f is None:
                 continue

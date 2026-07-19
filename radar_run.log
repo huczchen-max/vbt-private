@@ -15,74 +15,31 @@ $SVA: possibly delisted; no price data found  (period=2y)
 scanned 6177/6177
 WARN info ABEO: Too Many Requests. Rate limited. Try after a while.
 WARN info ADMA: Too Many Requests. Rate limited. Try after a while.
-WARN info APP: Too Many Requests. Rate limited. Try after a while.
-WARN info ARLO: Too Many Requests. Rate limited. Try after a while.
-WARN info ARQQ: Too Many Requests. Rate limited. Try after a while.
-WARN info ARTV: Too Many Requests. Rate limited. Try after a while.
-WARN info ASTC: Too Many Requests. Rate limited. Try after a while.
-WARN info ATAI: Too Many Requests. Rate limited. Try after a while.
-WARN info ATOM: Too Many Requests. Rate limited. Try after a while.
-WARN info AUR: Too Many Requests. Rate limited. Try after a while.
-WARN info BCRX: Too Many Requests. Rate limited. Try after a while.
-WARN info BFLY: Too Many Requests. Rate limited. Try after a while.
-WARN info BKSY: Too Many Requests. Rate limited. Try after a while.
-WARN info BLFS: Too Many Requests. Rate limited. Try after a while.
-WARN info BMA: Too Many Requests. Rate limited. Try after a while.
-WARN info BRKR: Too Many Requests. Rate limited. Try after a while.
-WARN info CAL: Too Many Requests. Rate limited. Try after a while.
-WARN info CAR: Too Many Requests. Rate limited. Try after a while.
-WARN info CARR: Too Many Requests. Rate limited. Try after a while.
-WARN info CHA: Too Many Requests. Rate limited. Try after a while.
-WARN info CHH: Too Many Requests. Rate limited. Try after a while.
-WARN info CODI: Too Many Requests. Rate limited. Try after a while.
-WARN info COLD: Too Many Requests. Rate limited. Try after a while.
-WARN info CORZ: Too Many Requests. Rate limited. Try after a while.
-WARN info CRWV: Too Many Requests. Rate limited. Try after a while.
-WARN info CSTL: Too Many Requests. Rate limited. Try after a while.
-WARN info DCTH: Too Many Requests. Rate limited. Try after a while.
-WARN info DG: Too Many Requests. Rate limited. Try after a while.
-WARN info DOCU: Too Many Requests. Rate limited. Try after a while.
-WARN info DSGX: Too Many Requests. Rate limited. Try after a while.
-WARN info DXYZ: Too Many Requests. Rate limited. Try after a while.
-WARN info EDSA: Too Many Requests. Rate limited. Try after a while.
-WARN info ENOV: Too Many Requests. Rate limited. Try after a while.
-WARN info ENPH: Too Many Requests. Rate limited. Try after a while.
-WARN info ESNT: Too Many Requests. Rate limited. Try after a while.
-WARN info ETOR: Too Many Requests. Rate limited. Try after a while.
-WARN info FIZZ: Too Many Requests. Rate limited. Try after a while.
-WARN info FMC: Too Many Requests. Rate limited. Try after a while.
-WARN info FOXF: Too Many Requests. Rate limited. Try after a while.
-WARN info FRHC: Too Many Requests. Rate limited. Try after a while.
-WARN info FTRE: Too Many Requests. Rate limited. Try after a while.
-WARN info GLUE: Too Many Requests. Rate limited. Try after a while.
-WARN info GRND: Too Many Requests. Rate limited. Try after a while.
-WARN info HPK: Too Many Requests. Rate limited. Try after a while.
-WARN info INBX: Too Many Requests. Rate limited. Try after a while.
-WARN info IOT: Too Many Requests. Rate limited. Try after a while.
-WARN info JBIO: Too Many Requests. Rate limited. Try after a while.
-WARN info JHX: Too Many Requests. Rate limited. Try after a while.
-WARN info KC: Too Many Requests. Rate limited. Try after a while.
-WARN info KFY: Too Many Requests. Rate limited. Try after a while.
-WARN info LI: Too Many Requests. Rate limited. Try after a while.
-WARN info LMB: Too Many Requests. Rate limited. Try after a while.
-WARN info LUMN: Too Many Requests. Rate limited. Try after a while.
-WARN info LWLG: Too Many Requests. Rate limited. Try after a while.
-WARN info LZB: Too Many Requests. Rate limited. Try after a while.
-WARN info MAN: Too Many Requests. Rate limited. Try after a while.
-WARN info MLKN: Too Many Requests. Rate limited. Try after a while.
-WARN info NEO: Too Many Requests. Rate limited. Try after a while.
-WARN info NET: Too Many Requests. Rate limited. Try after a while.
 analyzed: 2728 symbols past liquidity floors
-BOTTOM: 11, BREAKOUT: 3, watchlist: 11
-  BOTTOM SPEC    NVTS   Navitas Semiconductor Corp dd -60.8%  cap 2.8B  155.2% to 52w high
-  BOTTOM QUALITY PAYC   Paycom Software, Inc.      dd -37.5%  cap 6.9B  59.9% to 52w high
-  BOTTOM QUALITY PRG    PROG Holdings, Inc.        dd 0.0%  cap 1.9B  -0.7% to 52w high
-  BOTTOM QUALITY PRMB   Primo Brands Corporation   dd -12.6%  cap 9.0B  14.5% to 52w high
-  BOTTOM QUALITY SFM    Sprouts Farmers Market, In dd -53.0%  cap 7.1B  118.6% to 52w high
-  BOTTOM QUALITY SNPS   Synopsys, Inc.             dd -38.0%  cap 73.6B  61.2% to 52w high
-  BOTTOM QUALITY TPL    Texas Pacific Land Corpora dd -21.6%  cap 28.7B  27.6% to 52w high
-  BOTTOM SPEC    USAR   USA Rare Earth, Inc.       dd -52.0%  cap 3.8B  108.4% to 52w high
-  BOTTOM QUALITY VCYT   Veracyte, Inc.             dd -2.2%  cap 4.7B  2.3% to 52w high
-  BOTTOM QUALITY WSO    Watsco, Inc.               dd -21.6%  cap 15.3B  27.5% to 52w high
-  BOTTOM SPEC    ZLAB   Zai Lab Limited            dd -45.7%  cap 2.3B  84.0% to 52w high
+BOTTOM: 42, BREAKOUT: 10, watchlist: 52
+  BOTTOM SPEC    ADMA                              dd -56.1%  cap 2.0B  127.9% to 52w high
+  BOTTOM QUALITY APP    Applovin Corporation       dd -41.1%  cap 142.6B  69.9% to 52w high
+  BOTTOM QUALITY ARLO   Arlo Technologies, Inc.    dd -31.5%  cap 1.4B  46.1% to 52w high
+  BOTTOM SPEC    AUR    Aurora Innovation, Inc.    dd -21.4%  cap 11.9B  27.2% to 52w high
+  BOTTOM QUALITY BCRX   BioCryst Pharmaceuticals,  dd -11.1%  cap 2.4B  12.5% to 52w high
+  BOTTOM QUALITY BFLY   Butterfly Network, Inc.    dd -25.6%  cap 1.7B  34.4% to 52w high
+  BOTTOM SPEC    BMA    Banco Macro S.A.           dd -10.8%  cap 5.8B  12.1% to 52w high
+  BOTTOM QUALITY BRKR   Bruker Corporation         dd -5.5%  cap 8.9B  5.9% to 52w high
+  BOTTOM QUALITY CAR    Avis Budget Group, Inc.    dd -67.5%  cap 5.7B  207.6% to 52w high
+  BOTTOM QUALITY CARR   Carrier Global Corporation dd -13.9%  cap 57.1B  16.2% to 52w high
+  BOTTOM QUALITY CHA    Chagee Holdings Limited    dd -48.7%  cap 2.2B  103.5% to 52w high
+  BOTTOM QUALITY CHH    Choice Hotels Internationa dd -16.4%  cap 5.1B  19.6% to 52w high
+  BOTTOM QUALITY COLD   Americold Realty Trust, In dd -1.9%  cap 4.6B  1.9% to 52w high
+  BOTTOM QUALITY CORZ   Core Scientific, Inc.      dd -28.2%  cap 6.7B  39.3% to 52w high
+  BOTTOM SPEC    CRWV   CoreWeave, Inc.            dd -47.1%  cap 39.9B  89.1% to 52w high
+  BOTTOM QUALITY DG     Dollar General Corporation dd -18.7%  cap 27.7B  23.0% to 52w high
+  BOTTOM QUALITY DOCU   DocuSign, Inc.             dd -37.7%  cap 10.1B  60.4% to 52w high
+  BOTTOM QUALITY DSGX   The Descartes Systems Grou dd -31.2%  cap 6.4B  45.3% to 52w high
+  BOTTOM QUALITY ENOV   Enovis Corporation         dd -17.6%  cap 1.6B  21.4% to 52w high
+  BOTTOM SPEC    ENPH   Enphase Energy, Inc.       dd -39.2%  cap 5.5B  64.4% to 52w high
+  BOTTOM SPEC    ETOR   eToro Group Ltd.           dd -44.7%  cap 2.9B  80.9% to 52w high
+  BOTTOM SPEC    FIZZ   National Beverage Corp.    dd -26.6%  cap 2.9B  36.3% to 52w high
+  BOTTOM SPEC    FMC    FMC Corporation            dd -73.1%  cap 1.4B  272.2% to 52w high
+  BOTTOM QUALITY FRHC   Freedom Holding Corp.      dd -16.2%  cap 9.7B  19.3% to 52w high
+  BOTTOM SPEC    FTRE   Fortrea Holdings Inc.      dd 0.0%  cap 1.7B  0.0% to 52w high
 status=ok

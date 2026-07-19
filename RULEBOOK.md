@@ -74,3 +74,54 @@ comfort demands partial profit-taking, do it knowing the measured cost.)
 flags from 2026 fundamentals applied retroactively, stop simulation on weekly
 lows (gap risk unmodeled). These are directional findings the paper account
 is now forward-testing — not guarantees.
+
+
+---
+
+# Current Thinking (living section — update with every change)
+
+*This page is the single source of truth for the system's logic. The portal's
+Logic tab renders it live. When rules or hypotheses change, change THIS file
+(and trade_paper.py constants in lockstep), and add a change-log entry.*
+
+## Status of each layer
+
+- **Mechanical core (ENFORCED)**: Rulebook v2 above — stage-3 entries,
+  8%/4% sizing, group caps, spec-only −25% stop, 26-week clock. This is what
+  the paper engine actually trades.
+- **LLM risk officer (SHADOW)**: GO/CAUTION/VETO + regime gate computed
+  nightly, logged against every trade, NOT enforced. Decision point: score
+  the judgment log ~Oct 2026; flip ENFORCE_LLM only if VETO/RISK-OFF cohorts
+  measurably underperform.
+- **Narrative layer (HYPOTHESIS)**: weekly narrative-state + KOL stances +
+  stage-2 "2+" flags are being logged, not acted on. GDELT historical study
+  in progress (nightly trickle; full analysis due ~Aug 1 2026).
+
+## Open hypotheses under test
+
+1. **Narrative leads structure** — n=16 preliminary: tone inflections
+   preceded ALL structural signals (median ~4 weeks). Looks supported;
+   confirm at full sample.
+2. **Narrative as CONTRARIAN conditioner** — n=16 preliminary (striking,
+   unconfirmed): signals firing into still-gloomy narratives won 88% /
+   +33.8% median; warmed-up narratives at entry LOST money (−14.5% median).
+   If confirmed: comfort at confirmation = warning, fear = fuel. Do NOT
+   trade on this until the full-sample study lands.
+3. **"2+" early warning** — stage-2 names with positive narrative inflection
+   should convert to stage 3 faster/more reliably. Forward-logged weekly.
+
+## Review calendar
+
+- Monthly: paper ledger vs rulebook (deviations logged).
+- ~Aug 1 2026: full GDELT narrative study → update hypothesis 1/2 here.
+- ~Oct 2026: LLM judgment-log scoring → ENFORCE_LLM decision. Also token
+  renewals (3 places: Claude session, PRIVATE_REPO_TOKEN, .vbt_token).
+- Quarterly: rule-lab rerun as the forward sample grows.
+
+## Change log
+
+- **2026-07-18** — Rulebook v2 adopted (rule lab on 66 events): spec-only
+  −25% stop, MAX_PER_GROUP=4, no profit-taking confirmed, tight stops /
+  volume filters / daily entries REJECTED. LLM screen deployed in shadow.
+  Narrative layer added (weekly brief + KOL tracker + 2+ flags). GDELT
+  study launched; n=16 preliminary shows contrarian inversion.

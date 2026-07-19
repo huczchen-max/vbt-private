@@ -153,6 +153,9 @@ def main():
     (HERE / "radar_latest.json").write_text(json.dumps(
         {"date": today, "criteria": {"margin": MARGIN, "base_weeks": BASE_WEEKS,
                                      "min_cap_B": MIN_CAP / 1e9},
+         "stats": {"symbols_in_directory": len(symbols),
+                   "price_structure_hits": len(raw),
+                   "hits_over_1B": len(hits)},
          "hits": hits}, indent=1, default=str))
 
     logp = HERE / "radar_log.csv"

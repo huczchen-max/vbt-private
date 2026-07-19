@@ -1,0 +1,192 @@
+{
+ "generated": "2026-07-19T08:23:11+00:00",
+ "note": "ratio = exit-strategy terminal wealth / hold terminal wealth per name; cash yields 0 (anti-exit bias)",
+ "stock": {
+  "names": 170,
+  "hold_maxdd_median": {
+   "n": 170,
+   "median": -56.9,
+   "mean": -57.81,
+   "pct_gt_1": 0.0
+  },
+  "X1_STRUCT": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.64,
+    "mean": 0.74,
+    "pct_gt_1": 20.6
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -46.2,
+    "mean": -46.3,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 7.8,
+   "trades_median": 4,
+   "pct_invested_median": 51.6
+  },
+  "X2_MA52": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.52,
+    "mean": 0.7,
+    "pct_gt_1": 14.7
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -40.6,
+    "mean": -42.8,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 13.6,
+   "trades_median": 5,
+   "pct_invested_median": 41.1
+  },
+  "X3_CROSSDN": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.68,
+    "mean": 0.83,
+    "pct_gt_1": 22.4
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -51.8,
+    "mean": -52.29,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 3.5,
+   "trades_median": 4,
+   "pct_invested_median": 75.0
+  },
+  "X4_TRAIL25": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.59,
+    "mean": 0.84,
+    "pct_gt_1": 18.8
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -43.1,
+    "mean": -45.58,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 11.9,
+   "trades_median": 4,
+   "pct_invested_median": 55.3
+  },
+  "X5_COMBO": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.82,
+    "mean": 0.89,
+    "pct_gt_1": 21.8
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -52.1,
+    "mean": -52.75,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 0.4,
+   "trades_median": 3,
+   "pct_invested_median": 78.9
+  }
+ },
+ "etf": {
+  "names": 19,
+  "hold_maxdd_median": {
+   "n": 19,
+   "median": -43.2,
+   "mean": -43.66,
+   "pct_gt_1": 0.0
+  },
+  "X1_STRUCT": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 0.75,
+    "mean": 0.8,
+    "pct_gt_1": 26.3
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -27.3,
+    "mean": -28.36,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 12.5,
+   "trades_median": 3,
+   "pct_invested_median": 47.0
+  },
+  "X2_MA52": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 0.68,
+    "mean": 0.63,
+    "pct_gt_1": 5.3
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -22.7,
+    "mean": -23.86,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 20.5,
+   "trades_median": 5,
+   "pct_invested_median": 43.9
+  },
+  "X3_CROSSDN": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 0.84,
+    "mean": 0.85,
+    "pct_gt_1": 31.6
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -34.3,
+    "mean": -35.06,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 5.9,
+   "trades_median": 4,
+   "pct_invested_median": 79.3
+  },
+  "X4_TRAIL25": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 0.66,
+    "mean": 0.68,
+    "pct_gt_1": 5.3
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -34.2,
+    "mean": -35.75,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 7.8,
+   "trades_median": 2,
+   "pct_invested_median": 80.9
+  },
+  "X5_COMBO": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 1.0,
+    "mean": 0.98,
+    "pct_gt_1": 47.4
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -33.8,
+    "mean": -35.62,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 7.8,
+   "trades_median": 3,
+   "pct_invested_median": 84.3
+  }
+ }
+}

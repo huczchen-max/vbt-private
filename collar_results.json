@@ -1,0 +1,86 @@
+{
+ "generated": "2026-07-19T15:06:26+00:00",
+ "note": "collar priced with BS on RV*1.1 \u2014 approximation; real skew makes collars slightly worse than modeled",
+ "etf": {
+  "names": 19,
+  "hold_maxdd_median": {
+   "n": 19,
+   "median": -43.2,
+   "mean": -43.66,
+   "pct_gt_1": 0.0
+  },
+  "BRAKE": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 1.0,
+    "mean": 0.98,
+    "pct_gt_1": 47.4
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -33.8,
+    "mean": -35.62,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 7.8,
+   "pct_collared_median": 0.0
+  },
+  "COLLAR": {
+   "wealth_ratio": {
+    "n": 19,
+    "median": 0.94,
+    "mean": 0.93,
+    "pct_gt_1": 36.8
+   },
+   "maxdd_median": {
+    "n": 19,
+    "median": -34.6,
+    "mean": -35.15,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 7.8,
+   "pct_collared_median": 23.7
+  }
+ },
+ "stock": {
+  "names": 170,
+  "hold_maxdd_median": {
+   "n": 170,
+   "median": -56.9,
+   "mean": -57.81,
+   "pct_gt_1": 0.0
+  },
+  "BRAKE": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.82,
+    "mean": 0.89,
+    "pct_gt_1": 21.8
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -52.1,
+    "mean": -52.75,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 0.4,
+   "pct_collared_median": 0.0
+  },
+  "COLLAR": {
+   "wealth_ratio": {
+    "n": 170,
+    "median": 0.8,
+    "mean": 0.88,
+    "pct_gt_1": 25.3
+   },
+   "maxdd_median": {
+    "n": 170,
+    "median": -48.3,
+    "mean": -50.1,
+    "pct_gt_1": 0.0
+   },
+   "dd_improvement_median": 6.1,
+   "pct_collared_median": 29.0
+  }
+ }
+}

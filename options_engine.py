@@ -71,7 +71,7 @@ def earnings_within(tk, days):
         for d in dates if isinstance(dates, (list, tuple)) else [dates]:
             try:
                 dd = pd.Timestamp(d).tz_localize(None)
-                delta = (dd - pd.Timestamp.utcnow().tz_localize(None)).days
+                delta = (dd - pd.Timestamp.now('UTC').tz_localize(None)).days
                 if 0 <= delta <= days:
                     return True
             except Exception:

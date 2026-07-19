@@ -45,6 +45,7 @@ MIN_PRICE = 5.0
 MIN_WK_DOLLAR_VOL = 25e6
 MIN_CAP = 1e9
 CHUNK = 200
+SEED_WEEKS = 13  # bottom signals within this trailing window join the watchlist
 
 
 def get_symbols():
@@ -126,10 +127,18 @@ def analyze(wk):
     dd = close / peak52 - 1.0
     dd_min26 = dd.rolling(26, min_periods=1).min()
     cur_state, cur_dd = str(states.iloc[-1]), float(dd.iloc[-1])
-    corrected = bool(dd_min26.iloc[-1] <= DD_ENTER)
-    fresh_up = cur_state == "Uptrend" and str(states.iloc[-2]) != "Uptrend"
-    bottom = (corrected and cur_state == "Uptrend"
-              and cur_dd <= DD_STILL_BELOW and fresh_up)
+    # BOTTOM: a fresh Uptrend confirmation within the last SEED_WEEKS weeks
+    # (conditions evaluated AT the transition week), still Uptrend now.
+    bottom, bottom_date = False, None
+    if cur_state == "Uptrend":
+        for j in range(max(1, len(states) - SEED_WEEKS), len(states)):
+            if (str(states.iloc[j]) == "Uptrend"
+                    and str(states.iloc[j - 1]) != "Uptrend"
+                    and float(dd.iloc[j]) <= DD_STILL_BELOW
+                    and float(dd_min26.iloc[j]) <= DD_ENTER
+                    and all(str(s) == "Uptrend" for s in states.iloc[j:])):
+                bottom, bottom_date = True, states.index[j].date().isoformat()
+                break
 
     prior = close.iloc[:-1]
     hi52 = float(prior.tail(52).max())
@@ -142,7 +151,7 @@ def analyze(wk):
         "max_dd_26w_pct": round(float(dd_min26.iloc[-1]) * 100, 1),
         "prior_52w_high": round(hi52, 2),
         "to_high_pct": round((hi52 / cur - 1) * 100, 1),
-        "bottom": bottom, "breakout": breakout,
+        "bottom": bottom, "bottom_date": bottom_date, "breakout": breakout,
     }
 
 
@@ -233,7 +242,8 @@ def main():
             if f is None:
                 continue
             events.append(("BOTTOM", t, r, f))
-            watch[t] = {"added": today, "signal": "BOTTOM", "tag": f["tag"],
+            watch[t] = {"added": today, "signal_date": r.get("bottom_date"),
+                        "signal": "BOTTOM", "tag": f["tag"],
                         "name": f["name"], "sector": f["sector"],
                         "mkt_cap_B": f["mkt_cap_B"], "close": r["close"],
                         "state": r["state"], "dd_pct": r["dd_pct"],

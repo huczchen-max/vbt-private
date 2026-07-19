@@ -1,16 +1,16 @@
-$CORZ: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784467350. The requested range must be within the last 730 days.")
+$CORZ: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784468332. The requested range must be within the last 730 days.")
 
 1 Failed download:
-['CORZ']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784467350. The requested range must be within the last 730 days.")
+['CORZ']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784468332. The requested range must be within the last 730 days.")
 universe: 37
-processed 20/37, events 4016
-$GEV: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784467354. The requested range must be within the last 730 days.")
+processed 20/37, events 5927
+$GEV: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784468337. The requested range must be within the last 730 days.")
 
 1 Failed download:
-['GEV']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784467354. The requested range must be within the last 730 days.")
-processed 37/37, events 7318
+['GEV']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784468337. The requested range must be within the last 730 days.")
+processed 37/37, events 10821
 {
- "NORMAL": {
+ "BULL/NORMAL": {
   "TOP": {
    "n": 299,
    "median": 0.491,
@@ -36,7 +36,7 @@ processed 37/37, events 7318
    "p_ge_2": 30.6
   }
  },
- "PARABOLIC": {
+ "BULL/PARABOLIC": {
   "TOP": {
    "n": 33,
    "median": 1.601,
@@ -60,6 +60,51 @@ processed 37/37, events 7318
    "win_rate": 55.5,
    "p_le_m2": 26.7,
    "p_ge_2": 34.9
+  }
+ },
+ "BEAR/NORMAL": {
+  "TOP": {
+   "n": 129,
+   "median": 0.333,
+   "mean": -0.084,
+   "win_rate": 53.5,
+   "p_le_m2": 26.4,
+   "p_ge_2": 27.1
+  },
+  "BOTTOM": {
+   "n": 168,
+   "median": 0.45,
+   "mean": 0.868,
+   "win_rate": 54.8,
+   "p_le_m2": 23.8,
+   "p_ge_2": 31.5
+  },
+  "CTRL": {
+   "n": 2689,
+   "median": 0.439,
+   "mean": 0.69,
+   "win_rate": 55.3,
+   "p_le_m2": 25.8,
+   "p_ge_2": 31.1
+  }
+ },
+ "BEAR/CAPITULATIVE": {
+  "TOP": {
+   "n": 34,
+   "median": -0.081,
+   "mean": 0.106,
+   "win_rate": 44.1,
+   "p_le_m2": 35.3,
+   "p_ge_2": 32.4
+  },
+  "BOTTOM": null,
+  "CTRL": {
+   "n": 465,
+   "median": 0.938,
+   "mean": 0.957,
+   "win_rate": 61.7,
+   "p_le_m2": 21.5,
+   "p_ge_2": 39.4
   }
  }
 }

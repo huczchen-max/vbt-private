@@ -1,0 +1,5 @@
+date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_high,mkt_cap_B,sector,industry,pe,fwd_pe,rev_growth_pct,profit_margin_pct,fcf_B
+2026-07-19,BREAKOUT,OCFC,OceanFirst Financial Corp.,QUALITY,19.92,0.0,-12.6,-1.0,19.72,1.7,Financial Services,Banks - Regional,16.877121,8.605231,8.5,17.6,
+2026-07-19,BREAKOUT,RHI,Robert Half Inc.,SPEC,41.8,0.0,-56.2,-8.0,38.46,4.3,Industrials,Staffing & Employment Services,32.153847,20.274923,-3.8,2.4,0.14
+2026-07-19,BREAKOUT,SYBT,"Stock Yards Bancorp, Inc.",QUALITY,81.14,0.0,-23.3,-1.3,80.08,2.4,Financial Services,Banks - Regional,16.695473,14.60227,9.4,35.9,
+2026-07-19,BOTTOM,ZLAB,Zai Lab Limited,SPEC,20.2,-45.7,-59.5,84.0,37.17,2.3,Healthcare,Biotechnology,,-11.57003,-6.5,-39.3,-0.07

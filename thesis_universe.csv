@@ -18,18 +18,18 @@ ALAB,ai,semis,"Astera Labs, Inc.",52.0,303.62,-39.2,203.8,69.5,1.0,93.4,76.0,20.
 MPWR,ai,semis,"Monolithic Power Systems, Inc.",64.5,1312.00,-23.5,94.3,42.9,3.0,26.1,55.2,30.0,0.5,power management
 ON,ai,semis,ON Semiconductor Corporation,34.0,87.37,-35.2,64.2,20.1,6.1,4.7,42.7,18.2,1.3,power semis
 INTC,ai,semis,Intel Corporation,477.7,95.04,-33.2,,58.9,53.8,7.2,37.2,6.9,-8.3,foundry turnaround option
-COHR,ai,semis,Coherent Corp.,54.3,277.60,-36.9,131.6,33.7,6.6,20.5,37.0,13.6,-0.2,optical/photonic
-LITE,ai,semis,Lumentum Holdings Inc.,57.0,732.82,-32.5,128.1,40.0,2.5,90.1,40.8,21.8,0.1,optics
-CIEN,ai,semis,Ciena Corporation,53.0,374.41,-41.3,124.8,38.8,5.6,39.5,43.0,15.2,0.7,optical networking
-ANET,ai,semis,"Arista Networks, Inc.",212.3,168.61,-11.2,57.7,37.7,9.7,35.1,63.5,42.7,4.4,AI networking switches
-SMCI,ai,semis,"Super Micro Computer, Inc.",15.6,24.18,-61.2,12.7,7.7,33.7,122.7,8.4,6.1,-7.4,AI servers (governance history)
-DELL,ai,semis,Dell Technologies Inc.,256.1,396.34,-15.6,31.6,18.4,134.0,87.5,19.2,8.9,5.4,AI servers at scale
-HPE,ai,semis,Hewlett Packard Enterprise Comp,60.7,45.82,-28.7,42.8,11.5,38.8,40.0,33.8,8.7,3.8,servers/networking
-VRT,ai,semis,"Vertiv Holdings, LLC",111.2,289.56,-23.8,72.9,32.6,10.8,30.1,37.2,16.4,2.0,datacenter power/cooling
-STX,ai,semis,,178.2,787.66,-31.2,74.7,27.7,11.0,44.1,41.6,35.7,1.6,HAMR drives / AI storage
-WDC,ai,semis,,164.5,477.22,-40.3,28.6,25.7,11.8,45.5,45.4,37.0,2.1,HDD duopoly
-P,ai,hardware,,,,,,,,,,,,Everpure (ex-Pure Storage) — AI/flash data storage
-MOD,ai,semis,Modine Manufacturing Company,12.2,229.34,-29.1,101.0,20.2,3.2,47.5,23.0,11.8,-0.1,datacenter cooling
+COHR,ai,hardware,Coherent Corp.,54.3,277.60,-36.9,131.6,33.7,6.6,20.5,37.0,13.6,-0.2,optical/photonic
+LITE,ai,hardware,Lumentum Holdings Inc.,57.0,732.82,-32.5,128.1,40.0,2.5,90.1,40.8,21.8,0.1,optics
+CIEN,ai,hardware,Ciena Corporation,53.0,374.41,-41.3,124.8,38.8,5.6,39.5,43.0,15.2,0.7,optical networking
+ANET,ai,hardware,"Arista Networks, Inc.",212.3,168.61,-11.2,57.7,37.7,9.7,35.1,63.5,42.7,4.4,AI networking switches
+SMCI,ai,hardware,"Super Micro Computer, Inc.",15.6,24.18,-61.2,12.7,7.7,33.7,122.7,8.4,6.1,-7.4,AI servers (governance history)
+DELL,ai,hardware,Dell Technologies Inc.,256.1,396.34,-15.6,31.6,18.4,134.0,87.5,19.2,8.9,5.4,AI servers at scale
+HPE,ai,hardware,Hewlett Packard Enterprise Comp,60.7,45.82,-28.7,42.8,11.5,38.8,40.0,33.8,8.7,3.8,servers/networking
+VRT,ai,hardware,"Vertiv Holdings, LLC",111.2,289.56,-23.8,72.9,32.6,10.8,30.1,37.2,16.4,2.0,datacenter power/cooling
+STX,ai,hardware,,178.2,787.66,-31.2,74.7,27.7,11.0,44.1,41.6,35.7,1.6,HAMR drives / AI storage
+WDC,ai,hardware,,164.5,477.22,-40.3,28.6,25.7,11.8,45.5,45.4,37.0,2.1,HDD duopoly
+P,ai,hardware,,23.1,69.38,-31.0,105.1,23.1,3.9,,70.2,-18.5,0.3,Everpure (ex-Pure Storage) — AI/flash data storage
+MOD,ai,hardware,Modine Manufacturing Company,12.2,229.34,-29.1,101.0,20.2,3.2,47.5,23.0,11.8,-0.1,datacenter cooling
 CRWV,ai,neocloud,"CoreWeave, Inc.",39.9,73.21,-52.2,,-50.0,6.2,111.6,69.4,-6.9,-8.6,largest neocloud
 NBIS,ai,neocloud,Nebius Group N.V.,45.1,177.71,-40.7,68.6,492.0,0.9,683.9,72.1,-32.1,-6.1,EU-origin neocloud
 IREN,ai,neocloud,IREN LIMITED,12.0,33.62,-56.3,43.7,-35.8,0.8,-0.0,68.4,-64.5,-2.3,renewables-powered DC
@@ -173,9 +173,9 @@ GLXY,outlier,multi-theme,Galaxy Digital Inc.,8.4,21.63,-52.9,,297.7,58.7,-20.6,1
 GEV,outlier,multi-theme,GE Vernova Inc.,284.3,1057.84,-11.5,31.0,43.0,39.4,16.3,20.3,5.5,9.3,AI power + grid equipment + nuclear (spans ai/grid)
 TSLA,outlier,multi-theme,"Tesla, Inc.",1430.3,380.84,-23.7,346.2,149.1,97.9,15.8,19.1,4.2,5.3,EV + energy storage + Optimus humanoid + FSD autonomy
 SPCX,outlier,multi-theme,Space Exploration Technologies,1633.5,123.99,-45.0,,137.3,19.3,15.4,48.8,-41.6,,SpaceX — launch + Starlink + defense + space datacenters (IPO 2026-06-12)
-UBER,outlier,multi-theme,,,,,,,,,,,,autonomy/physical-AI demand platform without robot capex
-COIN,outlier,multi-theme,,,,,,,,,,,,crypto exchange + custody + stablecoin infrastructure
-HOOD,outlier,multi-theme,,,,,,,,,,,,retail brokerage + crypto + fintech super-app
+UBER,outlier,multi-theme,"Uber Technologies, Inc.",147.5,72.46,-29.0,18.0,16.3,53.7,14.5,39.6,14.6,6.5,autonomy/physical-AI demand platform without robot capex
+COIN,outlier,multi-theme,"Coinbase Global, Inc.",41.4,157.12,-64.0,57.8,33.1,6.3,-30.8,85.5,-7.1,2.4,crypto exchange + custody + stablecoin infrastructure
+HOOD,outlier,multi-theme,"Robinhood Markets, Inc.",90.0,99.96,-35.0,48.5,32.5,4.6,15.1,92.2,38.5,,retail brokerage + crypto + fintech super-app
 SMH,etf,theme,,77.2,556.53,-17.2,36.0,,,,,,,AI semis benchmark
 IGV,etf,theme,iShares Expanded Tech-Software,13.5,92.80,-21.3,32.0,,,,,,,software benchmark
 AIQ,etf,theme,Global X Artificial Intelligenc,10.4,58.70,-16.5,25.9,,,,,,,broad AI

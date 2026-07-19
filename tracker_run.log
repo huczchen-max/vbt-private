@@ -8,3 +8,10 @@ tracked 194 names; doors {'IN-TREND': 113, 'ENTRY-BOTTOM': 7, 'BROKEN': 65, 'ENT
   health    etf=IN-TREND/Mixed breadth intact 35.5% uptrend 19.4%
   outlier   etf=IN-TREND/Mixed breadth intact 28.6% uptrend 14.3%
 status=ok
+exhaustion: 37 symbols, 0 flagged (score>=2)
+ai        extremity -2 (split, cooler)
+grid      extremity 4 (split, hotter)
+robotics  extremity 4 (split, hotter)
+defense   extremity None (None, None)
+health    extremity 3 (split, hotter)
+outlier   extremity 2 (split, cooler)

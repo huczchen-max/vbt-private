@@ -28,7 +28,7 @@ HPE,ai,semis,Hewlett Packard Enterprise Comp,60.7,45.82,-28.7,42.8,11.5,38.8,40.
 VRT,ai,semis,"Vertiv Holdings, LLC",111.2,289.56,-23.8,72.9,32.6,10.8,30.1,37.2,16.4,2.0,datacenter power/cooling
 STX,ai,semis,,178.2,787.66,-31.2,74.7,27.7,11.0,44.1,41.6,35.7,1.6,HAMR drives / AI storage
 WDC,ai,semis,,164.5,477.22,-40.3,28.6,25.7,11.8,45.5,45.4,37.0,2.1,HDD duopoly
-PSTG,ai,semis,,,,,,,,,,,,flash storage for AI
+P,ai,semis,,,,,,,,,,,,Everpure (ex-Pure Storage) — AI/flash data storage
 MOD,ai,semis,Modine Manufacturing Company,12.2,229.34,-29.1,101.0,20.2,3.2,47.5,23.0,11.8,-0.1,datacenter cooling
 CRWV,ai,neocloud,"CoreWeave, Inc.",39.9,73.21,-52.2,,-50.0,6.2,111.6,69.4,-6.9,-8.6,largest neocloud
 NBIS,ai,neocloud,Nebius Group N.V.,45.1,177.71,-40.7,68.6,492.0,0.9,683.9,72.1,-32.1,-6.1,EU-origin neocloud
@@ -164,7 +164,6 @@ CRSP,health,biotech,CRISPR Therapeutics AG,4.7,47.78,-39.1,,-12.3,0.0,68.6,0.0,-
 NTLA,health,biotech,"Intellia Therapeutics, Inc.",1.6,11.38,-59.7,,-6.5,0.1,-9.5,0.0,-668.1,-0.2,in-vivo editing (spec)
 BEAM,health,biotech,Beam Therapeutics Inc.,2.8,27.53,-28.0,,-5.8,0.2,324.9,-146.9,-337.8,-0.2,base editing (spec)
 ILMN,health,biotech,"Illumina, Inc.",28.2,186.65,-5.1,33.9,31.5,4.4,4.8,68.3,18.3,0.8,sequencing incumbent
-EXAS,health,biotech,,,,,,,,,,,,cancer screening
 GH,health,biotech,"Guardant Health, Inc.",20.7,155.87,-10.5,,-359.8,1.1,48.3,64.9,-40.2,-0.1,liquid biopsy
 NTRA,health,biotech,"Natera, Inc.",38.9,271.39,-5.8,,-1325.9,2.5,38.8,65.1,-12.4,0.1,cfDNA testing leader
 ABBV,health,biotech,AbbVie Inc.,449.6,254.49,-2.7,124.8,15.6,62.8,12.4,72.0,32.2,20.8,immunology cash machine

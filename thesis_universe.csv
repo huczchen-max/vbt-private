@@ -1,0 +1,195 @@
+ticker,theme,subtheme,role
+NVDA,ai,semis,GPU/accelerator king; robotics+AI platform
+AMD,ai,semis,"#2 accelerator, DC CPU share gains"
+AVGO,ai,semis,custom AI ASICs + networking
+ARM,ai,semis,IP for edge/DC compute
+MRVL,ai,semis,custom silicon + optical DSP
+MU,ai,semis,HBM memory
+TSM,ai,semis,the foundry
+ASML,ai,semis,EUV monopoly
+AMAT,ai,semis,broad WFE
+LRCX,ai,semis,etch/dep WFE
+KLAC,ai,semis,process control
+QCOM,ai,semis,edge AI silicon
+SNPS,ai,semis,EDA duopoly
+CDNS,ai,semis,EDA duopoly
+CRDO,ai,semis,AEC cables/SerDes
+ALAB,ai,semis,connectivity for AI servers
+MPWR,ai,semis,power management
+ON,ai,semis,power semis
+INTC,ai,semis,foundry turnaround option
+COHR,ai,semis,optical/photonic
+LITE,ai,semis,optics
+CIEN,ai,semis,optical networking
+ANET,ai,semis,AI networking switches
+SMCI,ai,semis,AI servers (governance history)
+DELL,ai,semis,AI servers at scale
+HPE,ai,semis,servers/networking
+VRT,ai,semis,datacenter power/cooling
+STX,ai,semis,HAMR drives / AI storage
+WDC,ai,semis,HDD duopoly
+PSTG,ai,semis,flash storage for AI
+MOD,ai,semis,datacenter cooling
+CRWV,ai,neocloud,largest neocloud
+NBIS,ai,neocloud,EU-origin neocloud
+IREN,ai,neocloud,renewables-powered DC
+APLD,ai,neocloud,HPC datacenters
+WULF,ai,neocloud,miner-to-AI pivot
+CORZ,ai,neocloud,HPC hosting
+CIFR,ai,neocloud,miner-to-AI pivot
+HUT,ai,neocloud,compute + power
+MSFT,ai,platform,Azure + Copilot + OpenAI
+GOOGL,ai,platform,Gemini + TPU full stack
+AMZN,ai,platform,AWS + Anthropic + Trainium
+META,ai,platform,open models + ad AI + compute resale
+AAPL,ai,platform,edge AI distribution
+ORCL,ai,platform,OCI AI cloud
+PLTR,ai,software,enterprise/defense AI ontology
+APP,ai,software,AI ad engine
+NOW,ai,software,agentic enterprise workflows
+CRM,ai,software,Agentforce
+SNOW,ai,software,data cloud for AI
+DDOG,ai,software,observability for AI apps
+MDB,ai,software,AI app database
+NET,ai,software,edge inference network
+CRWD,ai,software,AI-native security
+PANW,ai,software,security platform
+IOT,ai,software,physical-ops AI
+PATH,ai,software,RPA→agentic automation
+DUOL,ai,software,consumer AI app economics
+RDDT,ai,software,data licensing + AI search
+SOUN,ai,software,voice AI (spec)
+AI,ai,software,enterprise AI apps (spec)
+BBAI,ai,software,defense AI analytics (spec)
+VST,grid,generation,merchant power + nuclear
+CEG,grid,generation,largest US nuclear fleet
+TLN,grid,generation,nuclear + DC deals
+NRG,grid,generation,merchant power + retail
+NEE,grid,generation,renewables giant
+SO,grid,generation,regulated growth + Vogtle
+DUK,grid,generation,regulated southeast demand
+OKLO,grid,nuclear-new,SMR developer (spec)
+SMR,grid,nuclear-new,NuScale SMR (spec)
+BWXT,grid,nuclear-new,nuclear components/naval
+CCJ,grid,nuclear-new,uranium major
+LEU,grid,nuclear-new,US enrichment
+UEC,grid,nuclear-new,US uranium (spec)
+ETN,grid,equipment,electrical everything
+HUBB,grid,equipment,grid components
+NVT,grid,equipment,electrical connection/protection
+ATKR,grid,equipment,conduit/infrastructure
+AMSC,grid,equipment,grid tech/superconductors (spec)
+ITRI,grid,equipment,grid edge/metering
+TT,grid,equipment,cooling/HVAC for DC era
+PWR,grid,builders,the grid builder
+EME,grid,builders,electrical construction
+FIX,grid,builders,mechanical/electrical contractor
+STRL,grid,builders,e-infrastructure/DC sitework
+IESC,grid,builders,electrical infrastructure
+MYRG,grid,builders,T&D construction
+POWL,grid,builders,switchgear
+FSLR,grid,storage-solar,US-made solar for DC/utility
+NXT,grid,storage-solar,solar trackers
+FLNC,grid,storage-solar,grid storage
+EOSE,grid,storage-solar,long-duration storage (spec)
+BE,grid,storage-solar,fuel cells for DC power (spec)
+ALB,grid,storage-solar,lithium
+DE,robotics,platforms,autonomous ag
+HON,robotics,platforms,industrial automation
+EMR,robotics,platforms,automation portfolio
+ROK,robotics,platforms,factory automation pure-ish play
+TER,robotics,enablers,robot test + Universal Robots
+CGNX,robotics,enablers,machine vision
+ZBRA,robotics,enablers,enterprise autonomy/vision
+AMBA,robotics,enablers,edge vision silicon
+OUST,robotics,enablers,lidar (spec)
+NOVT,robotics,enablers,precision robotics components
+SYM,robotics,appliers,warehouse automation at Walmart scale
+SERV,robotics,appliers,sidewalk delivery robots (spec)
+RR,robotics,appliers,service robots (spec)
+LMT,defense,primes,prime + hypersonics
+RTX,defense,primes,prime + missiles/GTF
+NOC,defense,primes,B-21 + nukes
+GD,defense,primes,subs + land
+LHX,defense,primes,electronics prime
+BA,defense,primes,duopoly airframer (turnaround)
+GE,defense,primes,engines/aero anchor
+HWM,defense,suppliers,aero fasteners/structures
+TDG,defense,suppliers,aftermarket monopoly economics
+HEI,defense,suppliers,aero parts compounder
+CW,defense,suppliers,naval/nuclear components
+DRS,defense,suppliers,sensing/electronics
+MRCY,defense,suppliers,defense compute
+TXT,defense,suppliers,Bell + Textron systems
+AXON,defense,newgen,public-safety tech monopoly-ish
+KTOS,defense,newgen,drones/hypersonics
+AVAV,defense,newgen,small drones + loitering munitions
+ACHR,defense,newgen,eVTOL + defense JV (spec)
+JOBY,defense,newgen,eVTOL (spec)
+KRMN,defense,newgen,space/defense components (2025 IPO)
+RKLB,defense,space,launch + space systems
+LUNR,defense,space,lunar services
+ASTS,defense,space,direct-to-cell constellation (spec)
+RDW,defense,space,space infrastructure (spec)
+PL,defense,space,earth observation data
+IRDM,defense,space,satcom incumbent
+VOYG,defense,space,space infrastructure (2025 IPO)
+LDOS,defense,services,defense IT
+BAH,defense,services,defense digital/AI
+CACI,defense,services,defense tech services
+SAIC,defense,services,gov IT
+LLY,health,glp1-metabolic,tirzepatide + orforglipron: the franchise
+NVO,health,glp1-metabolic,semaglutide (ADR)
+VKTX,health,glp1-metabolic,obesity pipeline (spec)
+HIMS,health,glp1-metabolic,GLP-1 distribution/telehealth
+TEM,health,ai-medicine,AI diagnostics/data
+RXRX,health,ai-medicine,AI drug discovery (spec)
+SDGR,health,ai-medicine,physics+AI discovery platform
+WGS,health,ai-medicine,AI genomic diagnostics
+ISRG,health,medtech,surgical robotics monopoly-ish
+SYK,health,medtech,ortho robotics + medsurg
+BSX,health,medtech,electrophysiology growth
+EW,health,medtech,structural heart
+MDT,health,medtech,diversified devices
+ABT,health,medtech,devices + diagnostics
+DXCM,health,medtech,CGM duopoly
+PODD,health,medtech,insulin pumps
+GEHC,health,medtech,imaging + AI
+TMO,health,tools,life-science tools king
+DHR,health,tools,bioprocessing
+A,health,tools,tools/diagnostics
+MEDP,health,tools,CRO for biotech
+VRTX,health,biotech,CF franchise + pain (non-opioid)
+REGN,health,biotech,antibody engine
+CRSP,health,biotech,CRISPR (approved therapy)
+NTLA,health,biotech,in-vivo editing (spec)
+BEAM,health,biotech,base editing (spec)
+ILMN,health,biotech,sequencing incumbent
+EXAS,health,biotech,cancer screening
+GH,health,biotech,liquid biopsy
+NTRA,health,biotech,cfDNA testing leader
+ABBV,health,biotech,immunology cash machine
+JNJ,health,biotech,diversified anchor
+GLXY,outlier,multi-theme,crypto financial services + AI datacenter (Helios) pivot
+GEV,outlier,multi-theme,AI power + grid equipment + nuclear (spans ai/grid)
+TSLA,outlier,multi-theme,EV + energy storage + Optimus humanoid + FSD autonomy
+SPCX,outlier,multi-theme,SpaceX — launch + Starlink + defense + space datacenters (IPO 2026-06-12)
+SMH,etf,theme,AI semis benchmark
+IGV,etf,theme,software benchmark
+AIQ,etf,theme,broad AI
+GRID,etf,theme,grid infrastructure
+URA,etf,theme,uranium
+XLU,etf,theme,utilities
+BOTZ,etf,theme,robotics/AI
+ROBO,etf,theme,robotics broad
+ARKQ,etf,theme,autonomous tech
+ITA,etf,theme,aerospace/defense
+PPA,etf,theme,defense broad
+ARKX,etf,theme,space
+XLV,etf,theme,healthcare
+XBI,etf,theme,biotech equal-weight
+IHI,etf,theme,medical devices
+ARKG,etf,theme,genomics
+SPY,etf,benchmark,market
+QQQ,etf,benchmark,growth
+IWM,etf,benchmark,small caps

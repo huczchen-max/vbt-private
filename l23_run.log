@@ -1,0 +1,95 @@
+processed 100/177, events 11452
+processed 177/177, events 19101
+{
+ "generated": "2026-07-19T08:45:30+00:00",
+ "control_stride": 4,
+ "L2": {
+  "events": 267,
+  "names": 130,
+  "fwd13w": {
+   "n": 263,
+   "median": 2.7,
+   "mean": 6.0,
+   "win_rate": 55.9
+  },
+  "fwd26w": {
+   "n": 256,
+   "median": 6.8,
+   "mean": 8.8,
+   "win_rate": 60.9
+  },
+  "fwd52w": {
+   "n": 233,
+   "median": 17.8,
+   "mean": 30.3,
+   "win_rate": 70.8
+  }
+ },
+ "C2": {
+  "events": 6035,
+  "names": 171,
+  "fwd13w": {
+   "n": 5843,
+   "median": 5.0,
+   "mean": 7.9,
+   "win_rate": 61.2
+  },
+  "fwd26w": {
+   "n": 5609,
+   "median": 9.3,
+   "mean": 17.0,
+   "win_rate": 64.8
+  },
+  "fwd52w": {
+   "n": 5161,
+   "median": 19.1,
+   "mean": 34.9,
+   "win_rate": 69.3
+  }
+ },
+ "L3": {
+  "events": 1935,
+  "names": 166,
+  "fwd13w": {
+   "n": 1865,
+   "median": 4.0,
+   "mean": 7.2,
+   "win_rate": 60.2
+  },
+  "fwd26w": {
+   "n": 1783,
+   "median": 7.9,
+   "mean": 15.2,
+   "win_rate": 63.7
+  },
+  "fwd52w": {
+   "n": 1649,
+   "median": 18.4,
+   "mean": 35.8,
+   "win_rate": 69.1
+  }
+ },
+ "C3": {
+  "events": 10864,
+  "names": 170,
+  "fwd13w": {
+   "n": 10438,
+   "median": 4.7,
+   "mean": 7.8,
+   "win_rate": 60.5
+  },
+  "fwd26w": {
+   "n": 10002,
+   "median": 8.9,
+   "mean": 16.0,
+   "win_rate": 64.4
+  },
+  "fwd52w": {
+   "n": 9095,
+   "median": 17.8,
+   "mean": 32.8,
+   "win_rate": 68.3
+  }
+ }
+}
+status=ok

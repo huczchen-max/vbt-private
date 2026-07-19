@@ -8,111 +8,11 @@
  "stats": {
   "symbols_in_directory": 6177,
   "past_liquidity_floors": 2728,
-  "new_bottoms": 1,
-  "new_breakouts": 3,
-  "watchlist_size": 1
+  "new_bottoms": 0,
+  "new_breakouts": 0,
+  "watchlist_size": 0
  },
- "new_bottoms": [
-  {
-   "ticker": "ZLAB",
-   "close": 20.2,
-   "state": "Uptrend",
-   "dd_pct": -45.7,
-   "max_dd_26w_pct": -59.5,
-   "prior_52w_high": 37.17,
-   "to_high_pct": 84.0,
-   "bottom": true,
-   "breakout": false,
-   "name": "Zai Lab Limited",
-   "sector": "Healthcare",
-   "industry": "Biotechnology",
-   "mkt_cap_B": 2.3,
-   "pe": null,
-   "fwd_pe": -11.57003,
-   "rev_growth_pct": -6.5,
-   "profit_margin_pct": -39.3,
-   "fcf_B": -0.07,
-   "tag": "SPEC"
-  }
- ],
- "new_breakouts": [
-  {
-   "ticker": "OCFC",
-   "close": 19.92,
-   "state": "Mixed",
-   "dd_pct": 0.0,
-   "max_dd_26w_pct": -12.6,
-   "prior_52w_high": 19.72,
-   "to_high_pct": -1.0,
-   "bottom": false,
-   "breakout": true,
-   "name": "OceanFirst Financial Corp.",
-   "sector": "Financial Services",
-   "industry": "Banks - Regional",
-   "mkt_cap_B": 1.7,
-   "pe": 16.877121,
-   "fwd_pe": 8.605231,
-   "rev_growth_pct": 8.5,
-   "profit_margin_pct": 17.6,
-   "fcf_B": null,
-   "tag": "QUALITY"
-  },
-  {
-   "ticker": "RHI",
-   "close": 41.8,
-   "state": "Downtrend",
-   "dd_pct": 0.0,
-   "max_dd_26w_pct": -56.2,
-   "prior_52w_high": 38.46,
-   "to_high_pct": -8.0,
-   "bottom": false,
-   "breakout": true,
-   "name": "Robert Half Inc.",
-   "sector": "Industrials",
-   "industry": "Staffing & Employment Services",
-   "mkt_cap_B": 4.3,
-   "pe": 32.153847,
-   "fwd_pe": 20.274923,
-   "rev_growth_pct": -3.8,
-   "profit_margin_pct": 2.4,
-   "fcf_B": 0.14,
-   "tag": "SPEC"
-  },
-  {
-   "ticker": "SYBT",
-   "close": 81.14,
-   "state": "Mixed",
-   "dd_pct": 0.0,
-   "max_dd_26w_pct": -23.3,
-   "prior_52w_high": 80.08,
-   "to_high_pct": -1.3,
-   "bottom": false,
-   "breakout": true,
-   "name": "Stock Yards Bancorp, Inc.",
-   "sector": "Financial Services",
-   "industry": "Banks - Regional",
-   "mkt_cap_B": 2.4,
-   "pe": 16.695473,
-   "fwd_pe": 14.60227,
-   "rev_growth_pct": 9.4,
-   "profit_margin_pct": 35.9,
-   "fcf_B": null,
-   "tag": "QUALITY"
-  }
- ],
- "watchlist": {
-  "ZLAB": {
-   "added": "2026-07-19",
-   "signal": "BOTTOM",
-   "tag": "SPEC",
-   "name": "Zai Lab Limited",
-   "sector": "Healthcare",
-   "mkt_cap_B": 2.3,
-   "close": 20.2,
-   "state": "Uptrend",
-   "dd_pct": -45.7,
-   "to_high_pct": 84.0,
-   "last_seen": "2026-07-19"
-  }
- }
+ "new_bottoms": [],
+ "new_breakouts": [],
+ "watchlist": {}
 }

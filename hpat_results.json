@@ -1,0 +1,174 @@
+{
+ "generated": "2026-07-19T13:22:38+00:00",
+ "definitions": {
+  "TOP": "high pivots [HH,LH,LH] -> proposed buy put",
+  "BOTTOM": "low pivots [LL,HL,HL] -> proposed buy call",
+  "PARABOLIC": "daily ext over 50d MA in top decile of own expanding history"
+ },
+ "NORMAL": {
+  "TOP": {
+   "1d": {
+    "n": 300,
+    "median": -0.153,
+    "mean": 0.363,
+    "win_rate": 46.7,
+    "p_le_m2": 18.3,
+    "p_ge_2": 20.0
+   },
+   "3d": {
+    "n": 299,
+    "median": 0.491,
+    "mean": 1.294,
+    "win_rate": 54.8,
+    "p_le_m2": 22.1,
+    "p_ge_2": 29.8
+   },
+   "5d": {
+    "n": 293,
+    "median": 0.442,
+    "mean": 1.561,
+    "win_rate": 53.6,
+    "p_le_m2": 31.1,
+    "p_ge_2": 36.5
+   },
+   "events": 300
+  },
+  "BOTTOM": {
+   "1d": {
+    "n": 315,
+    "median": 0.135,
+    "mean": 0.388,
+    "win_rate": 53.7,
+    "p_le_m2": 15.6,
+    "p_ge_2": 19.0
+   },
+   "3d": {
+    "n": 315,
+    "median": 0.368,
+    "mean": 0.961,
+    "win_rate": 56.5,
+    "p_le_m2": 22.5,
+    "p_ge_2": 32.1
+   },
+   "5d": {
+    "n": 312,
+    "median": 0.977,
+    "mean": 1.883,
+    "win_rate": 56.1,
+    "p_le_m2": 27.6,
+    "p_ge_2": 39.1
+   },
+   "events": 315
+  },
+  "CTRL": {
+   "1d": {
+    "n": 5286,
+    "median": 0.161,
+    "mean": 0.278,
+    "win_rate": 53.7,
+    "p_le_m2": 16.1,
+    "p_ge_2": 20.1
+   },
+   "3d": {
+    "n": 5249,
+    "median": 0.404,
+    "mean": 0.896,
+    "win_rate": 55.5,
+    "p_le_m2": 23.4,
+    "p_ge_2": 30.6
+   },
+   "5d": {
+    "n": 5217,
+    "median": 0.795,
+    "mean": 1.498,
+    "win_rate": 58.1,
+    "p_le_m2": 26.3,
+    "p_ge_2": 37.5
+   },
+   "events": 5299
+  }
+ },
+ "PARABOLIC": {
+  "TOP": {
+   "1d": {
+    "n": 33,
+    "median": -0.289,
+    "mean": -0.286,
+    "win_rate": 48.5,
+    "p_le_m2": 24.2,
+    "p_ge_2": 21.2
+   },
+   "3d": {
+    "n": 33,
+    "median": 1.601,
+    "mean": 1.532,
+    "win_rate": 63.6,
+    "p_le_m2": 21.2,
+    "p_ge_2": 36.4
+   },
+   "5d": {
+    "n": 31,
+    "median": 0.789,
+    "mean": 3.125,
+    "win_rate": 58.1,
+    "p_le_m2": 25.8,
+    "p_ge_2": 45.2
+   },
+   "events": 33
+  },
+  "BOTTOM": {
+   "1d": {
+    "n": 85,
+    "median": 0.065,
+    "mean": 0.698,
+    "win_rate": 50.6,
+    "p_le_m2": 17.6,
+    "p_ge_2": 29.4
+   },
+   "3d": {
+    "n": 85,
+    "median": 0.034,
+    "mean": 0.918,
+    "win_rate": 50.6,
+    "p_le_m2": 27.1,
+    "p_ge_2": 31.8
+   },
+   "5d": {
+    "n": 85,
+    "median": 1.049,
+    "mean": 1.662,
+    "win_rate": 57.6,
+    "p_le_m2": 25.9,
+    "p_ge_2": 42.4
+   },
+   "events": 85
+  },
+  "CTRL": {
+   "1d": {
+    "n": 1285,
+    "median": 0.263,
+    "mean": 0.357,
+    "win_rate": 54.7,
+    "p_le_m2": 18.4,
+    "p_ge_2": 23.4
+   },
+   "3d": {
+    "n": 1283,
+    "median": 0.671,
+    "mean": 0.748,
+    "win_rate": 55.5,
+    "p_le_m2": 26.7,
+    "p_ge_2": 34.9
+   },
+   "5d": {
+    "n": 1279,
+    "median": 0.534,
+    "mean": 1.121,
+    "win_rate": 54.1,
+    "p_le_m2": 28.9,
+    "p_ge_2": 38.1
+   },
+   "events": 1286
+  }
+ }
+}

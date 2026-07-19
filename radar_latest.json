@@ -1,0 +1,9 @@
+{
+ "date": "2026-07-19",
+ "criteria": {
+  "margin": 1.01,
+  "base_weeks": 26,
+  "min_cap_B": 1.0
+ },
+ "hits": []
+}

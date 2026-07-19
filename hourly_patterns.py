@@ -100,15 +100,24 @@ def daily_context(hr):
     for i, d in enumerate(daily.index):
         wp = wk_pos[i]
         intact = bool(wintact.iloc[wp]) if 0 <= wp < len(weekly) else False
-        bull = intact and str(dstates.iloc[i]) == "Uptrend"
+        ds = str(dstates.iloc[i])
+        if intact and ds == "Uptrend":
+            regime = "BULL"
+        elif not intact and ds == "Downtrend":
+            regime = "BEAR"
+        else:
+            regime = None
         e = ext.iloc[i]
-        para = False
+        char = "NORMAL"
         if pd.notna(e):
             if len(ext_hist) >= 100:
                 rank = sum(1 for x in ext_hist if x < e) / len(ext_hist)
-                para = rank >= 0.90 and e > 0
+                if regime == "BULL" and rank >= 0.90 and e > 0:
+                    char = "PARABOLIC"
+                elif regime == "BEAR" and rank <= 0.10 and e < 0:
+                    char = "CAPITULATIVE"
             ext_hist.append(float(e))
-        ctx[d.date()] = (bull, para)
+        ctx[d.date()] = (regime, char)
     return ctx
 
 
@@ -150,9 +159,9 @@ def main():
                             trig[conf] = "BOTTOM"
                 for j in range(60, n):
                     c = ctx.get(hr.index[j].date())
-                    if not c or not c[0]:
-                        continue  # BULL days only
-                    para = c[1]
+                    if not c or c[0] is None:
+                        continue  # BULL or BEAR days only
+                    regime, char = c
                     kind = trig.get(j)
                     if kind is None:
                         if j % CONTROL_STRIDE == 0:
@@ -160,7 +169,7 @@ def main():
                         else:
                             continue
                     rec = {"ticker": t, "kind": kind,
-                           "char": "PARABOLIC" if para else "NORMAL",
+                           "regime": regime, "char": char,
                            "dt": hr.index[j].isoformat()}
                     p0 = float(close.iloc[j])
                     for lab, h in HORIZONS.items():
@@ -189,23 +198,27 @@ def main():
                                "BOTTOM": "low pivots [LL,HL,HL] -> proposed buy call",
                                "PARABOLIC": "daily ext over 50d MA in top decile "
                                             "of own expanding history"}}
-    for char in ("NORMAL", "PARABOLIC"):
+    for regime, char in (("BULL", "NORMAL"), ("BULL", "PARABOLIC"),
+                         ("BEAR", "NORMAL"), ("BEAR", "CAPITULATIVE")):
         block = {}
         for kind in ("TOP", "BOTTOM", "CTRL"):
-            ev = [e for e in events if e["char"] == char and e["kind"] == kind]
+            ev = [e for e in events if e.get("regime") == regime
+                  and e["char"] == char and e["kind"] == kind]
             block[kind] = {lab: agg(ev, f"fwd{lab}") for lab in HORIZONS}
             block[kind]["events"] = len(ev)
-        results[char] = block
+        results[f"{regime}/{char}"] = block
     (HERE / "hpat_results.json").write_text(json.dumps(results, indent=1))
     with open(HERE / "hpat_events.csv", "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=["ticker", "kind", "char", "dt",
-                                          "fwd1d", "fwd3d", "fwd5d"],
+        w = csv.DictWriter(f, fieldnames=["ticker", "kind", "regime", "char",
+                                          "dt", "fwd1d", "fwd3d", "fwd5d"],
                            extrasaction="ignore")
         w.writeheader()
         w.writerows(events)
+    keys = ["BULL/NORMAL", "BULL/PARABOLIC", "BEAR/NORMAL",
+            "BEAR/CAPITULATIVE"]
     print(json.dumps({c: {k: results[c][k].get("3d")
                           for k in ("TOP", "BOTTOM", "CTRL")}
-                      for c in ("NORMAL", "PARABOLIC")}, indent=1))
+                      for c in keys}, indent=1))
 
 
 if __name__ == "__main__":

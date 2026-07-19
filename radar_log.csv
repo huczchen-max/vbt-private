@@ -3,3 +3,17 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-07-19,BREAKOUT,RHI,Robert Half Inc.,SPEC,41.8,0.0,-56.2,-8.0,38.46,4.3,Industrials,Staffing & Employment Services,32.153847,20.274923,-3.8,2.4,0.14
 2026-07-19,BREAKOUT,SYBT,"Stock Yards Bancorp, Inc.",QUALITY,81.14,0.0,-23.3,-1.3,80.08,2.4,Financial Services,Banks - Regional,16.695473,14.60227,9.4,35.9,
 2026-07-19,BOTTOM,ZLAB,Zai Lab Limited,SPEC,20.2,-45.7,-59.5,84.0,37.17,2.3,Healthcare,Biotechnology,,-11.57003,-6.5,-39.3,-0.07
+2026-07-19,BREAKOUT,NMIH,NMI Holdings Inc,QUALITY,43.01,0.0,-16.8,-3.7,41.41,3.3,Financial Services,Insurance - Specialty,8.741869,8.021544,5.9,53.8,0.31
+2026-07-19,BOTTOM,NVTS,Navitas Semiconductor Corporati,SPEC,11.46,-60.8,-60.8,155.2,29.25,2.8,Technology,Semiconductors,,-82.731735,-38.7,0.0,0.04
+2026-07-19,BREAKOUT,OCFC,OceanFirst Financial Corp.,QUALITY,19.92,0.0,-12.6,-1.0,19.72,1.7,Financial Services,Banks - Regional,16.877121,8.605231,8.5,17.6,
+2026-07-19,BOTTOM,PAYC,"Paycom Software, Inc.",QUALITY,147.94,-37.5,-57.0,59.9,236.57,6.9,Technology,Software - Application,17.122684,12.042191,7.8,22.4,0.29
+2026-07-19,BOTTOM,PRG,"PROG Holdings, Inc.",QUALITY,46.42,0.0,-31.2,-0.7,46.11,1.9,Industrials,Rental & Leasing Services,11.811705,8.70511,11.1,6.0,1.49
+2026-07-19,BOTTOM,PRMB,Primo Brands Corporation,QUALITY,24.82,-12.6,-47.4,14.5,28.41,9.0,Consumer Defensive,Beverages - Non-Alcoholic,130.63158,16.790806,0.8,0.9,0.42
+2026-07-19,BOTTOM,SFM,"Sprouts Farmers Market, Inc.",QUALITY,75.78,-53.0,-62.0,118.6,165.65,7.1,Consumer Defensive,Grocery Stores,14.545105,12.803227,4.1,5.7,0.44
+2026-07-19,BOTTOM,SNPS,"Synopsys, Inc.",QUALITY,384.27,-38.0,-38.6,61.2,619.42,73.6,Technology,Software - Infrastructure,87.73402,22.249273,41.9,8.9,3.54
+2026-07-19,BREAKOUT,SYBT,"Stock Yards Bancorp, Inc.",QUALITY,81.14,0.0,-23.3,-1.3,80.08,2.4,Financial Services,Banks - Regional,16.695473,14.60227,9.4,35.9,
+2026-07-19,BOTTOM,TPL,Texas Pacific Land Corporation,QUALITY,415.7,-21.6,-33.0,27.6,530.32,28.7,Energy,Oil & Gas E&P,57.180195,5.685175,20.8,60.0,-0.06
+2026-07-19,BOTTOM,USAR,"USA Rare Earth, Inc.",SPEC,15.65,-52.0,-52.7,108.4,32.61,3.8,Basic Materials,Other Industrial Metals & Mining,,469.54694,,0.0,-0.1
+2026-07-19,BOTTOM,VCYT,"Veracyte, Inc.",QUALITY,59.13,-2.2,-36.6,2.3,60.49,4.7,Healthcare,Diagnostics & Research,54.75,30.943373,21.5,16.2,0.1
+2026-07-19,BOTTOM,WSO,"Watsco, Inc.",QUALITY,371.91,-21.6,-29.9,27.5,474.15,15.3,Industrials,Industrial Distribution,30.484426,26.492542,0.1,6.9,0.52
+2026-07-19,BOTTOM,ZLAB,Zai Lab Limited,SPEC,20.2,-45.7,-59.5,84.0,37.17,2.3,Healthcare,Biotechnology,,-11.57003,-6.5,-39.3,-0.07

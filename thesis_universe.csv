@@ -44,7 +44,6 @@ AMZN,ai,platform,"Amazon.com, Inc.",2659.5,247.23,-11.2,29.6,24.9,742.8,16.6,50.
 META,ai,platform,"Meta Platforms, Inc.",1639.8,646.01,-18.9,23.5,17.8,215.0,33.1,81.9,40.6,25.6,open models + ad AI + compute resale
 AAPL,ai,platform,Apple Inc.,4901.8,333.74,-0.4,40.5,34.6,451.4,16.6,47.9,32.3,101.1,edge AI distribution
 ORCL,ai,platform,Oracle Corporation,364.1,126.41,-63.4,21.7,11.6,67.4,20.6,65.8,36.2,-24.5,OCI AI cloud
-PLTR,ai,software,Palantir Technologies Inc.,317.4,132.38,-36.2,148.7,63.2,5.2,84.7,84.1,46.2,1.8,enterprise/defense AI ontology
 APP,ai,software,Applovin Corporation,142.6,424.54,-43.1,36.9,19.6,6.2,59.0,88.4,78.2,3.2,AI ad engine
 NOW,ai,software,"ServiceNow, Inc.",106.5,103.24,-50.9,61.5,20.6,14.0,22.1,76.6,13.3,5.1,agentic enterprise workflows
 CRM,ai,software,,139.9,170.77,-37.7,19.8,11.0,42.8,13.3,77.6,21.8,16.6,Agentforce
@@ -170,10 +169,14 @@ GH,health,biotech,"Guardant Health, Inc.",20.7,155.87,-10.5,,-359.8,1.1,48.3,64.
 NTRA,health,biotech,"Natera, Inc.",38.9,271.39,-5.8,,-1325.9,2.5,38.8,65.1,-12.4,0.1,cfDNA testing leader
 ABBV,health,biotech,AbbVie Inc.,449.6,254.49,-2.7,124.8,15.6,62.8,12.4,72.0,32.2,20.8,immunology cash machine
 JNJ,health,biotech,Johnson & Johnson,609.1,253.04,-6.1,29.3,19.7,97.9,6.6,68.1,28.6,,diversified anchor
+PLTR,outlier,multi-theme,Palantir Technologies Inc.,317.4,132.38,-36.2,148.7,63.2,5.2,84.7,84.1,46.2,1.8,AI ontology platform spanning defense + government + commercial
 GLXY,outlier,multi-theme,Galaxy Digital Inc.,8.4,21.63,-52.9,,297.7,58.7,-20.6,100.0,95.9,,crypto financial services + AI datacenter (Helios) pivot
 GEV,outlier,multi-theme,GE Vernova Inc.,284.3,1057.84,-11.5,31.0,43.0,39.4,16.3,20.3,5.5,9.3,AI power + grid equipment + nuclear (spans ai/grid)
 TSLA,outlier,multi-theme,"Tesla, Inc.",1430.3,380.84,-23.7,346.2,149.1,97.9,15.8,19.1,4.2,5.3,EV + energy storage + Optimus humanoid + FSD autonomy
 SPCX,outlier,multi-theme,Space Exploration Technologies,1633.5,123.99,-45.0,,137.3,19.3,15.4,48.8,-41.6,,SpaceX — launch + Starlink + defense + space datacenters (IPO 2026-06-12)
+UBER,outlier,multi-theme,,,,,,,,,,,,autonomy/physical-AI demand platform without robot capex
+COIN,outlier,multi-theme,,,,,,,,,,,,crypto exchange + custody + stablecoin infrastructure
+HOOD,outlier,multi-theme,,,,,,,,,,,,retail brokerage + crypto + fintech super-app
 SMH,etf,theme,,77.2,556.53,-17.2,36.0,,,,,,,AI semis benchmark
 IGV,etf,theme,iShares Expanded Tech-Software,13.5,92.80,-21.3,32.0,,,,,,,software benchmark
 AIQ,etf,theme,Global X Artificial Intelligenc,10.4,58.70,-16.5,25.9,,,,,,,broad AI

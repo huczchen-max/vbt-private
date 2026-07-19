@@ -1,66 +1,79 @@
 {
  "date": "2026-07-19",
- "generated_utc": "2026-07-19T12:11:11+00:00",
+ "generated_utc": "2026-07-19T14:19:04+00:00",
  "themes": {
   "ai": {
    "theme": "ai",
-   "extremity": -2,
+   "extremity": -4,
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "AMD fell 17% from highs on sector-wide sentiment even as KeyBanc/BofA/BNP/TD Cowen all raised price targets, showing analyst-price divergence",
-    "TSMC posted record $40B+ revenue but stock fell 4% and dragged Nasdaq down on capex guidance concerns",
-    "Burry disclosed new shorts (Micron, Caterpillar, Tesla, SOXX) on July 1 and 13, calling it herd-mentality FOMO, while Goldman/JPMorgan/Cathie Wood publicly dismiss bubble claims",
-    "10 major AI-linked tech stocks (Oracle, ServiceNow, Coinbase, Palantir) crossed into bear-market territory in weeks, while money rotated into chip/memory names (Nvidia, Samsung) amid a 'SaaSpocalypse' in AI software"
+    "Neocloud stocks (CoreWeave -38%, Oracle -33%, Nebius -36%, IREN -41%) cratered in the past month amid AI-capex de-risking and financing/dilution fears",
+    "Michael Burry escalated public short campaign to third-derivative AI plays like Caterpillar, calling Nvidia financing structures 'fugazi' and comparing conditions to the dot-com peak",
+    "Institutional research (Man Group, Allianz, Moody's-cited analyses) increasingly frame the AI capex cycle as a 'closed, recursive financing loop' with valuations near dot-com extremes",
+    "Despite the selloff, NVDA still carries a 62-analyst Strong Buy consensus with ~53% upside price targets, and hyperscaler capex guidance (~$725B) keeps rising, showing bulls have not capitulated"
    ]
   },
   "grid": {
    "theme": "grid",
-   "extremity": 4,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "GE Vernova up 76% YTD trading at 59x earnings with consensus price target now below current share price",
-    "Jim Cramer called GEV's quarter 'one for the ages' while eight+ banks raced to raise price targets",
-    "Nuclear/SMR pure-plays (Oklo, XE, SMR, NNE, UEC) fell 8-9% in one session as Truist initiated Hold ratings demanding 'proof' over hype",
-    "Cathie Wood's Ark kept buying nuclear dips even as NuScale sits ~75-83% below its October 2025 high, showing bulls refusing to capitulate"
-   ]
-  },
-  "robotics": {
-   "theme": "robotics",
-   "extremity": 4,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "Ambarella +28%, Ouster +15.6% single-day surge on humanoid supply-chain optimism amid BIS valuation warnings (Yahoo Finance/Investing.com)",
-    "Unitree IPO approval triggered 30+ Chinese robot-concept stocks hitting daily limit-up, retail 'buying frenzy' (BigGo Finance, SCMP)",
-    "Morgan Stanley's $5 trillion-by-2050 humanoid market call and Dan Ives' 'golden goose' framing vs. Rodney Brooks calling it 'a classic bubble' and China's NDRC warning of bubble risk",
-    "Teradyne fell 15.4% in a week on insider selling despite Buy ratings, and broader July chip selloff (Micron -13%, SOX -20% from highs) even as Tesla stock dropped on margin/robotics-spend concerns despite beating delivery estimates"
-   ]
-  },
-  "defense": {},
-  "health": {
-   "theme": "health",
-   "extremity": 3,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "Eli Lilly hit new all-time highs above $1,200/share with market cap over $1.1T, up 40%+ in ten weeks, prompting JPMorgan to raise its price target from $1,300 to $1,400",
-    "Retail/Reddit sentiment on LLY surged from neutral (52) to 'very bullish' (82-88) within weeks, while Novo Nordisk Reddit sentiment collapsed to bearish (22-29) over the same period",
-    "Deloitte publicly warned of a GLP-1 'bubble effect' in pharma even as obesity drugs now exceed oncology in projected pipeline value",
-    "Financial media used 'Nvidia in 2009' comparisons and 'Total Conviction' signal framing for GLP-1 stocks, while medtech and genomics names traded at multi-year valuation discounts amid unresolved sentiment"
-   ]
-  },
-  "outlier": {
-   "theme": "outlier",
    "extremity": 2,
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "SpaceX (SPCX) fell below its $135 IPO price four straight sessions in mid-July, down ~45% from its June peak of $225, per CNBC",
-    "Palantir bull/bear analyst targets span $70 (Jefferies Sell) to $382 (Morgan Stanley bull case), described as Wall Street unable to agree",
-    "GE Vernova tanked 10% in a single session on July 7 amid an AI-infrastructure stock selloff, per CNBC",
-    "Coinbase drew a wall of bullish $208-$270 targets from Benchmark/Rosenblatt/Cantor/Deutsche Bank even as Q1 revenue fell 30% YoY and posted a GAAP loss"
+    "Nuclear/SMR stocks (OKLO, SMR, XE) sold off sharply July 16-17 on rotation out of AI trades with Stocktwits sentiment turning bearish/neutral on SMR, XE, OKLO, UEC while NNE stayed bullish",
+    "SMR trades at 91.2x and XE at 48.4x trailing EV/sales even after the correction, showing valuations remain stretched despite the pullback",
+    "Standard Nuclear's IPO opened below its offer price and traded ~17% lower on debut, signaling cooling retail/investor appetite for new nuclear listings",
+    "Truist initiated Oklo, NuScale, and Nano Nuclear all at Hold citing need for proof of execution, while Ark Invest kept aggressively buying the dip in XE and Oklo - a clear KOL split"
+   ]
+  },
+  "robotics": {
+   "theme": "robotics",
+   "extremity": 3,
+   "kol_unanimity": "split",
+   "direction_2wk": "hotter",
+   "evidence": [
+    "Component stocks like Ambarella (+28%), Ouster (+15.6%), and VPG (+269% YTD) posted euphoric single-day/YTD surges on humanoid supply-chain optimism (July 1, 2026)",
+    "Agility Robotics completed the first major humanoid robotics IPO via SPAC merger, triggering sector-wide rallies",
+    "Reuters/BIS warned 'doubts are creeping in' about overextended AI/automation valuations, and Polymarket gives only 13.5% odds of an Optimus release by year-end 2026",
+    "Unitree's Q1 2026 profit fell 52% YoY and Tesla still cannot sell Optimus externally, even as Dan Ives calls humanoids 'the golden goose for physical AI' and Huang touts a $40 trillion TAM"
+   ]
+  },
+  "defense": {
+   "theme": "defense",
+   "extremity": 2,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "SpaceX stock down ~25% since June IPO amid overvaluation concerns (Forbes/NYT)",
+    "Grantham calls SpaceX IPO 'the craziest IPO in human history'; Damodaran says TAM claim was a 'hallucination'",
+    "Goldman Sachs: space/satellite basket rally 'has cooled from its high in late May'",
+    "Drone stocks (AVAV, KTOS, RCAT) 'sold off hard this month' despite record bookings and bullish budgets",
+    "Bernstein's Harned: defense budget already priced, 'should not expect upside' from Iran conflict",
+    "European defense stocks in 'consolidation' with Stoxx Aerospace & Defence index down YTD vs broader index up"
+   ]
+  },
+  "health": {
+   "theme": "health",
+   "extremity": 4,
+   "kol_unanimity": "split",
+   "direction_2wk": "hotter",
+   "evidence": [
+    "Eli Lilly: 23 of 30 analysts rate buy, Jefferies target $1,350, Reddit sentiment surged to 'very bullish (82-88)' by early June 2026",
+    "Novo Nordisk down 44% YoY, 'left for dead by market,' Reddit sentiment collapsed to bearish (22-29)",
+    "BVP: 'this time is fundamentally different' for health AI vs. Columbia/Health Affairs commentary calling for the AI bubble to burst amid 95% pilot failure rate",
+    "Axios/healthcare.digital describing 2026 as the 'Coming Clinical Correction' after a 'valuation euphoria' in health AI"
+   ]
+  },
+  "outlier": {
+   "theme": "outlier",
+   "extremity": 4,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "SpaceX crashed from $225 ATH to ~$123 post-IPO/index-inclusion even as analysts hold 27 buy/1 sell ratings with targets up to $800",
+    "Michael Burry shorted Tesla, Nvidia, and maintains a Palantir short calling AI narrative a bubble, while Cathie Wood's ARK simultaneously bought dips across Tesla, Palantir, SpaceX, and Coinbase",
+    "GE Vernova fell 10% purely in sympathy with a Siemens Energy downgrade despite near-unanimous 'Strong Buy' consensus and 3.92% short interest",
+    "Coinbase estimates cut sharply (EBITDA -34%) with analysts still urging investors to 'stay the course' rather than capitulate"
    ]
   }
  }

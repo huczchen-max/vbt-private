@@ -9,9 +9,25 @@ tracked 194 names; doors {'IN-TREND': 113, 'ENTRY-BOTTOM': 7, 'BROKEN': 65, 'ENT
   outlier   etf=IN-TREND/Mixed breadth intact 28.6% uptrend 14.3%
 status=ok
 exhaustion: 37 symbols, 0 flagged (score>=2)
-ai        extremity -2 (split, cooler)
-grid      extremity 4 (split, hotter)
-robotics  extremity 4 (split, hotter)
-defense   extremity None (None, None)
-health    extremity 3 (split, hotter)
-outlier   extremity 2 (split, cooler)
+ai        extremity -4 (split, cooler)
+grid      extremity 2 (split, cooler)
+robotics  extremity 3 (split, hotter)
+defense   extremity 2 (split, cooler)
+health    extremity 4 (split, hotter)
+outlier   extremity 4 (split, cooler)
+/home/runner/work/vbt-data/vbt-data/private/options_engine.py:74: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  delta = (dd - pd.Timestamp.utcnow().tz_localize(None)).days
+/home/runner/work/vbt-data/vbt-data/private/options_engine.py:74: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  delta = (dd - pd.Timestamp.utcnow().tz_localize(None)).days
+/home/runner/work/vbt-data/vbt-data/private/options_engine.py:74: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  delta = (dd - pd.Timestamp.utcnow().tz_localize(None)).days
+skip STX: earnings within 14d
+skip BE: earnings within 14d
+skip STRL: earnings within 14d
+skip NVT: earnings within 14d
+options engine: 5 new proposals, 5 open, 5 journal events
+  BULL_PUT_SPREAD   MU     [BULL-NORMAL] exp 2026-08-28 short 765.0 credit 15.78 max_loss 29.22
+  BULL_PUT_SPREAD   HPE    [BULL-NORMAL] exp 2026-08-28 short 41.0 credit 0.88 max_loss 1.12
+  BULL_PUT_SPREAD   CGNX   [BULL-NORMAL] exp 2026-08-21 short 60.0 credit 1.55 max_loss 3.45
+  BULL_PUT_SPREAD   OUST   [BULL-NORMAL] exp 2026-08-28 short 33.0 credit 1.3 max_loss 1.7
+  BULL_PUT_SPREAD   TER    [BULL-NORMAL] exp 2026-08-28 short 290.0 credit 1.95 max_loss 3.05

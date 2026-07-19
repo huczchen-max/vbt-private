@@ -1,0 +1,6 @@
+date,event,ticker,strategy,regime,tag,experimental,exp,dte,short_k,long_k,credit,width,max_loss,spot,iv30,iv_rv,mark,pnl_per_spread,note
+2026-07-19,OPEN,MU,BULL_PUT_SPREAD,BULL-NORMAL,QUALITY,False,2026-08-28,39,765.0,720.0,15.78,45.0,29.22,848.95,,,,,theme=ai score=85.0
+2026-07-19,OPEN,HPE,BULL_PUT_SPREAD,BULL-NORMAL,QUALITY,False,2026-08-28,39,41.0,39.0,0.88,2.0,1.12,45.82,,,,,theme=ai score=72.6
+2026-07-19,OPEN,CGNX,BULL_PUT_SPREAD,BULL-NORMAL,QUALITY,False,2026-08-21,32,60.0,55.0,1.55,5.0,3.45,64.07,,,,,theme=robotics score=76.0
+2026-07-19,OPEN,OUST,BULL_PUT_SPREAD,BULL-NORMAL,QUALITY,False,2026-08-28,39,33.0,30.0,1.3,3.0,1.7,37.04,,,,,theme=robotics score=71.5
+2026-07-19,OPEN,TER,BULL_PUT_SPREAD,BULL-NORMAL,QUALITY,False,2026-08-28,39,290.0,285.0,1.95,5.0,3.05,322.36,,,,,theme=robotics score=68.8

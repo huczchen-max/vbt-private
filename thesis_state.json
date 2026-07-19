@@ -1,6 +1,6 @@
 {
  "date": "2026-07-19",
- "generated_utc": "2026-07-19T09:30:48+00:00",
+ "generated_utc": "2026-07-19T09:37:00+00:00",
  "theme_health": {
   "ai": {
    "benchmark": "SMH",
@@ -1946,7 +1946,7 @@
    "theme": "outlier"
   },
   "TSLA": {
-   "door": "ENTRY-MACROSS",
+   "door": "BROKEN",
    "intact": false,
    "state": "Downtrend",
    "close": 380.84,

@@ -1,6 +1,6 @@
 prices 100/196
 prices 196/196
-tracked 194 names; doors {'IN-TREND': 113, 'ENTRY-BOTTOM': 7, 'BROKEN': 64, 'ENTRY-MACROSS': 10}; events this run 0
+tracked 194 names; doors {'IN-TREND': 113, 'ENTRY-BOTTOM': 7, 'BROKEN': 65, 'ENTRY-MACROSS': 9}; events this run 0
   ai        etf=IN-TREND/Uptrend breadth intact 73.8% uptrend 42.6%
   grid      etf=IN-TREND/Uptrend breadth intact 72.7% uptrend 51.5%
   robotics  etf=IN-TREND/Mixed breadth intact 69.2% uptrend 23.1%

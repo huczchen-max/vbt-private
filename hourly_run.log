@@ -1,0 +1,74 @@
+$CORZ: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784459705. The requested range must be within the last 730 days.")
+
+1 Failed download:
+['CORZ']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1706106600 and endTime=1784459705. The requested range must be within the last 730 days.")
+universe: 37 symbols
+processed 20/37, events 17846
+$GEV: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784459710. The requested range must be within the last 730 days.")
+
+1 Failed download:
+['GEV']: possibly delisted; no price data found  (period=730d) (Yahoo error = "1h data not available for startTime=1711546200 and endTime=1784459710. The requested range must be within the last 730 days.")
+processed 37/37, events 33616
+{
+ "BULL": {
+  "H_UP": {
+   "n": 746,
+   "median": 0.377,
+   "mean": 0.937,
+   "win_rate": 55.4
+  },
+  "H_DOWN": {
+   "n": 671,
+   "median": 0.659,
+   "mean": 1.092,
+   "win_rate": 56.6
+  },
+  "CTRL": {
+   "n": 6423,
+   "median": 0.437,
+   "mean": 0.874,
+   "win_rate": 55.6
+  }
+ },
+ "RANGE": {
+  "H_UP": {
+   "n": 1977,
+   "median": 0.429,
+   "mean": 0.655,
+   "win_rate": 55.5
+  },
+  "H_DOWN": {
+   "n": 1914,
+   "median": 0.296,
+   "mean": 0.68,
+   "win_rate": 53.5
+  },
+  "CTRL": {
+   "n": 17983,
+   "median": 0.331,
+   "mean": 0.573,
+   "win_rate": 54.2
+  }
+ },
+ "BEAR": {
+  "H_UP": {
+   "n": 342,
+   "median": 0.409,
+   "mean": 0.441,
+   "win_rate": 56.1
+  },
+  "H_DOWN": {
+   "n": 306,
+   "median": 0.533,
+   "mean": 0.602,
+   "win_rate": 54.2
+  },
+  "CTRL": {
+   "n": 3098,
+   "median": 0.494,
+   "mean": 0.717,
+   "win_rate": 56.4
+  }
+ }
+}
+status=ok

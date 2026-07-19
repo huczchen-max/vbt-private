@@ -1,0 +1,200 @@
+{
+ "generated": "2026-07-19T11:15:13+00:00",
+ "note": "730-day window (yfinance hourly max) \u2014 one bull leg + one correction; go/no-go gate, not a full history",
+ "universe": 37,
+ "BULL": {
+  "H_UP": {
+   "1d": {
+    "n": 751,
+    "median": 0.089,
+    "mean": 0.406,
+    "win_rate": 50.9
+   },
+   "3d": {
+    "n": 746,
+    "median": 0.377,
+    "mean": 0.937,
+    "win_rate": 55.4
+   },
+   "5d": {
+    "n": 744,
+    "median": 0.684,
+    "mean": 1.422,
+    "win_rate": 55.5
+   },
+   "events": 752
+  },
+  "H_DOWN": {
+   "1d": {
+    "n": 674,
+    "median": 0.227,
+    "mean": 0.253,
+    "win_rate": 55.0
+   },
+   "3d": {
+    "n": 671,
+    "median": 0.659,
+    "mean": 1.092,
+    "win_rate": 56.6
+   },
+   "5d": {
+    "n": 664,
+    "median": 0.861,
+    "mean": 1.456,
+    "win_rate": 55.3
+   },
+   "events": 678
+  },
+  "CTRL": {
+   "1d": {
+    "n": 6461,
+    "median": 0.172,
+    "mean": 0.289,
+    "win_rate": 53.8
+   },
+   "3d": {
+    "n": 6423,
+    "median": 0.437,
+    "mean": 0.874,
+    "win_rate": 55.6
+   },
+   "5d": {
+    "n": 6387,
+    "median": 0.753,
+    "mean": 1.422,
+    "win_rate": 57.3
+   },
+   "events": 6472
+  }
+ },
+ "RANGE": {
+  "H_UP": {
+   "1d": {
+    "n": 1981,
+    "median": 0.165,
+    "mean": 0.242,
+    "win_rate": 53.4
+   },
+   "3d": {
+    "n": 1977,
+    "median": 0.429,
+    "mean": 0.655,
+    "win_rate": 55.5
+   },
+   "5d": {
+    "n": 1973,
+    "median": 0.594,
+    "mean": 1.057,
+    "win_rate": 56.5
+   },
+   "events": 1983
+  },
+  "H_DOWN": {
+   "1d": {
+    "n": 1919,
+    "median": 0.168,
+    "mean": 0.316,
+    "win_rate": 54.0
+   },
+   "3d": {
+    "n": 1914,
+    "median": 0.296,
+    "mean": 0.68,
+    "win_rate": 53.5
+   },
+   "5d": {
+    "n": 1904,
+    "median": 0.581,
+    "mean": 1.172,
+    "win_rate": 54.8
+   },
+   "events": 1924
+  },
+  "CTRL": {
+   "1d": {
+    "n": 18043,
+    "median": 0.081,
+    "mean": 0.169,
+    "win_rate": 51.8
+   },
+   "3d": {
+    "n": 17983,
+    "median": 0.331,
+    "mean": 0.573,
+    "win_rate": 54.2
+   },
+   "5d": {
+    "n": 17949,
+    "median": 0.595,
+    "mean": 0.963,
+    "win_rate": 55.8
+   },
+   "events": 18061
+  }
+ },
+ "BEAR": {
+  "H_UP": {
+   "1d": {
+    "n": 342,
+    "median": 0.188,
+    "mean": 0.164,
+    "win_rate": 54.4
+   },
+   "3d": {
+    "n": 342,
+    "median": 0.409,
+    "mean": 0.441,
+    "win_rate": 56.1
+   },
+   "5d": {
+    "n": 342,
+    "median": 0.487,
+    "mean": 1.175,
+    "win_rate": 54.1
+   },
+   "events": 342
+  },
+  "H_DOWN": {
+   "1d": {
+    "n": 306,
+    "median": 0.042,
+    "mean": 0.185,
+    "win_rate": 52.0
+   },
+   "3d": {
+    "n": 306,
+    "median": 0.533,
+    "mean": 0.602,
+    "win_rate": 54.2
+   },
+   "5d": {
+    "n": 306,
+    "median": 0.682,
+    "mean": 0.855,
+    "win_rate": 54.6
+   },
+   "events": 306
+  },
+  "CTRL": {
+   "1d": {
+    "n": 3098,
+    "median": 0.186,
+    "mean": 0.238,
+    "win_rate": 54.0
+   },
+   "3d": {
+    "n": 3098,
+    "median": 0.494,
+    "mean": 0.717,
+    "win_rate": 56.4
+   },
+   "5d": {
+    "n": 3097,
+    "median": 0.844,
+    "mean": 1.257,
+    "win_rate": 57.8
+   },
+   "events": 3098
+  }
+ }
+}

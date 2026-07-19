@@ -1,195 +1,195 @@
-ticker,theme,subtheme,role
-NVDA,ai,semis,GPU/accelerator king; robotics+AI platform
-AMD,ai,semis,"#2 accelerator, DC CPU share gains"
-AVGO,ai,semis,custom AI ASICs + networking
-ARM,ai,semis,IP for edge/DC compute
-MRVL,ai,semis,custom silicon + optical DSP
-MU,ai,semis,HBM memory
-TSM,ai,semis,the foundry
-ASML,ai,semis,EUV monopoly
-AMAT,ai,semis,broad WFE
-LRCX,ai,semis,etch/dep WFE
-KLAC,ai,semis,process control
-QCOM,ai,semis,edge AI silicon
-SNPS,ai,semis,EDA duopoly
-CDNS,ai,semis,EDA duopoly
-CRDO,ai,semis,AEC cables/SerDes
-ALAB,ai,semis,connectivity for AI servers
-MPWR,ai,semis,power management
-ON,ai,semis,power semis
-INTC,ai,semis,foundry turnaround option
-COHR,ai,semis,optical/photonic
-LITE,ai,semis,optics
-CIEN,ai,semis,optical networking
-ANET,ai,semis,AI networking switches
-SMCI,ai,semis,AI servers (governance history)
-DELL,ai,semis,AI servers at scale
-HPE,ai,semis,servers/networking
-VRT,ai,semis,datacenter power/cooling
-STX,ai,semis,HAMR drives / AI storage
-WDC,ai,semis,HDD duopoly
-PSTG,ai,semis,flash storage for AI
-MOD,ai,semis,datacenter cooling
-CRWV,ai,neocloud,largest neocloud
-NBIS,ai,neocloud,EU-origin neocloud
-IREN,ai,neocloud,renewables-powered DC
-APLD,ai,neocloud,HPC datacenters
-WULF,ai,neocloud,miner-to-AI pivot
-CORZ,ai,neocloud,HPC hosting
-CIFR,ai,neocloud,miner-to-AI pivot
-HUT,ai,neocloud,compute + power
-MSFT,ai,platform,Azure + Copilot + OpenAI
-GOOGL,ai,platform,Gemini + TPU full stack
-AMZN,ai,platform,AWS + Anthropic + Trainium
-META,ai,platform,open models + ad AI + compute resale
-AAPL,ai,platform,edge AI distribution
-ORCL,ai,platform,OCI AI cloud
-PLTR,ai,software,enterprise/defense AI ontology
-APP,ai,software,AI ad engine
-NOW,ai,software,agentic enterprise workflows
-CRM,ai,software,Agentforce
-SNOW,ai,software,data cloud for AI
-DDOG,ai,software,observability for AI apps
-MDB,ai,software,AI app database
-NET,ai,software,edge inference network
-CRWD,ai,software,AI-native security
-PANW,ai,software,security platform
-IOT,ai,software,physical-ops AI
-PATH,ai,software,RPA→agentic automation
-DUOL,ai,software,consumer AI app economics
-RDDT,ai,software,data licensing + AI search
-SOUN,ai,software,voice AI (spec)
-AI,ai,software,enterprise AI apps (spec)
-BBAI,ai,software,defense AI analytics (spec)
-VST,grid,generation,merchant power + nuclear
-CEG,grid,generation,largest US nuclear fleet
-TLN,grid,generation,nuclear + DC deals
-NRG,grid,generation,merchant power + retail
-NEE,grid,generation,renewables giant
-SO,grid,generation,regulated growth + Vogtle
-DUK,grid,generation,regulated southeast demand
-OKLO,grid,nuclear-new,SMR developer (spec)
-SMR,grid,nuclear-new,NuScale SMR (spec)
-BWXT,grid,nuclear-new,nuclear components/naval
-CCJ,grid,nuclear-new,uranium major
-LEU,grid,nuclear-new,US enrichment
-UEC,grid,nuclear-new,US uranium (spec)
-ETN,grid,equipment,electrical everything
-HUBB,grid,equipment,grid components
-NVT,grid,equipment,electrical connection/protection
-ATKR,grid,equipment,conduit/infrastructure
-AMSC,grid,equipment,grid tech/superconductors (spec)
-ITRI,grid,equipment,grid edge/metering
-TT,grid,equipment,cooling/HVAC for DC era
-PWR,grid,builders,the grid builder
-EME,grid,builders,electrical construction
-FIX,grid,builders,mechanical/electrical contractor
-STRL,grid,builders,e-infrastructure/DC sitework
-IESC,grid,builders,electrical infrastructure
-MYRG,grid,builders,T&D construction
-POWL,grid,builders,switchgear
-FSLR,grid,storage-solar,US-made solar for DC/utility
-NXT,grid,storage-solar,solar trackers
-FLNC,grid,storage-solar,grid storage
-EOSE,grid,storage-solar,long-duration storage (spec)
-BE,grid,storage-solar,fuel cells for DC power (spec)
-ALB,grid,storage-solar,lithium
-DE,robotics,platforms,autonomous ag
-HON,robotics,platforms,industrial automation
-EMR,robotics,platforms,automation portfolio
-ROK,robotics,platforms,factory automation pure-ish play
-TER,robotics,enablers,robot test + Universal Robots
-CGNX,robotics,enablers,machine vision
-ZBRA,robotics,enablers,enterprise autonomy/vision
-AMBA,robotics,enablers,edge vision silicon
-OUST,robotics,enablers,lidar (spec)
-NOVT,robotics,enablers,precision robotics components
-SYM,robotics,appliers,warehouse automation at Walmart scale
-SERV,robotics,appliers,sidewalk delivery robots (spec)
-RR,robotics,appliers,service robots (spec)
-LMT,defense,primes,prime + hypersonics
-RTX,defense,primes,prime + missiles/GTF
-NOC,defense,primes,B-21 + nukes
-GD,defense,primes,subs + land
-LHX,defense,primes,electronics prime
-BA,defense,primes,duopoly airframer (turnaround)
-GE,defense,primes,engines/aero anchor
-HWM,defense,suppliers,aero fasteners/structures
-TDG,defense,suppliers,aftermarket monopoly economics
-HEI,defense,suppliers,aero parts compounder
-CW,defense,suppliers,naval/nuclear components
-DRS,defense,suppliers,sensing/electronics
-MRCY,defense,suppliers,defense compute
-TXT,defense,suppliers,Bell + Textron systems
-AXON,defense,newgen,public-safety tech monopoly-ish
-KTOS,defense,newgen,drones/hypersonics
-AVAV,defense,newgen,small drones + loitering munitions
-ACHR,defense,newgen,eVTOL + defense JV (spec)
-JOBY,defense,newgen,eVTOL (spec)
-KRMN,defense,newgen,space/defense components (2025 IPO)
-RKLB,defense,space,launch + space systems
-LUNR,defense,space,lunar services
-ASTS,defense,space,direct-to-cell constellation (spec)
-RDW,defense,space,space infrastructure (spec)
-PL,defense,space,earth observation data
-IRDM,defense,space,satcom incumbent
-VOYG,defense,space,space infrastructure (2025 IPO)
-LDOS,defense,services,defense IT
-BAH,defense,services,defense digital/AI
-CACI,defense,services,defense tech services
-SAIC,defense,services,gov IT
-LLY,health,glp1-metabolic,tirzepatide + orforglipron: the franchise
-NVO,health,glp1-metabolic,semaglutide (ADR)
-VKTX,health,glp1-metabolic,obesity pipeline (spec)
-HIMS,health,glp1-metabolic,GLP-1 distribution/telehealth
-TEM,health,ai-medicine,AI diagnostics/data
-RXRX,health,ai-medicine,AI drug discovery (spec)
-SDGR,health,ai-medicine,physics+AI discovery platform
-WGS,health,ai-medicine,AI genomic diagnostics
-ISRG,health,medtech,surgical robotics monopoly-ish
-SYK,health,medtech,ortho robotics + medsurg
-BSX,health,medtech,electrophysiology growth
-EW,health,medtech,structural heart
-MDT,health,medtech,diversified devices
-ABT,health,medtech,devices + diagnostics
-DXCM,health,medtech,CGM duopoly
-PODD,health,medtech,insulin pumps
-GEHC,health,medtech,imaging + AI
-TMO,health,tools,life-science tools king
-DHR,health,tools,bioprocessing
-A,health,tools,tools/diagnostics
-MEDP,health,tools,CRO for biotech
-VRTX,health,biotech,CF franchise + pain (non-opioid)
-REGN,health,biotech,antibody engine
-CRSP,health,biotech,CRISPR (approved therapy)
-NTLA,health,biotech,in-vivo editing (spec)
-BEAM,health,biotech,base editing (spec)
-ILMN,health,biotech,sequencing incumbent
-EXAS,health,biotech,cancer screening
-GH,health,biotech,liquid biopsy
-NTRA,health,biotech,cfDNA testing leader
-ABBV,health,biotech,immunology cash machine
-JNJ,health,biotech,diversified anchor
-GLXY,outlier,multi-theme,crypto financial services + AI datacenter (Helios) pivot
-GEV,outlier,multi-theme,AI power + grid equipment + nuclear (spans ai/grid)
-TSLA,outlier,multi-theme,EV + energy storage + Optimus humanoid + FSD autonomy
-SPCX,outlier,multi-theme,SpaceX — launch + Starlink + defense + space datacenters (IPO 2026-06-12)
-SMH,etf,theme,AI semis benchmark
-IGV,etf,theme,software benchmark
-AIQ,etf,theme,broad AI
-GRID,etf,theme,grid infrastructure
-URA,etf,theme,uranium
-XLU,etf,theme,utilities
-BOTZ,etf,theme,robotics/AI
-ROBO,etf,theme,robotics broad
-ARKQ,etf,theme,autonomous tech
-ITA,etf,theme,aerospace/defense
-PPA,etf,theme,defense broad
-ARKX,etf,theme,space
-XLV,etf,theme,healthcare
-XBI,etf,theme,biotech equal-weight
-IHI,etf,theme,medical devices
-ARKG,etf,theme,genomics
-SPY,etf,benchmark,market
-QQQ,etf,benchmark,growth
-IWM,etf,benchmark,small caps
+ticker,theme,subtheme,name,mkt_cap_B,price,off_52w_high_pct,pe,fwd_pe,rev_B,rev_growth_pct,gross_margin_pct,op_margin_pct,fcf_B,role
+NVDA,ai,semis,NVIDIA Corporation,4912.3,202.81,-14.3,31.1,15.8,253.5,85.2,74.1,65.6,46.3,GPU/accelerator king; robotics+AI platform
+AMD,ai,semis,,808.4,495.76,-15.2,164.2,36.8,37.5,37.8,53.1,14.4,7.2,"#2 accelerator, DC CPU share gains"
+AVGO,ai,semis,Broadcom Inc.,1764.2,370.82,-25.1,61.7,19.1,75.5,47.9,76.3,49.0,27.2,custom AI ASICs + networking
+ARM,ai,semis,Arm Holdings plc,285.4,267.19,-41.0,310.7,86.8,4.9,20.1,97.5,29.5,0.8,IP for edge/DC compute
+MRVL,ai,semis,"Marvell Technology, Inc.",169.3,188.68,-42.8,64.8,30.4,8.7,27.6,51.5,14.5,2.3,custom silicon + optical DSP
+MU,ai,semis,,958.8,848.95,-32.4,19.2,5.6,90.3,345.7,72.6,80.4,7.6,HBM memory
+TSM,ai,semis,Taiwan Semiconductor Manufactur,2066.1,398.37,-16.8,29.8,18.8,4440.5,36.0,64.2,60.3,739.1,the foundry
+ASML,ai,semis,ASML Holding N.V. - New York Re,671.2,1747.58,-12.6,60.2,30.3,35.3,21.3,52.7,37.1,8.4,EUV monopoly
+AMAT,ai,semis,"Applied Materials, Inc.",420.5,529.66,-28.4,49.7,31.6,29.0,11.4,49.0,31.9,3.0,broad WFE
+LRCX,ai,semis,Lam Research Corporation,391.8,313.30,-28.6,59.2,38.8,21.7,23.8,50.0,35.0,4.4,etch/dep WFE
+KLAC,ai,semis,KLA Corporation,277.9,212.75,-30.8,60.3,41.5,13.1,11.5,61.4,41.2,2.9,process control
+QCOM,ai,semis,QUALCOMM Incorporated,181.1,171.78,-33.9,18.5,15.5,44.5,-3.5,54.8,22.1,9.6,edge AI silicon
+SNPS,ai,semis,"Synopsys, Inc.",73.6,384.27,-41.0,87.7,22.2,8.7,41.9,82.6,10.4,3.5,EDA duopoly
+CDNS,ai,semis,"Cadence Design Systems, Inc.",91.0,330.11,-20.8,76.9,35.1,5.5,18.7,86.1,29.7,1.5,EDA duopoly
+CRDO,ai,semis,Credo Technology Group Holding,37.8,202.68,-34.3,80.7,22.6,1.3,157.0,68.0,35.7,0.3,AEC cables/SerDes
+ALAB,ai,semis,"Astera Labs, Inc.",52.0,303.62,-39.2,203.8,69.5,1.0,93.4,76.0,20.1,0.2,connectivity for AI servers
+MPWR,ai,semis,"Monolithic Power Systems, Inc.",64.5,1312.00,-23.5,94.3,42.9,3.0,26.1,55.2,30.0,0.5,power management
+ON,ai,semis,ON Semiconductor Corporation,34.0,87.37,-35.2,64.2,20.1,6.1,4.7,42.7,18.2,1.3,power semis
+INTC,ai,semis,Intel Corporation,477.7,95.04,-33.2,,58.9,53.8,7.2,37.2,6.9,-8.3,foundry turnaround option
+COHR,ai,semis,Coherent Corp.,54.3,277.60,-36.9,131.6,33.7,6.6,20.5,37.0,13.6,-0.2,optical/photonic
+LITE,ai,semis,Lumentum Holdings Inc.,57.0,732.82,-32.5,128.1,40.0,2.5,90.1,40.8,21.8,0.1,optics
+CIEN,ai,semis,Ciena Corporation,53.0,374.41,-41.3,124.8,38.8,5.6,39.5,43.0,15.2,0.7,optical networking
+ANET,ai,semis,"Arista Networks, Inc.",212.3,168.61,-11.2,57.7,37.7,9.7,35.1,63.5,42.7,4.4,AI networking switches
+SMCI,ai,semis,"Super Micro Computer, Inc.",15.6,24.18,-61.2,12.7,7.7,33.7,122.7,8.4,6.1,-7.4,AI servers (governance history)
+DELL,ai,semis,Dell Technologies Inc.,256.1,396.34,-15.6,31.6,18.4,134.0,87.5,19.2,8.9,5.4,AI servers at scale
+HPE,ai,semis,Hewlett Packard Enterprise Comp,60.7,45.82,-28.7,42.8,11.5,38.8,40.0,33.8,8.7,3.8,servers/networking
+VRT,ai,semis,"Vertiv Holdings, LLC",111.2,289.56,-23.8,72.9,32.6,10.8,30.1,37.2,16.4,2.0,datacenter power/cooling
+STX,ai,semis,,178.2,787.66,-31.2,74.7,27.7,11.0,44.1,41.6,35.7,1.6,HAMR drives / AI storage
+WDC,ai,semis,,164.5,477.22,-40.3,28.6,25.7,11.8,45.5,45.4,37.0,2.1,HDD duopoly
+PSTG,ai,semis,,,,,,,,,,,,flash storage for AI
+MOD,ai,semis,Modine Manufacturing Company,12.2,229.34,-29.1,101.0,20.2,3.2,47.5,23.0,11.8,-0.1,datacenter cooling
+CRWV,ai,neocloud,"CoreWeave, Inc.",39.9,73.21,-52.2,,-50.0,6.2,111.6,69.4,-6.9,-8.6,largest neocloud
+NBIS,ai,neocloud,Nebius Group N.V.,45.1,177.71,-40.7,68.6,492.0,0.9,683.9,72.1,-32.1,-6.1,EU-origin neocloud
+IREN,ai,neocloud,IREN LIMITED,12.0,33.62,-56.3,43.7,-35.8,0.8,-0.0,68.4,-64.5,-2.3,renewables-powered DC
+APLD,ai,neocloud,Applied Digital Corporation,7.4,25.79,-49.2,,-21.0,0.3,139.3,45.4,-20.5,-1.5,HPC datacenters
+WULF,ai,neocloud,TeraWulf Inc.,9.0,18.16,-39.1,,93.1,0.2,-1.1,64.0,-366.2,-0.3,miner-to-AI pivot
+CORZ,ai,neocloud,"Core Scientific, Inc.",6.7,20.94,-31.3,,70.6,0.4,44.9,21.6,-18.8,0.2,HPC hosting
+CIFR,ai,neocloud,Cipher Digital Inc.,7.2,17.56,-41.7,,36.6,0.2,-28.8,12.4,-249.4,-2.9,miner-to-AI pivot
+HUT,ai,neocloud,Hut 8 Corp.,10.3,91.45,-35.0,,-49.2,0.3,225.5,59.7,-521.5,-0.3,compute + power
+MSFT,ai,platform,Microsoft Corporation,2925.5,393.82,-29.1,23.5,20.3,318.3,18.3,68.3,46.3,37.0,Azure + Copilot + OpenAI
+GOOGL,ai,platform,Alphabet Inc.,4231.5,346.77,-15.1,26.5,23.7,422.5,21.8,60.4,36.1,27.9,Gemini + TPU full stack
+AMZN,ai,platform,"Amazon.com, Inc.",2659.5,247.23,-11.2,29.6,24.9,742.8,16.6,50.6,13.1,9.8,AWS + Anthropic + Trainium
+META,ai,platform,"Meta Platforms, Inc.",1639.8,646.01,-18.9,23.5,17.8,215.0,33.1,81.9,40.6,25.6,open models + ad AI + compute resale
+AAPL,ai,platform,Apple Inc.,4901.8,333.74,-0.4,40.5,34.6,451.4,16.6,47.9,32.3,101.1,edge AI distribution
+ORCL,ai,platform,Oracle Corporation,364.1,126.41,-63.4,21.7,11.6,67.4,20.6,65.8,36.2,-24.5,OCI AI cloud
+PLTR,ai,software,Palantir Technologies Inc.,317.4,132.38,-36.2,148.7,63.2,5.2,84.7,84.1,46.2,1.8,enterprise/defense AI ontology
+APP,ai,software,Applovin Corporation,142.6,424.54,-43.1,36.9,19.6,6.2,59.0,88.4,78.2,3.2,AI ad engine
+NOW,ai,software,"ServiceNow, Inc.",106.5,103.24,-50.9,61.5,20.6,14.0,22.1,76.6,13.3,5.1,agentic enterprise workflows
+CRM,ai,software,,139.9,170.77,-37.7,19.8,11.0,42.8,13.3,77.6,21.8,16.6,Agentforce
+SNOW,ai,software,Snowflake Inc.,93.2,268.90,-5.6,,100.1,5.0,33.5,67.1,-22.2,1.7,data cloud for AI
+DDOG,ai,software,"Datadog, Inc.",92.1,258.69,-7.2,663.3,89.8,3.7,32.2,79.9,0.8,0.9,observability for AI apps
+MDB,ai,software,"MongoDB, Inc.",25.1,312.33,-29.8,,42.6,2.6,25.2,72.0,-3.6,0.5,AI app database
+NET,ai,software,"Cloudflare, Inc.",98.6,277.66,-4.6,,175.9,2.3,33.5,73.3,-9.7,0.8,edge inference network
+CRWD,ai,software,"CrowdStrike Holdings, Inc.",206.8,203.08,-6.6,,130.0,5.1,25.6,75.1,-2.2,1.9,AI-native security
+PANW,ai,software,"Palo Alto Networks, Inc.",292.3,358.68,-2.7,311.9,87.0,10.6,31.1,72.0,-2.5,3.6,security platform
+IOT,ai,software,,22.3,38.32,-19.3,383.2,42.8,1.7,30.5,76.3,1.5,0.2,physical-ops AI
+PATH,ai,software,"UiPath, Inc.",6.3,12.15,-38.8,20.2,13.4,1.7,17.3,83.0,7.3,0.5,RPA→agentic automation
+DUOL,ai,software,"Duolingo, Inc.",6.2,133.85,-71.4,15.3,17.1,1.1,26.5,72.7,15.4,0.3,consumer AI app economics
+RDDT,ai,software,"Reddit, Inc.",34.9,181.18,-36.0,51.8,19.8,2.5,69.1,91.4,27.6,0.6,data licensing + AI search
+SOUN,ai,software,"SoundHound AI, Inc.",2.7,6.27,-71.7,,-52.2,0.2,51.7,40.6,-139.3,-0.0,voice AI (spec)
+AI,ai,software,,1.4,8.82,-70.7,,-19.6,0.3,-52.5,30.9,-213.8,-0.0,enterprise AI apps (spec)
+BBAI,ai,software,"BigBear.ai, Inc.",1.4,2.84,-69.8,,-14.2,0.1,-0.9,25.8,-66.9,-0.1,defense AI analytics (spec)
+VST,grid,generation,Vistra Corp.,52.4,155.44,-29.3,26.0,14.4,19.4,43.4,38.6,26.6,-0.2,merchant power + nuclear
+CEG,grid,generation,Constellation Energy Corporatio,90.1,252.39,-38.8,21.9,18.6,29.9,63.8,23.3,21.9,-4.5,largest US nuclear fleet
+TLN,grid,generation,Talen Energy Corporation,17.8,372.37,-17.5,,12.4,3.2,96.7,40.1,17.2,1.4,nuclear + DC deals
+NRG,grid,generation,,27.2,129.11,-32.0,143.5,11.2,32.4,19.5,16.4,3.6,0.4,merchant power + retail
+NEE,grid,generation,,185.2,88.80,-10.1,22.5,20.2,27.9,7.3,61.4,30.2,-18.5,renewables giant
+SO,grid,generation,,107.4,95.30,-5.5,24.4,19.4,30.2,8.0,48.0,25.8,-4.0,regulated growth + Vogtle
+DUK,grid,generation,Duke Energy Corporation (Holdin,97.5,125.01,-7.0,19.2,17.4,32.7,11.3,51.0,25.5,-2.2,regulated southeast demand
+OKLO,grid,nuclear-new,Oklo Inc.,7.2,41.11,-78.8,,-48.9,,,0.0,0.0,-0.1,SMR developer (spec)
+SMR,grid,nuclear-new,NuScale Power Corporation,2.7,7.72,-86.6,,-10.8,0.0,-95.8,23.8,-10181.2,-0.2,NuScale SMR (spec)
+BWXT,grid,nuclear-new,"BWX Technologies, Inc.",15.7,171.18,-29.2,45.6,33.0,3.4,26.1,22.7,10.4,0.2,nuclear components/naval
+CCJ,grid,nuclear-new,,37.3,85.62,-36.7,81.5,45.0,3.5,7.1,36.8,18.2,0.6,uranium major
+LEU,grid,nuclear-new,Centrus Energy Corp.,3.1,156.05,-66.4,56.7,39.6,0.5,4.9,25.7,-0.3,-0.0,US enrichment
+UEC,grid,nuclear-new,,4.6,9.28,-54.4,,-92.8,0.0,,0.0,-629.7,-0.1,US uranium (spec)
+ETN,grid,equipment,,155.3,399.99,-8.4,39.1,25.4,28.5,16.8,37.1,16.1,2.6,electrical everything
+HUBB,grid,equipment,Hubbell Inc,25.8,488.67,-13.6,28.9,21.8,6.0,11.1,35.7,17.7,0.5,grid components
+NVT,grid,equipment,nVent Electric plc,25.1,154.92,-16.1,52.7,27.0,4.3,53.5,37.0,16.0,0.2,electrical connection/protection
+ATKR,grid,equipment,Atkore Inc.,2.5,73.42,-18.6,,11.9,2.9,4.2,20.9,5.5,0.3,conduit/infrastructure
+AMSC,grid,equipment,American Superconductor Corpora,1.6,33.02,-53.1,10.8,22.3,0.3,29.6,30.8,5.1,0.0,grid tech/superconductors (spec)
+ITRI,grid,equipment,"Itron, Inc.",3.8,85.99,-39.4,13.7,13.1,2.3,-3.3,38.8,11.5,0.3,grid edge/metering
+TT,grid,equipment,Trane Technologies plc,103.9,469.98,-7.1,35.8,27.5,21.6,6.0,35.9,15.5,2.7,cooling/HVAC for DC era
+PWR,grid,builders,"Quanta Services, Inc.",94.3,628.53,-20.3,86.2,38.2,30.1,26.3,15.1,4.2,1.0,the grid builder
+EME,grid,builders,"EMCOR Group, Inc.",33.1,744.16,-21.8,25.0,22.7,17.7,19.7,19.3,8.7,0.9,electrical construction
+FIX,grid,builders,,58.9,1674.06,-19.3,48.3,30.9,10.1,1.0,25.1,7.9,1.1,mechanical/electrical contractor
+STRL,grid,builders,"Sterling Infrastructure, Inc.",19.6,638.56,-36.5,57.2,25.3,2.9,91.6,23.3,17.2,0.3,e-infrastructure/DC sitework
+IESC,grid,builders,"IES Holdings, Inc.",12.2,613.02,-23.8,32.7,,3.6,16.8,26.1,11.5,0.3,electrical infrastructure
+MYRG,grid,builders,"MYR Group, Inc.",6.1,391.51,-22.3,43.1,29.1,3.8,20.0,12.1,6.4,0.2,T&D construction
+POWL,grid,builders,"Powell Industries, Inc.",8.5,232.79,-29.0,45.5,33.9,1.1,6.5,30.1,19.4,0.1,switchgear
+FSLR,grid,storage-solar,"First Solar, Inc.",22.8,211.99,-33.9,13.7,9.0,5.4,23.6,41.7,33.1,1.1,US-made solar for DC/utility
+NXT,grid,storage-solar,Nextpower Inc.,15.8,103.10,-36.8,26.8,17.5,3.6,-4.7,21.9,18.2,0.3,solar trackers
+FLNC,grid,storage-solar,"Fluence Energy, Inc.",2.6,14.07,-58.0,,72.0,2.6,7.7,11.7,-8.4,-0.1,grid storage
+EOSE,grid,storage-solar,"Eos Energy Enterprises, Inc.",1.5,4.13,-79.2,,-103.4,0.2,444.7,-101.9,-139.1,-0.3,long-duration storage (spec)
+BE,grid,storage-solar,Bloom Energy Corporation,61.1,214.96,-38.8,,47.3,2.4,130.4,30.1,9.6,0.3,fuel cells for DC power (spec)
+ALB,grid,storage-solar,Albemarle Corporation,14.2,120.78,-45.3,,9.5,5.5,32.7,18.5,24.8,0.7,lithium
+DE,robotics,platforms,Deere & Company,161.2,597.24,-11.4,33.8,26.2,47.3,-11.1,26.0,17.5,1.1,autonomous ag
+HON,robotics,platforms,,71.3,225.02,-13.5,18.0,23.0,37.7,2.4,36.9,21.0,2.9,industrial automation
+EMR,robotics,platforms,Emerson Electric Company,78.2,139.54,-15.5,32.2,19.4,18.3,2.9,52.7,24.2,3.3,automation portfolio
+ROK,robotics,platforms,"Rockwell Automation, Inc.",51.4,461.85,-7.1,47.9,31.6,8.8,11.9,48.9,20.7,1.0,factory automation pure-ish play
+TER,robotics,enablers,,50.5,322.36,-33.9,59.9,32.8,3.8,87.0,58.7,37.6,0.3,robot test + Universal Robots
+CGNX,robotics,enablers,Cognex Corporation,10.7,64.07,-12.1,75.4,36.0,1.0,24.3,68.0,22.3,0.2,machine vision
+ZBRA,robotics,enablers,Zebra Technologies Corporation,12.7,267.40,-24.2,32.3,12.9,5.6,14.3,48.2,15.0,0.6,enterprise autonomy/vision
+AMBA,robotics,enablers,"Ambarella, Inc.",2.7,61.84,-36.0,,53.9,0.4,16.9,58.8,-19.3,0.0,edge vision silicon
+OUST,robotics,enablers,"Ouster, Inc.",2.5,37.04,-41.9,,-823.1,0.2,48.9,47.7,-39.5,-0.0,lidar (spec)
+NOVT,robotics,enablers,Novanta Inc.,5.3,148.71,-13.5,106.2,35.9,1.0,10.4,44.2,11.7,0.1,precision robotics components
+SYM,robotics,appliers,Symbotic Inc.,24.9,41.25,-53.1,,57.2,2.5,23.1,20.4,1.1,0.3,warehouse automation at Walmart scale
+SERV,robotics,appliers,Serve Robotics Inc.,0.4,5.09,-72.7,,-2.8,0.0,578.2,0.0,-1673.5,-0.1,sidewalk delivery robots (spec)
+RR,robotics,appliers,Richtech Robotics Inc.,0.4,1.60,-78.5,,,0.0,-8.8,55.8,-1029.6,0.0,service robots (spec)
+LMT,defense,primes,Lockheed Martin Corporation,117.3,508.77,-26.5,24.6,15.9,75.1,0.3,9.9,11.0,4.0,prime + hypersonics
+RTX,defense,primes,RTX Corporation,260.6,193.51,-9.8,36.4,25.5,90.4,8.7,20.2,13.2,7.2,prime + missiles/GTF
+NOC,defense,primes,,74.1,521.57,-32.6,16.3,17.3,42.4,4.4,20.5,11.7,2.1,B-21 + nukes
+GD,defense,primes,General Dynamics Corporation,99.7,368.58,-3.2,23.2,20.2,53.8,10.3,15.2,10.5,5.3,subs + land
+LHX,defense,primes,"L3Harris Technologies, Inc.",52.5,282.01,-25.6,30.6,20.7,12.9,190.0,30.4,9.7,,electronics prime
+BA,defense,primes,Boeing Company (The),168.7,214.03,-15.9,84.6,52.3,92.2,14.0,4.8,1.7,2.6,duopoly airframer (turnaround)
+GE,defense,primes,,361.9,348.83,-8.9,41.1,39.3,50.6,21.1,31.1,20.6,6.6,engines/aero anchor
+HWM,defense,suppliers,Howmet Aerospace Inc.,109.0,272.43,-6.3,63.4,45.0,8.6,19.1,35.0,28.2,1.2,aero fasteners/structures
+TDG,defense,suppliers,,67.9,1214.43,-25.2,37.9,25.9,9.5,18.3,59.7,46.7,1.5,aftermarket monopoly economics
+HEI,defense,suppliers,,47.9,342.66,-7.3,61.3,49.5,4.9,25.3,40.1,25.5,0.7,aero parts compounder
+CW,defense,suppliers,,26.1,707.84,-12.4,51.8,41.4,3.6,13.4,37.2,17.6,0.5,naval/nuclear components
+DRS,defense,suppliers,"Leonardo DRS, Inc.",11.8,44.14,-12.7,41.3,30.7,3.7,5.9,24.4,9.1,0.3,sensing/electronics
+MRCY,defense,suppliers,Mercury Systems Inc,5.8,96.08,-25.2,,62.2,1.0,11.5,28.7,3.2,0.1,defense compute
+TXT,defense,suppliers,Textron Inc.,15.9,91.48,-9.9,17.5,12.6,15.2,11.8,17.8,8.0,0.6,Bell + Textron systems
+AXON,defense,newgen,"Axon Enterprise, Inc.",41.1,510.28,-42.4,204.1,48.3,3.0,33.7,59.5,3.7,0.1,public-safety tech monopoly-ish
+KTOS,defense,newgen,Kratos Defense & Security Solut,8.6,46.03,-65.6,270.8,42.2,1.4,22.6,22.9,1.8,-0.1,drones/hypersonics
+AVAV,defense,newgen,"AeroVironment, Inc.",7.2,142.20,-66.0,,31.4,2.0,133.3,25.3,2.8,-0.3,small drones + loitering munitions
+ACHR,defense,newgen,Archer Aviation Inc.,3.4,4.44,-69.6,,-4.8,0.0,,15.8,-15762.5,-0.4,eVTOL + defense JV (spec)
+JOBY,defense,newgen,"Joby Aviation, Inc.",7.1,7.23,-65.5,,-14.5,0.1,,38.0,-963.4,-0.4,eVTOL (spec)
+KRMN,defense,newgen,Karman Holdings Inc.,6.1,46.17,-61.0,200.7,49.9,0.5,51.0,41.0,15.5,-0.0,space/defense components (2025 IPO)
+RKLB,defense,space,Rocket Lab Corporation,42.3,67.62,-55.2,,2254.0,0.7,63.5,36.6,-22.4,-0.2,launch + space systems
+LUNR,defense,space,"Intuitive Machines, Inc.",2.2,13.52,-71.1,,-270.4,0.3,198.7,9.7,-10.3,-0.0,lunar services
+ASTS,defense,space,"AST SpaceMobile, Inc.",22.4,57.80,-56.8,,-222.1,0.1,1952.2,44.8,-1014.0,-1.4,direct-to-cell constellation (spec)
+RDW,defense,space,Redwire Corporation,2.0,8.45,-68.3,,-20.6,0.4,57.9,12.9,-71.8,-0.1,space infrastructure (spec)
+PL,defense,space,Planet Labs PBC,8.0,22.47,-56.6,,6747.7,0.3,42.1,55.6,-30.5,0.1,earth observation data
+IRDM,defense,space,Iridium Communications Inc,4.9,46.68,-18.4,47.2,39.4,0.9,1.9,71.6,23.2,0.3,satcom incumbent
+VOYG,defense,space,"Voyager Technologies, Inc.",1.5,25.90,-50.6,,-18.8,0.2,2.1,13.6,-126.7,-0.2,space infrastructure (2025 IPO)
+LDOS,defense,services,"Leidos Holdings, Inc.",13.4,106.48,-48.3,9.8,8.1,17.3,3.7,17.9,12.2,1.2,defense IT
+BAH,defense,services,,7.8,65.21,-45.7,9.5,9.5,11.2,-6.5,22.4,9.5,0.8,defense digital/AI
+CACI,defense,services,"CACI International, Inc.",10.2,461.56,-32.5,19.0,14.8,9.2,8.5,32.6,9.7,0.4,defense tech services
+SAIC,defense,services,Science Applications Internatio,4.9,115.51,-6.4,13.0,10.5,7.3,1.5,12.6,8.8,0.4,gov IT
+LLY,health,glp1-metabolic,,1051.5,1179.11,-5.6,41.8,26.3,72.2,55.5,82.8,49.4,9.2,tirzepatide + orforglipron: the franchise
+NVO,health,glp1-metabolic,,222.6,50.32,-29.9,12.1,14.9,327.8,24.0,83.2,61.6,-12.0,semaglutide (ADR)
+VKTX,health,glp1-metabolic,"Viking Therapeutics, Inc.",4.3,37.08,-14.1,,-8.1,,,0.0,0.0,-0.2,obesity pipeline (spec)
+HIMS,health,glp1-metabolic,"Hims & Hers Health, Inc.",7.6,32.84,-53.4,,36.9,2.4,3.8,72.9,-7.9,0.2,GLP-1 distribution/telehealth
+TEM,health,ai-medicine,"Tempus AI, Inc.",9.4,52.47,-49.7,,-662.8,1.4,36.1,63.4,-24.3,-0.1,AI diagnostics/data
+RXRX,health,ai-medicine,"Recursion Pharmaceuticals, Inc.",1.6,2.94,-59.0,,-3.1,0.1,-56.1,0.0,-1985.6,-0.2,AI drug discovery (spec)
+SDGR,health,ai-medicine,"Schrodinger, Inc.",1.1,15.32,-35.5,,-9.2,0.3,-1.6,55.3,-83.3,-0.0,physics+AI discovery platform
+WGS,health,ai-medicine,GeneDx Holdings Corp.,1.9,63.48,-62.8,,57.5,0.4,17.4,69.6,-25.6,0.0,AI genomic diagnostics
+ISRG,health,medtech,"Intuitive Surgical, Inc.",122.3,345.42,-42.8,39.7,28.8,11.0,18.5,66.8,33.7,,surgical robotics monopoly-ish
+SYK,health,medtech,Stryker Corporation,122.6,319.87,-21.0,37.0,19.1,25.3,2.6,64.7,17.8,4.4,ortho robotics + medsurg
+BSX,health,medtech,Boston Scientific Corporation,65.4,44.03,-59.8,18.4,11.9,20.6,11.6,68.9,20.6,2.8,electrophysiology growth
+EW,health,medtech,Edwards Lifesciences Corporatio,49.4,85.73,-11.0,46.3,25.5,6.3,16.7,77.9,31.2,0.9,structural heart
+MDT,health,medtech,,106.5,83.20,-21.8,22.3,13.0,36.4,9.9,65.3,22.0,4.6,diversified devices
+ABT,health,medtech,,175.4,100.68,-26.8,28.2,16.6,46.6,13.0,56.8,14.2,,devices + diagnostics
+DXCM,health,medtech,"DexCom, Inc.",29.6,76.65,-14.8,32.9,24.9,4.8,15.0,61.5,21.4,1.1,CGM duopoly
+PODD,health,medtech,Insulet Corporation,11.4,164.06,-53.8,38.3,20.4,2.9,33.9,71.0,16.0,0.3,insulin pumps
+GEHC,health,medtech,GE HealthCare Technologies Inc.,28.7,63.07,-29.7,15.1,11.8,21.0,7.4,39.1,11.1,1.5,imaging + AI
+TMO,health,tools,,197.9,532.48,-17.3,29.2,19.5,45.2,6.2,40.9,17.9,5.5,life-science tools king
+DHR,health,tools,Danaher Corporation,144.3,203.83,-16.1,39.5,22.1,24.8,3.7,59.0,22.9,4.6,bioprocessing
+A,health,tools,"Agilent Technologies, Inc.",37.1,131.46,-18.0,26.4,19.9,7.2,10.0,52.6,23.7,0.9,tools/diagnostics
+MEDP,health,tools,"Medpace Holdings, Inc.",15.4,537.73,-14.5,33.8,28.7,2.7,26.5,71.9,20.0,0.5,CRO for biotech
+VRTX,health,biotech,Vertex Pharmaceuticals Incorpor,123.3,485.65,-9.0,28.8,22.7,12.2,7.8,54.4,38.1,2.8,CF franchise + pain (non-opioid)
+REGN,health,biotech,"Regeneron Pharmaceuticals, Inc.",70.9,676.69,-17.6,16.5,12.4,14.9,19.0,43.9,20.7,3.3,antibody engine
+CRSP,health,biotech,CRISPR Therapeutics AG,4.7,47.78,-39.1,,-12.3,0.0,68.6,0.0,-8933.3,-0.3,CRISPR (approved therapy)
+NTLA,health,biotech,"Intellia Therapeutics, Inc.",1.6,11.38,-59.7,,-6.5,0.1,-9.5,0.0,-668.1,-0.2,in-vivo editing (spec)
+BEAM,health,biotech,Beam Therapeutics Inc.,2.8,27.53,-28.0,,-5.8,0.2,324.9,-146.9,-337.8,-0.2,base editing (spec)
+ILMN,health,biotech,"Illumina, Inc.",28.2,186.65,-5.1,33.9,31.5,4.4,4.8,68.3,18.3,0.8,sequencing incumbent
+EXAS,health,biotech,,,,,,,,,,,,cancer screening
+GH,health,biotech,"Guardant Health, Inc.",20.7,155.87,-10.5,,-359.8,1.1,48.3,64.9,-40.2,-0.1,liquid biopsy
+NTRA,health,biotech,"Natera, Inc.",38.9,271.39,-5.8,,-1325.9,2.5,38.8,65.1,-12.4,0.1,cfDNA testing leader
+ABBV,health,biotech,AbbVie Inc.,449.6,254.49,-2.7,124.8,15.6,62.8,12.4,72.0,32.2,20.8,immunology cash machine
+JNJ,health,biotech,Johnson & Johnson,609.1,253.04,-6.1,29.3,19.7,97.9,6.6,68.1,28.6,,diversified anchor
+GLXY,outlier,multi-theme,Galaxy Digital Inc.,8.4,21.63,-52.9,,297.7,58.7,-20.6,100.0,95.9,,crypto financial services + AI datacenter (Helios) pivot
+GEV,outlier,multi-theme,GE Vernova Inc.,284.3,1057.84,-11.5,31.0,43.0,39.4,16.3,20.3,5.5,9.3,AI power + grid equipment + nuclear (spans ai/grid)
+TSLA,outlier,multi-theme,"Tesla, Inc.",1430.3,380.84,-23.7,346.2,149.1,97.9,15.8,19.1,4.2,5.3,EV + energy storage + Optimus humanoid + FSD autonomy
+SPCX,outlier,multi-theme,Space Exploration Technologies,1633.5,123.99,-45.0,,137.3,19.3,15.4,48.8,-41.6,,SpaceX — launch + Starlink + defense + space datacenters (IPO 2026-06-12)
+SMH,etf,theme,,77.2,556.53,-17.2,36.0,,,,,,,AI semis benchmark
+IGV,etf,theme,iShares Expanded Tech-Software,13.5,92.80,-21.3,32.0,,,,,,,software benchmark
+AIQ,etf,theme,Global X Artificial Intelligenc,10.4,58.70,-16.5,25.9,,,,,,,broad AI
+GRID,etf,theme,First Trust NASDAQ Clean Edge S,12.1,177.85,-11.1,30.2,,,,,,,grid infrastructure
+URA,etf,theme,,6.0,38.73,-37.8,32.9,,,,,,,uranium
+XLU,etf,theme,State Street Utilities Select S,23.1,45.17,-5.5,20.9,,,,,,,utilities
+BOTZ,etf,theme,Global X Robotics & Artificial,3.5,34.40,-17.5,33.7,,,,,,,robotics/AI
+ROBO,etf,theme,ROBO Global Robotics and Automa,2.0,77.89,-13.9,28.5,,,,,,,robotics broad
+ARKQ,etf,theme,ARK Autonomous Technology & Rob,2.2,116.14,-19.6,38.3,,,,,,,autonomous tech
+ITA,etf,theme,iShares U.S. Aerospace & Defens,14.4,230.73,-8.3,36.5,,,,,,,aerospace/defense
+PPA,etf,theme,Invesco Aerospace & Defense ETF,8.3,168.51,-9.5,33.0,,,,,,,defense broad
+ARKX,etf,theme,ARK Space & Defense Innovation,0.9,30.30,-20.0,32.0,,,,,,,space
+XLV,etf,theme,,40.6,161.09,-2.7,29.0,,,,,,,healthcare
+XBI,etf,theme,State Street SPDR S&P Biotech E,10.7,154.26,-6.9,,,,,,,,biotech equal-weight
+IHI,etf,theme,iShares U.S. Medical Devices ET,3.0,50.51,-21.9,29.0,,,,,,,medical devices
+ARKG,etf,theme,ARK Genomic Revolution ETF,1.7,39.87,-10.3,,,,,,,,genomics
+SPY,etf,benchmark,State Street SPDR S&P 500 ETF T,781.2,743.29,-2.3,26.7,,,,,,,market
+QQQ,etf,benchmark,"Invesco QQQ Trust, Series 1",490.1,695.33,-7.1,30.9,,,,,,,growth
+IWM,etf,benchmark,iShares Russell 2000 Index Fund,83.0,294.04,-2.9,18.2,,,,,,,small caps

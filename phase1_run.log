@@ -1,0 +1,124 @@
+symbol directory: 6177 common-stock symbols
+scanned 200/6177, events 284
+scanned 1200/6177, events 1814
+scanned 2200/6177, events 3337
+scanned 3200/6177, events 4773
+scanned 4200/6177, events 6166
+scanned 5200/6177, events 7616
+$SVA: possibly delisted; no price data found  (period=10y)
+
+1 Failed download:
+['SVA']: possibly delisted; no price data found  (period=10y)
+scanned 6177/6177, events 9295
+{
+ "generated": "2026-07-19T07:41:47+00:00",
+ "universe": {
+  "symbols_scanned": 6177,
+  "liquid": 2728,
+  "note": "survivorship-biased (today's listings); comparison, not absolute levels, is the finding"
+ },
+ "events": {
+  "BOTTOM": 4416,
+  "BREAKOUT": 4879
+ },
+ "BOTTOM": {
+  "fwd13w": {
+   "n": 4307,
+   "median": 3.6,
+   "mean": 9.4,
+   "win_rate": 56.1
+  },
+  "fwd26w": {
+   "n": 4206,
+   "median": 8.7,
+   "mean": 20.1,
+   "win_rate": 60.7
+  },
+  "fwd52w": {
+   "n": 3786,
+   "median": 15.7,
+   "mean": 37.4,
+   "win_rate": 61.0
+  },
+  "exc26w": {
+   "n": 4206,
+   "median": -2.3,
+   "mean": 9.8,
+   "win_rate": 47.0
+  },
+  "exc52w": {
+   "n": 3786,
+   "median": -6.4,
+   "mean": 16.7,
+   "win_rate": 44.2
+  },
+  "mae26w": {
+   "n": 4410,
+   "median": -13.6,
+   "mean": -18.8,
+   "win_rate": 0.0
+  }
+ },
+ "BREAKOUT": {
+  "fwd13w": {
+   "n": 4710,
+   "median": 2.3,
+   "mean": 5.6,
+   "win_rate": 55.2
+  },
+  "fwd26w": {
+   "n": 4527,
+   "median": 4.1,
+   "mean": 10.7,
+   "win_rate": 56.7
+  },
+  "fwd52w": {
+   "n": 4073,
+   "median": 8.5,
+   "mean": 21.0,
+   "win_rate": 60.4
+  },
+  "exc26w": {
+   "n": 4527,
+   "median": -2.7,
+   "mean": 3.9,
+   "win_rate": 45.4
+  },
+  "exc52w": {
+   "n": 4073,
+   "median": -5.8,
+   "mean": 5.4,
+   "win_rate": 42.9
+  },
+  "mae26w": {
+   "n": 4869,
+   "median": -10.9,
+   "mean": -15.5,
+   "win_rate": 0.6
+  }
+ },
+ "pairs": {
+  "n_paired": 1234,
+  "n_bottom_never_graduated_1y": 3182,
+  "graduation_rate_pct": 27.9,
+  "weeks_to_breakout": {
+   "n": 1234,
+   "median": 24.0,
+   "mean": 24.5,
+   "win_rate": 100.0
+  },
+  "head_start_pct": {
+   "n": 1234,
+   "median": 35.2,
+   "mean": 49.5,
+   "win_rate": 100.0
+  },
+  "orphan_bottom_fwd26w": {
+   "n": 2987,
+   "median": 3.8,
+   "mean": 12.4,
+   "win_rate": 54.8
+  }
+ }
+}
+status=ok

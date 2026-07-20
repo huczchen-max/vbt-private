@@ -1,0 +1,34 @@
+downloaded 100/177
+downloaded 177/177
+{
+ "generated": "2026-07-20T04:33:36+00:00",
+ "biases": "no earnings blackout modeled (optimistic); BS w/o skew understates real put credits (pessimistic); income held as cash, not reinvested (conservative)",
+ "WINNER": {
+  "names": 71,
+  "income_yield_pct_median": 2.31,
+  "pct_names_income_positive": 91.5,
+  "cycle_win_pct_median": 75.6,
+  "worst_cycle_median": -452.0,
+  "worst_year_median": -235.0,
+  "overlay_income_vs_hold_pnl_pct_median": 6.2
+ },
+ "MID": {
+  "names": 57,
+  "income_yield_pct_median": 1.17,
+  "pct_names_income_positive": 87.7,
+  "cycle_win_pct_median": 81.8,
+  "worst_cycle_median": -436.0,
+  "worst_year_median": -248.0,
+  "overlay_income_vs_hold_pnl_pct_median": 8.7
+ },
+ "LAGGARD": {
+  "names": 32,
+  "income_yield_pct_median": 0.78,
+  "pct_names_income_positive": 81.2,
+  "cycle_win_pct_median": 76.7,
+  "worst_cycle_median": -220.0,
+  "worst_year_median": -95.0,
+  "overlay_income_vs_hold_pnl_pct_median": 17.1
+ }
+}
+status=ok

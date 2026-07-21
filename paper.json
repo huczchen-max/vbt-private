@@ -1,17 +1,99 @@
 {
- "as_of": "2026-07-18",
- "updated_utc": "2026-07-18T18:15:05+00:00",
+ "as_of": "2026-07-21",
+ "updated_utc": "2026-07-21T07:05:17+00:00",
  "account": {
-  "equity": 100000.0,
-  "cash": 100000.0,
-  "pl_total": 0.0
+  "equity": 99107.04,
+  "cash": 44266.45,
+  "pl_total": 1060.68
  },
- "positions": [],
+ "positions": [
+  {
+   "symbol": "BE",
+   "qty": 34.806708097,
+   "avg_entry": 217.37,
+   "current": 206.8,
+   "pl_pct": -4.86,
+   "pl_usd": -367.92,
+   "entered": "\u2014",
+   "stage": "\u2014"
+  },
+  {
+   "symbol": "CIEN",
+   "qty": 21.0,
+   "avg_entry": 382.32,
+   "current": 390.81,
+   "pl_pct": 2.22,
+   "pl_usd": 178.29,
+   "entered": "2026-07-10",
+   "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "CORZ",
+   "qty": 191.0,
+   "avg_entry": 22.28,
+   "current": 22.84,
+   "pl_pct": 2.51,
+   "pl_usd": 106.96,
+   "entered": "2026-07-10",
+   "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "GH",
+   "qty": 51.659683188,
+   "avg_entry": 156.56,
+   "current": 145.85,
+   "pl_pct": -6.84,
+   "pl_usd": -553.36,
+   "entered": "\u2014",
+   "stage": "\u2014"
+  },
+  {
+   "symbol": "LLY",
+   "qty": 6.53,
+   "avg_entry": 1182.05,
+   "current": 1148.03,
+   "pl_pct": -2.88,
+   "pl_usd": -222.15,
+   "entered": "\u2014",
+   "stage": "\u2014"
+  },
+  {
+   "symbol": "MU",
+   "qty": 9.679731907,
+   "avg_entry": 891.27,
+   "current": 912.0,
+   "pl_pct": 2.33,
+   "pl_usd": 200.62,
+   "entered": "\u2014",
+   "stage": "Intact"
+  },
+  {
+   "symbol": "SNPS",
+   "qty": 20.0,
+   "avg_entry": 382.75,
+   "current": 380.7,
+   "pl_pct": -0.54,
+   "pl_usd": -41.07,
+   "entered": "2026-07-03",
+   "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "TLN",
+   "qty": 10.0,
+   "avg_entry": 379.43,
+   "current": 360.0,
+   "pl_pct": -5.12,
+   "pl_usd": -194.31,
+   "entered": "2026-06-26",
+   "stage": "CONFIRMED"
+  }
+ ],
  "entries": {
   "CIEN": "2026-07-10",
   "CORZ": "2026-07-10",
   "SNPS": "2026-07-03",
-  "TLN": "2026-06-26"
+  "TLN": "2026-06-26",
+  "WDC": "2026-07-21"
  },
  "seeded": true,
  "ledger": [
@@ -38,6 +120,30 @@
    "action": "BUY",
    "symbol": "TLN",
    "note": "10 sh ~$3,724 (spec 4%) on stage-3 seed (transition 2026-06-26) @ 372.37"
+  },
+  {
+   "date": "2026-07-21",
+   "action": "SELL",
+   "symbol": "BE",
+   "note": "left universe"
+  },
+  {
+   "date": "2026-07-21",
+   "action": "SELL",
+   "symbol": "GH",
+   "note": "left universe"
+  },
+  {
+   "date": "2026-07-21",
+   "action": "SELL",
+   "symbol": "LLY",
+   "note": "left universe"
+  },
+  {
+   "date": "2026-07-21",
+   "action": "BUY",
+   "symbol": "WDC",
+   "note": "16 sh ~$7,799 (quality 8%) on stage-3 entry @ 487.42 | llm:CAUTION mult:0.5 regime:RISK-OFF"
   }
  ]
 }

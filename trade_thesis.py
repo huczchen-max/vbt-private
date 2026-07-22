@@ -97,6 +97,7 @@ def main():
     stock_budget = budget * STOCK_SLEEVE
     options_budget = budget * OPTIONS_SLEEVE
     positions = {p["symbol"]: p for p in api("/v2/positions")}
+    open_syms = {o["symbol"] for o in api("/v2/orders?status=open&limit=200")}
 
     def log(action, sym, note):
         ledger.append({"date": today, "action": action, "symbol": sym,
@@ -124,6 +125,27 @@ def main():
                                "score": r.get("score") or 0,
                                "door": s.get("door")})
     ranked.sort(key=lambda x: -x["score"])
+
+    # ---- RECONCILE: restore holdings externally sold (e.g., the
+    # 2026-07-21 VBT-1 sweep incident) --------------------------------
+    for t in list(holdings):
+        if t in positions or t in open_syms:
+            continue
+        door = thesis.get(t, {}).get("door")
+        if door in OPEN_DOORS:
+            notional = stock_budget * holdings[t].get("target_weight", 0.25)
+            try:
+                order(t, notional, "buy")
+                log("REPAIR-BUY", t,
+                    f"missing from account (external sale) — restored "
+                    f"~${notional:,.0f}, door {door}")
+            except Exception as e:
+                log("REPAIR-FAIL", t, str(e)[:120])
+        else:
+            log("REPAIR-DROP", t, f"missing and door now {door} — "
+                                  f"removed from book")
+            holdings.pop(t)
+            broken_w.pop(t, None)
 
     # ---- replacement rule: BROKEN for 4+ consecutive weeks --------------
     for sym in list(holdings):

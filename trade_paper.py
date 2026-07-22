@@ -116,8 +116,25 @@ def main():
         print(f"paper: {action} {sym} — {note}")
 
     # ---- EXITS first (frees buying power) --------------------------------
+    # GUARD (2026-07-22): the account is SHARED with the VBT-2 thesis book
+    # (trade_thesis.py). This engine may only manage positions it opened
+    # (tracked in its own `entries`). On 2026-07-21 the old sweep sold
+    # VBT-2's GH and LLY as "left universe" — never again.
+    vbt2_holdings = set()
+    try:
+        vbt2_holdings = set(json.loads(
+            (PAPER_PATH.parent / "thesis_paper.json").read_text()
+        ).get("holdings", {}).keys())
+    except Exception:
+        pass
     for sym, pos in list(positions.items()):
         r = rows.get(sym)
+        if sym not in entries:
+            continue  # not opened by this engine (e.g., VBT-2 book)
+        if sym in vbt2_holdings:
+            log("CONFLICT", sym,
+                "held by BOTH books — auto-exit suppressed, review manually")
+            continue
         if sym in open_orders:
             continue
         held_days = None

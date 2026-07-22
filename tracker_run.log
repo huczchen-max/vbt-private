@@ -1,32 +1,36 @@
 prices 100/196
 prices 196/196
-tracked 194 names; doors {'IN-TREND': 113, 'ENTRY-BOTTOM': 7, 'BROKEN': 65, 'ENTRY-MACROSS': 9}; events this run 0
-  ai        etf=IN-TREND/Uptrend breadth intact 73.8% uptrend 42.6%
+tracked 194 names; doors {'IN-TREND': 114, 'ENTRY-BOTTOM': 8, 'BROKEN': 65, 'ENTRY-MACROSS': 7}; events this run 5
+  ai        etf=IN-TREND/Uptrend breadth intact 75.4% uptrend 44.3%
   grid      etf=IN-TREND/Uptrend breadth intact 72.7% uptrend 51.5%
-  robotics  etf=IN-TREND/Mixed breadth intact 69.2% uptrend 23.1%
-  defense   etf=IN-TREND/Uptrend breadth intact 60.0% uptrend 33.3%
-  health    etf=IN-TREND/Mixed breadth intact 35.5% uptrend 19.4%
+  robotics  etf=IN-TREND/Mixed breadth intact 69.2% uptrend 30.8%
+  defense   etf=IN-TREND/Uptrend breadth intact 56.7% uptrend 30.0%
+  health    etf=IN-TREND/Mixed breadth intact 38.7% uptrend 19.4%
   outlier   etf=IN-TREND/Mixed breadth intact 28.6% uptrend 14.3%
 status=ok
 exhaustion: 37 symbols, 0 flagged (score>=2)
 ai        extremity -3 (split, cooler)
-grid      extremity 3 (bullish, cooler)
-robotics  extremity 4 (bullish, hotter)
-defense   extremity 1 (split, cooler)
-health    extremity 3 (split, hotter)
-outlier   extremity 4 (split, cooler)
-skip BE: earnings within 14d
-skip STRL: earnings within 14d
-skip NVT: earnings within 14d
-skip GH: earnings within 14d
-options engine: 5 new proposals, 10 open, 10 journal events
-  BULL_PUT_SPREAD   STX    [BULL-NORMAL] exp 2026-08-28 short 700.0 credit 10.85 max_loss 14.15
-  BULL_PUT_SPREAD   HWM    [BULL-NORMAL] exp 2026-08-28 short 240.0 credit 1.23 max_loss 3.77
-  BULL_PUT_SPREAD   HEI    [BULL-NORMAL] exp 2026-08-21 short 310.0 credit 1.47 max_loss 18.53
-  BULL_PUT_SPREAD   GE     [BULL-NORMAL] exp 2026-08-28 short 315.0 credit 2.04 max_loss 17.96
-  BULL_PUT_SPREAD   LLY    [BULL-NORMAL] exp 2026-08-28 short 1060.0 credit 11.0 max_loss 49.0
-thesis-paper: BUY MU — IN-TREND score 85.0 ~$8,627 (27% of sleeve)
-thesis-paper: BUY GH — IN-TREND score 82.3 ~$8,088 (25% of sleeve)
-thesis-paper: BUY LLY — IN-TREND score 80.4 ~$7,719 (24% of sleeve)
-thesis-paper: BUY BE — IN-TREND score 79.6 ~$7,566 (24% of sleeve)
-thesis-paper: equity $100,000, budget $40,000, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($7,911/8,000)
+grid      extremity 2 (split, cooler)
+robotics  extremity 4 (split, hotter)
+defense   extremity 2 (split, cooler)
+health    extremity 2 (split, hotter)
+outlier   extremity -2 (split, cooler)
+skip BE: vol gate (IV-RV -1.1914)
+skip STRL: vol gate (IV-RV -0.7589)
+skip NVT: vol gate (IV-RV -0.5309)
+skip GH: vol gate (IV-RV -0.6973)
+skip NTRA: vol gate (IV-RV -0.4727)
+skip GEV: vol gate (IV-RV -0.5929)
+skip WDC: earnings within 14d
+skip CORZ: vol gate (IV-RV -0.7531)
+skip APP: earnings within 14d
+skip NET: earnings within 14d
+options engine: 4 new proposals, 14 open, 14 journal events
+  CASH_SECURED_PUT  SNPS   [RANGE] exp 2026-08-28 short 330.0 credit 7.4 max_loss 322.6
+  CASH_SECURED_PUT  P      [RANGE] exp 2026-08-21 short 65.0 credit 2.28 max_loss 62.72
+  CASH_SECURED_PUT  CRWV   [RANGE] exp 2026-08-28 short 70.0 credit 6.68 max_loss 63.32
+  CASH_SECURED_PUT  IOT    [RANGE] exp 2026-08-28 short 31.0 credit 1.0 max_loss 30.0
+thesis-paper: REPAIR-BUY GH — missing from account (external sale) — restored ~$8,103, door IN-TREND
+thesis-paper: REPAIR-BUY LLY — missing from account (external sale) — restored ~$7,719, door IN-TREND
+thesis-paper: REPAIR-BUY BE — missing from account (external sale) — restored ~$7,559, door IN-TREND
+thesis-paper: equity $100,089, budget $40,036, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($7,911/8,007)

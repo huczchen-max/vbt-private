@@ -58,14 +58,32 @@
    "action": "BUY",
    "symbol": "BE",
    "note": "IN-TREND score 79.6 ~$7,566 (24% of sleeve)"
+  },
+  {
+   "date": "2026-07-22",
+   "action": "REPAIR-BUY",
+   "symbol": "GH",
+   "note": "missing from account (external sale) \u2014 restored ~$8,103, door IN-TREND"
+  },
+  {
+   "date": "2026-07-22",
+   "action": "REPAIR-BUY",
+   "symbol": "LLY",
+   "note": "missing from account (external sale) \u2014 restored ~$7,719, door IN-TREND"
+  },
+  {
+   "date": "2026-07-22",
+   "action": "REPAIR-BUY",
+   "symbol": "BE",
+   "note": "missing from account (external sale) \u2014 restored ~$7,559, door IN-TREND"
   }
  ],
  "snapshot": {
-  "date": "2026-07-19",
-  "account_equity": 100000.0,
-  "vbt2_budget": 40000.0,
-  "stock_sleeve": 32000.0,
-  "options_sleeve": 8000.0,
+  "date": "2026-07-22",
+  "account_equity": 100088.83,
+  "vbt2_budget": 40035.53,
+  "stock_sleeve": 32028.43,
+  "options_sleeve": 8007.11,
   "options_committed": 7911.0,
   "options_sizing": [
    {
@@ -101,7 +119,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 848.95,
+    "current_close": 970.82,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -111,7 +129,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 155.87,
+    "current_close": 152.29,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -121,7 +139,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1179.11,
+    "current_close": 1175.41,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -131,7 +149,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 214.96,
+    "current_close": 226.26,
     "door_now": "IN-TREND"
    }
   }

@@ -1,19 +1,29 @@
 {
- "as_of": "2026-07-22",
- "updated_utc": "2026-07-22T08:01:48+00:00",
+ "as_of": "2026-07-23",
+ "updated_utc": "2026-07-23T06:57:47+00:00",
  "account": {
-  "equity": 100349.18,
-  "cash": 58138.47,
-  "pl_total": 100349.18
+  "equity": 100838.4,
+  "cash": 34757.72,
+  "pl_total": 100838.4
  },
  "positions": [
+  {
+   "symbol": "BE",
+   "qty": 33.528805309,
+   "avg_entry": 225.44,
+   "current": 223.46,
+   "pl_pct": -0.88,
+   "pl_usd": -66.35,
+   "entered": "\u2014",
+   "stage": "\u2014"
+  },
   {
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 400.51,
-   "pl_pct": 4.76,
-   "pl_usd": 381.99,
+   "current": 405.15,
+   "pl_pct": 5.97,
+   "pl_usd": 479.43,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -21,19 +31,39 @@
    "symbol": "CORZ",
    "qty": 191.0,
    "avg_entry": 22.28,
-   "current": 24.11,
-   "pl_pct": 8.21,
-   "pl_usd": 349.53,
+   "current": 23.74,
+   "pl_pct": 6.55,
+   "pl_usd": 278.86,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "GH",
+   "qty": 53.159766419,
+   "avg_entry": 152.43,
+   "current": 152.49,
+   "pl_pct": 0.04,
+   "pl_usd": 3.15,
+   "entered": "\u2014",
+   "stage": "\u2014"
+  },
+  {
+   "symbol": "LLY",
+   "qty": 6.592266609,
+   "avg_entry": 1170.89,
+   "current": 1161.86,
+   "pl_pct": -0.77,
+   "pl_usd": -59.55,
+   "entered": "\u2014",
+   "stage": "\u2014"
   },
   {
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 951.5,
-   "pl_pct": 6.76,
-   "pl_usd": 582.96,
+   "current": 975.82,
+   "pl_pct": 9.49,
+   "pl_usd": 818.38,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -41,9 +71,9 @@
    "symbol": "SNPS",
    "qty": 20.0,
    "avg_entry": 382.75,
-   "current": 388.38,
-   "pl_pct": 1.47,
-   "pl_usd": 112.53,
+   "current": 380.03,
+   "pl_pct": -0.71,
+   "pl_usd": -54.47,
    "entered": "2026-07-03",
    "stage": "CONFIRMED"
   },
@@ -51,19 +81,19 @@
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 367.0,
-   "pl_pct": -3.28,
-   "pl_usd": -124.31,
+   "current": 377.41,
+   "pl_pct": -0.53,
+   "pl_usd": -20.21,
    "entered": "2026-06-26",
-   "stage": "CONFIRMED"
+   "stage": "Recovered"
   },
   {
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 534.4,
-   "pl_pct": 0.56,
-   "pl_usd": 47.24,
+   "current": 559.99,
+   "pl_pct": 5.37,
+   "pl_usd": 456.68,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }

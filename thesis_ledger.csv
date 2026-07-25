@@ -4,3 +4,5 @@ date,ticker,theme,event,close,dd_pct,state
 2026-07-22,LMT,defense,TREND-BROKEN,507.09,-24.0,Mixed
 2026-07-22,VKTX,health,TREND-REPAIRED,37.95,-5.2,Mixed
 2026-07-22,URA,etf,TREND-BROKEN,40.25,-29.4,Mixed
+2026-07-25,MDB,ai,TREND-BROKEN,298.22,-31.6,Mixed
+2026-07-25,LMT,defense,TREND-REPAIRED,582.6,-12.7,Mixed

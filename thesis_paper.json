@@ -79,12 +79,12 @@
   }
  ],
  "snapshot": {
-  "date": "2026-07-22",
-  "account_equity": 100088.83,
-  "vbt2_budget": 40035.53,
-  "stock_sleeve": 32028.43,
-  "options_sleeve": 8007.11,
-  "options_committed": 7911.0,
+  "date": "2026-07-25",
+  "account_equity": 97528.59,
+  "vbt2_budget": 39011.44,
+  "stock_sleeve": 31209.15,
+  "options_sleeve": 7802.29,
+  "options_committed": 7741.0,
   "options_sizing": [
    {
     "ticker": "MU",
@@ -107,8 +107,8 @@
    {
     "ticker": "OUST",
     "strategy": "BULL_PUT_SPREAD",
-    "contracts": 8,
-    "max_loss_total": 1360.0
+    "contracts": 7,
+    "max_loss_total": 1190.0
    }
   ],
   "book": {
@@ -119,7 +119,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 970.82,
+    "current_close": 920.95,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -129,7 +129,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 152.29,
+    "current_close": 147.33,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -139,7 +139,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1175.41,
+    "current_close": 1196.03,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -149,7 +149,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 226.26,
+    "current_close": 184.89,
     "door_now": "IN-TREND"
    }
   }

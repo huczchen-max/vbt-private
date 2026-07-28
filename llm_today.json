@@ -1,24 +1,39 @@
 {
- "date": "2026-07-25",
+ "date": "2026-07-28",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-07-25T06:37:02+00:00",
+ "generated_utc": "2026-07-28T07:47:18+00:00",
  "regime": {
-  "regime": "NEUTRAL",
+  "regime": "RISK-OFF",
   "reasons": [
-   "Hyperscaler capex ($630-725B, 2026) and compute demand remain structurally bullish with no surplus-compute signal, supporting eventual re-entry",
-   "Semiconductor sector is mid deep correction (deepest monthly drawdown since GFC) with only a tentative, unconfirmed bounce \u2014 trend structure has not validated recovery yet",
-   "FOMC decision July 29 is an imminent binary macro event with policymakers split on hike vs. hold, creating near-term volatility risk",
-   "China export-control regime remains an unresolved overhang (new compliance crackdowns, threat of reciprocal Chinese restrictions) adding policy uncertainty to semis/AI hardware names"
+   "Semiconductor sector trend structure unconfirmed: SMH forming a bearish head-and-shoulders pattern, still above breakdown level but not showing confirmed reversal; tech-sector insider sentiment negative",
+   "FOMC decision due July 29 (tomorrow) at current 3.5-3.75% range with no SEP/dot-plot to anchor guidance, creating a binary volatility event immediately ahead",
+   "Fresh China-side AI/chip export-control tightening under consideration layered on an already 'incoherent' US H200/tariff policy framework, adding two-sided geopolitical overhang despite strong hyperscaler capex fundamentals"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "TLN": {
-   "verdict": "CAUTION",
-   "size_mult": 0.5,
+  "INTC": {
+   "verdict": "GO",
+   "size_mult": 1.0,
    "reasons": [
-    "Q2 2026 earnings scheduled for Aug 5, 2026 \u2014 within 14 days of screening date",
-    "No dilution, guidance cuts, customer loss, short-seller/accounting issues, or new legal/regulatory actions found in the last 4 weeks"
+    "Q2 earnings already reported July 23, 2026 (5 days ago); next report is not within 14 days",
+    "Q3 guidance was reaffirmed/beat, not cut, and Q2 beat consensus on revenue and EPS",
+    "No new share offering or dilution announcement in the past 4 weeks",
+    "No major customer loss disclosed; new foundry customer wins (e.g., Fortinet) reported instead",
+    "No short-seller report, auditor, or accounting-scandal flags found",
+    "Only legal matter found is an older securities class action already dismissed with prejudice; no new suits or regulatory actions in the window"
+   ],
+   "raw_ok": true
+  },
+  "COHR": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "Earnings scheduled Aug 12, 2026 (~15 days out, outside the 14-day auto-CAUTION window)",
+    "No new share offering/dilution announced; only a pre-existing resale shelf and a routine small insider Form 144 sale",
+    "No guidance cuts; last guidance was raised with strong datacenter demand commentary",
+    "No customer loss/concentration event reported in the window",
+    "No new short-seller, accounting/auditor, or legal/regulatory action within the last 4 weeks"
    ],
    "raw_ok": true
   }

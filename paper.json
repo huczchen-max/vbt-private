@@ -1,19 +1,19 @@
 {
- "as_of": "2026-07-25",
- "updated_utc": "2026-07-25T07:01:43+00:00",
+ "as_of": "2026-07-28",
+ "updated_utc": "2026-07-28T08:14:39+00:00",
  "account": {
-  "equity": 97528.59,
+  "equity": 94918.66,
   "cash": 34757.71,
-  "pl_total": 0.0
+  "pl_total": -1591.01
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 184.89,
-   "pl_pct": -17.99,
-   "pl_usd": -1359.56,
+   "current": 181.0,
+   "pl_pct": -19.71,
+   "pl_usd": -1489.99,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 390.96,
-   "pl_pct": 2.26,
-   "pl_usd": 181.44,
+   "current": 366.36,
+   "pl_pct": -4.17,
+   "pl_usd": -335.16,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "CORZ",
    "qty": 191.0,
    "avg_entry": 22.28,
-   "current": 22.75,
-   "pl_pct": 2.11,
-   "pl_usd": 89.77,
+   "current": 20.53,
+   "pl_pct": -7.85,
+   "pl_usd": -334.25,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -41,9 +41,9 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 147.33,
-   "pl_pct": -3.35,
-   "pl_usd": -271.15,
+   "current": 143.1,
+   "pl_pct": -6.12,
+   "pl_usd": -495.87,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -51,9 +51,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1196.03,
-   "pl_pct": 2.15,
-   "pl_usd": 165.71,
+   "current": 1200.0,
+   "pl_pct": 2.49,
+   "pl_usd": 191.88,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -61,9 +61,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 920.95,
-   "pl_pct": 3.33,
-   "pl_usd": 287.25,
+   "current": 849.54,
+   "pl_pct": -4.68,
+   "pl_usd": -403.98,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -71,9 +71,9 @@
    "symbol": "SNPS",
    "qty": 20.0,
    "avg_entry": 382.75,
-   "current": 373.47,
-   "pl_pct": -2.43,
-   "pl_usd": -185.67,
+   "current": 390.48,
+   "pl_pct": 2.02,
+   "pl_usd": 154.53,
    "entered": "2026-07-03",
    "stage": "CONFIRMED"
   },
@@ -81,9 +81,9 @@
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 359.9,
-   "pl_pct": -5.15,
-   "pl_usd": -195.31,
+   "current": 342.25,
+   "pl_pct": -9.8,
+   "pl_usd": -371.81,
    "entered": "2026-06-26",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 519.8,
-   "pl_pct": -2.19,
-   "pl_usd": -186.36,
+   "current": 469.0,
+   "pl_pct": -11.75,
+   "pl_usd": -999.16,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -103,7 +103,9 @@
   "CORZ": "2026-07-10",
   "SNPS": "2026-07-03",
   "TLN": "2026-06-26",
-  "WDC": "2026-07-21"
+  "WDC": "2026-07-21",
+  "INTC": "2026-07-28",
+  "COHR": "2026-07-28"
  },
  "seeded": true,
  "ledger": [
@@ -154,6 +156,18 @@
    "action": "BUY",
    "symbol": "WDC",
    "note": "16 sh ~$7,799 (quality 8%) on stage-3 entry @ 487.42 | llm:CAUTION mult:0.5 regime:RISK-OFF"
+  },
+  {
+   "date": "2026-07-28",
+   "action": "BUY",
+   "symbol": "INTC",
+   "note": "41 sh ~$3,758 (spec 4%) on stage-3 entry @ 91.67 | llm:GO mult:0 regime:RISK-OFF"
+  },
+  {
+   "date": "2026-07-28",
+   "action": "BUY",
+   "symbol": "COHR",
+   "note": "13 sh ~$3,527 (spec 4%) on stage-3 entry @ 271.31 | llm:GO mult:0 regime:RISK-OFF"
   }
  ]
 }

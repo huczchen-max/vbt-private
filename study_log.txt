@@ -30,3 +30,5 @@ done: 40/41 events with tone data -> private/gdelt_raw.json
 resuming: 40 events already complete
 40/66 events fetched
 done: 42/46 events with tone data -> private/gdelt_raw.json
+resuming: 42 events already complete
+done: 43/48 events with tone data -> private/gdelt_raw.json

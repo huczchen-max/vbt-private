@@ -1,39 +1,98 @@
 {
- "date": "2026-07-28",
+ "date": "2026-07-30",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-07-28T07:47:18+00:00",
+ "generated_utc": "2026-07-30T07:24:40+00:00",
  "regime": {
   "regime": "RISK-OFF",
   "reasons": [
-   "Semiconductor sector trend structure unconfirmed: SMH forming a bearish head-and-shoulders pattern, still above breakdown level but not showing confirmed reversal; tech-sector insider sentiment negative",
-   "FOMC decision due July 29 (tomorrow) at current 3.5-3.75% range with no SEP/dot-plot to anchor guidance, creating a binary volatility event immediately ahead",
-   "Fresh China-side AI/chip export-control tightening under consideration layered on an already 'incoherent' US H200/tariff policy framework, adding two-sided geopolitical overhang despite strong hyperscaler capex fundamentals"
+   "Semiconductor sector in active >$1T weekly selloff (NVDA, SK Hynix, Micron, AMD, Intel) with no confirmed trend reversal \u2014 fails the strategy's recovery-confirmation trigger",
+   "Fed just delivered a hawkish hold with 3 dissents favoring a hike and rising Sept-hike odds, pressuring risk-asset multiples and Treasury yields higher",
+   "China escalating tech-nationalism (own export controls) plus CXMT debut/equipment progress raising competitive overhang on US memory/AI-chip names",
+   "Hyperscaler capex/demand remains structurally bullish ($725B 2026, supply-constrained), but this alone doesn't offset broken chip-sector trend and macro event risk today"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "INTC": {
+  "MOD": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [
-    "Q2 earnings already reported July 23, 2026 (5 days ago); next report is not within 14 days",
-    "Q3 guidance was reaffirmed/beat, not cut, and Q2 beat consensus on revenue and EPS",
-    "No new share offering or dilution announcement in the past 4 weeks",
-    "No major customer loss disclosed; new foundry customer wins (e.g., Fortinet) reported instead",
-    "No short-seller report, auditor, or accounting-scandal flags found",
-    "Only legal matter found is an older securities class action already dismissed with prejudice; no new suits or regulatory actions in the window"
+    "Earnings just reported (Jul 29, 2026) with EPS beat, not upcoming within 14 days",
+    "No share offering/dilution announced; only routine insider Form 144 vesting sale",
+    "No guidance cut; prior guidance was raised",
+    "No customer loss; new $4B multi-year data center customer agreement announced",
+    "No short-seller, accounting, or auditor issues found",
+    "No legal or regulatory actions found in recent news"
    ],
    "raw_ok": true
   },
-  "COHR": {
+  "VRT": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [
-    "Earnings scheduled Aug 12, 2026 (~15 days out, outside the 14-day auto-CAUTION window)",
-    "No new share offering/dilution announced; only a pre-existing resale shelf and a routine small insider Form 144 sale",
-    "No guidance cuts; last guidance was raised with strong datacenter demand commentary",
-    "No customer loss/concentration event reported in the window",
-    "No new short-seller, accounting/auditor, or legal/regulatory action within the last 4 weeks"
+    "Earnings already reported Jul 29, 2026 (day before screening); next report not until Oct 21, 2026 \u2014 no earnings-within-14-days flag",
+    "Guidance raised, not cut, across all key FY26 metrics",
+    "No share offering/dilution announcement found in past 4 weeks",
+    "No major customer loss/concentration event reported",
+    "No new short-seller, accounting/auditor, or legal/regulatory action within the past 4 weeks (only stale 2022-2024 litigation)"
+   ],
+   "raw_ok": true
+  },
+  "LITE": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "Earnings scheduled Aug 11, 2026 \u2014 within 14 days of screening date (automatic CAUTION trigger)",
+    "No dilution, guidance cuts, customer-loss events, short-seller/accounting issues, or legal/regulatory actions found in the last 4 weeks"
+   ],
+   "raw_ok": true
+  },
+  "ON": {
+   "verdict": "VETO",
+   "size_mult": 0.0,
+   "reasons": [
+    "Major dilution announced: $7B all-stock Synaptics acquisition (announced 6/25/26) dilutes existing shareholders ~13.45%, stock fell ~23.7% on the news",
+    "Multiple law firms (Pomerantz, Schall, Bronstein Gewirtz & Grossman) opened active securities fraud investigations into onsemi tied to the Synaptics deal disclosures",
+    "Earnings scheduled Aug 3, 2026 \u2014 within 14 days"
+   ],
+   "raw_ok": true
+  },
+  "LRCX": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "US export restrictions specifically targeting shipments to Hua Hong (China's 2nd-largest chipmaker), a named major customer, reported within the past few days",
+    "China revenue concentration (~33-42% of sales) amid escalating export control actions",
+    "Q4 earnings just reported (July 29, 2026) \u2014 beat estimates and raised next-quarter guidance, no cut/dilution/accounting issues found"
+   ],
+   "raw_ok": true
+  },
+  "MU": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "Class-action antitrust lawsuit filed June 25, 2026 alleging price-fixing with Samsung/SK Hynix",
+    "Michael Burry disclosed (and repeated) a short position against MU during the period"
+   ],
+   "raw_ok": true
+  },
+  "KLAC": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "Earnings already reported July 28, 2026 (beat on revenue/EPS, raised forward guidance) \u2014 not upcoming within 14 days",
+    "No dilutive share offering found; only a non-dilutive 10-for-1 stock split completed in June 2026",
+    "No guidance cuts, customer loss, short-seller reports, accounting/auditor issues, or legal/regulatory actions found in the last 4 weeks"
+   ],
+   "raw_ok": true
+  },
+  "AMAT": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "Earnings call scheduled Aug 13, 2026 \u2014 exactly 14 days out, automatic CAUTION trigger",
+    "Michael Burry disclosed a named short position against AMAT (~$729.40 entry) in late June, citing AI-valuation correction risk",
+    "No dilution, guidance cuts, customer loss, or accounting/auditor issues found; prior BIS export settlement was resolved in Feb 2026 (outside window) with DOJ/SEC closing without enforcement action"
    ],
    "raw_ok": true
   }

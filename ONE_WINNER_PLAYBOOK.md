@@ -70,9 +70,12 @@ five times on the way to 45x. The machinery already runs:
   bounce asymmetry ~2:1 at capitulation.)
 - Confirmed BOTTOM (stage-3, the 76%-win signal) → the aggressive
   re-add. This is a scheduled harvest event, not an emergency.
-- Narrative check: gloom at the signal is the FAVORABLE configuration
-  (inverted narrative finding). Fear in the headlines while structure
-  confirms = the setup, not the warning.
+- Narrative check: gloom at the signal is NORMAL (62% of winning events).
+  Fear in the headlines while structure confirms is the majority case of
+  a working signal — never wait for the narrative to improve, and never
+  read improvement as confirmation. (Full study 2026-08-01: tone adds no
+  information on quality names; only sunny-narrative SPEC signals warrant
+  caution.)
 
 ## Layer 4 — Convexity & capital efficiency (advanced shelf; paper first)
 

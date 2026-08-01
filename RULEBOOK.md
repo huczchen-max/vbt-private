@@ -93,27 +93,30 @@ Logic tab renders it live. When rules or hypotheses change, change THIS file
   nightly, logged against every trade, NOT enforced. Decision point: score
   the judgment log ~Oct 2026; flip ENFORCE_LLM only if VETO/RISK-OFF cohorts
   measurably underperform.
-- **Narrative layer (HYPOTHESIS)**: weekly narrative-state + KOL stances +
-  stage-2 "2+" flags are being logged, not acted on. GDELT historical study
-  in progress (nightly trickle; full analysis due ~Aug 1 2026).
+- **Narrative layer (CONTEXT ONLY — settled 2026-08-01)**: full GDELT study
+  (58/66 events, NARRATIVE_STUDY_FINAL.md) — narrative tone is NOT a timing
+  signal. Weekly narrative-state + KOL stances remain logged for context.
 
-## Open hypotheses under test
+## Narrative hypotheses — RESOLVED (2026-08-01, n=58)
 
-1. **Narrative leads structure** — n=16 preliminary: tone inflections
-   preceded ALL structural signals (median ~4 weeks). Looks supported;
-   confirm at full sample.
-2. **Narrative as CONTRARIAN conditioner** — n=16 preliminary (striking,
-   unconfirmed): signals firing into still-gloomy narratives won 88% /
-   +33.8% median; warmed-up narratives at entry LOST money (−14.5% median).
-   If confirmed: comfort at confirmation = warning, fear = fuel. Do NOT
-   trade on this until the full-sample study lands.
-3. **"2+" early warning** — stage-2 names with positive narrative inflection
-   should convert to stage 3 faster/more reliably. Forward-logged weekly.
+1. **Narrative leads structure** — PARTLY: tone troughs lead the signal on
+   81% of events, but by a median 75d with IQR 20–135d. Real lead, useless
+   spread. Context, not timing.
+2. **Narrative as CONTRARIAN conditioner** — SOFTENED, not confirmed. Full
+   sample: gloomy +26.2%/78% vs improving +21.3%/68% (p≈0.36). The n=16
+   inversion was mostly noise. The effect concentrates in SPEC names:
+   SPEC+improving-narrative = −13.9% median / 44% win (n=9, p≈0.26).
+   RULE: improving narrative is never confirmation; SPEC signal + sunny
+   narrative = caution flag (spec-minimum size), not a veto. QUALITY names:
+   ignore narrative entirely.
+3. **"2+" early warning** — the favorable-framing premise is contradicted
+   (sunny cohort did worse everywhere it differed). "2+" flags stay logged
+   as a neutral observation; no favorable interpretation.
 
 ## Review calendar
 
 - Monthly: paper ledger vs rulebook (deviations logged).
-- ~Aug 1 2026: full GDELT narrative study → update hypothesis 1/2 here.
+- When GDELT trickle hits 66/66: refresh SPEC-flag numbers (n=9 → n≈12).
 - ~Oct 2026: LLM judgment-log scoring → ENFORCE_LLM decision. Also token
   renewals (3 places: Claude session, PRIVATE_REPO_TOKEN, .vbt_token).
 - Quarterly: rule-lab rerun as the forward sample grows.
@@ -125,3 +128,6 @@ Logic tab renders it live. When rules or hypotheses change, change THIS file
   volume filters / daily entries REJECTED. LLM screen deployed in shadow.
   Narrative layer added (weekly brief + KOL tracker + 2+ flags). GDELT
   study launched; n=16 preliminary shows contrarian inversion.
+- **2026-08-01** — Narrative study finalized (58/66 events): n=16 inversion
+  softened to a weak SPEC-only caution flag; narrative demoted to context.
+  Hypotheses 1–3 resolved above; weekly brief STEP 4 interpretation fixed.

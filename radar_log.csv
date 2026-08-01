@@ -87,3 +87,36 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-07-25,BOTTOM,VEEV,Veeva Systems Inc.,QUALITY,186.24,-37.1,-48.9,59.1,296.28,30.3,Healthcare,Health Information Services,31.8359,18.561226,16.3,28.4,1.26
 2026-07-25,BOTTOM,VOR,Vor Biopharma Inc.,SPEC,19.26,-55.6,-75.9,128.5,44.0,1.0,Healthcare,Biotechnology,,-5.146746,,0.0,-0.19
 2026-07-25,BOTTOM,WDC,Western Digital Corporation,QUALITY,519.8,-30.3,-36.0,43.6,746.23,179.2,Technology,Computer Hardware,33.44916,28.02599,45.5,55.3,2.08
+2026-08-01,GRADUATED,GRND,,,17.34,0.0,-58.7,0.1,17.36,,,,,,,,
+2026-08-01,GRADUATED,NEO,,,15.29,0.0,-45.4,-0.9,15.16,,,,,,,,
+2026-08-01,GRADUATED,NET,,,278.98,0.0,-34.1,-0.5,277.66,,,,,,,,
+2026-08-01,GRADUATED,FTRE,,,19.17,-1.8,-49.7,1.8,19.52,,,,,,,,
+2026-08-01,GRADUATED,MLKN,,,22.52,0.0,-35.3,-1.9,22.08,,,,,,,,
+2026-08-01,GRADUATED,PGEN,,,6.27,0.0,-33.5,-6.5,5.86,,,,,,,,
+2026-08-01,BOTTOM,AGRO,Adecoagro S.A.,QUALITY,9.97,-33.9,-38.8,51.3,15.09,1.4,Consumer Defensive,Farm Products,498.50003,7.9908314,22.5,0.9,-0.07
+2026-08-01,BOTTOM,ALK,"Alaska Air Group, Inc.",SPEC,47.45,-25.1,-42.9,33.6,63.37,5.3,Industrials,Airlines,,7.9255185,9.7,-1.2,-0.03
+2026-08-01,BREAKOUT,BAX,Baxter International Inc.,QUALITY,26.16,0.0,-51.5,-5.8,24.65,13.5,Healthcare,Medical Instruments & Supplies,,12.7267065,2.9,-9.7,0.9
+2026-08-01,BOTTOM,CRAI,"CRA International,Inc.",QUALITY,179.03,-16.7,-36.2,20.1,214.97,1.2,Industrials,Consulting Services,24.83079,18.584435,10.5,6.2,0.05
+2026-08-01,BREAKOUT,DBX,"Dropbox, Inc.",QUALITY,32.56,0.0,-29.8,-3.5,31.42,7.6,Technology,Software - Infrastructure,17.505377,9.560921,0.8,18.7,0.82
+2026-08-01,BREAKOUT,DXCM,"DexCom, Inc.",QUALITY,83.45,0.0,-31.9,-1.4,82.26,31.5,Healthcare,Medical Devices,32.984188,26.791964,13.1,20.1,
+2026-08-01,BOTTOM,ENR,"Energizer Holdings, Inc.",SPEC,20.97,-25.5,-42.7,34.2,28.14,1.4,Industrials,Electrical Equipment & Parts,7.7095585,6.0195312,-3.0,6.5,0.22
+2026-08-01,BOTTOM,FTRE,Fortrea Holdings Inc.,SPEC,19.17,-1.8,-49.7,1.8,19.52,1.8,Healthcare,Biotechnology,,16.795017,-4.5,-3.2,0.28
+2026-08-01,BOTTOM,GRND,Grindr Inc.,QUALITY,17.34,0.0,-58.7,0.1,17.36,3.1,Technology,Software - Application,36.893616,22.519482,38.3,19.9,0.12
+2026-08-01,BREAKOUT,HAE,Haemonetics Corporation,QUALITY,85.54,0.0,-35.6,-1.9,83.94,3.9,Healthcare,Medical Devices,41.323673,15.203814,4.8,7.3,0.3
+2026-08-01,BREAKOUT,ITGR,Integer Holdings Corporation,QUALITY,121.21,0.0,-38.7,-8.8,110.58,4.1,Healthcare,Medical Devices,24.991753,17.775309,0.5,7.6,0.1
+2026-08-01,BREAKOUT,LNC,Lincoln National Corporation,QUALITY,45.61,0.0,-28.7,-2.1,44.63,8.7,Financial Services,Insurance - Life,3.8424602,5.377713,11.7,12.2,
+2026-08-01,BOTTOM,LUV,Southwest Airlines Company,QUALITY,44.97,-16.4,-30.8,19.6,53.79,22.0,Industrials,Airlines,28.10625,9.100034,16.4,2.8,-0.83
+2026-08-01,BOTTOM,MLKN,"MillerKnoll, Inc.",QUALITY,22.52,0.0,-35.3,-1.9,22.08,1.5,Consumer Cyclical,"Furnishings, Fixtures & Appliances",17.060606,9.472135,4.4,2.4,0.08
+2026-08-01,BOTTOM,NEO,"NeoGenomics, Inc.",QUALITY,15.29,0.0,-45.4,-0.9,15.16,2.0,Healthcare,Diagnostics & Research,,45.21261,11.2,-6.8,0.04
+2026-08-01,BOTTOM,NET,"Cloudflare, Inc.",QUALITY,278.98,0.0,-34.1,-0.5,277.66,99.0,Technology,Software - Infrastructure,,176.48586,33.5,-3.7,0.75
+2026-08-01,BREAKOUT,NEU,NewMarket Corp,QUALITY,850.16,0.0,-30.6,-1.7,835.32,7.8,Basic Materials,Specialty Chemicals,18.28301,32.926414,7.0,15.8,0.44
+2026-08-01,BOTTOM,NOW,"ServiceNow, Inc.",QUALITY,111.23,-42.1,-60.3,72.8,192.23,115.0,Technology,Software - Application,69.08696,22.218494,24.0,11.3,5.15
+2026-08-01,BOTTOM,PGEN,"Precigen, Inc.",SPEC,6.27,0.0,-33.5,-6.5,5.86,2.2,Healthcare,Biotechnology,,-28.5,1633.9,0.0,-0.09
+2026-08-01,BREAKOUT,PLUS,ePlus inc.,QUALITY,92.41,0.0,-18.6,-1.4,91.16,2.4,Technology,Software - Application,19.619959,15.919037,21.7,5.4,-0.1
+2026-08-01,BREAKOUT,RJF,"Raymond James Financial, Inc.",QUALITY,175.98,0.0,-19.1,-1.5,173.32,33.8,Financial Services,Asset Management,15.249566,12.409229,15.2,15.1,
+2026-08-01,BREAKOUT,SNOW,Snowflake Inc.,QUALITY,293.28,0.0,-55.9,-6.3,274.88,101.7,Technology,Software - Application,,108.951096,33.5,-23.8,1.74
+2026-08-01,BOTTOM,SVV,"Savers Value Village, Inc.",QUALITY,10.26,-25.2,-48.0,33.6,13.71,1.6,Consumer Cyclical,Specialty Retail,73.28571,17.434155,8.9,1.3,0.02
+2026-08-01,BOTTOM,UPWK,Upwork Inc.,QUALITY,9.16,-58.6,-63.6,141.4,22.11,1.1,Communication Services,Internet Content & Information,11.308641,5.256845,1.4,13.8,0.17
+2026-08-01,BOTTOM,VC,Visteon Corporation,SPEC,104.54,-15.8,-31.5,18.8,124.15,2.8,Consumer Cyclical,Auto Parts,20.142582,10.016854,-0.9,3.8,0.2
+2026-08-01,BOTTOM,VOYG,"Voyager Technologies, Inc.",SPEC,24.53,-50.5,-58.1,101.9,49.53,1.5,Industrials,Aerospace & Defense,,-17.773817,2.1,-72.9,-0.23
+2026-08-01,BOTTOM,WK,Workiva Inc.,QUALITY,59.8,-35.4,-48.8,54.8,92.56,3.4,Technology,Software - Application,239.2,17.147297,19.9,1.5,0.15

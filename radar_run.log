@@ -1,29 +1,35 @@
-symbol directory: 6173 common-stock symbols
-scanned 200/6173
-scanned 1200/6173
-scanned 2200/6173
-scanned 3200/6173
+symbol directory: 6179 common-stock symbols
+scanned 200/6179
+scanned 1200/6179
+scanned 2200/6179
+scanned 3200/6179
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-06-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6173
-scanned 5200/6173
+scanned 4200/6179
+scanned 5200/6179
 $SVA: possibly delisted; no price data found  (period=2y)
 
 1 Failed download:
 ['SVA']: possibly delisted; no price data found  (period=2y)
-scanned 6173/6173
-analyzed: 2717 symbols past liquidity floors
-BOTTOM: 11, BREAKOUT: 3, watchlist: 60
-  BOTTOM SPEC    CPRI   Capri Holdings Limited     dd -42.9%  cap 1.8B  75.1% to 52w high
-  BOTTOM SPEC    FTRE   Fortrea Holdings Inc.      dd 0.0%  cap 1.8B  -9.0% to 52w high
-  BOTTOM QUALITY FUN    Six Flags Entertainment Co dd -41.5%  cap 1.8B  81.9% to 52w high
-  BOTTOM QUALITY LRN    Stride, Inc.               dd -47.4%  cap 3.7B  90.1% to 52w high
-  BOTTOM QUALITY MLKN   MillerKnoll, Inc.          dd -0.0%  cap 1.5B  0.0% to 52w high
-  BOTTOM SPEC    NAMS   NewAmsterdam Pharma Compan dd -28.2%  cap 3.5B  39.3% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd -7.8%  cap 1.9B  8.5% to 52w high
-  BOTTOM QUALITY STVN   Stevanato Group S.p.A.     dd -26.3%  cap 5.4B  35.7% to 52w high
-  BOTTOM QUALITY VEEV   Veeva Systems Inc.         dd -37.1%  cap 30.3B  59.1% to 52w high
-  BOTTOM SPEC    VOR    Vor Biopharma Inc.         dd -55.6%  cap 1.0B  128.5% to 52w high
-  BOTTOM QUALITY WDC    Western Digital Corporatio dd -30.3%  cap 179.2B  43.6% to 52w high
+scanned 6179/6179
+analyzed: 2736 symbols past liquidity floors
+BOTTOM: 17, BREAKOUT: 10, watchlist: 71
+  BOTTOM QUALITY AGRO   Adecoagro S.A.             dd -33.9%  cap 1.4B  51.3% to 52w high
+  BOTTOM SPEC    ALK    Alaska Air Group, Inc.     dd -25.1%  cap 5.3B  33.6% to 52w high
+  BOTTOM QUALITY CRAI   CRA International,Inc.     dd -16.7%  cap 1.2B  20.1% to 52w high
+  BOTTOM SPEC    ENR    Energizer Holdings, Inc.   dd -25.5%  cap 1.4B  34.2% to 52w high
+  BOTTOM SPEC    FTRE   Fortrea Holdings Inc.      dd -1.8%  cap 1.8B  1.8% to 52w high
+  BOTTOM QUALITY GRND   Grindr Inc.                dd 0.0%  cap 3.1B  0.1% to 52w high
+  BOTTOM QUALITY LUV    Southwest Airlines Company dd -16.4%  cap 22.0B  19.6% to 52w high
+  BOTTOM QUALITY MLKN   MillerKnoll, Inc.          dd 0.0%  cap 1.5B  -1.9% to 52w high
+  BOTTOM QUALITY NEO    NeoGenomics, Inc.          dd 0.0%  cap 2.0B  -0.9% to 52w high
+  BOTTOM QUALITY NET    Cloudflare, Inc.           dd 0.0%  cap 99.0B  -0.5% to 52w high
+  BOTTOM QUALITY NOW    ServiceNow, Inc.           dd -42.1%  cap 115.0B  72.8% to 52w high
+  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.2B  -6.5% to 52w high
+  BOTTOM QUALITY SVV    Savers Value Village, Inc. dd -25.2%  cap 1.6B  33.6% to 52w high
+  BOTTOM QUALITY UPWK   Upwork Inc.                dd -58.6%  cap 1.1B  141.4% to 52w high
+  BOTTOM SPEC    VC     Visteon Corporation        dd -15.8%  cap 2.8B  18.8% to 52w high
+  BOTTOM SPEC    VOYG   Voyager Technologies, Inc. dd -50.5%  cap 1.5B  101.9% to 52w high
+  BOTTOM QUALITY WK     Workiva Inc.               dd -35.4%  cap 3.4B  54.8% to 52w high
 status=ok

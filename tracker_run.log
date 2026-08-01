@@ -1,30 +1,32 @@
 prices 100/196
 prices 196/196
-tracked 194 names; doors {'IN-TREND': 115, 'ENTRY-BOTTOM': 8, 'BROKEN': 65, 'ENTRY-MACROSS': 6}; events this run 2
-  ai        etf=IN-TREND/Uptrend breadth intact 73.8% uptrend 44.3%
-  grid      etf=IN-TREND/Uptrend breadth intact 72.7% uptrend 51.5%
+tracked 195 names; doors {'IN-TREND': 115, 'ENTRY-BOTTOM': 10, 'BROKEN': 64, 'ENTRY-MACROSS': 6}; events this run 5
+  ai        etf=IN-TREND/Uptrend breadth intact 73.8% uptrend 47.5%
+  grid      etf=IN-TREND/Uptrend breadth intact 69.7% uptrend 45.5%
   robotics  etf=IN-TREND/Mixed breadth intact 69.2% uptrend 30.8%
-  defense   etf=IN-TREND/Uptrend breadth intact 60.0% uptrend 30.0%
-  health    etf=IN-TREND/Mixed breadth intact 38.7% uptrend 19.4%
+  defense   etf=IN-TREND/Uptrend breadth intact 61.3% uptrend 32.3%
+  health    etf=IN-TREND/Mixed breadth intact 38.7% uptrend 16.1%
   outlier   etf=IN-TREND/Mixed breadth intact 28.6% uptrend 14.3%
 status=ok
 exhaustion: 36 symbols, 1 flagged (score>=2)
-  UBER   BOTTOM-exhaustion 2/5: bull_divergence, extension_bottom_decile
-ai        extremity -2 (split, hotter)
-grid      extremity 2 (split, cooler)
+  ILMN   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
+ai        extremity -2 (split, cooler)
+grid      extremity 2 (split, hotter)
 robotics  extremity 4 (split, hotter)
-defense   extremity 3 (split, cooler)
-health    extremity 2 (split, hotter)
-outlier   extremity -3 (split, hotter)
-skip WDC: earnings within 14d
+defense   extremity -2 (split, cooler)
+health    extremity 1 (split, hotter)
+outlier   extremity -2 (split, cooler)
+skip WDC: vol gate (IV-RV -0.0782)
+skip NBIS: vol gate (IV-RV -0.3185)
 skip STRL: earnings within 14d
-skip NVT: earnings within 14d
-skip MYRG: earnings within 14d
-skip GH: vol gate (IV-RV -0.0057)
+skip BE: vol gate (IV-RV -0.2996)
 skip NTRA: earnings within 14d
-skip GEV: vol gate (IV-RV -0.0368)
-skip CORZ: earnings within 14d
+skip GEV: vol gate (IV-RV -0.0693)
 skip APP: earnings within 14d
-skip NET: earnings within 14d
-options engine: 0 new proposals, 14 open, 14 journal events
-thesis-paper: equity $97,529, budget $39,011, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($7,741/7,802)
+options engine: 5 new proposals, 18 open, 19 journal events
+  BULL_PUT_SPREAD   IESC   [BULL-NORMAL] exp 2026-09-18 short 660.0 credit 6.75 max_loss 13.25
+  BULL_PUT_SPREAD   GH     [BULL-NORMAL] exp 2026-09-18 short 145.0 credit 1.05 max_loss 3.95
+  CASH_SECURED_PUT  P      [RANGE] exp 2026-09-18 short 65.0 credit 3.5 max_loss 61.5
+  CASH_SECURED_PUT  CORZ   [RANGE] exp 2026-09-04 short 14.0 credit 0.24 max_loss 13.76
+  CASH_SECURED_PUT  NOW    [RANGE] exp 2026-09-04 short 95.0 credit 2.23 max_loss 92.77
+thesis-paper: equity $97,840, budget $39,136, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($7,741/7,827)

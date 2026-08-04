@@ -44,3 +44,5 @@ resuming: 54 events already complete
 55/66 events fetched
 60/66 events fetched
 done: 58/60 events with tone data -> private/gdelt_raw.json
+resuming: 58 events already complete
+done: 62/64 events with tone data -> private/gdelt_raw.json

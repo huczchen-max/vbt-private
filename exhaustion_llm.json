@@ -1,80 +1,24 @@
 {
- "date": "2026-08-01",
- "generated_utc": "2026-08-01T11:12:18+00:00",
+ "date": "2026-08-08",
+ "generated_utc": "2026-08-08T08:06:39+00:00",
  "themes": {
   "ai": {
-   "theme": "ai",
-   "extremity": -2,
-   "kol_unanimity": "split",
-   "direction_2wk": "cooler",
-   "evidence": [
-    "CoreWeave CDS implies 50% 5-yr default probability; NBIS -43%, CRWV -36% over a month on credit stress",
-    "Violent one-day snapback: NBIS +27%, CRWV +24%, ORCL +7% on Microsoft earnings-driven risk-on mood",
-    "Michael Burry escalating bearish X posts ('the market has voted', AI 'debt explosion') vs Ives/Bernstein staying bullish",
-    "SOXX down 21% in July (worst month since 2002) even as Stocktwits retail sentiment stayed 'extremely bullish' on NBIS",
-    "CoreWeave insiders sold ~$1.2B combined via 10b5-1 plans amid the selloff"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   },
   "grid": {
-   "theme": "grid",
-   "extremity": 2,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "GE Vernova's Q1 data-center equipment orders hit $2.4B, surpassing all of 2025, with total orders up 71% organically (AOL/Yahoo, late July 2026)",
-    "NuScale Power down ~85% from July 2025 peak amid near-total absence of binding contracts (Foreign Policy Journal, July 26 2026)",
-    "NuScale/Oklo jumped after Trump admin nuclear-for-AI initiative and Saudi civil nuclear deal reports; Stocktwits sentiment flipped bearish-to-neutral in 24 hours (Stocktwits, July 21 2026)",
-    "Barclays' 'peak cycle' downgrade of Siemens Energy dragged GE Vernova down in sympathy, exposing valuation nervousness near highs (TIKR, July 2026)"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   },
   "robotics": {
-   "theme": "robotics",
-   "extremity": 4,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "Jensen Huang's $40 trillion humanoid TAM claim amplified across financial media (24/7 Wall St, May 2026)",
-    "SoftBank's Masayoshi Son and Wedbush's Dan Ives both calling physical AI/humanoids the next trillion-dollar opportunity (CNBC, June 2026)",
-    "Humanoid stocks surged 10 July on Optimus procurement/Unitree IPO news even as Unitree profit fell 52% YoY",
-    "China's NDRC and VC voices (Aneli Capital, Rodney Brooks) publicly warning of a humanoid robotics bubble",
-    "Tesla Optimus production still not started as of mid-July 2026 despite repeated guidance, creating a credibility gap"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   },
   "defense": {
-   "theme": "defense",
-   "extremity": -2,
-   "kol_unanimity": "split",
-   "direction_2wk": "cooler",
-   "evidence": [
-    "Rocket Lab down ~55% from its May 52-week high amid a 'risk-off rotation... hammering space stocks' and CEO insider selling (StockStory/FinancialContent, mid-late July 2026)",
-    "Stocktwits poll of 5,700+ votes split 43%/43% on whether space stocks have bottomed vs more pain ahead (Stocktwits, July 21 2026)",
-    "Goldman Sachs stays bullish long-term on space/defense 'picks-and-shovels' even as the basket's 360% two-year gain cools sharply (Goldman Sachs/Stocktwits, July 2026)",
-    "European defense analysts describe 2026 as a 'consolidation' phase with 'lofty expectations already baked in,' Stoxx Aerospace & Defence index down 1.2% YTD vs broader index +4.8% (CNBC, May 2026)"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   },
   "health": {
-   "theme": "health",
-   "extremity": 1,
-   "kol_unanimity": "split",
-   "direction_2wk": "hotter",
-   "evidence": [
-    "LLY retail sentiment jumped from neutral (52) to very bullish (82-88) while Novo Nordisk is 'left for dead' down 44% YoY \u2014 bifurcated, not unanimous euphoria",
-    "Rock Health H1 2026 report describes AI-health sentiment 'oscillating from radical optimism to growing distrust', not one-sided",
-    "Genomics/tools names like RXRX and ADTX carry 34-35% short interest, showing active bear conviction alongside AI-health bull enthusiasm",
-    "XLV rotated from $2.3B in March outflows to a 2.63% single-day surge in early July as capital rotated back into healthcare defensives"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   },
   "outlier": {
-   "theme": "outlier",
-   "extremity": -2,
-   "kol_unanimity": "split",
-   "direction_2wk": "cooler",
-   "evidence": [
-    "Tesla fell below $300, a 40% retracement from December peaks, while bear George Noble called it a '$30 stock masquerading as a $300 stock' even as retail logged the day's top net buy ($42M) after the Q2 selloff",
-    "Michael Burry publicly shorted Palantir calling it worth 'low double digits at best,' versus Wall Street consensus target of $183 with 20 buy ratings vs 2 sells",
-    "SpaceX/SPCX analyst targets span from Raymond James' $800 to Morningstar's $62 fair value, a ~13x dispersion, while the stock trades in 'free fall' below its IPO price",
-    "GE Vernova up 58.8% YTD with a Buy consensus stands in contrast to Coinbase sliding after a third straight quarter of revenue misses undermining the crypto bull case"
-   ]
+   "error": "HTTP Error 400: Bad Request"
   }
  }
 }

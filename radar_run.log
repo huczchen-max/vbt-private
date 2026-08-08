@@ -1,35 +1,42 @@
-symbol directory: 6179 common-stock symbols
-scanned 200/6179
-scanned 1200/6179
-scanned 2200/6179
-scanned 3200/6179
+symbol directory: 6187 common-stock symbols
+scanned 200/6187
+scanned 1200/6187
+scanned 2200/6187
+scanned 3200/6187
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-06-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6179
-scanned 5200/6179
+scanned 4200/6187
+$QVC: possibly delisted; no price data found  (period=2y)
+
+1 Failed download:
+['QVC']: possibly delisted; no price data found  (period=2y)
+scanned 5200/6187
 $SVA: possibly delisted; no price data found  (period=2y)
 
 1 Failed download:
 ['SVA']: possibly delisted; no price data found  (period=2y)
-scanned 6179/6179
-analyzed: 2736 symbols past liquidity floors
-BOTTOM: 17, BREAKOUT: 10, watchlist: 71
-  BOTTOM QUALITY AGRO   Adecoagro S.A.             dd -33.9%  cap 1.4B  51.3% to 52w high
-  BOTTOM SPEC    ALK    Alaska Air Group, Inc.     dd -25.1%  cap 5.3B  33.6% to 52w high
-  BOTTOM QUALITY CRAI   CRA International,Inc.     dd -16.7%  cap 1.2B  20.1% to 52w high
-  BOTTOM SPEC    ENR    Energizer Holdings, Inc.   dd -25.5%  cap 1.4B  34.2% to 52w high
-  BOTTOM SPEC    FTRE   Fortrea Holdings Inc.      dd -1.8%  cap 1.8B  1.8% to 52w high
-  BOTTOM QUALITY GRND   Grindr Inc.                dd 0.0%  cap 3.1B  0.1% to 52w high
-  BOTTOM QUALITY LUV    Southwest Airlines Company dd -16.4%  cap 22.0B  19.6% to 52w high
-  BOTTOM QUALITY MLKN   MillerKnoll, Inc.          dd 0.0%  cap 1.5B  -1.9% to 52w high
-  BOTTOM QUALITY NEO    NeoGenomics, Inc.          dd 0.0%  cap 2.0B  -0.9% to 52w high
-  BOTTOM QUALITY NET    Cloudflare, Inc.           dd 0.0%  cap 99.0B  -0.5% to 52w high
-  BOTTOM QUALITY NOW    ServiceNow, Inc.           dd -42.1%  cap 115.0B  72.8% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.2B  -6.5% to 52w high
-  BOTTOM QUALITY SVV    Savers Value Village, Inc. dd -25.2%  cap 1.6B  33.6% to 52w high
-  BOTTOM QUALITY UPWK   Upwork Inc.                dd -58.6%  cap 1.1B  141.4% to 52w high
-  BOTTOM SPEC    VC     Visteon Corporation        dd -15.8%  cap 2.8B  18.8% to 52w high
-  BOTTOM SPEC    VOYG   Voyager Technologies, Inc. dd -50.5%  cap 1.5B  101.9% to 52w high
-  BOTTOM QUALITY WK     Workiva Inc.               dd -35.4%  cap 3.4B  54.8% to 52w high
+scanned 6187/6187
+WARN info ABEO: Too Many Requests. Rate limited. Try after a while.
+WARN info ACAD: Too Many Requests. Rate limited. Try after a while.
+WARN info AIRJ: Too Many Requests. Rate limited. Try after a while.
+WARN info ASTC: Too Many Requests. Rate limited. Try after a while.
+WARN info BFLY: Too Many Requests. Rate limited. Try after a while.
+WARN info BIO: Too Many Requests. Rate limited. Try after a while.
+WARN info BKSY: Too Many Requests. Rate limited. Try after a while.
+WARN info BOW: Too Many Requests. Rate limited. Try after a while.
+WARN info BROS: Too Many Requests. Rate limited. Try after a while.
+analyzed: 2752 symbols past liquidity floors
+BOTTOM: 11, BREAKOUT: 20, watchlist: 73
+  BOTTOM SPEC    BFLY                              dd -0.8%  cap 2.4B  0.8% to 52w high
+  BOTTOM SPEC    BKSY                              dd -39.8%  cap 1.2B  66.2% to 52w high
+  BOTTOM SPEC    BROS                              dd -26.5%  cap 9.3B  36.1% to 52w high
+  BOTTOM SPEC    GLUE   Monte Rosa Therapeutics, I dd -35.3%  cap 1.4B  54.7% to 52w high
+  BOTTOM SPEC    LWLG   Lightwave Logic, Inc.      dd -50.6%  cap 1.2B  102.6% to 52w high
+  BOTTOM QUALITY LYB    LyondellBasell Industries  dd -25.2%  cap 19.2B  33.6% to 52w high
+  BOTTOM QUALITY NET    Cloudflare, Inc.           dd 0.0%  cap 106.9B  -7.1% to 52w high
+  BOTTOM SPEC    NTLA   Intellia Therapeutics, Inc dd -53.4%  cap 1.7B  114.4% to 52w high
+  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.6B  -13.3% to 52w high
+  BOTTOM SPEC    UAMY   United States Antimony Cor dd -43.9%  cap 1.0B  78.2% to 52w high
+  BOTTOM SPEC    WD     Walker & Dunlop, Inc       dd -47.2%  cap 1.5B  89.5% to 52w high
 status=ok

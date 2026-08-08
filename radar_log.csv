@@ -120,3 +120,43 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-08-01,BOTTOM,VC,Visteon Corporation,SPEC,104.54,-15.8,-31.5,18.8,124.15,2.8,Consumer Cyclical,Auto Parts,20.142582,10.016854,-0.9,3.8,0.2
 2026-08-01,BOTTOM,VOYG,"Voyager Technologies, Inc.",SPEC,24.53,-50.5,-58.1,101.9,49.53,1.5,Industrials,Aerospace & Defense,,-17.773817,2.1,-72.9,-0.23
 2026-08-01,BOTTOM,WK,Workiva Inc.,QUALITY,59.8,-35.4,-48.8,54.8,92.56,3.4,Technology,Software - Application,239.2,17.147297,19.9,1.5,0.15
+2026-08-08,DROP,TPL,,,340.65,-35.8,-35.8,55.7,530.32,,,,,,,,
+2026-08-08,GRADUATED,BFLY,,,8.83,-0.8,-33.9,0.8,8.9,,,,,,,,
+2026-08-08,GRADUATED,JHX,,,30.23,0.0,-37.9,-4.0,29.01,,,,,,,,
+2026-08-08,GRADUATED,LZB,,,42.14,0.0,-27.0,-2.8,40.95,,,,,,,,
+2026-08-08,GRADUATED,SCL,,,65.15,-1.6,-32.8,1.6,66.21,,,,,,,,
+2026-08-08,GRADUATED,MLKN,,,24.49,0.0,-35.3,-8.0,22.52,,,,,,,,
+2026-08-08,GRADUATED,NEO,,,16.57,0.0,-45.4,-7.7,15.29,,,,,,,,
+2026-08-08,GRADUATED,NET,,,300.27,0.0,-34.1,-7.1,278.98,,,,,,,,
+2026-08-08,GRADUATED,PGEN,,,7.23,0.0,-33.5,-13.3,6.27,,,,,,,,
+2026-08-08,BREAKOUT,ACAD,,SPEC,29.21,0.0,-25.4,-5.4,27.62,5.0,,,,,,,
+2026-08-08,BOTTOM,BFLY,,SPEC,8.83,-0.8,-33.9,0.8,8.9,2.4,,,,,,,
+2026-08-08,BREAKOUT,BIO,,SPEC,352.47,0.0,-27.1,-3.6,339.75,9.4,,,,,,,
+2026-08-08,BOTTOM,BKSY,,SPEC,29.16,-39.8,-55.5,66.2,48.47,1.2,,,,,,,
+2026-08-08,BREAKOUT,BOW,,SPEC,33.45,0.0,-48.6,-5.1,31.74,1.1,,,,,,,
+2026-08-08,BOTTOM,BROS,,SPEC,53.01,-26.5,-38.3,36.1,72.16,9.3,,,,,,,
+2026-08-08,BREAKOUT,CSW,"CSW Industrials, Inc.",QUALITY,350.68,0.0,-22.5,-5.9,330.11,5.7,Industrials,Specialty Industrial Machinery,47.646736,25.663654,33.0,10.3,0.07
+2026-08-08,BREAKOUT,EXPE,"Expedia Group, Inc.",QUALITY,310.68,0.0,-31.3,-5.0,295.06,37.3,Consumer Cyclical,Travel Services,19.272951,13.121167,14.0,13.0,3.46
+2026-08-08,BREAKOUT,FAST,Fastenal Company,QUALITY,51.84,0.0,-12.8,-4.9,49.32,59.5,Industrials,Industrial Distribution,43.563023,37.081547,14.7,15.5,0.92
+2026-08-08,BREAKOUT,FIVN,"Five9, Inc.",QUALITY,33.99,0.0,-60.2,-18.9,27.57,2.5,Technology,Software - Infrastructure,52.292313,8.853523,9.2,4.9,0.27
+2026-08-08,BREAKOUT,GLBE,Global-E Online Ltd.,QUALITY,42.32,0.0,-32.9,-1.7,41.59,7.1,Consumer Cyclical,Internet Retail,61.333332,21.814432,32.8,11.4,0.22
+2026-08-08,BOTTOM,GLUE,"Monte Rosa Therapeutics, Inc.",SPEC,15.88,-35.3,-36.7,54.7,24.56,1.4,Healthcare,Biotechnology,,-7.229124,-61.3,0.0,-0.08
+2026-08-08,BREAKOUT,HPQ,HP Inc.,QUALITY,30.05,0.0,-41.9,-7.1,27.91,27.5,Technology,Computer Hardware,10.434027,9.984782,9.0,4.4,3.45
+2026-08-08,BREAKOUT,JHX,James Hardie Industries plc.,QUALITY,30.23,0.0,-37.9,-4.0,29.01,17.5,Basic Materials,Building Materials,143.95238,18.287518,44.5,2.2,0.37
+2026-08-08,BREAKOUT,JLL,Jones Lang LaSalle Incorporated,QUALITY,362.38,0.0,-21.1,-1.2,357.91,16.7,Real Estate,Real Estate Services,17.455685,13.055502,10.8,3.6,1.5
+2026-08-08,BOTTOM,LWLG,"Lightwave Logic, Inc.",SPEC,8.11,-50.6,-63.2,102.6,16.43,1.2,Basic Materials,Specialty Chemicals,,,27.3,0.0,-0.01
+2026-08-08,BOTTOM,LYB,LyondellBasell Industries NV,QUALITY,59.59,-25.2,-33.0,33.6,79.62,19.2,Basic Materials,Specialty Chemicals,,9.243417,19.8,-1.1,1.23
+2026-08-08,BOTTOM,NET,"Cloudflare, Inc.",QUALITY,300.27,0.0,-34.1,-7.1,278.98,106.9,Technology,Software - Infrastructure,,181.27977,33.5,-3.7,0.75
+2026-08-08,BREAKOUT,NSIT,"Insight Enterprises, Inc.",QUALITY,149.32,0.0,-54.9,-10.4,133.86,4.4,Technology,Electronics & Computer Distribution,26.616756,11.517323,1.2,2.2,0.17
+2026-08-08,BREAKOUT,NSP,"Insperity, Inc.",QUALITY,52.52,0.0,-75.5,-1.7,51.64,2.0,Industrials,Staffing & Employment Services,,19.468292,1.7,-0.2,0.2
+2026-08-08,BOTTOM,NTLA,"Intellia Therapeutics, Inc.",SPEC,11.94,-53.4,-58.3,114.4,25.6,1.7,Healthcare,Biotechnology,,-4.3058524,-46.2,0.0,
+2026-08-08,BREAKOUT,OC,Owens Corning Inc,QUALITY,157.1,0.0,-34.6,-3.3,151.9,12.4,Industrials,Building Products & Equipment,,13.134289,0.3,-6.8,0.89
+2026-08-08,BOTTOM,PGEN,"Precigen, Inc.",SPEC,7.23,0.0,-33.5,-13.3,6.27,2.6,Healthcare,Biotechnology,,-32.863636,6322.7,-184.0,-0.1
+2026-08-08,BREAKOUT,RLI,RLI Corp.,QUALITY,64.23,0.0,-33.6,-1.7,63.13,5.9,Financial Services,Insurance - Property & Casualty,13.522106,23.826748,15.2,22.2,0.32
+2026-08-08,BREAKOUT,SBH,"Sally Beauty Holdings, Inc. (Na",QUALITY,16.83,0.0,-28.3,-1.4,16.6,1.6,Consumer Cyclical,Specialty Retail,8.415,7.513393,0.2,5.2,0.18
+2026-08-08,BOTTOM,UAMY,United States Antimony Corporat,SPEC,6.85,-43.9,-58.5,78.2,12.21,1.0,Basic Materials,Other Industrial Metals & Mining,,-171.25,-3.1,-41.4,-0.06
+2026-08-08,BREAKOUT,USA,,SPEC,6.01,0.0,-14.7,-1.6,5.92,1.9,Financial Services,Asset Management,10.732143,,-9.8,553.4,
+2026-08-08,BOTTOM,WD,"Walker & Dunlop, Inc",SPEC,44.43,-47.2,-49.6,89.5,84.2,1.5,Financial Services,Mortgage Finance,39.669643,7.7879057,-10.0,3.3,
+2026-08-08,BREAKOUT,WPP,WPP plc,SPEC,27.55,0.0,-60.2,-6.2,25.85,5.9,Communication Services,Advertising Agencies,,7.8752985,-4.4,-1.8,0.74
+2026-08-08,BREAKOUT,ZBRA,Zebra Technologies Corporation,QUALITY,376.49,0.0,-39.6,-14.3,322.79,17.8,Technology,Communication Equipment,33.376774,17.023113,20.4,9.2,0.58
+2026-08-08,BREAKOUT,ZETA,Zeta Global Holdings Corp.,QUALITY,26.64,0.0,-40.4,-8.4,24.4,6.6,Technology,Software - Infrastructure,Infinity,22.099997,43.5,-0.1,0.25

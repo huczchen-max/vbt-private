@@ -1,422 +1,78 @@
 {
- "date": "2026-08-01",
+ "date": "2026-08-08",
  "top_n": 3,
- "generated_utc": "2026-08-01T10:25:56+00:00",
+ "generated_utc": "2026-08-08T06:28:19+00:00",
  "judgments": {
   "MU": {
-   "ticker": "MU",
-   "llm_score": 79,
-   "conviction": "MEDIUM",
-   "thesis": "Micron is riding a genuine AI-driven HBM/DRAM supercycle with sold-out capacity and pricing power, but a violent 30%+ correction, heavy insider selling, and looming 2027-28 supply-glut risk from SK Hynix/Chinese competition warrant caution despite still-rising estimates.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "CEO sold $37.3M in stock with no open-market purchases in 6 months",
-    "~$44.2M total insider selling in July 2026",
-    "Chinese competitors (CXMT) and SK Hynix capex surge raising 2027-28 oversupply risk",
-    "Customer concentration in AI/hyperscaler demand",
-    "Stock down >30% from June highs on AI-valuation and competition fears"
-   ],
-   "catalysts": [
-    "Q4 FY2026 earnings (record revenue/EPS guidance already given)",
-    "HBM4 ramp progress tied to Nvidia Vera Rubin platform",
-    "Additional multi-year strategic customer agreements/price-floor contracts",
-    "Capacity expansion updates (NY, Idaho, Taiwan, Japan, Singapore, India)",
-    "Signs of DRAM/NAND supply-demand gap narrowing or widening into 2027"
-   ],
-   "quant_score": 82.7,
-   "theme": "ai"
-  },
-  "WDC": {
-   "ticker": "WDC",
-   "llm_score": 84,
-   "conviction": "HIGH",
-   "thesis": "WDC is the pure-play AI cold-storage beneficiary riding a supply-constrained HDD upcycle with expanding margins and sharply rising estimates, though customer concentration and rich valuation temper the risk/reward.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "hyperscaler customer concentration",
-    "insider selling amid rally",
-    "stock trading above several analyst price targets / priced for perfection",
-    "cyclical HDD pricing risk if supply normalizes"
-   ],
-   "catalysts": [
-    "Q4 FY26 earnings Aug 5, 2026 vs guided $3.65B rev/$3.25 EPS",
-    "HAMR 30TB+ qualification progress",
-    "multi-year hyperscaler agreements through 2028",
-    "continued HDD supply tightness/pricing into 2027"
-   ],
-   "quant_score": 81.6,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "ai"
   },
   "NBIS": {
-   "ticker": "NBIS",
-   "llm_score": 82,
-   "conviction": "HIGH",
-   "thesis": "Nebius is riding a supply-constrained, early-stage AI-cloud infrastructure buildout with massive contracted backlog and Nvidia's strategic backing, though heavy capex, dilution, and customer concentration temper near-term risk.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "equity/convertible dilution to fund ~$20B+ capex",
-    "customer concentration in Microsoft/Meta contracts",
-    "high non-cash accrual ratio (126%) inflating GAAP earnings",
-    "60x+ forward sales valuation with ~21% short interest"
-   ],
-   "catalysts": [
-    "Aug 12 Q2 2026 earnings",
-    "Vera Rubin NVL72 rollout across US/EMEA in H2 2026",
-    "Aug 25 AGM capital structure vote",
-    "Nvidia 9.3% stake reinforcing ecosystem validation"
-   ],
-   "quant_score": 78.2,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "ai"
   },
-  "IESC": {
-   "ticker": "IESC",
-   "llm_score": 80,
-   "conviction": "HIGH",
-   "thesis": "IES Holdings is riding a genuine mid-cycle grid/data-center capex supercycle with 40% revenue growth, expanding margins, and a backlog up 91% YoY, though insider selling and stretched valuation warrant discipline.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Heavy insider selling by Executive Chairman and directors with no offsetting buys",
-    "Valuation far above historical/intrinsic value estimates (GF Value ~180% premium)",
-    "Residential segment margin/revenue weakness dragging consolidated results",
-    "Thin sell-side analyst coverage increasing estimate volatility",
-    "Generic customer concentration risk factor in filings despite no single customer >10% of revenue"
-   ],
-   "catalysts": [
-    "Backlog conversion of $4.5B (+91% YoY) into revenue over coming quarters",
-    "2-for-1 stock split effective August 21, 2026 improving liquidity/retail access",
-    "Continued AI/data-center power infrastructure capex supercycle",
-    "Further bolt-on M&A following Gulf Island Fabrication acquisition",
-    "Potential new analyst coverage initiations given rapid market cap growth to ~$14.9B"
-   ],
-   "quant_score": 77.3,
-   "theme": "grid"
-  },
-  "STRL": {
-   "ticker": "STRL",
-   "llm_score": 81,
-   "conviction": "HIGH",
-   "thesis": "STRL is the purest small/mid-cap play on AI-driven data center and grid-adjacent electrical buildout, with explosive backlog growth and repeated upward estimate revisions outweighing rich valuation and hyperscaler-concentration risk.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Hyperscaler/customer concentration in a few large projects",
-    "CEO succession planning underway (Cutillo contract to 2027, successor RSUs)",
-    "Premium valuation (~63x P/E vs ~40x peers) vulnerable to multiple compression",
-    "2027-2028 AI capex digestion risk could compress outer-year backlog conversion"
-   ],
-   "catalysts": [
-    "Q2 2026 earnings Aug 3, 2026 with conference call Aug 4",
-    "Continued CEC electrical integration driving cross-sell backlog growth",
-    "Big Tech (Microsoft/Meta/Google/Amazon) capex commentary holding or raising",
-    "Further semiconductor fab and hyperscaler project wins expanding $3.8B+ backlog"
-   ],
-   "quant_score": 74.1,
-   "theme": "grid"
+  "HPE": {
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "ai"
   },
   "BE": {
-   "ticker": "BE",
-   "llm_score": 78,
-   "conviction": "HIGH",
-   "thesis": "Bloom is the fastest-deployable on-site power solution for AI data centers, riding a genuine multi-year capacity/demand super-cycle with rising estimates, though customer concentration and backlog-quality disputes warrant position sizing discipline.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "73% single-customer revenue concentration (H1 2026)",
-    "Backlog ($20B) vastly exceeds audited RPO (~$492M), per short-seller analysis",
-    "Heavy related-party revenue via Brookfield JVs (~74% of Q4'25 revenue)",
-    "Oracle Project Jupiter facing permit/pipeline delays",
-    "Hunterbrook short-seller allegations on scandium supply chain and performance guarantees",
-    "Share dilution from convertible notes and Oracle warrant exercise",
-    "Insider selling amid stock volatility"
-   ],
-   "catalysts": [
-    "Backlog-to-revenue conversion and RPO growth in coming quarters",
-    "New hyperscaler/neocloud customer wins beyond Oracle diversifying concentration",
-    "Manufacturing capacity scale-up toward 2GW (2026) and stated 25GW long-term visibility",
-    "Deployment of Brookfield's $25B AI infrastructure financing framework",
-    "Resolution of Hunterbrook allegations / regulatory scrutiny outcome",
-    "Progress on Oracle Project Jupiter permitting and first-power timeline"
-   ],
-   "quant_score": 72.8,
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "grid"
+  },
+  "IESC": {
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "grid"
+  },
+  "NVT": {
+   "error": "HTTP Error 400: Bad Request",
    "theme": "grid"
   },
   "OUST": {
-   "ticker": "OUST",
-   "llm_score": 81,
-   "conviction": "HIGH",
-   "thesis": "OUST is riding a genuine platform-cycle inflection (Rev8 + Stereolabs Physical AI stack) reinforced by a rare regulatory moat from the NDAA Hesai ban, with estimates and price targets moving sharply higher despite recent dilution risk.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Recent $200M dilutive equity raise priced at a discount",
-    "Persistent EPS misses/integration costs despite revenue beats",
-    "Moat and TAM expansion heavily dependent on NDAA Section 164/BABA policy enforcement holding",
-    "Rich valuation (~15x P/S) leaves little room for execution missteps"
-   ],
-   "catalysts": [
-    "Q2 2026 earnings Aug 6, 2026",
-    "NDAA Section 164 full enforcement (Hesai ban) effective June 30, 2026",
-    "Rev8 BABA Act compliance opening state/local infrastructure procurement",
-    "Stereolabs integration synergies and cross-sell into robotics/defense",
-    "New autonomy partnerships (e.g., AIM Intelligent Machines) expanding robotics TAM"
-   ],
-   "quant_score": 76.0,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
   "CGNX": {
-   "ticker": "CGNX",
-   "llm_score": 74,
-   "conviction": "MEDIUM",
-   "thesis": "Cognex is entering an early AI-vision platform upcycle (OneVision, In-Sight 6900/3900) with accelerating revenue, margin inflection, and upward estimate revisions, but stretched valuation and auto/logistics concentration cap conviction.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "auto/logistics customer concentration (~52% of revenue)",
-    "new CEO since mid-2025 still executing strategic pivot",
-    "premium valuation (~40-75x forward P/E) priced for perfection",
-    "China exposure amid rising domestic competitors like Hikvision",
-    "hardware-dependent software limits recurring SaaS economics"
-   ],
-   "catalysts": [
-    "Q2 2026 earnings Aug 5, 2026 and guidance cadence",
-    "OneVision adoption scaling beyond 100+ pilot customers to broad multi-site rollout",
-    "New AI hardware launches (In-Sight 6900/3900) driving refresh cycle",
-    "Potential M&A deployment of $600M+ cash balance"
-   ],
-   "quant_score": 73.4,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
-  "TER": {
-   "ticker": "TER",
-   "llm_score": 62,
-   "conviction": "MEDIUM",
-   "thesis": "Teradyne's blowout momentum is being driven almost entirely by AI-era semiconductor test demand, not by its comparatively small and growth-uncertain Robotics segment, diluting the pure robotics thesis despite excellent overall fundamentals.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Robotics segment growth trajectory explicitly called 'uncertain' by management and receives less strategic attention",
-    "Customers pursuing dual-vendor qualification strategies erodes semi-test switching-cost moat",
-    "Quarter-to-quarter gross margin volatility tied to product/customer mix",
-    "Cyclical dependence on semiconductor capital spending",
-    "China export-control and geopolitical exposure",
-    "Valuation already reflects substantial AI optimism after 250%+ 1-yr run"
-   ],
-   "catalysts": [
-    "Continued HBM4/memory and TSMC-related test qualification wins",
-    "Tokyo Electron UltraFLEXplus/Prexa SDP integrated test partnership ramp",
-    "Potential Nvidia GPU wafer-sort testing qualification",
-    "New 'physical AI' robotics product launches from Automate 2026",
-    "2027 realization of share gains from ongoing customer qualifications"
-   ],
-   "quant_score": 60.4,
+  "ZBRA": {
+   "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
+  },
+  "MRCY": {
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "defense"
   },
   "HWM": {
-   "ticker": "HWM",
-   "llm_score": 84,
-   "conviction": "HIGH",
-   "thesis": "Howmet's near-monopoly position in next-gen jet engine components plus surging high-margin spares demand is driving durable beat-and-raise growth across a multi-year aerospace/defense supercycle.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "customer concentration in Boeing/Airbus/engine OEMs",
-    "notable insider selling (EVP Marchuk)",
-    "premium valuation with high debt load",
-    "earnings tightly coupled to OEM build-rate execution"
-   ],
-   "catalysts": [
-    "continued LEAP/GTF engine ramp driving spares mix toward 20% of revenue",
-    "F-35 and legacy fighter defense demand",
-    "industrial gas turbine demand from data center buildout",
-    "further FY2026 guidance raises/beats at Aug 6 earnings"
-   ],
-   "quant_score": 73.1,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },
-  "HEI": {
-   "ticker": "HEI",
-   "llm_score": 84,
-   "conviction": "HIGH",
-   "thesis": "HEICO is compounding through a genuine demand inflection in both defense electronics and next-gen aircraft aftermarket parts, with record results, raised guidance, and rapidly rising price targets confirming durable share gains rather than a one-off beat.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "Elevated valuation (~44x P/E) leaves limited room for disappointment",
-    "$15-20M of Q2 defense sales pulled forward from H2, creating minor comp distortion",
-    "ETG margins are lumpy quarter-to-quarter and may not repeat record levels",
-    "Dual-class share structure concentrates control with Mendelson family (key-person/governance risk)"
-   ],
-   "catalysts": [
-    "Q3/Q4 FY2026 earnings (guided EPS $1.74/$1.79) testing raised guidance",
-    "Continued defense budget growth and customer requests to scale production 4x-10x on critical components",
-    "Ongoing bolt-on M&A pipeline expanding ETG/FSG scale",
-    "Next-gen aircraft fleet growth expanding aftermarket parts TAM, countering 'peak aftermarket' bear thesis"
-   ],
-   "quant_score": 65.9,
-   "theme": "defense"
-  },
-  "GE": {
-   "ticker": "GE",
-   "llm_score": 78,
-   "conviction": "MEDIUM",
-   "thesis": "GE Aerospace is compounding a dominant commercial engine moat while its Defense & Propulsion unit inflects on next-gen platform wins (GE426, XA102) and record orders, but a rich 46x valuation caps near-term upside.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "46x forward P/E leaves little room for error",
-    "stock has sold off after last two 'beat and raise' quarters, signaling expectations already elevated",
-    "commercial aviation demand slowdown remains the dominant risk factor even as defense grows"
-   ],
-   "catalysts": [
-    "GE426 Autonomous Collaborative Platform progressing toward production contract",
-    "XA102 next-gen defense engine advancing through Assembly Readiness Review",
-    "Defense & Propulsion revenue guided to low-double-digit growth for FY2026",
-    "$210B+ backlog conversion and continued LEAP delivery ramp",
-    "Potential follow-on NAVAIR/Air Force contracts building on T408, F404, GE426 wins"
-   ],
-   "quant_score": 65.8,
+  "LUNR": {
+   "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },
   "GH": {
-   "ticker": "GH",
-   "llm_score": 84,
-   "conviction": "HIGH",
-   "thesis": "Shield's payer-coverage cascade (UNH, Quest network) plus fresh Guardant360 Liquid CDx approval is driving a genuine early-stage platform inflection with 44% revenue growth, share gains vs. diagnostics peers, and broad analyst estimate upgrades.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "Up to $250M potential liability from TwinStrand/UW patent verdict",
-    "Persistent GAAP losses and cash burn ($129M operating loss in Q2)",
-    "~$1.5B in convertible notes creating future dilution/refinancing risk",
-    "Stock trading near 52-week highs after 240% 1-yr run, valuation stretched",
-    "Co-CEO recent insider stock sale"
-   ],
-   "catalysts": [
-    "Continued commercial payer adoption of Shield following UNH coverage (10M+ newly reimbursed lives)",
-    "Guardant360 Liquid CDx uptake as new companion diagnostic approvals accumulate",
-    "Potential favorable resolution/appeal outcome on TwinStrand patent litigation",
-    "Additional commercial insurers following UNH's Shield coverage lead",
-    "Raised FY2026 revenue guidance execution ($1.34-1.36B)"
-   ],
-   "quant_score": 80.5,
-   "theme": "health"
-  },
-  "LLY": {
-   "ticker": "LLY",
-   "llm_score": 88,
-   "conviction": "HIGH",
-   "thesis": "Lilly is compounding share and TAM gains in the still-early GLP-1 supercycle (oral Foundayo, tirzepatide, retatrutide) with upward estimate revisions, despite pricing-headwind and two-drug concentration risk.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "~65% of revenue concentrated in Mounjaro/Zepbound",
-    "realized price declines (~13%) from government pricing deal and cash-pay cuts",
-    "Novo Nordisk and compounder antitrust/advertising litigation",
-    "rapid string of bolt-on M&A deals raising integration risk"
-   ],
-   "catalysts": [
-    "Foundayo (oral GLP-1) commercial ramp and Medicare Bridge program starting July 1",
-    "Q2 2026 earnings Aug 5 with Mounjaro/Zepbound/Foundayo update",
-    "Retatrutide Phase 3 readouts and potential filing",
-    "Medicare obesity-drug coverage rollout expanding TAM"
-   ],
-   "quant_score": 77.1,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "health"
   },
   "NTRA": {
-   "ticker": "NTRA",
-   "llm_score": 74,
-   "conviction": "MEDIUM",
-   "thesis": "Natera's Signatera oncology franchise plus new product/geo launches (Japan, Fetal Focus, Genome) drive expanding TAM, share gains, and upward guidance revisions, but heavy insider selling and persistent GAAP losses temper conviction.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Heavy insider selling (~$86M in 3 months across CEO/CFO/Chairman/CLO)",
-    "Widening GAAP net losses, EPS miss vs consensus",
-    "Q2 guidance implies growth deceleration (38.8% to ~21% YoY)",
-    "Competitive intensity from Guardant Health, Exact Sciences, GRAIL"
-   ],
-   "catalysts": [
-    "Q2 2026 earnings (Aug 6, 2026)",
-    "Japan Signatera commercial launch",
-    "PROCEED and IMvigor011 trial readouts",
-    "Expanding Medicare/commercial reimbursement and NCCN-driven ASP uplift",
-    "New sales rep productivity ramp late 2026"
-   ],
-   "quant_score": 75.0,
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "health"
+  },
+  "LLY": {
+   "error": "HTTP Error 400: Bad Request",
    "theme": "health"
   },
   "GEV": {
-   "quant_score": 68.1,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "outlier"
   },
   "PLTR": {
-   "ticker": "PLTR",
-   "llm_score": 62,
-   "conviction": "MEDIUM",
-   "thesis": "Elite fundamentals (85% growth, expanding margins, $11.8B backlog) are undercut by extreme valuation, heavy insider selling, and a broken price trend, making PLTR a high-quality compounder in a valuation-driven derating rather than a clean momentum winner.",
-   "product_cycle": "mid",
-   "estimate_momentum": "up",
-   "moat": "strong",
-   "red_flags": [
-    "Heavy insider selling incl. Thiel, Karp diversification",
-    "~$700M+ annual stock-based comp / dilution",
-    "148x trailing / 90x forward P/E leaves no room for error",
-    "High-profile bear thesis (Burry puts, sub-$50 fair value claim)",
-    "Reliance on continued 70%+ growth to justify multiple"
-   ],
-   "catalysts": [
-    "Q2 2026 earnings Aug 3, 2026",
-    "Continued AIP commercial land-and-expand (NRR 150%)",
-    "NVIDIA sovereign-AI government partnership scaling",
-    "New large government/defense contract wins"
-   ],
-   "quant_score": 55.0,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "outlier"
   },
   "HOOD": {
-   "ticker": "HOOD",
-   "llm_score": 58,
-   "conviction": "MEDIUM",
-   "thesis": "Robinhood is riding a genuine new product cycle (prediction markets + tokenization) into a large, expanding TAM, but heavy insider selling, convertible-note dilution risk, crypto-revenue volatility, and a broken price trend/stretched valuation temper conviction despite the Q2 beat.",
-   "product_cycle": "starting",
-   "estimate_momentum": "up",
-   "moat": "some",
-   "red_flags": [
-    "Heavy CEO/co-founder/CLO insider selling",
-    "$2.2B convertible notes with dilution above $300/share",
-    "Crypto revenue down 38-47% YoY, still a large volatile revenue slice",
-    "Prior $45M SEC penalty for regulatory/compliance violations",
-    "Stretched valuation (~37x P/S) pricing in flawless execution",
-    "Weak 26-week relative strength (-23.9%) and broken trend per quant screen"
-   ],
-   "catalysts": [
-    "NFL season prediction-market volume ramp",
-    "Ninth Circuit ruling on prediction markets",
-    "CLARITY Act regulatory clarity",
-    "Robinhood Chain/tokenized equity expansion",
-    "Q3 2026 earnings (Nov 4)"
-   ],
-   "quant_score": 50.7,
+   "error": "HTTP Error 400: Bad Request",
    "theme": "outlier"
   }
  }

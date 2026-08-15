@@ -79,36 +79,54 @@
   }
  ],
  "snapshot": {
-  "date": "2026-08-08",
-  "account_equity": 100951.04,
-  "vbt2_budget": 40380.42,
-  "stock_sleeve": 32304.33,
-  "options_sleeve": 8076.08,
-  "options_committed": 8042.0,
+  "date": "2026-08-15",
+  "account_equity": 102975.01,
+  "vbt2_budget": 41190.0,
+  "stock_sleeve": 32952.0,
+  "options_sleeve": 8238.0,
+  "options_committed": 8212.0,
   "options_sizing": [
-   {
-    "ticker": "MU",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 1,
-    "max_loss_total": 2922.0
-   },
-   {
-    "ticker": "CGNX",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 5,
-    "max_loss_total": 1725.0
-   },
-   {
-    "ticker": "OUST",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 11,
-    "max_loss_total": 1870.0
-   },
    {
     "ticker": "TER",
     "strategy": "BULL_PUT_SPREAD",
+    "contracts": 6,
+    "max_loss_total": 1830.0
+   },
+   {
+    "ticker": "HWM",
+    "strategy": "BULL_PUT_SPREAD",
     "contracts": 5,
-    "max_loss_total": 1525.0
+    "max_loss_total": 1885.0
+   },
+   {
+    "ticker": "IESC",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 1,
+    "max_loss_total": 1325.0
+   },
+   {
+    "ticker": "GH",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 5,
+    "max_loss_total": 1975.0
+   },
+   {
+    "ticker": "NVT",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 1,
+    "max_loss_total": 813.0
+   },
+   {
+    "ticker": "LUNR",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 2,
+    "max_loss_total": 300.0
+   },
+   {
+    "ticker": "RDW",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 2,
+    "max_loss_total": 84.0
    }
   ],
   "book": {
@@ -119,7 +137,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 877.57,
+    "current_close": 971.66,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -129,7 +147,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 168.48,
+    "current_close": 157.21,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -139,7 +157,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1185.71,
+    "current_close": 1180.16,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -149,7 +167,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 219.34,
+    "current_close": 229.94,
     "door_now": "IN-TREND"
    }
   }

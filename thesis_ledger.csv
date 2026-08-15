@@ -19,3 +19,6 @@ date,ticker,theme,event,close,dd_pct,state
 2026-08-08,A,health,TREND-REPAIRED,145.97,-4.3,Downtrend
 2026-08-08,NTLA,health,NEW-BOTTOM,11.94,-53.4,Uptrend
 2026-08-08,GLXY,outlier,TREND-BROKEN,20.17,-49.3,Mixed
+2026-08-15,TLN,grid,TREND-REPAIRED,362.74,-17.3,Uptrend
+2026-08-15,MEDP,health,TREND-REPAIRED,578.5,-5.3,Downtrend
+2026-08-15,CRSP,health,NEW-BOTTOM,53.55,-26.7,Uptrend

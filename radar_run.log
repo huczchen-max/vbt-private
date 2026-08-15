@@ -1,42 +1,32 @@
-symbol directory: 6187 common-stock symbols
-scanned 200/6187
-scanned 1200/6187
-scanned 2200/6187
-scanned 3200/6187
+symbol directory: 6190 common-stock symbols
+scanned 200/6190
+scanned 1200/6190
+scanned 2200/6190
+scanned 3200/6190
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-06-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6187
-$QVC: possibly delisted; no price data found  (period=2y)
+scanned 4200/6190
 
 1 Failed download:
-['QVC']: possibly delisted; no price data found  (period=2y)
-scanned 5200/6187
+['PRHIZ']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2024-12-13 00:00:00-05:00', '2025-03-17 00:00:00-04:00',\n               '2025-06-16 00:00:00-04:00', '2025-09-15 00:00:00-04:00',\n               '2026-06-15 00:00:00-04:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
+scanned 5200/6190
 $SVA: possibly delisted; no price data found  (period=2y)
 
 1 Failed download:
 ['SVA']: possibly delisted; no price data found  (period=2y)
-scanned 6187/6187
-WARN info ABEO: Too Many Requests. Rate limited. Try after a while.
-WARN info ACAD: Too Many Requests. Rate limited. Try after a while.
-WARN info AIRJ: Too Many Requests. Rate limited. Try after a while.
-WARN info ASTC: Too Many Requests. Rate limited. Try after a while.
-WARN info BFLY: Too Many Requests. Rate limited. Try after a while.
-WARN info BIO: Too Many Requests. Rate limited. Try after a while.
-WARN info BKSY: Too Many Requests. Rate limited. Try after a while.
-WARN info BOW: Too Many Requests. Rate limited. Try after a while.
-WARN info BROS: Too Many Requests. Rate limited. Try after a while.
-analyzed: 2752 symbols past liquidity floors
-BOTTOM: 11, BREAKOUT: 20, watchlist: 73
-  BOTTOM SPEC    BFLY                              dd -0.8%  cap 2.4B  0.8% to 52w high
-  BOTTOM SPEC    BKSY                              dd -39.8%  cap 1.2B  66.2% to 52w high
-  BOTTOM SPEC    BROS                              dd -26.5%  cap 9.3B  36.1% to 52w high
-  BOTTOM SPEC    GLUE   Monte Rosa Therapeutics, I dd -35.3%  cap 1.4B  54.7% to 52w high
-  BOTTOM SPEC    LWLG   Lightwave Logic, Inc.      dd -50.6%  cap 1.2B  102.6% to 52w high
-  BOTTOM QUALITY LYB    LyondellBasell Industries  dd -25.2%  cap 19.2B  33.6% to 52w high
-  BOTTOM QUALITY NET    Cloudflare, Inc.           dd 0.0%  cap 106.9B  -7.1% to 52w high
-  BOTTOM SPEC    NTLA   Intellia Therapeutics, Inc dd -53.4%  cap 1.7B  114.4% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.6B  -13.3% to 52w high
-  BOTTOM SPEC    UAMY   United States Antimony Cor dd -43.9%  cap 1.0B  78.2% to 52w high
-  BOTTOM SPEC    WD     Walker & Dunlop, Inc       dd -47.2%  cap 1.5B  89.5% to 52w high
+scanned 6190/6190
+analyzed: 2748 symbols past liquidity floors
+BOTTOM: 11, BREAKOUT: 25, watchlist: 80
+  BOTTOM QUALITY ALNY   Alnylam Pharmaceuticals, I dd -52.5%  cap 30.6B  110.7% to 52w high
+  BOTTOM QUALITY ARQT   Arcutis Biotherapeutics, I dd -16.1%  cap 3.3B  19.1% to 52w high
+  BOTTOM QUALITY BFLY   Butterfly Network, Inc.    dd -0.7%  cap 2.4B  0.7% to 52w high
+  BOTTOM SPEC    CRSP   CRISPR Therapeutics AG     dd -26.7%  cap 5.2B  36.5% to 52w high
+  BOTTOM QUALITY HHH    Howard Hughes Holdings Inc dd -25.6%  cap 4.0B  34.4% to 52w high
+  BOTTOM QUALITY ICL    ICL Group Ltd.             dd -15.7%  cap 7.2B  18.7% to 52w high
+  BOTTOM QUALITY LMND   Lemonade, Inc.             dd -43.5%  cap 4.1B  77.1% to 52w high
+  BOTTOM SPEC    OCUL   Ocular Therapeutix, Inc.   dd -31.0%  cap 2.2B  45.0% to 52w high
+  BOTTOM QUALITY P      Everpure, Inc.             dd 0.0%  cap 39.3B  -16.5% to 52w high
+  BOTTOM SPEC    RARE   Ultragenyx Pharmaceutical  dd -27.2%  cap 2.6B  37.3% to 52w high
+  BOTTOM QUALITY TAC    TransAlta Corporation      dd -27.3%  cap 4.0B  37.6% to 52w high
 status=ok

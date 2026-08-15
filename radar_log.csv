@@ -160,3 +160,43 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-08-08,BREAKOUT,WPP,WPP plc,SPEC,27.55,0.0,-60.2,-6.2,25.85,5.9,Communication Services,Advertising Agencies,,7.8752985,-4.4,-1.8,0.74
 2026-08-08,BREAKOUT,ZBRA,Zebra Technologies Corporation,QUALITY,376.49,0.0,-39.6,-14.3,322.79,17.8,Technology,Communication Equipment,33.376774,17.023113,20.4,9.2,0.58
 2026-08-08,BREAKOUT,ZETA,Zeta Global Holdings Corp.,QUALITY,26.64,0.0,-40.4,-8.4,24.4,6.6,Technology,Software - Infrastructure,Infinity,22.099997,43.5,-0.1,0.25
+2026-08-15,GRADUATED,PRMB,,,24.7,-1.3,-47.4,1.3,25.02,,,,,,,,
+2026-08-15,GRADUATED,P,,,118.16,0.0,-40.2,-16.5,98.7,,,,,,,,
+2026-08-15,GRADUATED,BFLY,,,8.84,-0.7,-33.9,0.7,8.9,,,,,,,,
+2026-08-15,GRADUATED,NET,,,315.78,0.0,-34.1,-4.9,300.27,,,,,,,,
+2026-08-15,BOTTOM,ALNY,"Alnylam Pharmaceuticals, Inc.",QUALITY,228.65,-52.5,-57.3,110.7,481.67,30.6,Healthcare,Biotechnology,39.765217,18.165293,66.9,16.1,0.27
+2026-08-15,BREAKOUT,AMPL,"Amplitude, Inc.",QUALITY,13.03,0.0,-56.0,-7.4,12.07,1.7,Technology,Software - Application,,75.39636,21.2,-26.6,0.07
+2026-08-15,BOTTOM,ARQT,"Arcutis Biotherapeutics, Inc.",QUALITY,26.19,-16.1,-33.1,19.1,31.2,3.3,Healthcare,Biotechnology,119.045456,20.094683,59.3,6.1,0.02
+2026-08-15,BREAKOUT,ATRC,"AtriCure, Inc.",QUALITY,44.3,0.0,-38.0,-4.3,42.38,2.3,Healthcare,Medical Instruments & Supplies,210.95238,102.603294,12.8,1.9,0.05
+2026-08-15,BREAKOUT,AVAH,Aveanna Healthcare Holdings Inc,QUALITY,12.32,0.0,-36.9,-20.0,9.86,2.7,Healthcare,Medical Care Facilities,9.777778,14.241457,13.7,10.6,0.1
+2026-08-15,BREAKOUT,AX,"Axos Financial, Inc.",QUALITY,102.16,0.0,-17.9,-1.1,101.01,5.8,Financial Services,Banks - Regional,12.047171,9.459259,18.1,36.0,
+2026-08-15,BOTTOM,BFLY,"Butterfly Network, Inc.",QUALITY,8.84,-0.7,-33.9,0.7,8.9,2.4,Healthcare,Medical Devices,,-147.33334,39.5,-66.7,0.0
+2026-08-15,BREAKOUT,BLK,"BlackRock, Inc.",QUALITY,1173.73,0.0,-20.1,-2.0,1150.25,190.7,Financial Services,Asset Management,28.330437,18.29668,30.6,24.1,7.58
+2026-08-15,BREAKOUT,CACI,"CACI International, Inc.",QUALITY,670.54,0.0,-31.5,-1.2,662.19,14.8,Technology,Information Technology Services,27.719717,17.868963,17.6,5.6,0.61
+2026-08-15,BREAKOUT,CHYM,"Chime Financial, Inc.",QUALITY,32.02,0.0,-51.7,-8.2,29.38,12.1,Technology,Software - Application,5.9962544,19.888199,26.8,-0.7,0.44
+2026-08-15,BREAKOUT,CRBG,Corebridge Financial Inc.,QUALITY,34.47,0.0,-36.2,-1.9,33.8,15.4,Financial Services,Asset Management,21.955414,5.996431,25.9,4.6,0.64
+2026-08-15,BOTTOM,CRSP,CRISPR Therapeutics AG,SPEC,53.55,-26.7,-37.4,36.5,73.07,5.2,Healthcare,Biotechnology,,-15.268068,1041.4,0.0,-0.22
+2026-08-15,BREAKOUT,FBK,FB Financial Corporation,QUALITY,61.8,0.0,-17.1,-1.4,60.94,3.1,Financial Services,Banks - Regional,16.349207,12.0321245,130.2,30.2,
+2026-08-15,BREAKOUT,FHN,First Horizon Corporation,QUALITY,26.22,0.0,-16.5,-1.4,25.85,12.4,Financial Services,Banks - Regional,12.605769,11.371768,9.0,30.2,
+2026-08-15,BREAKOUT,FSUN,FirstSun Capital Bancorp,QUALITY,41.11,0.0,-14.7,-1.6,40.44,2.0,Financial Services,Banks - Regional,24.616768,8.742159,42.2,10.5,
+2026-08-15,BREAKOUT,GLP,Global Partners LP,QUALITY,50.83,0.0,-15.9,-2.2,49.72,1.7,Energy,Oil & Gas Midstream,10.394684,20.250998,46.8,0.8,0.14
+2026-08-15,BREAKOUT,GPN,Global Payments Inc.,QUALITY,93.05,0.0,-28.9,-4.5,88.84,24.6,Industrials,Specialty Business Services,44.09953,5.8429666,68.6,-9.2,7.87
+2026-08-15,BOTTOM,HHH,Howard Hughes Holdings Inc.,QUALITY,66.6,-25.6,-31.1,34.4,89.53,4.0,Real Estate,Real Estate - Development,13.162055,65.29412,330.2,12.3,-1.13
+2026-08-15,BREAKOUT,HRB,"H&R Block, Inc.",QUALITY,53.92,0.0,-50.9,-5.8,50.82,6.8,Consumer Cyclical,Personal Services,9.476274,7.807703,3.0,18.6,0.62
+2026-08-15,BOTTOM,ICL,ICL Group Ltd.,QUALITY,5.55,-15.7,-34.3,18.7,6.59,7.2,Basic Materials,Agricultural Inputs,23.125002,12.606474,16.5,4.0,0.13
+2026-08-15,BREAKOUT,IMNM,"Immunome, Inc.",SPEC,27.2,0.0,-29.0,-4.9,25.87,3.1,Healthcare,Biotechnology,,-10.971768,,0.0,-0.14
+2026-08-15,BREAKOUT,JCAP,"Jefferson Capital, Inc.",QUALITY,24.0,0.0,-28.4,-5.4,22.69,1.4,Financial Services,Credit Services,4.660194,8.254514,11.9,25.8,-0.13
+2026-08-15,BREAKOUT,KMTS,"Kestra Medical Technologies, Lt",SPEC,28.02,0.0,-34.7,-2.3,27.38,1.6,Healthcare,Medical Instruments & Supplies,,-13.871287,66.2,-138.4,-0.08
+2026-08-15,BREAKOUT,KSPI,Joint Stock Company Kaspi.kz -,QUALITY,98.7,0.0,-30.5,-7.6,91.16,18.8,Technology,Software - Infrastructure,8.50862,0.014507366,13.6,24.2,-612.42
+2026-08-15,BOTTOM,LMND,"Lemonade, Inc.",QUALITY,52.64,-43.5,-48.2,77.1,93.25,4.1,Financial Services,Insurance - Property & Casualty,,-60.505745,79.4,-14.2,0.09
+2026-08-15,BREAKOUT,MDB,"MongoDB, Inc.",QUALITY,460.33,0.0,-48.2,-5.3,435.85,37.0,Technology,Software - Infrastructure,,62.752876,25.2,-1.1,0.52
+2026-08-15,BREAKOUT,NWL,Newell Brands Inc.,QUALITY,6.24,0.0,-45.5,-3.1,6.05,2.7,Consumer Defensive,Household & Personal Products,,9.092631,3.0,-3.0,0.41
+2026-08-15,BOTTOM,OCUL,"Ocular Therapeutix, Inc.",SPEC,10.04,-31.0,-48.1,45.0,14.56,2.2,Healthcare,Biotechnology,,-6.9050894,0.1,0.0,-0.16
+2026-08-15,BREAKOUT,OMER,Omeros Corporation,QUALITY,17.19,0.0,-47.1,-4.7,16.38,1.2,Healthcare,Biotechnology,10.481708,245.57144,,324.9,
+2026-08-15,BOTTOM,P,"Everpure, Inc.",QUALITY,118.16,0.0,-40.2,-16.5,98.7,39.3,Technology,Computer Hardware,179.0303,38.45691,,5.7,0.27
+2026-08-15,BREAKOUT,PAY,"Paymentus Holdings, Inc.",QUALITY,41.86,0.0,-46.3,-7.0,38.93,5.3,Technology,Software - Infrastructure,64.4,39.086426,28.8,6.2,0.11
+2026-08-15,BOTTOM,RARE,Ultragenyx Pharmaceutical Inc.,SPEC,26.49,-27.2,-51.4,37.3,36.38,2.6,Healthcare,Biotechnology,,10.056719,28.1,-81.7,-0.18
+2026-08-15,BREAKOUT,RBRK,"Rubrik, Inc.",QUALITY,102.23,0.0,-55.3,-11.1,90.93,21.0,Technology,Software - Infrastructure,,157.1198,39.0,-20.3,0.44
+2026-08-15,BREAKOUT,SBCF,Seacoast Banking Corporation of,QUALITY,36.13,0.0,-15.9,-4.1,34.66,3.5,Financial Services,Banks - Regional,23.46104,13.100074,38.3,23.8,
+2026-08-15,BOTTOM,TAC,TransAlta Corporation,QUALITY,12.79,-27.3,-33.1,37.6,17.6,4.0,Utilities,Utilities - Independent Power Producers,,31.958637,12.5,-1.0,0.29
+2026-08-15,BREAKOUT,UMH,"UMH Properties, Inc.",QUALITY,16.45,0.0,-20.0,-2.0,16.13,1.4,Real Estate,REIT - Residential,137.08334,96.76471,7.7,11.6,0.08

@@ -1,19 +1,19 @@
 {
- "as_of": "2026-08-14",
- "updated_utc": "2026-08-14T22:48:44+00:00",
+ "as_of": "2026-08-17",
+ "updated_utc": "2026-08-17T22:57:42+00:00",
  "account": {
-  "equity": 103031.17,
+  "equity": 105130.84,
   "cash": 16515.71,
-  "pl_total": 224.71
+  "pl_total": 2155.83
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 230.77,
-   "pl_pct": 2.37,
-   "pl_usd": 178.74,
+   "current": 233.63,
+   "pl_pct": 3.64,
+   "pl_usd": 274.75,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 428.77,
-   "pl_pct": 12.15,
-   "pl_usd": 975.45,
+   "current": 446.3,
+   "pl_pct": 16.73,
+   "pl_usd": 1343.58,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,19 +31,19 @@
    "symbol": "COHR",
    "qty": 13.0,
    "avg_entry": 249.45,
-   "current": 325.65,
-   "pl_pct": 30.55,
-   "pl_usd": 990.62,
+   "current": 352.0,
+   "pl_pct": 41.11,
+   "pl_usd": 1333.17,
    "entered": "2026-07-28",
-   "stage": "CONFIRMED"
+   "stage": "Recovered"
   },
   {
    "symbol": "CORZ",
    "qty": 191.0,
    "avg_entry": 22.28,
-   "current": 20.2,
-   "pl_pct": -9.34,
-   "pl_usd": -397.28,
+   "current": 20.1,
+   "pl_pct": -9.79,
+   "pl_usd": -416.38,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -51,9 +51,9 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 156.8,
-   "pl_pct": 2.87,
-   "pl_usd": 232.27,
+   "current": 161.75,
+   "pl_pct": 6.11,
+   "pl_usd": 495.41,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -61,9 +61,9 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 103.1,
-   "pl_pct": 18.47,
-   "pl_usd": 659.09,
+   "current": 103.83,
+   "pl_pct": 19.31,
+   "pl_usd": 689.11,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -71,9 +71,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1180.53,
-   "pl_pct": 0.82,
-   "pl_usd": 63.53,
+   "current": 1183.16,
+   "pl_pct": 1.05,
+   "pl_usd": 80.87,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -81,9 +81,9 @@
    "symbol": "MOD",
    "qty": 20.0,
    "avg_entry": 196.0,
-   "current": 209.5,
-   "pl_pct": 6.89,
-   "pl_usd": 270.0,
+   "current": 220.13,
+   "pl_pct": 12.31,
+   "pl_usd": 482.64,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 972.0,
-   "pl_pct": 9.06,
-   "pl_usd": 781.4,
+   "current": 1019.8,
+   "pl_pct": 14.42,
+   "pl_usd": 1244.09,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -101,9 +101,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 82.83,
-   "pl_pct": 0.36,
-   "pl_usd": 26.84,
+   "current": 83.45,
+   "pl_pct": 1.1,
+   "pl_usd": 82.81,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -111,19 +111,19 @@
    "symbol": "SNPS",
    "qty": 20.0,
    "avg_entry": 382.75,
-   "current": 422.26,
-   "pl_pct": 10.32,
-   "pl_usd": 790.13,
-   "entered": "2026-07-03",
-   "stage": "CONFIRMED"
+   "current": 413.23,
+   "pl_pct": 7.96,
+   "pl_usd": 609.53,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 362.74,
-   "pl_pct": -4.4,
-   "pl_usd": -166.91,
+   "current": 359.03,
+   "pl_pct": -5.38,
+   "pl_usd": -204.03,
    "entered": "2026-06-26",
    "stage": "CONFIRMED"
   },
@@ -131,9 +131,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 508.0,
-   "pl_pct": -4.41,
-   "pl_usd": -375.16,
+   "current": 538.5,
+   "pl_pct": 1.33,
+   "pl_usd": 112.84,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -141,7 +141,6 @@
  "entries": {
   "CIEN": "2026-07-10",
   "CORZ": "2026-07-10",
-  "SNPS": "2026-07-03",
   "TLN": "2026-06-26",
   "WDC": "2026-07-21",
   "INTC": "2026-07-28",
@@ -252,6 +251,18 @@
    "action": "SKIP",
    "symbol": "AMAT",
    "note": "group cap (semi already at 4)"
+  },
+  {
+   "date": "2026-08-17",
+   "action": "SELL",
+   "symbol": "SNPS",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-08-17",
+   "action": "SKIP",
+   "symbol": "SMCI",
+   "note": "group cap (hw already at 4)"
   }
  ]
 }

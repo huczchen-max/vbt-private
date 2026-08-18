@@ -1,7 +1,7 @@
 {
- "date": "2026-08-17",
+ "date": "2026-08-18",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-08-17T22:47:06+00:00",
+ "generated_utc": "2026-08-18T21:56:29+00:00",
  "regime": {
   "regime": "NEUTRAL",
   "reasons": [
@@ -10,7 +10,7 @@
   "raw_ok": false
  },
  "verdicts": {
-  "SMCI": {
+  "COHR": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [

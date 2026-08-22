@@ -1,9 +1,13 @@
 {
- "date": "2026-08-15",
+ "date": "2026-08-22",
  "top_n": 3,
- "generated_utc": "2026-08-15T05:47:49+00:00",
+ "generated_utc": "2026-08-22T05:50:33+00:00",
  "judgments": {
   "MU": {
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "ai"
+  },
+  "HPE": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "ai"
   },
@@ -11,15 +15,7 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "ai"
   },
-  "STX": {
-   "error": "HTTP Error 400: Bad Request",
-   "theme": "ai"
-  },
   "BE": {
-   "error": "HTTP Error 400: Bad Request",
-   "theme": "grid"
-  },
-  "NVT": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "grid"
   },
@@ -27,15 +23,19 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "grid"
   },
-  "ZBRA": {
+  "NVT": {
    "error": "HTTP Error 400: Bad Request",
-   "theme": "robotics"
+   "theme": "grid"
   },
   "TER": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
-  "OUST": {
+  "ZBRA": {
+   "error": "HTTP Error 400: Bad Request",
+   "theme": "robotics"
+  },
+  "CGNX": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
@@ -47,7 +47,7 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },
-  "VOYG": {
+  "HWM": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },
@@ -63,11 +63,11 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "health"
   },
-  "GEV": {
+  "PLTR": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "outlier"
   },
-  "PLTR": {
+  "GEV": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "outlier"
   },

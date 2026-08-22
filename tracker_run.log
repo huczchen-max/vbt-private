@@ -1,36 +1,39 @@
 prices 100/196
 prices 196/196
-tracked 195 names; doors {'IN-TREND': 115, 'ENTRY-BOTTOM': 11, 'BROKEN': 63, 'ENTRY-MACROSS': 6}; events this run 3
+tracked 195 names; doors {'IN-TREND': 112, 'BROKEN': 65, 'ENTRY-BOTTOM': 12, 'ENTRY-MACROSS': 6}; events this run 8
   ai        etf=IN-TREND/Uptrend breadth intact 75.4% uptrend 50.8%
-  grid      etf=IN-TREND/Uptrend breadth intact 63.6% uptrend 48.5%
-  robotics  etf=IN-TREND/Mixed breadth intact 76.9% uptrend 30.8%
-  defense   etf=IN-TREND/Uptrend breadth intact 61.3% uptrend 35.5%
-  health    etf=IN-TREND/Mixed breadth intact 45.2% uptrend 32.3%
+  grid      etf=IN-TREND/Uptrend breadth intact 54.5% uptrend 48.5%
+  robotics  etf=IN-TREND/Mixed breadth intact 76.9% uptrend 46.2%
+  defense   etf=IN-TREND/Uptrend breadth intact 58.1% uptrend 35.5%
+  health    etf=IN-TREND/Mixed breadth intact 51.6% uptrend 32.3%
   outlier   etf=IN-TREND/Mixed breadth intact 14.3% uptrend 14.3%
 status=ok
-exhaustion: 35 symbols, 3 flagged (score>=2)
-  HPE    TOP-exhaustion 3/5: bear_divergence, extended_top_decile, rsi_over_75
-  ZBRA   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
-  NOVT   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
+exhaustion: 36 symbols, 2 flagged (score>=2)
+  HPE    TOP-exhaustion 2/5: bear_divergence, extended_top_decile
+  ATKR   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
 WARN ai: HTTP Error 400: Bad Request
 WARN grid: HTTP Error 400: Bad Request
 WARN robotics: HTTP Error 400: Bad Request
 WARN defense: HTTP Error 400: Bad Request
 WARN health: HTTP Error 400: Bad Request
 WARN outlier: HTTP Error 400: Bad Request
-skip MU: vol gate (IV-RV -0.4543)
-skip NBIS: vol gate (IV-RV -1.048)
-skip STX: vol gate (IV-RV -0.0351)
-skip BE: vol gate (IV-RV -0.553)
-skip OUST: vol gate (IV-RV -0.2204)
-skip NTRA: vol gate (IV-RV -0.3961)
-skip GEV: vol gate (IV-RV -0.1)
+skip MU: vol gate (IV-RV -0.3912)
+skip HPE: earnings within 14d
+skip NBIS: vol gate (IV-RV -1.03)
+skip BE: vol gate (IV-RV -0.4332)
+skip TER: vol gate (IV-RV -0.1998)
+skip CGNX: vol gate (IV-RV -0.024)
+skip NTRA: vol gate (IV-RV -0.3816)
+skip GEV: vol gate (IV-RV -0.0615)
 skip WDC: vol gate (IV-RV -0.3333)
 skip P: earnings within 14d
-options engine: 5 new proposals, 13 open, 20 journal events
-  CALL_DEBIT_SPREAD ZBRA   [BULL-PARABOLIC] exp 2026-09-18 short 410.0 debit 11.5 max_loss 11.5  (EXPERIMENTAL)
-  BULL_PUT_SPREAD   LUNR   [BULL-NORMAL] exp 2026-09-25 short 18.0 credit 1.0 max_loss 1.5
-  BULL_PUT_SPREAD   RDW    [BULL-NORMAL] exp 2026-09-25 short 12.0 credit 0.08 max_loss 0.42
-  CASH_SECURED_PUT  VOYG   [RANGE] exp 2026-09-18 short 37.0 credit 1.38 max_loss 35.62
-  CASH_SECURED_PUT  CRWV   [RANGE] exp 2026-09-25 short 90.0 credit 3.97 max_loss 86.03
-thesis-paper: equity $102,975, budget $41,190, book ['MU', 'GH', 'LLY', 'BE'], options sized 7 ($8,212/8,238)
+skip CORZ: vol gate (IV-RV -0.5201)
+skip IOT: earnings within 14d
+skip AMBA: vol gate (IV-RV -0.2065)
+options engine: 5 new proposals, 15 open, 18 journal events
+  CASH_SECURED_PUT  SMCI   [RANGE] exp 2026-10-02 short 32.0 credit 1.48 max_loss 30.52
+  CASH_SECURED_PUT  CRWV   [RANGE] exp 2026-10-02 short 75.0 credit 3.33 max_loss 71.67
+  CASH_SECURED_PUT  NOW    [RANGE] exp 2026-10-02 short 110.0 credit 2.17 max_loss 107.83
+  CASH_SECURED_PUT  CRSP   [RANGE] exp 2026-10-02 short 48.0 credit 1.2 max_loss 46.8
+  CASH_SECURED_PUT  NTLA   [RANGE] exp 2026-09-18 short 11.0 credit 0.4 max_loss 10.6
+thesis-paper: equity $98,550, budget $39,420, book ['MU', 'GH', 'LLY', 'BE'], options sized 6 ($7,866/7,884)

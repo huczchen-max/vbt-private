@@ -1,35 +1,82 @@
-symbol directory: 6193 common-stock symbols
-scanned 200/6193
-scanned 1200/6193
-scanned 2200/6193
-scanned 3200/6193
+symbol directory: 6188 common-stock symbols
+scanned 200/6188
+scanned 1200/6188
+scanned 2200/6188
+scanned 3200/6188
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-06-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6193
-scanned 5200/6193
+scanned 4200/6188
+scanned 5200/6188
 $SVA: possibly delisted; no price data found  (period=2y)
 
 1 Failed download:
 ['SVA']: possibly delisted; no price data found  (period=2y)
-scanned 6193/6193
-analyzed: 2754 symbols past liquidity floors
-BOTTOM: 17, BREAKOUT: 9, watchlist: 93
-  BOTTOM QUALITY AMBA   Ambarella, Inc.            dd -17.8%  cap 3.2B  21.6% to 52w high
-  BOTTOM QUALITY BFLY   Butterfly Network, Inc.    dd 0.0%  cap 2.5B  -6.8% to 52w high
-  BOTTOM QUALITY BV     BrightView Holdings, Inc.  dd -22.8%  cap 1.0B  31.7% to 52w high
-  BOTTOM QUALITY CAE    CAE Inc                    dd -26.8%  cap 8.0B  36.7% to 52w high
-  BOTTOM SPEC    CSTL   Castle Biosciences, Inc.   dd -19.0%  cap 1.0B  23.5% to 52w high
-  BOTTOM SPEC    DXYZ   Destiny Tech100 Inc.       dd -48.3%  cap 1.0B  93.6% to 52w high
-  BOTTOM QUALITY ERIE   Erie Indemnity Company     dd -23.7%  cap 13.8B  35.5% to 52w high
-  BOTTOM QUALITY FG     F&G Annuities & Life, Inc. dd -32.7%  cap 3.0B  51.3% to 52w high
-  BOTTOM SPEC    JANX   Janux Therapeutics, Inc.   dd -49.0%  cap 1.1B  96.0% to 52w high
-  BOTTOM QUALITY OMCL   Omnicell, Inc.             dd -29.9%  cap 1.6B  42.6% to 52w high
-  BOTTOM QUALITY PAYC   Paycom Software, Inc.      dd 0.0%  cap 10.3B  1.2% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd -0.4%  cap 2.6B  0.4% to 52w high
-  BOTTOM SPEC    RIOT   Riot Platforms, Inc.       dd -30.6%  cap 7.4B  44.1% to 52w high
-  BOTTOM QUALITY SMCI   Super Micro Computer, Inc. dd -29.5%  cap 24.1B  41.9% to 52w high
-  BOTTOM SPEC    TRIP   TripAdvisor, Inc.          dd -46.9%  cap 1.2B  88.3% to 52w high
-  BOTTOM SPEC    UMAC   Unusual Machines, Inc.     dd -19.5%  cap 1.4B  24.2% to 52w high
-  BOTTOM QUALITY UPBD   Upbound Group, Inc.        dd -23.3%  cap 1.1B  30.3% to 52w high
+scanned 6188/6188
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
+analyzed: 2730 symbols past liquidity floors
+BOTTOM: 8, BREAKOUT: 11, watchlist: 100
+  BOTTOM SPEC    AAL                               dd -23.9%  cap 9.0B  31.4% to 52w high
+  BOTTOM SPEC    AI                                dd -45.0%  cap 1.6B  82.0% to 52w high
+  BOTTOM QUALITY ATEC   Alphatec Holdings, Inc.    dd -58.3%  cap 1.5B  139.9% to 52w high
+  BOTTOM QUALITY CHRW   C.H. Robinson Worldwide, I dd -27.9%  cap 17.6B  38.6% to 52w high
+  BOTTOM SPEC    DMRA   Damora Therapeutics, Inc.  dd -15.1%  cap 1.8B  17.7% to 52w high
+  BOTTOM QUALITY PAYC   Paycom Software, Inc.      dd 0.0%  cap 10.8B  -4.1% to 52w high
+  BOTTOM SPEC    ULCC   Frontier Group Holdings, I dd -25.6%  cap 1.3B  34.4% to 52w high
+  BOTTOM QUALITY VG     Venture Global, Inc.       dd -19.0%  cap 35.5B  23.5% to 52w high
 status=ok

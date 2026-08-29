@@ -1,19 +1,19 @@
 {
- "as_of": "2026-08-28",
- "updated_utc": "2026-08-28T05:40:49+00:00",
+ "as_of": "2026-08-29",
+ "updated_utc": "2026-08-29T03:27:13+00:00",
  "account": {
-  "equity": 97511.09,
+  "equity": 96011.95,
   "cash": 24715.72,
-  "pl_total": -761.89
+  "pl_total": -2122.15
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 213.4,
-   "pl_pct": -5.34,
-   "pl_usd": -403.65,
+   "current": 210.77,
+   "pl_pct": -6.51,
+   "pl_usd": -491.83,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 396.01,
-   "pl_pct": 3.58,
-   "pl_usd": 287.49,
+   "current": 378.44,
+   "pl_pct": -1.01,
+   "pl_usd": -81.48,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "COHR",
    "qty": 13.0,
    "avg_entry": 249.45,
-   "current": 287.6,
-   "pl_pct": 15.29,
-   "pl_usd": 495.97,
+   "current": 279.2,
+   "pl_pct": 11.93,
+   "pl_usd": 386.77,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -41,19 +41,19 @@
    "symbol": "CORZ",
    "qty": 191.0,
    "avg_entry": 22.28,
-   "current": 17.54,
-   "pl_pct": -21.27,
-   "pl_usd": -905.34,
-   "entered": "2026-07-10",
+   "current": 16.51,
+   "pl_pct": -25.9,
+   "pl_usd": -1102.07,
+   "entered": "\u2014",
    "stage": "CONFIRMED"
   },
   {
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 171.0,
-   "pl_pct": 12.18,
-   "pl_usd": 987.14,
+   "current": 161.5,
+   "pl_pct": 5.95,
+   "pl_usd": 482.12,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -61,9 +61,9 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 90.28,
-   "pl_pct": 3.74,
-   "pl_usd": 133.47,
+   "current": 89.47,
+   "pl_pct": 2.81,
+   "pl_usd": 100.26,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -71,9 +71,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1175.75,
-   "pl_pct": 0.41,
-   "pl_usd": 32.02,
+   "current": 1174.61,
+   "pl_pct": 0.32,
+   "pl_usd": 24.5,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -81,9 +81,9 @@
    "symbol": "MOD",
    "qty": 20.0,
    "avg_entry": 196.0,
-   "current": 186.31,
-   "pl_pct": -4.94,
-   "pl_usd": -193.8,
+   "current": 177.63,
+   "pl_pct": -9.37,
+   "pl_usd": -367.4,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 913.0,
-   "pl_pct": 2.44,
-   "pl_usd": 210.3,
+   "current": 932.86,
+   "pl_pct": 4.67,
+   "pl_usd": 402.53,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -101,9 +101,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 74.94,
-   "pl_pct": -9.21,
-   "pl_usd": -691.6,
+   "current": 72.61,
+   "pl_pct": -12.03,
+   "pl_usd": -903.63,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -111,9 +111,9 @@
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 304.39,
-   "pl_pct": -19.78,
-   "pl_usd": -750.41,
+   "current": 296.11,
+   "pl_pct": -21.96,
+   "pl_usd": -833.26,
    "entered": "2026-06-26",
    "stage": "CONFIRMED"
   },
@@ -121,22 +121,22 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 454.08,
-   "pl_pct": -14.56,
-   "pl_usd": -1237.88,
+   "current": 459.45,
+   "pl_pct": -13.55,
+   "pl_usd": -1151.96,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
  ],
  "entries": {
   "CIEN": "2026-07-10",
-  "CORZ": "2026-07-10",
   "TLN": "2026-06-26",
   "WDC": "2026-07-21",
   "INTC": "2026-07-28",
   "COHR": "2026-07-28",
   "MOD": "2026-07-30",
-  "ON": "2026-07-30"
+  "ON": "2026-07-30",
+  "KLAC": "2026-08-29"
  },
  "seeded": true,
  "ledger": [
@@ -253,6 +253,18 @@
    "action": "SKIP",
    "symbol": "SMCI",
    "note": "group cap (hw already at 4)"
+  },
+  {
+   "date": "2026-08-29",
+   "action": "SELL",
+   "symbol": "CORZ",
+   "note": "catastrophic stop (spec, -25.9% <= -25%)"
+  },
+  {
+   "date": "2026-08-29",
+   "action": "BUY",
+   "symbol": "KLAC",
+   "note": "43 sh ~$7,548 (quality 8%) on stage-3 entry @ 175.54 | llm:GO mult:1 regime:NEUTRAL"
   }
  ]
 }

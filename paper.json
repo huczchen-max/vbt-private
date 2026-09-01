@@ -1,19 +1,19 @@
 {
- "as_of": "2026-08-29",
- "updated_utc": "2026-08-29T03:27:13+00:00",
+ "as_of": "2026-09-01",
+ "updated_utc": "2026-09-01T00:51:48+00:00",
  "account": {
-  "equity": 96011.95,
-  "cash": 24715.72,
-  "pl_total": -2122.15
+  "equity": 95942.24,
+  "cash": 20271.78,
+  "pl_total": -69.71
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 210.77,
-   "pl_pct": -6.51,
-   "pl_usd": -491.83,
+   "current": 206.0,
+   "pl_pct": -8.62,
+   "pl_usd": -651.77,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 378.44,
-   "pl_pct": -1.01,
-   "pl_usd": -81.48,
+   "current": 383.99,
+   "pl_pct": 0.44,
+   "pl_usd": 35.07,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,29 +31,19 @@
    "symbol": "COHR",
    "qty": 13.0,
    "avg_entry": 249.45,
-   "current": 279.2,
-   "pl_pct": 11.93,
-   "pl_usd": 386.77,
+   "current": 277.77,
+   "pl_pct": 11.35,
+   "pl_usd": 368.18,
    "entered": "2026-07-28",
-   "stage": "CONFIRMED"
-  },
-  {
-   "symbol": "CORZ",
-   "qty": 191.0,
-   "avg_entry": 22.28,
-   "current": 16.51,
-   "pl_pct": -25.9,
-   "pl_usd": -1102.07,
-   "entered": "\u2014",
    "stage": "CONFIRMED"
   },
   {
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 161.5,
-   "pl_pct": 5.95,
-   "pl_usd": 482.12,
+   "current": 159.02,
+   "pl_pct": 4.32,
+   "pl_usd": 350.29,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -61,19 +51,29 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 89.47,
-   "pl_pct": 2.81,
-   "pl_usd": 100.26,
+   "current": 89.7,
+   "pl_pct": 3.07,
+   "pl_usd": 109.69,
    "entered": "2026-07-28",
+   "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "KLAC",
+   "qty": 43.0,
+   "avg_entry": 176.5,
+   "current": 175.41,
+   "pl_pct": -0.62,
+   "pl_usd": -47.08,
+   "entered": "2026-08-29",
    "stage": "CONFIRMED"
   },
   {
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1174.61,
-   "pl_pct": 0.32,
-   "pl_usd": 24.5,
+   "current": 1159.95,
+   "pl_pct": -0.94,
+   "pl_usd": -72.14,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -81,19 +81,19 @@
    "symbol": "MOD",
    "qty": 20.0,
    "avg_entry": 196.0,
-   "current": 177.63,
-   "pl_pct": -9.37,
-   "pl_usd": -367.4,
-   "entered": "2026-07-30",
-   "stage": "CONFIRMED"
+   "current": 178.43,
+   "pl_pct": -8.96,
+   "pl_usd": -351.4,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 932.86,
-   "pl_pct": 4.67,
-   "pl_usd": 402.53,
+   "current": 958.08,
+   "pl_pct": 7.5,
+   "pl_usd": 646.66,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -101,9 +101,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 72.61,
-   "pl_pct": -12.03,
-   "pl_usd": -903.63,
+   "current": 74.1,
+   "pl_pct": -10.22,
+   "pl_usd": -768.04,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -111,9 +111,9 @@
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 296.11,
-   "pl_pct": -21.96,
-   "pl_usd": -833.26,
+   "current": 297.36,
+   "pl_pct": -21.63,
+   "pl_usd": -820.7,
    "entered": "2026-06-26",
    "stage": "CONFIRMED"
   },
@@ -121,9 +121,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 459.45,
-   "pl_pct": -13.55,
-   "pl_usd": -1151.96,
+   "current": 450.56,
+   "pl_pct": -15.22,
+   "pl_usd": -1294.2,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -134,9 +134,10 @@
   "WDC": "2026-07-21",
   "INTC": "2026-07-28",
   "COHR": "2026-07-28",
-  "MOD": "2026-07-30",
   "ON": "2026-07-30",
-  "KLAC": "2026-08-29"
+  "KLAC": "2026-08-29",
+  "GLXY": "2026-09-01",
+  "NBIS": "2026-09-01"
  },
  "seeded": true,
  "ledger": [
@@ -265,6 +266,42 @@
    "action": "BUY",
    "symbol": "KLAC",
    "note": "43 sh ~$7,548 (quality 8%) on stage-3 entry @ 175.54 | llm:GO mult:1 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "SELL",
+   "symbol": "MOD",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "BUY",
+   "symbol": "GLXY",
+   "note": "156 sh ~$3,838 (spec 4%) on stage-3 entry @ 24.6 | llm:GO mult:1 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "SKIP",
+   "symbol": "MRVL",
+   "note": "group cap (semi already at 4)"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "SKIP",
+   "symbol": "ALAB",
+   "note": "group cap (semi already at 4)"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "BUY",
+   "symbol": "NBIS",
+   "note": "18 sh ~$3,714 (spec 4%) on stage-3 entry @ 206.32 | llm:GO mult:1 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-09-01",
+   "action": "SKIP",
+   "symbol": "CRDO",
+   "note": "group cap (semi already at 4)"
   }
  ]
 }

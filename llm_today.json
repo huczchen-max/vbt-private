@@ -1,7 +1,7 @@
 {
- "date": "2026-08-29",
+ "date": "2026-09-01",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-08-29T03:23:09+00:00",
+ "generated_utc": "2026-09-01T00:47:39+00:00",
  "regime": {
   "regime": "NEUTRAL",
   "reasons": [
@@ -10,7 +10,39 @@
   "raw_ok": false
  },
  "verdicts": {
-  "KLAC": {
+  "GLXY": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "call failed: HTTP Error 400: Bad Request"
+   ],
+   "raw_ok": false
+  },
+  "MRVL": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "call failed: HTTP Error 400: Bad Request"
+   ],
+   "raw_ok": false
+  },
+  "ALAB": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "call failed: HTTP Error 400: Bad Request"
+   ],
+   "raw_ok": false
+  },
+  "NBIS": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "call failed: HTTP Error 400: Bad Request"
+   ],
+   "raw_ok": false
+  },
+  "CRDO": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [

@@ -1,27 +1,27 @@
 prices 100/177
 prices 177/177
-ai        top5: MU:80.4, HPE:74.9, NBIS:74.1, STX:73.9, CRDO:71.7
-grid      top5: BE:77.8, NVT:76.4, STRL:69.4, ATKR:68.3, PWR:67.7
-robotics  top5: TER:69.7, ZBRA:69.4, CGNX:67.2, AMBA:63.0, OUST:56.2
-defense   top5: LUNR:66.9, RDW:66.1, HWM:65.4, HEI:63.9, SAIC:63.0
-health    top5: GH:77.5, NTRA:76.6, LLY:72.3, ILMN:64.2, MEDP:62.9
-outlier   top5: PLTR:64.8, GEV:54.3, HOOD:52.9, UBER:40.0, GLXY:38.6
+ai        top5: NBIS:86.4, MU:85.0, DELL:76.0, LITE:75.4, STX:75.3
+grid      top5: BE:80.9, NVT:76.0, IESC:71.5, STRL:68.5, ATKR:67.7
+robotics  top5: TER:73.7, CGNX:70.2, ZBRA:70.0, OUST:66.5, AMBA:59.2
+defense   top5: RDW:76.1, RKLB:68.4, HWM:67.6, HEI:64.5, SAIC:63.0
+health    top5: GH:78.4, NTRA:76.9, LLY:70.4, ILMN:64.8, REGN:63.1
+outlier   top5: HOOD:75.7, GEV:58.6, PLTR:57.6, GLXY:54.3, UBER:34.3
 status=ok
-WARN MU: HTTP Error 400: Bad Request
-WARN HPE: HTTP Error 400: Bad Request
 WARN NBIS: HTTP Error 400: Bad Request
+WARN MU: HTTP Error 400: Bad Request
+WARN DELL: HTTP Error 400: Bad Request
 WARN BE: HTTP Error 400: Bad Request
 WARN NVT: HTTP Error 400: Bad Request
-WARN STRL: HTTP Error 400: Bad Request
+WARN IESC: HTTP Error 400: Bad Request
 WARN TER: HTTP Error 400: Bad Request
-WARN ZBRA: HTTP Error 400: Bad Request
 WARN CGNX: HTTP Error 400: Bad Request
-WARN LUNR: HTTP Error 400: Bad Request
+WARN ZBRA: HTTP Error 400: Bad Request
 WARN RDW: HTTP Error 400: Bad Request
+WARN RKLB: HTTP Error 400: Bad Request
 WARN HWM: HTTP Error 400: Bad Request
 WARN GH: HTTP Error 400: Bad Request
 WARN NTRA: HTTP Error 400: Bad Request
 WARN LLY: HTTP Error 400: Bad Request
-WARN PLTR: HTTP Error 400: Bad Request
-WARN GEV: HTTP Error 400: Bad Request
 WARN HOOD: HTTP Error 400: Bad Request
+WARN GEV: HTTP Error 400: Bad Request
+WARN PLTR: HTTP Error 400: Bad Request

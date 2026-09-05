@@ -79,18 +79,18 @@
   }
  ],
  "snapshot": {
-  "date": "2026-08-29",
-  "account_equity": 96011.95,
-  "vbt2_budget": 38404.78,
-  "stock_sleeve": 30723.82,
-  "options_sleeve": 7680.96,
-  "options_committed": 7677.0,
+  "date": "2026-09-05",
+  "account_equity": 98887.78,
+  "vbt2_budget": 39555.11,
+  "stock_sleeve": 31644.09,
+  "options_sleeve": 7911.02,
+  "options_committed": 7735.0,
   "options_sizing": [
    {
     "ticker": "GH",
     "strategy": "BULL_PUT_SPREAD",
-    "contracts": 4,
-    "max_loss_total": 1580.0
+    "contracts": 5,
+    "max_loss_total": 1975.0
    },
    {
     "ticker": "LLY",
@@ -99,16 +99,10 @@
     "max_loss_total": 5315.0
    },
    {
-    "ticker": "BE",
+    "ticker": "CGNX",
     "strategy": "BULL_PUT_SPREAD",
     "contracts": 1,
-    "max_loss_total": 644.0
-   },
-   {
-    "ticker": "LUNR",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 2,
-    "max_loss_total": 138.0
+    "max_loss_total": 445.0
    }
   ],
   "book": {
@@ -119,7 +113,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 932.86,
+    "current_close": 1016.59,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -129,7 +123,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 161.5,
+    "current_close": 161.41,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -139,7 +133,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1174.61,
+    "current_close": 1149.36,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -149,7 +143,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 210.77,
+    "current_close": 252.87,
     "door_now": "IN-TREND"
    }
   }

@@ -1,18 +1,14 @@
-symbol directory: 6188 common-stock symbols
-scanned 200/6188
-scanned 1200/6188
-scanned 2200/6188
-scanned 3200/6188
+symbol directory: 6189 common-stock symbols
+scanned 200/6189
+scanned 1200/6189
+scanned 2200/6189
+scanned 3200/6189
 
 1 Failed download:
-['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-06-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6188
-scanned 5200/6188
-$SVA: possibly delisted; no price data found  (period=2y)
-
-1 Failed download:
-['SVA']: possibly delisted; no price data found  (period=2y)
-scanned 6188/6188
+['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
+scanned 4200/6189
+scanned 5200/6189
+scanned 6189/6189
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
@@ -48,35 +44,31 @@ HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","descri
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-analyzed: 2730 symbols past liquidity floors
-BOTTOM: 8, BREAKOUT: 11, watchlist: 100
-  BOTTOM SPEC    AAL                               dd -23.9%  cap 9.0B  31.4% to 52w high
-  BOTTOM SPEC    AI                                dd -45.0%  cap 1.6B  82.0% to 52w high
-  BOTTOM QUALITY ATEC   Alphatec Holdings, Inc.    dd -58.3%  cap 1.5B  139.9% to 52w high
-  BOTTOM QUALITY CHRW   C.H. Robinson Worldwide, I dd -27.9%  cap 17.6B  38.6% to 52w high
-  BOTTOM SPEC    DMRA   Damora Therapeutics, Inc.  dd -15.1%  cap 1.8B  17.7% to 52w high
-  BOTTOM QUALITY PAYC   Paycom Software, Inc.      dd 0.0%  cap 10.8B  -4.1% to 52w high
-  BOTTOM SPEC    ULCC   Frontier Group Holdings, I dd -25.6%  cap 1.3B  34.4% to 52w high
-  BOTTOM QUALITY VG     Venture Global, Inc.       dd -19.0%  cap 35.5B  23.5% to 52w high
+analyzed: 2736 symbols past liquidity floors
+BOTTOM: 38, BREAKOUT: 7, watchlist: 135
+  BOTTOM SPEC    AAOI                              dd -44.6%  cap 9.0B  80.4% to 52w high
+  BOTTOM SPEC    ABSI                              dd -24.1%  cap 1.5B  31.7% to 52w high
+  BOTTOM SPEC    AGIO   Agios Pharmaceuticals, Inc dd -24.2%  cap 2.0B  31.9% to 52w high
+  BOTTOM QUALITY AIN    Albany International Corpo dd -17.8%  cap 1.8B  21.6% to 52w high
+  BOTTOM QUALITY ALAB   Astera Labs, Inc.          dd -25.6%  cap 53.8B  34.4% to 52w high
+  BOTTOM QUALITY AMSC   American Superconductor Co dd -52.0%  cap 1.4B  108.3% to 52w high
+  BOTTOM QUALITY AXTI   AXT Inc                    dd -56.2%  cap 4.0B  128.5% to 52w high
+  BOTTOM QUALITY BAND   Bandwidth Inc.             dd -42.0%  cap 1.4B  72.4% to 52w high
+  BOTTOM SPEC    CALM   Cal-Maine Foods, Inc.      dd -30.6%  cap 3.5B  48.2% to 52w high
+  BOTTOM QUALITY CVLT   Commvault Systems, Inc.    dd -29.9%  cap 5.7B  42.7% to 52w high
+  BOTTOM SPEC    DFH    Dream Finders Homes, Inc.  dd -52.6%  cap 1.2B  124.2% to 52w high
+  BOTTOM QUALITY DIOD   Diodes Incorporated        dd -23.2%  cap 4.2B  30.1% to 52w high
+  BOTTOM QUALITY FICO   Fair Isaac Corporation     dd -49.6%  cap 20.1B  98.5% to 52w high
+  BOTTOM QUALITY GDDY   GoDaddy Inc.               dd -30.2%  cap 12.8B  43.4% to 52w high
+  BOTTOM SPEC    GLXY   Galaxy Digital Inc.        dd -33.9%  cap 15.5B  51.2% to 52w high
+  BOTTOM QUALITY HIMS   Hims & Hers Health, Inc.   dd -52.6%  cap 6.5B  110.8% to 52w high
+  BOTTOM QUALITY HOOD   Robinhood Markets, Inc.    dd -17.9%  cap 109.8B  21.8% to 52w high
+  BOTTOM SPEC    HROW   Harrow, Inc.               dd -28.9%  cap 1.4B  40.6% to 52w high
+  BOTTOM QUALITY IART   Integra LifeSciences Holdi dd -15.5%  cap 1.3B  18.4% to 52w high
+  BOTTOM QUALITY LOAR   Loar Holdings Inc.         dd -16.9%  cap 6.4B  20.4% to 52w high
+  BOTTOM QUALITY MRVL   Marvell Technology, Inc.   dd -28.0%  cap 200.9B  38.9% to 52w high
+  BOTTOM QUALITY NBIS   Nebius Group N.V.          dd -21.0%  cap 61.5B  26.6% to 52w high
+  BOTTOM SPEC    NEXT   NextDecade Corporation     dd -19.5%  cap 2.0B  45.6% to 52w high
+  BOTTOM QUALITY NVO    Novo Nordisk A/S           dd -21.5%  cap 206.0B  27.4% to 52w high
+  BOTTOM SPEC    OUST   Ouster, Inc.               dd -26.9%  cap 2.6B  36.8% to 52w high
 status=ok

@@ -250,3 +250,51 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-08-29,BREAKOUT,TEAM,Atlassian Corporation,QUALITY,190.41,0.0,-75.0,-6.6,177.78,48.2,Technology,Software - Application,,28.237238,27.6,-0.8,1.66
 2026-08-29,BOTTOM,ULCC,"Frontier Group Holdings, Inc.",SPEC,5.84,-25.6,-51.2,34.4,7.85,1.3,Industrials,Airlines,,14.997818,37.7,-9.3,-0.08
 2026-08-29,BOTTOM,VG,"Venture Global, Inc.",QUALITY,14.18,-19.0,-39.4,23.5,17.51,35.5,Energy,Oil & Gas Midstream,10.742424,14.217677,47.6,22.1,-8.64
+2026-09-05,DROP,INBX,,,121.17,-9.8,-39.3,10.9,134.35,,,,,,,,
+2026-09-05,DROP,LI,,,12.37,-52.0,-62.2,108.2,25.75,,,,,,,,
+2026-09-05,GRADUATED,PGEN,,,7.1,-1.8,-33.5,1.8,7.23,,,,,,,,
+2026-09-05,BOTTOM,AAOI,,SPEC,105.53,-44.6,-50.5,80.4,190.36,9.0,,,,,,,
+2026-09-05,BOTTOM,ABSI,,SPEC,8.82,-24.1,-47.2,31.7,11.62,1.5,,,,,,,
+2026-09-05,BOTTOM,AGIO,"Agios Pharmaceuticals, Inc.",SPEC,33.1,-24.2,-42.0,31.9,43.65,2.0,,,,-8.3858185,,,
+2026-09-05,BOTTOM,AIN,Albany International Corporatio,QUALITY,62.43,-17.8,-31.1,21.6,75.9,1.8,Consumer Cyclical,Textile Manufacturing,,19.68345,5.8,-4.2,0.0
+2026-09-05,BOTTOM,ALAB,"Astera Labs, Inc.",QUALITY,310.4,-25.6,-54.1,34.4,417.07,53.8,Technology,Semiconductors,139.19283,48.54946,104.5,30.7,0.09
+2026-09-05,BOTTOM,AMSC,American Superconductor Corpora,QUALITY,29.55,-52.0,-53.7,108.3,61.55,1.4,Industrials,Specialty Industrial Machinery,9.410828,21.808117,30.0,42.6,0.0
+2026-09-05,BOTTOM,AXTI,AXT Inc,QUALITY,61.64,-56.2,-67.4,128.5,140.83,4.0,Technology,Semiconductor Equipment & Materials,2054.6667,27.690924,164.8,3.2,-0.04
+2026-09-05,BOTTOM,BAND,Bandwidth Inc.,QUALITY,43.77,-42.0,-48.1,72.4,75.48,1.4,Technology,Software - Infrastructure,,22.725857,22.2,0.3,0.07
+2026-09-05,BREAKOUT,BLTE,"Belite Bio, Inc",SPEC,193.61,0.0,-27.9,-1.7,190.3,7.8,Healthcare,Biotechnology,,100.641975,,0.0,
+2026-09-05,BOTTOM,CALM,"Cal-Maine Foods, Inc.",SPEC,74.63,-30.6,-33.7,48.2,110.59,3.5,Consumer Defensive,Farm Products,11.481538,20.817293,-49.9,10.9,0.01
+2026-09-05,BREAKOUT,CNH,CNH Industrial N.V.,QUALITY,14.4,0.0,-27.4,-10.2,12.94,23.2,Industrials,Farm & Heavy Construction Machinery,57.6,21.016989,2.0,1.7,0.57
+2026-09-05,BOTTOM,CVLT,"Commvault Systems, Inc.",QUALITY,136.4,-29.9,-60.9,42.7,194.61,5.7,Technology,Software - Application,87.4391,21.996868,11.4,5.6,0.3
+2026-09-05,BREAKOUT,DE,Deere & Company,SPEC,693.53,0.0,-19.9,-5.0,658.85,187.0,Industrials,Farm & Heavy Construction Machinery,38.61526,30.571552,-11.1,10.2,4.52
+2026-09-05,BOTTOM,DFH,"Dream Finders Homes, Inc.",SPEC,13.8,-52.6,-58.7,124.2,30.94,1.2,Consumer Cyclical,Residential Construction,9.787234,11.645571,-7.6,3.5,-0.22
+2026-09-05,BOTTOM,DIOD,Diodes Incorporated,QUALITY,91.79,-23.2,-31.1,30.1,119.46,4.2,Technology,Semiconductors,49.34946,15.6905985,21.7,5.3,0.18
+2026-09-05,BOTTOM,FICO,Fair Isaac Corporation,QUALITY,932.26,-49.6,-58.1,98.5,1850.65,20.1,Technology,Software - Application,32.358906,17.570574,25.7,34.1,0.77
+2026-09-05,BOTTOM,GDDY,GoDaddy Inc.,QUALITY,101.31,-30.2,-58.3,43.4,145.24,12.8,Technology,Software - Infrastructure,15.396656,9.187032,6.6,17.8,1.2
+2026-09-05,BOTTOM,GLXY,Galaxy Digital Inc.,SPEC,26.33,-33.9,-55.7,51.2,39.82,15.5,Financial Services,Capital Markets,,-76.79519,-3.8,-0.4,34.59
+2026-09-05,BOTTOM,HIMS,"Hims & Hers Health, Inc.",QUALITY,27.71,-52.6,-70.4,110.8,58.4,6.5,Healthcare,Drug Manufacturers - Specialty & Generic,,36.353855,38.2,-5.5,0.85
+2026-09-05,BOTTOM,HOOD,"Robinhood Markets, Inc.",QUALITY,122.11,-17.9,-55.6,21.8,148.67,109.8,Financial Services,Capital Markets,55.25339,37.036476,32.3,42.0,
+2026-09-05,BREAKOUT,HRMY,"Harmony Biosciences Holdings, I",QUALITY,42.25,0.0,-34.5,-4.1,40.51,2.5,Healthcare,Biotechnology,13.58521,6.3188343,30.3,18.9,0.18
+2026-09-05,BOTTOM,HROW,"Harrow, Inc.",SPEC,38.54,-28.9,-42.4,40.6,54.18,1.4,Healthcare,Drug Manufacturers - Specialty & Generic,,14.0828085,10.9,-13.5,-0.01
+2026-09-05,BOTTOM,IART,Integra LifeSciences Holdings C,QUALITY,16.72,-15.5,-58.9,18.4,19.79,1.3,Healthcare,Medical Devices,,6.409912,0.8,-0.4,0.09
+2026-09-05,BOTTOM,LOAR,Loar Holdings Inc.,QUALITY,67.85,-16.9,-42.3,20.4,81.69,6.4,Industrials,Aerospace & Defense,98.33333,41.95964,39.4,11.6,0.08
+2026-09-05,BREAKOUT,MRP,"Millrose Properties, Inc.",QUALITY,32.02,0.0,-18.5,-2.2,31.31,5.3,Real Estate,REIT - Residential,11.041379,9.8321295,32.1,62.6,-1.38
+2026-09-05,BOTTOM,MRVL,"Marvell Technology, Inc.",QUALITY,223.55,-28.0,-39.6,38.9,310.5,200.9,Technology,Semiconductors,68.99692,33.26216,36.5,27.9,2.41
+2026-09-05,BOTTOM,NBIS,Nebius Group N.V.,QUALITY,226.39,-21.0,-38.0,26.6,286.69,61.5,Communication Services,Internet Content & Information,,-75.526276,454.0,3.1,-9.61
+2026-09-05,BOTTOM,NEXT,NextDecade Corporation,SPEC,7.34,-19.5,-51.9,45.6,10.69,2.0,Energy,Oil & Gas Equipment & Services,,112.92308,,0.0,-4.92
+2026-09-05,BOTTOM,NVO,Novo Nordisk A/S,QUALITY,46.6,-21.5,-54.3,27.4,59.37,206.0,Healthcare,Drug Manufacturers - General,11.679197,13.629678,2.1,35.3,37.67
+2026-09-05,BREAKOUT,NX,Quanex Building Products Corpor,QUALITY,22.93,0.0,-31.3,-2.6,22.34,1.1,Industrials,Building Products & Equipment,19.268908,10.906065,1.3,2.4,0.06
+2026-09-05,BOTTOM,OUST,"Ouster, Inc.",SPEC,36.43,-26.9,-50.7,36.8,49.84,2.6,Technology,Electronic Components,,-291.44,55.9,-26.0,-0.06
+2026-09-05,BOTTOM,PCT,"PureCycle Technologies, Inc.",SPEC,6.39,-54.1,-68.8,117.7,13.91,1.3,Industrials,Pollution & Treatment Controls,,-9.1285715,173.5,0.0,-0.16
+2026-09-05,BOTTOM,PENG,"Penguin Solutions, Inc.",QUALITY,51.76,-33.9,-39.9,51.4,78.35,2.7,Technology,Information Technology Services,34.972973,15.47782,47.6,6.4,-0.11
+2026-09-05,BOTTOM,PGEN,"Precigen, Inc.",SPEC,7.1,-1.8,-33.5,1.8,7.23,2.5,Healthcare,Biotechnology,,-32.272728,6322.7,-184.0,-0.1
+2026-09-05,BOTTOM,POET,POET Technologies Inc.,SPEC,7.92,-50.4,-56.9,101.6,15.97,1.4,Technology,Semiconductors,,-46.588234,112.3,0.0,-0.04
+2026-09-05,BOTTOM,QURE,uniQure N.V.,SPEC,44.5,-34.3,-78.2,52.1,67.69,3.1,Healthcare,Biotechnology,,-14.545381,11.0,0.0,-0.08
+2026-09-05,BOTTOM,RDW,Redwire Corporation,SPEC,10.53,-57.1,-65.6,133.3,24.57,2.6,Industrials,Aerospace & Defense,,-35.694916,89.6,-57.3,-0.03
+2026-09-05,BOTTOM,RKLB,Rocket Lab Corporation,SPEC,64.26,-55.2,-55.5,123.3,143.48,41.1,Industrials,Aerospace & Defense,,1445.9946,62.0,-21.5,-0.25
+2026-09-05,BOTTOM,SANM,Sanmina Corporation,QUALITY,198.47,-23.6,-30.9,30.9,259.73,10.6,Technology,Electronic Components,34.941902,14.260617,69.7,2.4,-0.22
+2026-09-05,BOTTOM,SGML,Sigma Lithium Corporation,QUALITY,12.39,-43.6,-56.2,77.3,21.97,1.4,Basic Materials,Other Industrial Metals & Mining,,7.189569,223.9,-19.3,0.04
+2026-09-05,BOTTOM,SONO,"Sonos, Inc.",QUALITY,15.36,-19.8,-33.7,24.7,19.15,1.8,Technology,Consumer Electronics,34.133335,11.770115,8.8,3.8,0.1
+2026-09-05,BOTTOM,STAA,STAAR Surgical Company,QUALITY,23.47,-27.7,-38.2,38.3,32.47,1.2,Healthcare,Medical Instruments & Supplies,293.375,22.92552,111.0,1.1,0.02
+2026-09-05,BREAKOUT,TARS,"Tarsus Pharmaceuticals, Inc.",QUALITY,90.78,0.0,-28.9,-9.9,81.78,4.0,Healthcare,Biotechnology,,39.04516,69.4,-7.7,0.07
+2026-09-05,BOTTOM,UPST,"Upstart Holdings, Inc.",QUALITY,28.05,-58.7,-70.3,142.0,67.89,2.7,Financial Services,Credit Services,55.0,8.071013,42.3,4.7,-0.13
+2026-09-05,BOTTOM,WLK,Westlake Corporation,QUALITY,74.79,-36.5,-40.6,57.6,117.86,9.6,Basic Materials,Specialty Chemicals,,22.24443,10.8,-10.9,0.02

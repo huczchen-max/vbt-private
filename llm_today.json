@@ -1,7 +1,7 @@
 {
- "date": "2026-09-08",
+ "date": "2026-09-09",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-09-08T23:39:52+00:00",
+ "generated_utc": "2026-09-09T23:30:16+00:00",
  "regime": {
   "regime": "NEUTRAL",
   "reasons": [
@@ -10,15 +10,7 @@
   "raw_ok": false
  },
  "verdicts": {
-  "ARM": {
-   "verdict": "GO",
-   "size_mult": 1.0,
-   "reasons": [
-    "call failed: HTTP Error 400: Bad Request"
-   ],
-   "raw_ok": false
-  },
-  "QCOM": {
+  "NBIS": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [

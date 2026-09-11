@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+eodhd_cache/
+.eodhd_token

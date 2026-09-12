@@ -1,4 +1,4 @@
-"""Long-base pattern study — wide universe (v0.2, 2026-09-11).
+"""Long-base pattern study — wide universe (v0.4, 2026-09-12).
 
 Pattern (Eric): extended base (A) -> slow grind (B) -> range break (C), any
 timescale, deep prior drawdown NOT required. Questions: how long does B last,
@@ -12,13 +12,28 @@ Definition (weekly bars, adjusted close):
   phase B   = weeks from base low (UP) / base high (DOWN) to the break
   LEAD      = features at e-8 / e-13 using only data to that bar (no lookahead)
 Inputs: EODHD parquet cache (eodhd_fetch.py) or the legacy prices.csv.
-Outputs (in --out dir): base_events.csv, base_live.csv (bases open NOW),
-  base_summary.json, printed summary. Control = SPY (and SMH if present).
+SIGNAL pass (v0.3, Eric 2026-09-11): the tradeable version. For every
+  ticker-week where a base >= LMIN (and <= LMAX) is open, COMPOSITE =
+  pos-in-band > 0.66 & RSI14 > 55 & MA13 > MA26 (all causal). A SIGNAL fires
+  the FIRST week composite turns true (one per base). Forward 13/26-week
+  returns are measured from the signal close regardless of what the base does
+  next; SPY excess, MAE, and which break (if any) followed within 26 weeks are
+  recorded. ANTI = mirror (pos < 0.33 & RSI < 45 & MA13 < MA26) as control.
+  REGIME = SPY above its 40-week MA at the signal date.
+TIGHTNESS (v0.4, Eric 2026-09-11): dispersion of weekly closes around the
+  base median — mad_med = median|x-med|/med, cv = std/mean, mid_share = share
+  of closes inside the middle half of the band. Computed causally (over the
+  base up to the event/signal bar) and binned in the summary; pre_vol = the
+  name's own weekly-return std in the 52 wks before the base (control).
+SPRING (v0.4): base preceded (within 30 wks of its start) by a DOWN break
+  that did not hold — the MSTR case; flagged, not yet acted on.
+Outputs (in --out dir): base_events.csv, base_signals.csv, base_live.csv
+  (bases open NOW, listed names only, current as-of), base_summary.json.
 """
 import argparse, json, sys
 import numpy as np, pandas as pd
 
-R_LIST = [1.5, 2.0]; LMIN = 26; CONFIRM_WK = 4; FWD = [13, 26]; FLAT = 0.4
+R_LIST = [1.5, 2.0]; LMIN = 26; LMAX = 156; CONFIRM_WK = 4; FWD = [13, 26]; FLAT = 0.4
 MIN_PRICE = 3.0            # median close over the base
 MIN_WK_DOLLAR_VOL = 5e6    # median weekly $ volume over the base (~$1M/day)
 BENCH = ("SPY", "SMH", "QQQ")
@@ -59,6 +74,22 @@ def lead_features(c, ma13, ma26, rs, plows, s, t, tag):
     f[f"wk_since_low_{tag}"] = int(t - (int(bt.values.argmin()) + s))
     return f
 
+def tightness(seg):
+    """seg: numpy array of weekly closes inside the base."""
+    med = np.median(seg); hi, lo = seg.max(), seg.min()
+    if med <= 0 or hi <= lo:
+        return dict(mad_med=np.nan, cv=np.nan, mid_share=np.nan)
+    return dict(mad_med=round(float(np.median(np.abs(seg - med)) / med), 4),
+                cv=round(float(seg.std() / seg.mean()), 4),
+                mid_share=round(float(np.mean((seg >= lo + 0.25 * (hi - lo)) & (seg <= lo + 0.75 * (hi - lo)))), 3))
+
+def pre_vol(ret, s):
+    r = ret[max(0, s - 52):s]
+    return round(float(np.nanstd(r)), 4) if len(r) >= 20 else np.nan
+
+def spring_flag(down_breaks, s):
+    return bool(any(s - 30 <= bi <= s + 4 for bi in down_breaks))
+
 # ------------------------------------------------------------ detector
 def detect(ticker, w, benches, R, delisted=False, live_only=False):
     c = w["close"]; n = len(c); v = c.values.astype(float)
@@ -66,8 +97,8 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
         return [], None
     L = longest_window_len(v, R)
     ma13 = c.rolling(13).mean(); ma26 = c.rolling(26).mean(); ma200 = c.rolling(200, min_periods=100).mean()
-    rs = rsi(c); ret = c.pct_change(); plows = sorted(pivot_lows(c))
-    events = []; last_break = -1
+    rs = rsi(c); ret = c.pct_change(); plows = sorted(pivot_lows(c)); retv = ret.values
+    events = []; last_break = -1; down_breaks = []
 
     def base_ok(s, e):
         base = c.iloc[s:e+1]
@@ -83,7 +114,7 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
     # ---- live base (no break yet) at the last bar
     live = None
     e = n - 1
-    if L[e] >= LMIN:
+    if LMIN <= L[e] <= LMAX and not delisted:
         s = e - L[e] + 1; ok = base_ok(s, e)
         if ok:
             base, hi, lo, drift = ok
@@ -93,6 +124,7 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
                         range_ratio=round(float(hi/lo), 2), drift=round(float(drift), 2),
                         prior_dd=round(float(lo / pre.max() - 1), 2) if len(pre) > 20 else np.nan,
                         above_ma200=bool(c.iloc[e] > ma200.iloc[e]) if not np.isnan(ma200.iloc[e]) else None,
+                        **tightness(base.values.astype(float)), pre_vol=pre_vol(retv, s),
                         **lead_features(c, ma13, ma26, rs, plows, s, e, "now"))
     if live_only:
         return [], live
@@ -116,6 +148,9 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
             cc = c.iloc[b + CONFIRM_WK]; conf = bool(cc > hi) if d == "UP" else bool(cc < lo)
         elif delisted and d == "DOWN":
             conf = True                                   # went to zero / delisted inside the window
+        spring = spring_flag(down_breaks, s)
+        if d == "DOWN":
+            down_breaks.append(b)
         pre = c.iloc[max(0, s-104):s]
         low_i = int(base.values.argmin()) + s; high_i = int(base.values.argmax()) + s
         row = dict(ticker=ticker, R=R, start=str(c.index[s].date()), end=str(c.index[e].date()),
@@ -128,7 +163,8 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
                    prior_dd=round(float(lo / pre.max() - 1), 2) if len(pre) > 20 else np.nan,
                    above_ma200=bool(c.iloc[e] > ma200.iloc[e]) if not np.isnan(ma200.iloc[e]) else None,
                    phaseB_weeks=int(b - low_i) if d == "UP" else int(b - high_i),
-                   break_bar_pct=round(float(cb / c.iloc[e] - 1) * 100, 1))
+                   break_bar_pct=round(float(cb / c.iloc[e] - 1) * 100, 1),
+                   **tightness(base.values.astype(float)), pre_vol=pre_vol(retv, s), spring=spring, b_idx=int(b))
         for LEAD in (8, 13):
             t = e - LEAD
             if t - s >= 13:
@@ -147,10 +183,113 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
             seg = c.iloc[b:end_i+1]
             row[f"mae{f}"] = round(float(seg.min() / cb - 1) * 100, 1) if d == "UP" else round(float(seg.max() / cb - 1) * 100, 1)
         events.append(row)
+    if live is not None:
+        s_live = e - L[e] + 1
+        live["spring"] = spring_flag(down_breaks, s_live)
     return events, live
 
+
+# ------------------------------------------------------------ signal pass (v0.3)
+def composite_at(v, m13, m26, r, s, t):
+    """v, m13, m26, r are numpy arrays (close, MA13, MA26, RSI)."""
+    seg = v[s:t+1]; bhi, blo = seg.max(), seg.min()
+    if bhi <= blo or np.isnan(m26[t]) or np.isnan(r[t]):
+        return None, np.nan
+    pos = (v[t] - blo) / (bhi - blo)
+    comp = bool(pos > 0.66 and r[t] > 55 and m13[t] > m26[t])
+    anti = bool(pos < 0.33 and r[t] < 45 and m13[t] < m26[t])
+    return ("COMP" if comp else "ANTI" if anti else None), pos
+
+def signals(ticker, w, benches, spy_regime, R, delisted=False, down_breaks=()):
+    """First-week composite/anti triggers inside open bases; forward returns from the trigger close."""
+    c = w["close"]; n = len(c); v = c.values.astype(float)
+    if n < LMIN + 5 or np.nanmin(v) <= 0:
+        return []
+    L = longest_window_len(v, R)
+    ma13 = c.rolling(13).mean(); ma26 = c.rolling(26).mean(); rs = rsi(c); retv = c.pct_change().values
+    m13, m26, r_ = ma13.values, ma26.values, rs.values
+    out = []; prev_kind = None; prev_start = -1; last_fire = {}
+    for t in range(LMIN, n):
+        if not (LMIN <= L[t] <= LMAX):
+            prev_kind = None; continue
+        s = t - L[t] + 1
+        kind, pos = composite_at(v, m13, m26, r_, s, t)
+        fire = kind is not None and not (kind == prev_kind and s == prev_start)
+        # one signal of each kind per base (base identified by its start bar)
+        if fire and last_fire.get((kind, s)) is not None:
+            fire = False
+        prev_kind, prev_start = kind, s
+        if not fire:
+            continue
+        last_fire[(kind, s)] = t
+        base = c.iloc[s:t+1]
+        if base.median() < MIN_PRICE or w["dvol"].iloc[s:t+1].median() < MIN_WK_DOLLAR_VOL:
+            continue
+        hi, lo = base.max(), base.min()
+        x = np.arange(len(base)); k, _ = np.polyfit(x, base.values, 1)
+        drift = k * (len(base) - 1) / (hi - lo)
+        if abs(drift) > FLAT:
+            continue
+        ct = c.iloc[t]
+        row = dict(ticker=ticker, R=R, kind=kind, date=str(c.index[t].date()), year=int(c.index[t].year),
+                   base_start=str(c.index[s].date()), base_len=int(t - s + 1), close=round(float(ct), 2),
+                   pos=round(float(pos), 2), rsi=round(float(rs.iloc[t]), 1), range_ratio=round(float(hi / lo), 2),
+                   wk_since_low=int(t - (int(base.values.argmin()) + s)), delisted=bool(delisted),
+                   **tightness(base.values.astype(float)), pre_vol=pre_vol(retv, s), spring=spring_flag(down_breaks, s),
+                   regime_spy_up=(bool(spy_regime.loc[c.index[t]]) if spy_regime is not None and c.index[t] in spy_regime.index else None))
+        # what happened next within 26 weeks: first close beyond the band as of t
+        nxt = "NONE"; wk_to_break = None
+        for j in range(t + 1, min(n, t + 27)):
+            if c.iloc[j] > hi: nxt, wk_to_break = "UP", j - t; break
+            if c.iloc[j] < lo: nxt, wk_to_break = "DOWN", j - t; break
+        row["next_break"] = nxt; row["wk_to_break"] = wk_to_break
+        for f in FWD:
+            if t + f < n:
+                r = c.iloc[t + f] / ct - 1; row[f"ret{f}"] = round(float(r) * 100, 1); row[f"trunc{f}"] = False
+            elif delisted and n - 1 > t:
+                r = c.iloc[-1] / ct - 1; row[f"ret{f}"] = round(float(r) * 100, 1); row[f"trunc{f}"] = True
+            else:
+                row[f"ret{f}"] = np.nan; row[f"trunc{f}"] = None; continue
+            end_i = min(t + f, n - 1)
+            for bn, bs in benches.items():
+                if c.index[t] in bs.index and c.index[end_i] in bs.index:
+                    row[f"exc{f}_{bn}"] = round(float(r - (bs.loc[c.index[end_i]] / bs.loc[c.index[t]] - 1)) * 100, 1)
+            seg = c.iloc[t:end_i+1]
+            row[f"mae{f}"] = round(float(seg.min() / ct - 1) * 100, 1)
+        out.append(row)
+    return out
+
+TIGHT_BINS = [-0.001, 0.04, 0.07, 0.10, 0.15, 9]; TIGHT_LABELS = ["<4%", "4-7%", "7-10%", "10-15%", ">15%"]
+
+def summarize_signals(df, bench_name):
+    out = {}
+    exc = f"exc26_{bench_name}"
+    def block(h):
+        if not len(h): return dict(n=0)
+        return dict(n=int(len(h)), ret13_med=round(float(h.ret13.median()), 1), ret26_med=round(float(h.ret26.median()), 1),
+                    exc26_med=(round(float(h[exc].median()), 1) if exc in h else None), win26=round(float((h.ret26 > 0).mean()), 2),
+                    mae26_med=round(float(h.mae26.median()), 1), ret26_mean=round(float(h.ret26.mean()), 1),
+                    next_break={k: round(float(v), 2) for k, v in h.next_break.value_counts(normalize=True).items()},
+                    wk_to_break_med=(None if h.wk_to_break.isna().all() else round(float(h.wk_to_break.median()), 1)))
+    for R, g0 in df.groupby("R"):
+        sec = {}
+        for kind, g in g0.groupby("kind"):
+            g = g.dropna(subset=["ret26"])
+            g = g.copy(); g["tight_bin"] = pd.cut(g.mad_med, TIGHT_BINS, labels=TIGHT_LABELS)
+            g["vol_tercile"] = pd.qcut(g.pre_vol.rank(method="first"), 3, labels=["lowvol", "midvol", "highvol"]) if g.pre_vol.notna().sum() > 30 else None
+            sec[kind] = dict(all=block(g), listed_only=block(g[g.delisted == False]),
+                             spy_up=block(g[g.regime_spy_up == True]), spy_down=block(g[g.regime_spy_up == False]),
+                             spring=block(g[g.spring == True]), no_spring=block(g[g.spring == False]),
+                             by_tightness={str(k): block(h) for k, h in g.groupby("tight_bin", observed=True)},
+                             by_tightness_x_vol={f"{k[0]}|{k[1]}": dict(n=int(len(h)), ret26_med=round(float(h.ret26.median()), 1), exc26_med=(round(float(h[exc].median()), 1) if exc in h else None))
+                                                 for k, h in g.groupby(["tight_bin", "vol_tercile"], observed=True)} if g["vol_tercile"] is not None else {},
+                             mad_med_q=q(g.mad_med, 3),
+                             by_year={str(y): dict(n=int(len(h)), ret26_med=round(float(h.ret26.median()), 1), exc26_med=(round(float(h[exc].median()), 1) if exc in h else None)) for y, h in g.groupby("year")})
+        out[f"R{R}"] = sec
+    return out
+
 # ------------------------------------------------------------ summary
-def q(s): return {k: (None if pd.isna(v) else round(float(v), 1)) for k, v in s.quantile([.25, .5, .75]).items()} if len(s) else {}
+def q(s, nd=1): return {k: (None if pd.isna(v) else round(float(v), nd)) for k, v in s.quantile([.25, .5, .75]).items()} if len(s) else {}
 def share(g, col):
     return {str(k): dict(up_share=round(float(h["up"].mean()), 2), n=int(len(h)), ret26_med=(None if h["ret26"].isna().all() else round(float(h["ret26"].median()), 1)))
             for k, h in g.groupby(col, observed=True, dropna=False)}
@@ -182,7 +321,24 @@ def summarize(df, bench_name):
                                        anti_lowerhalf_and_no_ma=dict(n=int(len(anti)), up_share=round(float(anti.up.mean()), 2) if len(anti) else None))
         g["dd_bucket"] = pd.cut(g.prior_dd, [-1.01, -0.5, -0.3, 0.5], labels=["deep<=-50%", "-30..-50%", "shallow>-30%"])
         sec["by_prior_dd"] = share(g, "dd_bucket"); sec["by_year"] = share(g, "year")
-        sec["by_delisted"] = share(g, "delisted")
+        sec["by_delisted"] = share(g, "delisted"); sec["by_spring"] = share(g, "spring")
+        g["tight_bin"] = pd.cut(g.mad_med, TIGHT_BINS, labels=TIGHT_LABELS)
+        sec["mad_med_q"] = q(g.mad_med, 3)
+        sec["by_tightness"] = {}
+        for k, h in g.groupby("tight_bin", observed=True):
+            hu = h[h.dir == "UP"]; hd = h[h.dir == "DOWN"]
+            g0t = g0[pd.cut(g0.mad_med, TIGHT_BINS, labels=TIGHT_LABELS) == k]
+            sec["by_tightness"][str(k)] = dict(n=int(len(h)), up_share=round(float(h.up.mean()), 2),
+                fakeout_up=round(float((g0t[g0t.dir == "UP"].confirmed == False).mean()), 2) if len(g0t[g0t.dir == "UP"]) else None,
+                fakeout_dn=round(float((g0t[g0t.dir == "DOWN"].confirmed == False).mean()), 2) if len(g0t[g0t.dir == "DOWN"]) else None,
+                UP=dict(n=int(len(hu)), ret26_med=round(float(hu.ret26.median()), 1) if len(hu) else None, exc26_med=(round(float(hu[exc].median()), 1) if len(hu) and exc in hu else None),
+                        win26=round(float((hu.ret26 > 0).mean()), 2) if len(hu) else None, break_bar_med=round(float(hu.break_bar_pct.median()), 1) if len(hu) else None,
+                        ret26_p90=round(float(hu.ret26.quantile(.9)), 1) if len(hu) else None),
+                DOWN=dict(n=int(len(hd)), ret26_med=round(float(hd.ret26.median()), 1) if len(hd) else None, break_bar_med=round(float(hd.break_bar_pct.median()), 1) if len(hd) else None))
+        # composite-at-8wk-lead x tightness (direction tilt within tightness bins)
+        if "pos_L8" in g:
+            c8 = g[(g.pos_L8 > 0.66) & (g.rsi_L8 > 55) & (g.ma_L8 == True)]
+            sec["composite_L8_by_tightness"] = share(c8, "tight_bin")
         out[f"R{R}"] = sec
     return out
 
@@ -209,20 +365,33 @@ def main():
         W[t] = weekly(g)
     benches = {b: W[b]["close"] for b in BENCH if b in W}
     bench_name = "SPY" if "SPY" in benches else (next(iter(benches)) if benches else None)
+    spy_regime = None
+    if "SPY" in W:
+        spy = W["SPY"]["close"]; spy_regime = (spy > spy.rolling(40).mean())
+    asof_all = max(w.index[-1] for w in W.values())
     print(f"tickers: {len(W)}  benches: {list(benches)}", flush=True)
-    ev, live = [], []
+    ev, live, sig = [], [], []
     tickers = [t for t in W if t not in BENCH]
     if a.max: tickers = tickers[: a.max]
     for i, t in enumerate(tickers):
         for R in R_LIST:
-            e_, l_ = detect(t, W[t], benches, R, delisted.get(t, False))
+            dl = delisted.get(t, False) or ("_" in t)
+            e_, l_ = detect(t, W[t], benches, R, dl)
             ev += e_
-            if l_: live.append(l_)
+            if l_ and W[t].index[-1] == asof_all: live.append(l_)
+            dbs = [r["b_idx"] for r in e_ if r["dir"] == "DOWN"]
+            sig += signals(t, W[t], benches, spy_regime, R, dl, dbs)
         if (i + 1) % 500 == 0: print(f"  {i+1}/{len(tickers)} tickers, {len(ev)} events", flush=True)
-    df = pd.DataFrame(ev); lv = pd.DataFrame(live)
-    df.to_csv(f"{a.out}/base_events.csv", index=False); lv.to_csv(f"{a.out}/base_live.csv", index=False)
+    df = pd.DataFrame(ev); lv = pd.DataFrame(live); sg = pd.DataFrame(sig)
+    df.to_csv(f"{a.out}/base_events.csv", index=False); lv.to_csv(f"{a.out}/base_live.csv", index=False); sg.to_csv(f"{a.out}/base_signals.csv", index=False)
     summ = summarize(df, bench_name) if len(df) else {}
-    summ["_meta"] = dict(tickers=len(tickers), events=int(len(df)), live_bases=int(len(lv)), prices=a.prices, params=dict(R=R_LIST, LMIN=LMIN, CONFIRM_WK=CONFIRM_WK, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_WK_DOLLAR_VOL=MIN_WK_DOLLAR_VOL))
+    summ["signals"] = summarize_signals(sg, bench_name) if len(sg) else {}
+    if len(lv):
+        scr = lv[(lv.pos_now > 0.66) & (lv.rsi_now > 55) & (lv.ma_now == True)].copy()
+        scr["tight_bin"] = pd.cut(scr.mad_med, TIGHT_BINS, labels=TIGHT_LABELS).astype(str)
+        summ["live_screen"] = dict(open_bases=int(len(lv)), composite_now=int(len(scr)), tickers={str(R): sorted(scr[scr.R == R].ticker.tolist()) for R in R_LIST},
+                                   by_tightness={str(R): scr[scr.R == R].groupby("tight_bin").size().to_dict() for R in R_LIST})
+    summ["_meta"] = dict(tickers=len(tickers), events=int(len(df)), signals=int(len(sg)), live_bases=int(len(lv)), asof=str(asof_all.date()), prices=a.prices, params=dict(R=R_LIST, LMIN=LMIN, LMAX=LMAX, CONFIRM_WK=CONFIRM_WK, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_WK_DOLLAR_VOL=MIN_WK_DOLLAR_VOL))
     json.dump(summ, open(f"{a.out}/base_summary.json", "w"), indent=1, default=str)
     print(json.dumps(summ, indent=1, default=str))
 

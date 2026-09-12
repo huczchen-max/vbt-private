@@ -1,7 +1,7 @@
 {
- "date": "2026-09-05",
+ "date": "2026-09-12",
  "top_n": 3,
- "generated_utc": "2026-09-05T08:30:41+00:00",
+ "generated_utc": "2026-09-12T08:46:41+00:00",
  "judgments": {
   "NBIS": {
    "error": "HTTP Error 400: Bad Request",
@@ -27,11 +27,11 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "grid"
   },
-  "TER": {
+  "CGNX": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
-  "CGNX": {
+  "TER": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "robotics"
   },
@@ -47,7 +47,7 @@
    "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },
-  "HWM": {
+  "AXON": {
    "error": "HTTP Error 400: Bad Request",
    "theme": "defense"
   },

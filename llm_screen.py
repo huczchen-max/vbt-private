@@ -17,6 +17,7 @@ import os
 import re
 import sys
 import urllib.request
+import urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -44,8 +45,13 @@ def call_claude(prompt, max_tokens=4000):
             data=json.dumps(body).encode(),
             headers={"x-api-key": KEY, "anthropic-version": "2023-06-01",
                      "content-type": "application/json"})
-        with urllib.request.urlopen(req, timeout=300) as r:
-            resp = json.loads(r.read().decode())
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                resp = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            # surface the API's own reason (model id, tool version, key scope...)
+            detail = e.read().decode(errors="replace")[:400]
+            raise RuntimeError(f"HTTP {e.code} from {MODEL}: {detail}") from None
         text += "".join(b.get("text", "") for b in resp.get("content", [])
                         if b.get("type") == "text")
         if resp.get("stop_reason") != "pause_turn":

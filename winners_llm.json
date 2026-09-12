@@ -1,78 +1,78 @@
 {
  "date": "2026-09-12",
  "top_n": 3,
- "generated_utc": "2026-09-12T08:46:41+00:00",
+ "generated_utc": "2026-09-12T13:03:06+00:00",
  "judgments": {
   "NBIS": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEKmJ8kaL5NnrdPpcT\"}",
    "theme": "ai"
   },
   "MU": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybELfcjqt5q1HNS8cRK\"}",
    "theme": "ai"
   },
   "DELL": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEMQmc12PQDT3yFMrB\"}",
    "theme": "ai"
   },
   "BE": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEN3iJ5htpJLpfcK8L\"}",
    "theme": "grid"
   },
   "NVT": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybENdgqXCJfww6QZrZd\"}",
    "theme": "grid"
   },
   "IESC": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEPK7oXGAMmsAZ24ML\"}",
    "theme": "grid"
   },
-  "CGNX": {
-   "error": "HTTP Error 400: Bad Request",
+  "TER": {
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEPvpseQ2HUmFzpVmn\"}",
    "theme": "robotics"
   },
-  "TER": {
-   "error": "HTTP Error 400: Bad Request",
+  "CGNX": {
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEQXJ7wFYXFM9doHe1\"}",
    "theme": "robotics"
   },
   "ZBRA": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybERCUTm3J5VsUqDufR\"}",
    "theme": "robotics"
   },
   "RDW": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybERu99Fm7WoFmfZDBk\"}",
    "theme": "defense"
   },
   "RKLB": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybESb4pHSe6S2fuMv8p\"}",
    "theme": "defense"
   },
   "AXON": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybETGVaUMbXcoWukh4B\"}",
    "theme": "defense"
   },
   "GH": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEUD3fYTiYKcdoJNwA\"}",
    "theme": "health"
   },
   "NTRA": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEUty9oSEFZnWMWpWP\"}",
    "theme": "health"
   },
   "LLY": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEVatkD5Ait4sggps4\"}",
    "theme": "health"
   },
   "HOOD": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEWL3c6iXDFYAcM9n2\"}",
    "theme": "outlier"
   },
   "GEV": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEX3T9xHavVK7ZvugD\"}",
    "theme": "outlier"
   },
   "PLTR": {
-   "error": "HTTP Error 400: Bad Request",
+   "error": "HTTP 400 from claude-sonnet-5: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeybEXgermTN6Pe9xgzL5\"}",
    "theme": "outlier"
   }
  }

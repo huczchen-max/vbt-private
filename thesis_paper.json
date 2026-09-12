@@ -79,11 +79,11 @@
   }
  ],
  "snapshot": {
-  "date": "2026-09-05",
-  "account_equity": 98887.78,
-  "vbt2_budget": 39555.11,
-  "stock_sleeve": 31644.09,
-  "options_sleeve": 7911.02,
+  "date": "2026-09-12",
+  "account_equity": 99262.04,
+  "vbt2_budget": 39704.82,
+  "stock_sleeve": 31763.85,
+  "options_sleeve": 7940.96,
   "options_committed": 7735.0,
   "options_sizing": [
    {
@@ -113,7 +113,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 1016.59,
+    "current_close": 975.26,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -123,7 +123,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 161.41,
+    "current_close": 157.38,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -133,7 +133,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1149.36,
+    "current_close": 1115.7,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -143,7 +143,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 252.87,
+    "current_close": 275.75,
     "door_now": "IN-TREND"
    }
   }

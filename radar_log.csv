@@ -298,3 +298,21 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-09-05,BREAKOUT,TARS,"Tarsus Pharmaceuticals, Inc.",QUALITY,90.78,0.0,-28.9,-9.9,81.78,4.0,Healthcare,Biotechnology,,39.04516,69.4,-7.7,0.07
 2026-09-05,BOTTOM,UPST,"Upstart Holdings, Inc.",QUALITY,28.05,-58.7,-70.3,142.0,67.89,2.7,Financial Services,Credit Services,55.0,8.071013,42.3,4.7,-0.13
 2026-09-05,BOTTOM,WLK,Westlake Corporation,QUALITY,74.79,-36.5,-40.6,57.6,117.86,9.6,Basic Materials,Specialty Chemicals,,22.24443,10.8,-10.9,0.02
+2026-09-12,DROP,KC,,,9.96,-45.3,-52.9,82.8,18.21,,,,,,,,
+2026-09-12,BOTTOM,APPS,,SPEC,11.81,-17.6,-57.7,21.4,14.34,1.4,,,,,,,
+2026-09-12,BOTTOM,ARM,Arm Holdings plc,SPEC,264.79,-39.7,-45.6,66.0,439.46,282.8,,,257.0777,86.42648,,,
+2026-09-12,BOTTOM,AS,"Amer Sports, Inc.",QUALITY,28.07,-33.1,-33.1,49.5,41.96,16.3,Consumer Cyclical,Leisure,28.642857,17.358234,32.1,7.3,0.55
+2026-09-12,BOTTOM,CE,Celanese Corporation,QUALITY,46.09,-33.4,-36.6,50.1,69.19,5.1,Basic Materials,Chemicals,,7.466773,8.7,-12.0,0.95
+2026-09-12,BOTTOM,CRCL,"Circle Internet Group, Inc.",QUALITY,90.6,-37.9,-71.1,60.9,145.78,24.7,Financial Services,Capital Markets,18.119999,57.825233,6.6,15.5,0.21
+2026-09-12,BOTTOM,DOCS,"Doximity, Inc.",QUALITY,25.58,-65.6,-74.5,190.9,74.4,4.6,Healthcare,Health Information Services,29.402298,16.510042,7.3,25.5,0.24
+2026-09-12,BOTTOM,DORM,"Dorman Products, Inc.",QUALITY,126.66,-19.9,-38.4,27.4,161.33,3.8,Consumer Cyclical,Auto Parts,17.542938,13.709646,0.7,10.2,0.14
+2026-09-12,BOTTOM,GPK,Graphic Packaging Holding Compa,SPEC,9.5,-49.9,-64.9,110.8,20.03,2.8,Consumer Cyclical,Packaging & Containers,14.393939,8.499142,-0.7,2.2,0.24
+2026-09-12,BOTTOM,MLYS,"Mineralys Therapeutics, Inc.",SPEC,28.2,-35.3,-45.8,54.5,43.56,2.5,Healthcare,Biotechnology,,-11.280001,,0.0,-0.2
+2026-09-12,BOTTOM,MMYT,MakeMyTrip Limited,QUALITY,50.09,-50.8,-67.7,103.3,101.84,4.7,Consumer Cyclical,Travel Services,208.70834,20.177402,6.2,3.2,0.04
+2026-09-12,BOTTOM,MQ,"Marqeta, Inc.",QUALITY,16.33,-28.3,-41.6,42.8,23.32,1.7,Technology,Software - Infrastructure,181.44444,32.66,17.0,1.5,0.15
+2026-09-12,BOTTOM,OTEX,Open Text Corporation,QUALITY,23.06,-38.9,-46.0,63.6,37.73,5.6,Technology,Software - Application,8.768061,5.411532,2.9,12.3,1.36
+2026-09-12,BOTTOM,PINS,"Pinterest, Inc.",QUALITY,19.05,-46.8,-53.6,88.0,35.81,10.7,Communication Services,Internet Content & Information,56.029408,7.923238,18.2,5.5,1.2
+2026-09-12,BOTTOM,QCOM,QUALCOMM Incorporated,SPEC,181.97,-26.8,-41.0,36.7,248.74,194.4,Technology,Semiconductors,20.196447,17.842451,-4.0,21.0,10.24
+2026-09-12,BOTTOM,REAL,"The RealReal, Inc.",QUALITY,9.83,-40.7,-48.3,68.8,16.59,1.2,Consumer Cyclical,Luxury Goods,,33.60684,16.6,-10.8,0.04
+2026-09-12,BOTTOM,TBBK,"The Bancorp, Inc.",QUALITY,50.63,-35.7,-35.7,55.5,78.74,2.1,Financial Services,Banks - Regional,9.4635515,6.250617,0.4,43.6,
+2026-09-12,BOTTOM,VYX,NCR Voyix Corporation,SPEC,8.55,-34.9,-57.2,53.7,13.14,1.2,Technology,Information Technology Services,28.5,8.333333,-20.8,3.0,0.22

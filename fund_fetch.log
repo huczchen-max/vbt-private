@@ -1,6 +1,4 @@
-fundamentals: universe 22901, done 0, todo 22901, this run 9500 (budget 9500)
-  500/9500  ok 500  empty 0  errors 0  33s
-  1000/9500  ok 1000  empty 0  errors 0  66s
+fundamentals: universe 22901, done 1000, todo 21901, this run 9500 (budget 9500)
 Traceback (most recent call last):
   File "/home/runner/work/vbt-data/vbt-data/private/fund_fetch.py", line 182, in <module>
     main()

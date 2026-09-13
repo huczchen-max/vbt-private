@@ -1,12 +1,22 @@
 fundamentals: universe 22901, done 1000, todo 21901, this run 9500 (budget 9500)
-Traceback (most recent call last):
-  File "/home/runner/work/vbt-data/vbt-data/private/fund_fetch.py", line 182, in <module>
-    main()
-  File "/home/runner/work/vbt-data/vbt-data/private/fund_fetch.py", line 163, in main
-    if got: write_part(d, len(done) + ci, INC, CF, EARN, SNAP, got)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/vbt-data/vbt-data/private/fund_fetch.py", line 112, in write_part
-    with open(p / "done.txt", "a") as f: f.write("\n".join(tick) + "\n")
-                                                 ^^^^^^^^^^^^^^^
-TypeError: sequence item 265: expected str instance, float found
-status=FAILED
+  500/9500  ok 500  empty 0  errors 0  17s
+  1000/9500  ok 1000  empty 0  errors 0  46s
+  1500/9500  ok 1500  empty 0  errors 0  76s
+  2000/9500  ok 2000  empty 0  errors 0  104s
+  2500/9500  ok 2500  empty 0  errors 0  133s
+  3000/9500  ok 3000  empty 0  errors 0  161s
+  3500/9500  ok 3500  empty 0  errors 0  190s
+  4000/9500  ok 4000  empty 0  errors 0  219s
+  4500/9500  ok 4500  empty 0  errors 0  248s
+  5000/9500  ok 5000  empty 0  errors 0  275s
+  5500/9500  ok 5500  empty 0  errors 0  304s
+  6000/9500  ok 6000  empty 0  errors 0  333s
+  6500/9500  ok 6500  empty 0  errors 0  362s
+  7000/9500  ok 7000  empty 0  errors 0  389s
+  7500/9500  ok 7500  empty 0  errors 0  419s
+  8000/9500  ok 8000  empty 0  errors 0  448s
+  8500/9500  ok 8119  empty 0  errors 0  459s
+STOPPED: HTTP 402: You exceeded your daily API requests limit.  Please contact support@eodhistoricaldata.com
+listed names COMPLETE (delisted names may still be pending)
+fundamentals PARTIAL — 13782 tickers remain; re-run 'fund' after the daily quota resets (00:00 UTC)
+status=ok

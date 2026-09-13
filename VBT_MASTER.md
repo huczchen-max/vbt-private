@@ -1,6 +1,6 @@
 # VBT — Master Document
 
-*Source of truth for the VBT systematic trading project. Version 1.0, 12 September 2026. Every figure below is traceable to a file in vbt-private, a project doc, or a dated conversation; where a number is an estimate it is marked as such. This documents a personal, paper-first systematic process; it is not investment advice.*
+*Source of truth for the VBT systematic trading project. Version 1.1, 13 September 2026. Every figure below is traceable to a file in vbt-private, a project doc, or a dated conversation; where a number is an estimate it is marked as such. This documents a personal, paper-first systematic process; it is not investment advice.*
 
 ## Project brief
 
@@ -103,7 +103,8 @@ Each row: what was asked, how it was tested, what came back, and what was decide
 | H17 | Long-base pattern (base → grind → break) is an entry door | 17,886 tickers incl. delisted, 29,565 events, 57,643 signals | Direction predictable (composite 85% up vs anti 14%) but composite-trigger entry −3.8/−4.2% vs SPY, 55% win, negative excess 14 of 18 yrs | NOT an entry door; ANTI state = "review, don't add" flag; live list = context | 2026-09-12 |
 | H18 | Base tightness (MAD/median) changes the answer | Bins <4% … >15%, pre-base volatility control | Tight bases break up more (79% vs 38%) but return effect is the low-volatility effect; best cell +0.1% vs SPY | Direction yes, magnitude no | 2026-09-12 |
 | H19 | Prior shakeout (spring) predicts the break | SPRING flag | 50/50 direction; weak tilt at R2.0 only | No effect | 2026-09-12 |
-| H20 | Fundamentals (growth, acceleration, surprise, quality, short interest) select the winning bases | Point-in-time join, 200-day stale guard | Run in progress on Actions | Open; earns a place only if a cell clears the bar with n ≥ 100 | open |
+| H20 | Fundamentals (growth, acceleration, surprise, quality, short interest) select the winning bases | Point-in-time join, 200-day stale guard | First pull hit the EODHD 100k-call daily cap (10 calls per fundamentals request); fetch made resumable, 2 runs needed | Open; earns a place only if a cell clears the bar with n ≥ 100 | open |
+| H21 | Contraction into the trigger (tail-8 MAD ÷ base MAD) and volume dry-up identify the good tight bases | v0.6, 27,065 events / 57,643 signals, LMAX applied, flat-line guard | Contraction alone: no information at R1.5 (−3.7 to −4.1% vs SPY in every bin), modest at R2.0. Volume dry-up is a NEGATIVE signal: dry bases break DOWN (19–35% up vs 55–61% when volume rises); dry composite triggers −5 to −9% vs SPY. Tight bases earn 2–3× more per unit of MAE but the edge vanishes once sized to equal expected vol. Best cell in the whole study: R2.0, listed, low-vol, contracting, non-dry → +11.7%, +1.6% vs SPY, 66% win, MAE −8.3%, n=469 | Not an entry door. Keep: ANTI + dry volume = strongest breakdown warning (−13% vs SPY, 43% win); low-vol contracting R2.0 cell = candidate universe for the long-call paper test | 2026-09-13 |
 
 ## 6. What we learned
 
@@ -121,25 +122,29 @@ Survivorship matters. Phase 1 was survivorship-biased and said so; the EODHD uni
 
 Infrastructure is most of the work, and it pays back. Trigger files, the private/public split, the Actions cache, the Mac push ritual and the point-in-time join were each a day of friction; every study after them took hours.
 
+Volume tells direction, not quality. In the base study, volume drying up into the bar was the single strongest directional feature, and it pointed DOWN: abandonment, not quiet accumulation. The VCP folklore did not survive contact with 27,000 events.
+
 Negative results compound. The rulebook's "Tested and rejected" list and this register are the assets that stop the same idea from being re-tried in a weaker moment.
 
 ## 7. Current status and health (12 September 2026)
 
 **Running:** nightly fetch and paper engine, Saturday radar/tracker/winners, both Claude briefings.
 
-**Needs attention:** the LLM shadow screen has returned "HTTP 400 Bad Request" on every call since 10 August (llm_log.jsonl, exhaustion_llm.json, winners_llm.json all show it; the last valid verdict was 30 July). The likely cause is the model identifier in `llm_screen.py` (`LLM_MODEL` defaults to `claude-sonnet-5`) no longer being accepted; the fix is to set the `LLM_MODEL` env/secret in vbt-data to a currently available model id and re-run. Until this is fixed, the October ENFORCE_LLM decision has only four days of evidence.
+**Resolved 12 Sep:** the LLM shadow screen had returned "HTTP 400" on every call since 10 August. Root cause (surfaced by logging the API error body): the Anthropic API account had run out of prepaid credits. Credits added 12 Sep; the first valid verdicts are expected on the next weekday run. The shadow record has a five-week hole (10 Aug–12 Sep) that the October ENFORCE_LLM scoring must account for. `llm_screen.py` now logs the API's own error text; the workflows read `LLM_MODEL` from a repository variable.
 
-**Pending:** the v0.5 fundamentals run on Actions (results land as base_fund_summary.json in vbt-private).
+**Fixed 12 Sep:** `fetch.yml` pushes now rebase before pushing (a push race with a manual commit failed run #64). Event detector now applies the 156-week maximum base length (events 29,565 → 27,065).
+
+**Pending:** the v0.5 fundamentals pull, now resumable (`fund_parts/` checkpoints in the Actions cache, `fund_done.flag` gates the study); needs two daily runs because EODHD charges 10 calls per fundamentals request against a 100k/day cap.
 
 **Calendar:** Oct 16 PAT expiry (rotate; move it out of the scheduled-task prompts); Oct 17 Exhaustion-Watch scoring; October LLM judgment-log scoring and ENFORCE_LLM decision; monthly ledger-vs-rulebook review; quarterly rule-lab rerun as the forward sample grows.
 
 ## 8. Open questions and next steps
 
-**Primary (this week, 20–30 min each):** fix the LLM screen model id and confirm a valid verdict appears in llm_log.jsonl; read the v0.5 fundamentals result and record the facts in the base-pattern study doc.
+**Primary (this week, 20–30 min each):** run the resumable fundamentals pull on two consecutive days (Actions → Base-pattern study → Run workflow → `fund`) and record H20; label the wide galleries in ~/Projects/VBT/gallery-wide (six sets, 18 charts each).
 
 **Secondary:** test the ANTI-composite state as a "review, don't add" trigger against the paper ledger's stage-3 breakdown exits (does it fire earlier, and would it have helped on SNPS, MOD, CORZ?); label the 45-name base gallery so the detector is checked against the pattern Eric means.
 
-**Later:** EODHD news sentiment as a contrarian check on SPEC signals (replacing the GDELT trickle); Alpaca options data for the options engine; a 52-week horizon for the low-volatility base cell; write H17–H19 into RULEBOOK.md "Current Thinking".
+**Later:** decide the options data source (Alpaca preferred) and paper-test a long-call/call-spread book on the R2.0 low-vol contracting cell (H21) and a mid-band premium-harvest book on tight bases (v0.7 measurements first: mid-band break hazard at 6/9 weeks; edge-bounce returns with and without the ANTI state); EODHD news sentiment as a contrarian check on SPEC signals; write H17–H21 into RULEBOOK.md "Current Thinking".
 
 ## 9. Retrospective
 

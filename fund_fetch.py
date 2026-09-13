@@ -109,7 +109,7 @@ def write_part(d, idx, INC, CF, EARN, SNAP, tick):
         df = pd.DataFrame(rows)
         if len(df): df.to_parquet(p / f"{name}_{idx:04d}.parquet", index=False, compression="zstd")
     if SNAP: pd.DataFrame(SNAP).to_csv(p / f"snap_{idx:04d}.csv", index=False)
-    with open(p / "done.txt", "a") as f: f.write("\n".join(tick) + "\n")
+    with open(p / "done.txt", "a") as f: f.write("\n".join(str(t) for t in tick) + "\n")
 
 def assemble(d):
     p = parts_dir(d)
@@ -139,7 +139,8 @@ def main():
         return
 
     if a.full:
-        u = pd.read_csv(d / "universe.csv")
+        u = pd.read_csv(d / "universe.csv", keep_default_na=False, dtype={"ticker": str})   # ticker "NA" is a real symbol, not NaN
+        u = u[u.ticker.astype(str).str.len() > 0]
         if a.listed_only: u = u[u.delisted == False]
         u = u[~u.ticker.isin(("SPY", "SMH", "QQQ"))].sort_values("delisted")   # listed first
         done = done_tickers(d)
@@ -171,6 +172,9 @@ def main():
         meta.update(fundamentals_pull=time.strftime("%Y-%m-%d"), fundamentals_done=len(done_tickers(d)), fundamentals_remaining=remaining, fundamentals_with_data=meta.get("fundamentals_with_data", 0) + ok)
         meta_p.write_text(json.dumps(meta, indent=1))
         if stopped: print("STOPPED:", stopped)
+        listed = set(u[u.delisted == False].ticker); dn = done_tickers(d)
+        if listed <= dn:
+            (d / "fund_listed_done.flag").write_text(time.strftime("%Y-%m-%d")); print("listed names COMPLETE (delisted names may still be pending)")
         if remaining <= 0:
             (d / "fund_done.flag").write_text(time.strftime("%Y-%m-%d")); print("fundamentals COMPLETE")
         else:

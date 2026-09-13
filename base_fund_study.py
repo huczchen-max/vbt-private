@@ -102,13 +102,16 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--cache", default="eodhd_cache"); ap.add_argument("--in", dest="inp", default="."); ap.add_argument("--out", default=".")
     a = ap.parse_args()
     inc = prep_income(pd.read_parquet(f"{a.cache}/fund_income.parquet")); cf = prep_cf(pd.read_parquet(f"{a.cache}/fund_cf.parquet")); earn = prep_earn(pd.read_parquet(f"{a.cache}/fund_earn.parquet"))
-    snap = pd.read_csv(f"{a.cache}/fund_snapshot.csv")
+    snap = pd.read_csv(f"{a.cache}/fund_snapshot.csv", keep_default_na=False, na_values=[""], dtype={"ticker": str})
     print(f"fundamentals: {inc.ticker.nunique()} tickers with income, {earn.ticker.nunique()} with earnings history", flush=True)
-    sig = pd.read_csv(f"{a.inp}/base_signals.csv"); ev = pd.read_csv(f"{a.inp}/base_events.csv")
+    sig = pd.read_csv(f"{a.inp}/base_signals.csv", keep_default_na=False, na_values=[""], dtype={"ticker": str}); ev = pd.read_csv(f"{a.inp}/base_events.csv", keep_default_na=False, na_values=[""], dtype={"ticker": str})
     exc = "exc26_SPY"
     S = enrich(sig, inc, cf, earn); S.to_csv(f"{a.out}/base_fund_signals.csv", index=False)
     E = ev.rename(columns={"break_date": "date"}); E = enrich(E, inc, cf, earn)
-    summ = {"_meta": dict(signals=int(len(S)), signals_with_fund=int(S.rev_yoy.notna().sum()), events=int(len(E)), events_with_fund=int(E.rev_yoy.notna().sum()))}
+    cov = {"listed_signals_with_fund": int(S[S.delisted == False].rev_yoy.notna().sum()), "listed_signals": int((S.delisted == False).sum()),
+           "delisted_signals_with_fund": int(S[S.delisted == True].rev_yoy.notna().sum()), "delisted_signals": int((S.delisted == True).sum())}
+    summ = {"_meta": dict(signals=int(len(S)), signals_with_fund=int(S.rev_yoy.notna().sum()), events=int(len(E)), events_with_fund=int(E.rev_yoy.notna().sum()), coverage=cov,
+                          partial_listed_only=bool(cov["delisted_signals_with_fund"] < 0.5 * cov["listed_signals_with_fund"]))}
     for R in sorted(S.R.unique()):
         for kind in ("COMP", "ANTI"):
             g = S[(S.R == R) & (S.kind == kind)].dropna(subset=["ret26"])
@@ -117,7 +120,7 @@ def main():
         u = E[(E.R == R) & (E.dir == "UP") & (E.confirmed == True)].dropna(subset=["ret26"])
         summ[f"upbreaks_R{R}"] = tables(u, exc)
     # live screen enrichment
-    lv = pd.read_csv(f"{a.inp}/base_live.csv"); lv["date"] = lv["asof"]
+    lv = pd.read_csv(f"{a.inp}/base_live.csv", keep_default_na=False, na_values=[""], dtype={"ticker": str}); lv["date"] = lv["asof"]
     L = enrich(lv, inc, cf, earn).merge(snap[["ticker", "sector", "industry", "mkt_cap", "short_ratio", "short_pct_float", "shares_short", "shares_short_prior"]], on="ticker", how="left")
     L["short_chg_mom"] = L.shares_short / L.shares_short_prior - 1
     L.to_csv(f"{a.out}/base_live_fund.csv", index=False)

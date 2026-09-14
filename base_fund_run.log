@@ -19,3 +19,429 @@ Traceback (most recent call last):
              ^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'eodhd_cache/fund_income.parquet'
 status=FAILED
+fundamentals: 6417 tickers with income, 5750 with earnings history
+{
+ "_meta": {
+  "signals": 57643,
+  "signals_with_fund": 51180,
+  "events": 27065,
+  "events_with_fund": 24052,
+  "coverage": {
+   "listed_signals_with_fund": 34519,
+   "listed_signals": 35523,
+   "delisted_signals_with_fund": 16661,
+   "delisted_signals": 22120
+  },
+  "partial_listed_only": true
+ },
+ "live_composite_fund": {
+  "n": 172,
+  "growth_accel_quality": [
+   "AII",
+   "DLO",
+   "EQNR",
+   "FSM",
+   "GLP",
+   "HAFN",
+   "HCC",
+   "HMY",
+   "HRMY",
+   "JHX",
+   "KINS",
+   "KNTK",
+   "LB",
+   "OPRT",
+   "QNST",
+   "REPX",
+   "SLDE",
+   "TRMD",
+   "WAT"
+  ],
+  "quality_growth10": [
+   "ACAD",
+   "ACAD",
+   "AII",
+   "ASIC",
+   "BWMN",
+   "CACI",
+   "CNK",
+   "CRVL",
+   "DCTH",
+   "DLO",
+   "DSGR",
+   "DXCM",
+   "EQNR",
+   "FRSH",
+   "FSM",
+   "GCMG",
+   "GLP",
+   "GMAB",
+   "GMAB",
+   "HAFN",
+   "HCC",
+   "HCI",
+   "HIPO",
+   "HMY",
+   "HRMY",
+   "HSTM",
+   "HTGC",
+   "HURN",
+   "IBEX",
+   "IOSP",
+   "JCAP",
+   "JCAP",
+   "JHX",
+   "KINS",
+   "KNTK",
+   "LB",
+   "MEDP",
+   "MSFT",
+   "MSI",
+   "NOW",
+   "NWSA",
+   "ONC",
+   "OPRT",
+   "PANL",
+   "PANL",
+   "PJT",
+   "PRU",
+   "QNST",
+   "REGN",
+   "REPX",
+   "RJF",
+   "SLDE",
+   "TMO",
+   "TRMD",
+   "TTEK",
+   "UROY",
+   "VEON",
+   "VRTX",
+   "WAT",
+   "WST",
+   "ZBRA"
+  ],
+  "high_short": [
+   "AMPH",
+   "AQST",
+   "DJCO",
+   "ETD",
+   "IBTA",
+   "INSP",
+   "KURA",
+   "OCUL",
+   "PRGO",
+   "RIGL",
+   "SBH",
+   "SDGR",
+   "SIG",
+   "SLP",
+   "TDW",
+   "WKC"
+  ]
+ }
+}
+signals_R2.0_COMP {
+ "all": {
+  "n": 10726,
+  "ret26_med": 2.2,
+  "exc26_med": -4.2,
+  "win26": 0.54,
+  "mae26_med": -12.7,
+  "ret26_p90": 51.1
+ },
+ "with_fundamentals": {
+  "n": 9365,
+  "ret26_med": 2.7,
+  "exc26_med": -4.1,
+  "win26": 0.55,
+  "mae26_med": -12.8,
+  "ret26_p90": 52.0
+ },
+ "by_rev_bin": {
+  "<0%": {
+   "n": 3179,
+   "ret26_med": 5.9,
+   "exc26_med": -2.5,
+   "win26": 0.58,
+   "mae26_med": -11.6,
+   "ret26_p90": 55.3
+  },
+  "0-10%": {
+   "n": 1756,
+   "ret26_med": 2.8,
+   "exc26_med": -3.4,
+   "win26": 0.56,
+   "mae26_med": -10.9,
+   "ret26_p90": 43.0
+  },
+  "10-25%": {
+   "n": 1772,
+   "ret26_med": 2.2,
+   "exc26_med": -3.8,
+   "win26": 0.55,
+   "mae26_med": -12.5,
+   "ret26_p90": 47.2
+  },
+  "25-50%": {
+   "n": 1221,
+   "ret26_med": 0.9,
+   "exc26_med": -4.7,
+   "win26": 0.52,
+   "mae26_med": -14.2,
+   "ret26_p90": 57.8
+  },
+  ">50%": {
+   "n": 1322,
+   "ret26_med": -2.5,
+   "exc26_med": -8.2,
+   "win26": 0.47,
+   "mae26_med": -17.9,
+   "ret26_p90": 54.0
+  },
+  "nan": {
+   "n": 1476,
+   "ret26_med": 0.1,
+   "exc26_med": -5.8,
+   "win26": 0.5,
+   "mae26_med": -13.1,
+   "ret26_p90": 45.7
+  }
+ },
+ "by_acc_bin": {
+  "decel>10pp": {
+   "n": 1992,
+   "ret26_med": 4.4,
+   "exc26_med": -3.5,
+   "win26": 0.56,
+   "mae26_med": -14.0,
+   "ret26_p90": 60.4
+  },
+  "decel": {
+   "n": 1635,
+   "ret26_med": 4.0,
+   "exc26_med": -3.4,
+   "win26": 0.57,
+   "mae26_med": -11.8,
+   "ret26_p90": 47.6
+  },
+  "flat": {
+   "n": 1555,
+   "ret26_med": 2.4,
+   "exc26_med": -4.0,
+   "win26": 0.55,
+   "mae26_med": -11.8,
+   "ret26_p90": 42.1
+  },
+  "accel": {
+   "n": 1834,
+   "ret26_med": 2.1,
+   "exc26_med": -4.6,
+   "win26": 0.54,
+   "mae26_med": -11.8,
+   "ret26_p90": 48.5
+  },
+  "accel>10pp": {
+   "n": 2157,
+   "ret26_med": 2.0,
+   "exc26_med": -4.4,
+   "win26": 0.53,
+   "mae26_med": -13.4,
+   "ret26_p90": 55.9
+  },
+  "nan": {
+   "n": 1553,
+   "ret26_med": 0.1,
+   "exc26_med": -6.0,
+   "win26": 0.5,
+   "mae26_med": -13.3,
+   "ret26_p90": 46.4
+  }
+ },
+ "by_quality": {
+  "True": {
+   "n": 4360,
+   "ret26_med": 4.5,
+   "exc26_med": -2.8,
+   "win26": 0.58,
+   "mae26_med": -10.2,
+   "ret26_p90": 45.4
+  },
+  "nan": {
+   "n": 1765,
+   "ret26_med": 0.7,
+   "exc26_med": -4.8,
+   "win26": 0.52,
+   "mae26_med": -12.0,
+   "ret26_p90": 43.6
+  },
+  "False": {
+   "n": 4601,
+   "ret26_med": 0.9,
+   "exc26_med": -5.9,
+   "win26": 0.51,
+   "mae26_med": -16.4,
+   "ret26_p90": 60.4
+  }
+ },
+ "growth_accel_quality": {
+  "n": 585,
+  "ret26_med": 0.4,
+  "exc26_med": -4.7,
+  "win26": 0.51,
+  "mae26_med": -12.0,
+  "ret26_p90": 47.0
+ }
+}
+signals_R2.0_COMP_listed {
+ "all": {
+  "n": 6349,
+  "ret26_med": 4.1,
+  "exc26_med": -3.7,
+  "win26": 0.55,
+  "mae26_med": -12.9,
+  "ret26_p90": 53.5
+ },
+ "with_fundamentals": {
+  "n": 6121,
+  "ret26_med": 4.2,
+  "exc26_med": -3.6,
+  "win26": 0.56,
+  "mae26_med": -12.8,
+  "ret26_p90": 53.7
+ },
+ "by_rev_bin": {
+  "<0%": {
+   "n": 2059,
+   "ret26_med": 8.5,
+   "exc26_med": -1.4,
+   "win26": 0.61,
+   "mae26_med": -10.9,
+   "ret26_p90": 58.0
+  },
+  "0-10%": {
+   "n": 1136,
+   "ret26_med": 3.2,
+   "exc26_med": -4.1,
+   "win26": 0.56,
+   "mae26_med": -11.5,
+   "ret26_p90": 41.9
+  },
+  "10-25%": {
+   "n": 1181,
+   "ret26_med": 2.3,
+   "exc26_med": -3.9,
+   "win26": 0.54,
+   "mae26_med": -13.3,
+   "ret26_p90": 51.1
+  },
+  "25-50%": {
+   "n": 819,
+   "ret26_med": 2.3,
+   "exc26_med": -4.1,
+   "win26": 0.53,
+   "mae26_med": -14.5,
+   "ret26_p90": 62.4
+  },
+  ">50%": {
+   "n": 869,
+   "ret26_med": -1.0,
+   "exc26_med": -7.8,
+   "win26": 0.49,
+   "mae26_med": -17.0,
+   "ret26_p90": 57.2
+  },
+  "nan": {
+   "n": 285,
+   "ret26_med": -1.1,
+   "exc26_med": -8.6,
+   "win26": 0.48,
+   "mae26_med": -19.6,
+   "ret26_p90": 52.3
+  }
+ },
+ "by_acc_bin": {
+  "decel>10pp": {
+   "n": 1288,
+   "ret26_med": 6.1,
+   "exc26_med": -2.3,
+   "win26": 0.56,
+   "mae26_med": -13.7,
+   "ret26_p90": 63.4
+  },
+  "decel": {
+   "n": 1058,
+   "ret26_med": 6.2,
+   "exc26_med": -2.2,
+   "win26": 0.6,
+   "mae26_med": -11.6,
+   "ret26_p90": 48.4
+  },
+  "flat": {
+   "n": 1026,
+   "ret26_med": 2.8,
+   "exc26_med": -5.4,
+   "win26": 0.55,
+   "mae26_med": -12.5,
+   "ret26_p90": 43.0
+  },
+  "accel": {
+   "n": 1231,
+   "ret26_med": 3.1,
+   "exc26_med": -3.5,
+   "win26": 0.55,
+   "mae26_med": -11.7,
+   "ret26_p90": 50.0
+  },
+  "accel>10pp": {
+   "n": 1416,
+   "ret26_med": 3.1,
+   "exc26_med": -4.5,
+   "win26": 0.54,
+   "mae26_med": -13.8,
+   "ret26_p90": 58.9
+  },
+  "nan": {
+   "n": 330,
+   "ret26_med": -1.1,
+   "exc26_med": -8.7,
+   "win26": 0.48,
+   "mae26_med": -19.1,
+   "ret26_p90": 60.3
+  }
+ },
+ "by_quality": {
+  "True": {
+   "n": 3086,
+   "ret26_med": 5.1,
+   "exc26_med": -2.7,
+   "win26": 0.58,
+   "mae26_med": -10.5,
+   "ret26_p90": 46.0
+  },
+  "nan": {
+   "n": 204,
+   "ret26_med": 2.6,
+   "exc26_med": -6.3,
+   "win26": 0.52,
+   "mae26_med": -15.0,
+   "ret26_p90": 44.4
+  },
+  "False": {
+   "n": 3059,
+   "ret26_med": 2.5,
+   "exc26_med": -4.9,
+   "win26": 0.53,
+   "mae26_med": -16.1,
+   "ret26_p90": 63.2
+  }
+ },
+ "growth_accel_quality": {
+  "n": 412,
+  "ret26_med": 2.0,
+  "exc26_med": -4.2,
+  "win26": 0.53,
+  "mae26_med": -11.9,
+  "ret26_p90": 56.9
+ }
+}
+status=ok

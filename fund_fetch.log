@@ -1,22 +1,21 @@
-fundamentals: universe 22901, done 1000, todo 21901, this run 9500 (budget 9500)
-  500/9500  ok 500  empty 0  errors 0  17s
-  1000/9500  ok 1000  empty 0  errors 0  46s
-  1500/9500  ok 1500  empty 0  errors 0  76s
-  2000/9500  ok 2000  empty 0  errors 0  104s
-  2500/9500  ok 2500  empty 0  errors 0  133s
-  3000/9500  ok 3000  empty 0  errors 0  161s
-  3500/9500  ok 3500  empty 0  errors 0  190s
-  4000/9500  ok 4000  empty 0  errors 0  219s
-  4500/9500  ok 4500  empty 0  errors 0  248s
-  5000/9500  ok 5000  empty 0  errors 0  275s
-  5500/9500  ok 5500  empty 0  errors 0  304s
-  6000/9500  ok 6000  empty 0  errors 0  333s
-  6500/9500  ok 6500  empty 0  errors 0  362s
-  7000/9500  ok 7000  empty 0  errors 0  389s
-  7500/9500  ok 7500  empty 0  errors 0  419s
-  8000/9500  ok 8000  empty 0  errors 0  448s
-  8500/9500  ok 8119  empty 0  errors 0  459s
-STOPPED: HTTP 402: You exceeded your daily API requests limit.  Please contact support@eodhistoricaldata.com
+restricted to 7259 tickers used by the base study
+previous checkpoints held no financial rows — reset
+fundamentals: universe 7259, done 0, todo 7259, this run 7259 (budget 9500)
+  500/7259  ok 500  empty 0  errors 0  45s
+  1000/7259  ok 1000  empty 0  errors 0  93s
+  1500/7259  ok 1500  empty 0  errors 0  138s
+  2000/7259  ok 2000  empty 0  errors 0  184s
+  2500/7259  ok 2500  empty 0  errors 0  231s
+  3000/7259  ok 3000  empty 0  errors 0  276s
+  3500/7259  ok 3500  empty 0  errors 0  321s
+  4000/7259  ok 4000  empty 0  errors 0  359s
+  4500/7259  ok 4500  empty 0  errors 0  394s
+  5000/7259  ok 5000  empty 0  errors 0  428s
+  5500/7259  ok 5500  empty 0  errors 0  462s
+  6000/7259  ok 5999  empty 1  errors 0  496s
+  6500/7259  ok 6498  empty 2  errors 0  539s
+  7000/7259  ok 6998  empty 2  errors 0  578s
+  7259/7259  ok 7256  empty 3  errors 0  597s
 listed names COMPLETE (delisted names may still be pending)
-fundamentals PARTIAL — 13782 tickers remain; re-run 'fund' after the daily quota resets (00:00 UTC)
+fundamentals COMPLETE
 status=ok

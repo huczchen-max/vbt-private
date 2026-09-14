@@ -66,24 +66,36 @@ def num(x):
     try: return float(x) if x is not None else None
     except (TypeError, ValueError): return None
 
+def pick(j, path):
+    """EODHD returns a FLATTENED dict when filter= lists several fields (keys like
+    'Financials::Income_Statement::quarterly'); without filter it is nested. Handle both."""
+    if path in j: return j[path]
+    cur = j
+    for k in path.split("::"):
+        if not isinstance(cur, dict): return None
+        cur = cur.get(k)
+    return cur
+
 def extract(ticker, j):
     """Flatten one fundamentals JSON into row lists."""
     inc, cf, earn = [], [], []
-    fin = (j.get("Financials") or {})
-    for q, v in ((fin.get("Income_Statement") or {}).get("quarterly") or {}).items():
+    for q, v in (pick(j, "Financials::Income_Statement::quarterly") or {}).items():
+        if not isinstance(v, dict): continue
         inc.append(dict(ticker=ticker, q_date=v.get("date") or q, filing_date=v.get("filing_date"),
                         revenue=num(v.get("totalRevenue")), gross_profit=num(v.get("grossProfit")),
                         op_income=num(v.get("operatingIncome")), net_income=num(v.get("netIncome"))))
-    for q, v in ((fin.get("Cash_Flow") or {}).get("quarterly") or {}).items():
+    for q, v in (pick(j, "Financials::Cash_Flow::quarterly") or {}).items():
+        if not isinstance(v, dict): continue
         cfo = num(v.get("totalCashFromOperatingActivities")); capex = num(v.get("capitalExpenditures"))
         cf.append(dict(ticker=ticker, q_date=v.get("date") or q, filing_date=v.get("filing_date"), cfo=cfo, capex=capex,
                        fcf=num(v.get("freeCashFlow")) if v.get("freeCashFlow") is not None else (cfo - abs(capex) if cfo is not None and capex is not None else None)))
-    for d, v in ((j.get("Earnings") or {}).get("History") or {}).items():
+    for d, v in (pick(j, "Earnings::History") or {}).items():
+        if not isinstance(v, dict): continue
         earn.append(dict(ticker=ticker, report_date=v.get("reportDate"), q_date=v.get("date") or d,
                          eps_actual=num(v.get("epsActual")), eps_estimate=num(v.get("epsEstimate")), surprise_pct=num(v.get("surprisePercent"))))
-    g = j.get("General") or {}; ss = j.get("SharesStats") or {}; hl = j.get("Highlights") or {}
-    snap = dict(ticker=ticker, sector=g.get("Sector"), industry=g.get("Industry"), is_delisted=g.get("IsDelisted"),
-                mkt_cap=num(hl.get("MarketCapitalization")), short_ratio=num(ss.get("ShortRatio")),
+    ss = pick(j, "SharesStats") or {}
+    snap = dict(ticker=ticker, sector=pick(j, "General::Sector"), industry=pick(j, "General::Industry"), is_delisted=pick(j, "General::IsDelisted"),
+                mkt_cap=num(pick(j, "Highlights::MarketCapitalization")), short_ratio=num(ss.get("ShortRatio")),
                 short_pct_float=num(ss.get("ShortPercentFloat") if ss.get("ShortPercentFloat") is not None else ss.get("ShortPercent")),
                 shares_short=num(ss.get("SharesShort")), shares_short_prior=num(ss.get("SharesShortPriorMonth")))
     return inc, cf, earn, snap
@@ -123,13 +135,14 @@ def main():
     global TOKEN
     ap = argparse.ArgumentParser()
     ap.add_argument("--smoke", action="store_true"); ap.add_argument("--full", action="store_true")
-    ap.add_argument("--max", type=int, default=0); ap.add_argument("--listed-only", action="store_true"); ap.add_argument("--budget", type=int, default=BUDGET_DEFAULT)
+    ap.add_argument("--max", type=int, default=0); ap.add_argument("--listed-only", action="store_true"); ap.add_argument("--budget", type=int, default=BUDGET_DEFAULT); ap.add_argument("--needed-from", default="", help="dir with base_signals/base_events/base_live.csv: restrict the pull to tickers the study uses")
     a = ap.parse_args(); TOKEN = token(); d = cache_dir()
 
     if a.smoke:
         j = get("fundamentals/MRNA.US", filter=FILTER)
         if not j: sys.exit("smoke: no fundamentals returned for MRNA — check plan/token")
-        print("top-level keys:", list(j.keys()))
+        print("top-level keys:", list(j.keys())[:12])
+        print("income quarters found:", len(pick(j, "Financials::Income_Statement::quarterly") or {}))
         inc, cf, earn, snap = extract("MRNA", j)
         print("income rows:", len(inc), "sample:", inc[:2]); print("cf rows:", len(cf), "sample:", cf[:1])
         print("earnings rows:", len(earn), "sample:", earn[:2]); print("snapshot:", snap)
@@ -143,6 +156,17 @@ def main():
         u = u[u.ticker.astype(str).str.len() > 0]
         if a.listed_only: u = u[u.delisted == False]
         u = u[~u.ticker.isin(("SPY", "SMH", "QQQ"))].sort_values("delisted")   # listed first
+        if a.needed_from:
+            need = set()
+            for f in ("base_signals.csv", "base_events.csv", "base_live.csv"):
+                fp = Path(a.needed_from) / f
+                if fp.exists(): need |= set(pd.read_csv(fp, usecols=["ticker"], keep_default_na=False).ticker.astype(str))
+            if need: u = u[u.ticker.isin(need)]; print(f"restricted to {len(u)} tickers used by the base study", flush=True)
+        # auto-reset: a parts folder with a done list but no income parts is junk from a schema mismatch
+        pdir = parts_dir(d)
+        if (pdir / "done.txt").exists() and not list(pdir.glob("income_*.parquet")):
+            import shutil; shutil.rmtree(pdir); print("previous checkpoints held no financial rows — reset", flush=True)
+            for f in ("fund_done.flag", "fund_listed_done.flag"): (d / f).unlink(missing_ok=True)
         done = done_tickers(d)
         todo = [t for t in u.ticker.tolist() if t not in done]
         budget = a.max or a.budget
@@ -161,6 +185,8 @@ def main():
                             inc, cf, earn, snap = r; INC += inc; CF += cf; EARN += earn; SNAP.append(snap); ok += 1; consec = 0
             except QuotaError as e:
                 stopped = str(e)
+            if ci == 0 and ok >= 20 and not INC:
+                print("SCHEMA MISMATCH: responses carry no income rows — aborting before spending quota. Run 'fsmoke' and inspect keys.", flush=True); sys.exit(2)
             if got: write_part(d, len(done) + ci, INC, CF, EARN, SNAP, got)
             print(f"  {min(ci + CHUNK, len(batch))}/{len(batch)}  ok {ok}  empty {empty}  errors {len(errs)}  {time.time() - t0:.0f}s", flush=True)
             if stopped or consec >= MAX_CONSEC_FAIL:

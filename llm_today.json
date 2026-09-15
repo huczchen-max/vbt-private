@@ -1,22 +1,29 @@
 {
- "date": "2026-09-09",
+ "date": "2026-09-14",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-09-09T23:30:16+00:00",
+ "generated_utc": "2026-09-14T23:59:12+00:00",
  "regime": {
-  "regime": "NEUTRAL",
+  "regime": "RISK-OFF",
   "reasons": [
-   "call failed: HTTP Error 400: Bad Request"
+   "Semis down ~4.7% and AI hardware leaders (NVDA -3%, AMD -6%) selling off hard today on AI-pacing/safety headlines, breaking any nascent recovery trend structure",
+   "FOMC decision lands tomorrow (Sept 16) with market pricing a hawkish 25bp hike alongside 10Y yields near 5% and oil spiking on Mideast escalation \u2014 high event risk directly ahead of any new entry",
+   "Hyperscaler capex fundamentals remain strong ($700B+ 2026 run-rate) but sentiment is actively repricing AI-buildout durability, making this a sentiment-driven drawdown rather than a confirmed post-correction recovery"
   ],
-  "raw_ok": false
+  "raw_ok": true
  },
  "verdicts": {
-  "NBIS": {
+  "AMAT": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [
-    "call failed: HTTP Error 400: Bad Request"
+    "No earnings scheduled within 14 days; last report was Aug 13, 2026 (Q3 FY26), next report due mid-November",
+    "No share offering or dilution announced in the past 4 weeks; only a routine quarterly dividend increase",
+    "No guidance cuts \u2014 Q4 guidance raised to record $10.25B revenue",
+    "No new customer loss/concentration disclosures in the period",
+    "No new short-seller, accounting, or auditor issues; prior export-control matter was already settled in Feb 2026 with DOJ/SEC closing probes without enforcement",
+    "No new legal or regulatory actions announced in the last 4 weeks"
    ],
-   "raw_ok": false
+   "raw_ok": true
   }
  }
 }

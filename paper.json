@@ -1,19 +1,19 @@
 {
- "as_of": "2026-09-13",
- "updated_utc": "2026-09-13T04:00:34+00:00",
+ "as_of": "2026-09-14",
+ "updated_utc": "2026-09-15T00:06:02+00:00",
  "account": {
-  "equity": 99262.04,
+  "equity": 96098.22,
   "cash": 16497.41,
-  "pl_total": 0.0
+  "pl_total": -3163.82
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 275.75,
-   "pl_pct": 22.32,
-   "pl_usd": 1686.87,
+   "current": 258.92,
+   "pl_pct": 14.85,
+   "pl_usd": 1122.58,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 349.54,
-   "pl_pct": -8.57,
-   "pl_usd": -688.38,
+   "current": 321.49,
+   "pl_pct": -15.91,
+   "pl_usd": -1277.48,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "COHR",
    "qty": 13.0,
    "avg_entry": 249.45,
-   "current": 305.37,
-   "pl_pct": 22.42,
-   "pl_usd": 726.98,
+   "current": 269.64,
+   "pl_pct": 8.09,
+   "pl_usd": 262.49,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -41,9 +41,9 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 157.38,
-   "pl_pct": 3.25,
-   "pl_usd": 263.1,
+   "current": 167.79,
+   "pl_pct": 10.08,
+   "pl_usd": 816.5,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -51,9 +51,9 @@
    "symbol": "GLXY",
    "qty": 156.0,
    "avg_entry": 23.87,
-   "current": 24.4,
-   "pl_pct": 2.22,
-   "pl_usd": 82.6,
+   "current": 24.05,
+   "pl_pct": 0.75,
+   "pl_usd": 27.94,
    "entered": "2026-09-01",
    "stage": "CONFIRMED"
   },
@@ -61,9 +61,9 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 102.94,
-   "pl_pct": 18.29,
-   "pl_usd": 652.53,
+   "current": 97.41,
+   "pl_pct": 11.93,
+   "pl_usd": 425.8,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -71,9 +71,9 @@
    "symbol": "KLAC",
    "qty": 43.0,
    "avg_entry": 176.5,
-   "current": 180.64,
-   "pl_pct": 2.34,
-   "pl_usd": 177.81,
+   "current": 170.59,
+   "pl_pct": -3.35,
+   "pl_usd": -254.34,
    "entered": "2026-08-29",
    "stage": "CONFIRMED"
   },
@@ -81,9 +81,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1115.7,
-   "pl_pct": -4.71,
-   "pl_usd": -363.85,
+   "current": 1138.12,
+   "pl_pct": -2.8,
+   "pl_usd": -216.05,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -91,9 +91,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 975.26,
-   "pl_pct": 9.42,
-   "pl_usd": 812.96,
+   "current": 929.76,
+   "pl_pct": 4.32,
+   "pl_usd": 372.53,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -101,9 +101,9 @@
    "symbol": "NBIS",
    "qty": 18.0,
    "avg_entry": 198.3,
-   "current": 224.55,
-   "pl_pct": 13.24,
-   "pl_usd": 472.55,
+   "current": 213.2,
+   "pl_pct": 7.51,
+   "pl_usd": 268.25,
    "entered": "2026-09-01",
    "stage": "CONFIRMED"
   },
@@ -111,9 +111,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 76.14,
-   "pl_pct": -7.75,
-   "pl_usd": -582.4,
+   "current": 72.11,
+   "pl_pct": -12.63,
+   "pl_usd": -948.78,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -121,9 +121,9 @@
    "symbol": "TLN",
    "qty": 10.0,
    "avg_entry": 379.43,
-   "current": 312.74,
-   "pl_pct": -17.58,
-   "pl_usd": -666.91,
+   "current": 289.5,
+   "pl_pct": -23.7,
+   "pl_usd": -899.31,
    "entered": "2026-06-26",
    "stage": "CONFIRMED"
   },
@@ -131,9 +131,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 447.18,
-   "pl_pct": -15.86,
-   "pl_usd": -1348.28,
+   "current": 429.05,
+   "pl_pct": -19.27,
+   "pl_usd": -1638.36,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -329,6 +329,12 @@
    "date": "2026-09-08",
    "action": "SKIP",
    "symbol": "QCOM",
+   "note": "group cap (semi already at 4)"
+  },
+  {
+   "date": "2026-09-14",
+   "action": "SKIP",
+   "symbol": "AMAT",
    "note": "group cap (semi already at 4)"
   }
  ]

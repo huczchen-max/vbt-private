@@ -1,27 +1,27 @@
 prices 100/177
 prices 177/177
-ai        top5: NBIS:84.2, MU:81.5, DELL:78.3, LITE:75.9, STX:73.5
-grid      top5: BE:83.6, NVT:77.6, IESC:71.5, STRL:68.2, ATKR:68.0
-robotics  top5: TER:69.3, CGNX:69.1, ZBRA:68.7, AMBA:64.8, OUST:64.3
-defense   top5: RDW:78.4, RKLB:65.9, AXON:62.9, HEI:62.3, HWM:61.5
-health    top5: GH:78.8, NTRA:78.1, LLY:71.3, ABBV:65.4, ILMN:64.8
-outlier   top5: HOOD:75.0, GEV:64.6, PLTR:62.1, GLXY:40.0, UBER:36.4
+ai        top5: MU:80.7, NBIS:80.4, DELL:78.0, LITE:73.9, AMD:73.2
+grid      top5: BE:79.7, NVT:76.6, IESC:74.8, PWR:70.3, STRL:69.1
+robotics  top5: ZBRA:73.7, TER:68.7, CGNX:67.5, AMBA:65.0, OUST:64.6
+defense   top5: RDW:79.0, HWM:61.9, SAIC:60.7, AXON:60.6, HEI:60.0
+health    top5: GH:78.4, NTRA:75.9, LLY:72.9, ABBV:65.2, ILMN:64.8
+outlier   top5: HOOD:73.6, PLTR:62.1, GEV:57.4, GLXY:45.7, TSLA:34.3
 status=ok
-WARN NBIS: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEKmJ8kaL5NnrdPpcT"}
-WARN MU: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybELfcjqt5q1HNS8cRK"}
-WARN DELL: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEMQmc12PQDT3yFMrB"}
-WARN BE: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEN3iJ5htpJLpfcK8L"}
-WARN NVT: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybENdgqXCJfww6QZrZd"}
-WARN IESC: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEPK7oXGAMmsAZ24ML"}
-WARN TER: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEPvpseQ2HUmFzpVmn"}
-WARN CGNX: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEQXJ7wFYXFM9doHe1"}
-WARN ZBRA: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybERCUTm3J5VsUqDufR"}
-WARN RDW: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybERu99Fm7WoFmfZDBk"}
-WARN RKLB: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybESb4pHSe6S2fuMv8p"}
-WARN AXON: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybETGVaUMbXcoWukh4B"}
-WARN GH: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEUD3fYTiYKcdoJNwA"}
-WARN NTRA: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEUty9oSEFZnWMWpWP"}
-WARN LLY: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEVatkD5Ait4sggps4"}
-WARN HOOD: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEWL3c6iXDFYAcM9n2"}
-WARN GEV: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEX3T9xHavVK7ZvugD"}
-WARN PLTR: HTTP 400 from claude-sonnet-5: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CeybEXgermTN6Pe9xgzL5"}
+ai/MU: llm 87 (HIGH) — Micron sits at the center of a multi-year, supply-constrained AI memory supercycle (HBM4/HBM4E) with record margins, locked-in pricing via Strategic Customer Agreements, and sharply rising estimates, though China/export-control and future oversupply risks warrant monitoring.
+ai/NBIS: llm 82 (HIGH) — Nebius is riding an early-innings AI compute capacity supercycle with hyperscaler-validated demand (Meta, Microsoft, Nvidia) and emerging pricing power, though heavy capex-driven dilution and customer concentration temper near-term risk.
+ai/DELL: llm 84 (HIGH) — Dell is riding a still-accelerating, multi-year AI server supercycle with record backlog and repeatedly raised guidance, though thin assembly-layer margins, FCF burn, and heavy insider selling temper conviction slightly.
+grid/BE: llm 78 (HIGH) — Bloom is the clearest beneficiary of the AI data-center power crunch with accelerating growth, raised guidance, and rising estimates, but backlog quality and Oracle/Brookfield concentration are real risks to monitor.
+grid/NVT: llm 84 (HIGH) — nVent is compounding on a genuine early-cycle AI-datacenter and grid-modernization buildout, with raised guidance and broad estimate upgrades outweighing valuation and customer-concentration risk.
+grid/IESC: llm 78 (MEDIUM) — IESC is riding an accelerating grid/data-center electrification buildout with record backlog and expanding data-center revenue mix, but rich valuation and heavy insider selling temper conviction.
+robotics/ZBRA: llm None (None) — None
+robotics/TER: llm 74 (MEDIUM) — AI-driven test demand is the primary engine while robotics is a smaller but accelerating secondary growth vector with real but unproven long-term share-gain potential.
+robotics/CGNX: llm None (None) — None
+defense/RDW: llm 74 (MEDIUM) — Redwire's dual-engine defense-drone and space-infrastructure product cycle is in early ramp with record backlog and rising estimates, but heavy dilution and persistent losses cap conviction.
+defense/HWM: llm 76 (HIGH) — Howmet is a dominant, high-margin supplier riding a broad aerospace/gas-turbine supercycle with estimates being revised sharply higher, though the defense-specific upside from recent conflicts remains a 2027 call option rather than a current driver.
+defense/SAIC: llm 48 (LOW) — SAIC is a mature federal IT/services incumbent showing margin-efficiency gains and select intel/space award wins, but weak book-to-bill and no true product-cycle catalyst cap upside.
+health/GH: llm 82 (HIGH) — Guardant is riding a dual product-cycle inflection (Shield CRC screening reimbursement unlock + Guardant360 Liquid CDx/oncology expansion) that is driving accelerating revenue, three straight guidance raises, and rising Street estimates, though persistent cash burn and heavy insider selling temper full conviction.
+health/NTRA: llm None (None) — None
+health/LLY: llm 88 (HIGH) — Lilly is compounding share gains in a structurally expanding GLP-1 market while layering a new oral-pill growth vector on top of an already-scaling injectable franchise, backed by raised guidance and upward estimate revisions.
+outlier/HOOD: llm 78 (HIGH) — Robinhood is transitioning from a cyclical crypto/options trading app into a diversified on-chain financial infrastructure platform (Chain, prediction markets, tokenization) with accelerating estimates and share gains, though earnings quality and regulatory risk temper near-term conviction.
+outlier/PLTR: llm 70 (MEDIUM) — Palantir's AIP-driven commercial acceleration and durable government moat make it a top-tier fundamental compounder, but stretched valuation, heavy insider selling, and a broken short-term price trend argue for measured rather than maximum conviction as the 'next big winner.'
+outlier/GEV: llm 78 (HIGH) — GE Vernova is riding an early-innings, multi-year gas-turbine and grid electrification super-cycle with a $176B sold-out backlog and rising pricing power, making the recent price weakness a valuation reset rather than a fundamental break.

@@ -1,20 +1,14 @@
-symbol directory: 6193 common-stock symbols
-scanned 200/6193
-scanned 1200/6193
-scanned 2200/6193
-scanned 3200/6193
+symbol directory: 6197 common-stock symbols
+scanned 200/6197
+scanned 1200/6197
+scanned 2200/6197
+scanned 3200/6197
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6193
-scanned 5200/6193
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-$SVA: No data found, symbol may be delisted
-
-1 Failed download:
-['SVA']: No data found, symbol may be delisted
-scanned 6193/6193
+scanned 4200/6197
+scanned 5200/6197
+scanned 6197/6197
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
@@ -39,32 +33,30 @@ HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","descri
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
 HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-analyzed: 2721 symbols past liquidity floors
-BOTTOM: 17, BREAKOUT: 0, watchlist: 151
-  BOTTOM SPEC    APPS                              dd -17.6%  cap 1.4B  21.4% to 52w high
-  BOTTOM SPEC    ARM    Arm Holdings plc           dd -39.7%  cap 282.8B  66.0% to 52w high
-  BOTTOM QUALITY AS     Amer Sports, Inc.          dd -33.1%  cap 16.3B  49.5% to 52w high
-  BOTTOM QUALITY CE     Celanese Corporation       dd -33.4%  cap 5.1B  50.1% to 52w high
-  BOTTOM QUALITY CRCL   Circle Internet Group, Inc dd -37.9%  cap 24.7B  60.9% to 52w high
-  BOTTOM QUALITY DOCS   Doximity, Inc.             dd -65.6%  cap 4.6B  190.9% to 52w high
-  BOTTOM QUALITY DORM   Dorman Products, Inc.      dd -19.9%  cap 3.8B  27.4% to 52w high
-  BOTTOM SPEC    GPK    Graphic Packaging Holding  dd -49.9%  cap 2.8B  110.8% to 52w high
-  BOTTOM SPEC    MLYS   Mineralys Therapeutics, In dd -35.3%  cap 2.5B  54.5% to 52w high
-  BOTTOM QUALITY MMYT   MakeMyTrip Limited         dd -50.8%  cap 4.7B  103.3% to 52w high
-  BOTTOM QUALITY MQ     Marqeta, Inc.              dd -28.3%  cap 1.7B  42.8% to 52w high
-  BOTTOM QUALITY OTEX   Open Text Corporation      dd -38.9%  cap 5.6B  63.6% to 52w high
-  BOTTOM QUALITY PINS   Pinterest, Inc.            dd -46.8%  cap 10.7B  88.0% to 52w high
-  BOTTOM SPEC    QCOM   QUALCOMM Incorporated      dd -26.8%  cap 194.4B  36.7% to 52w high
-  BOTTOM QUALITY REAL   The RealReal, Inc.         dd -40.7%  cap 1.2B  68.8% to 52w high
-  BOTTOM QUALITY TBBK   The Bancorp, Inc.          dd -35.7%  cap 2.1B  55.5% to 52w high
-  BOTTOM SPEC    VYX    NCR Voyix Corporation      dd -34.9%  cap 1.2B  53.7% to 52w high
+analyzed: 2739 symbols past liquidity floors
+BOTTOM: 24, BREAKOUT: 2, watchlist: 171
+  BOTTOM SPEC    AMBQ   Ambiq Micro, Inc.          dd -27.7%  cap 1.6B  38.2% to 52w high
+  BOTTOM QUALITY ARES   Ares Management Corporatio dd -27.2%  cap 41.1B  41.9% to 52w high
+  BOTTOM QUALITY BTDR   Bitdeer Technologies Group dd -46.0%  cap 3.5B  85.2% to 52w high
+  BOTTOM QUALITY BX     Blackstone Inc.            dd -25.8%  cap 149.4B  44.3% to 52w high
+  BOTTOM SPEC    CBRL   Cracker Barrel Old Country dd -22.2%  cap 1.0B  28.6% to 52w high
+  BOTTOM QUALITY DAVE   Dave Inc.                  dd -23.3%  cap 4.3B  30.4% to 52w high
+  BOTTOM SPEC    DYN    Dyne Therapeutics, Inc.    dd -34.8%  cap 3.2B  53.4% to 52w high
+  BOTTOM QUALITY ENVA   Enova International, Inc.  dd -34.2%  cap 4.4B  51.9% to 52w high
+  BOTTOM SPEC    FSK    FS KKR Capital Corp.       dd -17.2%  cap 3.1B  20.8% to 52w high
+  BOTTOM QUALITY HRB    H&R Block, Inc.            dd -17.2%  cap 5.5B  20.8% to 52w high
+  BOTTOM QUALITY KKR    KKR & Co. Inc.             dd -27.3%  cap 91.3B  49.6% to 52w high
+  BOTTOM QUALITY LIF    Life360, Inc.              dd -63.3%  cap 3.2B  172.2% to 52w high
+  BOTTOM QUALITY LZ     LegalZoom.com, Inc.        dd -45.7%  cap 1.0B  85.3% to 52w high
+  BOTTOM QUALITY MDB    MongoDB, Inc.              dd -16.7%  cap 30.9B  20.0% to 52w high
+  BOTTOM QUALITY OWL    Blue Owl Capital Inc.      dd -40.2%  cap 15.4B  77.9% to 52w high
+  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.8B  -7.1% to 52w high
+  BOTTOM QUALITY PI     Impinj, Inc.               dd -23.2%  cap 5.5B  30.1% to 52w high
+  BOTTOM QUALITY QNST   QuinStreet, Inc.           dd -16.7%  cap 1.0B  20.1% to 52w high
+  BOTTOM SPEC    RYTM   Rhythm Pharmaceuticals, In dd -15.5%  cap 6.7B  18.3% to 52w high
+  BOTTOM QUALITY SE     Sea Limited                dd -45.0%  cap 62.3B  89.4% to 52w high
+  BOTTOM SPEC    SUZ    Suzano S.A.                dd -18.0%  cap 11.4B  21.9% to 52w high
+  BOTTOM QUALITY TPG    TPG Inc.                   dd -28.2%  cap 18.1B  39.3% to 52w high
+  BOTTOM QUALITY TREX   Trex Company, Inc.         dd -19.0%  cap 4.3B  24.6% to 52w high
+  BOTTOM QUALITY WDAY   Workday, Inc.              dd -21.4%  cap 46.7B  27.2% to 52w high
 status=ok

@@ -1,24 +1,79 @@
 {
- "date": "2026-09-12",
- "generated_utc": "2026-09-12T10:11:51+00:00",
+ "date": "2026-09-19",
+ "generated_utc": "2026-09-19T10:24:48+00:00",
  "themes": {
   "ai": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "ai",
+   "extremity": -2,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "Sona Asset Management mapped $3.6T of AI financing across 176 deals, flagging ~120 as highly circular, with Oracle/CoreWeave most indebted relative to earnings",
+    "Oracle's Sept earnings sparked a sharp re-rating (+7%) with CoreWeave/Nebius rallying in sympathy, showing bulls still command real capital",
+    "Michael Burry publicly escalated shorts (Nvidia, Palantir, Tesla, Micron, Caterpillar, AMAT, SOXX) and called AI-safety slowdown calls 'self-serving,' triggering a direct public rebuttal from Jensen Huang and further sniping from Jim Chanos",
+    "Warren Buffett warned markets resemble a 'casino' with 'everybody preferring gambling,' amid a surprise Fed rate hike, oil above $100, and widening Oracle CDS spreads"
+   ]
   },
   "grid": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "grid",
+   "extremity": 1,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "Holtec pulled its $900M IPO citing 'deteriorating investor sentiment tied to the AI data center economy,' calling it 'a perfect storm'",
+    "NuScale -25.8%, Oklo -17.8%, X-energy -23.9% between Sept 8-16, 2026 despite Oklo having been up 350-700% in 2025",
+    "Retail/options sentiment whipsawed within days: 82-score bullish Stocktwits threads and low put/call ratios on Sept 8, followed by renewed selling isolated to nuclear names (SPY flat) on Sept 18",
+    "Piper Sandler initiated OKLO Overweight ($55 PT) same week Seeking Alpha published a piece warning of a coming 'SMR shakeout' leaving a 'trail of busted' companies"
+   ]
   },
   "robotics": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "robotics",
+   "extremity": 4,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "Goldman Sachs raised humanoid robot market forecast to 6.48M units by 2035 from 1.38M (Sept 14, 2026), an ~5x hike",
+    "Unitree Robotics IPO surged 629% on debut then crashed ~50-53% within weeks, wiping ~$30-35B in market value and reigniting 'bubble' headlines",
+    "China's securities regulator issued informal 'window guidance' tightening scrutiny on humanoid IPOs after the Unitree reversal",
+    "Prominent roboticist Rodney Brooks publicly argues the humanoid bubble is 'doomed to burst,' while Musk continues to claim Optimus could make Tesla a $25 trillion company with 1 billion humanoids within a decade"
+   ]
   },
   "defense": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "defense",
+   "extremity": 4,
+   "kol_unanimity": "split",
+   "direction_2wk": "hotter",
+   "evidence": [
+    "Broad space-sector rally this week (Voyager +8%, Rocket Lab +8%, AST SpaceMobile +5%) tied to Air Force's 'on-orbit space control weapons' disclosure and Rocket Lab's Iridium deal (BigGo, Sept 19 2026)",
+    "SpaceX market cap above $2T with Cathie Wood pushing long-term Starship revenue narrative ahead of Sept 22 Starship Flight 14 (Vantage Markets)",
+    "AST SpaceMobile and Rocket Lab top the crowdsourced WallStreetBets 2026 Index, signaling retail meme-stock status",
+    "Jim Chanos publicly compared SpaceX's IPO-era equity issuance boom to the 'Enron era' and warned 100x-revenue stocks rarely pay off, yet the rally continued",
+    "European defense (Rheinmetall etc.) sentiment is more contested/consolidating, with Quilter Cheviot questioning valuation even as Barclays/RBC initiate bullish coverage"
+   ]
   },
   "health": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "health",
+   "extremity": 2,
+   "kol_unanimity": "split",
+   "direction_2wk": "hotter",
+   "evidence": [
+    "Morgan Stanley downgraded Novo Nordisk to Sell (Sept 10-11) as NVO stock logged its worst year since 1984 and underwent an emergency 'Novo' rebrand",
+    "Stocktwits retail sentiment on NVO flipped bullish into the crash, with users boasting about buying 1,000 more shares monthly at depressed prices",
+    "ARK Genomic Revolution ETF (ARKG) hit a new all-time high days ago on Tempus AI/Natera/Illumina strength, with commentary framing genomics as 'the next AI trade'",
+    "Eli Lilly retains 24 Buy/6 Hold/1 Sell analyst consensus despite an 8% monthly pullback, while Deloitte's 'bubble effect' concentration warning continues to be cited by skeptics"
+   ]
   },
   "outlier": {
-   "error": "HTTP Error 400: Bad Request"
+   "theme": "outlier",
+   "extremity": 2,
+   "kol_unanimity": "split",
+   "direction_2wk": "stable",
+   "evidence": [
+    "Tesla Cybercab launch (Sept 3-4) triggered a 6% drop and a wave of extreme-bear price targets (Wells Fargo $130, GLJ Research $24.86) even as retail options flow stayed heavily call-skewed into the event",
+    "SpaceX already suffered a $600B one-day capitulation post-IPO, then rebounded with Cathie Wood calling it a 'deep value opportunity' as Starship optimism returned in mid-September",
+    "Palantir sits between bubble warnings (100x+ sales ratio comparisons to Yahoo 1999) and fresh bull upgrades (UBS to $250), with CEO Karp making maximalist 'nationalization' rhetoric that reads as late-cycle hype",
+    "GE Vernova is the exception \u2014 steadily compounding on backlog/fundamentals (+51% trailing year vs S&P's +17.5%) without narrative mania, showing the basket's extremity is concentrated in the Musk/Karp-adjacent names, not uniform"
+   ]
   }
  }
 }

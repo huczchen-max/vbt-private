@@ -21853,3 +21853,12 @@ live_tight 18 rows -> ['private/gallery/live_tight_1.png', 'private/gallery/live
 live_vcp 18 rows -> ['private/gallery/live_vcp_1.png', 'private/gallery/live_vcp_2.png']
 live_divup 10 rows -> ['private/gallery/live_divup_1.png', 'private/gallery/live_divup_2.png']
 live_divdn 13 rows -> ['private/gallery/live_divdn_1.png', 'private/gallery/live_divdn_2.png']
+gallery-only rerun Tue Sep 22 14:11:15 UTC 2026
+tight_up 18 rows -> ['private/gallery/tight_up_1.png', 'private/gallery/tight_up_2.png']
+tight_down 18 rows -> ['private/gallery/tight_down_1.png', 'private/gallery/tight_down_2.png']
+loose_up 18 rows -> ['private/gallery/loose_up_1.png', 'private/gallery/loose_up_2.png']
+tight_contract 18 rows -> ['private/gallery/tight_contract_1.png', 'private/gallery/tight_contract_2.png']
+live_tight 18 rows -> ['private/gallery/live_tight_1.png', 'private/gallery/live_tight_2.png']
+live_vcp 18 rows -> ['private/gallery/live_vcp_1.png', 'private/gallery/live_vcp_2.png']
+live_divup 10 rows -> ['private/gallery/live_divup_1.png', 'private/gallery/live_divup_2.png']
+live_divdn 13 rows -> ['private/gallery/live_divdn_1.png', 'private/gallery/live_divdn_2.png']

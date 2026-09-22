@@ -1,0 +1,198 @@
+{
+ "asof": "2026-09-21",
+ "scales": [
+  "weekly",
+  "daily",
+  "hourly"
+ ],
+ "lists": {
+  "weekly": {
+   "UP": {
+    "strict": [
+     "ALLT",
+     "ARX",
+     "BULL",
+     "CEPO",
+     "DG",
+     "DRD",
+     "GFI",
+     "GNE",
+     "TSLX",
+     "WBTN"
+    ],
+    "broad": [
+     "CMCL",
+     "LKFT",
+     "SNAP",
+     "SUZ",
+     "TM"
+    ]
+   },
+   "DN": {
+    "strict": [
+     "AMBA",
+     "APD",
+     "BCRX",
+     "CCS",
+     "CENTA",
+     "FSS",
+     "HAPN",
+     "PHM",
+     "PRAX",
+     "RCI",
+     "STTK",
+     "TDC",
+     "WFRD"
+    ],
+    "broad": [
+     "AEXA",
+     "CBU",
+     "H",
+     "NBHC",
+     "SBSI"
+    ]
+   },
+   "counts": {
+    "open_base_rows": 1831,
+    "tickers": 1441,
+    "COMP": 218,
+    "ANTI": 454,
+    "DIVUP": 13,
+    "DIVDN": 13,
+    "asof": "2026-09-25 00:00"
+   }
+  },
+  "daily": {
+   "UP": {
+    "strict": [
+     "AGIO",
+     "ALAB",
+     "AMRC",
+     "BLLN",
+     "CORZ",
+     "EFXT",
+     "HIMX",
+     "HIVE",
+     "HYLN",
+     "LRCX",
+     "LSCC",
+     "MDA",
+     "NPCE",
+     "PDFS",
+     "PLXS",
+     "RAIL",
+     "RDDT",
+     "SHLS",
+     "TDC",
+     "TSEM",
+     "TWI",
+     "TXN",
+     "ULCC",
+     "ULTA",
+     "VSH",
+     "WYY"
+    ],
+    "broad": [
+     "AUR",
+     "BHE",
+     "CIFR",
+     "ESLT",
+     "ITRN",
+     "MXL",
+     "QTRX",
+     "SVCO",
+     "VFS",
+     "VITL"
+    ]
+   },
+   "DN": {
+    "strict": [
+     "AG",
+     "AGI",
+     "BLKB",
+     "CHYM",
+     "CTGO",
+     "FRMM",
+     "G",
+     "GHRS",
+     "GSM",
+     "LCUT",
+     "LMRI",
+     "MYE",
+     "OGC",
+     "PEGA",
+     "PPTA",
+     "RMD",
+     "SBSW",
+     "SKM"
+    ],
+    "broad": [
+     "AAUC",
+     "AVO",
+     "CHRD",
+     "GROY",
+     "GROY-WS",
+     "PAHC",
+     "PSKY",
+     "PUSA",
+     "SCZM"
+    ]
+   },
+   "counts": {
+    "open_base_rows": 1100,
+    "tickers": 872,
+    "COMP": 103,
+    "ANTI": 318,
+    "DIVUP": 28,
+    "DIVDN": 18,
+    "asof": "2026-09-21 00:00"
+   }
+  },
+  "hourly": {
+   "UP": {
+    "strict": [],
+    "broad": []
+   },
+   "DN": {
+    "strict": [
+     "MF"
+    ],
+    "broad": []
+   },
+   "counts": {
+    "open_base_rows": 16,
+    "tickers": 15,
+    "COMP": 5,
+    "ANTI": 1,
+    "DIVUP": 0,
+    "DIVDN": 1,
+    "asof": "2026-09-21 15:30"
+   }
+  }
+ },
+ "params": {
+  "R": [
+   1.5,
+   2.0,
+   3.0
+  ],
+  "LMIN": 26,
+  "LMAX": 156,
+  "FLAT": 0.4,
+  "MIN_PRICE": 3.0,
+  "MIN_DVOL": {
+   "weekly": 5000000.0,
+   "daily": 1000000.0,
+   "hourly": 150000.0
+  },
+  "DIV": {
+   "K": 4,
+   "MARGIN": 3.0,
+   "PX_TOL": 0.05
+  },
+  "BROAD": {
+   "rsi_slope": 0.3,
+   "px_slope": 0.2
+  }
+ }
+}

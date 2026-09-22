@@ -1,19 +1,19 @@
 {
  "as_of": "2026-09-22",
- "updated_utc": "2026-09-22T00:25:18+00:00",
+ "updated_utc": "2026-09-22T23:57:25+00:00",
  "account": {
-  "equity": 102865.2,
+  "equity": 104265.71,
   "cash": 23567.17,
-  "pl_total": 2828.69
+  "pl_total": 1978.05
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 274.67,
-   "pl_pct": 21.84,
-   "pl_usd": 1650.66,
+   "current": 277.44,
+   "pl_pct": 23.07,
+   "pl_usd": 1743.5,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 373.0,
-   "pl_pct": -2.44,
-   "pl_usd": -195.72,
+   "current": 369.58,
+   "pl_pct": -3.33,
+   "pl_usd": -267.54,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 173.87,
-   "pl_pct": 14.06,
-   "pl_usd": 1139.71,
+   "current": 177.16,
+   "pl_pct": 16.22,
+   "pl_usd": 1314.6,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -41,9 +41,9 @@
    "symbol": "GLXY",
    "qty": 156.0,
    "avg_entry": 23.87,
-   "current": 26.24,
-   "pl_pct": 9.93,
-   "pl_usd": 369.64,
+   "current": 27.24,
+   "pl_pct": 14.12,
+   "pl_usd": 525.64,
    "entered": "2026-09-01",
    "stage": "CONFIRMED"
   },
@@ -51,19 +51,19 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 123.37,
-   "pl_pct": 41.76,
-   "pl_usd": 1490.16,
+   "current": 124.11,
+   "pl_pct": 42.61,
+   "pl_usd": 1520.5,
    "entered": "2026-07-28",
-   "stage": "CONFIRMED"
+   "stage": "Recovered"
   },
   {
    "symbol": "KLAC",
    "qty": 43.0,
    "avg_entry": 176.5,
-   "current": 186.07,
-   "pl_pct": 5.42,
-   "pl_usd": 411.3,
+   "current": 188.26,
+   "pl_pct": 6.66,
+   "pl_usd": 505.47,
    "entered": "2026-08-29",
    "stage": "CONFIRMED"
   },
@@ -71,9 +71,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1165.75,
-   "pl_pct": -0.44,
-   "pl_usd": -33.91,
+   "current": 1172.46,
+   "pl_pct": 0.13,
+   "pl_usd": 10.3,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -81,9 +81,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 1047.68,
-   "pl_pct": 17.55,
-   "pl_usd": 1513.96,
+   "current": 1097.96,
+   "pl_pct": 23.19,
+   "pl_usd": 2000.64,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -91,19 +91,19 @@
    "symbol": "NBIS",
    "qty": 18.0,
    "avg_entry": 198.3,
-   "current": 235.3,
-   "pl_pct": 18.66,
-   "pl_usd": 666.05,
-   "entered": "2026-09-01",
-   "stage": "CONFIRMED"
+   "current": 236.5,
+   "pl_pct": 19.27,
+   "pl_usd": 687.65,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 72.34,
-   "pl_pct": -12.36,
-   "pl_usd": -928.2,
+   "current": 74.0,
+   "pl_pct": -10.35,
+   "pl_usd": -777.14,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -111,9 +111,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 450.9,
-   "pl_pct": -15.16,
-   "pl_usd": -1288.76,
+   "current": 464.76,
+   "pl_pct": -12.55,
+   "pl_usd": -1066.99,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -124,8 +124,7 @@
   "INTC": "2026-07-28",
   "ON": "2026-07-30",
   "KLAC": "2026-08-29",
-  "GLXY": "2026-09-01",
-  "NBIS": "2026-09-01"
+  "GLXY": "2026-09-01"
  },
  "seeded": true,
  "ledger": [
@@ -332,6 +331,12 @@
    "action": "SELL",
    "symbol": "COHR",
    "note": "left universe"
+  },
+  {
+   "date": "2026-09-22",
+   "action": "SELL",
+   "symbol": "NBIS",
+   "note": "breakdown to stage 2 (Base building)"
   }
  ]
 }

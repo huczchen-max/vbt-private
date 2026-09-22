@@ -1,4 +1,4 @@
-"""Long-base pattern study — wide universe (v0.6, 2026-09-12).
+"""Long-base pattern study — wide universe (v0.7, 2026-09-22).
 
 Pattern (Eric): extended base (A) -> slow grind (B) -> range break (C), any
 timescale, deep prior drawdown NOT required. Questions: how long does B last,
@@ -36,16 +36,35 @@ CONTRACTION + RISK (v0.6, Eric 2026-09-12, "dive deeper into tight bases"):
      rows > 0.3 are excluded from summaries).
   B. 52-week horizon (ret52/exc52/mae52) and risk-adjusted views per bin:
      ret/|MAE| (ex post) and ret26 / expected 26-wk vol from pre_vol (ex ante).
+RSI DIVERGENCE (v0.7, Eric 2026-09-22, the IOVA shape): price flat while RSI
+  makes higher highs (bottom) — or the mirror at a top. Two new causal states,
+  evaluated every week an open base exists and fired the FIRST week they turn
+  true (one per base per kind, same as COMP/ANTI):
+    DIVUP = pos <= 0.5 & RSI14 > 50 & last two RSI swing highs (k=4, both
+            inside the base, latest within 26 wks) rising by >= DIV_MARGIN
+            points while the price at those swing highs is NOT higher
+            (px_h2 <= px_h1 x (1+DIV_PX_TOL))          -> early-entry candidate
+    DIVDN = pos >= 0.5 & RSI14 < 50 & RSI swing highs FALLING by >= DIV_MARGIN
+            while price at them is NOT lower (px_h2 >= px_h1 x (1-DIV_PX_TOL))
+                                                        -> early-exit candidate
+  Each DIV row also records wk_to_comp / wk_to_anti (weeks until the base's
+  COMP / ANTI state fires, if ever) and ret_to_comp / ret_to_anti (price change
+  to that bar) so DIVDN can be scored as a front-runner of the ANTI warning and
+  DIVUP as a front-runner of the composite trigger. rsi_slope26 (RSI regression
+  slope over the last 26 wks, pts/wk) and px_slope26 (price drift, %/wk) are
+  recorded for every signal as a continuous version of the same idea.
+  R = 3.0 added (IOVA's 2025-26 range was 2.4x, invisible at R <= 2.0).
 Outputs (in --out dir): base_events.csv, base_signals.csv, base_live.csv
   (bases open NOW, listed names only, current as-of), base_summary.json.
 """
 import argparse, json, sys
 import numpy as np, pandas as pd
 
-R_LIST = [1.5, 2.0]; LMIN = 26; LMAX = 156; CONFIRM_WK = 4; FWD = [13, 26, 52]; FLAT = 0.4
+R_LIST = [1.5, 2.0, 3.0]; LMIN = 26; LMAX = 156; CONFIRM_WK = 4; FWD = [13, 26, 52]; FLAT = 0.4
 MIN_PRICE = 3.0            # median close over the base
 MIN_WK_DOLLAR_VOL = 5e6    # median weekly $ volume over the base (~$1M/day)
 BENCH = ("SPY", "SMH", "QQQ")
+DIV_K = 4; DIV_MARGIN = 3.0; DIV_PX_TOL = 0.05; DIV_RECENT = 26   # v0.7 divergence parameters
 
 # ------------------------------------------------------------ helpers
 def weekly(df):
@@ -62,6 +81,35 @@ def rsi(c, n=14):
 
 def pivot_lows(c, k=4):
     v = c.values; return [i for i in range(k, len(v) - k) if v[i] == v[i-k:i+k+1].min()]
+
+def pivot_highs_arr(v, k=4):
+    """Indices of local maxima of a numpy array (k bars either side); NaNs never qualify."""
+    return [i for i in range(k, len(v) - k) if not np.isnan(v[i]) and v[i] == np.nanmax(v[i-k:i+k+1])]
+
+def divergence_at(v, r, rhighs, s, t):
+    """v0.7: RSI-vs-price divergence state at bar t for the base starting at s.
+    Returns (kind or None, diag dict). rhighs = precomputed RSI pivot-high indices."""
+    seg = v[s:t+1]; bhi, blo = seg.max(), seg.min()
+    if bhi <= blo or np.isnan(r[t]):
+        return None, {}
+    pos = (v[t] - blo) / (bhi - blo)
+    ph = [i for i in rhighs if s <= i <= t - DIV_K]        # causal: a pivot needs DIV_K bars after it
+    if len(ph) < 2 or t - ph[-1] > DIV_RECENT:
+        return None, {}
+    h1, h2 = ph[-2], ph[-1]
+    d = dict(rsi_h1=round(float(r[h1]), 1), rsi_h2=round(float(r[h2]), 1), px_h2_over_h1=round(float(v[h2] / v[h1]), 3),
+             wk_h1_h2=int(h2 - h1), wk_since_h2=int(t - h2))
+    if pos <= 0.5 and r[t] > 50 and r[h2] >= r[h1] + DIV_MARGIN and v[h2] <= v[h1] * (1 + DIV_PX_TOL):
+        return "DIVUP", d
+    if pos >= 0.5 and r[t] < 50 and r[h2] <= r[h1] - DIV_MARGIN and v[h2] >= v[h1] * (1 - DIV_PX_TOL):
+        return "DIVDN", d
+    return None, d
+
+def slope26(x, t):
+    """Regression slope over the last 26 bars ending at t (per bar); NaN if short."""
+    seg = x[max(0, t-25):t+1]; seg = seg[~np.isnan(seg)]
+    if len(seg) < 20: return np.nan
+    k, _ = np.polyfit(np.arange(len(seg)), seg, 1); return float(k)
 
 def longest_window_len(v, R):
     n = len(v); L = np.zeros(n, dtype=int); s = 0
@@ -122,6 +170,7 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
     L = longest_window_len(v, R)
     ma13 = c.rolling(13).mean(); ma26 = c.rolling(26).mean(); ma200 = c.rolling(200, min_periods=100).mean()
     rs = rsi(c); ret = c.pct_change(); plows = sorted(pivot_lows(c)); retv = ret.values
+    rhighs = pivot_highs_arr(rs.values, DIV_K)
     events = []; last_break = -1; down_breaks = []
 
     def base_ok(s, e):
@@ -151,6 +200,9 @@ def detect(ticker, w, benches, R, delisted=False, live_only=False):
                         **tightness(base.values.astype(float)), pre_vol=pre_vol(retv, s),
                         **lead_features(c, ma13, ma26, rs, plows, s, e, "now"))
             live.update(extra_feats(base.values.astype(float), w["dvol"].values[s:e+1], retv[s:e+1], live["mad_med"], live["pre_vol"]))
+            ck, _ = composite_at(v, ma13.values, ma26.values, rs.values, s, e); dk, dd = divergence_at(v, rs.values, rhighs, s, e)
+            live["state_now"] = ck or dk; live.update({f"{k}_now": val for k, val in dd.items()})
+            live["rsi_slope26"] = round(slope26(rs.values, e), 2); live["px_slope26"] = round(slope26(v / v[e] * 100, e), 2)
     if live_only:
         return [], live
 
@@ -234,12 +286,16 @@ def signals(ticker, w, benches, spy_regime, R, delisted=False, down_breaks=()):
     L = longest_window_len(v, R)
     ma13 = c.rolling(13).mean(); ma26 = c.rolling(26).mean(); rs = rsi(c); retv = c.pct_change().values
     m13, m26, r_ = ma13.values, ma26.values, rs.values
+    rhighs = pivot_highs_arr(r_, DIV_K)
     out = []; prev_kind = None; prev_start = -1; last_fire = {}
     for t in range(LMIN, n):
         if not (LMIN <= L[t] <= LMAX):
             prev_kind = None; continue
         s = t - L[t] + 1
         kind, pos = composite_at(v, m13, m26, r_, s, t)
+        diag = {}
+        if kind is None:                                   # v0.7: COMP/ANTI take precedence; DIV states are mutually exclusive with them anyway
+            kind, diag = divergence_at(v, r_, rhighs, s, t)
         fire = kind is not None and not (kind == prev_kind and s == prev_start)
         # one signal of each kind per base (base identified by its start bar)
         if fire and last_fire.get((kind, s)) is not None:
@@ -264,6 +320,17 @@ def signals(ticker, w, benches, spy_regime, R, delisted=False, down_breaks=()):
                    **tightness(base.values.astype(float)), pre_vol=pre_vol(retv, s), spring=spring_flag(down_breaks, s),
                    regime_spy_up=(bool(spy_regime.loc[c.index[t]]) if spy_regime is not None and c.index[t] in spy_regime.index else None))
         row.update(extra_feats(base.values.astype(float), w["dvol"].values[s:t+1], retv[s:t+1], row["mad_med"], row["pre_vol"]))
+        row.update(diag); row["rsi_slope26"] = round(slope26(r_, t), 2); row["px_slope26"] = round(slope26(v / v[t] * 100, t), 2)
+        if kind in ("DIVUP", "DIVDN"):
+            # v0.7: does the base's COMP (after DIVUP) / ANTI (after DIVDN) state fire later, and where is price then?
+            want = "COMP" if kind == "DIVUP" else "ANTI"; hit = None
+            for j in range(t + 1, min(n, t + 53)):
+                if not (LMIN <= L[j] <= LMAX) or j - L[j] + 1 != s: break        # same base only
+                k2, _ = composite_at(v, m13, m26, r_, s, j)
+                if k2 == want: hit = j; break
+            tag = "comp" if want == "COMP" else "anti"
+            row[f"wk_to_{tag}"] = (hit - t) if hit else None
+            row[f"ret_to_{tag}"] = round(float(v[hit] / ct - 1) * 100, 1) if hit else np.nan
         # what happened next within 26 weeks: first close beyond the band as of t
         nxt = "NONE"; wk_to_break = None
         for j in range(t + 1, min(n, t + 27)):
@@ -347,7 +414,19 @@ def summarize_signals(df, bench_name):
                           vcp=risk_block(g[(g.contr8 < 0.8) & (g.vol_dry8 < 0.9)], exc),
                           vcp_listed_lowvol=risk_block(g[(g.contr8 < 0.8) & (g.vol_dry8 < 0.9) & (g.delisted == False) & (g.vol_tercile == "lowvol")], exc) if g["vol_tercile"] is not None else {},
                           vcp_x_tightness={str(k): risk_block(h, exc) for k, h in g[(g.contr8 < 0.8) & (g.vol_dry8 < 0.9)].groupby("tight_bin", observed=True) if len(h) >= 30})
-            sec[kind] = dict(all=block(g), listed_only=block(g[g.delisted == False]), v06=v6,
+            v7 = {}
+            if kind in ("DIVUP", "DIVDN") and len(g):
+                tag = "comp" if kind == "DIVUP" else "anti"; wk = g[f"wk_to_{tag}"]
+                v7 = dict(**{f"{tag}_follows_share": round(float(wk.notna().mean()), 2), f"wk_to_{tag}_q": q(wk.dropna()), f"ret_to_{tag}_med": (None if g[f"ret_to_{tag}"].isna().all() else round(float(g[f"ret_to_{tag}"].median()), 1))},
+                          rsi_h1_q=q(g.rsi_h1), rsi_h2_q=q(g.rsi_h2), wk_h1_h2_q=q(g.wk_h1_h2),
+                          by_rsi_gap={str(k): risk_block(h, exc) for k, h in g.groupby(pd.cut(g.rsi_h2 - g.rsi_h1, [-99, -10, -5, 5, 10, 99], labels=["<-10", "-10..-5", "-5..5", "5..10", ">10"]), observed=True) if len(h) >= 30},
+                          by_pos={str(k): risk_block(h, exc) for k, h in g.groupby(pd.cut(g.pos, [-.01, .2, .35, .5, .65, .8, 1.01], labels=["0-.2", ".2-.35", ".35-.5", ".5-.65", ".65-.8", ".8-1"]), observed=True) if len(h) >= 30},
+                          risk=risk_block(g, exc), risk_listed=risk_block(g[g.delisted == False], exc),
+                          risk_listed_x_vol={str(k): risk_block(h, exc) for k, h in g[g.delisted == False].groupby("vol_tercile", observed=True) if len(h) >= 30} if g["vol_tercile"] is not None else {})
+            if "rsi_slope26" in g and len(g) >= 60:
+                g["rsi_slope_bin"] = pd.cut(g.rsi_slope26, [-99, -0.5, -0.1, 0.1, 0.5, 99], labels=["falling fast", "falling", "flat", "rising", "rising fast"])
+                v7["by_rsi_slope26"] = {str(k): risk_block(h, exc) for k, h in g.groupby("rsi_slope_bin", observed=True) if len(h) >= 30}
+            sec[kind] = dict(all=block(g), listed_only=block(g[g.delisted == False]), v06=v6, v07=v7,
                              spy_up=block(g[g.regime_spy_up == True]), spy_down=block(g[g.regime_spy_up == False]),
                              spring=block(g[g.spring == True]), no_spring=block(g[g.spring == False]),
                              by_tightness={str(k): block(h) for k, h in g.groupby("tight_bin", observed=True)},
@@ -468,8 +547,11 @@ def main():
         summ["live_screen"] = dict(open_bases=int(len(lv)), composite_now=int(len(scr)), tickers={str(R): sorted(scr[scr.R == R].ticker.tolist()) for R in R_LIST},
                                    by_tightness={str(R): scr[scr.R == R].groupby("tight_bin").size().to_dict() for R in R_LIST},
                                    vcp_now={str(R): sorted(scr[(scr.R == R) & (scr.contr8 < 0.8) & (scr.vol_dry8 < 0.9)].ticker.tolist()) for R in R_LIST} if "contr8" in scr else {},
-                                   tight_contracting_now={str(R): sorted(scr[(scr.R == R) & (scr.mad_med < 0.07) & (scr.contr8 < 0.8)].ticker.tolist()) for R in R_LIST} if "contr8" in scr else {})
-    summ["_meta"] = dict(tickers=len(tickers), events=int(len(df)), signals=int(len(sg)), live_bases=int(len(lv)), asof=str(asof_all.date()), prices=a.prices, params=dict(R=R_LIST, LMIN=LMIN, LMAX=LMAX, CONFIRM_WK=CONFIRM_WK, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_WK_DOLLAR_VOL=MIN_WK_DOLLAR_VOL))
+                                   tight_contracting_now={str(R): sorted(scr[(scr.R == R) & (scr.mad_med < 0.07) & (scr.contr8 < 0.8)].ticker.tolist()) for R in R_LIST} if "contr8" in scr else {},
+                                   divup_now={str(R): sorted(lv[(lv.R == R) & (lv.state_now == "DIVUP")].ticker.tolist()) for R in R_LIST} if "state_now" in lv else {},
+                                   divdn_now={str(R): sorted(lv[(lv.R == R) & (lv.state_now == "DIVDN")].ticker.tolist()) for R in R_LIST} if "state_now" in lv else {},
+                                   rsi_rising_low_in_band={str(R): sorted(lv[(lv.R == R) & (lv.pos_now <= 0.5) & (lv.rsi_slope26 > 0.5) & (lv.rsi_now > 50)].ticker.tolist()) for R in R_LIST} if "rsi_slope26" in lv else {})
+    summ["_meta"] = dict(tickers=len(tickers), events=int(len(df)), signals=int(len(sg)), live_bases=int(len(lv)), asof=str(asof_all.date()), prices=a.prices, params=dict(R=R_LIST, LMIN=LMIN, LMAX=LMAX, CONFIRM_WK=CONFIRM_WK, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_WK_DOLLAR_VOL=MIN_WK_DOLLAR_VOL, DIV=dict(K=DIV_K, MARGIN=DIV_MARGIN, PX_TOL=DIV_PX_TOL, RECENT=DIV_RECENT)), version="0.7")
     json.dump(summ, open(f"{a.out}/base_summary.json", "w"), indent=1, default=str)
     print(json.dumps(summ, indent=1, default=str))
 

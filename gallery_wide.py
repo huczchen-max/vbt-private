@@ -9,6 +9,8 @@ Sets (listed names only, seeded random sample, R=1.5 unless noted):
   loose_up       MAD 10-15%, confirmed UP break (contrast)
   live_tight     open bases now, MAD < 7%, composite state (the live screen)
   live_vcp       open bases now, contr8 < 0.8 and vol_dry8 < 0.9
+  live_divup     v0.7: open bases now in the DIVUP state (price low in band, RSI higher highs), any R
+  live_divdn     v0.7: open bases now in the DIVDN state (price high in band, RSI lower highs), any R
 Usage: python gallery_wide.py --prices eodhd_cache/eod_us.parquet --in private --out private/gallery
 """
 import argparse, math, os
@@ -35,7 +37,7 @@ def panel(ax, c, r, live=False):
         ret = f"  26w {r.ret26:+.0f}%" if pd.notna(r.ret26) else ""
         head = f"{r.ticker}  {r.dir} · {conf}{ret}"
     else:
-        head = f"{r.ticker}  LIVE  close {r.close}  pos {r.pos_now:.2f} rsi {r.rsi_now:.0f} ma13>26 {r.ma_now}"
+        head = f"{r.ticker}  LIVE {r.state_now if 'state_now' in r and isinstance(r.state_now, str) else ''}  close {r.close}  pos {r.pos_now:.2f} rsi {r.rsi_now:.0f} ma13>26 {r.ma_now}"
     extra = f"MAD {r.mad_med*100:.1f}%"
     if "contr8" in r and pd.notna(r.contr8): extra += f"  contr8 {r.contr8:.2f}  voldry8 {r.vol_dry8:.2f}"
     ax.set_title(f"{head}\nbase {r.base_len}w  {str(r.start)[:7]}→{str(e.date())[:7]}   {extra}", fontsize=7.5, color=INK, loc="left")
@@ -74,6 +76,10 @@ def main():
     l = lv[lv.R == 1.5]
     sets["live_tight"] = l[(l.mad_med < 0.07) & (l.pos_now > 0.66) & (l.rsi_now > 55) & (l.ma_now == True)].sort_values("mad_med").head(N_PER_SET)
     if "contr8" in l: sets["live_vcp"] = l[(l.contr8 < 0.8) & (l.vol_dry8 < 0.9)].sort_values("contr8").head(N_PER_SET)
+    if "state_now" in lv:
+        for st in ("DIVUP", "DIVDN"):
+            d = lv[lv.state_now == st].sort_values("R").drop_duplicates("ticker")
+            sets[f"live_{st.lower()}"] = d.sort_values("rsi_slope26", ascending=(st == "DIVDN")).head(N_PER_SET)
     need = set(pd.concat([d.ticker for d in sets.values() if len(d)]).unique())
     px = pd.read_parquet(a.prices, filters=[("ticker", "in", list(need))])
     W = {t: weekly(g) for t, g in px.groupby("ticker")}

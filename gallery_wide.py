@@ -23,7 +23,7 @@ TEAL, SLATE, ORANGE, INK = "#0F766E", "#64748B", "#C2410C", "#1E293B"
 PER_PAGE, COLS, N_PER_SET, SEED = 9, 3, 18, 7
 
 def panel(ax, c, r, live=False):
-    s = pd.Timestamp(r.start); e = pd.Timestamp(r["end"] if not live else r.asof)
+    s = pd.Timestamp(r.start); e = pd.Timestamp(r["end"] if not live else r["asof"])
     b = None if live else pd.Timestamp(r.break_date)
     i0 = max(0, c.index.get_loc(s) - 26); i1 = min(len(c), c.index.get_loc(e if live else b) + (1 if live else 27))
     seg = c.iloc[i0:i1]
@@ -56,7 +56,7 @@ def render(name, df, W, out, live=False):
             if r.ticker not in W: continue
             ax.set_visible(True)
             try: panel(ax, W[r.ticker]["close"], r, live)
-            except Exception as ex: ax.set_title(f"{r.ticker}: {ex}", fontsize=7)
+            except Exception as ex: ax.set_title(f"{r.ticker}: {type(ex).__name__}: {str(ex)[:60]}", fontsize=7)
         fig.suptitle(f"{name} — page {p+1}/{pages}  (grey = base; teal/orange line = UP/DOWN break)", fontsize=10, color=TEAL, x=0.01, ha="left")
         fig.tight_layout(rect=(0, 0, 1, 0.97)); f = f"{out}/{name}_{p+1}.png"; fig.savefig(f, dpi=105); plt.close(fig); files.append(f)
     return files

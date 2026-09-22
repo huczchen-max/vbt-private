@@ -1,4 +1,4 @@
-"""Long-base pattern study — wide universe (v0.7, 2026-09-22).
+"""Long-base pattern study — wide universe (v0.7.1, 2026-09-22).
 
 Pattern (Eric): extended base (A) -> slow grind (B) -> range break (C), any
 timescale, deep prior drawdown NOT required. Questions: how long does B last,
@@ -83,8 +83,9 @@ def pivot_lows(c, k=4):
     v = c.values; return [i for i in range(k, len(v) - k) if v[i] == v[i-k:i+k+1].min()]
 
 def pivot_highs_arr(v, k=4):
-    """Indices of local maxima of a numpy array (k bars either side); NaNs never qualify."""
-    return [i for i in range(k, len(v) - k) if not np.isnan(v[i]) and v[i] == np.nanmax(v[i-k:i+k+1])]
+    """Indices of local maxima of a numpy array (k bars either side); NaNs never qualify.
+    v0.7.1: strictly above the k bars before it (a flat plateau counts once, at its first bar)."""
+    return [i for i in range(k, len(v) - k) if not np.isnan(v[i]) and v[i] > np.nanmax(v[i-k:i]) and v[i] >= np.nanmax(v[i+1:i+k+1])]
 
 def divergence_at(v, r, rhighs, s, t):
     """v0.7: RSI-vs-price divergence state at bar t for the base starting at s.

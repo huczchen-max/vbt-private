@@ -96,6 +96,7 @@ pre.json{font-family:var(--mono);font-size:11.5px;background:var(--surface2);pad
     <button role="tab" data-tab="options">Options</button>
     <button role="tab" data-tab="scanners">Scanners</button>
     <button role="tab" data-tab="bases">Bases</button>
+    <button role="tab" data-tab="divergence">Divergence</button>
     <button role="tab" data-tab="charts">Charts</button>
     <button role="tab" data-tab="docs">Docs &amp; studies</button>
   </nav>
@@ -151,11 +152,18 @@ pre.json{font-family:var(--mono);font-size:11.5px;background:var(--surface2);pad
 <section class="tab" id="tab-bases">
   <div class="tiles" id="ba-tiles"></div>
   <div class="card"><h2>Live base screen <span class="r" id="ba-asof"></span></h2>
-    <div class="ctl"><select id="ba-state"><option value="">any state</option><option>COMP</option><option>ANTI</option><option>DIVUP</option><option>DIVDN</option></select><select id="ba-R"><option value="">any band</option><option>1.5</option><option>2.0</option><option>3.0</option></select><input id="ba-filter" placeholder="filter ticker"><a class="btn" id="ba-review" href="../div_screen/div_review.html" target="_blank">Open divergence review ↗</a></div>
+    <div class="ctl"><select id="ba-state"><option value="">any state</option><option>COMP</option><option>ANTI</option><option>DIVUP</option><option>DIVDN</option></select><select id="ba-R"><option value="">any band</option><option>1.5</option><option>2.0</option><option>3.0</option></select><input id="ba-filter" placeholder="filter ticker"><a class="btn" href="#divergence">Divergence tab →</a></div>
     <div class="tw" id="ba-table"></div></div>
-  <div class="card"><h2>Divergence screen · strict lists <span class="r" id="ds-asof"></span></h2><div class="tw" id="ds-table" style="max-height:none"></div><div class="note" style="margin-top:6px">Strict = pivot-to-pivot RSI divergence inside an open base; broad = slope-based grade. Charts, bar data and your Y/N labels live in the review page above.</div></div>
-  <div class="card"><h2>Divergence screen · chart pages</h2><div class="gal" id="ds-gallery"></div></div>
   <div class="card"><h2>Base study gallery</h2><div class="gal" id="ba-gallery"></div></div>
+</section>
+
+<section class="tab" id="tab-divergence">
+  <div class="tiles" id="ds-tiles"></div>
+  <div class="card"><h2>Review page · charts + Y/N labels <span class="r"><a id="ds-open" href="../div_screen/div_review.html" target="_blank">open in its own tab ↗</a></span></h2>
+    <div id="ds-frame-wrap"><iframe id="ds-frame" title="Divergence review" style="width:100%;height:82vh;border:1px solid var(--line);border-radius:8px;background:var(--surface)"></iframe></div>
+    <div class="note" style="margin-top:6px">Keys work once you click inside the page: ←/→ next chart · Y/N/U label · L jump to unlabeled · / search. Labels are kept by the browser and exported with "Download labels.csv".</div></div>
+  <div class="card"><h2>Strict lists by scale <span class="r" id="ds-asof"></span></h2><div class="tw" id="ds-table" style="max-height:none"></div><div class="note" style="margin-top:6px">Strict = pivot-to-pivot RSI divergence inside an open base (DIVUP = price flat at the bottom of the range while RSI makes higher highs, the IOVA shape; DIVDN = the mirror at the top). Broad = slope-based grade. Bands are bar-scaled: weekly 1.5/2.0/3.0×, daily 1.22/1.45/1.89×, hourly 1.09/1.18/1.35×.</div></div>
+  <div class="card"><h2>Chart pages (PNG)</h2><div class="gal" id="ds-gallery"></div></div>
 </section>
 
 <section class="tab" id="tab-charts">
@@ -224,7 +232,7 @@ function table(el, rows, cols, opts){
 function tiles(el, items){ $(el).innerHTML=items.map(t=>'<div class="tile"><div class="v '+(t.cls||"")+'">'+t.v+'</div><div class="l">'+esc(t.l)+'</div>'+(t.s?'<div class="s">'+esc(t.s)+'</div>':"")+'</div>').join(""); }
 
 // ---------- tabs ----------
-function showTab(name){ document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===name))); document.querySelectorAll("section.tab").forEach(s=>s.classList.toggle("active",s.id==="tab-"+name)); try{localStorage.setItem("vbt.console.tab",name);}catch(e){} if(name==="charts") drawChart(); }
+function showTab(name){ document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===name))); document.querySelectorAll("section.tab").forEach(s=>s.classList.toggle("active",s.id==="tab-"+name)); try{localStorage.setItem("vbt.console.tab",name);}catch(e){} if(name==="charts") drawChart(); if(name==="divergence") initDivergence(); }
 document.querySelectorAll("nav.tabs button").forEach(b=>b.addEventListener("click",()=>{ location.hash=b.dataset.tab; showTab(b.dataset.tab); }));
 
 // ---------- load everything ----------
@@ -234,7 +242,7 @@ async function load(){
     getJSON(P+"llm_today.json"), getJSON(P+"radar_latest.json"), getJSON(P+"radar_watch.json"), getJSON(P+"winners.json"), getJSON(P+"winners_llm.json"), getJSON(P+"exhaustion_watch.json"), getJSON(P+"exhaustion_llm.json"),
     getText(P+"base_live.csv"), getJSON(P+"base_summary.json"), getJSON(P+"div_screen/div_screen.json")]);
   Object.assign(S,{signals,paper,thesisPaper,thesisState,optionsPaper,optionsJournal:optionsJournal?parseCSV(optionsJournal):null,llmToday,radar,radarWatch,winners,winnersLLM,exh,exhLLM,baseLive:baseLive?parseCSV(baseLive):null,baseSummary,divScreen});
-  renderOverview(); renderTracker(); renderThesis(); renderOptions(); renderScanners(); renderBases(); renderDocs();
+  renderOverview(); renderTracker(); renderThesis(); renderOptions(); renderScanners(); renderBases(); renderDivergence(); renderDocs();
   const missing=[["signals.json (vbt-data)",signals],["paper.json",paper],["thesis_state.json",thesisState],["radar_latest.json",radar],["winners.json",winners],["exhaustion_watch.json",exh],["base_live.csv",baseLive]].filter(x=>!x[1]).map(x=>x[0]);
   $("#asof").textContent=(signals?"signals "+signals.as_of+" · ":"")+(paper?"paper "+paper.as_of+" · ":"")+(thesisState?"thesis "+thesisState.date:"")+(missing.length?" · missing: "+missing.join(", "):"");
   const t=(location.hash||"").slice(1)||(()=>{try{return localStorage.getItem("vbt.console.tab")}catch(e){return null}})()||"overview"; showTab(document.getElementById("tab-"+t)?t:"overview");
@@ -343,15 +351,25 @@ function renderBases(){
     const draw=()=>{ const st=$("#ba-state").value, R=$("#ba-R").value, q=($("#ba-filter").value||"").toUpperCase(); table("#ba-table", rows.filter(r=>(!st||r.state_now===st)&&(!R||String(r.R)===R)&&(!q||r.ticker.includes(q))), [{k:"ticker",l:"Ticker",f:v=>'<span class="tk">'+esc(v)+'</span>'},{k:"R",l:"Band",num:true,f:v=>f1(v)+"×"},{k:"state_now",l:"State",f:v=>v?badge(v,v==="COMP"||v==="DIVUP"?"b-good":v==="ANTI"||v==="DIVDN"?"b-crit":"b-mut"):""},{k:"base_len",l:"Weeks",num:true},{k:"start",l:"Since"},{k:"close",l:"Close",num:true,f:v=>f2(v)},{k:"pos_now",l:"Pos in band",num:true,f:v=>f2(v)},{k:"rsi_now",l:"RSI",num:true,f:v=>f1(v)},{k:"rsi_slope26",l:"RSI slope",num:true,f:v=>f2(v)},{k:"mad_med",l:"MAD/med",num:true,f:v=>v==null?"—":(v*100).toFixed(1)+"%"},{k:"contr8",l:"Contr8",num:true,f:v=>f2(v)},{k:"vol_dry8",l:"Vol dry8",num:true,f:v=>f2(v)},{k:"prior_dd",l:"Prior DD",num:true,f:v=>v==null?"—":pct(v*100)}], {sort:"pos_now",limit:600}); };
     ["#ba-state","#ba-R"].forEach(s=>$(s).addEventListener("change",draw)); $("#ba-filter").addEventListener("input",draw); draw();
   } else $("#ba-table").innerHTML='<div class="miss">base_live.csv not found</div>';
-  // divergence screen lists (ticker names per scale/direction/grade)
+  // gallery: parse the directory listing the local server provides
+  listPNGs(P+"gallery/").then(n=>gallery("#ba-gallery",P+"gallery/",n,"gallery/ not found"));
+}
+
+// ---------- divergence ----------
+let dsFrameLoaded=false;
+function initDivergence(){ if(dsFrameLoaded) return; dsFrameLoaded=true;
+  exists(P+"div_screen/div_review.html").then(ok=>{ if(ok){ $("#ds-frame").src=P+"div_screen/div_review.html"; } else { $("#ds-frame-wrap").innerHTML='<div class="miss">div_screen/div_review.html is not built yet — it is written by the next <code>screen</code> run (or copy Divergence_Review.html from ~/Projects/VBT/div-screen into vbt-private/div_screen/div_review.html).</div>'; $("#ds-open").remove(); } });
+}
+function renderDivergence(){
+  const ds=S.divScreen;
   if(ds&&ds.lists){ $("#ds-asof").textContent="as of "+ds.asof; const chips=a=>'<div class="chips">'+(a||[]).map(t=>'<span class="chip">'+esc(t)+'</span>').join("")+'</div>';
     const rows=(ds.scales||Object.keys(ds.lists)).filter(s=>ds.lists[s]).map(s=>{ const l=ds.lists[s], c=l.counts||{}; return {scale:s, bars:c.asof||"", bases:c.open_base_rows, upS:(l.UP||{}).strict||[], upB:(l.UP||{}).broad||[], dnS:(l.DN||{}).strict||[], dnB:(l.DN||{}).broad||[]}; });
+    const tl=[]; rows.forEach(r=>{ tl.push({v:String(r.upS.length),l:r.scale+" · bottom divergence (strict)",s:"broad +"+r.upB.length,cls:"pos"}); tl.push({v:String(r.dnS.length),l:r.scale+" · top divergence (strict)",s:"broad +"+r.dnB.length,cls:"neg"}); });
+    tl.push({v:String(rows.reduce((a,r)=>a+r.upS.length+r.dnS.length,0)),l:"strict names, all scales",s:"screen as of "+ds.asof});
+    tiles("#ds-tiles",tl);
     $("#ds-table").innerHTML='<table><thead><tr><th>Scale</th><th>Last bar</th><th class="num">Open base rows</th><th>Bottom divergence · strict</th><th>Bottom · broad</th><th>Top divergence · strict</th><th>Top · broad</th></tr></thead><tbody>'+rows.map(r=>'<tr><td class="tk nw">'+esc(r.scale)+'</td><td class="nw note">'+esc(r.bars)+'</td><td class="num">'+f0(r.bases)+'</td><td>'+badge(r.upS.length+" names","b-good")+chips(r.upS)+'</td><td>'+chips(r.upB)+'</td><td>'+badge(r.dnS.length+" names","b-crit")+chips(r.dnS)+'</td><td>'+chips(r.dnB)+'</td></tr>').join("")+'</tbody></table>';
-  } else $("#ds-table").innerHTML='<div class="miss">div_screen/div_screen.json not found — run the <code>screen</code> mode once</div>';
-  // galleries: parse the directory listings the local server provides
+  } else { $("#ds-tiles").innerHTML=""; $("#ds-table").innerHTML='<div class="miss">div_screen/div_screen.json not found — run the <code>screen</code> mode once</div>'; }
   listPNGs(P+"div_screen/").then(n=>gallery("#ds-gallery",P+"div_screen/",n,"div_screen/ not found"));
-  listPNGs(P+"gallery/").then(n=>gallery("#ba-gallery",P+"gallery/",n,"gallery/ not found"));
-  exists(P+"div_screen/div_review.html").then(ok=>{ if(!ok){ $("#ba-review").textContent="Divergence review (not built yet — next 'screen' run)"; $("#ba-review").removeAttribute("href"); } });
 }
 
 // ---------- charts (daily/weekly from prices.csv) ----------

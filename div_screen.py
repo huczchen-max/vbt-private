@@ -1,4 +1,9 @@
-"""Multi-scale divergence screen (v0.3, 2026-09-23).
+"""Multi-scale divergence screen (v0.4, 2026-09-23).
+
+v0.4: the review page carries long history behind every chart — CTX_BARS = weekly
+780 (15 y), daily 756 (3 y), hourly 900 (~6 months of regular-session bars, the
+intraday pull is 200 days) — with a compact encoding (t0 + bar deltas, closes at
+2 dp) so the page stays a few MB; the page zooms base / mid / max per scale.
 
 Eric: "compile a list of stocks with these types of patterns on a weekly, daily,
 hourly scale" — the IOVA shape (price flat in the lower part of a long range while
@@ -163,29 +168,44 @@ def render(rows, W, scale, out, label):
     return files
 
 # ------------------------------------------------------------ series export (v0.3)
-def export_series(dv, W, out, asof, scales, reference=("IOVA",), n_ctx=26):
-    """Compact JSON of the bars behind every listed divergence (base + n_ctx bars of context) for the review page."""
-    def fmt(idx, scale):
-        return [(pd.Timestamp(x).strftime("%Y-%m-%dT%H:%M") if scale == "hourly" else pd.Timestamp(x).strftime("%Y-%m-%d")) for x in idx]
+CTX_BARS = {"weekly": 780, "daily": 756, "hourly": 900}   # v0.4 history behind each chart: 15 y / 3 y / ~6 months of regular-session hours
+N_CTX_MIN = 26                                              # never less than base + 26 bars
+
+def encode_bars(idx, c, rs, scale):
+    """Compact series: t0 + deltas (days for weekly/daily, minutes for hourly), closes at 2 dp (4 dp under $10), RSI at 1 dp."""
+    ts = pd.DatetimeIndex(idx)
+    if ts.tz is not None: ts = ts.tz_localize(None)      # wall-clock (New York) deltas, so labels stay right across a DST change
+    if scale == "hourly":
+        t0 = ts[0].strftime("%Y-%m-%dT%H:%M"); u = "m"; off = ((ts - ts[0]).total_seconds() // 60).astype(int)
+    else:
+        t0 = ts[0].strftime("%Y-%m-%d"); u = "d"; off = (ts - ts[0]).days.astype(int)
+    dt = np.diff(off, prepend=0).tolist()
+    return dict(t0=t0, u=u, dt=dt, c=[round(float(x), 2 if x >= 10 else 4) for x in c], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs])
+
+def export_series(dv, W, out, asof, scales, reference=("IOVA",), ctx=None):
+    """Compact JSON of the bars behind every listed divergence — the last CTX_BARS[scale] bars (at least base + N_CTX_MIN) — for the review page."""
+    ctx = dict(CTX_BARS, **(ctx or {}))
     items = []
     for _, r in dv.iterrows():
         key = (r.ticker, r.scale)
         if key not in W: continue
-        w = W[key]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; e = len(c) - 1; s = int(r.s_idx); i0 = max(0, s - n_ctx)
+        w = W[key]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; e = len(c) - 1; s = int(r.s_idx)
+        i0 = max(0, min(s - N_CTX_MIN, e + 1 - int(ctx.get(r.scale, CTX_BARS["daily"]))))
         piv = [int(j) + (s - i0) for j in json.loads(r.ph_idx)]
         items.append(dict(id=f"{r.ticker}|{r.scale}", ticker=r.ticker, scale=r.scale, dir=r.div_dir, grade=r.div_grade, score=float(r.score), state=r.state, R=float(r.R),
                           base_len=int(r.base_len), capped=bool(r.base_capped), pos=float(r.pos), rsi=float(r.rsi),
                           rsi_h1=(None if pd.isna(r.get("rsi_h1", np.nan)) else float(r.rsi_h1)), rsi_h2=(None if pd.isna(r.get("rsi_h2", np.nan)) else float(r.rsi_h2)),
                           n_rise=int(r.n_rise), n_fall=int(r.n_fall), slope=(None if pd.isna(r.rsi_slope26) else float(r.rsi_slope26)), px_slope=(None if pd.isna(r.px_slope26) else float(r.px_slope26)),
                           prior_dd=(None if pd.isna(r.prior_dd) else float(r.prior_dd)), dvol=float(r.med_dvol), close=float(r.close), lo=float(r.base_lo), hi=float(r.base_hi),
-                          s=int(s - i0), t=fmt(w.index[i0:e + 1], r.scale), c=[round(float(x), 4) for x in c[i0:e + 1]], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs[i0:e + 1]], piv=piv))
+                          s=int(s - i0), piv=piv, **encode_bars(w.index[i0:e + 1], c[i0:e + 1], rs[i0:e + 1], r.scale)))
     ref = {}
     for tk in reference:
         for sc in scales:
             if (tk, sc) in W:
-                w = W[(tk, sc)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; i0 = max(0, len(c) - (LMAX + n_ctx))
-                ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, t=fmt(w.index[i0:], sc), c=[round(float(x), 4) for x in c[i0:]], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs[i0:]])
-    payload = dict(asof=str(asof), scales=scales, n=len(items), items=items, reference=ref, params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"])))
+                w = W[(tk, sc)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; i0 = max(0, len(c) - int(ctx.get(sc, CTX_BARS["daily"])))
+                ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, **encode_bars(w.index[i0:], c[i0:], rs[i0:], sc))
+    payload = dict(asof=str(asof), scales=scales, n=len(items), enc="dt1", ctx=ctx, items=items, reference=ref,
+                   params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"])))
     txt = json.dumps(payload, separators=(",", ":"), default=str)
     open(f"{out}/div_series.json", "w").write(txt)
     # v0.3: self-contained local review page (no server, no network) — template lives next to this script
@@ -225,7 +245,9 @@ def main():
     ap.add_argument("--no-series", action="store_true", help="skip div_series.json (the review-page data)")
     ap.add_argument("--reference", default="IOVA", help="comma-separated reference tickers to include in div_series.json")
     ap.add_argument("--px-tol", type=float, default=None, help="override DIV_PX_TOL (price tolerance between the swing highs; backtest used 0.05)")
+    ap.add_argument("--ctx", default="", help="bars of history behind each review chart, e.g. weekly=780,daily=756,hourly=900 (defaults: 15 y / 3 y / ~6 months)")
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True); scales = a.scales.split(",")
+    ctx = {k: int(v) for k, v in (kv.split("=") for kv in a.ctx.split(",") if "=" in kv)}
     import base_study_wide as bsw
     if a.div_margin is not None: bsw.DIV_MARGIN = a.div_margin
     if a.px_tol is not None: bsw.DIV_PX_TOL = a.px_tol
@@ -285,7 +307,7 @@ def main():
               open(f"{a.out}/div_screen.json", "w"), indent=1, default=str)
     open(f"{a.out}/div_screen.md", "w").write("\n".join(md))
     if not a.no_series:
-        print("series exported:", export_series(dv, W, a.out, asof.date(), scales, reference=tuple(x for x in a.reference.split(",") if x)))
+        print("series exported:", export_series(dv, W, a.out, asof.date(), scales, reference=tuple(x for x in a.reference.split(",") if x), ctx=ctx))
     print(json.dumps({sc: lists[sc]["counts"] for sc in scales}, indent=1))
     for sc in scales: print(sc, "UP strict", lists[sc]["UP"]["strict"], "broad", lists[sc]["UP"]["broad"][:30]); print(sc, "DN strict", lists[sc]["DN"]["strict"], "broad", lists[sc]["DN"]["broad"][:30])
     if a.no_gallery: return

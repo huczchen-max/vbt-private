@@ -66,7 +66,12 @@ main.chart{display:flex;flex-direction:column;min-height:0;min-width:0;backgroun
 .chart-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
 .chart-head .tk{font-size:22px;font-weight:600;font-family:var(--mono);letter-spacing:-.01em}
 .chart-head .desc{color:var(--muted);font-size:12.5px}
-.chart-head .nav{margin-left:auto;display:flex;gap:6px}
+.chart-head .nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.zoom{display:inline-flex;border:1px solid var(--line2);border-radius:7px;overflow:hidden;margin:0 4px}
+.zoom button{font:inherit;font-size:12px;padding:5px 9px;border:0;border-right:1px solid var(--line2);background:var(--surface);color:var(--muted);cursor:pointer}
+.zoom button:last-child{border-right:0} .zoom button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.ctxwrap{height:64px;margin-bottom:4px} .ctxwrap svg{width:100%;height:100%;display:block}
+svg .ctxpx{fill:none;stroke:var(--muted);stroke-width:1} svg .ctxwin{fill:var(--accent);opacity:.12;stroke:var(--accent);stroke-width:1} svg .ctxbase{fill:var(--band);opacity:.28}
 .btn{font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line2);border-radius:7px;background:var(--surface);color:var(--ink);cursor:pointer}
 .btn:hover{background:var(--surface2)}
 .btn[disabled]{opacity:.5;cursor:default}
@@ -169,9 +174,11 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
       <div class="nav">
         <button class="btn" id="prevBtn" type="button" title="Previous (←)">← Prev</button>
         <button class="btn" id="nextBtn" type="button" title="Next (→)">Next →</button>
+        <span class="zoom" id="zoom" role="group" aria-label="History shown"></span>
         <button class="btn" id="logBtn" type="button" aria-pressed="true" title="Toggle log / linear price axis">log</button>
       </div>
     </div>
+    <div class="ctxwrap"><svg class="chart" id="ctxsvg" role="img" aria-label="Full history with the shown window marked"></svg></div>
     <div class="svgwrap"><svg class="chart" id="svg" role="img" aria-label="Price and RSI chart"></svg></div>
     <div class="legend"><span><i class="sw band"></i> open base (band = its price range)</span><span><i class="sw piv"></i> RSI swing highs; the ringed pair is the one compared</span><span><i class="sw last"></i> last close</span></div>
     <details class="ref" id="ref">
@@ -200,7 +207,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
       <div class="summary" id="summary"></div>
     </div>
     <div class="keys">
-      <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>Y</kbd> <kbd>N</kbd> <kbd>U</kbd> label &nbsp; <kbd>L</kbd> log/linear &nbsp; <kbd>/</kbd> note
+      <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>Y</kbd> <kbd>N</kbd> <kbd>U</kbd> label &nbsp; <kbd>L</kbd> log/linear &nbsp; <kbd>Z</kbd> zoom &nbsp; <kbd>/</kbd> note
     </div>
     <details class="export">
       <summary class="note">Export labels (CSV)</summary>
@@ -221,8 +228,19 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
 (function(){
 "use strict";
 const $=s=>document.querySelector(s);
-const state={data:null,items:[],view:[],cur:0,scale:"weekly",dir:"UP",grade:"all",show:"all",minScore:0,sort:"score",log:true,labels:{},db:null,pending:false};
-const LS_KEY="divreview.labels.v1", LS_UI="divreview.ui.v1";
+const state={data:null,items:[],view:[],cur:0,scale:"weekly",dir:"UP",grade:"all",show:"all",minScore:0,sort:"score",log:true,labels:{},db:null,pending:false,zoom:{weekly:"mid",daily:"mid",hourly:"mid"}};
+const LS_KEY="divreview.labels.v1", LS_UI="divreview.ui.v2";
+// history shown per scale: base = base + 26 bars (the detail view); mid ≈ 260 bars (5 y / 1 y / 6 weeks — ~3.5 px per bar, RSI pivots still readable); max = all bars exported (15 y / 3 y / ~6 months)
+const ZOOM={weekly:[["base","base"],["mid","5 y"],["max","15 y"]],daily:[["base","base"],["mid","1 y"],["max","3 y"]],hourly:[["base","base"],["mid","6 wk"],["max","6 mo"]]};
+const MID_BARS={weekly:260,daily:252,hourly:210};
+function uiState(){ return {scale:state.scale,dir:state.dir,grade:state.grade,show:state.show,sort:state.sort,log:state.log,minScore:state.minScore,zoom:state.zoom}; }
+// v0.4 compact series: t0 + deltas (days or minutes) -> ISO strings once, at load
+function decodeBars(it){
+  if(it.t||!it.dt) return it;
+  const t=[]; let off=0; const base=it.u==="m"?Date.parse(it.t0+":00Z"):Date.parse(it.t0+"T00:00:00Z");
+  for(let i=0;i<it.dt.length;i++){ off+=it.dt[i]; const d=new Date(base+off*(it.u==="m"?60000:86400000)); const s=d.toISOString(); t.push(it.u==="m"?s.slice(0,16):s.slice(0,10)); }
+  it.t=t; return it;
+}
 
 // ---------- storage: db when available, localStorage as the fallback ----------
 function lsGet(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}}
@@ -246,17 +264,35 @@ async function load(){
   try{
     state.data=JSON.parse(document.getElementById("series-data").textContent);
   }catch(e){ $("#asof").textContent="Could not read the embedded series data"; return; }
-  state.items=state.data.items.map(it=>Object.assign({},it,{id:it.ticker+"|"+it.scale}));
+  state.items=state.data.items.map(it=>decodeBars(Object.assign({},it,{id:it.ticker+"|"+it.scale})));
+  Object.values(state.data.reference||{}).forEach(decodeBars);
   const c={}; state.items.forEach(it=>{ c[it.scale]=(c[it.scale]||0)+1; });
   $("#asof").textContent="Screen as of "+state.data.asof+" · weekly bar is the current partial week · hourly = regular session bars";
   $("#counts").textContent=["weekly","daily","hourly"].map(s=>s[0].toUpperCase()+s.slice(1)+" "+(c[s]||0)).join(" · ");
-  const ui=lsGet(LS_UI); if(ui){ ["scale","dir","grade","show","sort","log"].forEach(k=>{ if(ui[k]!==undefined) state[k]=ui[k]; }); if(typeof ui.minScore==="number") state.minScore=ui.minScore; }
+  const ui=lsGet(LS_UI); if(ui){ ["scale","dir","grade","show","sort","log"].forEach(k=>{ if(ui[k]!==undefined) state[k]=ui[k]; }); if(typeof ui.minScore==="number") state.minScore=ui.minScore; if(ui.zoom) Object.assign(state.zoom,ui.zoom); }
   syncControls(); renderAll(); renderRef(); $("#ref").addEventListener("toggle",renderRef);
 }
 function syncControls(){
   document.querySelectorAll("#fScale button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.scale)));
   document.querySelectorAll("#fDir button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.dir)));
   $("#fGrade").value=state.grade; $("#fShow").value=state.show; $("#fSort").value=state.sort; $("#fScore").value=state.minScore; $("#logBtn").setAttribute("aria-pressed",String(state.log));
+  syncZoom();
+}
+function syncZoom(){
+  const z=$("#zoom"); z.innerHTML=(ZOOM[state.scale]||ZOOM.daily).map(([v,l])=>'<button type="button" data-z="'+v+'" aria-pressed="'+String((state.zoom[state.scale]||"mid")===v)+'" title="History shown (Z cycles)">'+l+'</button>').join("");
+  z.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>setZoom(b.dataset.z)));
+}
+function setZoom(v){ state.zoom[state.scale]=v; syncZoom(); renderChart(); lsSet(LS_UI,uiState()); }
+// bars to show from the end of the series for the current zoom (null = base + 26 bars)
+function windowStart(it){
+  const z=state.zoom[it.scale]||"mid", n=it.c.length;
+  if(z==="base") return Math.max(0,(it.s||0)-26);
+  if(z==="mid") return Math.max(0,Math.min(n-(MID_BARS[it.scale]||252),(it.s||0)-26));
+  return 0;
+}
+function sliceItem(it,k0){
+  if(!k0) return it;
+  return Object.assign({},it,{c:it.c.slice(k0),r:it.r.slice(k0),t:it.t.slice(k0),s:Math.max(0,(it.s||0)-k0),piv:(it.piv||[]).map(p=>p-k0).filter(p=>p>=0)});
 }
 function labelOf(it){ const l=state.labels[docId(it)]; return l&&l.label?l.label:null; }
 function buildView(){
@@ -272,7 +308,7 @@ function buildView(){
   });
   state.view=v; const i=v.findIndex(it=>it.id===keepId); state.cur=i>=0?i:0;
 }
-function renderAll(){ if(!state.data) return; buildView(); renderList(true); renderChart(); renderPanel(); renderProgress(); lsSet(LS_UI,{scale:state.scale,dir:state.dir,grade:state.grade,show:state.show,sort:state.sort,log:state.log,minScore:state.minScore}); }
+function renderAll(){ if(!state.data) return; buildView(); renderList(true); renderChart(); renderPanel(); renderProgress(); lsSet(LS_UI,uiState()); }
 
 // ---------- list ----------
 function renderList(scrollIntoView){
@@ -349,14 +385,27 @@ function renderChart(){
   $("#hTicker").innerHTML='<a href="https://www.tradingview.com/chart/?symbol='+encodeURIComponent(it.ticker)+'" target="_blank" rel="noopener" title="Open in TradingView">'+esc(it.ticker)+'</a>';
   const sc=it.scale[0].toUpperCase()+it.scale.slice(1);
   $("#hDesc").textContent=sc+" · "+(it.dir==="UP"?"bottom divergence":"top divergence")+" · "+it.grade+" · score "+it.score.toFixed(1)+" · base "+it.base_len+(it.capped?"+":"")+" bars at band "+it.R.toFixed(2)+"× · close "+fmtNum(it.close)+" · "+(state.cur+1)+" of "+state.view.length;
-  drawSeries(svg,it,{log:state.log});
+  const k0=windowStart(it); drawSeries(svg,sliceItem(it,k0),{log:state.log}); drawContext($("#ctxsvg"),it,k0);
   $("#prevBtn").disabled=state.cur<=0; $("#nextBtn").disabled=state.cur>=state.view.length-1;
+}
+// full-history strip: close (log) over every exported bar, the open base shaded, the shown window outlined
+function drawContext(svg,it,k0){
+  const W=svg.clientWidth||900, H=svg.clientHeight||64; svg.setAttribute("viewBox","0 0 "+W+" "+H); svg.innerHTML="";
+  const n=it.c.length; if(n<2) return; const ns="http://www.w3.org/2000/svg";
+  const el=(tag,attrs,txt)=>{ const e=document.createElementNS(ns,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); if(txt!==undefined) e.textContent=txt; svg.appendChild(e); return e; };
+  const padL=52,padR=14,padT=4,padB=14; const x=i=>padL+(W-padL-padR)*i/(n-1);
+  const pos=it.c.filter(v=>v>0); const lo=Math.min.apply(null,pos), hi=Math.max.apply(null,pos); const tr=v=>Math.log(Math.max(v,1e-9)); const y=v=>padT+(H-padT-padB)*(1-(tr(v)-tr(lo))/((tr(hi)-tr(lo))||1));
+  if(it.s!==undefined) el("rect",{class:"ctxbase",x:x(it.s),y:padT,width:Math.max(1,x(n-1)-x(it.s)),height:H-padT-padB});
+  el("rect",{class:"ctxwin",x:x(k0),y:padT,width:Math.max(2,x(n-1)-x(k0)),height:H-padT-padB});
+  let d=""; for(let i=0;i<n;i++) d+=(i?"L":"M")+x(i).toFixed(1)+" "+y(it.c[i]).toFixed(1); el("path",{class:"ctxpx",d});
+  el("text",{class:"axis",x:padL-6,y:padT+8,"text-anchor":"end"},fmtNum(hi)); el("text",{class:"axis",x:padL-6,y:H-padB,"text-anchor":"end"},fmtNum(lo));
+  el("text",{class:"axis",x:padL,y:H-3,"text-anchor":"start"},xLabel(it.t[0],it.scale)); el("text",{class:"axis",x:W-padR,y:H-3,"text-anchor":"end"},xLabel(it.t[n-1],it.scale)+" · "+n+" bars");
 }
 function renderRef(){
   const ref=state.data.reference&&state.data.reference["IOVA|weekly"]; const svg=$("#refsvg");
   if(!ref){ $("#ref").hidden=true; return; }
-  const it=Object.assign({dir:"UP",scale:"weekly"},ref);
-  drawSeries(svg,it,{log:true});
+  const it=Object.assign({dir:"UP",scale:"weekly"},ref); const k0=Math.max(0,it.c.length-MID_BARS.weekly);
+  drawSeries(svg,sliceItem(it,k0),{log:true});
 }
 
 // ---------- panel ----------
@@ -395,7 +444,7 @@ $("#fShow").addEventListener("change",e=>{ state.show=e.target.value; renderAll(
 $("#fSort").addEventListener("change",e=>{ state.sort=e.target.value; renderAll(); });
 $("#fScore").addEventListener("change",e=>{ state.minScore=parseFloat(e.target.value)||0; renderAll(); });
 $("#prevBtn").addEventListener("click",()=>move(-1)); $("#nextBtn").addEventListener("click",()=>move(1));
-$("#logBtn").addEventListener("click",()=>{ state.log=!state.log; $("#logBtn").setAttribute("aria-pressed",String(state.log)); renderChart(); lsSet(LS_UI,{scale:state.scale,dir:state.dir,grade:state.grade,show:state.show,sort:state.sort,log:state.log,minScore:state.minScore}); });
+$("#logBtn").addEventListener("click",()=>{ state.log=!state.log; $("#logBtn").setAttribute("aria-pressed",String(state.log)); renderChart(); lsSet(LS_UI,uiState()); });
 document.querySelectorAll(".lbtn").forEach(b=>b.addEventListener("click",()=>{ const it=state.view[state.cur]; if(!it) return; const cur=labelOf(it); saveLabel(it,{label:cur===b.dataset.label?null:b.dataset.label}); }));
 let noteTimer=null; $("#note").addEventListener("input",()=>{ clearTimeout(noteTimer); noteTimer=setTimeout(()=>{ const it=state.view[state.cur]; if(it) saveLabel(it,{note:$("#note").value}); },700); });
 $("#copyBtn").addEventListener("click",async()=>{ const t=$("#csv").value; try{ await navigator.clipboard.writeText(t); $("#copyBtn").textContent="Copied"; }catch(e){ $("#csv").focus(); $("#csv").select(); $("#copyBtn").textContent="Select and copy"; } setTimeout(()=>{$("#copyBtn").textContent="Copy CSV";},1500); });
@@ -413,6 +462,7 @@ document.addEventListener("keydown",e=>{
   if(e.key==="ArrowLeft"){ e.preventDefault(); move(-1); } else if(e.key==="ArrowRight"){ e.preventDefault(); move(1); }
   else if(/^[ynu]$/i.test(e.key)){ const it=state.view[state.cur]; if(!it) return; const map={y:"yes",n:"no",u:"unsure"}; const l=map[e.key.toLowerCase()]; saveLabel(it,{label:labelOf(it)===l?null:l}); }
   else if(e.key==="l"||e.key==="L"){ $("#logBtn").click(); }
+  else if(e.key==="z"||e.key==="Z"){ const zs=(ZOOM[state.scale]||ZOOM.daily).map(z=>z[0]); const i=zs.indexOf(state.zoom[state.scale]||"mid"); setZoom(zs[(i+1)%zs.length]); }
   else if(e.key==="/"){ e.preventDefault(); $("#note").focus(); }
 });
 let rt=null; window.addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(()=>{ renderChart(); if($("#ref").open) renderRef(); },120); });

@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 eodhd_cache/
 .eodhd_token
+div_screen/div_series.json

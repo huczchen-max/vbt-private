@@ -72,6 +72,11 @@ main.chart{display:flex;flex-direction:column;min-height:0;min-width:0;backgroun
 .zoom button:last-child{border-right:0} .zoom button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .ctxwrap{height:64px;margin-bottom:4px} .ctxwrap svg{width:100%;height:100%;display:block}
 svg .ctxpx{fill:none;stroke:var(--muted);stroke-width:1} svg .ctxwin{fill:var(--accent);opacity:.12;stroke:var(--accent);stroke-width:1} svg .ctxbase{fill:var(--band);opacity:.28}
+svg .hist-p{fill:var(--good);opacity:.55} svg .hist-n{fill:var(--crit);opacity:.55} svg .macd{fill:none;stroke:var(--blue);stroke-width:1.2} svg .sig{fill:none;stroke:#e08a1e;stroke-width:1.2}
+svg .mark{stroke-width:1.3} svg .mark.e1{stroke:var(--good);stroke-dasharray:4 3} svg .mark.e2{stroke:var(--blue)} svg .mark.mx{stroke:var(--muted);stroke-dasharray:2 3}
+svg text.lbl.e1{fill:var(--good)} svg text.lbl.e2{fill:var(--blue)} svg text.lbl.mx{fill:var(--muted)}
+.legend .sw.e1{width:12px;height:0;border-top:2px dashed var(--good);vertical-align:2px} .legend .sw.e2{width:12px;height:0;border-top:2px solid var(--blue);vertical-align:2px}
+main.chart.ind .svgwrap{min-height:440px}
 .btn{font:inherit;font-size:12.5px;padding:5px 10px;border:1px solid var(--line2);border-radius:7px;background:var(--surface);color:var(--ink);cursor:pointer}
 .btn:hover{background:var(--surface2)}
 .btn[disabled]{opacity:.5;cursor:default}
@@ -176,11 +181,12 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
         <button class="btn" id="nextBtn" type="button" title="Next (→)">Next →</button>
         <span class="zoom" id="zoom" role="group" aria-label="History shown"></span>
         <button class="btn" id="logBtn" type="button" aria-pressed="true" title="Toggle log / linear price axis">log</button>
+        <button class="btn" id="indBtn" type="button" aria-pressed="true" title="MACD + Elliott-oscillator panels with the H23 entry markers (I)">MACD/EO</button>
       </div>
     </div>
     <div class="ctxwrap"><svg class="chart" id="ctxsvg" role="img" aria-label="Full history with the shown window marked"></svg></div>
     <div class="svgwrap"><svg class="chart" id="svg" role="img" aria-label="Price and RSI chart"></svg></div>
-    <div class="legend"><span><i class="sw band"></i> open base (band = its price range)</span><span><i class="sw piv"></i> RSI swing highs; the ringed pair is the one compared</span><span><i class="sw last"></i> last close</span></div>
+    <div class="legend"><span><i class="sw band"></i> open base (band = its price range)</span><span><i class="sw piv"></i> RSI swing highs; the ringed pair is the one compared</span><span><i class="sw last"></i> last close</span><span><i class="sw e1"></i> E1 = MACD cross + EO trough (test tranche)</span><span><i class="sw e2"></i> E2 = support bounce or EO &gt; 0 (main tranche)</span></div>
     <details class="ref" id="ref">
       <summary>IOVA weekly reference (the shape we are labelling against)</summary>
       <div class="svgwrap"><svg class="chart" id="refsvg" role="img" aria-label="IOVA reference chart"></svg></div>
@@ -207,7 +213,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
       <div class="summary" id="summary"></div>
     </div>
     <div class="keys">
-      <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>Y</kbd> <kbd>N</kbd> <kbd>U</kbd> label &nbsp; <kbd>L</kbd> log/linear &nbsp; <kbd>Z</kbd> zoom &nbsp; <kbd>/</kbd> note
+      <kbd>←</kbd> <kbd>→</kbd> move &nbsp; <kbd>Y</kbd> <kbd>N</kbd> <kbd>U</kbd> label &nbsp; <kbd>L</kbd> log/linear &nbsp; <kbd>Z</kbd> zoom &nbsp; <kbd>I</kbd> MACD/EO &nbsp; <kbd>/</kbd> note
     </div>
     <details class="export">
       <summary class="note">Export labels (CSV)</summary>
@@ -228,12 +234,12 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-
 (function(){
 "use strict";
 const $=s=>document.querySelector(s);
-const state={data:null,items:[],view:[],cur:0,scale:"weekly",dir:"UP",grade:"all",show:"all",minScore:0,sort:"score",log:true,labels:{},db:null,pending:false,zoom:{weekly:"mid",daily:"mid",hourly:"mid"}};
+const state={data:null,items:[],view:[],cur:0,scale:"weekly",dir:"UP",grade:"all",show:"all",minScore:0,sort:"score",log:true,ind:true,labels:{},db:null,pending:false,zoom:{weekly:"mid",daily:"mid",hourly:"mid"}};
 const LS_KEY="divreview.labels.v1", LS_UI="divreview.ui.v2";
 // history shown per scale: base = base + 26 bars (the detail view); mid ≈ 260 bars (5 y / 1 y / 6 weeks — ~3.5 px per bar, RSI pivots still readable); max = all bars exported (15 y / 3 y / ~6 months)
 const ZOOM={weekly:[["base","base"],["mid","5 y"],["max","15 y"]],daily:[["base","base"],["mid","1 y"],["max","3 y"]],hourly:[["base","base"],["mid","6 wk"],["max","6 mo"]]};
 const MID_BARS={weekly:260,daily:252,hourly:210};
-function uiState(){ return {scale:state.scale,dir:state.dir,grade:state.grade,show:state.show,sort:state.sort,log:state.log,minScore:state.minScore,zoom:state.zoom}; }
+function uiState(){ return {scale:state.scale,dir:state.dir,grade:state.grade,show:state.show,sort:state.sort,log:state.log,ind:state.ind,minScore:state.minScore,zoom:state.zoom}; }
 // v0.4 compact series: t0 + deltas (days or minutes) -> ISO strings once, at load
 function decodeBars(it){
   if(it.t||!it.dt) return it;
@@ -269,13 +275,13 @@ async function load(){
   const c={}; state.items.forEach(it=>{ c[it.scale]=(c[it.scale]||0)+1; });
   $("#asof").textContent="Screen as of "+state.data.asof+" · weekly bar is the current partial week · hourly = regular session bars";
   $("#counts").textContent=["weekly","daily","hourly"].map(s=>s[0].toUpperCase()+s.slice(1)+" "+(c[s]||0)).join(" · ");
-  const ui=lsGet(LS_UI); if(ui){ ["scale","dir","grade","show","sort","log"].forEach(k=>{ if(ui[k]!==undefined) state[k]=ui[k]; }); if(typeof ui.minScore==="number") state.minScore=ui.minScore; if(ui.zoom) Object.assign(state.zoom,ui.zoom); }
+  const ui=lsGet(LS_UI); if(ui){ ["scale","dir","grade","show","sort","log","ind"].forEach(k=>{ if(ui[k]!==undefined) state[k]=ui[k]; }); if(typeof ui.minScore==="number") state.minScore=ui.minScore; if(ui.zoom) Object.assign(state.zoom,ui.zoom); }
   syncControls(); renderAll(); renderRef(); $("#ref").addEventListener("toggle",renderRef);
 }
 function syncControls(){
   document.querySelectorAll("#fScale button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.scale)));
   document.querySelectorAll("#fDir button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.dir)));
-  $("#fGrade").value=state.grade; $("#fShow").value=state.show; $("#fSort").value=state.sort; $("#fScore").value=state.minScore; $("#logBtn").setAttribute("aria-pressed",String(state.log));
+  $("#fGrade").value=state.grade; $("#fShow").value=state.show; $("#fSort").value=state.sort; $("#fScore").value=state.minScore; $("#logBtn").setAttribute("aria-pressed",String(state.log)); $("#indBtn").setAttribute("aria-pressed",String(state.ind));
   syncZoom();
 }
 function syncZoom(){
@@ -292,7 +298,9 @@ function windowStart(it){
 }
 function sliceItem(it,k0){
   if(!k0) return it;
-  return Object.assign({},it,{c:it.c.slice(k0),r:it.r.slice(k0),t:it.t.slice(k0),s:Math.max(0,(it.s||0)-k0),piv:(it.piv||[]).map(p=>p-k0).filter(p=>p>=0)});
+  const sh=i=>(i===null||i===undefined)?null:(i-k0>=0?i-k0:null);
+  return Object.assign({},it,{c:it.c.slice(k0),r:it.r.slice(k0),t:it.t.slice(k0),s:Math.max(0,(it.s||0)-k0),piv:(it.piv||[]).map(p=>p-k0).filter(p=>p>=0),
+    m:it.m?it.m.slice(k0):null,ms:it.ms?it.ms.slice(k0):null,o:it.o?it.o.slice(k0):null,mx:sh(it.mx),e1:sh(it.e1),e2:sh(it.e2),e1t:sh(it.e1t)});
 }
 function labelOf(it){ const l=state.labels[docId(it)]; return l&&l.label?l.label:null; }
 function buildView(){
@@ -336,7 +344,8 @@ function xLabel(t,scale){ if(scale==="hourly"){ return t.slice(5,10)+" "+t.slice
 
 function drawSeries(svg, it, opts){
   const W=svg.clientWidth||900, H=svg.clientHeight||360; svg.setAttribute("viewBox","0 0 "+W+" "+H); svg.innerHTML="";
-  const padL=52, padR=14, padT=10, padB=22, gap=10; const hR=Math.max(70,Math.round((H-padT-padB-gap)*0.27)); const hP=H-padT-padB-gap-hR;
+  const padL=52, padR=14, padT=10, padB=22, gap=10; const ind=!!(opts.ind&&it.m&&it.o);
+  const hR=Math.max(60,Math.round((H-padT-padB-gap)*(ind?0.17:0.27))); const hI=ind?Math.max(46,Math.round((H-padT-padB)*0.13)):0; const hP=H-padT-padB-gap-hR-(ind?2*(gap+hI):0);
   const n=it.c.length; if(n<2) return;
   const x=i=>padL+(W-padL-padR)*(n===1?0:i/(n-1));
   const cmin=Math.min.apply(null,it.c), cmax=Math.max.apply(null,it.c);
@@ -358,13 +367,30 @@ function drawSeries(svg, it, opts){
   [30,50,70].forEach(v=>{ el("line",{class:v===50?"mid":"lvl",x1:padL,x2:W-padR,y1:yr(v),y2:yr(v)}); el("text",{class:"axis",x:padL-6,y:yr(v)+3.5,"text-anchor":"end"},String(v)); });
   // x labels
   const nx=Math.min(6,Math.max(3,Math.floor((W-padL-padR)/120)));
-  for(let k=0;k<nx;k++){ const i=Math.round(k*(n-1)/(nx-1)); const xx=x(i); el("line",{class:"grid",x1:xx,x2:xx,y1:padT,y2:padT+hP+gap+hR}); el("text",{class:"axis",x:xx,y:H-6,"text-anchor":k===0?"start":(k===nx-1?"end":"middle")},xLabel(it.t[i],it.scale)); }
+  for(let k=0;k<nx;k++){ const i=Math.round(k*(n-1)/(nx-1)); const xx=x(i); el("line",{class:"grid",x1:xx,x2:xx,y1:padT,y2:padT+hP+gap+hR+(ind?2*(gap+hI):0)}); el("text",{class:"axis",x:xx,y:H-6,"text-anchor":k===0?"start":(k===nx-1?"end":"middle")},xLabel(it.t[i],it.scale)); }
   // price path
   let d=""; for(let i=0;i<n;i++){ d+=(i?"L":"M")+x(i).toFixed(1)+" "+y(it.c[i]).toFixed(1); }
   el("path",{class:"px",d});
   // rsi path
   let dr="", pen=false; for(let i=0;i<n;i++){ const v=it.r[i]; if(v===null||v===undefined){ pen=false; continue; } dr+=(pen?"L":"M")+x(i).toFixed(1)+" "+yr(v).toFixed(1); pen=true; }
   el("path",{class:"rsi "+(it.dir==="DN"?"dn":"up"),d:dr});
+  // v0.5: MACD + EO panels and the H23 entry markers
+  if(ind){
+    const yM0=padT+hP+gap+hR+gap, yO0=yM0+hI+gap; const absmax=a=>Math.max(1e-6,...a.filter(v=>v!==null).map(Math.abs));
+    const mm=absmax(it.m.concat(it.ms)), om=absmax(it.o); const ym=v=>yM0+hI/2-(v/mm)*(hI/2)*0.92, yo=v=>yO0+hI/2-(v/om)*(hI/2)*0.92;
+    el("line",{class:"mid",x1:padL,x2:W-padR,y1:ym(0),y2:ym(0)}); el("text",{class:"axis",x:padL-6,y:ym(0)+3.5,"text-anchor":"end"},"MACD");
+    el("line",{class:"mid",x1:padL,x2:W-padR,y1:yo(0),y2:yo(0)}); el("text",{class:"axis",x:padL-6,y:yo(0)+3.5,"text-anchor":"end"},"EO");
+    const bw=Math.max(1,(W-padL-padR)/n*0.7);
+    for(let i=0;i<n;i++){ const a=it.m[i], b=it.ms[i], o=it.o[i]; if(a!==null&&b!==null){ const h=a-b; el("rect",{class:h>=0?"hist-p":"hist-n",x:x(i)-bw/2,y:Math.min(ym(0),ym(h)),width:bw,height:Math.max(0.5,Math.abs(ym(0)-ym(h)))}); }
+      if(o!==null) el("rect",{class:o>=0?"hist-p":"hist-n",x:x(i)-bw/2,y:Math.min(yo(0),yo(o)),width:bw,height:Math.max(0.5,Math.abs(yo(0)-yo(o)))}); }
+    let dm="",ds="",p1=false,p2=false; for(let i=0;i<n;i++){ const a=it.m[i], b=it.ms[i]; if(a===null){p1=false;} else { dm+=(p1?"L":"M")+x(i).toFixed(1)+" "+ym(a).toFixed(1); p1=true; } if(b===null){p2=false;} else { ds+=(p2?"L":"M")+x(i).toFixed(1)+" "+ym(b).toFixed(1); p2=true; } }
+    el("path",{class:"macd",d:dm}); el("path",{class:"sig",d:ds});
+    el("text",{class:"axis",x:W-padR,y:yM0+9,"text-anchor":"end"},"±"+mm.toFixed(1)+"%"); el("text",{class:"axis",x:W-padR,y:yO0+9,"text-anchor":"end"},"±"+om.toFixed(1)+"%");
+  }
+  const yBot=padT+hP+gap+hR+(ind?2*(gap+hI):0);
+  const mark=(i,cls,label,dy)=>{ if(i===null||i===undefined||i<0||i>=n) return; el("line",{class:"mark "+cls,x1:x(i),x2:x(i),y1:padT,y2:yBot}); el("text",{class:"lbl "+cls,x:x(i)+3,y:padT+dy},label); };
+  if(it.mx!==null&&it.mx!==undefined&&it.mx!==it.e1) mark(it.mx,"mx","MX",34);
+  mark(it.e1,"e1","E1",10); mark(it.e2,"e2","E2"+(it.e2k?" "+(it.e2k==="bounce"?"bounce":"EO>0"):""),22);
   // pivots
   if(it.piv&&it.piv.length){
     const used=it.piv.slice(-2);
@@ -384,8 +410,9 @@ function renderChart(){
   if(!it){ $("#hTicker").textContent="—"; $("#hDesc").textContent=""; svg.innerHTML=""; return; }
   $("#hTicker").innerHTML='<a href="https://www.tradingview.com/chart/?symbol='+encodeURIComponent(it.ticker)+'" target="_blank" rel="noopener" title="Open in TradingView">'+esc(it.ticker)+'</a>';
   const sc=it.scale[0].toUpperCase()+it.scale.slice(1);
-  $("#hDesc").textContent=sc+" · "+(it.dir==="UP"?"bottom divergence":"top divergence")+" · "+it.grade+" · score "+it.score.toFixed(1)+" · base "+it.base_len+(it.capped?"+":"")+" bars at band "+it.R.toFixed(2)+"× · close "+fmtNum(it.close)+" · "+(state.cur+1)+" of "+state.view.length;
-  const k0=windowStart(it); drawSeries(svg,sliceItem(it,k0),{log:state.log}); drawContext($("#ctxsvg"),it,k0);
+  const eInfo=(it.e1!==null&&it.e1!==undefined)?(" · E1 "+it.t[it.e1]+(it.e2!==null&&it.e2!==undefined?" → E2 "+it.t[it.e2]+" ("+(it.e2k==="bounce"?"bounce":"EO>0")+")":" · no E2 yet")):((it.mx!==null&&it.mx!==undefined)?" · MACD cross "+it.t[it.mx]+", no EO trough":"");
+  $("#hDesc").textContent=sc+" · "+(it.dir==="UP"?"bottom divergence":"top divergence")+" · "+it.grade+" · score "+it.score.toFixed(1)+" · base "+it.base_len+(it.capped?"+":"")+" bars at band "+it.R.toFixed(2)+"× · close "+fmtNum(it.close)+eInfo+" · "+(state.cur+1)+" of "+state.view.length;
+  const k0=windowStart(it); document.querySelector("main.chart").classList.toggle("ind",!!(state.ind&&it.m)); drawSeries(svg,sliceItem(it,k0),{log:state.log,ind:state.ind}); drawContext($("#ctxsvg"),it,k0);
   $("#prevBtn").disabled=state.cur<=0; $("#nextBtn").disabled=state.cur>=state.view.length-1;
 }
 // full-history strip: close (log) over every exported bar, the open base shaded, the shown window outlined
@@ -445,6 +472,7 @@ $("#fSort").addEventListener("change",e=>{ state.sort=e.target.value; renderAll(
 $("#fScore").addEventListener("change",e=>{ state.minScore=parseFloat(e.target.value)||0; renderAll(); });
 $("#prevBtn").addEventListener("click",()=>move(-1)); $("#nextBtn").addEventListener("click",()=>move(1));
 $("#logBtn").addEventListener("click",()=>{ state.log=!state.log; $("#logBtn").setAttribute("aria-pressed",String(state.log)); renderChart(); lsSet(LS_UI,uiState()); });
+$("#indBtn").addEventListener("click",()=>{ state.ind=!state.ind; $("#indBtn").setAttribute("aria-pressed",String(state.ind)); renderChart(); lsSet(LS_UI,uiState()); });
 document.querySelectorAll(".lbtn").forEach(b=>b.addEventListener("click",()=>{ const it=state.view[state.cur]; if(!it) return; const cur=labelOf(it); saveLabel(it,{label:cur===b.dataset.label?null:b.dataset.label}); }));
 let noteTimer=null; $("#note").addEventListener("input",()=>{ clearTimeout(noteTimer); noteTimer=setTimeout(()=>{ const it=state.view[state.cur]; if(it) saveLabel(it,{note:$("#note").value}); },700); });
 $("#copyBtn").addEventListener("click",async()=>{ const t=$("#csv").value; try{ await navigator.clipboard.writeText(t); $("#copyBtn").textContent="Copied"; }catch(e){ $("#csv").focus(); $("#csv").select(); $("#copyBtn").textContent="Select and copy"; } setTimeout(()=>{$("#copyBtn").textContent="Copy CSV";},1500); });
@@ -462,6 +490,7 @@ document.addEventListener("keydown",e=>{
   if(e.key==="ArrowLeft"){ e.preventDefault(); move(-1); } else if(e.key==="ArrowRight"){ e.preventDefault(); move(1); }
   else if(/^[ynu]$/i.test(e.key)){ const it=state.view[state.cur]; if(!it) return; const map={y:"yes",n:"no",u:"unsure"}; const l=map[e.key.toLowerCase()]; saveLabel(it,{label:labelOf(it)===l?null:l}); }
   else if(e.key==="l"||e.key==="L"){ $("#logBtn").click(); }
+  else if(e.key==="i"||e.key==="I"){ $("#indBtn").click(); }
   else if(e.key==="z"||e.key==="Z"){ const zs=(ZOOM[state.scale]||ZOOM.daily).map(z=>z[0]); const i=zs.indexOf(state.zoom[state.scale]||"mid"); setZoom(zs[(i+1)%zs.length]); }
   else if(e.key==="/"){ e.preventDefault(); $("#note").focus(); }
 });

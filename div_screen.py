@@ -1,4 +1,7 @@
-"""Multi-scale divergence screen (v0.4, 2026-09-23).
+"""Multi-scale divergence screen (v0.5, 2026-09-23).
+
+v0.5: MACD(12,26,9), EO(5,35) and the H23 entry states (MX/E1/E2, base_study_wide
+v0.8) are exported per chart for the review page's indicator panels and markers.
 
 v0.4: the review page carries long history behind every chart — CTX_BARS = weekly
 780 (15 y), daily 756 (3 y), hourly 900 (~6 months of regular-session bars, the
@@ -50,7 +53,7 @@ import numpy as np, pandas as pd
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_study_wide import (weekly, rsi, pivot_highs_arr, divergence_at, composite_at, slope26, tightness, extra_feats,
-                             R_LIST, LMIN, LMAX, FLAT, MIN_PRICE, DIV_K, DIV_MARGIN, DIV_PX_TOL)
+                             R_LIST, LMIN, LMAX, FLAT, MIN_PRICE, DIV_K, DIV_MARGIN, DIV_PX_TOL, macd, eo, scan_entries)
 
 MIN_DVOL = {"weekly": 5e6, "daily": 1e6, "hourly": 1.5e5}     # median $volume per bar
 BARS_PER_WEEK = {"weekly": 1, "daily": 5, "hourly": 32.5}
@@ -171,8 +174,9 @@ def render(rows, W, scale, out, label):
 CTX_BARS = {"weekly": 780, "daily": 756, "hourly": 900}   # v0.4 history behind each chart: 15 y / 3 y / ~6 months of regular-session hours
 N_CTX_MIN = 26                                              # never less than base + 26 bars
 
-def encode_bars(idx, c, rs, scale):
-    """Compact series: t0 + deltas (days for weekly/daily, minutes for hourly), closes at 2 dp (4 dp under $10), RSI at 1 dp."""
+def encode_bars(idx, c, rs, scale, ml=None, sg=None, eo_=None):
+    """Compact series: t0 + deltas (days for weekly/daily, minutes for hourly), closes at 2 dp (4 dp under $10), RSI at 1 dp;
+    v0.5: MACD line / signal / EO as % of price at 2 dp (H23 panels on the review page)."""
     ts = pd.DatetimeIndex(idx)
     if ts.tz is not None: ts = ts.tz_localize(None)      # wall-clock (New York) deltas, so labels stay right across a DST change
     if scale == "hourly":
@@ -180,7 +184,11 @@ def encode_bars(idx, c, rs, scale):
     else:
         t0 = ts[0].strftime("%Y-%m-%d"); u = "d"; off = (ts - ts[0]).days.astype(int)
     dt = np.diff(off, prepend=0).tolist()
-    return dict(t0=t0, u=u, dt=dt, c=[round(float(x), 2 if x >= 10 else 4) for x in c], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs])
+    d = dict(t0=t0, u=u, dt=dt, c=[round(float(x), 2 if x >= 10 else 4) for x in c], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs])
+    if ml is not None:
+        pct = lambda a: [(None if (np.isnan(x) or px <= 0) else round(float(x / px * 100), 2)) for x, px in zip(a, c)]
+        d.update(m=pct(ml), ms=pct(sg), o=pct(eo_))
+    return d
 
 def export_series(dv, W, out, asof, scales, reference=("IOVA",), ctx=None):
     """Compact JSON of the bars behind every listed divergence — the last CTX_BARS[scale] bars (at least base + N_CTX_MIN) — for the review page."""
@@ -192,19 +200,24 @@ def export_series(dv, W, out, asof, scales, reference=("IOVA",), ctx=None):
         w = W[key]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; e = len(c) - 1; s = int(r.s_idx)
         i0 = max(0, min(s - N_CTX_MIN, e + 1 - int(ctx.get(r.scale, CTX_BARS["daily"]))))
         piv = [int(j) + (s - i0) for j in json.loads(r.ph_idx)]
+        ml, sg = macd(w["close"]); eo_ = eo(w["close"]); mlv, sgv, eov = ml.values, sg.values, eo_.values
+        en = scan_entries(c, mlv, sgv, eov, s, s + LMIN - 1, e, r.ticker)     # H23 states on this scale's bars (weekly = the studied one)
+        rel = lambda i: (int(i - i0) if i is not None else None)
         items.append(dict(id=f"{r.ticker}|{r.scale}", ticker=r.ticker, scale=r.scale, dir=r.div_dir, grade=r.div_grade, score=float(r.score), state=r.state, R=float(r.R),
                           base_len=int(r.base_len), capped=bool(r.base_capped), pos=float(r.pos), rsi=float(r.rsi),
                           rsi_h1=(None if pd.isna(r.get("rsi_h1", np.nan)) else float(r.rsi_h1)), rsi_h2=(None if pd.isna(r.get("rsi_h2", np.nan)) else float(r.rsi_h2)),
                           n_rise=int(r.n_rise), n_fall=int(r.n_fall), slope=(None if pd.isna(r.rsi_slope26) else float(r.rsi_slope26)), px_slope=(None if pd.isna(r.px_slope26) else float(r.px_slope26)),
                           prior_dd=(None if pd.isna(r.prior_dd) else float(r.prior_dd)), dvol=float(r.med_dvol), close=float(r.close), lo=float(r.base_lo), hi=float(r.base_hi),
-                          s=int(s - i0), piv=piv, **encode_bars(w.index[i0:e + 1], c[i0:e + 1], rs[i0:e + 1], r.scale)))
+                          s=int(s - i0), piv=piv, mx=rel(en["mx"]), e1=rel(en["e1"]), e2=rel(en["e2"]), e2k=en["e2_kind"], e1t=rel(en["e1_trough"]),
+                          **encode_bars(w.index[i0:e + 1], c[i0:e + 1], rs[i0:e + 1], r.scale, mlv[i0:e + 1], sgv[i0:e + 1], eov[i0:e + 1])))
     ref = {}
     for tk in reference:
         for sc in scales:
             if (tk, sc) in W:
                 w = W[(tk, sc)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; i0 = max(0, len(c) - int(ctx.get(sc, CTX_BARS["daily"])))
-                ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, **encode_bars(w.index[i0:], c[i0:], rs[i0:], sc))
-    payload = dict(asof=str(asof), scales=scales, n=len(items), enc="dt1", ctx=ctx, items=items, reference=ref,
+                ml, sg = macd(w["close"]); eo_ = eo(w["close"])
+                ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, **encode_bars(w.index[i0:], c[i0:], rs[i0:], sc, ml.values[i0:], sg.values[i0:], eo_.values[i0:]))
+    payload = dict(asof=str(asof), scales=scales, n=len(items), enc="dt2", ctx=ctx, items=items, reference=ref,
                    params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"])))
     txt = json.dumps(payload, separators=(",", ":"), default=str)
     open(f"{out}/div_series.json", "w").write(txt)

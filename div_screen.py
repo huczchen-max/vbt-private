@@ -1,4 +1,4 @@
-"""Multi-scale divergence screen (v0.2, 2026-09-22).
+"""Multi-scale divergence screen (v0.3, 2026-09-23).
 
 Eric: "compile a list of stocks with these types of patterns on a weekly, daily,
 hourly scale" — the IOVA shape (price flat in the lower part of a long range while
@@ -33,7 +33,10 @@ Usage (two passes inside the 'screen' workflow mode):
   python div_screen.py ... --intraday eodhd_cache/intraday_1h.parquet --scales weekly,daily,hourly
 Outputs: div_screen.csv (one row per ticker x scale x R with an open base),
 div_screen.json (deduped lists), div_screen.md (tables), gallery pages
-<scale>_<up|dn>_<n>.png with price + RSI panels.
+<scale>_<up|dn>_<n>.png with price + RSI panels, and (v0.3) div_series.json —
+the bar series (dates, closes, RSI14, base band, RSI pivot indices) for every
+listed divergence plus reference tickers (IOVA weekly) — feeds the interactive
+review page (VBT/div-screen artifact) where Eric labels the charts.
 """
 import argparse, json, math, os, sys, warnings
 import numpy as np, pandas as pd
@@ -157,6 +160,33 @@ def render(rows, W, scale, out, label):
         f = f"{out}/{scale}_{label.split()[0].lower()}_{p + 1}.png"; fig.savefig(f, dpi=105, bbox_inches="tight"); plt.close(fig); files.append(f)
     return files
 
+# ------------------------------------------------------------ series export (v0.3)
+def export_series(dv, W, out, asof, scales, reference=("IOVA",), n_ctx=26):
+    """Compact JSON of the bars behind every listed divergence (base + n_ctx bars of context) for the review page."""
+    def fmt(idx, scale):
+        return [(pd.Timestamp(x).strftime("%Y-%m-%dT%H:%M") if scale == "hourly" else pd.Timestamp(x).strftime("%Y-%m-%d")) for x in idx]
+    items = []
+    for _, r in dv.iterrows():
+        key = (r.ticker, r.scale)
+        if key not in W: continue
+        w = W[key]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; e = len(c) - 1; s = int(r.s_idx); i0 = max(0, s - n_ctx)
+        piv = [int(j) + (s - i0) for j in json.loads(r.ph_idx)]
+        items.append(dict(id=f"{r.ticker}|{r.scale}", ticker=r.ticker, scale=r.scale, dir=r.div_dir, grade=r.div_grade, score=float(r.score), state=r.state, R=float(r.R),
+                          base_len=int(r.base_len), capped=bool(r.base_capped), pos=float(r.pos), rsi=float(r.rsi),
+                          rsi_h1=(None if pd.isna(r.get("rsi_h1", np.nan)) else float(r.rsi_h1)), rsi_h2=(None if pd.isna(r.get("rsi_h2", np.nan)) else float(r.rsi_h2)),
+                          n_rise=int(r.n_rise), n_fall=int(r.n_fall), slope=(None if pd.isna(r.rsi_slope26) else float(r.rsi_slope26)), px_slope=(None if pd.isna(r.px_slope26) else float(r.px_slope26)),
+                          prior_dd=(None if pd.isna(r.prior_dd) else float(r.prior_dd)), dvol=float(r.med_dvol), close=float(r.close), lo=float(r.base_lo), hi=float(r.base_hi),
+                          s=int(s - i0), t=fmt(w.index[i0:e + 1], r.scale), c=[round(float(x), 4) for x in c[i0:e + 1]], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs[i0:e + 1]], piv=piv))
+    ref = {}
+    for tk in reference:
+        for sc in scales:
+            if (tk, sc) in W:
+                w = W[(tk, sc)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; i0 = max(0, len(c) - (LMAX + n_ctx))
+                ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, t=fmt(w.index[i0:], sc), c=[round(float(x), 4) for x in c[i0:]], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs[i0:]])
+    json.dump(dict(asof=str(asof), scales=scales, n=len(items), items=items, reference=ref, params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"]))),
+              open(f"{out}/div_series.json", "w"), separators=(",", ":"), default=str)
+    return len(items)
+
 # ------------------------------------------------------------ main
 def dedup(df):
     """One row per ticker per scale: strict before broad, then by shape score (consecutive RSI highs, RSI gap, band position, RSI slope, price flatness)."""
@@ -183,6 +213,8 @@ def main():
     ap.add_argument("--out", default="div_screen"); ap.add_argument("--scales", default="weekly,daily"); ap.add_argument("--needed-out", default=None)
     ap.add_argument("--needed-max", type=int, default=4000); ap.add_argument("--max", type=int, default=0); ap.add_argument("--no-gallery", action="store_true")
     ap.add_argument("--div-margin", type=float, default=None, help="override DIV_MARGIN (RSI pts between swing highs; backtest used 3)")
+    ap.add_argument("--no-series", action="store_true", help="skip div_series.json (the review-page data)")
+    ap.add_argument("--reference", default="IOVA", help="comma-separated reference tickers to include in div_series.json")
     ap.add_argument("--px-tol", type=float, default=None, help="override DIV_PX_TOL (price tolerance between the swing highs; backtest used 0.05)")
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True); scales = a.scales.split(",")
     import base_study_wide as bsw
@@ -243,6 +275,8 @@ def main():
               DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"]), BROAD=dict(rsi_slope=BROAD_RSI_SLOPE, px_slope=BROAD_PX_SLOPE))),
               open(f"{a.out}/div_screen.json", "w"), indent=1, default=str)
     open(f"{a.out}/div_screen.md", "w").write("\n".join(md))
+    if not a.no_series:
+        print("series exported:", export_series(dv, W, a.out, asof.date(), scales, reference=tuple(x for x in a.reference.split(",") if x)))
     print(json.dumps({sc: lists[sc]["counts"] for sc in scales}, indent=1))
     for sc in scales: print(sc, "UP strict", lists[sc]["UP"]["strict"], "broad", lists[sc]["UP"]["broad"][:30]); print(sc, "DN strict", lists[sc]["DN"]["strict"], "broad", lists[sc]["DN"]["broad"][:30])
     if a.no_gallery: return

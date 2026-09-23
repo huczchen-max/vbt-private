@@ -1,4 +1,4 @@
-"""Multi-scale divergence screen (v0.1, 2026-09-22).
+"""Multi-scale divergence screen (v0.2, 2026-09-22).
 
 Eric: "compile a list of stocks with these types of patterns on a weekly, daily,
 hourly scale" — the IOVA shape (price flat in the lower part of a long range while
@@ -18,6 +18,13 @@ Scales: weekly (W-FRI, last week may be partial), daily (trading days), hourly
 (regular session 1h bars from intraday_fetch.py). LMIN/LMAX are in BARS at every
 scale (26-156 weeks / trading days / hours). Liquidity: median close >= $3 and
 median $volume per bar >= MIN_DVOL[scale].
+v0.2 changes (after run #12 found only 16 hourly bases): (1) the band widths are
+scaled to the bar size — R_SCALE[scale] = 1 + (R_weekly - 1) / sqrt(bars per week)
+(daily 1.22/1.45/1.89, hourly 1.09/1.18/1.35) so "flat" means the same thing
+relative to normal bar-to-bar movement at every scale; (2) a flat window LONGER
+than LMAX is no longer excluded (the backtest excluded it) but truncated to the
+last LMAX bars and flagged base_capped=True; (3) warrants/preferreds/units/rights
+(-WS, -WT, -P-, -U, -R) are dropped; (4) a shape score ranks the lists.
 
 Usage (two passes inside the 'screen' workflow mode):
   python div_screen.py --prices eodhd_cache/eod_us.parquet --universe eodhd_cache/universe.csv \
@@ -28,13 +35,18 @@ Outputs: div_screen.csv (one row per ticker x scale x R with an open base),
 div_screen.json (deduped lists), div_screen.md (tables), gallery pages
 <scale>_<up|dn>_<n>.png with price + RSI panels.
 """
-import argparse, json, math, os, sys
+import argparse, json, math, os, sys, warnings
 import numpy as np, pandas as pd
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from base_study_wide import (weekly, rsi, pivot_highs_arr, divergence_at, composite_at, slope26, tightness, extra_feats,
                              R_LIST, LMIN, LMAX, FLAT, MIN_PRICE, DIV_K, DIV_MARGIN, DIV_PX_TOL)
 
 MIN_DVOL = {"weekly": 5e6, "daily": 1e6, "hourly": 1.5e5}     # median $volume per bar
+BARS_PER_WEEK = {"weekly": 1, "daily": 5, "hourly": 32.5}
+R_SCALE = {sc: [round(1 + (R - 1) / math.sqrt(b), 2) for R in R_LIST] for sc, b in BARS_PER_WEEK.items()}   # weekly 1.5/2/3 -> daily 1.22/1.45/1.89 -> hourly 1.09/1.18/1.35
+import re
+EXCLUDE_RE = re.compile(r"-(WS|WSA|WSB|WT|W|U|R|RT)$|-P-|-P[A-Z]?$")   # warrants, units, rights, preferreds
 BROAD_RSI_SLOPE = 0.3      # RSI pts per bar over 26 bars (~8 pts)
 BROAD_PX_SLOPE = 0.2       # % of price per bar over 26 bars (~5%) = "flat"
 N_PER_SET, PER_PAGE, COLS = 18, 9, 3
@@ -65,11 +77,11 @@ def evaluate(ticker, scale, w):
     if n < LMIN + 20 or np.nanmin(v) <= 0: return []
     rs = rsi(c); r_ = rs.values; m13 = c.rolling(13).mean().values; m26 = c.rolling(26).mean().values
     retv = c.pct_change().values; dv = w["dvol"].values.astype(float)
-    rhighs = pivot_highs_arr(r_, DIV_K); e = n - 1; rows = []
+    off = max(0, n - LMAX - 60); rhighs = [i + off for i in pivot_highs_arr(r_[off:], DIV_K)]; e = n - 1; rows = []   # pivots only where a base can be
     rsl = slope26(r_, e); psl = slope26(v / v[e] * 100, e)
-    for R in R_LIST:
-        L = open_window_len(v, R, LMAX + 1)
-        if not (LMIN <= L <= LMAX): continue
+    for R in R_SCALE[scale]:
+        L0 = open_window_len(v, R, LMAX + 1); capped = L0 > LMAX; L = min(L0, LMAX)
+        if L < LMIN: continue
         s = e - L + 1; seg = v[s:e + 1]
         if np.median(seg) < MIN_PRICE or np.median(dv[s:e + 1]) < MIN_DVOL[scale]: continue
         hi, lo = seg.max(), seg.min()
@@ -93,8 +105,12 @@ def evaluate(ticker, scale, w):
         div_dir = "UP" if dk == "DIVUP" else "DN" if dk == "DIVDN" else "UP" if broad_up else "DN" if broad_dn else ""
         grade = "strict" if dk else ("broad" if div_dir else "")
         pre = v[max(0, s - 104):s]
-        row = dict(ticker=ticker, scale=scale, R=R, state=(ck or dk or ""), div_dir=div_dir, div_grade=grade,
-                   base_len=int(L), start=str(c.index[s])[:16], asof=str(c.index[e])[:16], close=round(float(v[e]), 2),
+        gap = (dd["rsi_h2"] - dd["rsi_h1"]) if dd else 0.0
+        if div_dir == "UP":   score = n_rise + max(0.0, gap) / 10 + (0.5 - pos) + max(0.0, rsl if not np.isnan(rsl) else 0) - abs(psl if not np.isnan(psl) else 0)
+        elif div_dir == "DN": score = n_fall + max(0.0, -gap) / 10 + (pos - 0.5) + max(0.0, -rsl if not np.isnan(rsl) else 0) - abs(psl if not np.isnan(psl) else 0)
+        else: score = np.nan
+        row = dict(ticker=ticker, scale=scale, R=R, state=(ck or dk or ""), div_dir=div_dir, div_grade=grade, score=round(float(score), 2) if div_dir else np.nan,
+                   base_len=int(L), base_capped=bool(capped), start=str(c.index[s])[:16], asof=str(c.index[e])[:16], close=round(float(v[e]), 2),
                    base_hi=round(float(hi), 2), base_lo=round(float(lo), 2), range_ratio=round(float(hi / lo), 2), drift=round(float(drift), 2),
                    prior_dd=round(float(lo / pre.max() - 1), 2) if len(pre) > 20 else np.nan,
                    pos=round(float(pos), 2), rsi=round(float(r_[e]), 1), ma13_gt_26=bool(m13[e] > m26[e]) if not np.isnan(m26[e]) else None,
@@ -111,7 +127,7 @@ def render(rows, W, scale, out, label):
     rows = rows.reset_index(drop=True); pages = math.ceil(len(rows) / PER_PAGE); files = []
     for p in range(pages):
         chunk = rows.iloc[p * PER_PAGE:(p + 1) * PER_PAGE]; nrow = math.ceil(len(chunk) / COLS)
-        fig = plt.figure(figsize=(4.8 * COLS, 3.9 * nrow)); outer = gridspec.GridSpec(nrow, COLS, figure=fig, hspace=0.55, wspace=0.25)
+        fig = plt.figure(figsize=(4.8 * COLS, 3.9 * nrow)); outer = gridspec.GridSpec(nrow, COLS, figure=fig, hspace=0.55, wspace=0.25, top=(0.82 if nrow == 1 else 0.93), bottom=(0.12 if nrow == 1 else 0.05))
         for i, (_, r) in enumerate(chunk.iterrows()):
             inner = gridspec.GridSpecFromSubplotSpec(2, 1, subplot_spec=outer[i], height_ratios=[3, 1.3], hspace=0.06)
             axp = fig.add_subplot(inner[0]); axr = fig.add_subplot(inner[1], sharex=axp)
@@ -119,7 +135,7 @@ def render(rows, W, scale, out, label):
                 w = W[(r.ticker, scale)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values
                 e = len(c) - 1; s = int(r.s_idx); i0 = max(0, s - 26); x = np.arange(i0, e + 1)
                 axp.plot(x, c[i0:e + 1], color=INK, lw=1.0); axp.axhspan(r.base_lo, r.base_hi, color=SLATE, alpha=0.10); axp.axvspan(s, e, color=SLATE, alpha=0.10)
-                axp.set_yscale("log"); axp.yaxis.set_minor_formatter(matplotlib.ticker.NullFormatter()); axp.yaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
+                axp.set_yscale("log"); axp.yaxis.set_major_locator(matplotlib.ticker.LogLocator(base=10, subs=(1.0, 2.0, 5.0), numticks=8)); axp.yaxis.set_minor_formatter(matplotlib.ticker.NullFormatter()); axp.yaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
                 axr.plot(x, rs[i0:e + 1], color=TEAL if r.div_dir == "UP" else ORANGE, lw=1.0); axr.axhline(50, color=MUTED, lw=0.7); axr.set_ylim(10, 90); axr.set_yticks([30, 50, 70])
                 for j in json.loads(r.ph_idx):
                     axr.plot([s + j], [rs[s + j]], marker="o", ms=3.5, color=INK, mec=INK, mfc="white")
@@ -129,7 +145,7 @@ def render(rows, W, scale, out, label):
                 axr.set_xticks(ticks); axr.set_xticklabels([pd.Timestamp(idx[t - i0]).tz_convert("America/New_York").strftime(fmt) if scale == "hourly" else pd.Timestamp(idx[t - i0]).strftime(fmt) for t in ticks], fontsize=6.5)
                 plt.setp(axp.get_xticklabels(), visible=False)
                 gap = f"RSI highs {r.rsi_h1:.0f}→{r.rsi_h2:.0f}" if pd.notna(r.get("rsi_h1", np.nan)) else "no RSI pivots"
-                axp.set_title(f"{r.ticker}  {scale} {r.div_grade} {r.div_dir}  R{r.R}  base {r.base_len} bars  close {r.close}\n"
+                axp.set_title(f"{r.ticker}  {scale} {r.div_grade} {r.div_dir}  R{r.R}  base {r.base_len}{'+' if r.base_capped else ''} bars  close {r.close}  score {r.score:.1f}\n"
                               f"pos {r.pos:.2f}  RSI {r.rsi:.0f}  slope26 {r.rsi_slope26:+.2f}/bar  {gap}  rises {r.n_rise} falls {r.n_fall}",
                               fontsize=7.5, color=INK, loc="left")
             except Exception as ex:
@@ -138,19 +154,18 @@ def render(rows, W, scale, out, label):
                 ax.grid(alpha=0.15); ax.tick_params(labelsize=6.5, colors=SLATE)
                 for sp in ax.spines.values(): sp.set_color("#E2E8F0")
         fig.suptitle(f"{label} — page {p + 1}/{pages}   (grey = open base; markers = RSI swing highs used)", fontsize=10, color=TEAL, x=0.01, ha="left", y=0.995)
-        fig.subplots_adjust(top=0.90 if nrow == 1 else 0.95)
         f = f"{out}/{scale}_{label.split()[0].lower()}_{p + 1}.png"; fig.savefig(f, dpi=105, bbox_inches="tight"); plt.close(fig); files.append(f)
     return files
 
 # ------------------------------------------------------------ main
 def dedup(df):
-    """One row per ticker per scale: strict before broad, more rising/falling highs first, tightest band first."""
+    """One row per ticker per scale: strict before broad, then by shape score (consecutive RSI highs, RSI gap, band position, RSI slope, price flatness)."""
     if not len(df): return df
-    d = df.copy(); d["g"] = d.div_grade.map({"strict": 0, "broad": 1}); d["nn"] = np.where(d.div_dir == "UP", d.n_rise, d.n_fall)
-    return d.sort_values(["g", "nn", "R"], ascending=[True, False, True]).drop_duplicates(["ticker", "scale"]).drop(columns=["g", "nn"])
+    d = df.copy(); d["g"] = d.div_grade.map({"strict": 0, "broad": 1})
+    return d.sort_values(["g", "score", "R"], ascending=[True, False, True]).drop_duplicates(["ticker", "scale"]).drop(columns=["g"])
 
 def md_table(d, scale, direction):
-    cols = ["ticker", "R", "div_grade", "state", "base_len", "close", "pos", "rsi", "rsi_h1", "rsi_h2", "n_rise" if direction == "UP" else "n_fall", "rsi_slope26", "px_slope26", "med_dvol"]
+    cols = ["ticker", "R", "div_grade", "score", "state", "base_len", "base_capped", "close", "pos", "rsi", "rsi_h1", "rsi_h2", "n_rise" if direction == "UP" else "n_fall", "rsi_slope26", "px_slope26", "med_dvol"]
     if not len(d): return "_none_\n"
     hdr = "| " + " | ".join(cols) + " |\n|" + "---|" * len(cols) + "\n"
     body = ""
@@ -183,6 +198,7 @@ def main():
     groups = list(px.groupby("ticker")); n_t = 0
     for t, g in groups:
         if listed is not None and t not in listed: continue
+        if EXCLUDE_RE.search(t): continue
         if pd.to_datetime(g["date"]).max() < asof - pd.Timedelta(days=5): continue     # stale = not trading
         n_t += 1
         if a.max and n_t > a.max: break
@@ -196,6 +212,7 @@ def main():
         iq = pd.read_parquet(a.intraday); nh = 0
         for t, g in iq.groupby("ticker"):
             if listed is not None and t not in listed: continue
+            if EXCLUDE_RE.search(t): continue
             h = hourly_bars(g); W[(t, "hourly")] = h; rows += evaluate(t, "hourly", h); nh += 1
         print(f"hourly done: {nh} tickers with intraday bars; total rows {len(rows)}", flush=True)
     df = pd.DataFrame(rows)
@@ -222,7 +239,7 @@ def main():
         st = df[(df.scale == sc)]
         lists[sc]["counts"] = dict(open_base_rows=int(len(st)), tickers=int(st.ticker.nunique()), COMP=int((st.state == "COMP").sum()), ANTI=int((st.state == "ANTI").sum()),
                                    DIVUP=int((st.state == "DIVUP").sum()), DIVDN=int((st.state == "DIVDN").sum()), asof=str(st["asof"].max()) if len(st) else None)
-    json.dump(dict(asof=str(asof.date()), scales=scales, lists=lists, params=dict(R=R_LIST, LMIN=LMIN, LMAX=LMAX, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_DVOL=MIN_DVOL,
+    json.dump(dict(asof=str(asof.date()), scales=scales, lists=lists, params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, FLAT=FLAT, MIN_PRICE=MIN_PRICE, MIN_DVOL=MIN_DVOL,
               DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"]), BROAD=dict(rsi_slope=BROAD_RSI_SLOPE, px_slope=BROAD_PX_SLOPE))),
               open(f"{a.out}/div_screen.json", "w"), indent=1, default=str)
     open(f"{a.out}/div_screen.md", "w").write("\n".join(md))

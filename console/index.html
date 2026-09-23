@@ -159,6 +159,8 @@ pre.json{font-family:var(--mono);font-size:11.5px;background:var(--surface2);pad
 
 <section class="tab" id="tab-divergence">
   <div class="tiles" id="ds-tiles"></div>
+  <div class="card" id="h24-card"><h2>H24 · blind labelling <span class="r"><a id="h24-open" href="../label/label_page.html" target="_blank">open the labelling page ↗</a></span></h2>
+    <div class="note" id="h24-note">Charts with no name, no dates and no future: Buy / Pass / Unsure per chart (Y / N / U), then "Download labels CSV" when the whole set is done. The answer key (label/label_key.csv) stays closed until then.</div></div>
   <div class="card"><h2>Review page · charts + Y/N labels <span class="r"><a id="ds-open" href="../div_screen/div_review.html" target="_blank">open in its own tab ↗</a></span></h2>
     <div id="ds-frame-wrap"><iframe id="ds-frame" title="Divergence review" style="width:100%;height:82vh;border:1px solid var(--line);border-radius:8px;background:var(--surface)"></iframe></div>
     <div class="note" style="margin-top:6px">Keys work once you click inside the page: ←/→ next chart · Y/N/U label · L jump to unlabeled · / search. Labels are kept by the browser and exported with "Download labels.csv".</div></div>
@@ -358,6 +360,7 @@ function renderBases(){
 // ---------- divergence ----------
 let dsFrameLoaded=false;
 function initDivergence(){ if(dsFrameLoaded) return; dsFrameLoaded=true;
+  exists(P+"label/label_page.html").then(ok=>{ if(!ok){ $("#h24-note").textContent="Not built yet — push a 'label' trigger (base-trigger.txt) and pull; the page then appears here."; $("#h24-open").remove(); } });
   exists(P+"div_screen/div_review.html").then(ok=>{ if(ok){ $("#ds-frame").src=P+"div_screen/div_review.html"; } else { $("#ds-frame-wrap").innerHTML='<div class="miss">div_screen/div_review.html is not built yet — it is written by the next <code>screen</code> run (or copy Divergence_Review.html from ~/Projects/VBT/div-screen into vbt-private/div_screen/div_review.html).</div>'; $("#ds-open").remove(); } });
 }
 function renderDivergence(){

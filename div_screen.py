@@ -35,8 +35,10 @@ Outputs: div_screen.csv (one row per ticker x scale x R with an open base),
 div_screen.json (deduped lists), div_screen.md (tables), gallery pages
 <scale>_<up|dn>_<n>.png with price + RSI panels, and (v0.3) div_series.json —
 the bar series (dates, closes, RSI14, base band, RSI pivot indices) for every
-listed divergence plus reference tickers (IOVA weekly) — feeds the interactive
-review page (VBT/div-screen artifact) where Eric labels the charts.
+listed divergence plus reference tickers (IOVA weekly) — and div_review.html, a
+self-contained page (template div_review_template.html + the series embedded)
+that opens from the local clone by double-click: private, no server, labels kept
+by the browser with CSV export/import.
 """
 import argparse, json, math, os, sys, warnings
 import numpy as np, pandas as pd
@@ -183,8 +185,15 @@ def export_series(dv, W, out, asof, scales, reference=("IOVA",), n_ctx=26):
             if (tk, sc) in W:
                 w = W[(tk, sc)]; c = w["close"].values.astype(float); rs = rsi(w["close"]).values; i0 = max(0, len(c) - (LMAX + n_ctx))
                 ref[f"{tk}|{sc}"] = dict(ticker=tk, scale=sc, t=fmt(w.index[i0:], sc), c=[round(float(x), 4) for x in c[i0:]], r=[(None if np.isnan(x) else round(float(x), 1)) for x in rs[i0:]])
-    json.dump(dict(asof=str(asof), scales=scales, n=len(items), items=items, reference=ref, params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"]))),
-              open(f"{out}/div_series.json", "w"), separators=(",", ":"), default=str)
+    payload = dict(asof=str(asof), scales=scales, n=len(items), items=items, reference=ref, params=dict(R=R_SCALE, LMIN=LMIN, LMAX=LMAX, DIV=dict(K=DIV_K, MARGIN=globals()["DIV_MARGIN"], PX_TOL=globals()["DIV_PX_TOL"])))
+    txt = json.dumps(payload, separators=(",", ":"), default=str)
+    open(f"{out}/div_series.json", "w").write(txt)
+    # v0.3: self-contained local review page (no server, no network) — template lives next to this script
+    tpl = os.path.join(os.path.dirname(os.path.abspath(__file__)), "div_review_template.html")
+    if os.path.exists(tpl):
+        html = open(tpl, encoding="utf-8").read().replace("__SERIES_JSON__", txt.replace("</", "<\\/"))
+        open(f"{out}/div_review.html", "w", encoding="utf-8").write(html)
+        print("review page written:", f"{out}/div_review.html", f"({len(html) // 1024} KB)")
     return len(items)
 
 # ------------------------------------------------------------ main

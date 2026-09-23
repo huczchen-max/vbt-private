@@ -1,4 +1,4 @@
-== divergence screen pass 1 (weekly + daily) Wed Sep 23 03:03:40 UTC 2026
+== divergence screen pass 1 (weekly + daily) Wed Sep 23 06:45:05 UTC 2026
   1000 tickers, 1182 open-base rows
   2000 tickers, 2283 open-base rows
   3000 tickers, 3333 open-base rows
@@ -6,6 +6,7 @@
   5000 tickers, 5540 open-base rows
 EOD scales done: 5897 listed tickers, 6613 rows
 intraday needed: 2704 tickers (of 2704 with an open weekly/daily base) -> private/div_screen/intraday_needed.txt
+review page written: private/div_screen/div_review.html (2505 KB)
 series exported: 258
 {
  "weekly": {
@@ -31,12 +32,12 @@ weekly UP strict ['ALLT', 'ARX', 'BULL', 'CEPO', 'CRM', 'DG', 'DRD', 'GDDY', 'GF
 weekly DN strict ['AMBA', 'APD', 'BCRX', 'BG', 'CCS', 'CENT', 'CENTA', 'CL', 'CMPR', 'FANG', 'FSS', 'HAPN', 'IMKTA', 'LEA', 'MGRC', 'MSCI', 'MTX', 'MUSA', 'PHM', 'PRAX', 'RCI', 'RELY', 'SNDX', 'SON', 'STTK', 'SUI', 'TDC', 'TFII', 'WFRD', 'YETI', 'ZGN'] broad ['AEXA', 'BIT', 'CBU', 'GCO', 'H', 'NBHC', 'QSR', 'SBSI', 'ST', 'VMRK', 'VTMX']
 daily UP strict ['AB', 'ABEV', 'AERO', 'AKAM', 'AMRC', 'ATEN', 'BLLN', 'CAAP', 'CGNX', 'CORZ', 'EFXT', 'ERIC', 'FF', 'HIMX', 'HIVE', 'IRS', 'LLY', 'LOGI', 'LRCX', 'LXFR', 'MDA', 'MTSI', 'MYGN', 'NPCE', 'NTCT', 'NXPI', 'PDFS', 'PG', 'PLMR', 'PLXS', 'POET', 'RAIL', 'RDCM', 'RDDT', 'SWBI', 'TDC', 'TEL', 'TS', 'TSEM', 'TWI', 'TXN', 'ULCC', 'WYY'] broad ['ALLT', 'ATII', 'AUR', 'BHE', 'BWMX', 'DBI', 'DHC', 'ESLT', 'IFS', 'ITRN', 'KN', 'NTGR', 'QTRX', 'STAG', 'VFS', 'WMK']
 daily DN strict ['AER', 'AG', 'AGI', 'AMCR', 'AMCX', 'ANAB', 'AQST', 'ATNI', 'AVR', 'AVY', 'BF-A', 'BF-B', 'BILL', 'BLKB', 'BRK-A', 'BRK-B', 'BVN', 'CDE', 'CHYM', 'CNQ', 'COR', 'CPK', 'CTAS', 'CTGO', 'CTSH', 'DERM', 'DIS', 'DLTR', 'DNOW', 'DRH', 'DXYZ', 'ETD', 'EVTC', 'EW', 'EXPO', 'FCFS', 'FIVE', 'FOX', 'FOXA', 'FSUN', 'G', 'GHRS', 'GSM', 'HNI', 'ICE', 'IDCC', 'INGM', 'IQI', 'IT', 'J', 'JKHY', 'KKR', 'KNSL', 'KRO', 'KURA', 'KWR', 'LCUT', 'LPLA', 'MNPR', 'MSI', 'NESR', 'NGL', 'NIC', 'NSP', 'NX', 'OBDC', 'OCUL', 'OGC', 'OTEX', 'PCVX', 'PGY', 'PH', 'PPTA', 'PRDO', 'RELX', 'RIO', 'RITM', 'RMD', 'SBR', 'SBRA', 'SBSW', 'SCI', 'SDRL', 'SHO', 'SKM', 'SPOT', 'STEP', 'SVM', 'SXT', 'TBN', 'TFC', 'TFPM', 'TPC', 'TPVG', 'TRMB', 'TVTX', 'TYL', 'VLTO', 'WELL', 'WMG', 'WWW', 'XPRO', 'YORW', 'ZBH'] broad ['AAUC', 'ALV', 'ARLP', 'AUNA', 'AVO', 'AWK', 'B', 'BKH', 'BLCO', 'CHRD', 'CMCL', 'COP', 'EDU', 'EXLS', 'FIZZ', 'GROY', 'IMO', 'KINS', 'MAIN', 'MELI', 'NOG', 'OXY', 'PAHC', 'PAYO', 'PBA', 'PSKY', 'PUSA', 'RDNT', 'SCZM', 'TM']
-== intraday pull Wed Sep 23 03:05:05 UTC 2026
-intraday: needed 2704, already fresh 2700, pulling 4 (budget 4000); quota before: {'used': 4540, 'limit': 100000, 'date': '2026-09-23'}
-  4/4  ok 2  empty 2  0s
-quota after: {'used': 4555, 'limit': 100000, 'date': '2026-09-23'}; calls consumed this run: 15 for 4 requests -> 3.8 calls/request
+== intraday pull Wed Sep 23 06:46:50 UTC 2026
+intraday: needed 2704, already fresh 2700, pulling 4 (budget 4000); quota before: {'used': 4555, 'limit': 100000, 'date': '2026-09-23'}
+  4/4  ok 2  empty 2  1s
+quota after: {'used': 4575, 'limit': 100000, 'date': '2026-09-23'}; calls consumed this run: 20 for 4 requests -> 5.0 calls/request
 intraday parquet: 2746 tickers, 2594066 rows; status=ok
-== divergence screen pass 2 (weekly + daily + hourly) Wed Sep 23 03:05:07 UTC 2026
+== divergence screen pass 2 (weekly + daily + hourly) Wed Sep 23 06:46:53 UTC 2026
   1000 tickers, 1182 open-base rows
   2000 tickers, 2283 open-base rows
   3000 tickers, 3333 open-base rows
@@ -44,6 +45,7 @@ intraday parquet: 2746 tickers, 2594066 rows; status=ok
   5000 tickers, 5540 open-base rows
 EOD scales done: 5897 listed tickers, 6613 rows
 hourly done: 2744 tickers with intraday bars; total rows 8853
+review page written: private/div_screen/div_review.html (4058 KB)
 series exported: 378
 {
  "weekly": {

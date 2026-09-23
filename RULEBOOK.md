@@ -68,6 +68,32 @@ comfort demands partial profit-taking, do it knowing the measured cost.)
 - **RSI>50 filter** — mildly better excess but weaker win rate on a small
   subset; not adopted, monitor.
 
+*From the wide-universe base study (Sept 2026: 17,706 tickers incl. ~12k
+delisted, 2009–2026, weekly bars, SPY control; details in the VBT project's
+base-pattern doc and the master register H17–H23):*
+
+- **Long-base breakout / composite trigger as an entry** (H17) — direction
+  is predictable (composite 85% up vs mirror 14%) but the entry loses:
+  −3.8 to −4.2% vs SPY, win 55%, negative excess in 14 of 18 years. The
+  trigger fires 2–3 weeks before the break; it is a breakout-chase in disguise.
+- **Tight bases / VCP** (H18, H21) — tight bases break up more often but the
+  return effect is the low-volatility effect; volume dry-up predicts a DOWN
+  break (abandonment, not accumulation); best cell +1.6% vs SPY on n=469.
+- **Fundamentals as a base selector** (H20) — no cell clears the bar; high
+  revenue growth at the trigger is the WORST cell (>50% growth: −7.8% vs
+  SPY); the one positive cell was a 2020 recovery artifact.
+- **RSI divergence, both directions** (H22) — the "IOVA shape": bottom
+  divergence −2.8 to −5.6% vs SPY and no direction call; top divergence is
+  followed by an UP break 2–3× more often than DOWN. Not an entry, not an exit.
+- **MACD cross at the Elliott-oscillator trough, two-tranche entry** (H23) —
+  equal to a random bar of the same base at the 1.5× band (+2.8% vs +4.3%,
+  both ≈ −3.5% vs SPY) and worse at wider bands; the base breaks DOWN more
+  often than UP after it (39% vs 28%); the ⅓ + ⅔ blend lowers the tail only
+  by holding cash and gives up the return the confirmation costs.
+- **Base-low invalidation for a test position** (H23) — closing below the
+  base low fires on 41% of entries and makes them worse than holding
+  (whipsaws). Same lesson as the tight stops above.
+
 ## Caveats
 
 66 events, one survivor-built universe, one broadly rising decade, quality
@@ -80,9 +106,10 @@ is now forward-testing — not guarantees.
 
 # Current Thinking (living section — update with every change)
 
-*This page is the single source of truth for the system's logic. The portal's
-Logic tab renders it live. When rules or hypotheses change, change THIS file
-(and trade_paper.py constants in lockstep), and add a change-log entry.*
+*This page is the single source of truth for the system's logic. The VBT
+Console's Docs tab renders it from the local clone. When rules or hypotheses
+change, change THIS file (and trade_paper.py constants in lockstep), and add
+a change-log entry.*
 
 ## Status of each layer
 
@@ -96,6 +123,16 @@ Logic tab renders it live. When rules or hypotheses change, change THIS file
 - **Narrative layer (CONTEXT ONLY — settled 2026-08-01)**: full GDELT study
   (58/66 events, NARRATIVE_STUDY_FINAL.md) — narrative tone is NOT a timing
   signal. Weekly narrative-state + KOL stances remain logged for context.
+- **Base-pattern layer (RISK FLAGS ONLY — settled 2026-09-12 → 09-23)**:
+  `base_study_wide.py` v0.8 runs on the full US universe (Actions mode
+  `study`; live lists in `base_summary.json`, charts in the VBT Console).
+  Nothing from it is an entry. What it is allowed to do: (a) **ANTI state in
+  a held name's base, especially with volume drying up** = "review, don't
+  add" — the strongest breakdown warning measured (DOWN break 66–68%; with
+  dry volume −13% vs SPY, win 43%); (b) quality and low pre-base volatility
+  are sizing/risk inputs (MAE −10% vs −16%), never return predictors; (c)
+  the live COMP / DIVUP / DIVDN / E1 / E2 lists are context for the Monday
+  brief and the review page, to be labelled, not traded.
 
 ## Narrative hypotheses — RESOLVED (2026-08-01, n=58)
 
@@ -113,13 +150,38 @@ Logic tab renders it live. When rules or hypotheses change, change THIS file
    (sunny cohort did worse everywhere it differed). "2+" flags stay logged
    as a neutral observation; no favorable interpretation.
 
+## Long-base and indicator-timing hypotheses — RESOLVED (2026-09-12 → 09-23)
+
+Seven hypotheses (H17–H23 in the master register), one answer: on weekly
+bars, timing inside a base cannot be bought from price-derived indicators.
+The composite state (MA13 > MA26 & RSI > 55), RSI divergence, a MACD cross
+and the Elliott-oscillator trough are smoothers of the same closes; each
+calls direction no better than the base's own history, and each entry loses
+3–9 points to SPY on the wide universe, with negative excess in 12–15 of
+the 17–18 years tested. The information in a base is in what it does *afterwards* — the
+entries that worked are only identifiable once the composite or the second
+tranche has arrived, which is hindsight — so selection (theme + quality,
+Rulebook v2 Setup + Entry) keeps carrying the edge and the base study is
+demoted to risk flags (layer status above).
+
+Two nuances kept on record: the Entry tiebreaker "prefer EWO > 0 among
+same-day stage-3 signals" stands — it was measured at the structure flip,
+not inside a base, and H23 says nothing about that context; and a DIVUP
+followed by an E1 in the same base tilted positive (+4 to +5%, win 58–64%,
+n=65–75) — parked with the H21 low-vol cell as candidate universes for an
+options paper test, not as stock entries.
+
 ## Review calendar
 
 - Monthly: paper ledger vs rulebook (deviations logged).
 - When GDELT trickle hits 66/66: refresh SPEC-flag numbers (n=9 → n≈12).
 - ~Oct 2026: LLM judgment-log scoring → ENFORCE_LLM decision. Also token
-  renewals (3 places: Claude session, PRIVATE_REPO_TOKEN, .vbt_token).
-- Quarterly: rule-lab rerun as the forward sample grows.
+  renewals (PAT expires 2026-10-16; it lives in the PRIVATE_REPO_TOKEN
+  secret, .vbt_token, and the two scheduled-briefing prompts).
+- Quarterly: rule-lab rerun as the forward sample grows; base study
+  `study` mode rerun (cache is evicted after 7 idle days — `full` first).
+- Label the divergence review page (weekly bottoms first) before any change
+  to the divergence shape score.
 
 ## Change log
 
@@ -131,3 +193,16 @@ Logic tab renders it live. When rules or hypotheses change, change THIS file
 - **2026-08-01** — Narrative study finalized (58/66 events): n=16 inversion
   softened to a weak SPEC-only caution flag; narrative demoted to context.
   Hypotheses 1–3 resolved above; weekly brief STEP 4 interpretation fixed.
+- **2026-09-12/13** — Long-base study on the EODHD universe (H17–H19, H21):
+  composite trigger, tightness, spring and contraction/volume dry-up all
+  REJECTED as entries; ANTI + dry volume adopted as the review-don't-add
+  risk flag; low-vol contracting R2.0 cell parked for an options test.
+- **2026-09-14** — Fundamentals as a base selector (H20) REJECTED; quality
+  kept as a sizing/risk input only.
+- **2026-09-22** — RSI divergence states (H22) REJECTED both ways; R3.0
+  band and rsi_slope26 kept in the study.
+- **2026-09-23** — MACD + Elliott-oscillator two-tranche entry (H23)
+  REJECTED as entry and as sizing rule; indicator-timing thread closed for
+  weekly bars. Divergence screen (weekly/daily/hourly lists + local review
+  page) and the local VBT Console replace the public dashboard; GitHub
+  Pages deployment removed.

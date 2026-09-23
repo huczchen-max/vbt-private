@@ -142,6 +142,8 @@ Negative results compound. The rulebook's "Tested and rejected" list and this re
 
 **Done 23 Sep (privacy + local console):** the divergence screen (`screen` trigger mode: weekly + daily on the full liquid US universe, hourly on the open-base subset via EODHD intraday) produces ticker lists, chart pages and a self-contained review page (`div_screen/div_review.html`, Y/N/unsure labels kept in the browser, CSV export) — 277 strict names on 21 Sep. Every dashboard moved into the local VBT Console; `fetch.yml` no longer builds or deploys GitHub Pages (the nightly fetch, signals, paper engine and LLM screen are unchanged); pending on Eric's side: unpublish the old Pages site and make vbt-data private, after which Actions minutes count against the private-repo allowance (2,000 min/month on GitHub's free plan; the nightly job is ~5 min, a `screen` run ~35 min, a `full` study ~45 min — roughly 400–600 min/month at the current cadence).
 
+**Rulebook updated 23 Sep:** the wide-universe results (H17–H23) are now in RULEBOOK.md — six rejected items, a "Base-pattern layer (RISK FLAGS ONLY)" status entry, a resolved-hypotheses block, and change-log entries; the Console's Docs tab renders it.
+
 **Resolved 23 Sep:** H23 (MACD + EO two-tranche entry) ran as base study v0.8 (run #16, 34 min, 129,441 signal rows) — negative as an entry and as a sizing rule; recorded in the register and the base-pattern doc. The review page and console now carry MACD/EO panels and the E1/E2 markers; the gallery has `e1_hits`, `e1_stranded`, `live_e1`, `live_e2` pages.
 
 **Calendar:** Oct 16 PAT expiry (rotate; move it out of the scheduled-task prompts); Oct 17 Exhaustion-Watch scoring; October LLM judgment-log scoring and ENFORCE_LLM decision; monthly ledger-vs-rulebook review; quarterly rule-lab rerun as the forward sample grows.
@@ -152,7 +154,7 @@ Negative results compound. The rulebook's "Tested and rejected" list and this re
 
 **Secondary:** test the ANTI-composite state as a "review, don't add" trigger against the paper ledger's stage-3 breakdown exits (does it fire earlier, and would it have helped on SNPS, MOD, CORZ?); label the 45-name base gallery so the detector is checked against the pattern Eric means.
 
-**Later:** decide the options data source (Alpaca preferred) and paper-test a long-call/call-spread book on the R2.0 low-vol contracting cell (H21) and a mid-band premium-harvest book on tight bases (v0.7 measurements first: mid-band break hazard at 6/9 weeks; edge-bounce returns with and without the ANTI state); EODHD news sentiment as a contrarian check on SPEC signals; write H17–H23 (H20 fundamentals negative with the 2020-artifact lesson; H22 divergence negative both ways; H23 MACD/EO timing negative, two tranches do not help) into RULEBOOK.md "Current Thinking".
+**Later:** decide the options data source (Alpaca preferred) and paper-test a long-call/call-spread book on the R2.0 low-vol contracting cell (H21) and a mid-band premium-harvest book on tight bases (v0.7 measurements first: mid-band break hazard at 6/9 weeks; edge-bounce returns with and without the ANTI state); EODHD news sentiment as a contrarian check on SPEC signals. (H17–H23 were written into RULEBOOK.md "Current Thinking" on 23 Sep: rejected list extended, base-pattern layer added as risk flags only, change log updated.)
 
 ## 9. Retrospective
 

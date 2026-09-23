@@ -1,6 +1,6 @@
 # VBT — Master Document
 
-*Source of truth for the VBT systematic trading project. Version 1.1, 13 September 2026. Every figure below is traceable to a file in vbt-private, a project doc, or a dated conversation; where a number is an estimate it is marked as such. This documents a personal, paper-first systematic process; it is not investment advice.*
+*Source of truth for the VBT systematic trading project. Version 1.4, 23 September 2026. Every figure below is traceable to a file in vbt-private, a project doc, or a dated conversation; where a number is an estimate it is marked as such. This documents a personal, paper-first systematic process; it is not investment advice.*
 
 ## Project brief
 
@@ -48,7 +48,7 @@ Discipline: every judgment written, dated and scored later; paper record first; 
 
 ### 3.1 Architecture
 
-Two GitHub repositories. **vbt-data** (public) holds the workflows, the fetched market data, and the static dashboard (docs/signals.json, docs/index.html via GitHub Pages). **vbt-private** holds every script, rulebook, ledger and study result. Each Actions run clones vbt-private with a PRIVATE_REPO_TOKEN, runs the pipeline, and commits results back. One-off jobs are started by committing a trigger file whose first word is the mode (for example `base-trigger.txt` → `fund`). Secrets live in vbt-data Actions: Alpaca paper keys, the Anthropic key, EODHD_API_KEY, PRIVATE_REPO_TOKEN.
+Two GitHub repositories. **vbt-data** holds the workflows, the fetched market data and the nightly signal snapshot (docs/signals.json, docs/index.html); it was the public shell of the project until 23 September, when the GitHub Pages deployment was removed from `fetch.yml`; once Eric unpublishes the old Pages site and flips the repository to private (§8), nothing is published any more. **vbt-private** holds every script, rulebook, ledger and study result. All dashboards are now browsed locally through the **VBT Console** (`vbt-private/console/index.html`, launched by double-clicking `VBT Console.command`, which serves ~/Projects on 127.0.0.1 only): eight tabs — overview, VBT-1 tracker, VBT-2 thesis book, options, scanners (radar, winners, exhaustion), bases (live screen, divergence lists, galleries, the divergence review page), symbol charts (candles, Bollinger, MACD, RSI from data/prices.csv) and the documents/study results — all read straight from the two clones, so a `git pull` is the refresh. Each Actions run clones vbt-private with a PRIVATE_REPO_TOKEN, runs the pipeline, and commits results back. One-off jobs are started by committing a trigger file whose first word is the mode (for example `base-trigger.txt` → `fund`). Secrets live in vbt-data Actions: Alpaca paper keys, the Anthropic key, EODHD_API_KEY, PRIVATE_REPO_TOKEN.
 
 Fourteen workflows exist. Four are scheduled: `fetch.yml` (nightly 21:45 UTC Mon–Fri: market data, signals, the VBT-1 paper engine, the LLM shadow screen, the GDELT trickle), `radar.yml` (Saturday breakout radar), `tracker.yml` (Saturday thesis tracker for VBT-2), `winners.yml` (Saturday winner screen, quarterly LLM pass). The rest are one-off study labs (exit, collar, hourly, hpat, l1, l23, overlay, phase1, thesis fundamentals) and the new `base.yml` (EODHD base-pattern study with seven modes).
 
@@ -76,7 +76,7 @@ Yahoo scraping was replaced for wide-universe research by EODHD (plan upgraded t
 
 **VBT-2 snapshot (12 Sep):** account equity $99,262; VBT-2 budget $39,705; stock sleeve $31,764; options sleeve $7,941 with $7,735 committed. Theme health: AI IN-TREND (SMH −13.8% from high, 74% of names intact), grid IN-TREND (48% intact). Events this week: ARM and QCOM new bottoms; APLD, TXT, PL trend-broken; AXON, IGV repaired.
 
-**Dashboards and logs:** signals.json/index.html (public), paper.json, thesis_state.json, radar_watch.json, exhaustion_watch.json, winners.json, llm_log.jsonl, and the two Claude judgment logs (daily since July, weekly on Mondays).
+**Dashboards and logs (all private, read by the local VBT Console):** signals.json/index.html, paper.json, thesis_state.json, radar_watch.json, exhaustion_watch.json, winners.json, llm_log.jsonl, and the two Claude judgment logs (daily since July, weekly on Mondays).
 
 ## 5. Hypothesis register
 
@@ -103,8 +103,9 @@ Each row: what was asked, how it was tested, what came back, and what was decide
 | H17 | Long-base pattern (base → grind → break) is an entry door | 17,886 tickers incl. delisted, 29,565 events, 57,643 signals | Direction predictable (composite 85% up vs anti 14%) but composite-trigger entry −3.8/−4.2% vs SPY, 55% win, negative excess 14 of 18 yrs | NOT an entry door; ANTI state = "review, don't add" flag; live list = context | 2026-09-12 |
 | H18 | Base tightness (MAD/median) changes the answer | Bins <4% … >15%, pre-base volatility control | Tight bases break up more (79% vs 38%) but return effect is the low-volatility effect; best cell +0.1% vs SPY | Direction yes, magnitude no | 2026-09-12 |
 | H19 | Prior shakeout (spring) predicts the break | SPRING flag | 50/50 direction; weak tilt at R2.0 only | No effect | 2026-09-12 |
-| H20 | Fundamentals (growth, acceleration, surprise, quality, short interest) select the winning bases | Point-in-time join, 200-day stale guard | First pull hit the EODHD 100k-call daily cap (10 calls per fundamentals request); fetch made resumable, 2 runs needed | Open; earns a place only if a cell clears the bar with n ≥ 100 | open |
+| H20 | Fundamentals (growth, acceleration, surprise, quality, short interest) select the winning bases | Point-in-time join, 89% coverage (51,180 signals), 200-day stale guard | No cell clears the bar. Growth is inversely related to outcome (R2.0 revenue >50% → −7.8% vs SPY, 49% win; <0% → −1.4%, 61%); the Rulebook growth+accel+quality screen is market-like (−4.2% vs SPY, 53% win, n=412); the one positive cell (low-vol, shrinking revenue, +5.3% vs SPY, n=640) is a 2020 artifact — ex-2020 every cell is negative vs SPY. Quality cuts MAE (−10% vs −16%) and adds 5 pts of win rate but also trims the upside tail | NOT a selection layer for bases; keep quality as a sizing/risk input; fundamentals thread closed for this pattern | 2026-09-14 |
 | H21 | Contraction into the trigger (tail-8 MAD ÷ base MAD) and volume dry-up identify the good tight bases | v0.6, 27,065 events / 57,643 signals, LMAX applied, flat-line guard | Contraction alone: no information at R1.5 (−3.7 to −4.1% vs SPY in every bin), modest at R2.0. Volume dry-up is a NEGATIVE signal: dry bases break DOWN (19–35% up vs 55–61% when volume rises); dry composite triggers −5 to −9% vs SPY. Tight bases earn 2–3× more per unit of MAE but the edge vanishes once sized to equal expected vol. Best cell in the whole study: R2.0, listed, low-vol, contracting, non-dry → +11.7%, +1.6% vs SPY, 66% win, MAE −8.3%, n=469 | Not an entry door. Keep: ANTI + dry volume = strongest breakdown warning (−13% vs SPY, 43% win); low-vol contracting R2.0 cell = candidate universe for the long-call paper test | 2026-09-13 |
+| H22 | RSI divergence (price flat, RSI higher highs — the IOVA shape) is an early entry; its mirror is an early exit | v0.7, R ∈ {1.5, 2.0, 3.0}, 75,467 signals, DIVUP/DIVDN states with pivot-based RSI swing highs | DIVUP: −2.8 to −5.6% vs SPY, win 51–57%, next break UP only 11–28%; the ones that worked (+8 to +13% vs SPY) are only identifiable after the composite trigger arrives 9–12 wks later. DIVDN: base breaks UP 2–3× more often than DOWN afterwards (+3.5%, win 57%); precedes only 3.5% of ANTI warnings. RSI slope at the composite trigger grades it mildly (rising-fast −2.6% vs falling-fast −9.0% vs SPY). R3.0 behaves like R2.0 | NOT an entry, NOT an exit; keep rsi_slope26 as a tie-breaker; divergence thread closed | 2026-09-22 |
 
 ## 6. What we learned
 
@@ -122,11 +123,11 @@ Survivorship matters. Phase 1 was survivorship-biased and said so; the EODHD uni
 
 Infrastructure is most of the work, and it pays back. Trigger files, the private/public split, the Actions cache, the Mac push ritual and the point-in-time join were each a day of friction; every study after them took hours.
 
-Volume tells direction, not quality. In the base study, volume drying up into the bar was the single strongest directional feature, and it pointed DOWN: abandonment, not quiet accumulation. The VCP folklore did not survive contact with 27,000 events.
+Volume tells direction, not quality. In the base study, volume drying up into the bar was the single strongest directional feature, and it pointed DOWN: abandonment, not quiet accumulation. The VCP folklore did not survive contact with 27,000 events; neither did RSI divergence in either direction (H22), and neither did the idea that fundamentals pick the bases that break out: the growth-and-quality screen that carries the excess at L1 bottoms carries nothing at a long base, and the only positive cell was a 2020 recovery artifact.
 
 Negative results compound. The rulebook's "Tested and rejected" list and this register are the assets that stop the same idea from being re-tried in a weaker moment.
 
-## 7. Current status and health (12 September 2026)
+## 7. Current status and health (23 September 2026)
 
 **Running:** nightly fetch and paper engine, Saturday radar/tracker/winners, both Claude briefings.
 
@@ -134,17 +135,21 @@ Negative results compound. The rulebook's "Tested and rejected" list and this re
 
 **Fixed 12 Sep:** `fetch.yml` pushes now rebase before pushing (a push race with a manual commit failed run #64). Event detector now applies the 156-week maximum base length (events 29,565 → 27,065).
 
-**Pending:** the v0.5 fundamentals pull, now resumable (`fund_parts/` checkpoints in the Actions cache, `fund_done.flag` gates the study); needs two daily runs because EODHD charges 10 calls per fundamentals request against a 100k/day cap.
+**Resolved 14 Sep:** the fundamentals pull completed in one run after restricting it to the 7,259 study tickers and parsing EODHD's flattened response (7,256 ok, 10 min); H20 recorded (negative). The point-in-time fundamentals table (income, cash flow, earnings, snapshot with short interest) was cached for reuse — note the Actions cache is evicted after 7 idle days, so it is gone again and would need a one-day re-pull.
+
+**Resolved 22 Sep:** base study v0.7 (RSI divergence states, R3.0 band, rsi_slope26) ran on a fresh full pull (17,706 tickers, 45 min end to end); H22 recorded (negative both ways). Found and fixed a bug that had left the live pages of the v0.6 gallery blank (`r.asof` name collision); a `gallery` trigger mode now re-renders charts without re-running the study.
+
+**Done 23 Sep (privacy + local console):** the divergence screen (`screen` trigger mode: weekly + daily on the full liquid US universe, hourly on the open-base subset via EODHD intraday) produces ticker lists, chart pages and a self-contained review page (`div_screen/div_review.html`, Y/N/unsure labels kept in the browser, CSV export) — 277 strict names on 21 Sep. Every dashboard moved into the local VBT Console; `fetch.yml` no longer builds or deploys GitHub Pages (the nightly fetch, signals, paper engine and LLM screen are unchanged); pending on Eric's side: unpublish the old Pages site and make vbt-data private, after which Actions minutes count against the private-repo allowance (2,000 min/month on GitHub's free plan; the nightly job is ~5 min, a `screen` run ~35 min, a `full` study ~45 min — roughly 400–600 min/month at the current cadence).
 
 **Calendar:** Oct 16 PAT expiry (rotate; move it out of the scheduled-task prompts); Oct 17 Exhaustion-Watch scoring; October LLM judgment-log scoring and ENFORCE_LLM decision; monthly ledger-vs-rulebook review; quarterly rule-lab rerun as the forward sample grows.
 
 ## 8. Open questions and next steps
 
-**Primary (this week, 20–30 min each):** run the resumable fundamentals pull on two consecutive days (Actions → Base-pattern study → Run workflow → `fund`) and record H20; label the wide galleries in ~/Projects/VBT/gallery-wide (six sets, 18 charts each).
+**Primary (this week, 20–30 min each):** push the console + fetch.yml commits, then `gh api -X DELETE repos/huczchen-max/vbt-data/pages` and `gh repo edit huczchen-max/vbt-data --visibility private --accept-visibility-change-consequences` (or Settings → Pages → Unpublish, Settings → General → Change visibility); open the VBT Console and label the divergence review page (weekly bottoms first: Y/N/unsure per chart, then Download labels.csv into ~/Projects/VBT/div-screen) so the shape score can be tuned against Eric's eye; verify the weekday LLM verdicts after the credit top-up (Overview tab: raw_ok, or llm_log.jsonl).
 
 **Secondary:** test the ANTI-composite state as a "review, don't add" trigger against the paper ledger's stage-3 breakdown exits (does it fire earlier, and would it have helped on SNPS, MOD, CORZ?); label the 45-name base gallery so the detector is checked against the pattern Eric means.
 
-**Later:** decide the options data source (Alpaca preferred) and paper-test a long-call/call-spread book on the R2.0 low-vol contracting cell (H21) and a mid-band premium-harvest book on tight bases (v0.7 measurements first: mid-band break hazard at 6/9 weeks; edge-bounce returns with and without the ANTI state); EODHD news sentiment as a contrarian check on SPEC signals; write H17–H21 into RULEBOOK.md "Current Thinking".
+**Later:** decide the options data source (Alpaca preferred) and paper-test a long-call/call-spread book on the R2.0 low-vol contracting cell (H21) and a mid-band premium-harvest book on tight bases (v0.7 measurements first: mid-band break hazard at 6/9 weeks; edge-bounce returns with and without the ANTI state); EODHD news sentiment as a contrarian check on SPEC signals; write H17–H22 (H20 fundamentals negative with the 2020-artifact lesson; H22 divergence negative both ways) into RULEBOOK.md "Current Thinking".
 
 ## 9. Retrospective
 
@@ -167,7 +172,8 @@ Negative results compound. The rulebook's "Tested and rejected" list and this re
 ## Appendix B — File map
 
 vbt-private: THE_STRATEGY.md · RULEBOOK.md · ONE_WINNER_PLAYBOOK.md · NARRATIVE_STUDY_FINAL.md · trade_paper.py · trade_thesis.py · thesis_tracker.py · options_engine.py · llm_screen.py · compute_signals.py · fetch_data.py · eodhd_fetch.py · fund_fetch.py · base_study_wide.py · base_fund_study.py · study scripts (exit, collar, hourly, hpat, l1, l23, overlay, phase1, narrative) with *_results.json · ledgers (paper.json, thesis_paper.json, options_paper.json, thesis_ledger.csv, llm_log.jsonl) · base_events.csv, base_signals.csv, base_live.csv, base_summary.json.
-vbt-data: .github/workflows (14) · data/ · docs/signals.json, docs/index.html · trigger files.
+vbt-private (browsing): console/index.html · VBT Console.command · div_screen/ (div_screen.csv/json/md, chart PNGs, div_series.json, div_review.html, div_review_template.html) · gallery/ · div_screen.py · intraday_fetch.py.
+vbt-data (to be made private, 23 Sep): .github/workflows (14) · data/prices.csv · docs/signals.json, docs/index.html · trigger files.
 VBT project (claude.ai): claude/narrative-judgment-log*.md · claude/base-pattern-study.md · this master document.
 
 ## Appendix C — Glossary

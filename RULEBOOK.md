@@ -164,6 +164,14 @@ tranche has arrived, which is hindsight — so selection (theme + quality,
 Rulebook v2 Setup + Entry) keeps carrying the edge and the base study is
 demoted to risk flags (layer status above).
 
+H24 (23 Sep) closed the last open door: shown 300 historical bases blind
+(no name, no date, no future), the operator's snap judgement bought the
+visually confirmed turn (mid-band, RSI rising, ~9 months past the low) and
+lost 8 points to the charts he passed on, with the same sign on random bars;
+direction was read correctly and the return was negative anyway. Entries
+stay mechanical; a discretionary override of the engine's entry is now
+evidence-against, not merely untested.
+
 Two nuances kept on record: the Entry tiebreaker "prefer EWO > 0 among
 same-day stage-3 signals" stands — it was measured at the structure flip,
 not inside a base, and H23 says nothing about that context; and a DIVUP
@@ -206,3 +214,6 @@ options paper test, not as stock entries.
   weekly bars. Divergence screen (weekly/daily/hourly lists + local review
   page) and the local VBT Console replace the public dashboard; GitHub
   Pages deployment removed.
+- **2026-09-23 (later)** — H24 blind-labelling test of the operator's eye
+  REJECTED (BUY −10.4% vs PASS −2.1% vs SPY; direction right, return wrong).
+  Plan to tune the divergence shape score to hand labels dropped.

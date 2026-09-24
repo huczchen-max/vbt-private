@@ -217,3 +217,6 @@ options paper test, not as stock entries.
 - **2026-09-23 (later)** — H24 blind-labelling test of the operator's eye
   REJECTED (BUY −10.4% vs PASS −2.1% vs SPY; direction right, return wrong).
   Plan to tune the divergence shape score to hand labels dropped.
+- **2026-09-24** — Housekeeping: old GitHub Pages site unpublished and
+  vbt-data made private; both scheduled briefings fetch signals.json with
+  the token; H24 labels and score committed. No rule change.

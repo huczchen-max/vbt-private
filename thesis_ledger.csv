@@ -68,3 +68,6 @@ date,ticker,theme,event,close,dd_pct,state
 2026-09-19,CACI,defense,TREND-REPAIRED,626.85,-6.5,Mixed
 2026-09-19,DHR,health,TREND-REPAIRED,211.81,-10.8,Mixed
 2026-09-19,XLU,etf,TREND-BROKEN,41.1,-12.7,Mixed
+2026-09-26,SMCI,ai,TREND-REPAIRED,43.26,-18.2,Mixed
+2026-09-26,PLTR,outlier,TREND-REPAIRED,189.67,-5.4,Mixed
+2026-09-26,IHI,etf,BRAKE-ON,51.6,-19.4,Downtrend

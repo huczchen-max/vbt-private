@@ -79,25 +79,13 @@
   }
  ],
  "snapshot": {
-  "date": "2026-09-19",
-  "account_equity": 100036.51,
-  "vbt2_budget": 40014.6,
-  "stock_sleeve": 32011.68,
-  "options_sleeve": 8002.92,
-  "options_committed": 7916.0,
+  "date": "2026-09-26",
+  "account_equity": 103893.64,
+  "vbt2_budget": 41557.46,
+  "stock_sleeve": 33245.96,
+  "options_sleeve": 8311.49,
+  "options_committed": 8187.0,
   "options_sizing": [
-   {
-    "ticker": "MU",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 1,
-    "max_loss_total": 3370.0
-   },
-   {
-    "ticker": "NVT",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 2,
-    "max_loss_total": 1496.0
-   },
    {
     "ticker": "CGNX",
     "strategy": "BULL_PUT_SPREAD",
@@ -105,10 +93,16 @@
     "max_loss_total": 1780.0
    },
    {
-    "ticker": "RDW",
-    "strategy": "CASH_SECURED_PUT",
+    "ticker": "DELL",
+    "strategy": "CALL_DEBIT_SPREAD",
     "contracts": 1,
-    "max_loss_total": 858.0
+    "max_loss_total": 1955.0
+   },
+   {
+    "ticker": "GEV",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 1,
+    "max_loss_total": 4040.0
    },
    {
     "ticker": "SAIC",
@@ -125,7 +119,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 1015.8,
+    "current_close": 1082.28,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -135,7 +129,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 179.38,
+    "current_close": 177.25,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -145,7 +139,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1152.93,
+    "current_close": 1183.46,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -155,7 +149,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 265.63,
+    "current_close": 288.7,
     "door_now": "IN-TREND"
    }
   }

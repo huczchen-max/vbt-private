@@ -346,3 +346,20 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-09-19,BOTTOM,TPG,TPG Inc.,QUALITY,46.47,-28.2,-42.2,39.3,64.71,18.1,Financial Services,Asset Management,69.35821,12.812701,110.2,5.1,
 2026-09-19,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,42.69,-19.0,-48.1,24.6,53.18,4.3,Industrials,Building Products & Equipment,25.562874,21.15828,7.8,14.7,0.07
 2026-09-19,BOTTOM,WDAY,"Workday, Inc.",QUALITY,193.87,-21.4,-58.8,27.2,246.67,46.7,Technology,Software - Application,40.643604,14.663316,12.8,12.3,3.05
+2026-09-26,DROP,CRSP,,,54.23,-25.8,-36.3,34.7,73.07,,,,,,,,
+2026-09-26,GRADUATED,P,,,126.0,0.0,-38.3,-6.2,118.16,,,,,,,,
+2026-09-26,GRADUATED,BFLY,,,9.39,-1.7,-29.7,1.7,9.55,,,,,,,,
+2026-09-26,GRADUATED,PGEN,,,7.75,-0.4,-27.4,0.4,7.78,,,,,,,,
+2026-09-26,BOTTOM,DOO,BRP Inc.,QUALITY,57.17,-29.6,-32.0,42.1,81.22,4.1,Consumer Cyclical,Recreational Vehicles,51.972725,14.789038,18.5,1.2,1.03
+2026-09-26,BREAKOUT,GRAL,"GRAIL, Inc.",SPEC,126.89,0.0,-58.7,-13.0,110.39,5.7,Healthcare,Diagnostics & Research,,-14.22253,25.7,-236.9,-0.1
+2026-09-26,BOTTOM,KYIV,Kyivstar Group Ltd.,QUALITY,13.05,-16.8,-32.2,20.2,15.68,3.0,Communication Services,Telecom Services,18.913044,0.20833267,19.4,12.5,0.31
+2026-09-26,BREAKOUT,META,"Meta Platforms, Inc.",QUALITY,751.66,0.0,-29.7,-1.4,741.24,1914.9,Communication Services,Internet Content & Information,28.343136,21.496538,28.0,29.8,21.55
+2026-09-26,BREAKOUT,MTD,"Mettler-Toledo International, I",QUALITY,1511.64,0.0,-30.5,-1.8,1485.12,30.3,Healthcare,Diagnostics & Research,34.107403,29.24136,4.5,21.9,0.69
+2026-09-26,BOTTOM,NUVB,Nuvation Bio Inc.,SPEC,5.74,-39.2,-54.2,64.5,9.44,2.0,Healthcare,Biotechnology,,-382.66666,555.6,-88.2,-0.11
+2026-09-26,BOTTOM,PGEN,"Precigen, Inc.",SPEC,7.75,-0.4,-27.4,0.4,7.78,2.8,Healthcare,Biotechnology,,-35.227272,6322.7,-184.0,-0.1
+2026-09-26,BOTTOM,PYPL,"PayPal Holdings, Inc.",QUALITY,55.04,-20.3,-46.6,25.5,69.07,47.4,Financial Services,Credit Services,10.404537,9.513916,4.8,14.4,4.42
+2026-09-26,BOTTOM,RACE,Ferrari N.V.,QUALITY,411.33,-17.0,-37.2,20.4,495.43,72.2,Consumer Cyclical,Auto Manufacturers,38.731636,32.70635,8.4,22.2,1.0
+2026-09-26,BOTTOM,RIVN,"Rivian Automotive, Inc.",SPEC,15.47,-31.1,-38.6,45.1,22.45,22.4,Consumer Cyclical,Auto Manufacturers,,-8.874687,27.2,-55.0,-1.54
+2026-09-26,BOTTOM,TMDX,"TransMedics Group, Inc.",QUALITY,85.29,-41.7,-56.8,71.5,146.31,2.9,Healthcare,Medical Devices,22.095856,37.336006,20.7,22.7,0.04
+2026-09-26,BOTTOM,VRDN,"Viridian Therapeutics, Inc.",SPEC,20.47,-38.5,-59.7,62.5,33.26,2.3,Healthcare,Biotechnology,,-7.438173,278.7,0.0,-0.28
+2026-09-26,BREAKOUT,WBD,"Warner Bros. Discovery, Inc. -",SPEC,30.86,0.0,-14.0,-2.9,29.98,77.4,Communication Services,Entertainment,,495.98203,-11.2,-8.8,16.17

@@ -8,55 +8,21 @@ scanned 3200/6197
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
 scanned 4200/6197
 scanned 5200/6197
+HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
+$SVA: No data found, symbol may be delisted
+
+1 Failed download:
+['SVA']: No data found, symbol may be delisted
 scanned 6197/6197
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback"}}}
-analyzed: 2739 symbols past liquidity floors
-BOTTOM: 24, BREAKOUT: 2, watchlist: 171
-  BOTTOM SPEC    AMBQ   Ambiq Micro, Inc.          dd -27.7%  cap 1.6B  38.2% to 52w high
-  BOTTOM QUALITY ARES   Ares Management Corporatio dd -27.2%  cap 41.1B  41.9% to 52w high
-  BOTTOM QUALITY BTDR   Bitdeer Technologies Group dd -46.0%  cap 3.5B  85.2% to 52w high
-  BOTTOM QUALITY BX     Blackstone Inc.            dd -25.8%  cap 149.4B  44.3% to 52w high
-  BOTTOM SPEC    CBRL   Cracker Barrel Old Country dd -22.2%  cap 1.0B  28.6% to 52w high
-  BOTTOM QUALITY DAVE   Dave Inc.                  dd -23.3%  cap 4.3B  30.4% to 52w high
-  BOTTOM SPEC    DYN    Dyne Therapeutics, Inc.    dd -34.8%  cap 3.2B  53.4% to 52w high
-  BOTTOM QUALITY ENVA   Enova International, Inc.  dd -34.2%  cap 4.4B  51.9% to 52w high
-  BOTTOM SPEC    FSK    FS KKR Capital Corp.       dd -17.2%  cap 3.1B  20.8% to 52w high
-  BOTTOM QUALITY HRB    H&R Block, Inc.            dd -17.2%  cap 5.5B  20.8% to 52w high
-  BOTTOM QUALITY KKR    KKR & Co. Inc.             dd -27.3%  cap 91.3B  49.6% to 52w high
-  BOTTOM QUALITY LIF    Life360, Inc.              dd -63.3%  cap 3.2B  172.2% to 52w high
-  BOTTOM QUALITY LZ     LegalZoom.com, Inc.        dd -45.7%  cap 1.0B  85.3% to 52w high
-  BOTTOM QUALITY MDB    MongoDB, Inc.              dd -16.7%  cap 30.9B  20.0% to 52w high
-  BOTTOM QUALITY OWL    Blue Owl Capital Inc.      dd -40.2%  cap 15.4B  77.9% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 2.8B  -7.1% to 52w high
-  BOTTOM QUALITY PI     Impinj, Inc.               dd -23.2%  cap 5.5B  30.1% to 52w high
-  BOTTOM QUALITY QNST   QuinStreet, Inc.           dd -16.7%  cap 1.0B  20.1% to 52w high
-  BOTTOM SPEC    RYTM   Rhythm Pharmaceuticals, In dd -15.5%  cap 6.7B  18.3% to 52w high
-  BOTTOM QUALITY SE     Sea Limited                dd -45.0%  cap 62.3B  89.4% to 52w high
-  BOTTOM SPEC    SUZ    Suzano S.A.                dd -18.0%  cap 11.4B  21.9% to 52w high
-  BOTTOM QUALITY TPG    TPG Inc.                   dd -28.2%  cap 18.1B  39.3% to 52w high
-  BOTTOM QUALITY TREX   Trex Company, Inc.         dd -19.0%  cap 4.3B  24.6% to 52w high
-  BOTTOM QUALITY WDAY   Workday, Inc.              dd -21.4%  cap 46.7B  27.2% to 52w high
+analyzed: 2724 symbols past liquidity floors
+BOTTOM: 9, BREAKOUT: 4, watchlist: 176
+  BOTTOM QUALITY DOO    BRP Inc.                   dd -29.6%  cap 4.1B  42.1% to 52w high
+  BOTTOM QUALITY KYIV   Kyivstar Group Ltd.        dd -16.8%  cap 3.0B  20.2% to 52w high
+  BOTTOM SPEC    NUVB   Nuvation Bio Inc.          dd -39.2%  cap 2.0B  64.5% to 52w high
+  BOTTOM SPEC    PGEN   Precigen, Inc.             dd -0.4%  cap 2.8B  0.4% to 52w high
+  BOTTOM QUALITY PYPL   PayPal Holdings, Inc.      dd -20.3%  cap 47.4B  25.5% to 52w high
+  BOTTOM QUALITY RACE   Ferrari N.V.               dd -17.0%  cap 72.2B  20.4% to 52w high
+  BOTTOM SPEC    RIVN   Rivian Automotive, Inc.    dd -31.1%  cap 22.4B  45.1% to 52w high
+  BOTTOM QUALITY TMDX   TransMedics Group, Inc.    dd -41.7%  cap 2.9B  71.5% to 52w high
+  BOTTOM SPEC    VRDN   Viridian Therapeutics, Inc dd -38.5%  cap 2.3B  62.5% to 52w high
 status=ok

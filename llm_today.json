@@ -1,26 +1,27 @@
 {
- "date": "2026-09-15",
+ "date": "2026-09-30",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-09-15T23:41:40+00:00",
+ "generated_utc": "2026-09-30T00:45:54+00:00",
  "regime": {
-  "regime": "RISK-OFF",
+  "regime": "NEUTRAL",
   "reasons": [
-   "Semiconductor index fell 5.9% on Sept 14 with NVDA/AVGO/AMD all down 3-5%, an active breakdown not a confirmed recovery structure, plus record rotation out of semis into software",
-   "FOMC decision lands Sept 16 with ~85% odds priced for a rate hike amid oil-driven inflation fears (Brent >$105, 10Y near 5%), maximum macro event risk right before entry",
-   "AI-safety/slowdown narrative (Anthropic/Altman/Musk) triggered global contagion into SoftBank, TSMC, Samsung, SK Hynix, questioning the capex/monetization cycle",
-   "China export-control environment is escalating (new Chinese chemical import curbs on Japan, contradictory US H200 tariff/licensing flip-flops, Taiwan indictments of Nvidia/Supermicro staff), adding regulatory tail risk to the complex"
+   "Hyperscaler capex fundamentals remain extremely strong ($1.2T 2027 guide per Goldman) but capex-cut and surplus-compute risk (Meta reselling capacity, Rothschild 25-30% cut-risk call) is a live overhang",
+   "Semis just suffered a sharp mid-September drawdown (SOX -5.9% single day) and are only beginning to rally back \u2014 trend reversal not yet confirmed",
+   "Fed unexpectedly hiked 25bp on Sept 16 (hawkish surprise) with next FOMC Oct 27-28 still pending \u2014 raises cost-of-capital risk for long-duration AI infra trades",
+   "China/US export-control friction is escalating (China weighing curbs on TSMC/Qualcomm producing Chinese-designed chips; US RASA bill pending) without resolution"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "LRCX": {
+  "ALAB": {
    "verdict": "GO",
    "size_mult": 1.0,
    "reasons": [
-    "No earnings scheduled within 14 days (next report ~Oct 21, 2026, ~36 days out)",
-    "No dilution/share offering announced; only a routine dividend declared",
-    "No guidance cuts found; September-quarter guidance reaffirmed/raised",
-    "No new customer loss/concentration event, short-seller/accounting/auditor issue, or legal/regulatory action reported in the last 4 weeks"
+    "No earnings scheduled within 14 days (next report est. Nov 2-5, 2026)",
+    "No share offering/dilution announced; insider sales are routine RSU tax sell-to-cover, not new issuance",
+    "Guidance was raised, not cut, at last report (Q3 revenue guide raised to $540-560M)",
+    "No short-seller report, accounting/auditor dispute, or legal/regulatory action found",
+    "Customer concentration is an existing analyst-noted risk characteristic, not a new named customer-loss event"
    ],
    "raw_ok": true
   }

@@ -1,31 +1,33 @@
 prices 100/196
 prices 196/196
-tracked 195 names; doors {'IN-TREND': 103, 'ENTRY-BOTTOM': 18, 'BROKEN': 65, 'ENTRY-MACROSS': 9}; events this run 3
+tracked 195 names; doors {'IN-TREND': 100, 'ENTRY-BOTTOM': 18, 'BROKEN': 68, 'ENTRY-MACROSS': 9}; events this run 9
   ai        etf=IN-TREND/Uptrend breadth intact 77.0% uptrend 52.5%
-  grid      etf=IN-TREND/Mixed breadth intact 45.5% uptrend 24.2%
-  robotics  etf=BROKEN/Uptrend breadth intact 76.9% uptrend 46.2%
-  defense   etf=IN-TREND/Uptrend breadth intact 48.4% uptrend 19.4%
-  health    etf=IN-TREND/Uptrend breadth intact 58.1% uptrend 35.5%
+  grid      etf=IN-TREND/Mixed breadth intact 39.4% uptrend 24.2%
+  robotics  etf=BROKEN/Uptrend breadth intact 69.2% uptrend 46.2%
+  defense   etf=IN-TREND/Uptrend breadth intact 45.2% uptrend 19.4%
+  health    etf=IN-TREND/Uptrend breadth intact 54.8% uptrend 38.7%
   outlier   etf=IN-TREND/Uptrend breadth intact 42.9% uptrend 42.9%
 status=ok
-exhaustion: 36 symbols, 4 flagged (score>=2)
+exhaustion: 36 symbols, 5 flagged (score>=2)
   ITA    BOTTOM-exhaustion 2/5: extension_bottom_decile, down_streak_6plus
   ATKR   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
+  ZBRA   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
   NTRA   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
   ILMN   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
-ai        extremity -3 (split, hotter)
-grid      extremity 4 (bullish, hotter)
-robotics  extremity 3 (split, cooler)
-defense   extremity 2 (split, hotter)
-health    extremity 3 (split, hotter)
+ai        extremity -3 (split, cooler)
+grid      extremity 2 (split, hotter)
+robotics  extremity 4 (split, cooler)
+defense   extremity 3 (split, hotter)
+health    extremity 2 (split, hotter)
 outlier   extremity 4 (split, hotter)
-skip MU: earnings within 14d
+WARN chain bps: single positional indexer is out-of-bounds
 skip IESC: no usable chain for BULL_PUT_SPREAD
-skip ZBRA: no usable chain for BULL_PUT_SPREAD
-options engine: 5 new proposals, 13 open, 21 journal events
-  BULL_PUT_SPREAD   AMD    [BULL-NORMAL] exp 2026-10-30 short 570.0 credit 7.25 max_loss 27.75
-  BULL_PUT_SPREAD   BE     [BULL-NORMAL] exp 2026-10-30 short 260.0 credit 4.55 max_loss 10.45
-  BULL_PUT_SPREAD   NVT    [BULL-NORMAL] exp 2026-11-20 short 150.0 credit 2.05 max_loss 7.95
-  CASH_SECURED_PUT  AMBA   [RANGE] exp 2026-10-30 short 62.0 credit 2.0 max_loss 60.0
-  BULL_PUT_SPREAD   TER    [BULL-NORMAL] exp 2026-10-30 short 360.0 credit 6.6 max_loss 13.4
-thesis-paper: equity $103,894, budget $41,557, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($8,187/8,311)
+skip RDW: no usable chain for BULL_PUT_SPREAD
+skip HWM: no usable chain for BULL_PUT_SPREAD
+options engine: 5 new proposals, 15 open, 18 journal events
+  BULL_PUT_SPREAD   MU     [BULL-NORMAL] exp 2026-11-06 short 965.0 credit 9.45 max_loss 40.55
+  BULL_PUT_SPREAD   NBIS   [BULL-NORMAL] exp 2026-11-06 short 220.0 credit 4.19 max_loss 10.81
+  CALL_DEBIT_SPREAD ZBRA   [BULL-PARABOLIC] exp 2026-11-20 short 410.0 debit 12.4 max_loss 12.4  (EXPERIMENTAL)
+  BULL_PUT_SPREAD   CGNX   [BULL-NORMAL] exp 2026-11-20 short 60.0 credit 1.02 max_loss 3.98
+  CASH_SECURED_PUT  RKLB   [RANGE] exp 2026-11-06 short 63.0 credit 1.67 max_loss 61.33
+thesis-paper: equity $104,838, budget $41,935, book ['MU', 'GH', 'LLY', 'BE'], options sized 6 ($8,246/8,387)

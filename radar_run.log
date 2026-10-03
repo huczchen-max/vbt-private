@@ -1,28 +1,26 @@
-symbol directory: 6197 common-stock symbols
-scanned 200/6197
-scanned 1200/6197
-scanned 2200/6197
-scanned 3200/6197
+symbol directory: 6195 common-stock symbols
+scanned 200/6195
+scanned 1200/6195
+scanned 2200/6195
+scanned 3200/6195
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'], dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6197
-scanned 5200/6197
-HTTP Error 401: {"finance":{"result":null,"error":{"code":"Unauthorized","description":"Invalid Crumb"}}}
-$SVA: No data found, symbol may be delisted
-
-1 Failed download:
-['SVA']: No data found, symbol may be delisted
-scanned 6197/6197
-analyzed: 2724 symbols past liquidity floors
-BOTTOM: 9, BREAKOUT: 4, watchlist: 176
-  BOTTOM QUALITY DOO    BRP Inc.                   dd -29.6%  cap 4.1B  42.1% to 52w high
-  BOTTOM QUALITY KYIV   Kyivstar Group Ltd.        dd -16.8%  cap 3.0B  20.2% to 52w high
-  BOTTOM SPEC    NUVB   Nuvation Bio Inc.          dd -39.2%  cap 2.0B  64.5% to 52w high
-  BOTTOM SPEC    PGEN   Precigen, Inc.             dd -0.4%  cap 2.8B  0.4% to 52w high
-  BOTTOM QUALITY PYPL   PayPal Holdings, Inc.      dd -20.3%  cap 47.4B  25.5% to 52w high
-  BOTTOM QUALITY RACE   Ferrari N.V.               dd -17.0%  cap 72.2B  20.4% to 52w high
-  BOTTOM SPEC    RIVN   Rivian Automotive, Inc.    dd -31.1%  cap 22.4B  45.1% to 52w high
-  BOTTOM QUALITY TMDX   TransMedics Group, Inc.    dd -41.7%  cap 2.9B  71.5% to 52w high
-  BOTTOM SPEC    VRDN   Viridian Therapeutics, Inc dd -38.5%  cap 2.3B  62.5% to 52w high
+scanned 4200/6195
+scanned 5200/6195
+scanned 6195/6195
+analyzed: 2720 symbols past liquidity floors
+BOTTOM: 12, BREAKOUT: 1, watchlist: 182
+  BOTTOM QUALITY BRZE   Braze, Inc.                dd -28.3%  cap 2.9B  39.5% to 52w high
+  BOTTOM QUALITY DASH   DoorDash, Inc.             dd -28.9%  cap 82.0B  43.4% to 52w high
+  BOTTOM QUALITY EGO    Eldorado Gold Corporation  dd -19.1%  cap 9.9B  23.6% to 52w high
+  BOTTOM QUALITY EL     Estee Lauder Companies, In dd -21.0%  cap 33.3B  26.6% to 52w high
+  BOTTOM QUALITY FIG    Figma, Inc.                dd -65.0%  cap 11.4B  185.9% to 52w high
+  BOTTOM QUALITY HMY    Harmony Gold Mining Compan dd -26.2%  cap 10.9B  35.4% to 52w high
+  BOTTOM QUALITY LW     Lamb Weston Holdings, Inc. dd -32.3%  cap 6.0B  47.7% to 52w high
+  BOTTOM QUALITY MNDY   monday.com Ltd.            dd -61.6%  cap 3.3B  160.5% to 52w high
+  BOTTOM SPEC    NBTX   Nanobiotix S.A.            dd -50.0%  cap 1.3B  100.0% to 52w high
+  BOTTOM QUALITY OMDA   Omada Health, Inc.         dd -21.3%  cap 1.2B  27.0% to 52w high
+  BOTTOM SPEC    PGEN   Precigen, Inc.             dd 0.0%  cap 3.1B  -8.9% to 52w high
+  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd -8.6%  cap 1.1B  9.5% to 52w high
 status=ok

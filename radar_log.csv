@@ -363,3 +363,22 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-09-26,BOTTOM,TMDX,"TransMedics Group, Inc.",QUALITY,85.29,-41.7,-56.8,71.5,146.31,2.9,Healthcare,Medical Devices,22.095856,37.336006,20.7,22.7,0.04
 2026-09-26,BOTTOM,VRDN,"Viridian Therapeutics, Inc.",SPEC,20.47,-38.5,-59.7,62.5,33.26,2.3,Healthcare,Biotechnology,,-7.438173,278.7,0.0,-0.28
 2026-09-26,BREAKOUT,WBD,"Warner Bros. Discovery, Inc. -",SPEC,30.86,0.0,-14.0,-2.9,29.98,77.4,Communication Services,Entertainment,,495.98203,-11.2,-8.8,16.17
+2026-10-03,DROP,USAR,,,13.59,-58.3,-58.3,140.0,32.61,,,,,,,,
+2026-10-03,DROP,WSO,,,297.47,-31.9,-31.9,46.9,436.88,,,,,,,,
+2026-10-03,DROP,FIZZ,,,30.32,-9.7,-30.2,12.4,34.07,,,,,,,,
+2026-10-03,DROP,NTLA,,,12.26,-52.1,-58.3,108.8,25.6,,,,,,,,
+2026-10-03,DROP,DXYZ,,,32.8,-50.8,-65.7,103.2,66.64,,,,,,,,
+2026-10-03,GRADUATED,PGEN,,,8.54,0.0,-27.4,-8.9,7.78,,,,,,,,
+2026-10-03,BOTTOM,BRZE,"Braze, Inc.",QUALITY,25.42,-28.3,-48.6,39.5,35.47,2.9,Technology,Software - Application,,25.887266,26.2,-13.6,0.2
+2026-10-03,BOTTOM,DASH,"DoorDash, Inc.",QUALITY,189.15,-28.9,-44.5,43.4,271.22,82.0,Consumer Cyclical,Internet Retail,95.05025,22.922743,35.6,5.3,5.15
+2026-10-03,BOTTOM,EGO,Eldorado Gold Corporation,QUALITY,38.12,-19.1,-40.8,23.6,47.11,9.9,Basic Materials,Gold,13.099655,7.1745973,7.9,29.8,-0.45
+2026-10-03,BOTTOM,EL,"Estee Lauder Companies, Inc. (T",QUALITY,91.97,-21.0,-38.1,26.6,116.47,33.3,Consumer Defensive,Household & Personal Products,180.33334,23.5129,6.3,1.2,1.81
+2026-10-03,BOTTOM,FIG,"Figma, Inc.",QUALITY,21.36,-65.0,-85.7,185.9,61.06,11.4,Technology,Software - Application,,61.028576,48.2,-123.1,0.87
+2026-10-03,BOTTOM,HMY,Harmony Gold Mining Company Lim,QUALITY,17.38,-26.2,-36.3,35.4,23.54,10.9,Basic Materials,Gold,6.207143,5.2617235,49.2,29.6,9.85
+2026-10-03,BREAKOUT,IBRX,"ImmunityBio, Inc.",SPEC,10.28,0.0,-29.2,-4.9,9.78,10.9,Healthcare,Biotechnology,,-73.46429,93.9,0.0,-0.19
+2026-10-03,BOTTOM,LW,"Lamb Weston Holdings, Inc.",QUALITY,43.6,-32.3,-35.5,47.7,64.39,6.0,Consumer Defensive,Packaged Foods,19.81818,12.923343,5.6,4.4,0.45
+2026-10-03,BOTTOM,MNDY,monday.com Ltd.,QUALITY,78.8,-61.6,-80.9,160.5,205.24,3.3,Technology,Software - Application,33.96552,11.790831,21.9,8.9,0.28
+2026-10-03,BOTTOM,NBTX,Nanobiotix S.A.,SPEC,25.75,-50.0,-50.0,100.0,51.5,1.3,Healthcare,Biotechnology,,-153.34074,-79.2,0.0,-0.03
+2026-10-03,BOTTOM,OMDA,"Omada Health, Inc.",QUALITY,20.37,-21.3,-55.9,27.0,25.87,1.2,Healthcare,Health Information Services,30.402985,36.62747,43.1,1.4,0.01
+2026-10-03,BOTTOM,PGEN,"Precigen, Inc.",SPEC,8.54,0.0,-27.4,-8.9,7.78,3.1,Healthcare,Biotechnology,,-38.81818,6322.7,-184.0,-0.1
+2026-10-03,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,9.1,-8.6,-70.4,9.5,9.96,1.1,Consumer Cyclical,Restaurants,101.111115,-13.0508995,3.8,2.0,-0.06

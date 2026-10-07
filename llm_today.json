@@ -1,34 +1,26 @@
 {
- "date": "2026-10-06",
+ "date": "2026-10-07",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-10-06T01:53:22+00:00",
+ "generated_utc": "2026-10-07T01:01:32+00:00",
  "regime": {
-  "regime": "NEUTRAL",
+  "regime": "RISK-ON",
   "reasons": [
-   "Hyperscaler capex and core semis trend (SOXQ) remain strong, supporting fundamentals, but neocloud/leveraged AI-infra names (CoreWeave, Nebius) are still in an unconfirmed bear-market downtrend, not a validated recovery structure",
-   "Elevated circular-financing/credit-spread bubble concerns (CoreWeave, Oracle debt) create tail risk for 'deep correction' entries before reversal is confirmed",
-   "No imminent Fed decision (next FOMC Oct 28) reduces near-term macro shock risk, but China export-control suspensions (Affiliates Rule, rare-earth measures) expire Nov 9-27, adding event risk just ahead"
+   "Hyperscaler capex guidance still accelerating (~90% YoY 2026, Goldman sees $1.2T in 2027) with supply-constrained/scarcity dynamics rather than compute surplus",
+   "Semiconductor sector showing confirmed breakout/recovery trend structure (NVDA/TSM at record highs, SOXX +7.1% monthly bounce, ON Semi/AMD/MU breakouts above key MAs)",
+   "No FOMC decision today (next meeting Oct 27-28, ~3 weeks out); near-term catalyst risk is low",
+   "China rare-earth export-control truce remains in force (expires Nov 10), no fresh escalation today",
+   "Caveat/risk flags: 10Y yield at ~5.27% pressuring high-duration chip names, and rising hyperscaler off-balance-sheet leverage warrant tighter stops"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "CIFR": {
-   "verdict": "GO",
-   "size_mult": 1.0,
+  "INTC": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
    "reasons": [
-    "No earnings report scheduled within 14 days (next report ~Nov 2-9, 2026)",
-    "No share offering/dilution announcement found in last 4 weeks",
-    "No guidance cut, customer loss, short-seller report, auditor issue, or legal/regulatory action identified in last 4 weeks"
-   ],
-   "raw_ok": true
-  },
-  "HUT": {
-   "verdict": "GO",
-   "size_mult": 1.0,
-   "reasons": [
-    "No earnings report within 14 days (next report ~Nov 3-18, 2026)",
-    "Recent capital raises ($7.5B project financing, $1.07B credit facility, $3.25B Louisiana campus funding) are explicitly non-dilutive debt/project financing, not equity dilution",
-    "No guidance cuts, customer losses, short-seller reports, accounting/auditor issues, or new legal/regulatory actions found in the last 4 weeks"
+    "Named customer-concentration risk: reports (within last 4 weeks) that Tesla is in talks with TSMC to join the 'Terafab' project, which could reduce Intel's role as primary foundry partner",
+    "Earnings scheduled 10/22/2026 \u2014 15 days out, just outside the 14-day auto-flag window but close enough to be a near-term event risk",
+    "No VETO-level issues found (no fraud/accounting scandal, no going-concern language, no new dilution announced within the 4-week window \u2014 the $20B offering was priced in August, outside lookback)"
    ],
    "raw_ok": true
   }

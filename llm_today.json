@@ -1,26 +1,45 @@
 {
- "date": "2026-10-07",
+ "date": "2026-10-09",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-10-07T01:01:32+00:00",
+ "generated_utc": "2026-10-09T01:26:08+00:00",
  "regime": {
-  "regime": "RISK-ON",
+  "regime": "NEUTRAL",
   "reasons": [
-   "Hyperscaler capex guidance still accelerating (~90% YoY 2026, Goldman sees $1.2T in 2027) with supply-constrained/scarcity dynamics rather than compute surplus",
-   "Semiconductor sector showing confirmed breakout/recovery trend structure (NVDA/TSM at record highs, SOXX +7.1% monthly bounce, ON Semi/AMD/MU breakouts above key MAs)",
-   "No FOMC decision today (next meeting Oct 27-28, ~3 weeks out); near-term catalyst risk is low",
-   "China rare-earth export-control truce remains in force (expires Nov 10), no fresh escalation today",
-   "Caveat/risk flags: 10Y yield at ~5.27% pressuring high-duration chip names, and rising hyperscaler off-balance-sheet leverage warrant tighter stops"
+   "Semis in active broad selloff today (yields/oil/profit-taking) \u2014 no confirmed recovery trend yet, which is the strategy's entry trigger",
+   "Hyperscaler capex now exceeding operating cash flow for first time in 2026, shifting to debt/equity financing \u2014 raises AI-infra funding fragility even as demand stays strong",
+   "China export-control/smuggling enforcement actions and pending legislation (GAIN Act, RASA) keep regulatory overhang elevated for chip names",
+   "No FOMC until Oct 28 (19+ days out), but CPI on Oct 14 and rising Treasury yields are already pressuring high-multiple AI/semis stocks"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "INTC": {
+  "COHR": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "No earnings scheduled within 14 days (next report ~Nov 4-11, 2026)",
+    "No guidance cuts, dilution announcements, customer loss, short-seller/accounting issues, or legal/regulatory actions found in the last 4 weeks"
+   ],
+   "raw_ok": true
+  },
+  "TLN": {
    "verdict": "CAUTION",
    "size_mult": 0.5,
    "reasons": [
-    "Named customer-concentration risk: reports (within last 4 weeks) that Tesla is in talks with TSMC to join the 'Terafab' project, which could reduce Intel's role as primary foundry partner",
-    "Earnings scheduled 10/22/2026 \u2014 15 days out, just outside the 14-day auto-flag window but close enough to be a near-term event risk",
-    "No VETO-level issues found (no fraud/accounting scandal, no going-concern language, no new dilution announced within the 4-week window \u2014 the $20B offering was priced in August, outside lookback)"
+    "FERC accepted but suspended PJM's Reliability Backstop Procurement plan to 2027, adding regulatory uncertainty around near-term capacity revenue timing",
+    "Existing $984M shelf registration creates an ongoing dilution overhang noted in recent coverage, even though no new offering was announced in the past 4 weeks",
+    "No earnings within 14 days (next report Nov 4, 2026), no guidance cuts (guidance was raised), no customer loss, and no short-seller/accounting/auditor red flags found"
+   ],
+   "raw_ok": true
+  },
+  "ALAB": {
+   "verdict": "GO",
+   "size_mult": 1.0,
+   "reasons": [
+    "Earnings call set for Nov 3, 2026 \u2014 outside the 14-day window, no auto-CAUTION trigger",
+    "No share offering/dilution announced; only routine 10b5-1 insider sales found",
+    "No guidance cuts \u2014 recent commentary shows raised Q3 revenue guidance",
+    "No named customer loss/concentration event, no short-seller/accounting/auditor flags, no legal or regulatory actions in the last 4 weeks"
    ],
    "raw_ok": true
   }

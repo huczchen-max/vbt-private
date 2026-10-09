@@ -1,19 +1,19 @@
 {
- "as_of": "2026-10-08",
- "updated_utc": "2026-10-08T01:21:29+00:00",
+ "as_of": "2026-10-09",
+ "updated_utc": "2026-10-09T01:38:12+00:00",
  "account": {
-  "equity": 104328.55,
+  "equity": 100890.42,
   "cash": 19177.49,
-  "pl_total": -447.67
+  "pl_total": -3337.98
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 291.19,
-   "pl_pct": 29.17,
-   "pl_usd": 2204.55,
+   "current": 274.86,
+   "pl_pct": 21.92,
+   "pl_usd": 1657.03,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 445.53,
-   "pl_pct": 16.53,
-   "pl_usd": 1327.41,
+   "current": 425.61,
+   "pl_pct": 11.32,
+   "pl_usd": 909.09,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,19 +31,19 @@
    "symbol": "CIFR",
    "qty": 272.0,
    "avg_entry": 15.64,
-   "current": 14.65,
-   "pl_pct": -6.33,
-   "pl_usd": -269.28,
-   "entered": "2026-10-06",
-   "stage": "CONFIRMED"
+   "current": 13.59,
+   "pl_pct": -13.11,
+   "pl_usd": -557.6,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 168.33,
-   "pl_pct": 10.43,
-   "pl_usd": 845.2,
+   "current": 165.56,
+   "pl_pct": 8.61,
+   "pl_usd": 697.95,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -51,9 +51,9 @@
    "symbol": "GLXY",
    "qty": 156.0,
    "avg_entry": 23.87,
-   "current": 21.34,
-   "pl_pct": -10.6,
-   "pl_usd": -394.76,
+   "current": 20.07,
+   "pl_pct": -15.92,
+   "pl_usd": -592.88,
    "entered": "2026-09-01",
    "stage": "CONFIRMED"
   },
@@ -61,9 +61,9 @@
    "symbol": "HUT",
    "qty": 47.0,
    "avg_entry": 92.5,
-   "current": 89.16,
-   "pl_pct": -3.61,
-   "pl_usd": -157.07,
+   "current": 80.23,
+   "pl_pct": -13.27,
+   "pl_usd": -576.78,
    "entered": "2026-10-06",
    "stage": "CONFIRMED"
   },
@@ -71,9 +71,9 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 113.57,
-   "pl_pct": 30.5,
-   "pl_usd": 1088.36,
+   "current": 107.33,
+   "pl_pct": 23.33,
+   "pl_usd": 832.52,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -81,9 +81,9 @@
    "symbol": "KLAC",
    "qty": 43.0,
    "avg_entry": 176.5,
-   "current": 196.58,
-   "pl_pct": 11.37,
-   "pl_usd": 863.23,
+   "current": 196.31,
+   "pl_pct": 11.22,
+   "pl_usd": 851.62,
    "entered": "2026-08-29",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1189.51,
-   "pl_pct": 1.59,
-   "pl_usd": 122.73,
+   "current": 1165.2,
+   "pl_pct": -0.49,
+   "pl_usd": -37.51,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -101,9 +101,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 1092.5,
-   "pl_pct": 22.58,
-   "pl_usd": 1947.81,
+   "current": 1042.0,
+   "pl_pct": 16.91,
+   "pl_usd": 1458.98,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -111,9 +111,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 82.85,
-   "pl_pct": 0.38,
-   "pl_usd": 28.21,
+   "current": 79.57,
+   "pl_pct": -3.6,
+   "pl_usd": -270.27,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -121,9 +121,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 407.1,
-   "pl_pct": -23.4,
-   "pl_usd": -1989.56,
+   "current": 394.69,
+   "pl_pct": -25.73,
+   "pl_usd": -2188.12,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -135,8 +135,9 @@
   "ON": "2026-07-30",
   "KLAC": "2026-08-29",
   "GLXY": "2026-09-01",
-  "CIFR": "2026-10-06",
-  "HUT": "2026-10-06"
+  "HUT": "2026-10-06",
+  "COHR": "2026-10-09",
+  "TLN": "2026-10-09"
  },
  "seeded": true,
  "ledger": [
@@ -367,6 +368,30 @@
    "action": "BUY",
    "symbol": "HUT",
    "note": "47 sh ~$4,196 (spec 4%) on stage-3 entry @ 89.27 | llm:GO mult:1 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-10-09",
+   "action": "SELL",
+   "symbol": "CIFR",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-10-09",
+   "action": "BUY",
+   "symbol": "COHR",
+   "note": "13 sh ~$3,931 (spec 4%) on stage-3 entry @ 302.35 | llm:GO mult:1 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-10-09",
+   "action": "BUY",
+   "symbol": "TLN",
+   "note": "11 sh ~$3,951 (spec 4%) on stage-3 entry @ 359.22 | llm:CAUTION mult:0.5 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-10-09",
+   "action": "SKIP",
+   "symbol": "ALAB",
+   "note": "group cap (semi already at 4)"
   }
  ]
 }

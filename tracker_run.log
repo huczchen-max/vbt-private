@@ -1,33 +1,29 @@
 prices 100/196
 prices 196/196
-tracked 195 names; doors {'IN-TREND': 100, 'ENTRY-BOTTOM': 18, 'BROKEN': 68, 'ENTRY-MACROSS': 9}; events this run 9
-  ai        etf=IN-TREND/Uptrend breadth intact 77.0% uptrend 52.5%
-  grid      etf=IN-TREND/Mixed breadth intact 39.4% uptrend 24.2%
-  robotics  etf=BROKEN/Uptrend breadth intact 69.2% uptrend 46.2%
-  defense   etf=IN-TREND/Uptrend breadth intact 45.2% uptrend 19.4%
-  health    etf=IN-TREND/Uptrend breadth intact 54.8% uptrend 38.7%
+tracked 195 names; doors {'IN-TREND': 93, 'ENTRY-BOTTOM': 17, 'BROKEN': 77, 'ENTRY-MACROSS': 8}; events this run 13
+  ai        etf=IN-TREND/Uptrend breadth intact 73.8% uptrend 57.4%
+  grid      etf=IN-TREND/Mixed breadth intact 36.4% uptrend 24.2%
+  robotics  etf=BROKEN/Uptrend breadth intact 69.2% uptrend 38.5%
+  defense   etf=IN-TREND/Uptrend breadth intact 41.9% uptrend 19.4%
+  health    etf=IN-TREND/Uptrend breadth intact 51.6% uptrend 38.7%
   outlier   etf=IN-TREND/Uptrend breadth intact 42.9% uptrend 42.9%
 status=ok
-exhaustion: 36 symbols, 5 flagged (score>=2)
+exhaustion: 37 symbols, 5 flagged (score>=2)
   ITA    BOTTOM-exhaustion 2/5: extension_bottom_decile, down_streak_6plus
-  ATKR   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
+  DELL   TOP-exhaustion 2/5: bear_divergence, rsi_over_75
   ZBRA   TOP-exhaustion 2/5: bear_divergence, extended_top_decile
   NTRA   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
   ILMN   TOP-exhaustion 2/5: extended_top_decile, rsi_over_75
-ai        extremity -3 (split, cooler)
-grid      extremity 2 (split, hotter)
-robotics  extremity 4 (split, cooler)
+ai        extremity -2 (split, cooler)
+grid      extremity 2 (split, cooler)
+robotics  extremity 2 (split, cooler)
 defense   extremity 3 (split, hotter)
-health    extremity 2 (split, hotter)
+health    extremity 4 (split, hotter)
 outlier   extremity 4 (split, hotter)
-WARN chain bps: single positional indexer is out-of-bounds
-skip IESC: no usable chain for BULL_PUT_SPREAD
-skip RDW: no usable chain for BULL_PUT_SPREAD
-skip HWM: no usable chain for BULL_PUT_SPREAD
-options engine: 5 new proposals, 15 open, 18 journal events
-  BULL_PUT_SPREAD   MU     [BULL-NORMAL] exp 2026-11-06 short 965.0 credit 9.45 max_loss 40.55
-  BULL_PUT_SPREAD   NBIS   [BULL-NORMAL] exp 2026-11-06 short 220.0 credit 4.19 max_loss 10.81
-  CALL_DEBIT_SPREAD ZBRA   [BULL-PARABOLIC] exp 2026-11-20 short 410.0 debit 12.4 max_loss 12.4  (EXPERIMENTAL)
-  BULL_PUT_SPREAD   CGNX   [BULL-NORMAL] exp 2026-11-20 short 60.0 credit 1.02 max_loss 3.98
-  CASH_SECURED_PUT  RKLB   [RANGE] exp 2026-11-06 short 63.0 credit 1.67 max_loss 61.33
-thesis-paper: equity $104,838, budget $41,935, book ['MU', 'GH', 'LLY', 'BE'], options sized 6 ($8,246/8,387)
+options engine: 5 new proposals, 19 open, 20 journal events
+  BULL_PUT_SPREAD   LITE   [BULL-NORMAL] exp 2026-11-20 short 990.0 credit 16.05 max_loss 33.95
+  BULL_PUT_SPREAD   IESC   [BULL-NORMAL] exp 2026-11-20 short 270.0 credit 5.4 max_loss 4.6
+  BULL_PUT_SPREAD   RDW    [BULL-NORMAL] exp 2026-11-20 short 9.0 credit 0.4 max_loss 0.6
+  BULL_PUT_SPREAD   AXON   [BULL-NORMAL] exp 2026-11-20 short 380.0 credit 7.45 max_loss 12.55
+  BULL_PUT_SPREAD   PLTR   [BULL-NORMAL] exp 2026-11-20 short 190.0 credit 2.67 max_loss 7.33
+thesis-paper: equity $101,539, budget $40,616, book ['MU', 'GH', 'LLY', 'BE'], options sized 6 ($8,096/8,123)

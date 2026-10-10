@@ -79,24 +79,18 @@
   }
  ],
  "snapshot": {
-  "date": "2026-10-03",
-  "account_equity": 104838.38,
-  "vbt2_budget": 41935.35,
-  "stock_sleeve": 33548.28,
-  "options_sleeve": 8387.07,
-  "options_committed": 8246.0,
+  "date": "2026-10-10",
+  "account_equity": 101539.0,
+  "vbt2_budget": 40615.6,
+  "stock_sleeve": 32492.48,
+  "options_sleeve": 8123.12,
+  "options_committed": 8096.0,
   "options_sizing": [
    {
     "ticker": "DELL",
     "strategy": "CALL_DEBIT_SPREAD",
     "contracts": 1,
     "max_loss_total": 1955.0
-   },
-   {
-    "ticker": "SAIC",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 5,
-    "max_loss_total": 2060.0
    },
    {
     "ticker": "GH",
@@ -111,16 +105,22 @@
     "max_loss_total": 1060.0
    },
    {
-    "ticker": "BE",
+    "ticker": "AMD",
     "strategy": "BULL_PUT_SPREAD",
     "contracts": 1,
-    "max_loss_total": 1045.0
+    "max_loss_total": 2775.0
    },
    {
     "ticker": "CGNX",
     "strategy": "BULL_PUT_SPREAD",
     "contracts": 1,
     "max_loss_total": 398.0
+   },
+   {
+    "ticker": "RDW",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 3,
+    "max_loss_total": 180.0
    }
   ],
   "book": {
@@ -131,7 +131,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 1074.89,
+    "current_close": 1029.0,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -141,7 +141,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 177.8,
+    "current_close": 167.47,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -151,7 +151,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1142.85,
+    "current_close": 1179.27,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -161,7 +161,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 289.15,
+    "current_close": 280.5,
     "door_now": "IN-TREND"
    }
   }

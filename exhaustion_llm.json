@@ -1,41 +1,44 @@
 {
- "date": "2026-10-03",
- "generated_utc": "2026-10-03T11:12:30+00:00",
+ "date": "2026-10-10",
+ "generated_utc": "2026-10-10T12:00:32+00:00",
  "themes": {
   "ai": {
    "theme": "ai",
-   "extremity": -3,
+   "extremity": -2,
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "Michael Burry shifted from shorts to shorter-dated put options, saying the AI bubble 'may burst sooner than later' (CNBC, Sept 28)",
-    "Hyperscaler aggregate capex now exceeds operating cash flow, pushing free cash flow negative; AI-linked IPOs being delayed (CNBC, Sept 30)",
-    "Capital Economics: 'the data look consistent with a late-stage bubble,' with most tracked indicators at levels that preceded past market peaks (Futurism/Fortune, ~Sept 17)",
-    "Jensen Huang continues aggressive public pushback against bubble narrative even as Nvidia faces rising in-house-chip competition from Google, Amazon, Microsoft and OpenAI (Oct 2026 reports)"
+    "Nasdaq 100 worst one-day drop in 7 weeks (-1.4%) and Philly Semi Index -3.4% on OpenAI revenue-disappointment fears (Bloomberg, Oct 8)",
+    "Ray Dalio calls AI a 'classic bubble' nearing burst point due to debt and rising rates (Bloomberg, Oct 7)",
+    "Panmure Liberum strategist predicts AI bubble burst could trigger worst S&P crash since 2008 (Bloomberg/Insurance Journal, Oct 8-9)",
+    "Michael Burry doubles down shorting Nvidia/Palantir/SOXX/Oracle, comparing to 1960s bubble (Yahoo/GuruFocus, Oct 1-4)",
+    "Jensen Huang simultaneously dismisses 'doomsday narratives' as irresponsible across multiple media hits (Puck, Fool, Oct 8)",
+    "Stocks rebounded a day after the selloff as 'AI bubble fears recede' (Bloomberg, Oct 9), showing violent two-way volatility rather than one-sided trend"
    ]
   },
   "grid": {
    "theme": "grid",
    "extremity": 2,
    "kol_unanimity": "split",
-   "direction_2wk": "hotter",
+   "direction_2wk": "cooler",
    "evidence": [
-    "GE Vernova trades near 52-week highs with 30 analysts rating Buy and 0 Sell, price targets still being raised toward $1,230+",
-    "NuScale (SMR) surged 15% in a single day with retail chatter up 2,520% in 24 hours per Stocktwits, reversing from a 48% YTD decline",
-    "Analyst ratings on SMR/nuclear openly split: Citigroup maintains Sell while Truist/B.Riley rate Buy/Hold, and commentators call SMR economics 'a death foretold' even as ETF strategists call the dip a 'buying opportunity'",
-    "GE Vernova's Electrification segment orders tied to datacenters exceeded $2 billion in 2025, more than triple 2024, reinforcing the structural bull case with little visible pushback"
+    "Short sellers made ~$2.1bn on NuScale/Oklo/Nano Nuclear, which lost ~$30.3bn in market value from peaks (European Business Magazine)",
+    "Oklo shares sliding as 'nuclear hype rally fizzles' amid sector-wide cooling, published Oct 9 2026 (TipRanks)",
+    "Grid equipment/infra names (GE Vernova, Vertiv, transformer makers) still framed as structural winners with fresh bullish coverage into Oct 2026 (Simply Wall St, Bloomberg)",
+    "UBS downgraded NuScale to Sell ($6 PT) even as Texas Capital issued a bullish initiation, showing analyst divergence on speculative SMR names"
    ]
   },
   "robotics": {
    "theme": "robotics",
-   "extremity": 4,
+   "extremity": 2,
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "Unitree shares fell 55% from peak after a 460%+ debut pop, triggering China's informal IPO 'window guidance' freeze on new humanoid listings (Reuters/CNBC, late Sept 2026)",
-    "China's NDRC and securities regulators imposed new IPO criteria that few humanoid companies currently meet, following prior explicit bubble warnings about 150+ homogeneous robot makers",
-    "Jim Chanos publicly named Tesla among his shorts and called the broader AI/robotics-adjacent trade a '99-type' bubble moment, directly contradicting Musk's '1 billion humanoid robots in 10 years' prediction",
-    "AMD's $8.2B acquisition of World Labs and Figure AI's unchanged $39B valuation show continued aggressive capital commitment even as China's listed robotics names correct sharply"
+    "China's Humanoid Robotics Index down ~20% from highs after NDRC bubble warning; 150+ companies building near-identical robots (BitcoinEthereumNews/MEXC)",
+    "XPeng -66% and Xiaomi -56% off highs with no bullish analyst ratings (Tickeron)",
+    "Nasdaq 100 worst one-day drop in 7 weeks (-1.4%), semis -3.4% on OpenAI/AI bubble fears spilling into robotics-adjacent names (Bloomberg, Oct 8 2026)",
+    "Tesla Optimus hand-assembly bottlenecks slowing 1,000/week target even as Goldman lifts 2035 humanoid unit forecast 5x to 6.5M (The Information via multiple outlets; Tickeron/Goldman)",
+    "Morgan Stanley and roboticist Rodney Brooks publicly questioning real-world usefulness vs. hype ('dances vs. useful work', 'fantasy thinking')"
    ]
   },
   "defense": {
@@ -44,22 +47,23 @@
    "kol_unanimity": "split",
    "direction_2wk": "hotter",
    "evidence": [
-    "SpaceX price targets now span to $800 (Raymond James) with 28 of ~37 analysts rating Buy, even as the stock itself trades in a narrow dead-band \u2014 sell-side euphoria outpacing price action",
-    "AST SpaceMobile +12% and Rocket Lab +7% in a single session this week purely on routine launch news, with gains concentrated in pure-play names vs. broader space ETFs",
-    "Karman Holdings trading at 127x earnings despite being flagged as 'quite expensive by most measures,' alongside Reddit retail sentiment on RKLB that has already swung wildly from euphoric (85) to bearish (18) in recent months",
-    "European 'rearmament' defense stocks (Rheinmetall et al.) are in a post-correction consolidation phase with investors turning selective on earnings proof rather than chasing the theme further"
+    "Fulcrum Asset Management CIO: rearmament in Europe/Asia should keep defense spending and stocks on an upward trajectory (CNBC via Yahoo Finance)",
+    "AST SpaceMobile trades at 390x revenue with zero service sales while Rocket Lab trades at 82x revenue (Barchart)",
+    "Morgan Stanley set a $300 price target on SpaceX citing underpriced compute business, sparking a sector-wide rally (24/7 Wall St)",
+    "Retail sentiment diverged sharply week-over-week: Voyager/Intuitive Machines turned bullish while Rocket Lab/AST SpaceMobile/Planet Labs shifted bearish (BigGo Finance)",
+    "B. Riley downgraded AST SpaceMobile and Deutsche Bank cut its price target from above $130 to $106 even as stock remains a top 'upside' pick among other analysts"
    ]
   },
   "health": {
    "theme": "health",
-   "extremity": 2,
+   "extremity": 4,
    "kol_unanimity": "split",
    "direction_2wk": "hotter",
    "evidence": [
-    "Lilly's eloraTZP trial delivered 23.3% weight loss vs 14.8% for tirzepatide alone, driving 19 analyst EPS upgrades in 30 days (24/7 Wall St, MarketBeat)",
-    "NVO stocktwits retail sentiment 'extremely bullish' with message volume up 100% even as Novo's stock was 'pummeled' after its Capital Markets Day (Stocktwits Pharma Pulse, CNBC)",
-    "WSJ reporting 'the AI boom is going to go bust' running concurrently with BVP's 'this time is fundamentally different' health-AI bull case (Forbes/Ramaonhealthcare, BVP State of Health AI 2026)",
-    "Cathie Wood/ARK continuing concentrated genomics/gene-editing accumulation (Beam, Intellia, PacBio) as a contrarian conviction bet rather than a crowded consensus trade"
+    "Genomics/AI-diagnostics (Illumina, Natera, Tempus AI, ARKG) hitting serial all-time highs with 119-681% YTD gains touted by newsletters as a 'gold rush'",
+    "Illumina surged on analyst price-target hikes even as consensus 12-month target implies 24.5% downside - momentum over valuation",
+    "Novo Nordisk (GLP-1 leader) in near-capitulation: Morgan Stanley downgrade to Sell, 50-day MA crossed bearishly below 200-day, 'sentiment has swung deeply negative'",
+    "Ray Dalio calling broader AI trade a 'classic bubble' close to bursting, with healthcare/genomics being sold as the AI-bubble diversification play"
    ]
   },
   "outlier": {
@@ -68,10 +72,10 @@
    "kol_unanimity": "split",
    "direction_2wk": "hotter",
    "evidence": [
-    "GE Vernova retail/bull commentary: 'I Can't Stop Buying This AI Power Stock' amid turbine makers 'sold out until 2031' (Seeking Alpha)",
-    "Tesla analyst target spread from $25 (GLJ's Gordon Johnson) to $600 (Wedbush's Dan Ives) \u2014 maximal polarization (Yahoo Finance)",
-    "Palantir: Dan Ives' $1 trillion thesis vs. bearish Stocktwits retail sentiment despite 93% revenue growth (Yahoo Finance)",
-    "Coinbase crypto-rally reflex: trading volume surge to $103B+ and 10% futures volume jump reigniting 'optimism' narrative in just the past 10 days (Market Periodical, TradingView)"
+    "Goldman Sachs and Barclays issued back-to-back bullish Palantir calls (Oct 8-9) with $230-$265 targets and Dan Ives floated a $1 trillion valuation thesis, even as retail sentiment on Stocktwits stayed bearish",
+    "SpaceX's $51B insider share unlock (Oct 9) coincided with a Motley Fool 'fleecing retail investors' piece and a Seeking Alpha Sell rating citing 100x sales/-$25B FCF, while Dan Ives called SpaceX an AI play and floated an 80% chance of a Tesla merger by 2027",
+    "Tesla trades at a 354x trailing P/E on robotaxi/AI narrative with Ives's 'monster year' $3T bull case, while the Street itself is split on whether autonomy or core auto drives the stock",
+    "GE Vernova's backlog hit a record ~$176B even as JPMorgan cut its price target from $1330 to $1150 (Oct 9) despite keeping an Overweight rating, showing valuation skepticism creeping into an otherwise bullish AI-infrastructure story"
    ]
   }
  }

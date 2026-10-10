@@ -382,3 +382,32 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-10-03,BOTTOM,OMDA,"Omada Health, Inc.",QUALITY,20.37,-21.3,-55.9,27.0,25.87,1.2,Healthcare,Health Information Services,30.402985,36.62747,43.1,1.4,0.01
 2026-10-03,BOTTOM,PGEN,"Precigen, Inc.",SPEC,8.54,0.0,-27.4,-8.9,7.78,3.1,Healthcare,Biotechnology,,-38.81818,6322.7,-184.0,-0.1
 2026-10-03,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,9.1,-8.6,-70.4,9.5,9.96,1.1,Consumer Cyclical,Restaurants,101.111115,-13.0508995,3.8,2.0,-0.06
+2026-10-10,DROP,FMC,,,8.35,-71.8,-74.2,255.2,29.66,,,,,,,,
+2026-10-10,GRADUATED,VEEV,,,296.13,0.0,-48.3,-0.4,294.86,,,,,,,,
+2026-10-10,GRADUATED,CBRL,,,57.46,-0.8,-55.2,0.8,57.93,,,,,,,,
+2026-10-10,BOTTOM,ALGT,,SPEC,76.43,-35.6,-35.6,55.3,118.67,2.1,,,,,,,
+2026-10-10,BOTTOM,BULL,,SPEC,6.31,-45.2,-66.8,82.4,11.51,3.4,,,,,,,
+2026-10-10,BOTTOM,CBRL,,SPEC,57.46,-0.8,-55.2,0.8,57.93,1.3,,,,,,,
+2026-10-10,BOTTOM,CIEN,Ciena Corporation,QUALITY,449.77,-23.0,-45.0,29.8,583.74,63.8,Technology,Communication Equipment,100.61969,38.024807,37.0,10.9,0.63
+2026-10-10,BREAKOUT,CRVL,CorVel Corp.,QUALITY,77.16,0.0,-50.8,-1.5,75.97,3.9,Financial Services,Insurance Brokers,34.44643,,10.7,11.7,0.09
+2026-10-10,BOTTOM,CXM,"Sprinklr, Inc.",QUALITY,5.52,-32.4,-45.5,47.8,8.16,1.3,Technology,Software - Application,61.333332,10.324704,0.8,2.7,0.1
+2026-10-10,BOTTOM,DOCN,"DigitalOcean Holdings, Inc.",QUALITY,134.82,-22.2,-35.8,28.5,173.27,15.8,Technology,Software - Infrastructure,57.127125,73.206894,28.6,23.3,-0.02
+2026-10-10,BOTTOM,FCEL,"FuelCell Energy, Inc.",SPEC,18.03,-35.9,-46.8,55.9,28.11,1.4,Industrials,Electrical Equipment & Parts,,-17.66885,-29.4,-113.6,-0.01
+2026-10-10,BOTTOM,GEN,Gen Digital Inc.,QUALITY,23.25,-25.0,-39.1,33.4,31.02,13.9,Technology,Software - Infrastructure,13.596491,7.0260797,6.3,20.7,1.55
+2026-10-10,BOTTOM,GO,Grocery Outlet Holding Corp.,SPEC,11.96,-22.1,-60.3,28.7,15.39,1.2,Consumer Defensive,Grocery Stores,,17.77223,1.1,-8.0,-0.04
+2026-10-10,BOTTOM,GOLD,"Gold.com, Inc.",QUALITY,40.69,-30.9,-36.6,44.7,58.88,1.2,Financial Services,Capital Markets,13.47351,10.908847,99.2,0.3,0.41
+2026-10-10,BOTTOM,HUT,Hut 8 Corp.,SPEC,84.27,-32.5,-36.4,48.1,124.83,10.4,Financial Services,Capital Markets,,-15.844811,81.4,-188.6,-7.74
+2026-10-10,BREAKOUT,ITUB,Itau Unibanco Banco Holding SA,QUALITY,10.16,0.0,-20.6,-8.3,9.31,112.0,Financial Services,Banks - Regional,13.025641,10.477251,17.5,32.6,
+2026-10-10,BOTTOM,LYFT,"Lyft, Inc.",QUALITY,16.22,-29.9,-43.9,42.7,23.14,6.1,Technology,Software - Application,2.3609898,7.5278697,16.1,42.3,1.15
+2026-10-10,BREAKOUT,MSFT,Microsoft Corporation,QUALITY,535.07,0.0,-28.3,-2.9,519.34,3973.2,Technology,Software - Infrastructure,29.808912,22.59842,17.7,40.3,16.55
+2026-10-10,BOTTOM,NCNO,"nCino, Inc.",QUALITY,19.73,-26.0,-53.9,35.2,26.68,2.1,Technology,Software - Application,61.65625,12.468796,8.2,5.4,0.15
+2026-10-10,BREAKOUT,PAGS,PagSeguro Digital Ltd.,SPEC,11.16,0.0,-22.6,-4.1,10.7,3.1,Technology,Software - Infrastructure,7.859155,5.847711,-0.2,10.9,-1.86
+2026-10-10,BOTTOM,PATH,"UiPath, Inc.",QUALITY,13.48,-27.8,-45.0,38.5,18.67,7.0,Technology,Software - Infrastructure,20.119402,14.637218,13.4,21.0,0.47
+2026-10-10,BREAKOUT,PCRX,"Pacira BioSciences, Inc.",QUALITY,36.31,0.0,-17.7,-27.0,26.51,1.4,Healthcare,Drug Manufacturers - Specialty & Generic,103.74287,10.497497,6.2,2.0,0.1
+2026-10-10,BREAKOUT,PLTR,Palantir Technologies Inc.,QUALITY,209.05,0.0,-43.7,-4.1,200.47,502.4,Technology,Software - Infrastructure,180.21553,89.17906,92.8,49.0,2.16
+2026-10-10,BREAKOUT,SIG,Signet Jewelers Limited,SPEC,105.22,0.0,-26.5,-2.2,102.92,4.0,Consumer Cyclical,Luxury Goods,12.206497,7.6552086,-0.5,5.2,0.42
+2026-10-10,BOTTOM,SPOT,Spotify Technology S.A.,QUALITY,529.14,-21.2,-45.9,29.5,685.29,108.8,Communication Services,Internet Content & Information,30.410347,30.69972,13.9,18.4,1.54
+2026-10-10,BOTTOM,SRPT,"Sarepta Therapeutics, Inc.",SPEC,17.85,-25.7,-68.0,34.5,24.01,1.9,Healthcare,Biotechnology,,7.4034443,-34.3,-6.9,0.02
+2026-10-10,BREAKOUT,TAL,TAL Education Group,QUALITY,12.86,0.0,-27.6,-1.2,12.7,7.1,Consumer Defensive,Education & Training Services,8.037499,10.966894,31.9,28.4,0.42
+2026-10-10,BREAKOUT,XERS,"Xeris Biopharma Holdings, Inc.",QUALITY,10.48,0.0,-37.6,-7.4,9.7,1.9,Healthcare,Drug Manufacturers - Specialty & Generic,,28.324324,28.7,-5.1,0.05
+2026-10-10,BREAKOUT,XP,XP Inc.,QUALITY,32.22,0.0,-33.2,-29.7,22.66,16.3,Financial Services,Capital Markets,15.794119,13.131411,10.6,28.5,

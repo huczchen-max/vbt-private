@@ -1,19 +1,19 @@
 {
  "as_of": "2026-10-15",
- "updated_utc": "2026-10-15T00:13:38+00:00",
+ "updated_utc": "2026-10-15T23:55:55+00:00",
  "account": {
-  "equity": 92053.31,
-  "cash": 14577.41,
-  "pl_total": -5473.7
+  "equity": 92776.85,
+  "cash": 17168.03,
+  "pl_total": -753.18
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 230.7,
-   "pl_pct": 2.33,
-   "pl_usd": 176.4,
+   "current": 234.3,
+   "pl_pct": 3.93,
+   "pl_usd": 297.1,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 352.15,
-   "pl_pct": -7.89,
-   "pl_usd": -633.57,
+   "current": 354.9,
+   "pl_pct": -7.17,
+   "pl_usd": -575.82,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "COHR",
    "qty": 13.0,
    "avg_entry": 327.17,
-   "current": 257.0,
-   "pl_pct": -21.45,
-   "pl_usd": -912.16,
+   "current": 250.5,
+   "pl_pct": -23.43,
+   "pl_usd": -996.66,
    "entered": "2026-10-09",
    "stage": "CONFIRMED"
   },
@@ -41,29 +41,19 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 163.0,
-   "pl_pct": 6.93,
-   "pl_usd": 561.86,
+   "current": 165.12,
+   "pl_pct": 8.33,
+   "pl_usd": 674.59,
    "entered": "\u2014",
    "stage": "\u2014"
-  },
-  {
-   "symbol": "GLXY",
-   "qty": 156.0,
-   "avg_entry": 23.87,
-   "current": 17.76,
-   "pl_pct": -25.6,
-   "pl_usd": -953.24,
-   "entered": "\u2014",
-   "stage": "CONFIRMED"
   },
   {
    "symbol": "HUT",
    "qty": 47.0,
    "avg_entry": 92.5,
-   "current": 72.0,
-   "pl_pct": -22.16,
-   "pl_usd": -963.59,
+   "current": 75.76,
+   "pl_pct": -18.1,
+   "pl_usd": -786.87,
    "entered": "2026-10-06",
    "stage": "CONFIRMED"
   },
@@ -71,9 +61,9 @@
    "symbol": "INTC",
    "qty": 41.0,
    "avg_entry": 87.02,
-   "current": 96.1,
-   "pl_pct": 10.43,
-   "pl_usd": 372.09,
+   "current": 94.67,
+   "pl_pct": 8.79,
+   "pl_usd": 313.46,
    "entered": "2026-07-28",
    "stage": "CONFIRMED"
   },
@@ -81,9 +71,9 @@
    "symbol": "KLAC",
    "qty": 43.0,
    "avg_entry": 176.5,
-   "current": 176.83,
-   "pl_pct": 0.18,
-   "pl_usd": 13.98,
+   "current": 172.85,
+   "pl_pct": -2.07,
+   "pl_usd": -157.16,
    "entered": "2026-08-29",
    "stage": "CONFIRMED"
   },
@@ -91,9 +81,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1213.0,
-   "pl_pct": 3.6,
-   "pl_usd": 277.58,
+   "current": 1254.48,
+   "pl_pct": 7.14,
+   "pl_usd": 551.02,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -101,9 +91,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 889.13,
-   "pl_pct": -0.24,
-   "pl_usd": -20.76,
+   "current": 923.8,
+   "pl_pct": 3.65,
+   "pl_usd": 314.84,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -111,9 +101,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 71.8,
-   "pl_pct": -13.01,
-   "pl_usd": -977.34,
+   "current": 73.5,
+   "pl_pct": -10.95,
+   "pl_usd": -822.64,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -121,19 +111,19 @@
    "symbol": "TLN",
    "qty": 11.0,
    "avg_entry": 368.32,
-   "current": 353.5,
-   "pl_pct": -4.02,
-   "pl_usd": -162.97,
+   "current": 351.51,
+   "pl_pct": -4.56,
+   "pl_usd": -184.86,
    "entered": "2026-10-09",
-   "stage": "Recovered"
+   "stage": "CONFIRMED"
   },
   {
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 351.0,
-   "pl_pct": -33.95,
-   "pl_usd": -2887.16,
+   "current": 351.5,
+   "pl_pct": -33.86,
+   "pl_usd": -2879.16,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -407,6 +397,18 @@
    "action": "SELL",
    "symbol": "GLXY",
    "note": "catastrophic stop (spec, -25.6% <= -25%)"
+  },
+  {
+   "date": "2026-10-15",
+   "action": "SKIP",
+   "symbol": "AMAT",
+   "note": "group cap (semi already at 4)"
+  },
+  {
+   "date": "2026-10-15",
+   "action": "SKIP",
+   "symbol": "MRVL",
+   "note": "group cap (semi already at 4)"
   }
  ]
 }

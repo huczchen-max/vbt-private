@@ -1,47 +1,24 @@
 {
- "date": "2026-10-15",
+ "date": "2026-10-17",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-10-15T23:50:39+00:00",
+ "generated_utc": "2026-10-17T11:36:28+00:00",
  "regime": {
   "regime": "RISK-OFF",
   "reasons": [
-   "Semiconductor sector in uninterrupted 7th consecutive down day with $1T market cap erased \u2014 no trend-recovery confirmation",
-   "Hot CPI print reignited Fed hike expectations ahead of Oct 28 FOMC, with blackout period starting Oct 17 removing any dovish counter-narrative",
-   "CoreWeave credit risk hit all-time high, signaling financing stress in neocloud/surplus-compute segment despite strong headline hyperscaler capex",
-   "China export-control situation unresolved (rare earth truce only postponed to Nov 2026), adding tail-risk overhang without near-term catalyst to reduce it"
+   "SOX in 8th straight down day, worst losing streak since 2008, no reversal confirmation yet",
+   "Neocloud credit stress acute: CoreWeave -25% week, bonds distressed, hyperscaler CDS near yearly wides",
+   "FOMC decision Oct 28 is a live hold-vs-hike call amid hot inflation prints and Fed blackout, no near-term dovish catalyst",
+   "China chip competition (Nvidia China share collapsing) actively driving sector selling, export-control policy unstable"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "AMAT": {
+  "LRCX": {
    "verdict": "CAUTION",
    "size_mult": 0.5,
    "reasons": [
-    "At Oct 13, 2026 investor day, management withheld near-term wafer fab equipment spending targets, creating investor friction over revenue visibility and triggering a sharp stock decline",
-    "No earnings within 14 days (next report Nov 12, 2026), no dilution/offering, no new customer loss, no short-seller/accounting issues, and the Feb 2026 BIS export settlement was already resolved with DOJ/SEC investigations closed without action"
-   ],
-   "raw_ok": true
-  },
-  "MRVL": {
-   "verdict": "GO",
-   "size_mult": 1.0,
-   "reasons": [
-    "Next earnings ~Nov 26, 2026 \u2014 outside 14-day window",
-    "Guidance was raised (not cut) at Oct 6 Investor Day",
-    "No new share offering/dilution announced in last 4 weeks",
-    "No customer loss; concentration is pre-existing disclosed risk, not a new event",
-    "No short-seller report, accounting irregularity, or auditor issue; clean unqualified audit",
-    "No new legal/regulatory actions in window"
-   ],
-   "raw_ok": true
-  },
-  "TLN": {
-   "verdict": "CAUTION",
-   "size_mult": 0.5,
-   "reasons": [
-    "FERC accepted but suspended PJM's Reliability Backstop Procurement plan to 2027, adding regulatory uncertainty around near-term capacity revenue for TLN",
-    "Planned CEO succession announced (Nutt to replace McFarland effective Jan 1, 2027) \u2014 routine/orderly but a named leadership change within the lookback window",
-    "No disqualifying events found: no dilution/offering (company is instead doing a $1.5B ASR/$3B buyback), no guidance cuts (guidance was raised), no auditor/accounting/short-seller issues, no customer loss, next earnings (Nov 3) is outside the 14-day window"
+    "Earnings scheduled Oct 21, 2026 \u2014 within 14 days of screening date (automatic CAUTION trigger)",
+    "No dilution, guidance cuts, customer-loss, accounting/short-seller, or legal/regulatory red flags found in past 4 weeks"
    ],
    "raw_ok": true
   }

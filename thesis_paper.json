@@ -79,48 +79,36 @@
   }
  ],
  "snapshot": {
-  "date": "2026-10-10",
-  "account_equity": 101539.0,
-  "vbt2_budget": 40615.6,
-  "stock_sleeve": 32492.48,
-  "options_sleeve": 8123.12,
-  "options_committed": 8096.0,
+  "date": "2026-10-17",
+  "account_equity": 89591.65,
+  "vbt2_budget": 35836.66,
+  "stock_sleeve": 28669.33,
+  "options_sleeve": 7167.33,
+  "options_committed": 7154.0,
   "options_sizing": [
    {
+    "ticker": "ZBRA",
+    "strategy": "CALL_DEBIT_SPREAD",
+    "contracts": 1,
+    "max_loss_total": 1240.0
+   },
+   {
+    "ticker": "MU",
+    "strategy": "BULL_PUT_SPREAD",
+    "contracts": 1,
+    "max_loss_total": 3234.0
+   },
+   {
     "ticker": "DELL",
-    "strategy": "CALL_DEBIT_SPREAD",
-    "contracts": 1,
-    "max_loss_total": 1955.0
-   },
-   {
-    "ticker": "GH",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 2,
-    "max_loss_total": 1728.0
-   },
-   {
-    "ticker": "NTRA",
-    "strategy": "CALL_DEBIT_SPREAD",
-    "contracts": 1,
-    "max_loss_total": 1060.0
-   },
-   {
-    "ticker": "AMD",
     "strategy": "BULL_PUT_SPREAD",
     "contracts": 1,
-    "max_loss_total": 2775.0
+    "max_loss_total": 1395.0
    },
    {
-    "ticker": "CGNX",
+    "ticker": "IESC",
     "strategy": "BULL_PUT_SPREAD",
     "contracts": 1,
-    "max_loss_total": 398.0
-   },
-   {
-    "ticker": "RDW",
-    "strategy": "BULL_PUT_SPREAD",
-    "contracts": 3,
-    "max_loss_total": 180.0
+    "max_loss_total": 1285.0
    }
   ],
   "book": {
@@ -131,7 +119,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 1029.0,
+    "current_close": 878.84,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -141,7 +129,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 167.47,
+    "current_close": 158.6,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -151,7 +139,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1179.27,
+    "current_close": 1257.03,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -161,7 +149,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 280.5,
+    "current_close": 221.31,
     "door_now": "IN-TREND"
    }
   }

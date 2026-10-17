@@ -7,11 +7,11 @@
   "name": "Navitas Semiconductor Corporati",
   "sector": "Technology",
   "mkt_cap_B": 2.8,
-  "close": 10.78,
+  "close": 8.34,
   "state": "Mixed",
-  "dd_pct": -63.1,
-  "to_high_pct": 171.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -71.5,
+  "to_high_pct": 250.7,
+  "last_seen": "2026-10-17"
  },
  "SFM": {
   "added": "2026-07-19",
@@ -21,11 +21,11 @@
   "name": "Sprouts Farmers Market, Inc.",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 7.1,
-  "close": 65.14,
+  "close": 65.2,
   "state": "Mixed",
-  "dd_pct": -41.7,
-  "to_high_pct": 71.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -38.6,
+  "to_high_pct": 71.4,
+  "last_seen": "2026-10-17"
  },
  "SNPS": {
   "added": "2026-07-19",
@@ -35,11 +35,11 @@
   "name": "Synopsys, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 73.6,
-  "close": 509.99,
+  "close": 454.63,
   "state": "Mixed",
-  "dd_pct": -2.9,
-  "to_high_pct": 3.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -13.4,
+  "to_high_pct": 15.5,
+  "last_seen": "2026-10-17"
  },
  "VCYT": {
   "added": "2026-07-19",
@@ -49,11 +49,11 @@
   "name": "Veracyte, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 4.7,
-  "close": 45.23,
+  "close": 43.12,
   "state": "Uptrend",
-  "dd_pct": -25.2,
-  "to_high_pct": 33.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.7,
+  "to_high_pct": 40.3,
+  "last_seen": "2026-10-17"
  },
  "ZLAB": {
   "added": "2026-07-19",
@@ -63,11 +63,11 @@
   "name": "Zai Lab Limited",
   "sector": "Healthcare",
   "mkt_cap_B": 2.3,
-  "close": 24.99,
+  "close": 23.19,
   "state": "Mixed",
-  "dd_pct": -11.7,
-  "to_high_pct": 21.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -11.9,
+  "to_high_pct": 22.0,
+  "last_seen": "2026-10-17"
  },
  "ADMA": {
   "added": "2026-07-19",
@@ -77,11 +77,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 2.0,
-  "close": 10.36,
+  "close": 10.68,
   "state": "Mixed",
-  "dd_pct": -47.8,
-  "to_high_pct": 91.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -46.2,
+  "to_high_pct": 85.9,
+  "last_seen": "2026-10-17"
  },
  "APP": {
   "added": "2026-07-19",
@@ -91,11 +91,11 @@
   "name": "Applovin Corporation",
   "sector": "Communication Services",
   "mkt_cap_B": 142.6,
-  "close": 277.04,
+  "close": 266.13,
   "state": "Uptrend",
-  "dd_pct": -61.6,
-  "to_high_pct": 160.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -63.1,
+  "to_high_pct": 171.1,
+  "last_seen": "2026-10-17"
  },
  "ARLO": {
   "added": "2026-07-19",
@@ -105,11 +105,11 @@
   "name": "Arlo Technologies, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.4,
-  "close": 12.4,
+  "close": 12.16,
   "state": "Mixed",
-  "dd_pct": -36.2,
-  "to_high_pct": 56.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -37.4,
+  "to_high_pct": 59.9,
+  "last_seen": "2026-10-17"
  },
  "AUR": {
   "added": "2026-07-19",
@@ -123,7 +123,8 @@
   "state": "Uptrend",
   "dd_pct": -24.4,
   "to_high_pct": 32.2,
-  "last_seen": "2026-10-10"
+  "last_seen": "2026-10-10",
+  "status": "no-data"
  },
  "BCRX": {
   "added": "2026-07-19",
@@ -133,11 +134,11 @@
   "name": "BioCryst Pharmaceuticals, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.4,
-  "close": 8.55,
+  "close": 7.79,
   "state": "Uptrend",
-  "dd_pct": -18.2,
-  "to_high_pct": 22.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.5,
+  "to_high_pct": 34.1,
+  "last_seen": "2026-10-17"
  },
  "BMA": {
   "added": "2026-07-19",
@@ -147,11 +148,11 @@
   "name": "Banco Macro S.A.",
   "sector": "Financial Services",
   "mkt_cap_B": 5.8,
-  "close": 64.96,
+  "close": 64.04,
   "state": "Uptrend",
-  "dd_pct": -35.7,
-  "to_high_pct": 55.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -36.6,
+  "to_high_pct": 57.8,
+  "last_seen": "2026-10-17"
  },
  "CAR": {
   "added": "2026-07-19",
@@ -161,11 +162,11 @@
   "name": "Avis Budget Group, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 5.7,
-  "close": 105.98,
+  "close": 102.83,
   "state": "Mixed",
-  "dd_pct": -78.5,
-  "to_high_pct": 366.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -79.2,
+  "to_high_pct": 380.3,
+  "last_seen": "2026-10-17"
  },
  "CARR": {
   "added": "2026-07-19",
@@ -175,11 +176,11 @@
   "name": "Carrier Global Corporation",
   "sector": "Industrials",
   "mkt_cap_B": 57.1,
-  "close": 55.56,
+  "close": 55.0,
   "state": "Uptrend",
-  "dd_pct": -24.2,
-  "to_high_pct": 32.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.0,
+  "to_high_pct": 33.3,
+  "last_seen": "2026-10-17"
  },
  "CHA": {
   "added": "2026-07-19",
@@ -189,11 +190,11 @@
   "name": "Chagee Holdings Limited",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 2.2,
-  "close": 11.25,
+  "close": 12.3,
   "state": "Uptrend",
-  "dd_pct": -30.8,
-  "to_high_pct": 44.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -24.3,
+  "to_high_pct": 32.1,
+  "last_seen": "2026-10-17"
  },
  "CHH": {
   "added": "2026-07-19",
@@ -203,11 +204,11 @@
   "name": "Choice Hotels International, In",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 5.1,
-  "close": 105.64,
+  "close": 108.41,
   "state": "Mixed",
-  "dd_pct": -10.9,
-  "to_high_pct": 12.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -8.5,
+  "to_high_pct": 9.3,
+  "last_seen": "2026-10-17"
  },
  "COLD": {
   "added": "2026-07-19",
@@ -217,11 +218,11 @@
   "name": "Americold Realty Trust, Inc.",
   "sector": "Real Estate",
   "mkt_cap_B": 4.6,
-  "close": 13.99,
+  "close": 13.82,
   "state": "Uptrend",
-  "dd_pct": -12.5,
-  "to_high_pct": 14.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -13.5,
+  "to_high_pct": 15.7,
+  "last_seen": "2026-10-17"
  },
  "CORZ": {
   "added": "2026-07-19",
@@ -231,11 +232,11 @@
   "name": "Core Scientific, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 6.7,
-  "close": 15.41,
+  "close": 13.48,
   "state": "Uptrend",
-  "dd_pct": -47.2,
-  "to_high_pct": 89.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -53.8,
+  "to_high_pct": 116.3,
+  "last_seen": "2026-10-17"
  },
  "DG": {
   "added": "2026-07-19",
@@ -245,25 +246,11 @@
   "name": "Dollar General Corporation",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 27.7,
-  "close": 127.23,
+  "close": 134.36,
   "state": "Mixed",
-  "dd_pct": -17.4,
-  "to_high_pct": 21.0,
-  "last_seen": "2026-10-10"
- },
- "DOCU": {
-  "added": "2026-07-19",
-  "signal_date": "2026-07-06",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "DocuSign, Inc.",
-  "sector": "Technology",
-  "mkt_cap_B": 10.1,
-  "close": 71.08,
-  "state": "Mixed",
-  "dd_pct": -2.8,
-  "to_high_pct": 2.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -12.7,
+  "to_high_pct": 14.6,
+  "last_seen": "2026-10-17"
  },
  "DSGX": {
   "added": "2026-07-19",
@@ -273,11 +260,11 @@
   "name": "The Descartes Systems Group Inc",
   "sector": "Technology",
   "mkt_cap_B": 6.4,
-  "close": 82.82,
+  "close": 87.05,
   "state": "Uptrend",
-  "dd_pct": -14.1,
-  "to_high_pct": 16.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -9.7,
+  "to_high_pct": 10.8,
+  "last_seen": "2026-10-17"
  },
  "ENOV": {
   "added": "2026-07-19",
@@ -287,11 +274,11 @@
   "name": "Enovis Corporation",
   "sector": "Healthcare",
   "mkt_cap_B": 1.6,
-  "close": 17.69,
+  "close": 19.59,
   "state": "Mixed",
-  "dd_pct": -46.2,
-  "to_high_pct": 85.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -40.4,
+  "to_high_pct": 67.8,
+  "last_seen": "2026-10-17"
  },
  "ENPH": {
   "added": "2026-07-19",
@@ -301,11 +288,11 @@
   "name": "Enphase Energy, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 5.5,
-  "close": 32.81,
+  "close": 30.62,
   "state": "Uptrend",
-  "dd_pct": -52.0,
-  "to_high_pct": 108.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -55.2,
+  "to_high_pct": 123.3,
+  "last_seen": "2026-10-17"
  },
  "ETOR": {
   "added": "2026-07-19",
@@ -315,11 +302,11 @@
   "name": "eToro Group Ltd.",
   "sector": "Financial Services",
   "mkt_cap_B": 2.9,
-  "close": 25.9,
+  "close": 24.39,
   "state": "Uptrend",
-  "dd_pct": -39.8,
-  "to_high_pct": 66.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.3,
+  "to_high_pct": 76.3,
+  "last_seen": "2026-10-17"
  },
  "IOT": {
   "added": "2026-07-19",
@@ -329,11 +316,11 @@
   "name": "Samsara Inc.",
   "sector": "Technology",
   "mkt_cap_B": 22.3,
-  "close": 41.55,
+  "close": 39.57,
   "state": "Uptrend",
-  "dd_pct": -8.1,
-  "to_high_pct": 8.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -12.5,
+  "to_high_pct": 14.3,
+  "last_seen": "2026-10-17"
  },
  "JBIO": {
   "added": "2026-07-19",
@@ -343,11 +330,11 @@
   "name": "Jade Biosciences, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.3,
-  "close": 14.39,
+  "close": 13.47,
   "state": "Mixed",
-  "dd_pct": -44.2,
-  "to_high_pct": 79.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -47.8,
+  "to_high_pct": 91.6,
+  "last_seen": "2026-10-17"
  },
  "LUMN": {
   "added": "2026-07-19",
@@ -361,7 +348,8 @@
   "state": "Uptrend",
   "dd_pct": -48.9,
   "to_high_pct": 95.6,
-  "last_seen": "2026-10-10"
+  "last_seen": "2026-10-10",
+  "status": "no-data"
  },
  "PRG": {
   "added": "2026-07-19",
@@ -371,25 +359,11 @@
   "name": "PROG Holdings, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.9,
-  "close": 30.48,
+  "close": 30.99,
   "state": "Uptrend",
-  "dd_pct": -34.1,
-  "to_high_pct": 51.8,
-  "last_seen": "2026-10-10"
- },
- "PVH": {
-  "added": "2026-07-19",
-  "signal_date": "2026-07-06",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "PVH Corp.",
-  "sector": "Consumer Cyclical",
-  "mkt_cap_B": 3.6,
-  "close": 81.35,
-  "state": "Mixed",
-  "dd_pct": -13.5,
-  "to_high_pct": 15.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.0,
+  "to_high_pct": 49.3,
+  "last_seen": "2026-10-17"
  },
  "TTI": {
   "added": "2026-07-19",
@@ -399,11 +373,11 @@
   "name": "Tetra Technologies, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.4,
-  "close": 6.11,
+  "close": 5.32,
   "state": "Mixed",
-  "dd_pct": -47.6,
-  "to_high_pct": 91.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -54.4,
+  "to_high_pct": 119.4,
+  "last_seen": "2026-10-17"
  },
  "CPRI": {
   "added": "2026-07-25",
@@ -413,11 +387,11 @@
   "name": "Capri Holdings Limited",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.8,
-  "close": 14.95,
-  "state": "Uptrend",
-  "dd_pct": -44.7,
-  "to_high_pct": 80.9,
-  "last_seen": "2026-10-10"
+  "close": 15.95,
+  "state": "Mixed",
+  "dd_pct": -41.0,
+  "to_high_pct": 69.5,
+  "last_seen": "2026-10-17"
  },
  "FUN": {
   "added": "2026-07-25",
@@ -427,11 +401,11 @@
   "name": "Six Flags Entertainment Corpora",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.8,
-  "close": 11.41,
+  "close": 8.11,
   "state": "Uptrend",
-  "dd_pct": -55.6,
-  "to_high_pct": 125.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -68.5,
+  "to_high_pct": 217.0,
+  "last_seen": "2026-10-17"
  },
  "NAMS": {
   "added": "2026-07-25",
@@ -441,11 +415,11 @@
   "name": "NewAmsterdam Pharma Company N.V",
   "sector": "Healthcare",
   "mkt_cap_B": 3.5,
-  "close": 21.58,
+  "close": 19.83,
   "state": "Mixed",
-  "dd_pct": -47.8,
-  "to_high_pct": 91.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -52.0,
+  "to_high_pct": 108.3,
+  "last_seen": "2026-10-17"
  },
  "STVN": {
   "added": "2026-07-25",
@@ -455,11 +429,11 @@
   "name": "Stevanato Group S.p.A.",
   "sector": "Healthcare",
   "mkt_cap_B": 5.4,
-  "close": 19.4,
+  "close": 18.9,
   "state": "Uptrend",
-  "dd_pct": -25.4,
-  "to_high_pct": 34.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -27.4,
+  "to_high_pct": 37.7,
+  "last_seen": "2026-10-17"
  },
  "VOR": {
   "added": "2026-07-25",
@@ -469,11 +443,11 @@
   "name": "Vor Biopharma Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.0,
-  "close": 19.9,
+  "close": 18.03,
   "state": "Uptrend",
-  "dd_pct": -31.4,
-  "to_high_pct": 56.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.7,
+  "to_high_pct": 60.8,
+  "last_seen": "2026-10-17"
  },
  "WDC": {
   "added": "2026-07-25",
@@ -483,25 +457,11 @@
   "name": "Western Digital Corporation",
   "sector": "Technology",
   "mkt_cap_B": 179.2,
-  "close": 397.28,
+  "close": 332.0,
   "state": "Uptrend",
-  "dd_pct": -46.7,
-  "to_high_pct": 87.8,
-  "last_seen": "2026-10-10"
- },
- "AGRO": {
-  "added": "2026-08-01",
-  "signal_date": "2026-07-27",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "Adecoagro S.A.",
-  "sector": "Consumer Defensive",
-  "mkt_cap_B": 1.4,
-  "close": 10.24,
-  "state": "Mixed",
-  "dd_pct": -32.1,
-  "to_high_pct": 47.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -55.5,
+  "to_high_pct": 124.7,
+  "last_seen": "2026-10-17"
  },
  "ALK": {
   "added": "2026-08-01",
@@ -511,11 +471,11 @@
   "name": "Alaska Air Group, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 5.3,
-  "close": 39.36,
+  "close": 35.13,
   "state": "Mixed",
-  "dd_pct": -33.8,
-  "to_high_pct": 51.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -40.9,
+  "to_high_pct": 69.2,
+  "last_seen": "2026-10-17"
  },
  "CRAI": {
   "added": "2026-08-01",
@@ -525,11 +485,11 @@
   "name": "CRA International,Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.2,
-  "close": 176.73,
+  "close": 178.09,
   "state": "Mixed",
-  "dd_pct": -17.5,
-  "to_high_pct": 21.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -16.9,
+  "to_high_pct": 20.3,
+  "last_seen": "2026-10-17"
  },
  "ENR": {
   "added": "2026-08-01",
@@ -539,11 +499,11 @@
   "name": "Energizer Holdings, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.4,
-  "close": 21.33,
+  "close": 21.7,
   "state": "Mixed",
-  "dd_pct": -8.8,
-  "to_high_pct": 9.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -5.2,
+  "to_high_pct": 7.8,
+  "last_seen": "2026-10-17"
  },
  "GRND": {
   "added": "2026-08-01",
@@ -553,11 +513,11 @@
   "name": "Grindr Inc.",
   "sector": "Technology",
   "mkt_cap_B": 3.1,
-  "close": 15.03,
+  "close": 14.09,
   "state": "Uptrend",
-  "dd_pct": -13.3,
-  "to_high_pct": 15.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -18.7,
+  "to_high_pct": 23.1,
+  "last_seen": "2026-10-17"
  },
  "LUV": {
   "added": "2026-08-01",
@@ -567,11 +527,11 @@
   "name": "Southwest Airlines Company",
   "sector": "Industrials",
   "mkt_cap_B": 22.0,
-  "close": 41.66,
+  "close": 39.5,
   "state": "Uptrend",
-  "dd_pct": -22.2,
-  "to_high_pct": 28.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.2,
+  "to_high_pct": 35.5,
+  "last_seen": "2026-10-17"
  },
  "NOW": {
   "added": "2026-08-01",
@@ -581,11 +541,11 @@
   "name": "ServiceNow, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 115.0,
-  "close": 140.86,
+  "close": 141.97,
   "state": "Uptrend",
-  "dd_pct": -24.3,
-  "to_high_pct": 32.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.7,
+  "to_high_pct": 31.0,
+  "last_seen": "2026-10-17"
  },
  "SVV": {
   "added": "2026-08-01",
@@ -595,11 +555,11 @@
   "name": "Savers Value Village, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.6,
-  "close": 9.23,
+  "close": 10.07,
   "state": "Uptrend",
-  "dd_pct": -31.6,
-  "to_high_pct": 46.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.4,
+  "to_high_pct": 34.0,
+  "last_seen": "2026-10-17"
  },
  "UPWK": {
   "added": "2026-08-01",
@@ -609,11 +569,11 @@
   "name": "Upwork Inc.",
   "sector": "Communication Services",
   "mkt_cap_B": 1.1,
-  "close": 8.6,
+  "close": 8.43,
   "state": "Mixed",
-  "dd_pct": -61.1,
-  "to_high_pct": 157.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -61.9,
+  "to_high_pct": 162.3,
+  "last_seen": "2026-10-17"
  },
  "VC": {
   "added": "2026-08-01",
@@ -623,11 +583,11 @@
   "name": "Visteon Corporation",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 2.8,
-  "close": 85.43,
+  "close": 87.25,
   "state": "Mixed",
-  "dd_pct": -27.6,
-  "to_high_pct": 38.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.1,
+  "to_high_pct": 35.2,
+  "last_seen": "2026-10-17"
  },
  "VOYG": {
   "added": "2026-08-01",
@@ -637,11 +597,11 @@
   "name": "Voyager Technologies, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.5,
-  "close": 27.26,
+  "close": 25.35,
   "state": "Mixed",
-  "dd_pct": -45.0,
-  "to_high_pct": 81.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -48.8,
+  "to_high_pct": 95.4,
+  "last_seen": "2026-10-17"
  },
  "WK": {
   "added": "2026-08-01",
@@ -651,11 +611,11 @@
   "name": "Workiva Inc.",
   "sector": "Technology",
   "mkt_cap_B": 3.4,
-  "close": 73.25,
+  "close": 75.31,
   "state": "Mixed",
-  "dd_pct": -20.9,
-  "to_high_pct": 26.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -18.6,
+  "to_high_pct": 22.9,
+  "last_seen": "2026-10-17"
  },
  "BKSY": {
   "added": "2026-08-08",
@@ -665,11 +625,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 1.2,
-  "close": 20.92,
+  "close": 17.32,
   "state": "Mixed",
-  "dd_pct": -56.8,
-  "to_high_pct": 131.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -64.3,
+  "to_high_pct": 179.8,
+  "last_seen": "2026-10-17"
  },
  "BROS": {
   "added": "2026-08-08",
@@ -679,11 +639,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 9.3,
-  "close": 38.05,
+  "close": 41.16,
   "state": "Uptrend",
-  "dd_pct": -47.3,
-  "to_high_pct": 89.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.0,
+  "to_high_pct": 75.3,
+  "last_seen": "2026-10-17"
  },
  "GLUE": {
   "added": "2026-08-08",
@@ -693,11 +653,11 @@
   "name": "Monte Rosa Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.4,
-  "close": 10.3,
+  "close": 9.74,
   "state": "Uptrend",
-  "dd_pct": -58.1,
-  "to_high_pct": 138.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -60.3,
+  "to_high_pct": 152.2,
+  "last_seen": "2026-10-17"
  },
  "LWLG": {
   "added": "2026-08-08",
@@ -722,11 +682,11 @@
   "name": "LyondellBasell Industries NV",
   "sector": "Basic Materials",
   "mkt_cap_B": 19.2,
-  "close": 60.03,
+  "close": 64.01,
   "state": "Mixed",
-  "dd_pct": -23.8,
-  "to_high_pct": 31.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -18.8,
+  "to_high_pct": 23.1,
+  "last_seen": "2026-10-17"
  },
  "UAMY": {
   "added": "2026-08-08",
@@ -751,25 +711,11 @@
   "name": "Walker & Dunlop, Inc",
   "sector": "Financial Services",
   "mkt_cap_B": 1.5,
-  "close": 33.01,
+  "close": 32.66,
   "state": "Uptrend",
-  "dd_pct": -59.3,
-  "to_high_pct": 145.6,
-  "last_seen": "2026-10-10"
- },
- "ALNY": {
-  "added": "2026-08-15",
-  "signal_date": "2026-08-10",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "Alnylam Pharmaceuticals, Inc.",
-  "sector": "Healthcare",
-  "mkt_cap_B": 30.6,
-  "close": 232.68,
-  "state": "Mixed",
-  "dd_pct": -51.7,
-  "to_high_pct": 107.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -59.7,
+  "to_high_pct": 148.3,
+  "last_seen": "2026-10-17"
  },
  "ARQT": {
   "added": "2026-08-15",
@@ -779,11 +725,11 @@
   "name": "Arcutis Biotherapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 3.3,
-  "close": 26.58,
+  "close": 28.82,
   "state": "Uptrend",
-  "dd_pct": -14.8,
-  "to_high_pct": 17.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -7.6,
+  "to_high_pct": 8.3,
+  "last_seen": "2026-10-17"
  },
  "HHH": {
   "added": "2026-08-15",
@@ -793,11 +739,11 @@
   "name": "Howard Hughes Holdings Inc.",
   "sector": "Real Estate",
   "mkt_cap_B": 4.0,
-  "close": 73.73,
+  "close": 68.69,
   "state": "Uptrend",
-  "dd_pct": -17.6,
-  "to_high_pct": 21.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.3,
+  "to_high_pct": 30.3,
+  "last_seen": "2026-10-17"
  },
  "ICL": {
   "added": "2026-08-15",
@@ -811,7 +757,8 @@
   "state": "Uptrend",
   "dd_pct": -23.0,
   "to_high_pct": 29.9,
-  "last_seen": "2026-10-10"
+  "last_seen": "2026-10-10",
+  "status": "no-data"
  },
  "LMND": {
   "added": "2026-08-15",
@@ -821,11 +768,11 @@
   "name": "Lemonade, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 4.1,
-  "close": 46.46,
+  "close": 44.2,
   "state": "Mixed",
-  "dd_pct": -50.2,
-  "to_high_pct": 100.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -52.6,
+  "to_high_pct": 111.0,
+  "last_seen": "2026-10-17"
  },
  "OCUL": {
   "added": "2026-08-15",
@@ -835,11 +782,11 @@
   "name": "Ocular Therapeutix, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.2,
-  "close": 7.54,
+  "close": 6.87,
   "state": "Uptrend",
-  "dd_pct": -48.2,
-  "to_high_pct": 93.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -52.8,
+  "to_high_pct": 111.9,
+  "last_seen": "2026-10-17"
  },
  "RARE": {
   "added": "2026-08-15",
@@ -849,11 +796,11 @@
   "name": "Ultragenyx Pharmaceutical Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.6,
-  "close": 15.48,
+  "close": 14.54,
   "state": "Uptrend",
-  "dd_pct": -57.4,
-  "to_high_pct": 135.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -60.0,
+  "to_high_pct": 150.2,
+  "last_seen": "2026-10-17"
  },
  "TAC": {
   "added": "2026-08-15",
@@ -863,11 +810,11 @@
   "name": "TransAlta Corporation",
   "sector": "Utilities",
   "mkt_cap_B": 4.0,
-  "close": 13.13,
+  "close": 12.85,
   "state": "Uptrend",
-  "dd_pct": -24.8,
-  "to_high_pct": 33.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.4,
+  "to_high_pct": 35.9,
+  "last_seen": "2026-10-17"
  },
  "AMBA": {
   "added": "2026-08-22",
@@ -877,11 +824,11 @@
   "name": "Ambarella, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 3.2,
-  "close": 67.43,
+  "close": 61.7,
   "state": "Mixed",
-  "dd_pct": -24.8,
-  "to_high_pct": 33.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -31.2,
+  "to_high_pct": 45.3,
+  "last_seen": "2026-10-17"
  },
  "BV": {
   "added": "2026-08-22",
@@ -891,11 +838,11 @@
   "name": "BrightView Holdings, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.0,
-  "close": 10.67,
+  "close": 10.54,
   "state": "Mixed",
-  "dd_pct": -27.1,
-  "to_high_pct": 37.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.0,
+  "to_high_pct": 38.8,
+  "last_seen": "2026-10-17"
  },
  "CAE": {
   "added": "2026-08-22",
@@ -905,11 +852,11 @@
   "name": "CAE Inc",
   "sector": "Industrials",
   "mkt_cap_B": 8.0,
-  "close": 23.74,
+  "close": 24.15,
   "state": "Mixed",
-  "dd_pct": -30.3,
-  "to_high_pct": 43.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -29.1,
+  "to_high_pct": 41.0,
+  "last_seen": "2026-10-17"
  },
  "CSTL": {
   "added": "2026-08-22",
@@ -919,11 +866,11 @@
   "name": "Castle Biosciences, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.0,
-  "close": 34.42,
+  "close": 31.96,
   "state": "Uptrend",
-  "dd_pct": -18.5,
-  "to_high_pct": 22.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -24.3,
+  "to_high_pct": 32.2,
+  "last_seen": "2026-10-17"
  },
  "ERIE": {
   "added": "2026-08-22",
@@ -933,11 +880,11 @@
   "name": "Erie Indemnity Company",
   "sector": "Financial Services",
   "mkt_cap_B": 13.8,
-  "close": 222.04,
+  "close": 243.71,
   "state": "Uptrend",
-  "dd_pct": -30.0,
-  "to_high_pct": 42.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.2,
+  "to_high_pct": 30.1,
+  "last_seen": "2026-10-17"
  },
  "FG": {
   "added": "2026-08-22",
@@ -947,11 +894,11 @@
   "name": "F&G Annuities & Life, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 3.0,
-  "close": 19.26,
+  "close": 19.57,
   "state": "Uptrend",
-  "dd_pct": -41.9,
-  "to_high_pct": 72.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -41.0,
+  "to_high_pct": 69.5,
+  "last_seen": "2026-10-17"
  },
  "JANX": {
   "added": "2026-08-22",
@@ -961,11 +908,11 @@
   "name": "Janux Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.1,
-  "close": 18.39,
+  "close": 16.51,
   "state": "Uptrend",
-  "dd_pct": -46.1,
-  "to_high_pct": 85.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -51.6,
+  "to_high_pct": 106.5,
+  "last_seen": "2026-10-17"
  },
  "OMCL": {
   "added": "2026-08-22",
@@ -975,11 +922,11 @@
   "name": "Omnicell, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.6,
-  "close": 35.82,
+  "close": 35.39,
   "state": "Uptrend",
-  "dd_pct": -29.4,
-  "to_high_pct": 41.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -30.3,
+  "to_high_pct": 43.4,
+  "last_seen": "2026-10-17"
  },
  "RIOT": {
   "added": "2026-08-22",
@@ -989,11 +936,11 @@
   "name": "Riot Platforms, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 7.4,
-  "close": 16.89,
+  "close": 13.72,
   "state": "Uptrend",
-  "dd_pct": -40.9,
-  "to_high_pct": 69.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -52.0,
+  "to_high_pct": 108.2,
+  "last_seen": "2026-10-17"
  },
  "SMCI": {
   "added": "2026-08-22",
@@ -1003,11 +950,11 @@
   "name": "Super Micro Computer, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 24.1,
-  "close": 41.85,
+  "close": 31.63,
   "state": "Mixed",
-  "dd_pct": -19.8,
-  "to_high_pct": 26.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -39.1,
+  "to_high_pct": 65.0,
+  "last_seen": "2026-10-17"
  },
  "TRIP": {
   "added": "2026-08-22",
@@ -1017,11 +964,11 @@
   "name": "TripAdvisor, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.2,
-  "close": 8.68,
+  "close": 9.32,
   "state": "Uptrend",
-  "dd_pct": -47.8,
-  "to_high_pct": 91.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.9,
+  "to_high_pct": 78.3,
+  "last_seen": "2026-10-17"
  },
  "UMAC": {
   "added": "2026-08-22",
@@ -1031,11 +978,11 @@
   "name": "Unusual Machines, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.4,
-  "close": 20.83,
+  "close": 16.31,
   "state": "Uptrend",
-  "dd_pct": -38.8,
-  "to_high_pct": 63.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -52.1,
+  "to_high_pct": 108.8,
+  "last_seen": "2026-10-17"
  },
  "UPBD": {
   "added": "2026-08-22",
@@ -1045,11 +992,11 @@
   "name": "Upbound Group, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.1,
-  "close": 15.4,
+  "close": 16.37,
   "state": "Uptrend",
-  "dd_pct": -28.7,
-  "to_high_pct": 40.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -24.2,
+  "to_high_pct": 32.0,
+  "last_seen": "2026-10-17"
  },
  "AAL": {
   "added": "2026-08-29",
@@ -1059,11 +1006,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 9.0,
-  "close": 12.76,
+  "close": 11.88,
   "state": "Uptrend",
-  "dd_pct": -28.8,
-  "to_high_pct": 40.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.7,
+  "to_high_pct": 50.8,
+  "last_seen": "2026-10-17"
  },
  "AI": {
   "added": "2026-08-29",
@@ -1073,11 +1020,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 1.6,
-  "close": 11.53,
+  "close": 11.32,
   "state": "Uptrend",
-  "dd_pct": -35.4,
-  "to_high_pct": 55.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -36.6,
+  "to_high_pct": 57.7,
+  "last_seen": "2026-10-17"
  },
  "ATEC": {
   "added": "2026-08-29",
@@ -1087,11 +1034,11 @@
   "name": "Alphatec Holdings, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.5,
-  "close": 10.67,
+  "close": 10.46,
   "state": "Uptrend",
-  "dd_pct": -52.9,
-  "to_high_pct": 112.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -53.8,
+  "to_high_pct": 116.5,
+  "last_seen": "2026-10-17"
  },
  "CHRW": {
   "added": "2026-08-29",
@@ -1101,11 +1048,11 @@
   "name": "C.H. Robinson Worldwide, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 17.6,
-  "close": 142.31,
+  "close": 139.49,
   "state": "Mixed",
-  "dd_pct": -31.5,
-  "to_high_pct": 45.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.8,
+  "to_high_pct": 48.8,
+  "last_seen": "2026-10-17"
  },
  "DMRA": {
   "added": "2026-08-29",
@@ -1115,25 +1062,11 @@
   "name": "Damora Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.8,
-  "close": 21.08,
+  "close": 18.44,
   "state": "Uptrend",
-  "dd_pct": -38.3,
-  "to_high_pct": 62.0,
-  "last_seen": "2026-10-10"
- },
- "PAYC": {
-  "added": "2026-08-29",
-  "signal_date": "2026-07-06",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "Paycom Software, Inc.",
-  "sector": "Technology",
-  "mkt_cap_B": 10.8,
-  "close": 232.22,
-  "state": "Uptrend",
-  "dd_pct": -2.6,
-  "to_high_pct": 2.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -46.0,
+  "to_high_pct": 85.1,
+  "last_seen": "2026-10-17"
  },
  "ULCC": {
   "added": "2026-08-29",
@@ -1147,7 +1080,8 @@
   "state": "Mixed",
   "dd_pct": -25.4,
   "to_high_pct": 34.0,
-  "last_seen": "2026-10-10"
+  "last_seen": "2026-10-10",
+  "status": "no-data"
  },
  "VG": {
   "added": "2026-08-29",
@@ -1157,11 +1091,11 @@
   "name": "Venture Global, Inc.",
   "sector": "Energy",
   "mkt_cap_B": 35.5,
-  "close": 13.16,
+  "close": 12.72,
   "state": "Uptrend",
-  "dd_pct": -24.6,
-  "to_high_pct": 32.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -27.1,
+  "to_high_pct": 37.3,
+  "last_seen": "2026-10-17"
  },
  "AAOI": {
   "added": "2026-09-05",
@@ -1171,11 +1105,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 9.0,
-  "close": 109.64,
+  "close": 75.57,
   "state": "Mixed",
-  "dd_pct": -42.4,
-  "to_high_pct": 73.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -60.3,
+  "to_high_pct": 151.9,
+  "last_seen": "2026-10-17"
  },
  "ABSI": {
   "added": "2026-09-05",
@@ -1185,11 +1119,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 1.5,
-  "close": 10.16,
+  "close": 8.25,
   "state": "Uptrend",
-  "dd_pct": -12.6,
-  "to_high_pct": 14.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -29.0,
+  "to_high_pct": 40.8,
+  "last_seen": "2026-10-17"
  },
  "AGIO": {
   "added": "2026-09-05",
@@ -1199,11 +1133,11 @@
   "name": "Agios Pharmaceuticals, Inc.",
   "sector": "",
   "mkt_cap_B": 2.0,
-  "close": 31.81,
+  "close": 31.32,
   "state": "Uptrend",
-  "dd_pct": -27.1,
-  "to_high_pct": 37.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.2,
+  "to_high_pct": 39.4,
+  "last_seen": "2026-10-17"
  },
  "AIN": {
   "added": "2026-09-05",
@@ -1213,11 +1147,11 @@
   "name": "Albany International Corporatio",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.8,
-  "close": 61.8,
+  "close": 60.76,
   "state": "Uptrend",
-  "dd_pct": -18.6,
-  "to_high_pct": 22.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -20.0,
+  "to_high_pct": 24.9,
+  "last_seen": "2026-10-17"
  },
  "ALAB": {
   "added": "2026-09-05",
@@ -1227,11 +1161,11 @@
   "name": "Astera Labs, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 53.8,
-  "close": 342.21,
+  "close": 285.82,
   "state": "Uptrend",
-  "dd_pct": -17.9,
-  "to_high_pct": 21.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -31.5,
+  "to_high_pct": 45.9,
+  "last_seen": "2026-10-17"
  },
  "AMSC": {
   "added": "2026-09-05",
@@ -1241,11 +1175,11 @@
   "name": "American Superconductor Corpora",
   "sector": "Industrials",
   "mkt_cap_B": 1.4,
-  "close": 30.52,
+  "close": 25.67,
   "state": "Uptrend",
-  "dd_pct": -49.2,
-  "to_high_pct": 96.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -56.9,
+  "to_high_pct": 133.8,
+  "last_seen": "2026-10-17"
  },
  "AXTI": {
   "added": "2026-09-05",
@@ -1255,11 +1189,11 @@
   "name": "AXT Inc",
   "sector": "Technology",
   "mkt_cap_B": 4.0,
-  "close": 68.46,
+  "close": 51.47,
   "state": "Mixed",
-  "dd_pct": -51.4,
-  "to_high_pct": 105.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -63.5,
+  "to_high_pct": 173.6,
+  "last_seen": "2026-10-17"
  },
  "BAND": {
   "added": "2026-09-05",
@@ -1269,11 +1203,11 @@
   "name": "Bandwidth Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.4,
-  "close": 53.27,
+  "close": 43.34,
   "state": "Uptrend",
-  "dd_pct": -29.4,
-  "to_high_pct": 41.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.6,
+  "to_high_pct": 74.2,
+  "last_seen": "2026-10-17"
  },
  "CALM": {
   "added": "2026-09-05",
@@ -1283,11 +1217,11 @@
   "name": "Cal-Maine Foods, Inc.",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 3.5,
-  "close": 64.35,
+  "close": 63.65,
   "state": "Uptrend",
-  "dd_pct": -30.0,
-  "to_high_pct": 42.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -29.5,
+  "to_high_pct": 44.3,
+  "last_seen": "2026-10-17"
  },
  "CVLT": {
   "added": "2026-09-05",
@@ -1297,11 +1231,11 @@
   "name": "Commvault Systems, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 5.7,
-  "close": 157.25,
+  "close": 149.11,
   "state": "Uptrend",
-  "dd_pct": -8.5,
-  "to_high_pct": 9.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -12.2,
+  "to_high_pct": 15.3,
+  "last_seen": "2026-10-17"
  },
  "DFH": {
   "added": "2026-09-05",
@@ -1311,11 +1245,11 @@
   "name": "Dream Finders Homes, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.2,
-  "close": 9.38,
+  "close": 8.79,
   "state": "Uptrend",
-  "dd_pct": -59.8,
-  "to_high_pct": 149.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -62.1,
+  "to_high_pct": 165.8,
+  "last_seen": "2026-10-17"
  },
  "DIOD": {
   "added": "2026-09-05",
@@ -1325,11 +1259,11 @@
   "name": "Diodes Incorporated",
   "sector": "Technology",
   "mkt_cap_B": 4.2,
-  "close": 94.94,
+  "close": 82.85,
   "state": "Mixed",
-  "dd_pct": -20.5,
-  "to_high_pct": 25.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -30.6,
+  "to_high_pct": 44.2,
+  "last_seen": "2026-10-17"
  },
  "FICO": {
   "added": "2026-09-05",
@@ -1339,11 +1273,11 @@
   "name": "Fair Isaac Corporation",
   "sector": "Technology",
   "mkt_cap_B": 20.1,
-  "close": 667.58,
+  "close": 771.19,
   "state": "Uptrend",
-  "dd_pct": -63.8,
-  "to_high_pct": 176.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -58.2,
+  "to_high_pct": 139.2,
+  "last_seen": "2026-10-17"
  },
  "GDDY": {
   "added": "2026-09-05",
@@ -1353,11 +1287,11 @@
   "name": "GoDaddy Inc.",
   "sector": "Technology",
   "mkt_cap_B": 12.8,
-  "close": 104.35,
+  "close": 105.96,
   "state": "Uptrend",
-  "dd_pct": -21.6,
-  "to_high_pct": 27.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -20.4,
+  "to_high_pct": 25.6,
+  "last_seen": "2026-10-17"
  },
  "GLXY": {
   "added": "2026-09-05",
@@ -1367,11 +1301,11 @@
   "name": "Galaxy Digital Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 15.5,
-  "close": 20.33,
+  "close": 16.14,
   "state": "Uptrend",
-  "dd_pct": -48.9,
-  "to_high_pct": 95.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -59.5,
+  "to_high_pct": 146.7,
+  "last_seen": "2026-10-17"
  },
  "HIMS": {
   "added": "2026-09-05",
@@ -1381,11 +1315,11 @@
   "name": "Hims & Hers Health, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 6.5,
-  "close": 30.92,
+  "close": 28.07,
   "state": "Uptrend",
-  "dd_pct": -37.9,
-  "to_high_pct": 74.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.5,
+  "to_high_pct": 77.3,
+  "last_seen": "2026-10-17"
  },
  "HOOD": {
   "added": "2026-09-05",
@@ -1395,11 +1329,11 @@
   "name": "Robinhood Markets, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 109.8,
-  "close": 109.02,
+  "close": 98.87,
   "state": "Uptrend",
-  "dd_pct": -25.7,
-  "to_high_pct": 34.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.6,
+  "to_high_pct": 48.5,
+  "last_seen": "2026-10-17"
  },
  "HROW": {
   "added": "2026-09-05",
@@ -1409,11 +1343,11 @@
   "name": "Harrow, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.4,
-  "close": 29.36,
+  "close": 27.28,
   "state": "Uptrend",
-  "dd_pct": -45.8,
-  "to_high_pct": 84.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -49.6,
+  "to_high_pct": 98.6,
+  "last_seen": "2026-10-17"
  },
  "IART": {
   "added": "2026-09-05",
@@ -1423,11 +1357,11 @@
   "name": "Integra LifeSciences Holdings C",
   "sector": "Healthcare",
   "mkt_cap_B": 1.3,
-  "close": 13.44,
+  "close": 13.21,
   "state": "Uptrend",
-  "dd_pct": -32.1,
-  "to_high_pct": 47.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.2,
+  "to_high_pct": 49.8,
+  "last_seen": "2026-10-17"
  },
  "LOAR": {
   "added": "2026-09-05",
@@ -1437,11 +1371,11 @@
   "name": "Loar Holdings Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 6.4,
-  "close": 62.07,
+  "close": 62.21,
   "state": "Uptrend",
-  "dd_pct": -24.0,
-  "to_high_pct": 31.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.8,
+  "to_high_pct": 31.3,
+  "last_seen": "2026-10-17"
  },
  "MRVL": {
   "added": "2026-09-05",
@@ -1451,11 +1385,11 @@
   "name": "Marvell Technology, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 200.9,
-  "close": 275.28,
+  "close": 227.83,
   "state": "Uptrend",
-  "dd_pct": -11.3,
-  "to_high_pct": 12.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.6,
+  "to_high_pct": 36.3,
+  "last_seen": "2026-10-17"
  },
  "NBIS": {
   "added": "2026-09-05",
@@ -1465,11 +1399,11 @@
   "name": "Nebius Group N.V.",
   "sector": "Communication Services",
   "mkt_cap_B": 61.5,
-  "close": 221.07,
+  "close": 165.47,
   "state": "Mixed",
-  "dd_pct": -22.9,
-  "to_high_pct": 29.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.3,
+  "to_high_pct": 73.3,
+  "last_seen": "2026-10-17"
  },
  "NEXT": {
   "added": "2026-09-05",
@@ -1479,11 +1413,11 @@
   "name": "NextDecade Corporation",
   "sector": "Energy",
   "mkt_cap_B": 2.0,
-  "close": 6.62,
-  "state": "Uptrend",
-  "dd_pct": -27.4,
-  "to_high_pct": 37.8,
-  "last_seen": "2026-10-10"
+  "close": 6.26,
+  "state": "Mixed",
+  "dd_pct": -31.4,
+  "to_high_pct": 45.7,
+  "last_seen": "2026-10-17"
  },
  "NVO": {
   "added": "2026-09-05",
@@ -1493,11 +1427,11 @@
   "name": "Novo Nordisk A/S",
   "sector": "Healthcare",
   "mkt_cap_B": 206.0,
-  "close": 38.64,
+  "close": 38.83,
   "state": "Uptrend",
-  "dd_pct": -34.9,
-  "to_high_pct": 53.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -34.6,
+  "to_high_pct": 52.9,
+  "last_seen": "2026-10-17"
  },
  "OUST": {
   "added": "2026-09-05",
@@ -1507,11 +1441,11 @@
   "name": "Ouster, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 2.6,
-  "close": 39.9,
+  "close": 28.43,
   "state": "Mixed",
-  "dd_pct": -19.9,
-  "to_high_pct": 24.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.0,
+  "to_high_pct": 75.3,
+  "last_seen": "2026-10-17"
  },
  "PCT": {
   "added": "2026-09-05",
@@ -1536,11 +1470,11 @@
   "name": "Penguin Solutions, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 2.7,
-  "close": 76.28,
+  "close": 57.1,
   "state": "Uptrend",
-  "dd_pct": -2.6,
-  "to_high_pct": 2.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -27.1,
+  "to_high_pct": 37.2,
+  "last_seen": "2026-10-17"
  },
  "POET": {
   "added": "2026-09-05",
@@ -1550,11 +1484,11 @@
   "name": "POET Technologies Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.4,
-  "close": 6.97,
+  "close": 5.43,
   "state": "Mixed",
-  "dd_pct": -56.4,
-  "to_high_pct": 129.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -66.0,
+  "to_high_pct": 194.1,
+  "last_seen": "2026-10-17"
  },
  "QURE": {
   "added": "2026-09-05",
@@ -1564,11 +1498,11 @@
   "name": "uniQure N.V.",
   "sector": "Healthcare",
   "mkt_cap_B": 3.1,
-  "close": 22.59,
+  "close": 21.78,
   "state": "Uptrend",
-  "dd_pct": -66.6,
-  "to_high_pct": 199.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -67.8,
+  "to_high_pct": 210.8,
+  "last_seen": "2026-10-17"
  },
  "RDW": {
   "added": "2026-09-05",
@@ -1578,11 +1512,11 @@
   "name": "Redwire Corporation",
   "sector": "Industrials",
   "mkt_cap_B": 2.6,
-  "close": 9.58,
+  "close": 8.39,
   "state": "Mixed",
-  "dd_pct": -61.0,
-  "to_high_pct": 156.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -65.9,
+  "to_high_pct": 192.8,
+  "last_seen": "2026-10-17"
  },
  "RKLB": {
   "added": "2026-09-05",
@@ -1592,11 +1526,11 @@
   "name": "Rocket Lab Corporation",
   "sector": "Industrials",
   "mkt_cap_B": 41.1,
-  "close": 68.21,
+  "close": 50.84,
   "state": "Uptrend",
-  "dd_pct": -52.5,
-  "to_high_pct": 110.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -64.6,
+  "to_high_pct": 182.2,
+  "last_seen": "2026-10-17"
  },
  "SANM": {
   "added": "2026-09-05",
@@ -1606,11 +1540,11 @@
   "name": "Sanmina Corporation",
   "sector": "Technology",
   "mkt_cap_B": 10.6,
-  "close": 217.49,
+  "close": 175.67,
   "state": "Uptrend",
-  "dd_pct": -16.3,
-  "to_high_pct": 19.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.4,
+  "to_high_pct": 47.9,
+  "last_seen": "2026-10-17"
  },
  "SGML": {
   "added": "2026-09-05",
@@ -1620,11 +1554,11 @@
   "name": "Sigma Lithium Corporation",
   "sector": "Basic Materials",
   "mkt_cap_B": 1.4,
-  "close": 9.35,
+  "close": 8.53,
   "state": "Mixed",
-  "dd_pct": -57.4,
-  "to_high_pct": 135.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -61.2,
+  "to_high_pct": 157.6,
+  "last_seen": "2026-10-17"
  },
  "SONO": {
   "added": "2026-09-05",
@@ -1634,11 +1568,11 @@
   "name": "Sonos, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.8,
-  "close": 17.26,
+  "close": 17.34,
   "state": "Uptrend",
-  "dd_pct": -9.9,
-  "to_high_pct": 11.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -9.5,
+  "to_high_pct": 10.4,
+  "last_seen": "2026-10-17"
  },
  "STAA": {
   "added": "2026-09-05",
@@ -1648,11 +1582,11 @@
   "name": "STAAR Surgical Company",
   "sector": "Healthcare",
   "mkt_cap_B": 1.2,
-  "close": 21.67,
+  "close": 21.27,
   "state": "Uptrend",
-  "dd_pct": -33.3,
-  "to_high_pct": 49.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -34.5,
+  "to_high_pct": 52.7,
+  "last_seen": "2026-10-17"
  },
  "UPST": {
   "added": "2026-09-05",
@@ -1662,11 +1596,11 @@
   "name": "Upstart Holdings, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 2.7,
-  "close": 24.1,
+  "close": 23.56,
   "state": "Uptrend",
-  "dd_pct": -54.3,
-  "to_high_pct": 118.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -55.3,
+  "to_high_pct": 123.6,
+  "last_seen": "2026-10-17"
  },
  "WLK": {
   "added": "2026-09-05",
@@ -1676,11 +1610,11 @@
   "name": "Westlake Corporation",
   "sector": "Basic Materials",
   "mkt_cap_B": 9.6,
-  "close": 62.29,
+  "close": 63.33,
   "state": "Mixed",
-  "dd_pct": -47.1,
-  "to_high_pct": 89.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -46.3,
+  "to_high_pct": 86.1,
+  "last_seen": "2026-10-17"
  },
  "APPS": {
   "added": "2026-09-12",
@@ -1690,11 +1624,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 1.4,
-  "close": 10.43,
+  "close": 9.56,
   "state": "Uptrend",
-  "dd_pct": -27.3,
-  "to_high_pct": 37.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.3,
+  "to_high_pct": 50.0,
+  "last_seen": "2026-10-17"
  },
  "ARM": {
   "added": "2026-09-12",
@@ -1704,11 +1638,11 @@
   "name": "Arm Holdings plc",
   "sector": "",
   "mkt_cap_B": 282.8,
-  "close": 266.28,
+  "close": 227.8,
   "state": "Uptrend",
-  "dd_pct": -39.4,
-  "to_high_pct": 65.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -48.2,
+  "to_high_pct": 92.9,
+  "last_seen": "2026-10-17"
  },
  "AS": {
   "added": "2026-09-12",
@@ -1718,11 +1652,11 @@
   "name": "Amer Sports, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 16.3,
-  "close": 28.14,
+  "close": 30.02,
   "state": "Uptrend",
-  "dd_pct": -32.9,
-  "to_high_pct": 49.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.5,
+  "to_high_pct": 39.8,
+  "last_seen": "2026-10-17"
  },
  "CE": {
   "added": "2026-09-12",
@@ -1732,11 +1666,11 @@
   "name": "Celanese Corporation",
   "sector": "Basic Materials",
   "mkt_cap_B": 5.1,
-  "close": 45.02,
+  "close": 47.49,
   "state": "Uptrend",
-  "dd_pct": -34.9,
-  "to_high_pct": 53.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -31.4,
+  "to_high_pct": 45.7,
+  "last_seen": "2026-10-17"
  },
  "CRCL": {
   "added": "2026-09-12",
@@ -1746,11 +1680,11 @@
   "name": "Circle Internet Group, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 24.7,
-  "close": 84.51,
+  "close": 82.22,
   "state": "Mixed",
-  "dd_pct": -40.5,
-  "to_high_pct": 68.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.1,
+  "to_high_pct": 72.8,
+  "last_seen": "2026-10-17"
  },
  "DOCS": {
   "added": "2026-09-12",
@@ -1760,11 +1694,11 @@
   "name": "Doximity, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 4.6,
-  "close": 30.5,
+  "close": 30.97,
   "state": "Uptrend",
-  "dd_pct": -54.9,
-  "to_high_pct": 121.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -53.7,
+  "to_high_pct": 118.2,
+  "last_seen": "2026-10-17"
  },
  "DORM": {
   "added": "2026-09-12",
@@ -1774,11 +1708,11 @@
   "name": "Dorman Products, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 3.8,
-  "close": 120.4,
+  "close": 123.89,
   "state": "Uptrend",
-  "dd_pct": -23.8,
-  "to_high_pct": 31.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -21.6,
+  "to_high_pct": 27.6,
+  "last_seen": "2026-10-17"
  },
  "GPK": {
   "added": "2026-09-12",
@@ -1788,11 +1722,11 @@
   "name": "Graphic Packaging Holding Compa",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 2.8,
-  "close": 8.35,
+  "close": 8.57,
   "state": "Uptrend",
-  "dd_pct": -49.7,
-  "to_high_pct": 101.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -48.4,
+  "to_high_pct": 93.7,
+  "last_seen": "2026-10-17"
  },
  "MLYS": {
   "added": "2026-09-12",
@@ -1802,11 +1736,11 @@
   "name": "Mineralys Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.5,
-  "close": 23.37,
-  "state": "Uptrend",
-  "dd_pct": -46.3,
-  "to_high_pct": 86.4,
-  "last_seen": "2026-10-10"
+  "close": 20.3,
+  "state": "Mixed",
+  "dd_pct": -52.9,
+  "to_high_pct": 114.6,
+  "last_seen": "2026-10-17"
  },
  "MMYT": {
   "added": "2026-09-12",
@@ -1816,11 +1750,11 @@
   "name": "MakeMyTrip Limited",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 4.7,
-  "close": 44.73,
+  "close": 46.6,
   "state": "Uptrend",
-  "dd_pct": -50.1,
-  "to_high_pct": 104.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -48.1,
+  "to_high_pct": 92.5,
+  "last_seen": "2026-10-17"
  },
  "MQ": {
   "added": "2026-09-12",
@@ -1830,11 +1764,11 @@
   "name": "Marqeta, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.7,
-  "close": 18.11,
+  "close": 18.69,
   "state": "Uptrend",
-  "dd_pct": -10.7,
-  "to_high_pct": 12.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -7.8,
+  "to_high_pct": 8.5,
+  "last_seen": "2026-10-17"
  },
  "OTEX": {
   "added": "2026-09-12",
@@ -1844,11 +1778,11 @@
   "name": "Open Text Corporation",
   "sector": "Technology",
   "mkt_cap_B": 5.6,
-  "close": 23.69,
+  "close": 25.5,
   "state": "Uptrend",
-  "dd_pct": -37.2,
-  "to_high_pct": 59.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.4,
+  "to_high_pct": 48.0,
+  "last_seen": "2026-10-17"
  },
  "PINS": {
   "added": "2026-09-12",
@@ -1858,11 +1792,11 @@
   "name": "Pinterest, Inc.",
   "sector": "Communication Services",
   "mkt_cap_B": 10.7,
-  "close": 21.4,
+  "close": 21.91,
   "state": "Uptrend",
-  "dd_pct": -37.0,
-  "to_high_pct": 58.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -35.5,
+  "to_high_pct": 55.0,
+  "last_seen": "2026-10-17"
  },
  "QCOM": {
   "added": "2026-09-12",
@@ -1872,11 +1806,11 @@
   "name": "QUALCOMM Incorporated",
   "sector": "Technology",
   "mkt_cap_B": 194.4,
-  "close": 175.5,
+  "close": 172.11,
   "state": "Uptrend",
-  "dd_pct": -29.4,
-  "to_high_pct": 41.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -30.8,
+  "to_high_pct": 44.5,
+  "last_seen": "2026-10-17"
  },
  "REAL": {
   "added": "2026-09-12",
@@ -1886,11 +1820,11 @@
   "name": "The RealReal, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 1.2,
-  "close": 9.75,
+  "close": 10.39,
   "state": "Uptrend",
-  "dd_pct": -41.2,
-  "to_high_pct": 70.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -37.4,
+  "to_high_pct": 59.7,
+  "last_seen": "2026-10-17"
  },
  "TBBK": {
   "added": "2026-09-12",
@@ -1900,11 +1834,11 @@
   "name": "The Bancorp, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 2.1,
-  "close": 48.25,
+  "close": 49.6,
   "state": "Uptrend",
-  "dd_pct": -38.7,
-  "to_high_pct": 63.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -37.0,
+  "to_high_pct": 58.8,
+  "last_seen": "2026-10-17"
  },
  "VYX": {
   "added": "2026-09-12",
@@ -1914,11 +1848,11 @@
   "name": "NCR Voyix Corporation",
   "sector": "Technology",
   "mkt_cap_B": 1.2,
-  "close": 7.15,
+  "close": 7.58,
   "state": "Uptrend",
-  "dd_pct": -39.4,
-  "to_high_pct": 65.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -35.8,
+  "to_high_pct": 55.7,
+  "last_seen": "2026-10-17"
  },
  "AMBQ": {
   "added": "2026-09-19",
@@ -1928,11 +1862,11 @@
   "name": "Ambiq Micro, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.6,
-  "close": 58.56,
+  "close": 49.88,
   "state": "Uptrend",
-  "dd_pct": -35.3,
-  "to_high_pct": 54.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -44.9,
+  "to_high_pct": 81.4,
+  "last_seen": "2026-10-17"
  },
  "ARES": {
   "added": "2026-09-19",
@@ -1942,11 +1876,11 @@
   "name": "Ares Management Corporation",
   "sector": "Financial Services",
   "mkt_cap_B": 41.1,
-  "close": 117.22,
+  "close": 112.27,
   "state": "Uptrend",
-  "dd_pct": -31.1,
-  "to_high_pct": 45.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -34.0,
+  "to_high_pct": 51.4,
+  "last_seen": "2026-10-17"
  },
  "BTDR": {
   "added": "2026-09-19",
@@ -1956,11 +1890,11 @@
   "name": "Bitdeer Technologies Group",
   "sector": "Technology",
   "mkt_cap_B": 3.5,
-  "close": 9.63,
+  "close": 7.72,
   "state": "Uptrend",
-  "dd_pct": -59.9,
-  "to_high_pct": 149.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -66.8,
+  "to_high_pct": 211.1,
+  "last_seen": "2026-10-17"
  },
  "BX": {
   "added": "2026-09-19",
@@ -1970,11 +1904,11 @@
   "name": "Blackstone Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 149.4,
-  "close": 114.29,
+  "close": 106.61,
   "state": "Uptrend",
-  "dd_pct": -27.9,
-  "to_high_pct": 38.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.7,
+  "to_high_pct": 48.7,
+  "last_seen": "2026-10-17"
  },
  "DAVE": {
   "added": "2026-09-19",
@@ -1984,11 +1918,11 @@
   "name": "Dave Inc.",
   "sector": "Technology",
   "mkt_cap_B": 4.3,
-  "close": 368.42,
+  "close": 367.4,
   "state": "Uptrend",
-  "dd_pct": -16.3,
-  "to_high_pct": 19.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -16.6,
+  "to_high_pct": 19.9,
+  "last_seen": "2026-10-17"
  },
  "DYN": {
   "added": "2026-09-19",
@@ -1998,11 +1932,11 @@
   "name": "Dyne Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 3.2,
-  "close": 16.64,
+  "close": 14.25,
   "state": "Uptrend",
-  "dd_pct": -36.6,
-  "to_high_pct": 57.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -45.7,
+  "to_high_pct": 84.2,
+  "last_seen": "2026-10-17"
  },
  "ENVA": {
   "added": "2026-09-19",
@@ -2012,11 +1946,11 @@
   "name": "Enova International, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 4.4,
-  "close": 178.07,
+  "close": 177.89,
   "state": "Uptrend",
-  "dd_pct": -32.9,
-  "to_high_pct": 49.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -33.0,
+  "to_high_pct": 49.2,
+  "last_seen": "2026-10-17"
  },
  "FSK": {
   "added": "2026-09-19",
@@ -2026,11 +1960,11 @@
   "name": "FS KKR Capital Corp.",
   "sector": "Financial Services",
   "mkt_cap_B": 3.1,
-  "close": 10.84,
+  "close": 10.33,
   "state": "Uptrend",
-  "dd_pct": -20.5,
-  "to_high_pct": 25.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -24.3,
+  "to_high_pct": 32.1,
+  "last_seen": "2026-10-17"
  },
  "HRB": {
   "added": "2026-09-19",
@@ -2040,11 +1974,11 @@
   "name": "H&R Block, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 5.5,
-  "close": 44.05,
+  "close": 48.67,
   "state": "Uptrend",
-  "dd_pct": -17.6,
-  "to_high_pct": 21.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -8.9,
+  "to_high_pct": 9.8,
+  "last_seen": "2026-10-17"
  },
  "KKR": {
   "added": "2026-09-19",
@@ -2054,11 +1988,11 @@
   "name": "KKR & Co. Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 91.3,
-  "close": 90.95,
+  "close": 86.21,
   "state": "Uptrend",
-  "dd_pct": -33.0,
-  "to_high_pct": 49.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -36.5,
+  "to_high_pct": 57.6,
+  "last_seen": "2026-10-17"
  },
  "LIF": {
   "added": "2026-09-19",
@@ -2068,11 +2002,11 @@
   "name": "Life360, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 3.2,
-  "close": 43.72,
+  "close": 41.07,
   "state": "Uptrend",
-  "dd_pct": -55.7,
-  "to_high_pct": 138.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -58.4,
+  "to_high_pct": 140.3,
+  "last_seen": "2026-10-17"
  },
  "LZ": {
   "added": "2026-09-19",
@@ -2082,11 +2016,11 @@
   "name": "LegalZoom.com, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.0,
-  "close": 5.98,
+  "close": 6.06,
   "state": "Uptrend",
-  "dd_pct": -42.4,
-  "to_high_pct": 73.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -41.6,
+  "to_high_pct": 71.3,
+  "last_seen": "2026-10-17"
  },
  "MDB": {
   "added": "2026-09-19",
@@ -2096,11 +2030,11 @@
   "name": "MongoDB, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 30.9,
-  "close": 385.93,
+  "close": 337.57,
   "state": "Uptrend",
-  "dd_pct": -16.2,
-  "to_high_pct": 19.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.7,
+  "to_high_pct": 36.4,
+  "last_seen": "2026-10-17"
  },
  "OWL": {
   "added": "2026-09-19",
@@ -2110,11 +2044,11 @@
   "name": "Blue Owl Capital Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 15.4,
-  "close": 9.49,
+  "close": 8.85,
   "state": "Uptrend",
-  "dd_pct": -38.6,
-  "to_high_pct": 62.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.7,
+  "to_high_pct": 74.6,
+  "last_seen": "2026-10-17"
  },
  "PI": {
   "added": "2026-09-19",
@@ -2124,11 +2058,11 @@
   "name": "Impinj, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 5.5,
-  "close": 189.63,
+  "close": 175.37,
   "state": "Uptrend",
-  "dd_pct": -19.6,
-  "to_high_pct": 24.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.6,
+  "to_high_pct": 34.5,
+  "last_seen": "2026-10-17"
  },
  "QNST": {
   "added": "2026-09-19",
@@ -2138,11 +2072,11 @@
   "name": "QuinStreet, Inc.",
   "sector": "Communication Services",
   "mkt_cap_B": 1.0,
-  "close": 15.73,
+  "close": 16.32,
   "state": "Uptrend",
-  "dd_pct": -25.4,
-  "to_high_pct": 34.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -22.6,
+  "to_high_pct": 29.2,
+  "last_seen": "2026-10-17"
  },
  "RYTM": {
   "added": "2026-09-19",
@@ -2152,11 +2086,11 @@
   "name": "Rhythm Pharmaceuticals, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 6.7,
-  "close": 90.78,
+  "close": 86.17,
   "state": "Uptrend",
-  "dd_pct": -21.5,
-  "to_high_pct": 27.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.5,
+  "to_high_pct": 34.2,
+  "last_seen": "2026-10-17"
  },
  "SE": {
   "added": "2026-09-19",
@@ -2166,11 +2100,11 @@
   "name": "Sea Limited",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 62.3,
-  "close": 95.25,
+  "close": 93.77,
   "state": "Uptrend",
-  "dd_pct": -40.5,
-  "to_high_pct": 89.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -40.0,
+  "to_high_pct": 70.7,
+  "last_seen": "2026-10-17"
  },
  "SUZ": {
   "added": "2026-09-19",
@@ -2180,11 +2114,11 @@
   "name": "Suzano S.A.",
   "sector": "Basic Materials",
   "mkt_cap_B": 11.4,
-  "close": 8.57,
+  "close": 8.5,
   "state": "Uptrend",
-  "dd_pct": -24.4,
-  "to_high_pct": 32.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.0,
+  "to_high_pct": 33.3,
+  "last_seen": "2026-10-17"
  },
  "TPG": {
   "added": "2026-09-19",
@@ -2194,11 +2128,11 @@
   "name": "TPG Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 18.1,
-  "close": 45.26,
+  "close": 42.52,
   "state": "Uptrend",
-  "dd_pct": -30.1,
-  "to_high_pct": 43.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -34.3,
+  "to_high_pct": 52.2,
+  "last_seen": "2026-10-17"
  },
  "TREX": {
   "added": "2026-09-19",
@@ -2208,11 +2142,11 @@
   "name": "Trex Company, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 4.3,
-  "close": 44.78,
+  "close": 45.73,
   "state": "Uptrend",
-  "dd_pct": -11.7,
-  "to_high_pct": 13.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -8.0,
+  "to_high_pct": 10.9,
+  "last_seen": "2026-10-17"
  },
  "WDAY": {
   "added": "2026-09-19",
@@ -2222,11 +2156,11 @@
   "name": "Workday, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 46.7,
-  "close": 186.59,
+  "close": 190.81,
   "state": "Uptrend",
-  "dd_pct": -23.1,
-  "to_high_pct": 30.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -21.4,
+  "to_high_pct": 27.2,
+  "last_seen": "2026-10-17"
  },
  "DOO": {
   "added": "2026-09-26",
@@ -2236,11 +2170,11 @@
   "name": "BRP Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 4.1,
-  "close": 52.96,
+  "close": 54.7,
   "state": "Uptrend",
-  "dd_pct": -34.6,
-  "to_high_pct": 52.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -32.4,
+  "to_high_pct": 48.0,
+  "last_seen": "2026-10-17"
  },
  "KYIV": {
   "added": "2026-09-26",
@@ -2250,11 +2184,11 @@
   "name": "Kyivstar Group Ltd.",
   "sector": "Communication Services",
   "mkt_cap_B": 3.0,
-  "close": 12.1,
+  "close": 12.32,
   "state": "Mixed",
-  "dd_pct": -22.8,
-  "to_high_pct": 29.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -21.4,
+  "to_high_pct": 27.3,
+  "last_seen": "2026-10-17"
  },
  "NUVB": {
   "added": "2026-09-26",
@@ -2268,7 +2202,8 @@
   "state": "Uptrend",
   "dd_pct": -47.0,
   "to_high_pct": 88.8,
-  "last_seen": "2026-10-10"
+  "last_seen": "2026-10-10",
+  "status": "no-data"
  },
  "PYPL": {
   "added": "2026-09-26",
@@ -2278,11 +2213,11 @@
   "name": "PayPal Holdings, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 47.4,
-  "close": 55.53,
+  "close": 56.7,
   "state": "Uptrend",
-  "dd_pct": -19.5,
-  "to_high_pct": 24.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -17.8,
+  "to_high_pct": 21.7,
+  "last_seen": "2026-10-17"
  },
  "RACE": {
   "added": "2026-09-26",
@@ -2292,11 +2227,11 @@
   "name": "Ferrari N.V.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 72.2,
-  "close": 389.91,
+  "close": 397.53,
   "state": "Uptrend",
-  "dd_pct": -10.7,
-  "to_high_pct": 12.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -8.9,
+  "to_high_pct": 9.8,
+  "last_seen": "2026-10-17"
  },
  "RIVN": {
   "added": "2026-09-26",
@@ -2306,11 +2241,11 @@
   "name": "Rivian Automotive, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 22.4,
-  "close": 13.96,
+  "close": 12.42,
   "state": "Uptrend",
-  "dd_pct": -37.8,
-  "to_high_pct": 60.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -44.7,
+  "to_high_pct": 80.8,
+  "last_seen": "2026-10-17"
  },
  "TMDX": {
   "added": "2026-09-26",
@@ -2320,11 +2255,11 @@
   "name": "TransMedics Group, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.9,
-  "close": 77.87,
+  "close": 70.78,
   "state": "Uptrend",
-  "dd_pct": -46.8,
-  "to_high_pct": 87.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -51.6,
+  "to_high_pct": 106.7,
+  "last_seen": "2026-10-17"
  },
  "VRDN": {
   "added": "2026-09-26",
@@ -2334,11 +2269,11 @@
   "name": "Viridian Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 2.3,
-  "close": 18.66,
+  "close": 19.03,
   "state": "Uptrend",
-  "dd_pct": -43.9,
-  "to_high_pct": 78.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -42.8,
+  "to_high_pct": 74.8,
+  "last_seen": "2026-10-17"
  },
  "BRZE": {
   "added": "2026-10-03",
@@ -2348,11 +2283,11 @@
   "name": "Braze, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 2.9,
-  "close": 29.06,
+  "close": 29.34,
   "state": "Uptrend",
-  "dd_pct": -18.1,
-  "to_high_pct": 22.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -17.3,
+  "to_high_pct": 20.9,
+  "last_seen": "2026-10-17"
  },
  "DASH": {
   "added": "2026-10-03",
@@ -2362,11 +2297,11 @@
   "name": "DoorDash, Inc.",
   "sector": "Consumer Cyclical",
   "mkt_cap_B": 82.0,
-  "close": 196.5,
+  "close": 189.15,
   "state": "Uptrend",
-  "dd_pct": -25.3,
-  "to_high_pct": 35.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -26.7,
+  "to_high_pct": 39.1,
+  "last_seen": "2026-10-17"
  },
  "EGO": {
   "added": "2026-10-03",
@@ -2376,11 +2311,11 @@
   "name": "Eldorado Gold Corporation",
   "sector": "Basic Materials",
   "mkt_cap_B": 9.9,
-  "close": 37.66,
+  "close": 35.94,
   "state": "Uptrend",
-  "dd_pct": -20.1,
-  "to_high_pct": 25.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.7,
+  "to_high_pct": 31.1,
+  "last_seen": "2026-10-17"
  },
  "EL": {
   "added": "2026-10-03",
@@ -2390,11 +2325,11 @@
   "name": "Estee Lauder Companies, Inc. (T",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 33.3,
-  "close": 98.05,
+  "close": 104.54,
   "state": "Uptrend",
-  "dd_pct": -15.8,
-  "to_high_pct": 18.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -10.2,
+  "to_high_pct": 11.4,
+  "last_seen": "2026-10-17"
  },
  "FIG": {
   "added": "2026-10-03",
@@ -2404,11 +2339,11 @@
   "name": "Figma, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 11.4,
-  "close": 22.5,
+  "close": 21.49,
   "state": "Uptrend",
-  "dd_pct": -60.4,
-  "to_high_pct": 171.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -59.7,
+  "to_high_pct": 164.5,
+  "last_seen": "2026-10-17"
  },
  "HMY": {
   "added": "2026-10-03",
@@ -2418,11 +2353,11 @@
   "name": "Harmony Gold Mining Company Lim",
   "sector": "Basic Materials",
   "mkt_cap_B": 10.9,
-  "close": 16.88,
+  "close": 17.12,
   "state": "Uptrend",
-  "dd_pct": -26.3,
-  "to_high_pct": 35.6,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.2,
+  "to_high_pct": 33.7,
+  "last_seen": "2026-10-17"
  },
  "LW": {
   "added": "2026-10-03",
@@ -2432,11 +2367,11 @@
   "name": "Lamb Weston Holdings, Inc.",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 6.0,
-  "close": 47.87,
+  "close": 53.59,
   "state": "Uptrend",
-  "dd_pct": -25.7,
-  "to_high_pct": 34.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -16.8,
+  "to_high_pct": 20.1,
+  "last_seen": "2026-10-17"
  },
  "MNDY": {
   "added": "2026-10-03",
@@ -2446,11 +2381,11 @@
   "name": "monday.com Ltd.",
   "sector": "Technology",
   "mkt_cap_B": 3.3,
-  "close": 88.96,
+  "close": 90.37,
   "state": "Mixed",
-  "dd_pct": -56.7,
-  "to_high_pct": 130.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -56.0,
+  "to_high_pct": 127.1,
+  "last_seen": "2026-10-17"
  },
  "NBTX": {
   "added": "2026-10-03",
@@ -2460,11 +2395,11 @@
   "name": "Nanobiotix S.A.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.3,
-  "close": 23.68,
+  "close": 21.3,
   "state": "Uptrend",
-  "dd_pct": -54.0,
-  "to_high_pct": 117.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -58.6,
+  "to_high_pct": 141.8,
+  "last_seen": "2026-10-17"
  },
  "OMDA": {
   "added": "2026-10-03",
@@ -2474,11 +2409,11 @@
   "name": "Omada Health, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.2,
-  "close": 21.55,
+  "close": 17.63,
   "state": "Uptrend",
-  "dd_pct": -16.7,
-  "to_high_pct": 20.0,
-  "last_seen": "2026-10-10"
+  "dd_pct": -31.9,
+  "to_high_pct": 46.7,
+  "last_seen": "2026-10-17"
  },
  "PGEN": {
   "added": "2026-10-03",
@@ -2488,25 +2423,11 @@
   "name": "Precigen, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 3.1,
-  "close": 7.81,
+  "close": 6.39,
   "state": "Uptrend",
-  "dd_pct": -8.5,
-  "to_high_pct": 9.3,
-  "last_seen": "2026-10-10"
- },
- "SG": {
-  "added": "2026-10-03",
-  "signal_date": "2026-09-07",
-  "signal": "BOTTOM",
-  "tag": "QUALITY",
-  "name": "Sweetgreen, Inc.",
-  "sector": "Consumer Cyclical",
-  "mkt_cap_B": 1.1,
-  "close": 9.63,
-  "state": "Uptrend",
-  "dd_pct": -3.3,
-  "to_high_pct": 3.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -25.2,
+  "to_high_pct": 33.8,
+  "last_seen": "2026-10-17"
  },
  "ALGT": {
   "added": "2026-10-10",
@@ -2516,11 +2437,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 2.1,
-  "close": 76.43,
+  "close": 66.98,
   "state": "Uptrend",
-  "dd_pct": -35.6,
-  "to_high_pct": 55.3,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.6,
+  "to_high_pct": 77.2,
+  "last_seen": "2026-10-17"
  },
  "BULL": {
   "added": "2026-10-10",
@@ -2530,25 +2451,11 @@
   "name": "",
   "sector": "",
   "mkt_cap_B": 3.4,
-  "close": 6.31,
+  "close": 6.07,
   "state": "Uptrend",
-  "dd_pct": -45.2,
-  "to_high_pct": 82.4,
-  "last_seen": "2026-10-10"
- },
- "CBRL": {
-  "added": "2026-10-10",
-  "signal_date": "2026-09-14",
-  "signal": "BOTTOM",
-  "tag": "SPEC",
-  "name": "",
-  "sector": "",
-  "mkt_cap_B": 1.3,
-  "close": 57.46,
-  "state": "Uptrend",
-  "dd_pct": -0.8,
-  "to_high_pct": 0.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -47.3,
+  "to_high_pct": 89.6,
+  "last_seen": "2026-10-17"
  },
  "CIEN": {
   "added": "2026-10-10",
@@ -2558,11 +2465,11 @@
   "name": "Ciena Corporation",
   "sector": "Technology",
   "mkt_cap_B": 63.8,
-  "close": 449.77,
+  "close": 332.73,
   "state": "Uptrend",
-  "dd_pct": -23.0,
-  "to_high_pct": 29.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.0,
+  "to_high_pct": 75.4,
+  "last_seen": "2026-10-17"
  },
  "CXM": {
   "added": "2026-10-10",
@@ -2572,11 +2479,11 @@
   "name": "Sprinklr, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 1.3,
-  "close": 5.52,
+  "close": 5.83,
   "state": "Uptrend",
-  "dd_pct": -32.4,
-  "to_high_pct": 47.8,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.6,
+  "to_high_pct": 40.0,
+  "last_seen": "2026-10-17"
  },
  "DOCN": {
   "added": "2026-10-10",
@@ -2586,11 +2493,11 @@
   "name": "DigitalOcean Holdings, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 15.8,
-  "close": 134.82,
+  "close": 98.69,
   "state": "Uptrend",
-  "dd_pct": -22.2,
-  "to_high_pct": 28.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -43.0,
+  "to_high_pct": 75.6,
+  "last_seen": "2026-10-17"
  },
  "FCEL": {
   "added": "2026-10-10",
@@ -2600,11 +2507,11 @@
   "name": "FuelCell Energy, Inc.",
   "sector": "Industrials",
   "mkt_cap_B": 1.4,
-  "close": 18.03,
+  "close": 13.0,
   "state": "Uptrend",
-  "dd_pct": -35.9,
-  "to_high_pct": 55.9,
-  "last_seen": "2026-10-10"
+  "dd_pct": -53.8,
+  "to_high_pct": 116.2,
+  "last_seen": "2026-10-17"
  },
  "GEN": {
   "added": "2026-10-10",
@@ -2614,11 +2521,11 @@
   "name": "Gen Digital Inc.",
   "sector": "Technology",
   "mkt_cap_B": 13.9,
-  "close": 23.25,
+  "close": 24.16,
   "state": "Uptrend",
-  "dd_pct": -25.0,
-  "to_high_pct": 33.4,
-  "last_seen": "2026-10-10"
+  "dd_pct": -22.1,
+  "to_high_pct": 28.4,
+  "last_seen": "2026-10-17"
  },
  "GO": {
   "added": "2026-10-10",
@@ -2628,11 +2535,11 @@
   "name": "Grocery Outlet Holding Corp.",
   "sector": "Consumer Defensive",
   "mkt_cap_B": 1.2,
-  "close": 11.96,
+  "close": 12.87,
   "state": "Uptrend",
-  "dd_pct": -22.1,
-  "to_high_pct": 28.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -15.0,
+  "to_high_pct": 19.3,
+  "last_seen": "2026-10-17"
  },
  "GOLD": {
   "added": "2026-10-10",
@@ -2642,11 +2549,11 @@
   "name": "Gold.com, Inc.",
   "sector": "Financial Services",
   "mkt_cap_B": 1.2,
-  "close": 40.69,
-  "state": "Uptrend",
-  "dd_pct": -30.9,
-  "to_high_pct": 44.7,
-  "last_seen": "2026-10-10"
+  "close": 39.35,
+  "state": "Mixed",
+  "dd_pct": -33.2,
+  "to_high_pct": 49.6,
+  "last_seen": "2026-10-17"
  },
  "HUT": {
   "added": "2026-10-10",
@@ -2656,11 +2563,11 @@
   "name": "Hut 8 Corp.",
   "sector": "Financial Services",
   "mkt_cap_B": 10.4,
-  "close": 84.27,
+  "close": 67.75,
   "state": "Uptrend",
-  "dd_pct": -32.5,
-  "to_high_pct": 48.1,
-  "last_seen": "2026-10-10"
+  "dd_pct": -45.7,
+  "to_high_pct": 84.3,
+  "last_seen": "2026-10-17"
  },
  "LYFT": {
   "added": "2026-10-10",
@@ -2670,11 +2577,11 @@
   "name": "Lyft, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 6.1,
-  "close": 16.22,
+  "close": 16.82,
   "state": "Uptrend",
-  "dd_pct": -29.9,
-  "to_high_pct": 42.7,
-  "last_seen": "2026-10-10"
+  "dd_pct": -27.3,
+  "to_high_pct": 37.6,
+  "last_seen": "2026-10-17"
  },
  "NCNO": {
   "added": "2026-10-10",
@@ -2684,11 +2591,11 @@
   "name": "nCino, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 2.1,
-  "close": 19.73,
+  "close": 20.51,
   "state": "Uptrend",
-  "dd_pct": -26.0,
-  "to_high_pct": 35.2,
-  "last_seen": "2026-10-10"
+  "dd_pct": -23.1,
+  "to_high_pct": 30.1,
+  "last_seen": "2026-10-17"
  },
  "PATH": {
   "added": "2026-10-10",
@@ -2698,11 +2605,11 @@
   "name": "UiPath, Inc.",
   "sector": "Technology",
   "mkt_cap_B": 7.0,
-  "close": 13.48,
+  "close": 12.85,
   "state": "Uptrend",
-  "dd_pct": -27.8,
-  "to_high_pct": 38.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -31.2,
+  "to_high_pct": 45.3,
+  "last_seen": "2026-10-17"
  },
  "SPOT": {
   "added": "2026-10-10",
@@ -2712,11 +2619,11 @@
   "name": "Spotify Technology S.A.",
   "sector": "Communication Services",
   "mkt_cap_B": 108.8,
-  "close": 529.14,
+  "close": 530.46,
   "state": "Uptrend",
-  "dd_pct": -21.2,
-  "to_high_pct": 29.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -19.1,
+  "to_high_pct": 26.6,
+  "last_seen": "2026-10-17"
  },
  "SRPT": {
   "added": "2026-10-10",
@@ -2726,10 +2633,80 @@
   "name": "Sarepta Therapeutics, Inc.",
   "sector": "Healthcare",
   "mkt_cap_B": 1.9,
-  "close": 17.85,
+  "close": 17.1,
   "state": "Uptrend",
-  "dd_pct": -25.7,
-  "to_high_pct": 34.5,
-  "last_seen": "2026-10-10"
+  "dd_pct": -28.8,
+  "to_high_pct": 40.4,
+  "last_seen": "2026-10-17"
+ },
+ "CBRL": {
+  "added": "2026-10-17",
+  "signal_date": "2026-09-14",
+  "signal": "BOTTOM",
+  "tag": "SPEC",
+  "name": "Cracker Barrel Old Country Stor",
+  "sector": "Consumer Cyclical",
+  "mkt_cap_B": 1.5,
+  "close": 68.97,
+  "state": "Uptrend",
+  "dd_pct": 0.0,
+  "to_high_pct": -16.3,
+  "last_seen": "2026-10-17"
+ },
+ "GWRE": {
+  "added": "2026-10-17",
+  "signal_date": "2026-10-12",
+  "signal": "BOTTOM",
+  "tag": "QUALITY",
+  "name": "Guidewire Software, Inc.",
+  "sector": "Technology",
+  "mkt_cap_B": 13.8,
+  "close": 168.86,
+  "state": "Uptrend",
+  "dd_pct": -32.6,
+  "to_high_pct": 48.4,
+  "last_seen": "2026-10-17"
+ },
+ "NKTR": {
+  "added": "2026-10-17",
+  "signal_date": "2026-10-12",
+  "signal": "BOTTOM",
+  "tag": "SPEC",
+  "name": "Nektar Therapeutics",
+  "sector": "Healthcare",
+  "mkt_cap_B": 1.2,
+  "close": 35.78,
+  "state": "Uptrend",
+  "dd_pct": -61.0,
+  "to_high_pct": 156.2,
+  "last_seen": "2026-10-17"
+ },
+ "ODD": {
+  "added": "2026-10-17",
+  "signal_date": "2026-09-21",
+  "signal": "BOTTOM",
+  "tag": "SPEC",
+  "name": "ODDITY Tech Ltd.",
+  "sector": "Consumer Defensive",
+  "mkt_cap_B": 1.0,
+  "close": 22.43,
+  "state": "Uptrend",
+  "dd_pct": -51.0,
+  "to_high_pct": 126.7,
+  "last_seen": "2026-10-17"
+ },
+ "SG": {
+  "added": "2026-10-17",
+  "signal_date": "2026-09-07",
+  "signal": "BOTTOM",
+  "tag": "QUALITY",
+  "name": "Sweetgreen, Inc.",
+  "sector": "Consumer Cyclical",
+  "mkt_cap_B": 1.2,
+  "close": 10.04,
+  "state": "Uptrend",
+  "dd_pct": 0.0,
+  "to_high_pct": -0.8,
+  "last_seen": "2026-10-17"
  }
 }

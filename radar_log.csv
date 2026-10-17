@@ -411,3 +411,20 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-10-10,BREAKOUT,TAL,TAL Education Group,QUALITY,12.86,0.0,-27.6,-1.2,12.7,7.1,Consumer Defensive,Education & Training Services,8.037499,10.966894,31.9,28.4,0.42
 2026-10-10,BREAKOUT,XERS,"Xeris Biopharma Holdings, Inc.",QUALITY,10.48,0.0,-37.6,-7.4,9.7,1.9,Healthcare,Drug Manufacturers - Specialty & Generic,,28.324324,28.7,-5.1,0.05
 2026-10-10,BREAKOUT,XP,XP Inc.,QUALITY,32.22,0.0,-33.2,-29.7,22.66,16.3,Financial Services,Capital Markets,15.794119,13.131411,10.6,28.5,
+2026-10-17,GRADUATED,DOCU,,,74.65,0.0,-50.0,-2.0,73.14,,,,,,,,
+2026-10-17,DROP,PVH,,,84.68,-10.0,-24.9,11.1,94.08,,,,,,,,
+2026-10-17,DROP,AGRO,,,10.03,-33.5,-40.9,50.4,15.09,,,,,,,,
+2026-10-17,DROP,ALNY,,,231.83,-50.0,-57.3,107.8,481.67,,,,,,,,
+2026-10-17,GRADUATED,PAYC,,,251.64,0.0,-53.1,-5.2,238.53,,,,,,,,
+2026-10-17,GRADUATED,SG,,,10.04,0.0,-65.7,-0.8,9.96,,,,,,,,
+2026-10-17,GRADUATED,CBRL,,,68.97,0.0,-55.2,-16.3,57.72,,,,,,,,
+2026-10-17,BOTTOM,CBRL,Cracker Barrel Old Country Stor,SPEC,68.97,0.0,-55.2,-16.3,57.72,1.5,Consumer Cyclical,Restaurants,49.264286,31.351852,-2.2,1.0,0.04
+2026-10-17,BREAKOUT,DOCU,"DocuSign, Inc.",QUALITY,74.65,0.0,-50.0,-2.0,73.14,14.0,Technology,Software - Application,45.518295,14.328105,9.4,9.8,1.31
+2026-10-17,BREAKOUT,EHC,Encompass Health Corporation,QUALITY,127.87,0.0,-22.2,-2.1,125.2,12.6,Healthcare,Medical Care Facilities,21.382944,19.147404,9.6,10.0,0.23
+2026-10-17,BREAKOUT,GILD,"Gilead Sciences, Inc.",QUALITY,156.19,0.0,-19.2,-2.5,152.24,193.7,Healthcare,Drug Manufacturers - General,,15.708427,10.2,-10.6,9.77
+2026-10-17,BOTTOM,GWRE,"Guidewire Software, Inc.",QUALITY,168.86,-32.6,-58.6,48.4,250.54,13.8,Technology,Software - Application,103.59509,31.59161,15.3,9.4,0.34
+2026-10-17,BREAKOUT,MCK,McKesson Corporation,QUALITY,1004.84,0.0,-25.4,-2.0,984.41,117.2,Healthcare,Medical Distribution,26.93219,19.867617,7.7,1.1,6.8
+2026-10-17,BOTTOM,NKTR,Nektar Therapeutics,SPEC,35.78,-61.0,-61.0,156.2,91.68,1.2,Healthcare,Biotechnology,,-3.4736989,-9.3,-287.8,-0.13
+2026-10-17,BOTTOM,ODD,ODDITY Tech Ltd.,SPEC,22.43,-51.0,-87.1,126.7,50.85,1.0,Consumer Defensive,Household & Personal Products,101.954544,19.732038,-25.1,2.2,-0.06
+2026-10-17,BREAKOUT,RSG,"Republic Services, Inc.",QUALITY,231.54,0.0,-21.4,-1.1,228.98,70.9,Industrials,Waste Management,32.842552,28.723873,4.6,12.9,1.94
+2026-10-17,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,10.04,0.0,-65.7,-0.8,9.96,1.2,Consumer Cyclical,Restaurants,111.55555,-14.458109,3.8,2.0,-0.06

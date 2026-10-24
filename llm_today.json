@@ -1,24 +1,24 @@
 {
- "date": "2026-10-17",
+ "date": "2026-10-24",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-10-17T11:36:28+00:00",
+ "generated_utc": "2026-10-24T00:00:02+00:00",
  "regime": {
   "regime": "RISK-OFF",
   "reasons": [
-   "SOX in 8th straight down day, worst losing streak since 2008, no reversal confirmation yet",
-   "Neocloud credit stress acute: CoreWeave -25% week, bonds distressed, hyperscaler CDS near yearly wides",
-   "FOMC decision Oct 28 is a live hold-vs-hike call amid hot inflation prints and Fed blackout, no near-term dovish catalyst",
-   "China chip competition (Nvidia China share collapsing) actively driving sector selling, export-control policy unstable"
+   "SOX down ~15% this month with no confirmed trend reversal, only isolated memory-stock stabilization",
+   "FOMC rate decision and hyperscaler Q3 earnings both land Oct 27-28, creating a volatility pile-up before entry confirmation",
+   "Investor skepticism on hyperscaler capex ROI is driving post-earnings sell-offs despite record capex guidance",
+   "China proposed sweeping new AI/chip export controls (23 technologies), adding unresolved geopolitical tail risk into mid-November"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "LRCX": {
+  "LITE": {
    "verdict": "CAUTION",
    "size_mult": 0.5,
    "reasons": [
-    "Earnings scheduled Oct 21, 2026 \u2014 within 14 days of screening date (automatic CAUTION trigger)",
-    "No dilution, guidance cuts, customer-loss, accounting/short-seller, or legal/regulatory red flags found in past 4 weeks"
+    "Earnings confirmed for Nov 5, 2026 (within 14 days of screening date)",
+    "No dilution, guidance cut, customer loss, accounting/short-seller, or legal/regulatory red flags found in the last 4 weeks"
    ],
    "raw_ok": true
   }

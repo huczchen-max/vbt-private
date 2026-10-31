@@ -462,3 +462,34 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-10-24,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,50.38,0.0,-45.3,-1.3,49.72,5.1,Industrials,Building Products & Equipment,29.635294,24.897087,7.8,14.7,0.07
 2026-10-24,BREAKOUT,VET,Vermilion Energy Inc.,QUALITY,13.92,0.0,-34.8,-1.7,13.69,2.1,Energy,Oil & Gas E&P,,10.800201,23.1,-24.3,0.87
 2026-10-24,BREAKOUT,WCN,"Waste Connections, Inc.",QUALITY,186.6,0.0,-22.5,-5.1,176.99,46.7,Industrials,Waste Management,41.838566,30.223421,7.3,11.4,0.96
+2026-10-31,GRADUATED,SG,,,11.07,0.0,-53.4,-9.3,10.04,,,,,,,,
+2026-10-31,GRADUATED,ARQT,,,32.07,0.0,-33.1,-2.7,31.2,,,,,,,,
+2026-10-31,GRADUATED,BRZE,,,45.75,-0.3,-43.4,0.3,45.88,,,,,,,,
+2026-10-31,GRADUATED,CBRL,,,70.05,0.0,-53.2,-1.5,68.97,,,,,,,,
+2026-10-31,GRADUATED,TREX,,,51.14,0.0,-45.3,-1.5,50.38,,,,,,,,
+2026-10-31,BREAKOUT,ADT,ADT Inc.,QUALITY,9.86,0.0,-27.1,-13.1,8.57,7.2,Industrials,Security & Protection Services,13.506848,10.007814,2.0,11.9,1.2
+2026-10-31,BOTTOM,AGL,"agilon health, inc.",SPEC,84.9,-34.6,-37.8,52.9,129.84,1.4,Healthcare,Medical Care Facilities,,35.952793,7.2,-3.9,-0.15
+2026-10-31,BOTTOM,ARQT,"Arcutis Biotherapeutics, Inc.",QUALITY,32.07,0.0,-33.1,-2.7,31.2,4.0,Healthcare,Biotechnology,145.77272,23.9627,59.3,6.1,0.02
+2026-10-31,BREAKOUT,BHC,Bausch Health Companies Inc.,QUALITY,8.2,0.0,-46.9,-9.6,7.41,3.1,Healthcare,Drug Manufacturers - Specialty & Generic,,1.9117204,9.7,-7.6,1.64
+2026-10-31,BREAKOUT,BLCO,Bausch + Lomb Corporation,SPEC,20.0,0.0,-18.7,-8.5,18.3,7.1,Healthcare,Medical Instruments & Supplies,,16.749859,7.3,-2.0,
+2026-10-31,BOTTOM,BRZE,"Braze, Inc.",QUALITY,45.75,-0.3,-43.4,0.3,45.88,5.2,Technology,Software - Application,,46.59097,26.2,-13.6,0.2
+2026-10-31,BOTTOM,BZ,KANZHUN LIMITED - American Depo,QUALITY,16.54,-22.4,-46.7,29.1,21.36,7.2,Communication Services,Internet Content & Information,12.072993,11.096083,14.1,52.8,4.07
+2026-10-31,BOTTOM,CBRL,Cracker Barrel Old Country Stor,SPEC,70.05,0.0,-53.2,-1.5,68.97,1.6,Consumer Cyclical,Restaurants,50.035717,31.84279,-2.2,1.0,0.04
+2026-10-31,BREAKOUT,EXPO,"Exponent, Inc.",QUALITY,80.26,0.0,-32.3,-2.0,78.69,3.8,Industrials,Engineering & Construction,34.59483,26.645597,12.0,19.7,0.08
+2026-10-31,BOTTOM,FSLY,"Fastly, Inc.",QUALITY,23.11,-31.0,-51.3,44.9,33.5,3.7,Technology,Software - Application,,35.99514,23.3,-11.8,0.09
+2026-10-31,BREAKOUT,GDYN,"Grid Dynamics Holdings, Inc.",QUALITY,13.36,0.0,-55.9,-27.5,9.69,1.1,Technology,Information Technology Services,148.44443,22.214462,7.0,0.7,0.02
+2026-10-31,BREAKOUT,ICLR,ICON plc,SPEC,211.36,0.0,-40.0,-10.7,188.67,15.8,Healthcare,Diagnostics & Research,84.544,18.241495,-2.9,5.3,0.54
+2026-10-31,BOTTOM,PAY,"Paymentus Holdings, Inc.",QUALITY,32.82,-21.6,-46.3,27.5,41.86,4.1,Technology,Software - Infrastructure,49.727272,30.321789,28.8,6.2,0.11
+2026-10-31,BREAKOUT,PDS,Precision Drilling Corporation,QUALITY,105.8,0.0,-24.9,-4.7,100.81,1.3,Energy,Oil & Gas Drilling,,12.143495,15.0,-0.3,0.1
+2026-10-31,BOTTOM,PTON,"Peloton Interactive, Inc.",QUALITY,5.12,-33.2,-42.7,49.6,7.66,2.2,Consumer Cyclical,Leisure,36.571426,21.633497,0.1,2.6,0.35
+2026-10-31,BREAKOUT,ROP,"Roper Technologies, Inc.",QUALITY,466.6,0.0,-43.6,-4.3,446.52,46.1,Technology,Software - Application,18.464582,18.988182,7.6,30.7,2.44
+2026-10-31,BREAKOUT,RRC,Range Resources Corporation,QUALITY,54.63,0.0,-25.3,-13.2,47.41,12.8,Energy,Oil & Gas E&P,14.490717,13.161858,19.7,26.2,0.41
+2026-10-31,BOTTOM,RYAN,"Ryan Specialty Holdings, Inc.",QUALITY,43.84,-23.7,-55.9,31.1,57.46,11.2,Financial Services,Insurance Brokers,54.8,18.03388,7.4,3.1,0.58
+2026-10-31,BREAKOUT,SCL,Stepan Company,QUALITY,69.61,0.0,-26.3,-5.5,65.79,1.6,Basic Materials,Specialty Chemicals,366.36844,18.864498,17.3,0.2,
+2026-10-31,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,11.07,0.0,-53.4,-9.3,10.04,1.3,Consumer Cyclical,Restaurants,122.99999,-16.092924,3.8,2.0,-0.06
+2026-10-31,BREAKOUT,SGRY,"Surgery Partners, Inc.",QUALITY,23.21,0.0,-43.5,-5.5,21.93,3.0,Healthcare,Medical Care Facilities,,111.50612,2.7,-2.6,0.18
+2026-10-31,BOTTOM,SONY,Sony Group Corporation,QUALITY,25.3,-16.0,-34.6,19.1,30.12,147.7,Technology,Consumer Electronics,20.90909,21.260502,8.2,-1.7,3351.34
+2026-10-31,BOTTOM,TNDM,"Tandem Diabetes Care, Inc.",SPEC,19.11,-24.5,-49.3,32.4,25.3,1.3,Healthcare,Medical Devices,,120.218925,5.8,-6.1,-0.04
+2026-10-31,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,51.14,0.0,-45.3,-1.5,50.38,5.2,Industrials,Building Products & Equipment,30.082352,25.296543,7.8,14.7,0.07
+2026-10-31,BOTTOM,TRUP,"Trupanion, Inc.",QUALITY,30.13,-21.9,-61.1,32.7,39.99,1.3,Financial Services,Insurance - Property & Casualty,56.849056,7.072769,11.1,1.5,0.01
+2026-10-31,BREAKOUT,UTHR,United Therapeutics Corporation,SPEC,598.72,0.0,-19.2,-1.7,588.38,25.7,Healthcare,Drug Manufacturers - Specialty & Generic,21.444124,17.669147,-1.9,41.6,0.56

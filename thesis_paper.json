@@ -79,12 +79,12 @@
   }
  ],
  "snapshot": {
-  "date": "2026-10-24",
-  "account_equity": 88425.32,
-  "vbt2_budget": 35370.13,
-  "stock_sleeve": 28296.1,
-  "options_sleeve": 7074.03,
-  "options_committed": 6967.0,
+  "date": "2026-10-31",
+  "account_equity": 92196.11,
+  "vbt2_budget": 36878.44,
+  "stock_sleeve": 29502.76,
+  "options_sleeve": 7375.69,
+  "options_committed": 7333.0,
   "options_sizing": [
    {
     "ticker": "ZBRA",
@@ -107,8 +107,8 @@
    {
     "ticker": "CGNX",
     "strategy": "BULL_PUT_SPREAD",
-    "contracts": 3,
-    "max_loss_total": 1098.0
+    "contracts": 4,
+    "max_loss_total": 1464.0
    }
   ],
   "book": {
@@ -119,7 +119,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.27,
     "notional_at_entry": 8627.31,
-    "current_close": 877.55,
+    "current_close": 884.74,
     "door_now": "IN-TREND"
    },
    "GH": {
@@ -129,7 +129,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.253,
     "notional_at_entry": 8087.93,
-    "current_close": 169.08,
+    "current_close": 178.8,
     "door_now": "IN-TREND"
    },
    "LLY": {
@@ -139,7 +139,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.241,
     "notional_at_entry": 7718.8,
-    "current_close": 1273.46,
+    "current_close": 1417.54,
     "door_now": "IN-TREND"
    },
    "BE": {
@@ -149,7 +149,7 @@
     "door_at_entry": "IN-TREND",
     "target_weight": 0.236,
     "notional_at_entry": 7565.96,
-    "current_close": 193.3,
+    "current_close": 203.17,
     "door_now": "IN-TREND"
    }
   }

@@ -1,19 +1,19 @@
 {
- "as_of": "2026-11-03",
- "updated_utc": "2026-11-03T03:16:15+00:00",
+ "as_of": "2026-11-04",
+ "updated_utc": "2026-11-04T01:45:51+00:00",
  "account": {
-  "equity": 88702.43,
-  "cash": 24498.97,
-  "pl_total": -3493.68
+  "equity": 88524.53,
+  "cash": 24003.45,
+  "pl_total": 487.1
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 202.63,
-   "pl_pct": -10.12,
-   "pl_usd": -764.76,
+   "current": 208.0,
+   "pl_pct": -7.74,
+   "pl_usd": -584.71,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,39 +21,39 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 288.5,
-   "pl_pct": -24.54,
-   "pl_usd": -1970.22,
+   "current": 290.73,
+   "pl_pct": -23.96,
+   "pl_usd": -1923.39,
    "entered": "2026-07-10",
+   "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "DELL",
+   "qty": 18.0,
+   "avg_entry": 403.15,
+   "current": 400.46,
+   "pl_pct": -0.67,
+   "pl_usd": -48.42,
+   "entered": "2026-11-03",
    "stage": "CONFIRMED"
   },
   {
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 171.25,
-   "pl_pct": 12.35,
-   "pl_usd": 1000.43,
+   "current": 171.6,
+   "pl_pct": 12.58,
+   "pl_usd": 1019.04,
    "entered": "\u2014",
    "stage": "\u2014"
-  },
-  {
-   "symbol": "KLAC",
-   "qty": 43.0,
-   "avg_entry": 176.5,
-   "current": 155.0,
-   "pl_pct": -12.18,
-   "pl_usd": -924.71,
-   "entered": "\u2014",
-   "stage": "Base building"
   },
   {
    "symbol": "LITE",
    "qty": 9.0,
    "avg_entry": 760.05,
-   "current": 691.0,
-   "pl_pct": -9.08,
-   "pl_usd": -621.41,
+   "current": 657.15,
+   "pl_pct": -13.54,
+   "pl_usd": -926.06,
    "entered": "2026-10-24",
    "stage": "CONFIRMED"
   },
@@ -61,9 +61,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1408.9,
-   "pl_pct": 20.33,
-   "pl_usd": 1569.0,
+   "current": 1427.1,
+   "pl_pct": 21.88,
+   "pl_usd": 1688.98,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -71,9 +71,9 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 842.85,
-   "pl_pct": -5.43,
-   "pl_usd": -468.74,
+   "current": 832.5,
+   "pl_pct": -6.59,
+   "pl_usd": -568.92,
    "entered": "\u2014",
    "stage": "Intact"
   },
@@ -81,9 +81,9 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 71.0,
-   "pl_pct": -13.98,
-   "pl_usd": -1050.14,
+   "current": 69.57,
+   "pl_pct": -15.71,
+   "pl_usd": -1180.27,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 341.0,
-   "pl_pct": -35.84,
-   "pl_usd": -3047.16,
+   "current": 337.49,
+   "pl_pct": -36.5,
+   "pl_usd": -3103.32,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }

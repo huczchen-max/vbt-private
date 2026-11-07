@@ -1,27 +1,45 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-07",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-11-03T03:04:30+00:00",
+ "generated_utc": "2026-11-07T01:11:14+00:00",
  "regime": {
-  "regime": "RISK-OFF",
+  "regime": "NEUTRAL",
   "reasons": [
-   "Semis in active capitulation \u2014 SOXX -8.2%/SMH -7.0% in a single session, worst Nasdaq day since June; no confirmed trend reversal yet, only tentative after-hours bounces",
-   "Hyperscaler credit stress rising sharply: CDS spreads at 2021 highs, BIS flagging concentrated off-balance-sheet AI debt risk, Oracle's $20B raise spooking bond markets even as capex guidance keeps rising",
-   "Memory-sector contagion (Kioxia NAND warning) and AI-profitability doubts are spreading selling into Korea/Taiwan supply chain",
-   "China export-control friction intensifying (Taiwan criminalizing chip smuggling, Blackwell still banned, H200 case-by-case only) with no near-term easing catalyst",
-   "Fed itself is quiet (held rates Oct 27-28, next meeting not until Dec 8-9) but this is insufficient offset to credit/trend deterioration"
+   "Semis just staged a 1-2 day bounce after worst sell-off since 2020 (SOX -9/-12%); trend structure not yet confirmed, risk of false start",
+   "Multiple unresolved catalysts in next 10-30 days: China's draft 40-tech export list closes comments Nov 15, rare-earth control re-imposition Nov 10, FOMC Dec 9, Nvidia congressional China-espionage inquiry",
+   "Hyperscaler capex still growing in dollar terms but narrative shifting to 'peak capex growth' with 10-20% of planned US data centers now at risk from political/regulatory pushback",
+   "China demand uncertainty: ~600k H200 chips stuck in Hong Kong awaiting Beijing import approval, clouding neocloud/China-exposed revenue visibility"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "DELL": {
-   "verdict": "GO",
-   "size_mult": 1.0,
+  "AMD": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
    "reasons": [
-    "No earnings report within 14 days (next report Nov 24, 2026, ~21 days out)",
-    "No new dilutive share offering announced \u2014 only routine Form 144/Form 4 insider filings",
-    "No guidance cuts, major customer loss, or new short-seller/accounting red flags in the last 4 weeks (prior 2025 supplier-credit material weakness was already remediated)",
-    "Only legal matter on file is a routine 401(k) ERISA suit filed in January 2026, not a fraud/accounting action"
+    "Customer AI-deal warrants (Meta ~9% potential dilution; Meta/OpenAI/Anthropic warrants totaling ~320M shares) are an active, growing dilution concern highlighted by Goldman/BofA/UBS right after Q3 earnings",
+    "No earnings within next 14 days (Q3 2026 already reported Nov 3, 2026; next report ~Feb 2027)",
+    "No guidance cut, customer loss, short-seller report, accounting/auditor issue, or disqualifying legal/regulatory action found in the last 4 weeks"
+   ],
+   "raw_ok": true
+  },
+  "GEV": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "Wind segment operating loss guidance widened to ~$500M for 2026 (from ~$400M), a concrete segment guidance cut even as total-company guidance was raised",
+    "Management flagged declining data-center order mix (to ~20% of Electrification orders from ~40%) amid AI capex financing concerns, a concrete customer-concentration/demand signal",
+    "Minor routine commercial arbitration (CES LLC v. GE Vernova) seeking ~$5M - immaterial, not a disqualifying legal issue",
+    "No earnings within 14 days (next report Jan 27, 2027); no dilutive offering (buyback authorization increased instead); no accounting/auditor/short-seller issues found"
+   ],
+   "raw_ok": true
+  },
+  "MPWR": {
+   "verdict": "CAUTION",
+   "size_mult": 0.5,
+   "reasons": [
+    "Rosen Law Firm announced (Nov 3, 2026) an investigation of potential breaches of fiduciary duty by MPWR directors/officers \u2014 a concrete named legal action",
+    "No earnings within 14 days, no guidance cuts, no dilution, no customer loss, and no accounting/auditor red flags found; buyback authorization was increased, not reduced"
    ],
    "raw_ok": true
   }

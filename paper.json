@@ -1,19 +1,19 @@
 {
- "as_of": "2026-11-06",
- "updated_utc": "2026-11-06T01:59:03+00:00",
+ "as_of": "2026-11-07",
+ "updated_utc": "2026-11-07T01:20:32+00:00",
  "account": {
-  "equity": 78870.17,
+  "equity": 79481.99,
   "cash": 24003.3,
-  "pl_total": -7583.75
+  "pl_total": 1200.62
  },
  "positions": [
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 174.81,
-   "pl_pct": -22.46,
-   "pl_usd": -1697.53,
+   "current": 174.56,
+   "pl_pct": -22.57,
+   "pl_usd": -1705.91,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,9 +21,9 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 233.81,
-   "pl_pct": -38.84,
-   "pl_usd": -3118.71,
+   "current": 243.51,
+   "pl_pct": -36.31,
+   "pl_usd": -2915.01,
    "entered": "2026-07-10",
    "stage": "CONFIRMED"
   },
@@ -31,9 +31,9 @@
    "symbol": "DELL",
    "qty": 18.0,
    "avg_entry": 403.15,
-   "current": 326.98,
-   "pl_pct": -18.89,
-   "pl_usd": -1371.06,
+   "current": 331.7,
+   "pl_pct": -17.72,
+   "pl_usd": -1286.1,
    "entered": "2026-11-03",
    "stage": "CONFIRMED"
   },
@@ -41,9 +41,9 @@
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 141.05,
-   "pl_pct": -7.47,
-   "pl_usd": -604.99,
+   "current": 150.0,
+   "pl_pct": -1.59,
+   "pl_usd": -129.22,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -51,9 +51,9 @@
    "symbol": "LITE",
    "qty": 9.0,
    "avg_entry": 760.05,
-   "current": 527.69,
-   "pl_pct": -30.57,
-   "pl_usd": -2091.2,
+   "current": 540.32,
+   "pl_pct": -28.91,
+   "pl_usd": -1977.57,
    "entered": "2026-10-24",
    "stage": "CONFIRMED"
   },
@@ -61,9 +61,9 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1364.24,
-   "pl_pct": 16.51,
-   "pl_usd": 1274.59,
+   "current": 1357.0,
+   "pl_pct": 15.89,
+   "pl_usd": 1226.87,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -71,19 +71,19 @@
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 685.88,
-   "pl_pct": -23.04,
-   "pl_usd": -1988.17,
+   "current": 694.79,
+   "pl_pct": -22.05,
+   "pl_usd": -1901.92,
    "entered": "\u2014",
-   "stage": "Intact"
+   "stage": "Base building"
   },
   {
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 64.99,
-   "pl_pct": -21.26,
-   "pl_usd": -1597.05,
+   "current": 63.5,
+   "pl_pct": -23.07,
+   "pl_usd": -1732.64,
    "entered": "2026-07-30",
    "stage": "CONFIRMED"
   },
@@ -91,9 +91,9 @@
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 276.0,
-   "pl_pct": -48.07,
-   "pl_usd": -4087.16,
+   "current": 265.95,
+   "pl_pct": -49.96,
+   "pl_usd": -4247.96,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
@@ -105,7 +105,10 @@
   "HUT": "2026-10-06",
   "COHR": "2026-10-09",
   "LITE": "2026-10-24",
-  "DELL": "2026-11-03"
+  "DELL": "2026-11-03",
+  "AMD": "2026-11-07",
+  "GEV": "2026-11-07",
+  "MPWR": "2026-11-07"
  },
  "seeded": true,
  "ledger": [
@@ -414,6 +417,24 @@
    "action": "BUY",
    "symbol": "DELL",
    "note": "18 sh ~$7,070 (quality 8%) on stage-3 entry @ 392.78 | llm:GO mult:1 regime:RISK-OFF"
+  },
+  {
+   "date": "2026-11-07",
+   "action": "BUY",
+   "symbol": "AMD",
+   "note": "15 sh ~$6,066 (quality 8%) on stage-3 entry @ 404.4 | llm:CAUTION mult:0.5 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-11-07",
+   "action": "BUY",
+   "symbol": "GEV",
+   "note": "8 sh ~$6,164 (quality 8%) on stage-3 entry @ 770.51 | llm:CAUTION mult:0.5 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-11-07",
+   "action": "BUY",
+   "symbol": "MPWR",
+   "note": "5 sh ~$5,657 (quality 8%) on stage-3 entry @ 1131.43 | llm:CAUTION mult:0.5 regime:NEUTRAL"
   }
  ]
 }

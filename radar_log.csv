@@ -493,3 +493,41 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-10-31,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,51.14,0.0,-45.3,-1.5,50.38,5.2,Industrials,Building Products & Equipment,30.082352,25.296543,7.8,14.7,0.07
 2026-10-31,BOTTOM,TRUP,"Trupanion, Inc.",QUALITY,30.13,-21.9,-61.1,32.7,39.99,1.3,Financial Services,Insurance - Property & Casualty,56.849056,7.072769,11.1,1.5,0.01
 2026-10-31,BREAKOUT,UTHR,United Therapeutics Corporation,SPEC,598.72,0.0,-19.2,-1.7,588.38,25.7,Healthcare,Drug Manufacturers - Specialty & Generic,21.444124,17.669147,-1.9,41.6,0.56
+2026-11-07,GRADUATED,COLD,,,16.01,0.0,-13.5,-0.2,15.98,,,,,,,,
+2026-11-07,DROP,UPWK,,,10.02,-54.7,-63.6,120.7,22.11,,,,,,,,
+2026-11-07,GRADUATED,UPBD,,,24.24,0.0,-31.5,-10.8,21.61,,,,,,,,
+2026-11-07,DROP,CHRW,,,125.33,-39.6,-40.0,65.6,207.6,,,,,,,,
+2026-11-07,DROP,WLK,,,63.49,-46.1,-47.1,85.6,117.86,,,,,,,,
+2026-11-07,GRADUATED,HRB,,,52.69,-1.4,-36.1,1.4,53.43,,,,,,,,
+2026-11-07,GRADUATED,QNST,,,20.66,-2.0,-32.4,2.0,21.08,,,,,,,,
+2026-11-07,GRADUATED,BRZE,,,45.79,-0.2,-43.4,0.2,45.88,,,,,,,,
+2026-11-07,GRADUATED,SG,,,12.01,0.0,-52.1,-7.8,11.07,,,,,,,,
+2026-11-07,GRADUATED,TREX,,,54.74,0.0,-45.3,-6.6,51.14,,,,,,,,
+2026-11-07,BOTTOM,ADBE,Adobe Inc.,QUALITY,239.3,-32.9,-49.4,48.9,356.43,93.1,Technology,Software - Application,13.361251,8.731961,12.9,28.0,9.35
+2026-11-07,BREAKOUT,ARDT,"Ardent Health, Inc.",QUALITY,17.3,0.0,-42.9,-16.8,14.4,2.4,Healthcare,Medical Care Facilities,16.796116,13.5952835,3.1,2.3,0.19
+2026-11-07,BOTTOM,ASAN,"Asana, Inc.",QUALITY,10.61,-26.7,-65.4,36.5,14.48,2.4,Technology,Software - Application,,23.332525,9.9,-18.6,0.2
+2026-11-07,BOTTOM,ASST,"Strive, Inc.",SPEC,21.45,-28.7,-93.5,40.8,30.2,2.7,Financial Services,Asset Management,,1.1307328,94.6,0.0,-0.46
+2026-11-07,BOTTOM,BRZE,"Braze, Inc.",QUALITY,45.79,-0.2,-43.4,0.2,45.88,5.2,Technology,Software - Application,,46.631702,26.2,-13.6,0.2
+2026-11-07,BOTTOM,CELH,"Celsius Holdings, Inc.",QUALITY,32.16,-42.5,-58.8,73.9,55.94,8.1,Consumer Defensive,Beverages - Non-Alcoholic,36.13483,19.163046,16.8,10.0,
+2026-11-07,BOTTOM,CNXC,Concentrix Corporation,SPEC,30.32,-27.6,-62.2,38.2,41.9,1.9,Technology,Information Technology Services,,2.6327055,-1.2,-24.0,0.81
+2026-11-07,BOTTOM,CRK,"Comstock Resources, Inc.",SPEC,13.41,-51.0,-57.4,104.1,27.37,3.9,Energy,Oil & Gas E&P,8.880795,29.268612,-14.6,23.1,
+2026-11-07,BREAKOUT,DEO,Diageo plc,SPEC,99.76,0.0,-27.7,-1.7,98.1,55.5,Consumer Defensive,Beverages - Wineries & Distilleries,31.974361,13.913025,-1.7,8.8,2.57
+2026-11-07,BREAKOUT,DIS,Walt Disney Company (The),QUALITY,116.75,0.0,-20.1,-1.5,115.0,201.6,Communication Services,Entertainment,24.072165,15.575368,6.8,8.7,4.86
+2026-11-07,BOTTOM,EPAM,"EPAM Systems, Inc.",QUALITY,159.31,-27.0,-64.9,37.0,218.21,8.2,Technology,Information Technology Services,19.988708,11.361522,2.3,7.5,
+2026-11-07,BREAKOUT,EVER,"EverQuote, Inc.",QUALITY,28.82,0.0,-37.1,-3.5,27.8,1.0,Communication Services,Internet Content & Information,9.418301,10.195743,25.4,14.2,0.08
+2026-11-07,BOTTOM,FBIN,"Fortune Brands Innovations, Inc",SPEC,48.08,-20.9,-44.2,26.4,60.76,5.7,Industrials,Building Products & Equipment,44.934578,16.851315,-3.1,2.9,0.42
+2026-11-07,BREAKOUT,FCN,"FTI Consulting, Inc.",QUALITY,195.71,0.0,-27.1,-5.9,184.23,5.3,Industrials,Consulting Services,24.372355,17.573477,5.9,5.9,0.29
+2026-11-07,BOTTOM,GENI,Genius Sports Limited,QUALITY,5.97,-45.5,-68.6,83.6,10.96,1.6,Communication Services,Internet Content & Information,,5.632076,64.7,-23.0,0.16
+2026-11-07,BOTTOM,HRB,"H&R Block, Inc.",QUALITY,52.69,-1.4,-36.1,1.4,53.43,6.5,Consumer Cyclical,Personal Services,9.260105,7.634019,3.0,18.6,0.62
+2026-11-07,BREAKOUT,IBN,ICICI Bank Limited,QUALITY,33.89,0.0,-23.7,-8.6,30.97,121.7,Financial Services,Banks - Regional,19.255682,16.846783,15.8,27.8,
+2026-11-07,BOTTOM,PENN,"PENN Entertainment, Inc.",SPEC,17.43,-20.8,-34.2,26.3,22.02,2.3,Consumer Cyclical,Resorts & Casinos,,12.771382,7.1,-0.1,
+2026-11-07,BREAKOUT,PG,Procter & Gamble Company (The),QUALITY,165.4,0.0,-14.7,-1.1,163.64,383.4,Consumer Defensive,Household & Personal Products,24.909637,22.3528,4.0,18.2,12.65
+2026-11-07,BOTTOM,PSN,Parsons Corporation,QUALITY,48.9,-42.3,-52.5,75.7,85.93,5.2,Technology,Information Technology Services,35.955883,14.4212055,1.8,2.3,0.34
+2026-11-07,BOTTOM,QNST,"QuinStreet, Inc.",QUALITY,20.66,-2.0,-32.4,2.0,21.08,1.2,Communication Services,Advertising Agencies,12.753086,10.960212,45.8,6.6,0.13
+2026-11-07,BOTTOM,SAH,"Sonic Automotive, Inc.",QUALITY,61.71,-38.2,-39.3,61.8,99.83,2.0,Consumer Cyclical,Auto & Truck Dealerships,9.905296,8.746592,0.4,1.3,-0.29
+2026-11-07,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,12.01,0.0,-52.1,-7.8,11.07,1.4,Consumer Cyclical,Restaurants,80.066666,-17.57261,2.1,2.8,-0.05
+2026-11-07,BOTTOM,TER,"Teradyne, Inc.",QUALITY,218.21,-51.4,-51.4,105.8,449.04,34.1,Technology,Semiconductor Equipment & Materials,25.082184,18.198353,69.8,27.5,0.6
+2026-11-07,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,54.74,0.0,-45.3,-6.6,51.14,5.5,Industrials,Building Products & Equipment,31.641619,26.664328,26.0,13.9,0.03
+2026-11-07,BOTTOM,TRI,Thomson Reuters Corp,QUALITY,112.57,-16.9,-61.0,20.3,135.42,48.8,Industrials,Specialty Business Services,34.530674,23.815872,2.9,19.7,1.11
+2026-11-07,BREAKOUT,TW,Tradeweb Markets Inc.,QUALITY,127.73,0.0,-32.4,-2.3,124.81,27.6,Financial Services,Capital Markets,29.983568,27.07963,14.9,39.9,
+2026-11-07,BOTTOM,VIAV,Viavi Solutions Inc.,QUALITY,28.47,-48.5,-48.5,94.3,55.33,7.0,Technology,Communication Equipment,109.5,13.398466,56.9,4.0,

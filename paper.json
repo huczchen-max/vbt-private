@@ -1,19 +1,29 @@
 {
- "as_of": "2026-11-07",
- "updated_utc": "2026-11-07T01:20:32+00:00",
+ "as_of": "2026-11-10",
+ "updated_utc": "2026-11-10T03:57:41+00:00",
  "account": {
-  "equity": 79481.99,
-  "cash": 24003.3,
-  "pl_total": 1200.62
+  "equity": 84622.25,
+  "cash": 4340.09,
+  "pl_total": 5331.53
  },
  "positions": [
+  {
+   "symbol": "AMD",
+   "qty": 15.0,
+   "avg_entry": 472.76,
+   "current": 501.51,
+   "pl_pct": 6.08,
+   "pl_usd": 431.3,
+   "entered": "2026-11-07",
+   "stage": "Intact"
+  },
   {
    "symbol": "BE",
    "qty": 33.528805309,
    "avg_entry": 225.44,
-   "current": 174.56,
-   "pl_pct": -22.57,
-   "pl_usd": -1705.91,
+   "current": 191.94,
+   "pl_pct": -14.86,
+   "pl_usd": -1123.18,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -21,29 +31,39 @@
    "symbol": "CIEN",
    "qty": 21.0,
    "avg_entry": 382.32,
-   "current": 243.51,
-   "pl_pct": -36.31,
-   "pl_usd": -2915.01,
-   "entered": "2026-07-10",
-   "stage": "CONFIRMED"
+   "current": 269.84,
+   "pl_pct": -29.42,
+   "pl_usd": -2362.08,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "DELL",
    "qty": 18.0,
    "avg_entry": 403.15,
-   "current": 331.7,
-   "pl_pct": -17.72,
-   "pl_usd": -1286.1,
+   "current": 346.05,
+   "pl_pct": -14.16,
+   "pl_usd": -1027.8,
    "entered": "2026-11-03",
    "stage": "CONFIRMED"
+  },
+  {
+   "symbol": "GEV",
+   "qty": 8.0,
+   "avg_entry": 804.04,
+   "current": 824.0,
+   "pl_pct": 2.48,
+   "pl_usd": 159.69,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "GH",
    "qty": 53.159766419,
    "avg_entry": 152.43,
-   "current": 150.0,
-   "pl_pct": -1.59,
-   "pl_usd": -129.22,
+   "current": 158.79,
+   "pl_pct": 4.17,
+   "pl_usd": 338.06,
    "entered": "\u2014",
    "stage": "\u2014"
   },
@@ -51,9 +71,9 @@
    "symbol": "LITE",
    "qty": 9.0,
    "avg_entry": 760.05,
-   "current": 540.32,
-   "pl_pct": -28.91,
-   "pl_usd": -1977.57,
+   "current": 590.89,
+   "pl_pct": -22.26,
+   "pl_usd": -1522.4,
    "entered": "2026-10-24",
    "stage": "CONFIRMED"
   },
@@ -61,19 +81,29 @@
    "symbol": "LLY",
    "qty": 6.592266609,
    "avg_entry": 1170.89,
-   "current": 1357.0,
-   "pl_pct": 15.89,
-   "pl_usd": 1226.87,
+   "current": 1413.47,
+   "pl_pct": 20.72,
+   "pl_usd": 1599.13,
    "entered": "\u2014",
    "stage": "\u2014"
+  },
+  {
+   "symbol": "MPWR",
+   "qty": 5.0,
+   "avg_entry": 1227.91,
+   "current": 1379.98,
+   "pl_pct": 12.38,
+   "pl_usd": 760.35,
+   "entered": "2026-11-07",
+   "stage": "Intact"
   },
   {
    "symbol": "MU",
    "qty": 9.679731907,
    "avg_entry": 891.27,
-   "current": 694.79,
-   "pl_pct": -22.05,
-   "pl_usd": -1901.92,
+   "current": 725.71,
+   "pl_pct": -18.58,
+   "pl_usd": -1602.62,
    "entered": "\u2014",
    "stage": "Base building"
   },
@@ -81,33 +111,30 @@
    "symbol": "ON",
    "qty": 91.0,
    "avg_entry": 82.54,
-   "current": 63.5,
-   "pl_pct": -23.07,
-   "pl_usd": -1732.64,
-   "entered": "2026-07-30",
-   "stage": "CONFIRMED"
+   "current": 68.75,
+   "pl_pct": -16.71,
+   "pl_usd": -1254.89,
+   "entered": "\u2014",
+   "stage": "Base building"
   },
   {
    "symbol": "WDC",
    "qty": 16.0,
    "avg_entry": 531.45,
-   "current": 265.95,
-   "pl_pct": -49.96,
-   "pl_usd": -4247.96,
+   "current": 286.15,
+   "pl_pct": -46.16,
+   "pl_usd": -3924.76,
    "entered": "2026-07-21",
    "stage": "CONFIRMED"
   }
  ],
  "entries": {
-  "CIEN": "2026-07-10",
   "WDC": "2026-07-21",
-  "ON": "2026-07-30",
   "HUT": "2026-10-06",
   "COHR": "2026-10-09",
   "LITE": "2026-10-24",
   "DELL": "2026-11-03",
   "AMD": "2026-11-07",
-  "GEV": "2026-11-07",
   "MPWR": "2026-11-07"
  },
  "seeded": true,
@@ -435,6 +462,36 @@
    "action": "BUY",
    "symbol": "MPWR",
    "note": "5 sh ~$5,657 (quality 8%) on stage-3 entry @ 1131.43 | llm:CAUTION mult:0.5 regime:NEUTRAL"
+  },
+  {
+   "date": "2026-11-10",
+   "action": "SELL",
+   "symbol": "CIEN",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-11-10",
+   "action": "SELL",
+   "symbol": "GEV",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-11-10",
+   "action": "SELL",
+   "symbol": "ON",
+   "note": "breakdown to stage 2 (Base building)"
+  },
+  {
+   "date": "2026-11-10",
+   "action": "SKIP",
+   "symbol": "SMCI",
+   "note": "group cap (hw already at 4)"
+  },
+  {
+   "date": "2026-11-10",
+   "action": "SKIP",
+   "symbol": "HPE",
+   "note": "group cap (hw already at 4)"
   }
  ]
 }

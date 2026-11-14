@@ -1,33 +1,27 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-14",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-11-10T03:48:48+00:00",
+ "generated_utc": "2026-11-14T01:45:15+00:00",
  "regime": {
   "regime": "NEUTRAL",
   "reasons": [
-   "SOX is only 1-3 days into a bounce off a 38% correction and remains below its 200-day MA; historical base rate for sustained follow-through this early is <50%, so trend recovery is unconfirmed",
-   "Hyperscaler capex headline numbers remain robust, but financing (capex now exceeds operating cash flow, record bond issuance) and power/permitting bottlenecks are pushing real delivery into 2029, clouding the fundamental tailwind",
-   "Nvidia-specific governance/espionage scandal is fueling bipartisan momentum for tighter China export controls (MATCH Act) right before the Trump-Xi APEC meeting, adding policy-risk overhang to the whole AI-hardware/China trade",
-   "No Fed catalyst today (next FOMC Dec 8-9), so macro backdrop is a non-event near-term rather than a positive risk-on trigger"
+   "Hyperscaler capex guidance remains record-strong and accelerating into 2027, a structural tailwind, but semiconductor trend is unconfirmed \u2014 equipment stocks fell 6-7% on Nov 13 just two days after a post-midterm-election chip selloff/rebound",
+   "NVDA CEO Jensen Huang resigned amid a China chip-smuggling scandal, triggering fresh bipartisan pressure for tighter export controls \u2014 unresolved idiosyncratic/political risk at the sector bellwether",
+   "NVIDIA earnings (Nov 17) is an imminent binary catalyst for the whole AI-infra complex, days away \u2014 poor entry timing ahead of resolution",
+   "Fed's Dec 9 FOMC decision is priced for a 25bp hike (tightening, not easing), adding a macro headwind for AI-capex-sensitive growth names"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "SMCI": {
+  "NVDA": {
    "verdict": "CAUTION",
    "size_mult": 0.5,
    "reasons": [
-    "Customer concentration spiked to 44% of quarterly revenue from one customer (up from 28%), disclosed Nov 4, 2026",
-    "Ongoing chip-smuggling legal case remains active with a co-conspirator guilty plea and new securities investigation solicitation within the last 4 weeks"
-   ],
-   "raw_ok": true
-  },
-  "HPE": {
-   "verdict": "CAUTION",
-   "size_mult": 0.5,
-   "reasons": [
-    "Q4 FY2026 earnings call confirmed for Nov 23, 2026 \u2014 13 days from screening date, inside the 14-day window (automatic CAUTION)",
-    "No dilution, guidance cut, customer loss, accounting/short-seller issue, or new legal/regulatory action found in the last 4 weeks"
+    "Earnings confirmed for Nov 17, 2026 \u2014 within 14 days",
+    "CEO Jensen Huang resigned Nov 12, 2026 amid scandal; board launched independent investigation",
+    "Unverified short-seller (Culper Research) allegations of illegal China chip diversion via Southeast Asian customer Megaspeed",
+    "Multiple Congressional committees (House Foreign Affairs, CCP Select Committee, Intelligence, Senate Banking) have summoned ex-CEO Huang and Commerce Secretary Lutnick to testify on export-control/national-security concerns",
+    "Active shareholder class action referenced alongside board investigation"
    ],
    "raw_ok": true
   }

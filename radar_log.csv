@@ -531,3 +531,34 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-11-07,BOTTOM,TRI,Thomson Reuters Corp,QUALITY,112.57,-16.9,-61.0,20.3,135.42,48.8,Industrials,Specialty Business Services,34.530674,23.815872,2.9,19.7,1.11
 2026-11-07,BREAKOUT,TW,Tradeweb Markets Inc.,QUALITY,127.73,0.0,-32.4,-2.3,124.81,27.6,Financial Services,Capital Markets,29.983568,27.07963,14.9,39.9,
 2026-11-07,BOTTOM,VIAV,Viavi Solutions Inc.,QUALITY,28.47,-48.5,-48.5,94.3,55.33,7.0,Technology,Communication Equipment,109.5,13.398466,56.9,4.0,
+2026-11-14,DROP,SNPS,,,455.2,-13.3,-39.7,15.4,525.18,,,,,,,,
+2026-11-14,DROP,ARLO,,,11.86,-24.4,-37.4,32.3,15.69,,,,,,,,
+2026-11-14,GRADUATED,CHA,,,14.37,0.0,-68.7,-2.3,14.04,,,,,,,,
+2026-11-14,DROP,CAE,,,27.93,-18.0,-32.0,21.9,34.05,,,,,,,,
+2026-11-14,GRADUATED,RYTM,,,115.02,-0.5,-25.5,0.5,115.63,,,,,,,,
+2026-11-14,GRADUATED,GEN,,,30.4,-2.0,-30.3,2.0,31.02,,,,,,,,
+2026-11-14,GRADUATED,SPOT,,,612.63,0.0,-39.4,3.8,635.75,,,,,,,,
+2026-11-14,GRADUATED,BRZE,,,46.64,0.0,-43.4,-1.6,45.88,,,,,,,,
+2026-11-14,GRADUATED,SG,,,12.26,0.0,-52.1,-2.0,12.01,,,,,,,,
+2026-11-14,BOTTOM,AMLX,"Amylyx Pharmaceuticals, Inc.",SPEC,30.29,-21.7,-31.9,27.6,38.66,3.9,Healthcare,Drug Manufacturers - Specialty & Generic,,-26.825016,,0.0,-0.08
+2026-11-14,BOTTOM,AVO,"Mission Produce, Inc.",QUALITY,11.83,-20.1,-31.0,25.2,14.81,1.0,Consumer Defensive,Food Distribution,394.33334,14.861809,25.8,0.1,-0.03
+2026-11-14,BREAKOUT,AZTA,"Azenta, Inc.",QUALITY,45.65,0.0,-49.6,-12.3,40.05,1.9,Healthcare,Medical Instruments & Supplies,,53.081398,5.1,-26.9,0.11
+2026-11-14,BREAKOUT,BANF,BancFirst Corporation,QUALITY,118.75,0.0,-17.4,-1.1,117.41,4.0,Financial Services,Banks - Regional,15.770252,14.523027,7.7,35.3,
+2026-11-14,BOTTOM,BRZE,"Braze, Inc.",QUALITY,46.64,0.0,-43.4,-1.6,45.88,5.3,Technology,Software - Application,,47.497326,26.2,-13.6,0.2
+2026-11-14,BREAKOUT,CHA,Chagee Holdings Limited,QUALITY,14.37,0.0,-68.7,-2.3,14.04,2.7,Consumer Cyclical,Restaurants,14.515151,8.772779,2.5,10.2,0.7
+2026-11-14,BREAKOUT,CL,Colgate-Palmolive Company,QUALITY,99.67,0.0,-14.0,-2.3,97.41,79.2,Consumer Defensive,Household & Personal Products,38.7821,24.308628,4.6,9.6,3.37
+2026-11-14,BREAKOUT,CME,CME Group Inc.,QUALITY,317.97,0.0,-28.8,-2.8,308.98,113.8,Financial Services,Financial Data & Stock Exchanges,26.063116,24.006796,13.0,63.5,3.05
+2026-11-14,BOTTOM,CTSH,Cognizant Technology Solutions,QUALITY,63.01,-24.6,-52.6,32.7,83.61,28.2,Technology,Information Technology Services,11.498175,10.037883,4.6,11.8,2.08
+2026-11-14,BREAKOUT,DD,"DuPont de Nemours, Inc.",QUALITY,153.78,0.0,-15.0,-2.9,149.37,20.4,Basic Materials,Specialty Chemicals,53.581882,18.81407,4.1,4.3,4.81
+2026-11-14,BREAKOUT,ECL,Ecolab Inc.,QUALITY,309.27,0.0,-17.6,-1.1,305.88,86.7,Basic Materials,Specialty Chemicals,42.07755,32.881546,12.7,12.0,1.44
+2026-11-14,BREAKOUT,ELAN,Elanco Animal Health Incorporat,QUALITY,26.78,0.0,-17.7,-1.4,26.4,13.4,Healthcare,Drug Manufacturers - Specialty & Generic,,20.748592,11.3,-2.9,0.69
+2026-11-14,BOTTOM,GRAL,"GRAIL, Inc.",SPEC,115.89,-19.2,-45.8,23.8,143.43,5.2,Healthcare,Diagnostics & Research,,-14.232135,3.7,-243.8,-0.11
+2026-11-14,BOTTOM,GSHD,"Goosehead Insurance, Inc.",QUALITY,46.01,-40.9,-69.4,69.2,77.83,1.6,Financial Services,Insurance Brokers,33.58394,17.450304,20.7,8.8,0.04
+2026-11-14,BOTTOM,HPE,Hewlett Packard Enterprise Comp,QUALITY,48.29,-34.3,-39.1,52.1,73.46,64.1,Technology,Communication Equipment,24.891752,10.197768,33.7,6.7,4.74
+2026-11-14,BOTTOM,IBM,International Business Machines,QUALITY,247.13,-17.9,-30.3,21.8,300.99,233.6,Technology,Information Technology Services,21.086178,18.66734,4.7,16.0,12.35
+2026-11-14,BOTTOM,MTSI,MACOM Technology Solutions Hold,QUALITY,232.06,-40.7,-46.1,68.7,391.41,17.7,Technology,Semiconductors,53.842228,20.01846,62.7,25.3,0.19
+2026-11-14,BREAKOUT,OUT,OUTFRONT Media Inc.,QUALITY,33.54,0.0,-16.7,-1.0,33.2,5.9,Real Estate,REIT - Specialty,22.816326,21.58579,9.3,13.1,0.22
+2026-11-14,BOTTOM,RYTM,"Rhythm Pharmaceuticals, Inc.",SPEC,115.02,-0.5,-25.5,0.5,115.63,8.0,Healthcare,Biotechnology,,-88.598915,79.6,-69.0,-0.02
+2026-11-14,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,12.26,0.0,-52.1,-2.0,12.01,1.5,Consumer Cyclical,Restaurants,81.73333,-23.9005,2.1,2.8,-0.06
+2026-11-14,BOTTOM,SPOT,Spotify Technology S.A.,QUALITY,612.63,0.0,-39.4,3.8,635.75,125.9,Communication Services,Internet Content & Information,37.332726,35.79299,16.3,15.7,1.42
+2026-11-14,BREAKOUT,WRB,W.R. Berkley Corporation,SPEC,77.44,0.0,-17.2,-1.9,75.98,28.8,Financial Services,Insurance - Property & Casualty,16.372093,15.959213,-0.8,12.5,2.49

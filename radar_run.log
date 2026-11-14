@@ -1,37 +1,26 @@
-
-1 Failed download:
-['AGNT']: OperationalError('database is locked')
-symbol directory: 6183 common-stock symbols
-scanned 200/6183
-scanned 1200/6183
-scanned 2200/6183
-scanned 3200/6183
+symbol directory: 6179 common-stock symbols
+scanned 200/6179
+scanned 1200/6179
+scanned 2200/6179
+scanned 3200/6179
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6183
-scanned 5200/6183
-scanned 6183/6183
-analyzed: 2688 symbols past liquidity floors
-BOTTOM: 20, BREAKOUT: 8, watchlist: 212
-  BOTTOM QUALITY ADBE   Adobe Inc.                 dd -32.9%  cap 93.1B  48.9% to 52w high
-  BOTTOM QUALITY ASAN   Asana, Inc.                dd -26.7%  cap 2.4B  36.5% to 52w high
-  BOTTOM SPEC    ASST   Strive, Inc.               dd -28.7%  cap 2.7B  40.8% to 52w high
-  BOTTOM QUALITY BRZE   Braze, Inc.                dd -0.2%  cap 5.2B  0.2% to 52w high
-  BOTTOM QUALITY CELH   Celsius Holdings, Inc.     dd -42.5%  cap 8.1B  73.9% to 52w high
-  BOTTOM SPEC    CNXC   Concentrix Corporation     dd -27.6%  cap 1.9B  38.2% to 52w high
-  BOTTOM SPEC    CRK    Comstock Resources, Inc.   dd -51.0%  cap 3.9B  104.1% to 52w high
-  BOTTOM QUALITY EPAM   EPAM Systems, Inc.         dd -27.0%  cap 8.2B  37.0% to 52w high
-  BOTTOM SPEC    FBIN   Fortune Brands Innovations dd -20.9%  cap 5.7B  26.4% to 52w high
-  BOTTOM QUALITY GENI   Genius Sports Limited      dd -45.5%  cap 1.6B  83.6% to 52w high
-  BOTTOM QUALITY HRB    H&R Block, Inc.            dd -1.4%  cap 6.5B  1.4% to 52w high
-  BOTTOM SPEC    PENN   PENN Entertainment, Inc.   dd -20.8%  cap 2.3B  26.3% to 52w high
-  BOTTOM QUALITY PSN    Parsons Corporation        dd -42.3%  cap 5.2B  75.7% to 52w high
-  BOTTOM QUALITY QNST   QuinStreet, Inc.           dd -2.0%  cap 1.2B  2.0% to 52w high
-  BOTTOM QUALITY SAH    Sonic Automotive, Inc.     dd -38.2%  cap 2.0B  61.8% to 52w high
-  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd 0.0%  cap 1.4B  -7.8% to 52w high
-  BOTTOM QUALITY TER    Teradyne, Inc.             dd -51.4%  cap 34.1B  105.8% to 52w high
-  BOTTOM QUALITY TREX   Trex Company, Inc.         dd 0.0%  cap 5.5B  -6.6% to 52w high
-  BOTTOM QUALITY TRI    Thomson Reuters Corp       dd -16.9%  cap 48.8B  20.3% to 52w high
-  BOTTOM QUALITY VIAV   Viavi Solutions Inc.       dd -48.5%  cap 7.0B  94.3% to 52w high
+scanned 4200/6179
+scanned 5200/6179
+scanned 6179/6179
+analyzed: 2675 symbols past liquidity floors
+BOTTOM: 12, BREAKOUT: 10, watchlist: 215
+  BOTTOM SPEC    AMLX   Amylyx Pharmaceuticals, In dd -21.7%  cap 3.9B  27.6% to 52w high
+  BOTTOM QUALITY AVO    Mission Produce, Inc.      dd -20.1%  cap 1.0B  25.2% to 52w high
+  BOTTOM QUALITY BRZE   Braze, Inc.                dd 0.0%  cap 5.3B  -1.6% to 52w high
+  BOTTOM QUALITY CTSH   Cognizant Technology Solut dd -24.6%  cap 28.2B  32.7% to 52w high
+  BOTTOM SPEC    GRAL   GRAIL, Inc.                dd -19.2%  cap 5.2B  23.8% to 52w high
+  BOTTOM QUALITY GSHD   Goosehead Insurance, Inc.  dd -40.9%  cap 1.6B  69.2% to 52w high
+  BOTTOM QUALITY HPE    Hewlett Packard Enterprise dd -34.3%  cap 64.1B  52.1% to 52w high
+  BOTTOM QUALITY IBM    International Business Mac dd -17.9%  cap 233.6B  21.8% to 52w high
+  BOTTOM QUALITY MTSI   MACOM Technology Solutions dd -40.7%  cap 17.7B  68.7% to 52w high
+  BOTTOM SPEC    RYTM   Rhythm Pharmaceuticals, In dd -0.5%  cap 8.0B  0.5% to 52w high
+  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd 0.0%  cap 1.5B  -2.0% to 52w high
+  BOTTOM QUALITY SPOT   Spotify Technology S.A.    dd 0.0%  cap 125.9B  3.8% to 52w high
 status=ok

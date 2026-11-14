@@ -1,37 +1,28 @@
 prices 100/196
 prices 196/196
-tracked 194 names; doors {'IN-TREND': 89, 'BROKEN': 88, 'ENTRY-BOTTOM': 12, 'ENTRY-MACROSS': 5}; events this run 10
-  ai        etf=IN-TREND/Uptrend breadth intact 70.5% uptrend 45.9%
-  grid      etf=IN-TREND/Mixed breadth intact 25.0% uptrend 15.6%
-  robotics  etf=BROKEN/Uptrend breadth intact 61.5% uptrend 46.2%
-  defense   etf=BROKEN/Uptrend breadth intact 29.0% uptrend 19.4%
+tracked 194 names; doors {'IN-TREND': 87, 'BROKEN': 94, 'ENTRY-BOTTOM': 9, 'ENTRY-MACROSS': 4}; events this run 9
+  ai        etf=IN-TREND/Mixed breadth intact 67.2% uptrend 39.3%
+  grid      etf=IN-TREND/Mixed breadth intact 25.0% uptrend 6.2%
+  robotics  etf=BROKEN/Mixed breadth intact 61.5% uptrend 30.8%
+  defense   etf=BROKEN/Uptrend breadth intact 22.6% uptrend 25.8%
   health    etf=IN-TREND/Uptrend breadth intact 64.5% uptrend 38.7%
-  outlier   etf=IN-TREND/Uptrend breadth intact 42.9% uptrend 28.6%
+  outlier   etf=IN-TREND/Uptrend breadth intact 42.9% uptrend 14.3%
 status=ok
-exhaustion: 36 symbols, 2 flagged (score>=2)
-  PWR    BOTTOM-exhaustion 2/5: extension_bottom_decile, volume_climax_down
-  GEV    BOTTOM-exhaustion 2/5: extension_bottom_decile, volume_climax_down
-ai        extremity -4 (split, hotter)
+exhaustion: 37 symbols, 0 flagged (score>=2)
+ai        extremity -3 (split, cooler)
 grid      extremity -4 (split, cooler)
-robotics  extremity 2 (split, cooler)
-defense   extremity -2 (split, cooler)
-health    extremity 3 (bullish, hotter)
-outlier   extremity None (None, None)
-skip DELL: vol gate (IV-RV -0.0133)
-skip BE: vol gate (IV-RV -0.0705)
+robotics  extremity 4 (split, hotter)
+defense   extremity -1 (split, cooler)
+health    extremity 3 (split, hotter)
+outlier   extremity 3 (split, cooler)
+skip HPE: earnings within 14d
 skip EMR: no usable chain for BULL_PUT_SPREAD
-options engine: 5 new proposals, 10 open, 20 journal events
-  CASH_SECURED_PUT  ALAB   [RANGE] exp 2026-12-18 short 160.0 credit 12.5 max_loss 147.5
-  BULL_PUT_SPREAD   MU     [BULL-NORMAL] exp 2026-12-18 short 620.0 credit 8.73 max_loss 21.27
-  BULL_PUT_SPREAD   PWR    [BULL-NORMAL] exp 2026-12-18 short 490.0 credit 7.2 max_loss 22.8
-  BULL_PUT_SPREAD   OUST   [BULL-NORMAL] exp 2026-12-18 short 31.0 credit 0.53 max_loss 0.47
-  BULL_PUT_SPREAD   RTX    [BULL-NORMAL] exp 2026-12-18 short 170.0 credit 0.81 max_loss 9.19
-Traceback (most recent call last):
-  File "/home/runner/work/vbt-data/vbt-data/private/trade_thesis.py", line 245, in <module>
-    main()
-  File "/home/runner/work/vbt-data/vbt-data/private/trade_thesis.py", line 91, in main
-    account = api("/v2/account")
-              ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/vbt-data/vbt-data/private/trade_thesis.py", line 67, in api
-    raise RuntimeError(f"Alpaca {method} {path} -> {e.code}: {detail}") from None
-RuntimeError: Alpaca GET /v2/account -> 503: {"code":50310000,"message":"service unavailable"}
+skip LMT: vol gate (IV-RV -0.1672)
+skip REGN: vol gate (IV-RV -0.0714)
+options engine: 5 new proposals, 13 open, 15 journal events
+  CASH_SECURED_PUT  AI     [RANGE] exp 2026-12-24 short 10.0 credit 0.34 max_loss 9.66
+  BULL_PUT_SPREAD   BE     [BULL-NORMAL] exp 2026-12-24 short 175.0 credit 3.43 max_loss 6.57
+  BULL_PUT_SPREAD   NOVT   [BULL-NORMAL] exp 2026-12-18 short 105.0 credit 1.76 max_loss 3.24
+  BULL_PUT_SPREAD   SDGR   [BULL-NORMAL] exp 2026-12-18 short 27.5 credit 0.7 max_loss 1.8
+  BULL_PUT_SPREAD   PLTR   [BULL-NORMAL] exp 2026-12-24 short 150.0 credit 1.11 max_loss 3.89
+thesis-paper: equity $84,885, budget $33,954, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($6,783/6,791)

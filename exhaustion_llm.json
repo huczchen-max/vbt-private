@@ -1,17 +1,17 @@
 {
- "date": "2026-11-07",
- "generated_utc": "2026-11-07T12:33:11+00:00",
+ "date": "2026-11-14",
+ "generated_utc": "2026-11-14T13:02:27+00:00",
  "themes": {
   "ai": {
    "theme": "ai",
-   "extremity": -4,
+   "extremity": -3,
    "kol_unanimity": "split",
-   "direction_2wk": "hotter",
+   "direction_2wk": "cooler",
    "evidence": [
-    "Saxo Bank strategist called it 'a complete capitulation-level event' with leveraged funds 'blowing up' (Daily Upside, Nov 6)",
-    "Retail investors posted biggest single-day net selling since March 2020, described by Vanda Research as 'total capitulation by retail investors' (Yahoo Finance, Nov 5)",
-    "Nasdaq fell 5.5% and chip index 12%, worst days since April 2025/March 2020, VIX spiked ~60% (CNBC/aibubblemonitor, Nov 5-6)",
-    "Michael Burry's long-standing AI short thesis suddenly 'looked brilliant' as NVDA, AMD, CRWV, MU all dropped double digits (247wallst/X burrytracker, Nov 5-6)"
+    "Nov 5 Nasdaq fell 5.52%/chip index SOX -7%, wiping $2.5T in value on midterm/data-center regulation fears (CNN, CNBC, SeekingAlpha)",
+    "Fed's Nov 13 Financial Stability Report flagged $680B+ AI infrastructure debt issuance and $1.1T+ outstanding, with 87% of market contacts citing AI as a risk",
+    "Sharp V-shaped rebounds (AMD +13%, Broadcom +8.8%, CoreWeave +24.7% on earnings) within days of the rout, with Morgan Stanley calling the selloff 'clearly an overreaction'",
+    "Michael Burry escalated Nasdaq-100 and semiconductor put positions on Nov 12-13 calling it a 'bull-trap' akin to 2000, even as Nvidia shares rallied through his warnings"
    ]
   },
   "grid": {
@@ -20,48 +20,60 @@
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "Nuclear/SMR names (NuScale, Oklo, Centrus) down 35-88% from highs with NuScale revenue down 96.6% YoY and analyst commentary calling it 'a death foretold'",
-    "Grid-equipment majors (GE Vernova, Eaton, Vertiv) whipsawed 6-9% in opposite directions within 48 hours on Bernstein bullish note vs. midterm election data-center-moratorium fears",
-    "Nasdaq posted its worst rout in 19 months with Dow down 1,600+ points as investors questioned $1.2 trillion 2027 AI capex forecasts (Boockvar, Cantor's Johnston)",
-    "Jensen Huang's '1,000x more power' claim and Bernstein's continued Outperform calls on GE Vernova/Vertiv/Eaton show bulls still active despite the sector-wide rout"
+    "NuScale down ~60-67% YTD from its Oct-2025 euphoria peak of $53, with Barclays Underweight downgrade and a securities-law investigation (Fool/Tickeron)",
+    "GE Vernova, Vertiv and Bloom Energy lost 10-24% in a single week on AI financing/CoreWeave debt fears despite record backlogs (Fool/cryptobriefing)",
+    "Vertiv -28.3% and Eaton -24.2% peak-to-trough in a month; media calling it the 'AI picks-and-shovels trade caves in' (Benzinga)",
+    "Split KOL views: Barclays/Citi/UBS Sell ratings on NuScale vs. Bernstein calling political fears 'overblown' and Fool recommending Cameco/BWXT on the pullback"
    ]
   },
   "robotics": {
    "theme": "robotics",
-   "extremity": 2,
+   "extremity": 4,
    "kol_unanimity": "split",
-   "direction_2wk": "cooler",
+   "direction_2wk": "hotter",
    "evidence": [
-    "Agility Robotics (AGLT) IPO on Nov 5 swung from $11.49 intraday high to $8.40 low amid a broader AI-stock selloff, an underwhelming debut for the sector's first pure-play liquidity event (mikekalil.com)",
-    "Agility's S-4 disclosed $1.78M in 2025 revenue against a $138.1M net loss, intensifying 'unit economics' skepticism from robotics analysts (TechTimes/Business Insider)",
-    "Serve Robotics down 33% and Symbotic down 14% over three months, with AltIndex noting the sector has 'cooled from the euphoria of late 2025'",
-    "Morgan Stanley and China's NDRC both flag bubble/shakeout risk even while projecting a $5T humanoid TAM, while Foxconn, SoftBank, Nvidia and Amazon continue to fund Agility directly \u2014 a genuine bull/bear split among prominent voices"
+    "Agility Robotics' SPAC debut draws 'uncomfortably thick' hype despite $174K revenue vs $362M loss (Motley Fool, Nov 1)",
+    "Unitree's 460% first-day IPO pop and 8,000x oversubscription anchor ongoing humanoid mania narrative",
+    "VC and MIT's Rodney Brooks publicly call humanoid robotics 'the next financial bubble' / 'doomed to burst' even as Morgan Stanley reiterates a $5T market-by-2050 thesis",
+    "China's NDRC issued a rare official bubble warning over 150+ nearly identical humanoid robot makers, while a Nov 5-6 AI-wide $2.5T selloff briefly rattled the adjacent physical-AI trade before bouncing back"
    ]
   },
   "defense": {
    "theme": "defense",
-   "extremity": -2,
+   "extremity": -1,
    "kol_unanimity": "split",
    "direction_2wk": "cooler",
    "evidence": [
-    "Rheinmetall shares fell 17% and have halved this year after a second guidance cut in three months (Reuters Breakingviews)",
-    "Chamath Palihapitiya's space stock basket surged 1,123% then lost two-thirds of its value, with Palihapitiya invoking Concorde as a cautionary tale (Yahoo Finance/Gokhshtein)",
-    "US defense primes (LMT, RTX, NOC, PLTR) sold off sharply on Democratic midterm sweep fears even as the broader market rallied (CNBC, Investorideas)",
-    "Wolfe Research and Baron Capital publicly called the defense sell-off overdone/a buying opportunity while ARK Invest was simultaneously dumping SpaceX shares amid 100x+ price-to-sales scrutiny (CNBC, TradingKey)"
+    "Midterm sweep triggered a ~6.9% one-day drop in Lockheed Martin and broad defense selloff on budget-cut fears (Bloomberg, Nov 4)",
+    "Wolfe Research called the selloff a buying opportunity citing historical recovery precedent, while sector rebounded by Nov 10 even as broad market fell (CNBC/Investorideas)",
+    "Anduril's valuation leapt from $61B to $90B (and talk of $120B) sparking explicit bubble warnings even from its own CEO and PE investors",
+    "Palantir lost ~$40B in market cap in a single session and sits ~25% below its October record, with CTO filing to sell $50M in stock",
+    "NYSE Arca Defense Index up only 2.76% YTD vs S&P 500's 12.57%, undercutting any euphoria narrative for the theme"
    ]
   },
   "health": {
    "theme": "health",
    "extremity": 3,
-   "kol_unanimity": "bullish",
+   "kol_unanimity": "split",
    "direction_2wk": "hotter",
    "evidence": [
-    "Goldman Sachs strategist calls healthcare \"the next leg of the AI trade\" amid midterm/rotation tailwinds (Nov 7, 2026)",
-    "XLV hit 52-week highs, best-performing sector of the week, up ~14% over 3 months on 'Anything but AI' rotation (Rotation Report, Morningstar)",
-    "Novo Nordisk beat Q3 estimates and raised guidance on GLP-1/Wegovy pill demand, shares +6% (Nov 4, 2026)",
-    "Morningstar flags healthcare as 'third most overvalued' sector just after the rotation inflow, while genomics names (ILMN, TXG, CRSP) sold off sharply the same week \u2014 signaling the euphoria is uneven, not uniform"
+    "Jefferies raised Eli Lilly's price target to $1,700 from $1,610 days after Morgan Stanley went to $1,596 and BofA to $1,557 \u2014 rapid, compressed price-target leapfrogging on a mega-cap",
+    "Lilly and Novo shares rallied even after FDA ordered vision-loss warnings on Mounjaro/Zepbound/Ozempic/Wegovy, a classic 'bad news ignored' euphoria signal",
+    "Healthcare ETF up 23% YTD (2x the S&P) purely as an 'Anything but AI' defensive rotation play, with Morningstar calling the sector the third-most overvalued",
+    "CRISPR Therapeutics hit a 52-week low with a 'strong sell' rating and retail traders posting capitulation-style comments ('raised the white flag and sold'), showing genomics is in a separate, bearish regime from GLP-1 megacaps"
    ]
   },
-  "outlier": {}
+  "outlier": {
+   "theme": "outlier",
+   "extremity": 3,
+   "kol_unanimity": "split",
+   "direction_2wk": "cooler",
+   "evidence": [
+    "Palantir plunged 21% in a week despite record revenue and raised guidance amid 'valuation fatigue,' with Axios running the headline 'Palantir loses its wow factor'",
+    "Motley Fool explicitly stated SpaceX's situation 'shows signs of being a bubble' even as the stock sits 38% below its post-IPO high of $226",
+    "Tesla analyst price targets span an extreme range from $25 (GLJ Research) to $600-800 (Wedbush), alongside speculative SpaceX-Tesla merger rumors",
+    "GE Vernova swung +7% then -6% then -3% within a two-week span as 'rich valuations... leave little room when sentiment cools' despite still-bullish 22-of-30 analyst Strong Buy ratings"
+   ]
+  }
  }
 }

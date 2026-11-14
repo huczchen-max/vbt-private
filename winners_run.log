@@ -1,27 +1,27 @@
 prices 100/177
 prices 177/177
-ai        top5: ALAB:73.0, MU:68.5, DELL:67.9, AI:67.9, AMD:66.9
-grid      top5: BE:66.4, TLN:63.9, PWR:62.7, ITRI:60.6, TT:59.1
-robotics  top5: ZBRA:66.0, EMR:65.6, OUST:57.0, ROK:55.6, DE:53.8
-defense   top5: HEI:63.9, RTX:63.2, SAIC:61.5, VOYG:59.0, LMT:57.3
-health    top5: SDGR:74.2, LLY:73.2, TEM:71.2, GH:69.9, NTRA:69.9
-outlier   top5: PLTR:71.9, HOOD:70.2, GEV:61.7, TSLA:37.1, UBER:36.2
+ai        top5: HPE:70.5, MU:69.8, AI:68.7, AMD:68.4, DELL:68.0
+grid      top5: TLN:67.5, BE:65.1, PWR:63.0, CEG:62.8, ITRI:58.4
+robotics  top5: EMR:66.1, ZBRA:63.6, NOVT:57.6, DE:54.9, CGNX:52.1
+defense   top5: RTX:63.8, CACI:63.4, LMT:62.4, SAIC:61.8, GD:60.9
+health    top5: LLY:75.1, REGN:74.8, SDGR:74.2, TEM:72.7, GH:71.6
+outlier   top5: PLTR:70.0, HOOD:69.3, GEV:56.4, TSLA:39.3, UBER:37.9
 status=ok
-ai/ALAB: llm 78 (HIGH) — Astera is riding a genuine mid-cycle AI-fabric upgrade (Scorpio crossing $1B annualized run-rate with new customers/platforms still ramping and optical/custom/UALink TAM ahead), but severe customer concentration and rising Broadcom/Marvell competition cap moat durability and conviction.
-ai/MU: llm 86 (HIGH) — Micron sits at the epicenter of a multi-year AI-driven HBM/DRAM supply crunch with record margins and relentlessly rising estimates, though Chinese capacity ramp and heavy capex introduce cycle-timing risk.
-ai/DELL: llm 78 (HIGH) — Dell's AI server backlog and orders are compounding at record rates with raised guidance, making it a credible AI infrastructure share-gainer despite thin, memory-cost-exposed hardware margins.
-grid/BE: llm 74 (MEDIUM) — Bloom is the clearest picks-and-shovels beneficiary of AI-driven grid constraints with accelerating revenue and estimates, but customer concentration, dilution, and negative free cash flow cap conviction at current valuation.
-grid/TLN: llm 72 (MEDIUM) — Talen's nuclear fleet and hyperscaler PPAs position it to capture outsized share of surging AI data-center power demand with raised multi-year EBITDA/FCF guidance, but leverage, GAAP earnings volatility, and a stock trend not yet confirming the fundamentals warrant medium rather than high conviction.
-grid/PWR: llm None (None) — None
-robotics/ZBRA: llm 58 (MEDIUM) — Zebra is a credible 'picks-and-shovels' play on physical AI/automation via machine vision and RFID, but near-term memory-cost margin compression and a post-earnings selloff cloud the setup.
-robotics/EMR: llm 58 (MEDIUM) — Emerson is a steady, moat-protected automation incumbent benefiting from AI-enabled/software-defined automation tailwinds and raised guidance, but it's a derivative rather than disruptive robotics play with regional demand softness.
-robotics/OUST: llm 66 (MEDIUM) — Ouster is in the early stage of a Rev8/Stereolabs platform cycle driving accelerating, diversifying robotics-vertical revenue, but near-term margin compression, dilution, and still-negative EPS cap conviction at medium despite strong sell-side target upgrades.
-defense/HEI: llm 80 (HIGH) — HEICO is riding a structural, multi-year defense/aerospace rearmament cycle with record backlogs, a durable FAA-certification moat, and broad upward estimate revisions, though valuation is stretched and growth is increasingly M&A-dependent.
-defense/RTX: llm 78 (HIGH) — Record $340B backlog, accelerating defense munitions output, and a scaling GTF engine franchise are driving raised guidance and upward estimate revisions despite lingering powder-metal costs.
-defense/SAIC: llm 64 (MEDIUM) — SAIC is inflecting from revenue contraction to growth on strong intel/space/radar bookings and margin expansion (Project ORBIT), but modest FY27 growth guidance and a post-rally valuation cap upside.
-health/SDGR: llm 76 (HIGH) — Schrödinger's physics+agentic-AI platform is entering a fresh product cycle (Bunsen) validated by a BMS at-scale deployment, with reaccelerating ACV growth and raised guidance, though profitability and concentration risks temper conviction.
-health/LLY: llm 88 (HIGH) — Lilly is compounding a dominant, still-accelerating injectable incretin franchise with a newly launching oral GLP-1 cycle, backed by broad analyst upgrades, despite policy-driven pricing and CFO-turnover risk.
-health/TEM: llm 79 (HIGH) — Tempus is compounding through an accelerating oncology/data-licensing cycle with raised guidance, broadening analyst upgrades, and a TAM-expanding MRD acquisition, though litigation and insider selling warrant monitoring.
-outlier/PLTR: llm 80 (HIGH) — Palantir's Sovereign AI wave is driving accelerating growth, 165% net dollar retention, and an expanding TAM/moat that together outweigh valuation and insider-selling risk.
-outlier/HOOD: llm None (None) — None
-outlier/GEV: llm 69 (MEDIUM) — GEV sits mid-cycle in a supply-constrained gas-turbine/grid supercycle with real pricing power and a $197B backlog, but decelerating sequential bookings growth, hyperscaler-capex sentiment risk, and debt-funded M&A cap conviction despite relentless guidance raises.
+ai/HPE: llm 76 (HIGH) — HPE is in the early-to-mid innings of a dual AI-server-and-Juniper-networking cycle with raised guidance, record backlog, and share gains in sovereign/enterprise AI, while the recent 40% macro-driven selloff has reset valuation well below analyst targets.
+ai/MU: llm None (None) — None
+ai/AI: llm None (None) — None
+grid/TLN: llm None (None) — None
+grid/BE: llm 76 (MEDIUM) — Bloom is riding an early-stage AI/grid-constraint power cycle with accelerating demand and raised guidance, but cash burn, customer concentration, and convertible-note dilution temper conviction despite strong estimate momentum.
+grid/PWR: llm 71 (MEDIUM) — Quanta is the clearest full-stack beneficiary of the grid + AI-load capex supercycle with record backlog and repeated beat-and-raise quarters, but the stock's premium valuation and recent underperformance vs. the grid theme ETF signal the market is now debating multiple rather than fundamentals.
+robotics/EMR: llm 74 (MEDIUM) — Emerson's AspenTech-powered software-defined automation stack is driving accelerating orders, margin expansion, and broad sell-side upgrades, but rich valuation and steady insider selling cap conviction.
+robotics/ZBRA: llm None (None) — None
+robotics/NOVT: llm 54 (MEDIUM) — Robotics/automation segment is a genuine accelerating sub-cycle with strong design wins and TAM expansion, but near-term estimate cuts, a UK quality-driven production halt, and acquisition dilution offset the long-term secular tailwind.
+defense/RTX: llm 78 (HIGH) — Record $340B backlog, back-to-back guidance raises, and surging international defense bookings confirm a multi-year product and estimate upcycle with durable cost-plus pricing power.
+defense/CACI: llm 71 (MEDIUM) — CACI is a share-gaining, mission-critical defense IT/tech prime riding a record backlog and raised guidance, but modest organic growth and near-total federal concentration temper upside relative to its already-rich valuation.
+defense/LMT: llm 71 (MEDIUM) — Record backlog and a de-risked 10-year F-35 agreement are driving broad analyst upgrades and beat-and-raise quarters, offsetting softer free cash flow and the loss of next-gen fighter programs.
+health/LLY: llm 90 (HIGH) — Lilly's GLP-1/obesity franchise is still accelerating with triple guidance raises, a new oral leg (Foundayo) just launching, and widening share versus Novo, making it the clearest next-leg compounder in the health theme despite pricing-pressure and concentration risks.
+health/REGN: llm 78 (HIGH) — Regeneron's EYLEA HD and Dupixent are more than offsetting legacy EYLEA biosimilar erosion, driving record growth and sharply rising analyst estimates even as the pipeline (itepekimab, linvoseltamab, Sanofi next-gen antibodies) adds fresh optionality.
+health/SDGR: llm 68 (MEDIUM) — Schrödinger's Bunsen agentic-AI launch and accelerating hosted-software transition are reigniting growth and estimate revisions, but core software deceleration and customer concentration temper conviction.
+outlier/PLTR: llm 68 (MEDIUM) — Palantir's AIP/Sovereign-AI cycle is driving record commercial growth and share gains, but decelerating bookings and nosebleed valuation cap near-term upside despite rising estimates.
+outlier/HOOD: llm 58 (MEDIUM) — Robinhood's prediction-markets/on-chain pivot is igniting a new product cycle just as legacy crypto trading fades, creating a transitional but unproven growth story.
+outlier/GEV: llm 78 (HIGH) — GE Vernova's gas-turbine oligopoly is sold out into 2030-31 with rising prices and guidance raised every quarter in 2026, yet the stock's underperformance reflects AI-financing jitters rather than a broken fundamental story.

@@ -1,27 +1,35 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-21",
  "model": "claude-sonnet-5",
- "generated_utc": "2026-11-14T01:45:15+00:00",
+ "generated_utc": "2026-11-21T02:49:22+00:00",
  "regime": {
-  "regime": "NEUTRAL",
+  "regime": "RISK-OFF",
   "reasons": [
-   "Hyperscaler capex guidance remains record-strong and accelerating into 2027, a structural tailwind, but semiconductor trend is unconfirmed \u2014 equipment stocks fell 6-7% on Nov 13 just two days after a post-midterm-election chip selloff/rebound",
-   "NVDA CEO Jensen Huang resigned amid a China chip-smuggling scandal, triggering fresh bipartisan pressure for tighter export controls \u2014 unresolved idiosyncratic/political risk at the sector bellwether",
-   "NVIDIA earnings (Nov 17) is an imminent binary catalyst for the whole AI-infra complex, days away \u2014 poor entry timing ahead of resolution",
-   "Fed's Dec 9 FOMC decision is priced for a 25bp hike (tightening, not easing), adding a macro headwind for AI-capex-sensitive growth names"
+   "Semis in active freefall (NVDA worst week since 2008, SOX -30% from peak) with no confirmed trend reversal/basing signal yet",
+   "Fund manager sentiment flipped bearish on AI capex (52% expect a hyperscaler cut) amid hyperscaler debt-funded spending strain",
+   "Unresolved Nvidia/AMD China chip-smuggling scandal and congressional probes creating daily headline/export-control volatility",
+   "FOMC meeting (Dec 9) with fresh dot plot is a near-term macro catalyst risk still pending"
   ],
   "raw_ok": true
  },
  "verdicts": {
-  "NVDA": {
+  "AMD": {
+   "verdict": "VETO",
+   "size_mult": 0.0,
+   "reasons": [
+    "Nov 19-20, 2026: Hunterbrook Media short-seller report alleges undisclosed China export-control violations (firmware to blacklisted IEIT Systems) and >20% revenue concentration in China/Hong Kong, triggering a 7.7% one-day stock drop",
+    "Multiple law firms (Portnoy, Kirby McInerney, Levi & Korsinsky, SBS, DJS) announced active securities-fraud investigations into AMD within the last 48 hours over alleged misleading export-control disclosures",
+    "No earnings within 14 days (next report ~Feb 2, 2027) and no dilution/guidance-cut/customer-loss events found, but the fresh fraud-allegation/regulatory red flag is disqualifying per veto criteria"
+   ],
+   "raw_ok": true
+  },
+  "TSM": {
    "verdict": "CAUTION",
    "size_mult": 0.5,
    "reasons": [
-    "Earnings confirmed for Nov 17, 2026 \u2014 within 14 days",
-    "CEO Jensen Huang resigned Nov 12, 2026 amid scandal; board launched independent investigation",
-    "Unverified short-seller (Culper Research) allegations of illegal China chip diversion via Southeast Asian customer Megaspeed",
-    "Multiple Congressional committees (House Foreign Affairs, CCP Select Committee, Intelligence, Senate Banking) have summoned ex-CEO Huang and Commerce Secretary Lutnick to testify on export-control/national-security concerns",
-    "Active shareholder class action referenced alongside board investigation"
+    "Nvidia CEO resignation (Nov 17, 2026) reignited customer-concentration risk \u2014 Nvidia is ~19-22% of TSM revenue",
+    "Employee data breach disclosed Nov 12, 2026, now under third-party/law-firm investigation (no evidence of operational, customer, or financial-statement impact)",
+    "No earnings within 14 days (next report ~Jan 2027); no dilution/share offering; no guidance cut; clean Deloitte auditor opinion with no going-concern issue"
    ],
    "raw_ok": true
   }

@@ -1,26 +1,23 @@
-symbol directory: 6179 common-stock symbols
-scanned 200/6179
-scanned 1200/6179
-scanned 2200/6179
-scanned 3200/6179
+symbol directory: 6170 common-stock symbols
+scanned 200/6170
+scanned 1200/6170
+scanned 2200/6170
+scanned 3200/6170
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6179
-scanned 5200/6179
-scanned 6179/6179
-analyzed: 2675 symbols past liquidity floors
-BOTTOM: 12, BREAKOUT: 10, watchlist: 215
-  BOTTOM SPEC    AMLX   Amylyx Pharmaceuticals, In dd -21.7%  cap 3.9B  27.6% to 52w high
-  BOTTOM QUALITY AVO    Mission Produce, Inc.      dd -20.1%  cap 1.0B  25.2% to 52w high
-  BOTTOM QUALITY BRZE   Braze, Inc.                dd 0.0%  cap 5.3B  -1.6% to 52w high
-  BOTTOM QUALITY CTSH   Cognizant Technology Solut dd -24.6%  cap 28.2B  32.7% to 52w high
-  BOTTOM SPEC    GRAL   GRAIL, Inc.                dd -19.2%  cap 5.2B  23.8% to 52w high
-  BOTTOM QUALITY GSHD   Goosehead Insurance, Inc.  dd -40.9%  cap 1.6B  69.2% to 52w high
-  BOTTOM QUALITY HPE    Hewlett Packard Enterprise dd -34.3%  cap 64.1B  52.1% to 52w high
-  BOTTOM QUALITY IBM    International Business Mac dd -17.9%  cap 233.6B  21.8% to 52w high
-  BOTTOM QUALITY MTSI   MACOM Technology Solutions dd -40.7%  cap 17.7B  68.7% to 52w high
-  BOTTOM SPEC    RYTM   Rhythm Pharmaceuticals, In dd -0.5%  cap 8.0B  0.5% to 52w high
-  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd 0.0%  cap 1.5B  -2.0% to 52w high
-  BOTTOM QUALITY SPOT   Spotify Technology S.A.    dd 0.0%  cap 125.9B  3.8% to 52w high
+scanned 4200/6170
+scanned 5200/6170
+
+1 Failed download:
+['YFOR']: YFException("The following 'Stock Splits' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-11-19 00:00:00-05:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
+scanned 6170/6170
+analyzed: 2616 symbols past liquidity floors
+BOTTOM: 6, BREAKOUT: 2, watchlist: 216
+  BOTTOM QUALITY BRZE   Braze, Inc.                dd -0.8%  cap 5.3B  0.8% to 52w high
+  BOTTOM SPEC    CBRL   Cracker Barrel Old Country dd 0.0%  cap 1.6B  -1.0% to 52w high
+  BOTTOM QUALITY COMP   Compass, Inc.              dd -27.7%  cap 7.4B  38.3% to 52w high
+  BOTTOM SPEC    ECHO   EchoStar Corporation       dd -38.6%  cap 24.5B  62.9% to 52w high
+  BOTTOM SPEC    ESTA   Establishment Labs Holding dd -25.3%  cap 2.1B  33.9% to 52w high
+  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd -0.8%  cap 1.4B  0.8% to 52w high
 status=ok

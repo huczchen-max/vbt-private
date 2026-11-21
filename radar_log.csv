@@ -562,3 +562,16 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-11-14,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,12.26,0.0,-52.1,-2.0,12.01,1.5,Consumer Cyclical,Restaurants,81.73333,-23.9005,2.1,2.8,-0.06
 2026-11-14,BOTTOM,SPOT,Spotify Technology S.A.,QUALITY,612.63,0.0,-39.4,3.8,635.75,125.9,Communication Services,Internet Content & Information,37.332726,35.79299,16.3,15.7,1.42
 2026-11-14,BREAKOUT,WRB,W.R. Berkley Corporation,SPEC,77.44,0.0,-17.2,-1.9,75.98,28.8,Financial Services,Insurance - Property & Casualty,16.372093,15.959213,-0.8,12.5,2.49
+2026-11-21,DROP,JBIO,,,15.31,-40.7,-47.8,68.6,25.81,,,,,,,,
+2026-11-21,GRADUATED,CRAI,,,220.95,0.0,-35.5,-3.0,214.27,,,,,,,,
+2026-11-21,GRADUATED,CBRL,,,70.75,0.0,-48.9,-1.0,70.05,,,,,,,,
+2026-11-21,GRADUATED,BRZE,,,46.28,-0.8,-43.4,0.8,46.64,,,,,,,,
+2026-11-21,GRADUATED,SG,,,12.16,-0.8,-52.1,0.8,12.26,,,,,,,,
+2026-11-21,BREAKOUT,BILL,"BILL Holdings, Inc.",QUALITY,61.44,0.0,-42.0,-8.9,55.98,5.3,Technology,Software - Application,118.15385,13.214949,12.5,3.1,0.15
+2026-11-21,BOTTOM,BRZE,"Braze, Inc.",QUALITY,46.28,-0.8,-43.4,0.8,46.64,5.3,Technology,Software - Application,,47.13071,26.2,-13.6,0.2
+2026-11-21,BOTTOM,CBRL,Cracker Barrel Old Country Stor,SPEC,70.75,0.0,-48.9,-1.0,70.05,1.6,Consumer Cyclical,Restaurants,50.535717,32.160988,-2.2,1.0,0.04
+2026-11-21,BOTTOM,COMP,"Compass, Inc.",QUALITY,9.64,-27.7,-42.2,38.3,13.33,7.4,Real Estate,Real Estate Services,64.26666,17.182684,111.1,1.1,0.87
+2026-11-21,BREAKOUT,CRAI,"CRA International,Inc.",QUALITY,220.95,0.0,-35.5,-3.0,214.27,1.4,Industrials,Consulting Services,27.757538,22.975729,15.6,6.3,0.05
+2026-11-21,BOTTOM,ECHO,EchoStar Corporation,SPEC,84.26,-38.6,-38.7,62.9,137.23,24.5,Communication Services,Telecom Services,3.0551126,4.9093037,-68.8,81.3,-2.28
+2026-11-21,BOTTOM,ESTA,Establishment Labs Holdings Inc,SPEC,69.14,-25.3,-36.1,33.9,92.58,2.1,Healthcare,Medical Devices,,-317.88504,33.9,-14.6,-0.0
+2026-11-21,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,12.16,-0.8,-52.1,0.8,12.26,1.4,Consumer Cyclical,Restaurants,81.066666,-23.705551,2.1,2.8,-0.06

@@ -1,22 +1,6 @@
 {
  "open": [
   {
-   "ticker": "LLY",
-   "strategy": "BULL_PUT_SPREAD",
-   "regime": "BULL-NORMAL",
-   "tag": "QUALITY",
-   "experimental": false,
-   "opened": "2026-10-31",
-   "exp": "2026-12-04",
-   "dte": 33,
-   "short_k": 1280.0,
-   "long_k": 1205.0,
-   "credit": 5.14,
-   "width": 75.0,
-   "max_loss": 69.86,
-   "spot_open": 1417.54
-  },
-  {
    "ticker": "PWR",
    "strategy": "BULL_PUT_SPREAD",
    "regime": "BULL-NORMAL",
@@ -31,22 +15,6 @@
    "width": 30.0,
    "max_loss": 22.8,
    "spot_open": 540.9
-  },
-  {
-   "ticker": "RTX",
-   "strategy": "BULL_PUT_SPREAD",
-   "regime": "BULL-NORMAL",
-   "tag": "QUALITY",
-   "experimental": false,
-   "opened": "2026-11-07",
-   "exp": "2026-12-18",
-   "dte": 40,
-   "short_k": 170.0,
-   "long_k": 160.0,
-   "credit": 0.81,
-   "width": 10.0,
-   "max_loss": 9.19,
-   "spot_open": 189.53
   },
   {
    "ticker": "NET",
@@ -127,6 +95,86 @@
    "width": 10.0,
    "max_loss": 7.65,
    "spot_open": 143.49
+  },
+  {
+   "ticker": "P",
+   "strategy": "BULL_PUT_SPREAD",
+   "regime": "BULL-NORMAL",
+   "tag": "QUALITY",
+   "experimental": false,
+   "opened": "2026-11-28",
+   "exp": "2027-01-15",
+   "dte": 47,
+   "short_k": 90.0,
+   "long_k": 85.0,
+   "credit": 1.5,
+   "width": 5.0,
+   "max_loss": 3.5,
+   "spot_open": 101.46
+  },
+  {
+   "ticker": "DE",
+   "strategy": "BULL_PUT_SPREAD",
+   "regime": "BULL-NORMAL",
+   "tag": "QUALITY",
+   "experimental": false,
+   "opened": "2026-11-28",
+   "exp": "2027-01-15",
+   "dte": 47,
+   "short_k": 590.0,
+   "long_k": 560.0,
+   "credit": 3.65,
+   "width": 30.0,
+   "max_loss": 26.35,
+   "spot_open": 654.24
+  },
+  {
+   "ticker": "RTX",
+   "strategy": "BULL_PUT_SPREAD",
+   "regime": "BULL-NORMAL",
+   "tag": "QUALITY",
+   "experimental": false,
+   "opened": "2026-11-28",
+   "exp": "2027-01-15",
+   "dte": 47,
+   "short_k": 180.0,
+   "long_k": 170.0,
+   "credit": 1.07,
+   "width": 10.0,
+   "max_loss": 8.93,
+   "spot_open": 198.48
+  },
+  {
+   "ticker": "LLY",
+   "strategy": "BULL_PUT_SPREAD",
+   "regime": "BULL-NORMAL",
+   "tag": "QUALITY",
+   "experimental": false,
+   "opened": "2026-11-28",
+   "exp": "2027-01-15",
+   "dte": 47,
+   "short_k": 1260.0,
+   "long_k": 1180.0,
+   "credit": 10.9,
+   "width": 80.0,
+   "max_loss": 69.1,
+   "spot_open": 1392.38
+  },
+  {
+   "ticker": "SMCI",
+   "strategy": "CASH_SECURED_PUT",
+   "regime": "RANGE",
+   "tag": "?",
+   "experimental": false,
+   "opened": "2026-11-28",
+   "exp": "2027-01-15",
+   "dte": 47,
+   "short_k": 20.0,
+   "long_k": null,
+   "credit": 1.41,
+   "width": null,
+   "max_loss": 18.59,
+   "spot_open": 23.76
   }
  ]
 }

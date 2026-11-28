@@ -1,31 +1,30 @@
 prices 100/196
 prices 196/196
-tracked 194 names; doors {'IN-TREND': 79, 'BROKEN': 105, 'ENTRY-BOTTOM': 9, 'ENTRY-MACROSS': 1}; events this run 12
-  ai        etf=IN-TREND/Mixed breadth intact 63.9% uptrend 39.3%
-  grid      etf=BROKEN/Mixed breadth intact 15.6% uptrend 6.2%
-  robotics  etf=BROKEN/Mixed breadth intact 53.8% uptrend 30.8%
-  defense   etf=BROKEN/Uptrend breadth intact 19.4% uptrend 25.8%
+tracked 194 names; doors {'IN-TREND': 75, 'BROKEN': 109, 'ENTRY-BOTTOM': 8, 'ENTRY-MACROSS': 2}; events this run 10
+  ai        etf=IN-TREND/Mixed breadth intact 59.0% uptrend 39.3%
+  grid      etf=BROKEN/Mixed breadth intact 18.8% uptrend 9.4%
+  robotics  etf=BROKEN/Mixed breadth intact 38.5% uptrend 30.8%
+  defense   etf=BROKEN/Mixed breadth intact 19.4% uptrend 29.0%
   health    etf=IN-TREND/Uptrend breadth intact 58.1% uptrend 41.9%
-  outlier   etf=IN-TREND/Uptrend breadth intact 42.9% uptrend 14.3%
+  outlier   etf=IN-TREND/Uptrend breadth intact 28.6% uptrend 14.3%
 status=ok
-exhaustion: 37 symbols, 1 flagged (score>=2)
-  HOOD   BOTTOM-exhaustion 2/5: extension_bottom_decile, down_streak_6plus
-ai        extremity -4 (split, hotter)
-grid      extremity -4 (split, hotter)
-robotics  extremity -1 (split, cooler)
-defense   extremity -2 (split, cooler)
-health    extremity 3 (split, hotter)
-outlier   extremity -2 (split, cooler)
-skip HPE: earnings within 14d
-skip AMD: vol gate (IV-RV -0.388)
-skip DE: earnings within 14d
-skip LMT: vol gate (IV-RV -0.047)
-skip REGN: vol gate (IV-RV -0.155)
-skip SDGR: vol gate (IV-RV -0.1909)
-options engine: 5 new proposals, 8 open, 18 journal events
-  BULL_PUT_SPREAD   NET    [BULL-NORMAL] exp 2026-12-31 short 245.0 credit 4.45 max_loss 10.55
-  BULL_PUT_SPREAD   ZBRA   [BULL-NORMAL] exp 2026-12-18 short 270.0 credit 1.55 max_loss 8.45
-  BULL_PUT_SPREAD   EMR    [BULL-NORMAL] exp 2026-12-31 short 135.0 credit 1.16 max_loss 8.84
-  BULL_PUT_SPREAD   CACI   [BULL-NORMAL] exp 2026-12-18 short 530.0 credit 2.97 max_loss 27.03
-  BULL_PUT_SPREAD   PLTR   [BULL-NORMAL] exp 2026-12-31 short 130.0 credit 2.35 max_loss 7.65
-thesis-paper: equity $73,258, budget $29,303, book ['MU', 'GH', 'LLY', 'BE'], options sized 4 ($5,099/5,861)
+exhaustion: 37 symbols, 0 flagged (score>=2)
+ai        extremity -4 (split, cooler)
+grid      extremity -3 (split, cooler)
+robotics  extremity 4 (split, hotter)
+defense   extremity 3 (split, hotter)
+health    extremity 2 (split, hotter)
+outlier   extremity -3 (split, cooler)
+skip HPE: vol gate (IV-RV -0.4731)
+skip ITRI: no usable chain for BULL_PUT_SPREAD
+skip LMT: vol gate (IV-RV -0.0631)
+skip REGN: vol gate (IV-RV -0.2063)
+skip SDGR: vol gate (IV-RV -0.1208)
+skip HOOD: vol gate (IV-RV -0.0922)
+options engine: 5 new proposals, 11 open, 13 journal events
+  BULL_PUT_SPREAD   P      [BULL-NORMAL] exp 2027-01-15 short 90.0 credit 1.5 max_loss 3.5
+  BULL_PUT_SPREAD   DE     [BULL-NORMAL] exp 2027-01-15 short 590.0 credit 3.65 max_loss 26.35
+  BULL_PUT_SPREAD   RTX    [BULL-NORMAL] exp 2027-01-15 short 180.0 credit 1.07 max_loss 8.93
+  BULL_PUT_SPREAD   LLY    [BULL-NORMAL] exp 2027-01-15 short 1260.0 credit 10.9 max_loss 69.1
+  CASH_SECURED_PUT  SMCI   [RANGE] exp 2027-01-15 short 20.0 credit 1.41 max_loss 18.59
+thesis-paper: equity $78,622, budget $31,449, book ['MU', 'GH', 'LLY', 'BE'], options sized 6 ($6,179/6,290)

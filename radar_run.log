@@ -1,23 +1,36 @@
-symbol directory: 6170 common-stock symbols
-scanned 200/6170
-scanned 1200/6170
-scanned 2200/6170
-scanned 3200/6170
+symbol directory: 6165 common-stock symbols
+scanned 200/6165
+scanned 1200/6165
+scanned 2200/6165
+scanned 3200/6165
 
 1 Failed download:
 ['MFICL']: YFException("The following 'Dividends' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-09-01 00:00:00-04:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 4200/6170
-scanned 5200/6170
+scanned 4200/6165
+
+1 Failed download:
+['SNTI']: YFException("The following 'Stock Splits' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-11-19 00:00:00-05:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
+scanned 5200/6165
 
 1 Failed download:
 ['YFOR']: YFException("The following 'Stock Splits' events are out-of-range, did not expect with interval 1wk: DatetimeIndex(['2026-11-19 00:00:00-05:00'],\n              dtype='datetime64[s, America/New_York]', freq=None)")
-scanned 6170/6170
-analyzed: 2616 symbols past liquidity floors
-BOTTOM: 6, BREAKOUT: 2, watchlist: 216
-  BOTTOM QUALITY BRZE   Braze, Inc.                dd -0.8%  cap 5.3B  0.8% to 52w high
-  BOTTOM SPEC    CBRL   Cracker Barrel Old Country dd 0.0%  cap 1.6B  -1.0% to 52w high
-  BOTTOM QUALITY COMP   Compass, Inc.              dd -27.7%  cap 7.4B  38.3% to 52w high
-  BOTTOM SPEC    ECHO   EchoStar Corporation       dd -38.6%  cap 24.5B  62.9% to 52w high
-  BOTTOM SPEC    ESTA   Establishment Labs Holding dd -25.3%  cap 2.1B  33.9% to 52w high
-  BOTTOM QUALITY SG     Sweetgreen, Inc.           dd -0.8%  cap 1.4B  0.8% to 52w high
+scanned 6165/6165
+analyzed: 2634 symbols past liquidity floors
+BOTTOM: 16, BREAKOUT: 11, watchlist: 219
+  BOTTOM QUALITY AVTR   Avantor, Inc.              dd -15.2%  cap 9.9B  17.9% to 52w high
+  BOTTOM SPEC    BH     Biglari Holdings Inc.      dd -21.5%  cap 1.2B  27.4% to 52w high
+  BOTTOM QUALITY BRZE   Braze, Inc.                dd -0.3%  cap 5.3B  0.3% to 52w high
+  BOTTOM SPEC    CBRL   Cracker Barrel Old Country dd 0.0%  cap 1.7B  -7.6% to 52w high
+  BOTTOM QUALITY CSGP   CoStar Group, Inc.         dd -48.8%  cap 14.0B  97.0% to 52w high
+  BOTTOM QUALITY PAHC   Phibro Animal Health Corpo dd -40.2%  cap 1.4B  67.3% to 52w high
+  BOTTOM SPEC    PRKS   United Parks & Resorts Inc dd -18.4%  cap 1.8B  22.5% to 52w high
+  BOTTOM SPEC    RYTM   Rhythm Pharmaceuticals, In dd 0.0%  cap 8.3B  -3.8% to 52w high
+  BOTTOM QUALITY SNAP   Snap Inc.                  dd -36.8%  cap 9.0B  58.2% to 52w high
+  BOTTOM QUALITY SONY   Sony Group Corporation     dd -0.2%  cap 163.0B  4.9% to 52w high
+  BOTTOM QUALITY SPOT   Spotify Technology S.A.    dd 0.0%  cap 127.5B  -1.2% to 52w high
+  BOTTOM QUALITY TEAM   Atlassian Corporation      dd -35.9%  cap 36.8B  56.0% to 52w high
+  BOTTOM QUALITY TREX   Trex Company, Inc.         dd -0.3%  cap 5.5B  0.3% to 52w high
+  BOTTOM QUALITY TRUP   Trupanion, Inc.            dd 0.0%  cap 1.7B  -2.0% to 52w high
+  BOTTOM QUALITY VEEV   Veeva Systems Inc.         dd -15.9%  cap 44.0B  18.9% to 52w high
+  BOTTOM SPEC    VRDN   Viridian Therapeutics, Inc dd 0.0%  cap 4.4B  -14.3% to 52w high
 status=ok

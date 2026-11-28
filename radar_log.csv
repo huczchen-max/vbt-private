@@ -575,3 +575,43 @@ date,signal,ticker,name,tag,close,dd_pct,max_dd_26w_pct,to_high_pct,prior_52w_hi
 2026-11-21,BOTTOM,ECHO,EchoStar Corporation,SPEC,84.26,-38.6,-38.7,62.9,137.23,24.5,Communication Services,Telecom Services,3.0551126,4.9093037,-68.8,81.3,-2.28
 2026-11-21,BOTTOM,ESTA,Establishment Labs Holdings Inc,SPEC,69.14,-25.3,-36.1,33.9,92.58,2.1,Healthcare,Medical Devices,,-317.88504,33.9,-14.6,-0.0
 2026-11-21,BOTTOM,SG,"Sweetgreen, Inc.",QUALITY,12.16,-0.8,-52.1,0.8,12.26,1.4,Consumer Cyclical,Restaurants,81.066666,-23.705551,2.1,2.8,-0.06
+2026-11-28,DROP,CAR,,,144.54,-70.7,-79.5,241.7,493.86,,,,,,,,
+2026-11-28,GRADUATED,ENOV,,,29.39,-1.0,-46.2,3.0,30.27,,,,,,,,
+2026-11-28,DROP,TTI,,,6.29,-46.1,-54.4,85.5,11.67,,,,,,,,
+2026-11-28,DROP,ALK,,,37.45,-37.0,-43.3,58.7,59.45,,,,,,,,
+2026-11-28,GRADUATED,ULCC,,,8.16,0.0,-39.9,-3.8,7.85,,,,,,,,
+2026-11-28,GRADUATED,VRDN,,,38.82,0.0,-52.6,-14.3,33.26,,,,,,,,
+2026-11-28,GRADUATED,SONY,,,27.97,-0.2,-34.6,4.9,29.35,,,,,,,,
+2026-11-28,GRADUATED,TRUP,,,38.77,0.0,-60.7,-2.0,38.0,,,,,,,,
+2026-11-28,GRADUATED,TREX,,,54.58,-0.3,-42.1,0.3,54.74,,,,,,,,
+2026-11-28,GRADUATED,RYTM,,,120.23,0.0,-25.5,-3.8,115.63,,,,,,,,
+2026-11-28,GRADUATED,SPOT,,,620.38,0.0,-39.4,-1.2,612.63,,,,,,,,
+2026-11-28,GRADUATED,BRZE,,,46.51,-0.3,-43.4,0.3,46.64,,,,,,,,
+2026-11-28,GRADUATED,CBRL,,,76.59,0.0,-48.9,-7.6,70.75,,,,,,,,
+2026-11-28,BREAKOUT,ATR,"AptarGroup, Inc.",QUALITY,146.35,0.0,-28.8,-2.0,143.47,9.3,Healthcare,Medical Instruments & Supplies,35.350243,23.598673,6.0,6.7,0.26
+2026-11-28,BOTTOM,AVTR,"Avantor, Inc.",QUALITY,14.66,-15.2,-40.5,17.9,17.29,9.9,Healthcare,Medical Instruments & Supplies,29.918367,16.528366,4.6,5.1,0.44
+2026-11-28,BOTTOM,BH,Biglari Holdings Inc.,SPEC,366.77,-21.5,-37.2,27.4,467.14,1.2,Consumer Cyclical,Restaurants,,-49.230873,12.4,-5.6,-0.0
+2026-11-28,BOTTOM,BRZE,"Braze, Inc.",QUALITY,46.51,-0.3,-43.4,0.3,46.64,5.3,Technology,Software - Application,,47.364937,26.2,-13.6,0.2
+2026-11-28,BOTTOM,CBRL,Cracker Barrel Old Country Stor,SPEC,76.59,0.0,-48.9,-7.6,70.75,1.7,Consumer Cyclical,Restaurants,54.70714,33.464703,-2.2,1.0,0.04
+2026-11-28,BREAKOUT,COKE,"Coca-Cola Consolidated, Inc.",QUALITY,219.99,0.0,-17.2,-1.8,216.07,14.6,Consumer Defensive,Beverages - Non-Alcoholic,25.66978,5.6494613,5.4,7.5,0.37
+2026-11-28,BOTTOM,CSGP,"CoStar Group, Inc.",QUALITY,34.92,-48.8,-70.8,97.0,68.8,14.0,Real Estate,Real Estate Services,81.2093,19.747557,14.1,4.9,0.44
+2026-11-28,BREAKOUT,CSL,Carlisle Companies Incorporated,QUALITY,414.41,0.0,-23.2,-2.3,404.92,16.0,Industrials,Building Products & Equipment,23.22926,17.21611,8.6,13.8,0.58
+2026-11-28,BREAKOUT,CVCO,"Cavco Industries, Inc.",QUALITY,710.08,0.0,-25.2,-1.7,697.76,5.4,Consumer Cyclical,Residential Construction,30.088137,23.932455,17.9,7.7,0.16
+2026-11-28,BREAKOUT,DLTR,"Dollar Tree, Inc.",QUALITY,148.53,0.0,-22.3,-5.8,139.95,27.6,Consumer Defensive,Discount Stores,17.98184,18.601244,6.9,7.8,1.16
+2026-11-28,BREAKOUT,EXLS,"ExlService Holdings, Inc.",QUALITY,45.76,0.0,-42.7,-5.4,43.3,6.9,Technology,Information Technology Services,27.401197,17.191116,19.7,11.1,0.31
+2026-11-28,BREAKOUT,LKFT,Lakefront Biotherapeutics,SPEC,36.0,0.0,-28.7,-4.4,34.4,2.4,Healthcare,Biotechnology,2.5824964,-23.109324,-81.5,60.2,0.14
+2026-11-28,BOTTOM,PAHC,Phibro Animal Health Corporatio,QUALITY,34.22,-40.2,-45.3,67.3,57.27,1.4,Healthcare,Drug Manufacturers - Specialty & Generic,13.633467,8.816452,6.3,6.7,-0.01
+2026-11-28,BOTTOM,PRKS,United Parks & Resorts Inc.,SPEC,39.53,-18.4,-39.8,22.5,48.44,1.8,Consumer Cyclical,Leisure,15.262548,9.21209,-1.1,7.6,0.13
+2026-11-28,BREAKOUT,PVH,PVH Corp.,SPEC,98.75,0.0,-24.9,-4.8,94.05,4.6,Consumer Cyclical,Apparel Manufacturing,,7.8997912,-3.2,-1.9,0.53
+2026-11-28,BOTTOM,RYTM,"Rhythm Pharmaceuticals, Inc.",SPEC,120.23,0.0,-25.5,-3.8,115.63,8.3,Healthcare,Biotechnology,,-92.61214,79.6,-69.0,-0.02
+2026-11-28,BREAKOUT,SKY,"Champion Homes, Inc.",QUALITY,99.38,0.0,-23.2,-2.1,97.34,5.3,Consumer Cyclical,Residential Construction,29.489614,23.724209,6.2,6.8,0.14
+2026-11-28,BOTTOM,SNAP,Snap Inc.,QUALITY,5.19,-36.8,-55.9,58.2,8.21,9.0,Communication Services,Internet Content & Information,,6.5977654,14.3,-2.3,0.87
+2026-11-28,BOTTOM,SONY,Sony Group Corporation,QUALITY,27.97,-0.2,-34.6,4.9,29.35,163.0,Technology,Consumer Electronics,21.189392,23.5042,10.3,-1.0,2302.71
+2026-11-28,BOTTOM,SPOT,Spotify Technology S.A.,QUALITY,620.38,0.0,-39.4,-1.2,612.63,127.5,Communication Services,Internet Content & Information,37.804996,36.245785,16.3,15.7,1.42
+2026-11-28,BOTTOM,TEAM,Atlassian Corporation,QUALITY,145.95,-35.9,-63.1,56.0,227.61,36.8,Technology,Software - Application,442.2727,21.793829,23.7,1.3,2.0
+2026-11-28,BREAKOUT,TGLS,Tecnoglass Holdings Inc.,QUALITY,59.35,0.0,-48.3,-10.5,53.14,2.6,Basic Materials,Building Materials,26.61435,18.017609,19.2,9.0,-0.07
+2026-11-28,BOTTOM,TREX,"Trex Company, Inc.",QUALITY,54.58,-0.3,-42.1,0.3,54.74,5.5,Industrials,Building Products & Equipment,31.549133,26.196682,26.0,13.9,0.03
+2026-11-28,BOTTOM,TRUP,"Trupanion, Inc.",QUALITY,38.77,0.0,-60.7,-2.0,38.0,1.7,Financial Services,Insurance - Property & Casualty,59.646156,8.871854,10.5,1.7,0.04
+2026-11-28,BOTTOM,VEEV,Veeva Systems Inc.,QUALITY,271.6,-15.9,-48.3,18.9,323.04,44.0,Healthcare,Health Information Services,44.524593,26.48131,17.6,29.3,1.26
+2026-11-28,BREAKOUT,VFC,V.F. Corporation,SPEC,22.25,0.0,-38.7,-6.2,20.86,8.8,Consumer Cyclical,Apparel Manufacturing,24.184782,15.804353,-3.8,3.9,0.5
+2026-11-28,BOTTOM,VRDN,"Viridian Therapeutics, Inc.",SPEC,38.82,0.0,-52.6,-14.3,33.26,4.4,Healthcare,Biotechnology,,-18.784115,-63.5,0.0,-0.22
